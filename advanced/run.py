@@ -44,12 +44,23 @@ CONFIGS = {
     # Huffman description misses leaf letters) -> force verification on the original page image.
     "V4_mm_hybrid_mustview": {"method": "hybrid+samepage", "text_only": False, "view": True, "top_k": 5,
                               "adjacent_view": True, "json_repair": True, "must_view": True},
+    # Round 2 (after test round 1 was used -> evaluated on a NEW test2): stronger vision model for the agent,
+    # viewed pages citable, figure-reading + abstention rules (dev2 = old test errors AT07, AT12, AT16, AT19, ATU5).
+    "V5_round2_gpt41": {"method": "hybrid+samepage", "text_only": False, "view": True, "top_k": 5,
+                        "adjacent_view": True, "json_repair": True, "must_view": True, "page_index": True,
+                        "model": "gpt-4.1"},
+    # V5 still misread small diagrams (AT07 '111', AT09 '6 neurons') and mis-computed AT05: page renders are
+    # downscaled to ~768 px by the API -> send 220-dpi crops of each figure/table region and use a reasoning model.
+    "V6_round2_zoom_gpt5mini": {"method": "hybrid+samepage", "text_only": False, "view": True, "top_k": 5,
+                                "adjacent_view": True, "json_repair": True, "must_view": True, "page_index": True,
+                                "zoom": True, "model": "gpt-5-mini"},
 }
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--split", required=True, choices=("dev", "test"))
+    ap.add_argument("--split", required=True, choices=("dev", "test", "dev2", "test2"),
+                    help="dev2 = round-1 test (used for round-2 tuning); test2 = new round-2 test")
     ap.add_argument("--config", required=True, choices=list(CONFIGS))
     ap.add_argument("--only", nargs="*")
     ap.add_argument("--workers", type=int, default=4)
@@ -62,14 +73,33 @@ def main() -> None:
     if cfg["text_only"]:
         retriever = TextOnly(retriever)
     retriever.search("warm up", top_k=1)
-    bench = [q for q in json.loads((DATA / "benchmark.json").read_text(encoding="utf-8")) if q["split"] == args.split]
+    if args.split == "test2":
+        bench = json.loads((DATA / "benchmark_round2_test.json").read_text(encoding="utf-8"))
+    else:
+        want = "test" if args.split == "dev2" else args.split
+        bench = [q for q in json.loads((DATA / "benchmark.json").read_text(encoding="utf-8")) if q["split"] == want]
+    model = cfg.get("model", args.model)
+    zoom_regions = None
+    if cfg.get("zoom"):
+        zoom_regions = {}
+        for line in open(DATA / "pages.jsonl", encoding="utf-8"):
+            pg = json.loads(line)
+            regs = [v["bbox"] for v in pg["visuals"]] + [t["bbox"] for t in pg["tables"] if "bbox" in t]
+            regs = sorted(regs, key=lambda b: -(b[2] - b[0]) * (b[3] - b[1]))  # largest regions first
+            if regs:
+                zoom_regions[pg["page"]] = regs
+    page_index = None
+    if cfg.get("page_index"):
+        page_index = {}
+        for c in chunks:
+            page_index.setdefault(c["page"], []).append(c)
     if args.only:
         bench = [q for q in bench if q["id"] in args.only]
     client = OpenAI()
 
     def one(q):
         try:
-            r = run(q["question"], retriever, top_k=cfg["top_k"], allow_view=cfg["view"], model=args.model, client=client,
+            r = run(q["question"], retriever, top_k=cfg["top_k"], allow_view=cfg["view"], model=model, client=client, page_index=page_index, zoom_regions=zoom_regions,
                     adjacent_view=cfg.get("adjacent_view", False), json_repair=cfg.get("json_repair", False),
                     must_view=cfg.get("must_view", False))
         except Exception as e:  # provider/store failure: counted as FAIL, reported separately
@@ -94,7 +124,7 @@ def main() -> None:
               f"ctx={t.get('all_gold_pages_in_context', '-')} {str(t.get('answer', t.get('error')))[:120]!r}")
     ok = [t for t in traces if t["status"] != "error"]
     ans = [t for t in ok if t["group"] != "unanswerable"]
-    summary = {"config": args.config, **cfg, "model": args.model, "split": args.split, "N": len(traces),
+    summary = {"config": args.config, **cfg, "model": model, "split": args.split, "N": len(traces),
                "errors": len(traces) - len(ok), "status": {s: sum(t["status"] == s for t in traces) for s in ("answered", "abstain", "error")},
                "context_all_gold_pages": f"{sum(t['all_gold_pages_in_context'] for t in ans)}/{len(ans)}",
                "first_search_gold_page_at1": f"{sum(t['first_search_gold_page_rank'] == 1 for t in ans)}/{len(ans)}",

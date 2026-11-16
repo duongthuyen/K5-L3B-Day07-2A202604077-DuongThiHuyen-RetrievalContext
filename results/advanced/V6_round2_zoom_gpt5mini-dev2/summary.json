@@ -1,0 +1,30 @@
+{
+  "config": "V6_round2_zoom_gpt5mini",
+  "method": "hybrid+samepage",
+  "text_only": false,
+  "view": true,
+  "top_k": 5,
+  "adjacent_view": true,
+  "json_repair": true,
+  "must_view": true,
+  "page_index": true,
+  "zoom": true,
+  "model": "gpt-5-mini",
+  "split": "dev2",
+  "N": 30,
+  "errors": 0,
+  "status": {
+    "answered": 24,
+    "abstain": 6,
+    "error": 0
+  },
+  "context_all_gold_pages": "24/24",
+  "first_search_gold_page_at1": "23/24",
+  "first_search_gold_page_at3": "24/24",
+  "searches_mean": 1.27,
+  "page_views_mean": 1,
+  "prompt_tokens": 361197,
+  "completion_tokens": 31797,
+  "cost_usd": 0.1539,
+  "median_elapsed_s": 14.83
+}

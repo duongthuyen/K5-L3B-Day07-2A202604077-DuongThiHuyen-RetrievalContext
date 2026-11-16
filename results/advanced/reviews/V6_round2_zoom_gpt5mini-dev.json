@@ -1,0 +1,128 @@
+[
+ {
+  "id": "AD01",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD02",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD03",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD04",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD05",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD06",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD07",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD08",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD09",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD10",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD11",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD12",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD13",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD14",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD15",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD16",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AD17",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng: trích định nghĩa p281, p282 và glossary p337 — đều là định nghĩa trong sách."
+ },
+ {
+  "id": "AU01",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu."
+ },
+ {
+  "id": "AU02",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu."
+ },
+ {
+  "id": "AU03",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu."
+ },
+ {
+  "id": "AU04",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu."
+ }
+]

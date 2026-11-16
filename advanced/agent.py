@@ -20,7 +20,7 @@ from typing import Any
 
 from openai import OpenAI
 
-from .common import AGENT_MODEL, CACHE, cost
+from .common import AGENT_MODEL, CACHE, PDF_PATH, chat, cost
 
 SYSTEM = """You answer questions about ONE document: the OpenStax textbook "Principles of Data Science"
 (569 pages, with text, tables, charts and diagrams). Use only evidence from the document.
@@ -41,6 +41,15 @@ Rules:
 
 MUST_VIEW = ("- MANDATORY: if your answer uses a chart, diagram, image or table (result ids containing ':v' or ':tab'), "
              "call view_page on that page and read the values/labels yourself before answering.\n")
+
+# Round-2 (from dev2 error analysis): reading rules + citation/abstention hygiene.
+READING_RULES = (
+    "- Reading figures: trace diagrams edge by edge (write the path, e.g. root -1-> node -0-> leaf); for histograms "
+    "give each bin as [left edge, right edge]; when asked for a maximum/minimum, check whether several bars/points tie "
+    "and report all of them; read axis labels and units exactly as printed.\n"
+    "- After view_page, the ids of that page are listed and may be cited; cite the chunk on every page you used "
+    "(e.g. both pages of a multi-hop answer).\n"
+    "- When abstaining, only say what is missing; do not add other claims about figures or tables unless you verified them.\n")
 
 TOOLS = [
     {"type": "function", "function": {"name": "search_document", "description": "Search the textbook.",
@@ -69,18 +78,21 @@ def _fmt(c: dict) -> str:
 
 def run(question: str, retriever, *, top_k: int = 5, max_searches: int = 4, max_views: int = 3,
         budget: int = 24000, model: str = AGENT_MODEL, allow_view: bool = True, adjacent_view: bool = False,
-        json_repair: bool = False, must_view: bool = False, client: OpenAI | None = None) -> dict:
+        json_repair: bool = False, must_view: bool = False, page_index: dict | None = None,
+        zoom_regions: dict | None = None,
+        client: OpenAI | None = None) -> dict:
     client = client or OpenAI()
     tools = TOOLS if allow_view else TOOLS[:1]
     msgs: list[dict[str, Any]] = [{"role": "system", "content": SYSTEM.format(
-        max_searches=max_searches, max_views=max_views if allow_view else 0, extra=MUST_VIEW if must_view else "")},
+        max_searches=max_searches, max_views=max_views if allow_view else 0,
+        extra=(MUST_VIEW if must_view else "") + (READING_RULES if page_index is not None else ""))},
                                   {"role": "user", "content": question}]
     events, shown, viewed = [], {}, []
     used, n_search, usage = 0, 0, {"prompt_tokens": 0, "completion_tokens": 0, "llm_calls": 0}
     t_start, final = time.perf_counter(), None
     for _ in range(max_searches + max_views + 3):
         force = n_search >= max_searches and (len(viewed) >= max_views or not allow_view)
-        resp = client.chat.completions.create(model=model, messages=msgs, temperature=0, tools=tools,
+        resp = chat(client, model, messages=msgs, temperature=0, tools=tools,
                                               tool_choice="none" if force else "auto")
         usage["llm_calls"] += 1
         usage["prompt_tokens"] += resp.usage.prompt_tokens
@@ -96,7 +108,7 @@ def run(question: str, retriever, *, top_k: int = 5, max_searches: int = 4, max_
             if final is None and json_repair:  # dev fix (AD06): correct answer given as prose -> ask for the JSON only
                 msgs += [{"role": "assistant", "content": msg.content or ""},
                          {"role": "user", "content": "Reformat your previous reply as the required JSON object only. Do not change its content."}]
-                rr = client.chat.completions.create(model=model, messages=msgs, temperature=0,
+                rr = chat(client, model, messages=msgs, temperature=0,
                                                     response_format={"type": "json_object"})
                 usage["llm_calls"] += 1
                 usage["prompt_tokens"] += rr.usage.prompt_tokens
@@ -158,12 +170,24 @@ def run(question: str, retriever, *, top_k: int = 5, max_searches: int = 4, max_
                     path = CACHE / (render or f"pages/p{page:03d}.png")
                     if not path.exists():
                         import pymupdf
-                        from .common import PDF_PATH
                         path.parent.mkdir(parents=True, exist_ok=True)
                         pymupdf.open(PDF_PATH)[page - 1].get_pixmap(dpi=110).save(path)
                     viewed.append(page)
                     images.append((page, base64.b64encode(path.read_bytes()).decode()))
+                    if zoom_regions is not None:  # V6: high-res crops so small diagrams/labels are legible
+                        import pymupdf
+                        pg = pymupdf.open(PDF_PATH)[page - 1]
+                        for k, bb in enumerate(zoom_regions.get(page, [])[:3]):
+                            clip = (pymupdf.Rect(bb) + (-12, -12, 12, 40)) & pg.rect
+                            png = pg.get_pixmap(dpi=220, clip=clip).tobytes("png")
+                            images.append((f"{page} (zoomed region {k + 1})", base64.b64encode(png).decode()))
                     content = f"Image of page {page} attached in the next message."
+                    if page_index is not None:  # round-2: a viewed page becomes citable evidence
+                        ids = []
+                        for c in page_index.get(page, []):
+                            shown.setdefault(c["id"], c)
+                            ids.append(f"{c['id']} ({c['kind']}{', ' + c['label'] if c.get('label') else ''})")
+                        content += " Citable ids on this page: " + "; ".join(ids)
                 events.append({"event": "view_page", "page": page, "result": content})
             else:
                 content = "Unknown tool."
@@ -179,7 +203,10 @@ def run(question: str, retriever, *, top_k: int = 5, max_searches: int = 4, max_
             "cost_usd": round(cost(model, usage["prompt_tokens"], usage["completion_tokens"]), 6)}
     if not final or not isinstance(final.get("answer"), str):
         return {**base, "status": "abstain", "answer": "Không đủ bằng chứng để trả lời.", "citations": [], "abstain_reason": "unparseable_final"}
-    raw = [c for c in final.get("citations", []) if isinstance(c, str)] + re.findall(r"ADV:p\d+:(?:tab|t|v)\d+", final["answer"])
+    # Ids are extracted with a regex so annotated citations ("ADV:p0234:v0 (page 234, Figure 5.6)") still count
+    # (dev2 AT14 with gpt-5-mini); anything that is not a shown id is still rejected below.
+    cited_text = " ".join(c for c in final.get("citations", []) if isinstance(c, str))
+    raw = re.findall(r"ADV:p\d+:(?:tab|t|v)\d+", cited_text) + re.findall(r"ADV:p\d+:(?:tab|t|v)\d+", final["answer"])
     cits = list(dict.fromkeys(canon(c) for c in raw))
     if final.get("abstain") is True or not cits:
         return {**base, "status": "abstain", "answer": final["answer"], "citations": [],

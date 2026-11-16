@@ -1,0 +1,29 @@
+{
+  "config": "V5_round2_gpt41",
+  "method": "hybrid+samepage",
+  "text_only": false,
+  "view": true,
+  "top_k": 5,
+  "adjacent_view": true,
+  "json_repair": true,
+  "must_view": true,
+  "page_index": true,
+  "model": "gpt-4.1",
+  "split": "dev2",
+  "N": 30,
+  "errors": 0,
+  "status": {
+    "answered": 24,
+    "abstain": 6,
+    "error": 0
+  },
+  "context_all_gold_pages": "24/24",
+  "first_search_gold_page_at1": "19/24",
+  "first_search_gold_page_at3": "24/24",
+  "searches_mean": 1.27,
+  "page_views_mean": 0.97,
+  "prompt_tokens": 230993,
+  "completion_tokens": 3670,
+  "cost_usd": 0.4913,
+  "median_elapsed_s": 3.5199999999999996
+}

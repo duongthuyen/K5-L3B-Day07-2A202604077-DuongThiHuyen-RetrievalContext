@@ -26,7 +26,16 @@ TABLE = "adv_chunks"
 VISION_MODEL = os.getenv("ADV_VISION_MODEL", "gpt-4.1-mini")
 AGENT_MODEL = os.getenv("ADV_AGENT_MODEL", "gpt-4.1-mini")
 # USD per 1M tokens (input, output) — OpenAI list prices; verify before reuse.
-PRICES = {"gpt-4.1-mini": (0.40, 1.60), "gpt-4.1": (2.00, 8.00), "gpt-4o-mini": (0.15, 0.60)}
+PRICES = {"gpt-4.1-mini": (0.40, 1.60), "gpt-4.1": (2.00, 8.00), "gpt-4o-mini": (0.15, 0.60),
+          "gpt-5-mini": (0.25, 2.00), "gpt-5": (1.25, 10.00)}
+
+
+def chat(client, model: str, **kw):
+    """Chat Completions call; reasoning models (gpt-5*, o*) take no temperature and use reasoning_effort."""
+    if model.startswith(("gpt-5", "o3", "o4")):
+        kw.pop("temperature", None)
+        kw.setdefault("reasoning_effort", "medium")
+    return client.chat.completions.create(model=model, **kw)
 
 
 def cost(model: str, p: int, c: int) -> float:

@@ -1,0 +1,182 @@
+[
+ {
+  "id": "AT01",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT02",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT03",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT04",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT05",
+  "group": "table",
+  "pass": false,
+  "reason": "Sai: nói mọi sản phẩm có profit = 50% sales; Jewelry 20,000/50,000 = 40%."
+ },
+ {
+  "id": "AT06",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT07",
+  "group": "image",
+  "pass": false,
+  "reason": "Sai: '111' (đúng 101), dù tự viết đường đi 1-0-1."
+ },
+ {
+  "id": "AT08",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT09",
+  "group": "image",
+  "pass": false,
+  "reason": "Sai: 6 neuron (đúng 4)."
+ },
+ {
+  "id": "AT10",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT11",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT12",
+  "group": "chart",
+  "pass": false,
+  "reason": "Sai bin: 'centered at 65.95' (đúng 65.95-67.95)."
+ },
+ {
+  "id": "AT13",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT14",
+  "group": "chart",
+  "pass": false,
+  "reason": "Sai giá trị/thời điểm: ~20,000 vào 'early 2020' (Jan-Mar); minimum thực tế ≈ 23,500 khoảng tháng 3-4/2020 (ngoài khoảng chấm 22,000-26,000)."
+ },
+ {
+  "id": "AT15",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT16",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT17",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT18",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT19",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT20",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT21",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT22",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT23",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "AT24",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đối chiếu bản gốc."
+ },
+ {
+  "id": "ATU1",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu."
+ },
+ {
+  "id": "ATU2",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu."
+ },
+ {
+  "id": "ATU3",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu."
+ },
+ {
+  "id": "ATU4",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu."
+ },
+ {
+  "id": "ATU5",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu."
+ },
+ {
+  "id": "ATU6",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu."
+ }
+]
