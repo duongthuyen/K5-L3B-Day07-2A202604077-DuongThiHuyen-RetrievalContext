@@ -1,0 +1,1024 @@
+[
+  {
+    "query_id": "q01",
+    "split": "dev",
+    "type": "direct",
+    "question": "Which list operation adds an element at the end of a list?",
+    "query_sent": "Which list operation adds an element at the end of a list?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0236:c00",
+        "source": "intro-python.pdf#page=236",
+        "page": 236,
+        "score": 23.803364359582922,
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0221:c03",
+        "source": "intro-python.pdf#page=221",
+        "page": 221,
+        "score": 21.901137322904912,
+        "hit": true
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0222:c02",
+        "source": "intro-python.pdf#page=222",
+        "page": 222,
+        "score": 20.90986278609268,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0236:c00",
+      "B:openstax-intro-python:p0221:c03",
+      "B:openstax-intro-python:p0222:c02"
+    ],
+    "context_chars": 2117,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.6
+  },
+  {
+    "query_id": "q02",
+    "split": "dev",
+    "type": "condition",
+    "question": "Why can sorting a list of words put \"Gail\" before \"apple\"?",
+    "query_sent": "Why can sorting a list of words put \"Gail\" before \"apple\"?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0225:c00",
+        "source": "intro-python.pdf#page=225",
+        "page": 225,
+        "score": 17.42747524595989,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0224:c02",
+        "source": "intro-python.pdf#page=224",
+        "page": 224,
+        "score": 12.372272399563286,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0225:c01",
+        "source": "intro-python.pdf#page=225",
+        "page": 225,
+        "score": 11.352759672320861,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0225:c00",
+      "B:openstax-intro-python:p0224:c02",
+      "B:openstax-intro-python:p0225:c01"
+    ],
+    "context_chars": 2122,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.5
+  },
+  {
+    "query_id": "q03",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "Which built-in function gives the total of all numbers stored in a list?",
+    "query_sent": "Which built-in function gives the total of all numbers stored in a list?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0227:c00",
+        "source": "intro-python.pdf#page=227",
+        "page": 227,
+        "score": 21.04619828928231,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0236:c00",
+        "source": "intro-python.pdf#page=236",
+        "page": 236,
+        "score": 13.967026175785724,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0243:c01",
+        "source": "intro-python.pdf#page=243",
+        "page": 243,
+        "score": 11.49502211187232,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0227:c00",
+      "B:openstax-intro-python:p0236:c00",
+      "B:openstax-intro-python:p0243:c01"
+    ],
+    "context_chars": 2666,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.7
+  },
+  {
+    "query_id": "q04",
+    "split": "dev",
+    "type": "condition",
+    "question": "Under what condition do max() and min() work on a list?",
+    "query_sent": "Under what condition do max() and min() work on a list?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0227:c00",
+        "source": "intro-python.pdf#page=227",
+        "page": 227,
+        "score": 22.45064924955481,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0227:c01",
+        "source": "intro-python.pdf#page=227",
+        "page": 227,
+        "score": 15.672697741179508,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0228:c00",
+        "source": "intro-python.pdf#page=228",
+        "page": 228,
+        "score": 11.02777309225976,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0227:c00",
+      "B:openstax-intro-python:p0227:c01",
+      "B:openstax-intro-python:p0228:c00"
+    ],
+    "context_chars": 2011,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.4
+  },
+  {
+    "query_id": "q05",
+    "split": "dev",
+    "type": "direct",
+    "question": "What is a nested list?",
+    "query_sent": "What is a nested list?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0230:c01",
+        "source": "intro-python.pdf#page=230",
+        "page": 230,
+        "score": 8.510005896392448,
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0229:c02",
+        "source": "intro-python.pdf#page=229",
+        "page": 229,
+        "score": 8.353036902349896,
+        "hit": true
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0252:c01",
+        "source": "intro-python.pdf#page=252",
+        "page": 252,
+        "score": 7.274399238614148,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0230:c01",
+      "B:openstax-intro-python:p0229:c02",
+      "B:openstax-intro-python:p0252:c01"
+    ],
+    "context_chars": 2225,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.3
+  },
+  {
+    "query_id": "q06",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "What Python statement builds a new list compactly from a pattern in a single line?",
+    "query_sent": "What Python statement builds a new list compactly from a pattern in a single line?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0232:c01",
+        "source": "intro-python.pdf#page=232",
+        "page": 232,
+        "score": 24.986983194869858,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0233:c01",
+        "source": "intro-python.pdf#page=233",
+        "page": 233,
+        "score": 13.543422558318706,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0222:c00",
+        "source": "intro-python.pdf#page=222",
+        "page": 222,
+        "score": 11.737970616152197,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0232:c01",
+      "B:openstax-intro-python:p0233:c01",
+      "B:openstax-intro-python:p0222:c00"
+    ],
+    "context_chars": 2582,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.7
+  },
+  {
+    "query_id": "q07",
+    "split": "dev",
+    "type": "condition",
+    "question": "What does get() return when the requested key is not in the dictionary?",
+    "query_sent": "What does get() return when the requested key is not in the dictionary?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0242:c02",
+        "source": "intro-python.pdf#page=242",
+        "page": 242,
+        "score": 20.66016230700237,
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0241:c03",
+        "source": "intro-python.pdf#page=241",
+        "page": 241,
+        "score": 19.680708646264627,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0238:c03",
+        "source": "intro-python.pdf#page=238",
+        "page": 238,
+        "score": 15.65674573297513,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0242:c02",
+      "B:openstax-intro-python:p0241:c03",
+      "B:openstax-intro-python:p0238:c03"
+    ],
+    "context_chars": 1842,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false,
+    "latency_ms": 0.6
+  },
+  {
+    "query_id": "q08",
+    "split": "dev",
+    "type": "direct",
+    "question": "Which functions return the keys, the values and the key-value pairs of a dictionary?",
+    "query_sent": "Which functions return the keys, the values and the key-value pairs of a dictionary?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0255:c02",
+        "source": "intro-python.pdf#page=255",
+        "page": 255,
+        "score": 18.204789296261904,
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0242:c02",
+        "source": "intro-python.pdf#page=242",
+        "page": 242,
+        "score": 16.04197772580316,
+        "hit": true
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0241:c01",
+        "source": "intro-python.pdf#page=241",
+        "page": 241,
+        "score": 15.894326196105226,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0255:c02",
+      "B:openstax-intro-python:p0242:c02",
+      "B:openstax-intro-python:p0241:c01"
+    ],
+    "context_chars": 2033,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.9
+  },
+  {
+    "query_id": "q09",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "Can the content of a dictionary be changed after the object has been created?",
+    "query_sent": "Can the content of a dictionary be changed after the object has been created?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0243:c01",
+        "source": "intro-python.pdf#page=243",
+        "page": 243,
+        "score": 15.706079914995389,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0239:c02",
+        "source": "intro-python.pdf#page=239",
+        "page": 239,
+        "score": 12.711823303733357,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0255:c01",
+        "source": "intro-python.pdf#page=255",
+        "page": 255,
+        "score": 12.645596128841055,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0243:c01",
+      "B:openstax-intro-python:p0239:c02",
+      "B:openstax-intro-python:p0255:c01"
+    ],
+    "context_chars": 2628,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.8
+  },
+  {
+    "query_id": "q10",
+    "split": "dev",
+    "type": "direct",
+    "question": "What are nested dictionaries?",
+    "query_sent": "What are nested dictionaries?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0251:c01",
+        "source": "intro-python.pdf#page=251",
+        "page": 251,
+        "score": 11.178891450768749,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0255:c02",
+        "source": "intro-python.pdf#page=255",
+        "page": 255,
+        "score": 8.4862357671349,
+        "hit": true
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0252:c00",
+        "source": "intro-python.pdf#page=252",
+        "page": 252,
+        "score": 8.303079185697122,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0251:c01",
+      "B:openstax-intro-python:p0255:c02",
+      "B:openstax-intro-python:p0252:c00"
+    ],
+    "context_chars": 2284,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.2
+  },
+  {
+    "query_id": "q11",
+    "split": "dev",
+    "type": "metadata",
+    "question": "In the Lists chapter, what does the pop() operation do?",
+    "query_sent": "In the Lists chapter, what does the pop() operation do?",
+    "filter": {
+      "chapter": 9
+    },
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0235:c03",
+        "source": "intro-python.pdf#page=235",
+        "page": 235,
+        "score": 15.39764334523198,
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0222:c02",
+        "source": "intro-python.pdf#page=222",
+        "page": 222,
+        "score": 13.628604372927448,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0221:c03",
+        "source": "intro-python.pdf#page=221",
+        "page": 221,
+        "score": 12.476948129845205,
+        "hit": true
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0235:c03",
+      "B:openstax-intro-python:p0222:c02",
+      "B:openstax-intro-python:p0221:c03"
+    ],
+    "context_chars": 1481,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.2
+  },
+  {
+    "query_id": "q12",
+    "split": "dev",
+    "type": "metadata",
+    "question": "In the Dictionaries chapter, how can an item be removed using pop() or another way?",
+    "query_sent": "In the Dictionaries chapter, how can an item be removed using pop() or another way?",
+    "filter": {
+      "chapter": 10
+    },
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0255:c01",
+        "source": "intro-python.pdf#page=255",
+        "page": 255,
+        "score": 17.300499156887515,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0257:c00",
+        "source": "intro-python.pdf#page=257",
+        "page": 257,
+        "score": 16.541401056192292,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0255:c02",
+        "source": "intro-python.pdf#page=255",
+        "page": 255,
+        "score": 16.02440290949588,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0255:c01",
+      "B:openstax-intro-python:p0257:c00",
+      "B:openstax-intro-python:p0255:c02"
+    ],
+    "context_chars": 2528,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.3
+  },
+  {
+    "query_id": "q13",
+    "split": "dev",
+    "type": "metadata",
+    "question": "What happens to duplicate values during the data cleaning step?",
+    "query_sent": "What happens to duplicate values during the data cleaning step?",
+    "filter": {
+      "book": "data_science"
+    },
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0086:c01",
+        "source": "data-science.pdf#page=86",
+        "page": 86,
+        "score": 14.431782347690223,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0086:c00",
+        "source": "data-science.pdf#page=86",
+        "page": 86,
+        "score": 10.818217665543916,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0090:c01",
+        "source": "data-science.pdf#page=90",
+        "page": 90,
+        "score": 9.081241453552247,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0086:c01",
+      "B:openstax-data-science:p0086:c00",
+      "B:openstax-data-science:p0090:c01"
+    ],
+    "context_chars": 2964,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.4
+  },
+  {
+    "query_id": "q14",
+    "split": "dev",
+    "type": "direct",
+    "question": "What does MCAR mean for missing data?",
+    "query_sent": "What does MCAR mean for missing data?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0087:c01",
+        "source": "data-science.pdf#page=87",
+        "page": 87,
+        "score": 12.348518067868204,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0087:c00",
+        "source": "data-science.pdf#page=87",
+        "page": 87,
+        "score": 9.798027238019396,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0087:c05",
+        "source": "data-science.pdf#page=87",
+        "page": 87,
+        "score": 8.286218135271696,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0087:c01",
+      "B:openstax-data-science:p0087:c00",
+      "B:openstax-data-science:p0087:c05"
+    ],
+    "context_chars": 1851,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.4
+  },
+  {
+    "query_id": "q15",
+    "split": "dev",
+    "type": "condition",
+    "question": "When should a log transformation be applied to data?",
+    "query_sent": "When should a log transformation be applied to data?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0092:c02",
+        "source": "data-science.pdf#page=92",
+        "page": 92,
+        "score": 17.297014531388015,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0093:c02",
+        "source": "data-science.pdf#page=93",
+        "page": 93,
+        "score": 9.673252618883973,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0098:c04",
+        "source": "data-science.pdf#page=98",
+        "page": 98,
+        "score": 8.473108471010198,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0092:c02",
+      "B:openstax-data-science:p0093:c02",
+      "B:openstax-data-science:p0098:c04"
+    ],
+    "context_chars": 2311,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.5
+  },
+  {
+    "query_id": "q16",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "Which kind of compression shrinks a file without throwing any data away?",
+    "query_sent": "Which kind of compression shrinks a file without throwing any data away?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0098:c05",
+        "source": "data-science.pdf#page=98",
+        "page": 98,
+        "score": 21.52589296933193,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0098:c04",
+        "source": "data-science.pdf#page=98",
+        "page": 98,
+        "score": 14.417978573479193,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0099:c00",
+        "source": "data-science.pdf#page=99",
+        "page": 99,
+        "score": 13.010761288876775,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0098:c05",
+      "B:openstax-data-science:p0098:c04",
+      "B:openstax-data-science:p0099:c00"
+    ],
+    "context_chars": 2373,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.4
+  },
+  {
+    "query_id": "t01",
+    "split": "dev",
+    "type": "metadata",
+    "question": "Why is it impossible to have duplicate keys?",
+    "query_sent": "Why is it impossible to have duplicate keys?",
+    "filter": {
+      "book": "intro_python"
+    },
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0239:c00",
+        "source": "intro-python.pdf#page=239",
+        "page": 239,
+        "score": 13.922358844942472,
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0237:c03",
+        "source": "intro-python.pdf#page=237",
+        "page": 237,
+        "score": 11.668615434130588,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0255:c01",
+        "source": "intro-python.pdf#page=255",
+        "page": 255,
+        "score": 8.762091013186872,
+        "hit": true
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0239:c00",
+      "B:openstax-intro-python:p0237:c03",
+      "B:openstax-intro-python:p0255:c01"
+    ],
+    "context_chars": 1800,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.2
+  },
+  {
+    "query_id": "t02",
+    "split": "dev",
+    "type": "metadata",
+    "question": "How can I filter out items that do not meet a condition?",
+    "query_sent": "How can I filter out items that do not meet a condition?",
+    "filter": {
+      "book": "intro_python"
+    },
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0234:c00",
+        "source": "intro-python.pdf#page=234",
+        "page": 234,
+        "score": 16.781282875998166,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0241:c02",
+        "source": "intro-python.pdf#page=241",
+        "page": 241,
+        "score": 8.859161174143264,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0223:c02",
+        "source": "intro-python.pdf#page=223",
+        "page": 223,
+        "score": 8.092435231852235,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0234:c00",
+      "B:openstax-intro-python:p0241:c02",
+      "B:openstax-intro-python:p0223:c02"
+    ],
+    "context_chars": 2748,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.3
+  },
+  {
+    "query_id": "t03",
+    "split": "dev",
+    "type": "condition",
+    "question": "How does the syntax of dictionary comprehension differ from list comprehension?",
+    "query_sent": "How does the syntax of dictionary comprehension differ from list comprehension?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0253:c00",
+        "source": "intro-python.pdf#page=253",
+        "page": 253,
+        "score": 21.988022304872214,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0240:c00",
+        "source": "intro-python.pdf#page=240",
+        "page": 240,
+        "score": 14.066102022833128,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0234:c00",
+        "source": "intro-python.pdf#page=234",
+        "page": 234,
+        "score": 13.10674526214704,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0253:c00",
+      "B:openstax-intro-python:p0240:c00",
+      "B:openstax-intro-python:p0234:c00"
+    ],
+    "context_chars": 2980,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.5
+  },
+  {
+    "query_id": "t04",
+    "split": "dev",
+    "type": "condition",
+    "question": "Why should outliers be removed before applying the min-max normalization formula?",
+    "query_sent": "Why should outliers be removed before applying the min-max normalization formula?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0091:c03",
+        "source": "data-science.pdf#page=91",
+        "page": 91,
+        "score": 20.424919459571022,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0227:c00",
+        "source": "intro-python.pdf#page=227",
+        "page": 227,
+        "score": 12.925988599645581,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0227:c01",
+        "source": "intro-python.pdf#page=227",
+        "page": 227,
+        "score": 12.921070787426245,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0091:c03",
+      "B:openstax-intro-python:p0227:c00",
+      "B:openstax-intro-python:p0227:c01"
+    ],
+    "context_chars": 1932,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.5
+  },
+  {
+    "query_id": "t05",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "What extra information is attached to each piece when a big dataset is split into chunks?",
+    "query_sent": "What extra information is attached to each piece when a big dataset is split into chunks?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0100:c01",
+        "source": "data-science.pdf#page=100",
+        "page": 100,
+        "score": 19.765630193972555,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0100:c00",
+        "source": "data-science.pdf#page=100",
+        "page": 100,
+        "score": 14.47728874801085,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0100:c02",
+        "source": "data-science.pdf#page=100",
+        "page": 100,
+        "score": 11.304071765041037,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0100:c01",
+      "B:openstax-data-science:p0100:c00",
+      "B:openstax-data-science:p0100:c02"
+    ],
+    "context_chars": 2498,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 1.3
+  },
+  {
+    "query_id": "t06",
+    "split": "dev",
+    "type": "direct",
+    "question": "How does hash indexing work?",
+    "query_sent": "How does hash indexing work?",
+    "filter": null,
+    "config": "R1_bm25",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0099:c03",
+        "source": "data-science.pdf#page=99",
+        "page": 99,
+        "score": 10.023335263344991,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0099:c02",
+        "source": "data-science.pdf#page=99",
+        "page": 99,
+        "score": 7.847089710138441,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0227:c00",
+        "source": "intro-python.pdf#page=227",
+        "page": 227,
+        "score": 6.022114155702557,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0099:c03",
+      "B:openstax-data-science:p0099:c02",
+      "B:openstax-intro-python:p0227:c00"
+    ],
+    "context_chars": 2143,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 0.2
+  }
+]

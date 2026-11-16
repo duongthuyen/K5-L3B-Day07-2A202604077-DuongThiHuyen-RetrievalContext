@@ -1,0 +1,83 @@
+[
+  {
+    "query_id": "n01",
+    "citation_support": [],
+    "reason": "Model trả lời đúng nhưng viết ID citation sai định dạng (p221 thay vì p0221) -> validator từ chối -> abstain, chấm 0. (p239)",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "n02",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng; p0230:c02 (Example 9.4) mô tả outer loop qua list lớn, inner loop qua từng phần tử -> hỗ trợ (chunk evidence c01 cũng trong context).",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "n03",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "n04",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "n05",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng; thiếu [id] inline nhưng citation đúng.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "n06",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "n07",
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng; p0094:c00 hỗ trợ phần mở rộng (kiểm tra duplicates, mislaid values).",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "n08",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "u04",
+    "citation_support": [],
+    "reason": "Agent search 3 lần rồi từ chối, không thêm khẳng định nào; corpus thật sự không có (xem absence_reason).",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "u05",
+    "citation_support": [],
+    "reason": "Agent search 3 lần rồi từ chối, không thêm khẳng định nào; corpus thật sự không có (xem absence_reason).",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "u06",
+    "citation_support": [],
+    "reason": "Agent search 3 lần rồi từ chối, không thêm khẳng định nào; corpus thật sự không có (xem absence_reason).",
+    "abstention_correct": true
+  }
+]

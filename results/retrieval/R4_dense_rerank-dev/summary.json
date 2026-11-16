@@ -1,0 +1,21 @@
+{
+  "config": "R4_dense_rerank",
+  "method": "dense_rerank",
+  "top_k": 3,
+  "budget": 3000,
+  "neighbours": false,
+  "use_filter": true,
+  "note": "Ablation: rerank without lexical candidates",
+  "split": "dev",
+  "N": 22,
+  "hit1": 16,
+  "hit3": 20,
+  "context_hit": 20,
+  "errors": 0,
+  "avg_context_chars": 2329,
+  "median_latency_ms": 2081.6,
+  "cost_usd": 0.0,
+  "hit1_rate": 0.727,
+  "hit3_rate": 0.909,
+  "context_hit_rate": 0.909
+}

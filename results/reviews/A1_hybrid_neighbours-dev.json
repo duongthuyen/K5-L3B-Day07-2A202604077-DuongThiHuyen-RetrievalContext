@@ -1,0 +1,201 @@
+[
+  {
+    "query_id": "q01",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q02",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q03",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng; thiếu [id] inline nhưng citation đúng.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q04",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q05",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q06",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q07",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q08",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q09",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng; p0255:c01 (tóm tắt chương) ghi 'A dictionary is a mutable object' = evidence thay thế hợp lệ về nội dung.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q10",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q11",
+    "citation_support": [
+      true,
+      false
+    ],
+    "reason": "Đúng; p0221:c03 hỗ trợ; p0222:c01 chỉ là output ví dụ ['Jamie',...] không hỗ trợ khẳng định.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q12",
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng; p0244:c00 và bảng tham chiếu p0257:c00 đều nêu del / pop().",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q13",
+    "citation_support": [
+      true
+    ],
+    "reason": "Ý chính đúng; p0093:c00 bảng 2.7 'Data cleaning: Removing duplicate...' hỗ trợ.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q14",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q15",
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng; c01 hỗ trợ phần giải thích phân phối chuẩn.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q16",
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng; c04 hỗ trợ phân loại lossless/lossy.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "t01",
+    "citation_support": [
+      true
+    ],
+    "reason": "Một phần: citation hỗ trợ 'cannot have duplicate keys' nhưng lý do 'ambiguity' là suy diễn của model, không phải lý do trong sách (tra cứu value bằng key).",
+    "answer_grade": 1
+  },
+  {
+    "query_id": "t02",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "t03",
+    "citation_support": [
+      false,
+      true
+    ],
+    "reason": "Đáp án đúng nhưng citation chính sai: p0253:c01 chỉ là link video CHECKPOINT; chunk evidence p0253:c00 có trong context nhưng không được trích.",
+    "answer_grade": 1
+  },
+  {
+    "query_id": "t04",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "t05",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "t06",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "u01",
+    "citation_support": [],
+    "reason": "Agent search 3 lần rồi từ chối, không thêm khẳng định nào; corpus thật sự không có (xem absence_reason).",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "u02",
+    "citation_support": [],
+    "reason": "Agent search 3 lần rồi từ chối, không thêm khẳng định nào; corpus thật sự không có (xem absence_reason).",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "u03",
+    "citation_support": [],
+    "reason": "Agent search 3 lần rồi từ chối, không thêm khẳng định nào; corpus thật sự không có (xem absence_reason).",
+    "abstention_correct": true
+  }
+]

@@ -1,5 +1,47 @@
 # Day 7 — Agentic RAG
 
+> **Bài làm của học viên** — Dương Thị Huyền (2A202604077). Báo cáo: [report/individual/2A202604077_DuongThiHuyen.md](report/individual/2A202604077_DuongThiHuyen.md). Đề bài gốc giữ nguyên bên dưới đường kẻ.
+
+## Bài làm: cách chạy lại
+
+Yêu cầu: Python 3.12, Docker Desktop, repo Day 6 nằm cạnh repo này (`../K5-L3-Day06-DuongThiHuyen-2A202604077-DataIngestion`, đã ingest index A/B vào pgvector), OpenAI API key. Chi phí toàn bộ thí nghiệm ≈ $0.03.
+
+```powershell
+# 1. Vector store Day 6 (PostgreSQL 16 + pgvector 0.8.7, bge-small-en-v1.5, 384 chiều)
+cd ..\K5-L3-Day06-DuongThiHuyen-2A202604077-DataIngestion\starter; docker compose -p day6_student_starter up -d --wait; cd -
+# 2. Môi trường (phiên bản chính xác: requirements.lock.txt)
+py -3.12 -m venv .venv
+.venv\Scripts\python -m pip install torch==2.15.0+cpu --index-url https://download.pytorch.org/whl/cpu
+.venv\Scripts\python -m pip install -r requirements.lock.txt
+Copy-Item .env.example .env        # điền OPENAI_API_KEY; không commit .env
+$env:PYTHONUTF8=1                  # Windows: test starter đọc file không chỉ định encoding
+# 3. Dữ liệu + test
+.venv\Scripts\python -m src.prepare_data                       # xuất 189 chunk từ pgvector, build benchmark, kiểm tra gold
+.venv\Scripts\python -m unittest discover -s tests -v          # 22 test offline (mock chỉ kiểm tra code)
+# 4. Retrieval benchmark (không gọi LLM)
+.venv\Scripts\python -m src.eval_retrieval --split dev                                       # R0..R8
+.venv\Scripts\python -m src.eval_retrieval --split test --configs R0_dense R8_hybrid_neighbours
+# 5. Agent thật (gpt-4o-mini)
+.venv\Scripts\python -m src.run_agent --split dev  --config A0_dense
+.venv\Scripts\python -m src.run_agent --split dev  --config A1_hybrid_neighbours
+.venv\Scripts\python -m src.run_agent --split test --config A0_dense
+.venv\Scripts\python -m src.run_agent --split test --config A1_hybrid_neighbours
+# 6. Tổng hợp nhãn thủ công
+.venv\Scripts\python starter/agent_metrics.py --cases data/cases.json --traces results/agent/A1_hybrid_neighbours-test/traces.json --reviews results/reviews/A1_hybrid_neighbours-test.json --split test --output results/agent/A1_hybrid_neighbours-test/agent_metrics.json
+```
+
+| Thành phần | Vị trí |
+|---|---|
+| Code: config, dữ liệu/hit, retriever (dense, BM25, RRF, rerank, chunk kề), context, agent | [src/](src/) |
+| Corpus đã xuất + benchmark | [data/chunks.json](data/chunks.json), [data/questions.json](data/questions.json), [data/cases.json](data/cases.json), [benchmark/](benchmark/) |
+| Trace và summary retrieval | `results/retrieval/<config>-<split>/` |
+| Trace và metrics agent | `results/agent/<config>-<split>/` |
+| Nhãn chấm thủ công (câu trả lời, citation, abstention, context) | [results/reviews/](results/reviews/) |
+
+Corpus: OpenStax, CC BY-NC-SA 4.0 (Rice University); văn bản trích từ các trang đã chọn, xem manifest của Day 6.
+
+---
+
 **Bài cá nhân · Python 3.11+ · tiếp nối Day 6**
 
 Dùng embedding và vector store từ Day 6 để xây một agent biết tìm bằng chứng, trả lời có nguồn và nhận biết khi không đủ thông tin. Bạn tự chọn kiến trúc, số tool và cách tổ chức retrieval.

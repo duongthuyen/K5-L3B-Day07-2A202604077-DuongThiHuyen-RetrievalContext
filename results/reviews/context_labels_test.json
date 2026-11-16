@@ -1,0 +1,25 @@
+{
+ "scale": "0 = no evidence in final context; 1 = evidence present but missing condition/source; 2 = full evidence with source+page",
+ "R0_dense": {
+  "n01": [2, "p0239:c02 (rank 2) lists both {} and dict()"],
+  "n02": [2, "p0230:c01 (rank 2) has outer-rows / inner-columns sentence"],
+  "n03": [2, "p0089:c01 rank 1, full definition"],
+  "n04": [2, "p0093:c01 rank 1, data smoothing + seven-day average"],
+  "n05": [0, "table row 'Stopwords removal' (p0095:c01) not retrieved; p0095:c00 only covers tokenization; p0096:c01 dropped by budget"],
+  "n06": [2, "p0101:c03 rank 1"],
+  "n07": [2, "p0093:c04 rank 1"],
+  "n08": [2, "p0097:c01 rank 1"]
+ },
+ "R8_hybrid_neighbours": {
+  "n01": [2, "p0239:c02 rank 2 (+ same-page neighbours)"],
+  "n02": [2, "p0230:c01 rank 2, p0230:c02 example rank 3"],
+  "n03": [2, "p0089:c01 rank 1"],
+  "n04": [2, "p0093:c01 rank 1"],
+  "n05": [2, "p0095:c01 rank 3 via BM25 term 'stopwords'"],
+  "n06": [2, "p0101:c03 rank 1"],
+  "n07": [2, "p0093:c04 rank 1, p0094:c00 continuation"],
+  "n08": [2, "p0097:c01 rank 1"]
+ },
+ "summary": {"R0_dense": {"0": 1, "1": 0, "2": 7}, "R8_hybrid_neighbours": {"0": 0, "1": 0, "2": 8}},
+ "labeller": "AI coding assistant draft, to be verified by the student"
+}

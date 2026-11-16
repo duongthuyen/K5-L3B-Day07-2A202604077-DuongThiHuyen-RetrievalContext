@@ -1,0 +1,21 @@
+{
+  "config": "R7_dense_neighbours",
+  "method": "dense",
+  "top_k": 3,
+  "budget": 6000,
+  "neighbours": true,
+  "use_filter": true,
+  "note": "Improvement 4: dense + prev/next chunk of same page, budget 6000",
+  "split": "dev",
+  "N": 22,
+  "hit1": 14,
+  "hit3": 19,
+  "context_hit": 21,
+  "errors": 0,
+  "avg_context_chars": 3614,
+  "median_latency_ms": 54.9,
+  "cost_usd": 0.0,
+  "hit1_rate": 0.636,
+  "hit3_rate": 0.864,
+  "context_hit_rate": 0.955
+}

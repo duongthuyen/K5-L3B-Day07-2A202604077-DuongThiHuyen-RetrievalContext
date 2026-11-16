@@ -1,0 +1,2640 @@
+[
+  {
+    "query_id": "q01",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "Which list operation adds an element at the end of a list?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "list operation adds an element at the end of a list",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 55.3,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0222:c02",
+            "page": 222,
+            "score": 0.8290907450156086
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0221:c03",
+            "page": 221,
+            "score": 0.8246591300178612
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0222:c00",
+            "page": 222,
+            "score": 0.7983246565863709
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0222:c02",
+          "B:openstax-intro-python:p0221:c03",
+          "B:openstax-intro-python:p0222:c00"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"The append() operation adds an element at the end of a list [B:openstax-intro-python:p0221:c03].\", \"citations\": [\"B:openstax-intro-python:p0221:c03\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0222:c02",
+      "B:openstax-intro-python:p0221:c03",
+      "B:openstax-intro-python:p0222:c00"
+    ],
+    "context_chars": 2097,
+    "context": "[B:openstax-intro-python:p0222:c02] (source: intro-python.pdf#page=222, page 222, section: 9.1 Modifying and iterating lists)\nCONCEPTS IN PRACTICE\n\nModifying lists\n\n1 . Which operation can be used to add an element to the end of a list?\na. add()\n\nb. append()\n\nc. pop()\n\n2 . What is the correct syntax to remove the element 23 from a list called number_list?\n\na. remove()\n\nb. number_list.remove()\n\n[B:openstax-intro-python:p0221:c03] (source: intro-python.pdf#page=221, page 221, section: 9.1 Modifying and iterating lists)\n9.1 Modifying and iterating lists\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Modify a list using append(), remove(), and pop() list operations.\n\n• Search a list using a for loop.\n\nUsing list operations to modify a list\n\nAn append() operation is used to add an element to the end of a list. In programming, append means add to\n\nthe end. A remove() operation removes the specified element from a list. A pop() operation removes the last\n\nitem of a list.\n\n[B:openstax-intro-python:p0222:c00] (source: intro-python.pdf#page=222, page 222, section: 9.1 Modifying and iterating lists)\nEXAMPLE 9.1\n\nSimple operations to modify a list\n\nThe code below demonstrates simple operations for modifying a list.\n\nLine 8 shows the append() operation, line 12 shows the remove() operation, and line 17 shows the pop()\n\noperation. Since the pop() operation removes the last element, no parameter is needed.\n\n1 \"\"\"Operations for adding and removing elements from a list.\"\"\"\n2\n3 # Create a list of students working on a project\n4 student_list = [\"Jamie\", \"Vicky\", \"DeShawn\", \"Tae\"]\n5 print(student_list)\n6\n7 # Another student joins the project. The student must be added to\nthe list.\n8 student_list.append(\"Ming\")\n9 print(student_list)\n10\n11 # \"Jamie\" withdraws from the project. Jamie must be removed from\nthe list.\n12 student_list.remove(\"Jamie\")\n13 print(student_list)\n14\n15 # Suppose \"Ming\" had to be removed from the list.\n16 # A pop() operation can be used since Ming is last in the list.\n17 student_list.pop()\n18 print(student_list)\n\nThe above code's output is:",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1127,
+      "completion_tokens": 85,
+      "llm_calls": 2
+    },
+    "elapsed_s": 3.07,
+    "cost_usd": 0.00022,
+    "status": "answered",
+    "answer": "The append() operation adds an element at the end of a list [B:openstax-intro-python:p0221:c03].",
+    "citations": [
+      "B:openstax-intro-python:p0221:c03"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "q02",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "Why can sorting a list of words put \"Gail\" before \"apple\"?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "sorting a list of words Gail apple",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 81.6,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0229:c01",
+            "page": 229,
+            "score": 0.7063740841896484
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0235:c02",
+            "page": 235,
+            "score": 0.6809093165939651
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0226:c00",
+            "page": 226,
+            "score": 0.6789790594273528
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0229:c01",
+          "B:openstax-intro-python:p0235:c02",
+          "B:openstax-intro-python:p0226:c00"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "sorting words dictionary order",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 49.6,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0224:c02",
+            "page": 224,
+            "score": 0.7632295034390998
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0225:c00",
+            "page": 225,
+            "score": 0.7466156482696533
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0226:c00",
+            "page": 226,
+            "score": 0.7423016650170587
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0224:c02",
+          "B:openstax-intro-python:p0225:c00"
+        ],
+        "duplicate_ids": [
+          "B:openstax-intro-python:p0226:c00"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Sorting a list of words uses dictionary order, which is based on ASCII values. In this order, uppercase characters come before lowercase characters, so 'Gail' (uppercase 'G') comes before 'apple' (lowercase 'a') [B:openstax-intro-python:p0225:c00].\", \"citations\": [\"B:openstax-intro-python:p0225:c00\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0229:c01",
+      "B:openstax-intro-python:p0235:c02",
+      "B:openstax-intro-python:p0226:c00",
+      "B:openstax-intro-python:p0224:c02",
+      "B:openstax-intro-python:p0225:c00"
+    ],
+    "context_chars": 2935,
+    "context": "[B:openstax-intro-python:p0229:c01] (source: intro-python.pdf#page=229, page 229, section: 9.3 Common list operations)\nTRY IT\n\nCopy\n\nMake a copy of word_list called wisdom. Sort the list called wisdom. Create a sentence using the words in\n\neach list and print those sentences (no need to add periods at the end of the sentences).\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n9-3-common-list-operations)\n\n[B:openstax-intro-python:p0235:c02] (source: intro-python.pdf#page=235, page 235, section: 9.5 List comprehensions)\nTRY IT\n\nBooks starting with \"A\"\n\nWrite a program that selects words that begin with an \"A\" in the given list. Make sure the new list is then\nsorted in dictionary order. Finally, print the new sorted list.\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/9-5-list-\ncomprehensions)\n\n[B:openstax-intro-python:p0226:c00] (source: intro-python.pdf#page=226, page 226, section: 9.2 Sorting and reversing lists)\n# Sort the list\ndance_list.sort()\nprint(dance_list)\n\nThe above code's output is:\n\n[38, 92, 23, 16]\n[16, 23, 38, 92]\n[\"Dabke\", \"Flamenco\", \"Hopak\", \"Kathak\", \"Salsa\", \"Ballet\", \"Stepping\"]\n[\"Ballet\", \"Dabke\", \"Flamenco\", \"Hopak\", \"Kathak\", \"Salsa\", \"Stepping\"]\n\n[B:openstax-intro-python:p0224:c02] (source: intro-python.pdf#page=224, page 224, section: 9.2 Sorting and reversing lists)\n9.2 Sorting and reversing lists\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Understand the concept of sorting.\n• Use built-in sort() and reverse() methods.\n\nSorting\n\nOrdering elements in a sequence is often useful. Sorting is the task of arranging elements in a sequence in\nascending or descending order.\n\nSorting can work on numerical or non-numerical data. When ordering text, dictionary order is used. Ex: \"bat\"\ncomes before \"cat\" because \"b\" comes before \"c\".\n\n[B:openstax-intro-python:p0225:c00] (source: intro-python.pdf#page=225, page 225, section: 9.2 Sorting and reversing lists)\nCONCEPTS IN PRACTICE\n\nSorting\n\n1 . What would be the last element of the following list if it is sorted in descending order?\n[12, 3, 19, 25, 16, -3, 5]\n\na. 25\n\nb. -3\n\nc. 5\n\n2 . Arrange the following list in ascending order.\n[\"cat\", \"bat\", \"dog\", \"coyote\", \"wolf\"]\n\na. [\"bat\", \"cat\", \"coyote\", \"dog\", \"wolf\"]\n\nb. [\"wolf\", \"coyote\", \"dog\", \"cat\", \"bat\"]\n\n3 . How are the words \"flask\" and \"flash\" related in Python?\n\na. \"flask\" < \"flash\"\n\nb. \"flask\" == \"flash\"\n\nc. \"flask\" > \"flash\"\n\nUsing sort() and reverse()\n\nPython provides methods for arranging elements in a list.\n\n• The sort() method arranges the elements of a list in ascending order. For strings, ASCII values are used\n\nand uppercase characters come before lowercase characters, leading to unexpected results. Ex: \"A\" is\n\nordered before \"a\" in ascending order but so is \"G\"; thus, \"Gail\" comes before \"apple\".\n\n• The reverse() method reverses the elements in a list.",
+    "n_searches": 2,
+    "usage": {
+      "prompt_tokens": 2142,
+      "completion_tokens": 134,
+      "llm_calls": 3
+    },
+    "elapsed_s": 3.94,
+    "cost_usd": 0.000402,
+    "status": "answered",
+    "answer": "Sorting a list of words uses dictionary order, which is based on ASCII values. In this order, uppercase characters come before lowercase characters, so 'Gail' (uppercase 'G') comes before 'apple' (lowercase 'a') [B:openstax-intro-python:p0225:c00].",
+    "citations": [
+      "B:openstax-intro-python:p0225:c00"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": false
+  },
+  {
+    "query_id": "q03",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "Which built-in function gives the total of all numbers stored in a list?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "built-in function total of all numbers in a list",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 52.8,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0227:c00",
+            "page": 227,
+            "score": 0.738783450271672
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0227:c01",
+            "page": 227,
+            "score": 0.7022194025254962
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0231:c00",
+            "page": 231,
+            "score": 0.699530237997133
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0227:c00",
+          "B:openstax-intro-python:p0227:c01",
+          "B:openstax-intro-python:p0231:c00"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"The built-in function that gives the total of all numbers stored in a list is sum().\", \"citations\": [\"B:openstax-intro-python:p0227:c00\", \"B:openstax-intro-python:p0227:c01\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0227:c00",
+      "B:openstax-intro-python:p0227:c01",
+      "B:openstax-intro-python:p0231:c00"
+    ],
+    "context_chars": 1640,
+    "context": "[B:openstax-intro-python:p0227:c00] (source: intro-python.pdf#page=227, page 227, section: 9.3 Common list operations)\n• Use built-in functions max(), min(), and sum().\n\n• Demonstrate how to copy a list.\n\nUsing built-in operations\n\nThe max() function called on a list returns the largest element in the list. The min() function called on a list\n\nreturns the smallest element in the list. The max() and min() functions work for lists as long as elements\n\nwithin the list are comparable.\n\nThe sum() function called on a list of numbers returns the sum of all elements in the list.\n\n[B:openstax-intro-python:p0227:c01] (source: intro-python.pdf#page=227, page 227, section: 9.3 Common list operations)\nEXAMPLE 9.3\n\nCommon list operations\n\n\"\"\"Common list operations.\"\"\"\n\n# Set up a list of number\nsnum_list = [28, 92, 17, 3, -5, 999, 1]\n\n# Set up a list of words\ncity_list = [\"New York\", \"Missoula\", \"Chicago\", \"Bozeman\",\n\"Birmingham\", \"Austin\", \"Sacramento\"]\n\n# Usage of the max() funtion\nprint(max(num_list))\n\n# max() function works for strings as well\nprint(max(city_list))\n\n# Usage of the min() funtion which also works for strings\nprint(min(num_list))\n\nprint(min(city_list))\n\n# sum() only works for a list of numbers\nprint(sum(num_list))\n\nThe above code's output is:\n\n999\nSacramento\n-5\nAustin\n1135\n\n[B:openstax-intro-python:p0231:c00] (source: intro-python.pdf#page=231, page 231, section: 9.4 Nested lists)\n2\n3 # Create a list of numbers\n4 list1 = [[1, 2, 3],\n5 [1, 4, 9],\n6 [1, 8, 27]]\n7\n8 # Iterating the list-of-lists\n9 for row in list1:\n10 for num in row:\n11 print(num, end=\" \")\n12 print()\n\nThe above code's output is:\n\n1 2 3\n1 4 9\n1 8 27",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1079,
+      "completion_tokens": 89,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.16,
+    "cost_usd": 0.000215,
+    "status": "answered",
+    "answer": "The built-in function that gives the total of all numbers stored in a list is sum().",
+    "citations": [
+      "B:openstax-intro-python:p0227:c00",
+      "B:openstax-intro-python:p0227:c01"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "q04",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "Under what condition do max() and min() work on a list?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "max() min() list condition",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 121.1,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0227:c00",
+            "page": 227,
+            "score": 0.812746357158045
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0227:c01",
+            "page": 227,
+            "score": 0.7718983428538847
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0228:c00",
+            "page": 228,
+            "score": 0.7356325387954712
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0227:c00",
+          "B:openstax-intro-python:p0227:c01",
+          "B:openstax-intro-python:p0228:c00"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"max() and min() work on a list as long as elements within the list are comparable [B:openstax-intro-python:p0227:c00].\", \"citations\": [\"B:openstax-intro-python:p0227:c00\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0227:c00",
+      "B:openstax-intro-python:p0227:c01",
+      "B:openstax-intro-python:p0228:c00"
+    ],
+    "context_chars": 2007,
+    "context": "[B:openstax-intro-python:p0227:c00] (source: intro-python.pdf#page=227, page 227, section: 9.3 Common list operations)\n• Use built-in functions max(), min(), and sum().\n\n• Demonstrate how to copy a list.\n\nUsing built-in operations\n\nThe max() function called on a list returns the largest element in the list. The min() function called on a list\n\nreturns the smallest element in the list. The max() and min() functions work for lists as long as elements\n\nwithin the list are comparable.\n\nThe sum() function called on a list of numbers returns the sum of all elements in the list.\n\n[B:openstax-intro-python:p0227:c01] (source: intro-python.pdf#page=227, page 227, section: 9.3 Common list operations)\nEXAMPLE 9.3\n\nCommon list operations\n\n\"\"\"Common list operations.\"\"\"\n\n# Set up a list of number\nsnum_list = [28, 92, 17, 3, -5, 999, 1]\n\n# Set up a list of words\ncity_list = [\"New York\", \"Missoula\", \"Chicago\", \"Bozeman\",\n\"Birmingham\", \"Austin\", \"Sacramento\"]\n\n# Usage of the max() funtion\nprint(max(num_list))\n\n# max() function works for strings as well\nprint(max(city_list))\n\n# Usage of the min() funtion which also works for strings\nprint(min(num_list))\n\nprint(min(city_list))\n\n# sum() only works for a list of numbers\nprint(sum(num_list))\n\nThe above code's output is:\n\n999\nSacramento\n-5\nAustin\n1135\n\n[B:openstax-intro-python:p0228:c00] (source: intro-python.pdf#page=228, page 228, section: 9.3 Common list operations)\nCONCEPTS IN PRACTICE\n\nList operations\n\n1 . What is the correct way to get the minimum of a list named nums_list?\n\na. min(nums_list)\n\nb. nums_list.min()\n\nc. minimum(nums_list)\n\n2 . What is the minimum of the following list?\n[\"Lollapalooza\", \"Coachella\", \"Newport Jazz festival\", \"Hardly Strictly\n\nBluegrass\", \"Austin City Limits\"]\n\na. Coachella\n\nb. Austin City Limits\n\nc. The minimum doesn't exist.\n\n3 . What value does the function call return?\nsum([1.2, 2.1, 3.2, 5.9])\n\na. sum() only works for integers.\n\nb. 11\n\nc. 12.4\n\nCopying a list\n\nThe copy() method is used to create a copy of a list.",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1152,
+      "completion_tokens": 85,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.15,
+    "cost_usd": 0.000224,
+    "status": "answered",
+    "answer": "max() and min() work on a list as long as elements within the list are comparable [B:openstax-intro-python:p0227:c00].",
+    "citations": [
+      "B:openstax-intro-python:p0227:c00"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "q05",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "What is a nested list?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "nested list",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 139.7,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0229:c02",
+            "page": 229,
+            "score": 0.805315375328064
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0230:c01",
+            "page": 230,
+            "score": 0.7505550831887189
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0252:c01",
+            "page": 252,
+            "score": 0.7430620942674833
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0229:c02",
+          "B:openstax-intro-python:p0230:c01",
+          "B:openstax-intro-python:p0252:c01"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"A nested list is a list that contains another list as an element. For example, [2, [3, 5], 17] is a valid nested list, where [3, 5] is the element at index 1. Nested lists are useful for expressing multidimensional data, such as a table represented as a two-dimensional list-of-lists.\", \"citations\": [\"B:openstax-intro-python:p0229:c02\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0229:c02",
+      "B:openstax-intro-python:p0230:c01",
+      "B:openstax-intro-python:p0252:c01"
+    ],
+    "context_chars": 2221,
+    "context": "[B:openstax-intro-python:p0229:c02] (source: intro-python.pdf#page=229, page 229, section: 9.4 Nested lists)\n9.4 Nested lists\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Demonstrate the use of a list-of-lists to structure data.\n• Demonstrate individual element addressing using multi-dimensional indexing.\n• Use nested loops to iterate a list-of-lists.\n\nList-of-lists\n\nLists can be made of any type of element. A list element can also be a list. Ex: [2, [3, 5], 17] is a valid list\n\nwith the list [3, 5] being the element at index 1.\n\nWhen a list is an element inside a larger list, it is called a nested list. Nested lists are useful for expressing\nmultidimensional data. When each of the elements of a larger list is a smaller list, the larger list is called a list-\nof-lists.\n\nEx: A table can be stored as a two-dimensional list-of-lists, where each row of data is a list in the list-of-lists.\n\n[B:openstax-intro-python:p0230:c01] (source: intro-python.pdf#page=230, page 230, section: 9.4 Nested lists)\nCONCEPTS IN PRACTICE\n\nLists\n\nFor each of the questions below, consider the following matrix:\n\n1 . What would be the correct way to represent matA in Python?\n\na. [[7, 4, 5], [3, 9, 6], [1, 2, 8]]\n\nb. [7, 4, 5\n\n3, 9, 6\n1, 2, 8]\n\nc. [[7, 3, 1], [4, 9, 2], [1, 2, 8]\n\n2 . What would be the correct index for the number 6 in the above list?\n\na. [5]\n\nb. [2][1]\n\nc. [1][2]\n\n3 . What would be the result of the following code:\n\nprint(matA[0])\n\na. Error\n\nb. 7\n\nc. [7, 4, 5]\n\nUsing nested loops to iterate nested lists\n\nA nested loop structure can be used to iterate a list-of-lists. For a two-dimensional list-of-lists, an outer for\n\nloop can be used for rows, and an inner for loop can be used for columns.\n\n[B:openstax-intro-python:p0252:c01] (source: intro-python.pdf#page=252, page 252, section: 10.5 Nested dictionaries and dictionary comprehension)\nCONCEPTS IN PRACTICE\n\nNested dictionary structure\n\n1 . What is a nested dictionary in Python?\na. A dictionary that contains only integers as keys and values.\nb. A dictionary that contains another dictionary as a value.\nc. A dictionary that contains only strings as keys and values.\nd. A dictionary that contains only lists as keys and values.",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1206,
+      "completion_tokens": 121,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.77,
+    "cost_usd": 0.000254,
+    "status": "answered",
+    "answer": "A nested list is a list that contains another list as an element. For example, [2, [3, 5], 17] is a valid nested list, where [3, 5] is the element at index 1. Nested lists are useful for expressing multidimensional data, such as a table represented as a two-dimensional list-of-lists.",
+    "citations": [
+      "B:openstax-intro-python:p0229:c02"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "q06",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "What Python statement builds a new list compactly from a pattern in a single line?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "Python statement builds a new list compactly from a pattern in a single line",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 57.1,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0232:c01",
+            "page": 232,
+            "score": 0.7615618251823305
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0235:c00",
+            "page": 235,
+            "score": 0.7101455676382153
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0233:c00",
+            "page": 233,
+            "score": 0.7049219012260437
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0232:c01",
+          "B:openstax-intro-python:p0235:c00",
+          "B:openstax-intro-python:p0233:c00"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"A list comprehension is a Python statement to compactly create a new list using a pattern. The general form is: list_name = [expression for loop_variable in iterable].\", \"citations\": [\"B:openstax-intro-python:p0232:c01\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0232:c01",
+      "B:openstax-intro-python:p0235:c00",
+      "B:openstax-intro-python:p0233:c00"
+    ],
+    "context_chars": 2080,
+    "context": "[B:openstax-intro-python:p0232:c01] (source: intro-python.pdf#page=232, page 232, section: 9.5 List comprehensions)\n9.5 List comprehensions\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Identify the different components of a list comprehension statement.\n\n• Implement filtering using list comprehension.\n\nList comprehensions\n\nA list comprehension is a Python statement to compactly create a new list using a pattern.\n\nThe general form of a list comprehension statement is shown below.\n\nlist_name = [expression for loop_variable in iterable]\n\nlist_name refers to the name of a new list, which can be anything, and the for is the for loop keyword. An\n\nexpression defines what will become part of the new list. loop_variable is an iterator, and iterable is an\n\nobject that can be iterated, such as a list or string.\n\n[B:openstax-intro-python:p0235:c00] (source: intro-python.pdf#page=235, page 235, section: 9.5 List comprehensions)\nnew_list = [m for m in my_list if m < 0]\n\na. [21, 50, 300, 2]\n\nb. [21, -1, 50, -9, 300, -50, 2]\n\nc. [-1, -9, -50]\n\n5 . my_string = \"This is a home.\"\n\nnew_list = [i for i in my_string if i in 'aeiou']\n\na. [i, i, a, o, e]\n\nb. ['i', 'i'', 'a', 'o', 'e']\n\nc. Error\n\n6 . new_list = [r for r in range (0, 21, 2) if r%2 != 0]\n\na. []\n\nb. [21]\n\nc. [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]\n\n[B:openstax-intro-python:p0233:c00] (source: intro-python.pdf#page=233, page 233, section: 9.5 List comprehensions)\nEXAMPLE 9.5\n\nCreating a new list with a list comprehension\n\nA list comprehension shown below in the second code has the same effect as the regular for loop shown in\n\nthe first code. The resultant list is [0, 1, 4, 9, 16, 25, 36, 49, 64, 81] in both cases.\n\nCreating a list of squares using a for loop.\n\n# Create an empty List.\nsquares_list = []\n\n# Add items to a list, as squares of numbers starting at 0 and ending at 9.\nfor i in range(10):\nsquares_list.append(i*i)\n\nCreating a list of squares using the list comprehension.\n\nsquare_list = [i*i for i in range(10)]\n\nThe expression i*i is applied for each value of the loop_variable i.",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1226,
+      "completion_tokens": 95,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.79,
+    "cost_usd": 0.000241,
+    "status": "answered",
+    "answer": "A list comprehension is a Python statement to compactly create a new list using a pattern. The general form is: list_name = [expression for loop_variable in iterable].",
+    "citations": [
+      "B:openstax-intro-python:p0232:c01"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "q07",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "What does get() return when the requested key is not in the dictionary?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "get() return when the requested key is not in the dictionary",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 54.1,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0241:c03",
+            "page": 241,
+            "score": 0.7888390421867426
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0241:c02",
+            "page": 241,
+            "score": 0.728970571098959
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0242:c02",
+            "page": 242,
+            "score": 0.7074582998429728
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0241:c03",
+          "B:openstax-intro-python:p0241:c02",
+          "B:openstax-intro-python:p0242:c02"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"The get() method returns None by default when the requested key is not in the dictionary, or a specified default value if provided as the second argument [B:openstax-intro-python:p0241:c02].\", \"citations\": [\"B:openstax-intro-python:p0241:c02\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0241:c03",
+      "B:openstax-intro-python:p0241:c02",
+      "B:openstax-intro-python:p0242:c02"
+    ],
+    "context_chars": 2548,
+    "context": "[B:openstax-intro-python:p0241:c03] (source: intro-python.pdf#page=241, page 241, section: 10.3 Dictionary operations)\nEx: In the code below, a dictionary object my_dict is initialized with items {\"apple\": 2, \"banana\": 3,\n\n\"orange\": 4}. The square bracket notation and get() method are used to access values associated with the\n\nkeys \"banana\" and \"apple\", respectively. When accessing the dictionary to obtain the key \"pineapple\", -1\n\nis returned since the key does not exist in the dictionary.\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nprint(my_dict[\"banana\"]) # Prints: 3\nprint(my_dict.get(\"apple\")) # Prints: 2\n\n[B:openstax-intro-python:p0241:c02] (source: intro-python.pdf#page=241, page 241, section: 10.3 Dictionary operations)\n10.3 Dictionary operations\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Recognize that a dictionary object is mutable.\n• Evaluate dictionary items, keys, and values.\n• Demonstrate the ability to access, evaluate, and modify dictionary items.\n• Modify a dictionary by adding items.\n• Modify a dictionary by removing items.\n\nAccessing dictionary items\n\nIn Python, values associated with keys in a dictionary can be accessed using the keys as indexes. Here are two\nways to access dictionary items in Python:\n\n• Square bracket notation: Square brackets [] with the key inside access the value associated with that key.\n\nIf the key is not found, an exception will be thrown.\n• get() method: The get() method is called with the key as an argument to access the value associated\n\nwith that key. If the key is not found, the method returns None by default, or a default value specified as\n\nthe second argument.\n\n[B:openstax-intro-python:p0242:c02] (source: intro-python.pdf#page=242, page 242, section: 10.3 Dictionary operations)\nCONCEPTS IN PRACTICE\n\nDictionary items\n\nGiven the dictionary members = {\"Jaya\": \"Student\", \"John\": \"TA\", \"Ksenia\": \"Staff\"},\n\nanswer the following questions.\n\n1 . What is the output of members[\"Jaya\"]?\n\na. 0\n\nb. None\n\nc. \"Student\"\n\n2 . What is the output of members.get(\"jaya\")?\n\na. 0\n\nb. None\n\nc. \"Student\"\n\n3 . What is the output of members.get(\"jaya\", \"does not exist\")?\n\na. \"Student\"\n\nb. \"does not exist\"\n\nc. None\n\nObtaining dictionary keys and values\n\nDictionary keys, values, and both keys and values can be obtained using keys(), values(), and items()\n\nfunction calls, respectively. The return type of keys(), values(), and items() are dict_keys,\n\ndict_values, and dict_items, which can be converted to a list object using the list constructor list().",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1230,
+      "completion_tokens": 102,
+      "llm_calls": 2
+    },
+    "elapsed_s": 3.13,
+    "cost_usd": 0.000246,
+    "status": "answered",
+    "answer": "The get() method returns None by default when the requested key is not in the dictionary, or a specified default value if provided as the second argument [B:openstax-intro-python:p0241:c02].",
+    "citations": [
+      "B:openstax-intro-python:p0241:c02"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "q08",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "Which functions return the keys, the values and the key-value pairs of a dictionary?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "functions return keys values key-value pairs dictionary",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 53.2,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0242:c02",
+            "page": 242,
+            "score": 0.7680177688598633
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0242:c03",
+            "page": 242,
+            "score": 0.7648117542266846
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0243:c00",
+            "page": 243,
+            "score": 0.764034001346355
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0242:c02",
+          "B:openstax-intro-python:p0242:c03",
+          "B:openstax-intro-python:p0243:c00"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"The functions that return the keys, values, and key-value pairs of a dictionary are keys(), values(), and items(), respectively [B:openstax-intro-python:p0242:c03].\",\n\"citations\": [\"B:openstax-intro-python:p0242:c03\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0242:c02",
+      "B:openstax-intro-python:p0242:c03",
+      "B:openstax-intro-python:p0243:c00"
+    ],
+    "context_chars": 1769,
+    "context": "[B:openstax-intro-python:p0242:c02] (source: intro-python.pdf#page=242, page 242, section: 10.3 Dictionary operations)\nCONCEPTS IN PRACTICE\n\nDictionary items\n\nGiven the dictionary members = {\"Jaya\": \"Student\", \"John\": \"TA\", \"Ksenia\": \"Staff\"},\n\nanswer the following questions.\n\n1 . What is the output of members[\"Jaya\"]?\n\na. 0\n\nb. None\n\nc. \"Student\"\n\n2 . What is the output of members.get(\"jaya\")?\n\na. 0\n\nb. None\n\nc. \"Student\"\n\n3 . What is the output of members.get(\"jaya\", \"does not exist\")?\n\na. \"Student\"\n\nb. \"does not exist\"\n\nc. None\n\nObtaining dictionary keys and values\n\nDictionary keys, values, and both keys and values can be obtained using keys(), values(), and items()\n\nfunction calls, respectively. The return type of keys(), values(), and items() are dict_keys,\n\ndict_values, and dict_items, which can be converted to a list object using the list constructor list().\n\n[B:openstax-intro-python:p0242:c03] (source: intro-python.pdf#page=242, page 242, section: 10.3 Dictionary operations)\nEXAMPLE 10.1\n\nString template formatting for course enrollment requests\n\nA dictionary object with items {\"a\": 97, \"b\": 98, \"c\": 99} is created. Functions keys(), values(),\n\nand items() are called to obtain keys, values, and items in the dictionary, respectively. list() is also used\n\nto convert the output to a list object.\n\ndictionary_object = {\"a\": 97, \"b\": 98, \"c\": 99}\n\nprint(dictionary_object.keys())\nprint(list(dictionary_object.keys()))\nprint(dictionary_object.values())\n\n[B:openstax-intro-python:p0243:c00] (source: intro-python.pdf#page=243, page 243, section: 10.3 Dictionary operations)\nprint(dictionary_object.items())\n\nThe above code's output is:\n\ndict_keys([\"a\", \"b\", \"c\"])\n[\"a\", \"b\", \"c\"]\ndict_values([97, 98, 99])\ndict_items([(\"a\", 97), (\"b\", 98), (\"c\", 99)])",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1085,
+      "completion_tokens": 94,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.41,
+    "cost_usd": 0.000219,
+    "status": "answered",
+    "answer": "The functions that return the keys, values, and key-value pairs of a dictionary are keys(), values(), and items(), respectively [B:openstax-intro-python:p0242:c03].",
+    "citations": [
+      "B:openstax-intro-python:p0242:c03"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "q09",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "Can the content of a dictionary be changed after the object has been created?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "Can the content of a dictionary be changed after the object has been created?",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 58.3,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0244:c00",
+            "page": 244,
+            "score": 0.7283591789985205
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0244:c01",
+            "page": 244,
+            "score": 0.7196871209331096
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0244:c02",
+            "page": 244,
+            "score": 0.7166350652793023
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0244:c00",
+          "B:openstax-intro-python:p0244:c01",
+          "B:openstax-intro-python:p0244:c02"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Yes, the content of a dictionary can be changed after the object has been created. You can modify items using square bracket notation or the update() method, and items can also be deleted using the del keyword or the pop() method [B:openstax-intro-python:p0244:c00].\",\n\"citations\": [\"B:openstax-intro-python:p0244:c00\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0244:c00",
+      "B:openstax-intro-python:p0244:c01",
+      "B:openstax-intro-python:p0244:c02"
+    ],
+    "context_chars": 1915,
+    "context": "[B:openstax-intro-python:p0244:c00] (source: intro-python.pdf#page=244, page 244, section: 10.3 Dictionary operations)\nprint(my_dict) # Prints: {\"apple\": 2, \"banana\": 3, \"orange\": 4, \"pineapple\": 1,\n\"cherry\": 0}\n\nTo modify a dictionary item, the two approaches above can be used on an existing dictionary key along with\nthe updated value. Ex:\n\n• Square bracket notation:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nmy_dict[\"apple\"] = 1\nprint(my_dict) # Prints: {\"apple\": 1, \"banana\": 3, \"orange\": 4}\n\n• update() method:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nmy_dict.update({\"apple\": 1})\nprint(my_dict) # Prints: {\"apple\": 1, \"banana\": 3, \"orange\": 4}\n\nItems can be deleted from a dictionary using the del keyword or the pop() method.\n\n• del keyword:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\ndel my_dict[\"orange\"]\nprint(my_dict) # Prints: {\"apple\": 2, \"banana\": 3}\n\n• pop() method:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\ndeleted_value = my_dict.pop(\"banana\")\nprint(deleted_value) # Prints: 3\nprint(my_dict) # Output: {\"apple\": 2, \"orange\": 4}\n\n[B:openstax-intro-python:p0244:c01] (source: intro-python.pdf#page=244, page 244, section: 10.3 Dictionary operations)\nCHECKPOINT\n\nModifying dictionary items\n\nModifying dictionary items; ch 10, video 7 (https://www.openstax.org/r/modifying-dictionary)\n\n[B:openstax-intro-python:p0244:c02] (source: intro-python.pdf#page=244, page 244, section: 10.3 Dictionary operations)\nCONCEPTS IN PRACTICE\n\nModifying a dictionary\n\nGiven the dictionary food = {\"Coconut soup\": \"$15\", \"Butter Chicken\": \"$18\", \"Kabob\":\n\n\"$20\"}, answer the following questions.\n\n7 . Which option modifies the value for the key \"Coconut soup\" to \"$11\" while keeping other items the\n\nsame?\na. food = {\"\"Coconut soup\": \"$15\"\"}\n\nb. food[\"Coconut soup\"] = 11\n\nc. food[\"Coconut soup\"] = \"$11\"\n\n8 . Which option removes the item \"Butter Chicken\": \"$18\" from the food dictionary?",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1185,
+      "completion_tokens": 122,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.52,
+    "cost_usd": 0.000251,
+    "status": "answered",
+    "answer": "Yes, the content of a dictionary can be changed after the object has been created. You can modify items using square bracket notation or the update() method, and items can also be deleted using the del keyword or the pop() method [B:openstax-intro-python:p0244:c00].",
+    "citations": [
+      "B:openstax-intro-python:p0244:c00"
+    ],
+    "context_evidence": false,
+    "first_search_hit3": false
+  },
+  {
+    "query_id": "q10",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "What are nested dictionaries?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "nested dictionaries",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 47.8,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0251:c01",
+            "page": 251,
+            "score": 0.8643295168876648
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0252:c00",
+            "page": 252,
+            "score": 0.8435913324356079
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0252:c01",
+            "page": 252,
+            "score": 0.8427477572710673
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0251:c01",
+          "B:openstax-intro-python:p0252:c00",
+          "B:openstax-intro-python:p0252:c01"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Nested dictionaries are dictionaries that are stored as values within another dictionary, allowing for the organization of data in key-value pairs, such as an organizational chart with departments as keys and employee dictionaries as values [B:openstax-intro-python:p0251:c01].\", \"citations\": [\"B:openstax-intro-python:p0251:c01\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0251:c01",
+      "B:openstax-intro-python:p0252:c00",
+      "B:openstax-intro-python:p0252:c01"
+    ],
+    "context_chars": 2092,
+    "context": "[B:openstax-intro-python:p0251:c01] (source: intro-python.pdf#page=251, page 251, section: 10.5 Nested dictionaries and dictionary comprehension)\n10.5 Nested dictionaries and dictionary comprehension\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Explain the structure of nested dictionaries.\n• Use dictionary comprehension to create a dictionary object.\n\nNested dictionaries\n\nAs described before, Python dictionaries are a type of data structure that allows for storing data in key-value\npairs. Nested dictionaries are dictionaries that are stored as values within another dictionary. Ex: An\norganizational chart with keys being different departments and values being dictionaries of employees in a\ngiven department. For storing employee information in a department, a dictionary can be used with keys\nbeing employee IDs and values being employee names. The tables below outline the structure of such nested\ndictionaries and how nested values can be accessed.\n\n[B:openstax-intro-python:p0252:c00] (source: intro-python.pdf#page=252, page 252, section: 10.5 Nested dictionaries and dictionary comprehension)\nEXAMPLE 10.4\n\nDefining nested dictionaries and accessing elements\n\nDefining nested dictionaries\n\ncompany_org_chart = {\n\"Marketing\": {\n\"ID234\": \"Jane Smith\"\n},\n\"Sales\": {\n\"ID123\": \"Bob Johnson\",\n\"ID122\": \"David Lee\"\n},\n\"Engineering\": {\n\"ID303\": \"Radhika Potlapally\",\n\"ID321\": \"Maryam Samimi\"\n}\n}\n\nTable 10.8\n\nAccessing nested dictionary items\n\nprint(company_org_chart[\"Sales\"][\"ID122\"])\nprint(company_org_chart[\"Engineering\"][\"ID321\"])\n\nDavid Lee\nMaryam Samimi\n\nTable 10.9\n\n[B:openstax-intro-python:p0252:c01] (source: intro-python.pdf#page=252, page 252, section: 10.5 Nested dictionaries and dictionary comprehension)\nCONCEPTS IN PRACTICE\n\nNested dictionary structure\n\n1 . What is a nested dictionary in Python?\na. A dictionary that contains only integers as keys and values.\nb. A dictionary that contains another dictionary as a value.\nc. A dictionary that contains only strings as keys and values.\nd. A dictionary that contains only lists as keys and values.",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1036,
+      "completion_tokens": 101,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.25,
+    "cost_usd": 0.000216,
+    "status": "answered",
+    "answer": "Nested dictionaries are dictionaries that are stored as values within another dictionary, allowing for the organization of data in key-value pairs, such as an organizational chart with departments as keys and employee dictionaries as values [B:openstax-intro-python:p0251:c01].",
+    "citations": [
+      "B:openstax-intro-python:p0251:c01"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "q11",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "In the Lists chapter, what does the pop() operation do?",
+    "model": "gpt-4o-mini",
+    "filters": {
+      "chapter": 9
+    },
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "pop() operation",
+        "filter": {
+          "chapter": 9
+        },
+        "top_k": 3,
+        "latency_ms": 43.3,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0222:c00",
+            "page": 222,
+            "score": 0.7501745223999023
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0221:c03",
+            "page": 221,
+            "score": 0.6883817500840587
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0222:c02",
+            "page": 222,
+            "score": 0.6841532368477349
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0222:c00",
+          "B:openstax-intro-python:p0221:c03",
+          "B:openstax-intro-python:p0222:c02"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"The pop() operation removes the last item of a list and does not require a parameter.\", \"citations\": [\"B:openstax-intro-python:p221:c03\", \"B:openstax-intro-python:p222:c02\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0222:c00",
+      "B:openstax-intro-python:p0221:c03",
+      "B:openstax-intro-python:p0222:c02"
+    ],
+    "context_chars": 2097,
+    "context": "[B:openstax-intro-python:p0222:c00] (source: intro-python.pdf#page=222, page 222, section: 9.1 Modifying and iterating lists)\nEXAMPLE 9.1\n\nSimple operations to modify a list\n\nThe code below demonstrates simple operations for modifying a list.\n\nLine 8 shows the append() operation, line 12 shows the remove() operation, and line 17 shows the pop()\n\noperation. Since the pop() operation removes the last element, no parameter is needed.\n\n1 \"\"\"Operations for adding and removing elements from a list.\"\"\"\n2\n3 # Create a list of students working on a project\n4 student_list = [\"Jamie\", \"Vicky\", \"DeShawn\", \"Tae\"]\n5 print(student_list)\n6\n7 # Another student joins the project. The student must be added to\nthe list.\n8 student_list.append(\"Ming\")\n9 print(student_list)\n10\n11 # \"Jamie\" withdraws from the project. Jamie must be removed from\nthe list.\n12 student_list.remove(\"Jamie\")\n13 print(student_list)\n14\n15 # Suppose \"Ming\" had to be removed from the list.\n16 # A pop() operation can be used since Ming is last in the list.\n17 student_list.pop()\n18 print(student_list)\n\nThe above code's output is:\n\n[B:openstax-intro-python:p0221:c03] (source: intro-python.pdf#page=221, page 221, section: 9.1 Modifying and iterating lists)\n9.1 Modifying and iterating lists\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Modify a list using append(), remove(), and pop() list operations.\n\n• Search a list using a for loop.\n\nUsing list operations to modify a list\n\nAn append() operation is used to add an element to the end of a list. In programming, append means add to\n\nthe end. A remove() operation removes the specified element from a list. A pop() operation removes the last\n\nitem of a list.\n\n[B:openstax-intro-python:p0222:c02] (source: intro-python.pdf#page=222, page 222, section: 9.1 Modifying and iterating lists)\nCONCEPTS IN PRACTICE\n\nModifying lists\n\n1 . Which operation can be used to add an element to the end of a list?\na. add()\n\nb. append()\n\nc. pop()\n\n2 . What is the correct syntax to remove the element 23 from a list called number_list?\n\na. remove()\n\nb. number_list.remove()",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1139,
+      "completion_tokens": 79,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.17,
+    "cost_usd": 0.000218,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "model_answer": "The pop() operation removes the last item of a list and does not require a parameter.",
+    "abstain_reason": "citations_not_in_context: ['B:openstax-intro-python:p221:c03', 'B:openstax-intro-python:p222:c02']",
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "q12",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "In the Dictionaries chapter, how can an item be removed using pop() or another way?",
+    "model": "gpt-4o-mini",
+    "filters": {
+      "chapter": 10
+    },
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "remove item pop dictionary",
+        "filter": {
+          "chapter": 10
+        },
+        "top_k": 3,
+        "latency_ms": 74.7,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0244:c00",
+            "page": 244,
+            "score": 0.7052366137504578
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0244:c02",
+            "page": 244,
+            "score": 0.675331711769104
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0245:c00",
+            "page": 245,
+            "score": 0.6697412926112847
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0244:c00",
+          "B:openstax-intro-python:p0244:c02",
+          "B:openstax-intro-python:p0245:c00"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "remove item from dictionary",
+        "filter": {
+          "chapter": 10
+        },
+        "top_k": 3,
+        "latency_ms": 43.1,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0244:c00",
+            "page": 244,
+            "score": 0.7390982664168927
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0241:c02",
+            "page": 241,
+            "score": 0.73783065451201
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0255:c01",
+            "page": 255,
+            "score": 0.7073929833067102
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0241:c02",
+          "B:openstax-intro-python:p0255:c01"
+        ],
+        "duplicate_ids": [
+          "B:openstax-intro-python:p0244:c00"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "pop method dictionary",
+        "filter": {
+          "chapter": 10
+        },
+        "top_k": 3,
+        "latency_ms": 87.0,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0255:c01",
+            "page": 255,
+            "score": 0.678112128005971
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0255:c00",
+            "page": 255,
+            "score": 0.6600207686424255
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0244:c00",
+            "page": 244,
+            "score": 0.654297947883606
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0255:c00"
+        ],
+        "duplicate_ids": [
+          "B:openstax-intro-python:p0255:c01",
+          "B:openstax-intro-python:p0244:c00"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Items can be removed from a dictionary using the del keyword or the pop() method. The del keyword can be used as follows: del my_dict['key'], and the pop() method can be used as follows: deleted_value = my_dict.pop('key') which also returns the value of the removed item [B:openstax-intro-python:p0244:c00].\", \"citations\": [\"B:openstax-intro-python:p0244:c00\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0244:c00",
+      "B:openstax-intro-python:p0244:c02",
+      "B:openstax-intro-python:p0245:c00",
+      "B:openstax-intro-python:p0241:c02",
+      "B:openstax-intro-python:p0255:c01",
+      "B:openstax-intro-python:p0255:c00"
+    ],
+    "context_chars": 4797,
+    "context": "[B:openstax-intro-python:p0244:c00] (source: intro-python.pdf#page=244, page 244, section: 10.3 Dictionary operations)\nprint(my_dict) # Prints: {\"apple\": 2, \"banana\": 3, \"orange\": 4, \"pineapple\": 1,\n\"cherry\": 0}\n\nTo modify a dictionary item, the two approaches above can be used on an existing dictionary key along with\nthe updated value. Ex:\n\n• Square bracket notation:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nmy_dict[\"apple\"] = 1\nprint(my_dict) # Prints: {\"apple\": 1, \"banana\": 3, \"orange\": 4}\n\n• update() method:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nmy_dict.update({\"apple\": 1})\nprint(my_dict) # Prints: {\"apple\": 1, \"banana\": 3, \"orange\": 4}\n\nItems can be deleted from a dictionary using the del keyword or the pop() method.\n\n• del keyword:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\ndel my_dict[\"orange\"]\nprint(my_dict) # Prints: {\"apple\": 2, \"banana\": 3}\n\n• pop() method:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\ndeleted_value = my_dict.pop(\"banana\")\nprint(deleted_value) # Prints: 3\nprint(my_dict) # Output: {\"apple\": 2, \"orange\": 4}\n\n[B:openstax-intro-python:p0244:c02] (source: intro-python.pdf#page=244, page 244, section: 10.3 Dictionary operations)\nCONCEPTS IN PRACTICE\n\nModifying a dictionary\n\nGiven the dictionary food = {\"Coconut soup\": \"$15\", \"Butter Chicken\": \"$18\", \"Kabob\":\n\n\"$20\"}, answer the following questions.\n\n7 . Which option modifies the value for the key \"Coconut soup\" to \"$11\" while keeping other items the\n\nsame?\na. food = {\"\"Coconut soup\": \"$15\"\"}\n\nb. food[\"Coconut soup\"] = 11\n\nc. food[\"Coconut soup\"] = \"$11\"\n\n8 . Which option removes the item \"Butter Chicken\": \"$18\" from the food dictionary?\n\n[B:openstax-intro-python:p0245:c00] (source: intro-python.pdf#page=245, page 245, section: 10.3 Dictionary operations)\na. food.remove(\"Butter Chicken\")\n\nb. del food[\"Butter Chicken\"]\n\nc. del food.del(\"Butter Chicken\")\n\n9 . What is the content of the food dictionary after calling food.update({\"Kabob\": \"$22\", \"Sushi\":\n\n\"$16\"})?\n\na. {\"Coconut soup\": \"$15\", \"Butter Chicken\": \"$18\", \"Kabob\": \"$22\", \"Sushi\":\n\n\"$16\"}\n\nb. {\"Coconut soup\": \"$15\", \"Butter Chicken\": \"$18\", \"Kabob\": \"$20\", \"Sushi\":\n\n\"$16\"}\n\nc. { \"Sushi\": \"$16\", \"Coconut soup\": \"$15\", \"Butter Chicken\": \"$18\", \"Kabob\":\n\n\"$20\"}\n\n[B:openstax-intro-python:p0241:c02] (source: intro-python.pdf#page=241, page 241, section: 10.3 Dictionary operations)\n10.3 Dictionary operations\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Recognize that a dictionary object is mutable.\n• Evaluate dictionary items, keys, and values.\n• Demonstrate the ability to access, evaluate, and modify dictionary items.\n• Modify a dictionary by adding items.\n• Modify a dictionary by removing items.\n\nAccessing dictionary items\n\nIn Python, values associated with keys in a dictionary can be accessed using the keys as indexes. Here are two\nways to access dictionary items in Python:\n\n• Square bracket notation: Square brackets [] with the key inside access the value associated with that key.\n\nIf the key is not found, an exception will be thrown.\n• get() method: The get() method is called with the key as an argument to access the value associated\n\nwith that key. If the key is not found, the method returns None by default, or a default value specified as\n\nthe second argument.\n\n[B:openstax-intro-python:p0255:c01] (source: intro-python.pdf#page=255, page 255, section: 10.6 Chapter summary)\n10.6 Chapter summary\n\nHighlights from this chapter include:\n\n• A dictionary in Python is a container object including key-value pairs.\n• The dict type implements a dictionary in Python.\n\n• A dictionary cannot have duplicate keys.\n• A dictionary is a mutable object but keys in the dictionary must be immutable objects.\n• A dictionary can be created using curly braces or the dict() method.\n\n• Values in the dictionary can be obtained through square bracket notation or the get() method.\n\n• Dictionary items, keys, and values can be obtained using items(), keys(), and values() methods,\n\nrespectively.\n• Existing items can be modified or new items can be added to a dictionary using square brackets notation\nor the update() method.\n\n• Items can be removed from a dictionary using the del keyword or the pop() method.\n\n[B:openstax-intro-python:p0255:c00] (source: intro-python.pdf#page=255, page 255, section: 10.5 Nested dictionaries and dictionary comprehension)\nResulting dictionary:\n\n{\n\"Engineering\": {1001: {\"name\": \"Alice\", \"salary\": 75000}, 1003: {\"name\":\n\"Charlie\", \"salary\": 80000}},\n\"Sales\": {1002: {\"name\": \"Bob\", \"salary\": 50000}, 1005: {\"name\": \"Eve\",\n\"salary\": 55000}},\n\"Marketing\": {1004: {\"name\": \"Dave\", \"salary\": 60000}}\n}\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n10-5-nested-dictionaries-and-dictionary-comprehension)",
+    "n_searches": 3,
+    "usage": {
+      "prompt_tokens": 4552,
+      "completion_tokens": 160,
+      "llm_calls": 4
+    },
+    "elapsed_s": 4.51,
+    "cost_usd": 0.000779,
+    "status": "answered",
+    "answer": "Items can be removed from a dictionary using the del keyword or the pop() method. The del keyword can be used as follows: del my_dict['key'], and the pop() method can be used as follows: deleted_value = my_dict.pop('key') which also returns the value of the removed item [B:openstax-intro-python:p0244:c00].",
+    "citations": [
+      "B:openstax-intro-python:p0244:c00"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "q13",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "What happens to duplicate values during the data cleaning step?",
+    "model": "gpt-4o-mini",
+    "filters": {
+      "book": "data_science"
+    },
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "duplicate values data cleaning",
+        "filter": {
+          "book": "data_science"
+        },
+        "top_k": 3,
+        "latency_ms": 46.1,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0086:c03",
+            "page": 86,
+            "score": 0.7408598065376282
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0086:c00",
+            "page": 86,
+            "score": 0.7198520469753728
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0093:c00",
+            "page": 93,
+            "score": 0.7135227747871158
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0086:c03",
+          "B:openstax-data-science:p0086:c00",
+          "B:openstax-data-science:p0093:c00"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "duplicate values during data cleaning",
+        "filter": {
+          "book": "data_science"
+        },
+        "top_k": 3,
+        "latency_ms": 47.7,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0086:c03",
+            "page": 86,
+            "score": 0.7578975558280945
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0086:c00",
+            "page": 86,
+            "score": 0.7452040466544614
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0094:c04",
+            "page": 94,
+            "score": 0.736666202545166
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0094:c04"
+        ],
+        "duplicate_ids": [
+          "B:openstax-data-science:p0086:c03",
+          "B:openstax-data-science:p0086:c00"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "data cleaning duplicate values removal",
+        "filter": {
+          "book": "data_science"
+        },
+        "top_k": 3,
+        "latency_ms": 46.7,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0086:c03",
+            "page": 86,
+            "score": 0.7528101205825806
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0093:c00",
+            "page": 93,
+            "score": 0.7506179064880567
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0086:c00",
+            "page": 86,
+            "score": 0.7399785077584693
+          }
+        ],
+        "new_context_ids": [],
+        "duplicate_ids": [
+          "B:openstax-data-science:p0086:c03",
+          "B:openstax-data-science:p0093:c00",
+          "B:openstax-data-science:p0086:c00"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"During the data cleaning step, duplicate values are identified and removed from the dataset to ensure accuracy and reliability. For example, a data analyst may remove duplicate entries, which can significantly reduce the total number of records being analyzed, as seen in a case where duplicates reduced responses from 1,000 to 900 [B:openstax-data-science:p0094:c04].\", \"citations\": [\"B:openstax-data-science:p0094:c04\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0086:c03",
+      "B:openstax-data-science:p0086:c00",
+      "B:openstax-data-science:p0093:c00",
+      "B:openstax-data-science:p0094:c04"
+    ],
+    "context_chars": 4067,
+    "context": "[B:openstax-data-science:p0086:c03] (source: data-science.pdf#page=86, page 86, section: 2.4 Data Cleaning and Preprocessing)\nThe goal of data cleaning and preprocessing is to guarantee that the data used for analysis is accurate,\nconsistent, and relevant. It helps to improve the quality of the results and increase the efficiency of the analysis\nprocess. A well-prepared dataset can lead to more accurate insights and better decision-making.\n\nHandling Missing Data and Outliers\n\nMissing data refers to any data points or values that are not present in a dataset. This could be due to data\ncollection errors, data corruption, or nonresponse from participants in a study. Missing data can impact the\naccuracy and validity of an analysis, as it reduces the sample size and potentially introduces bias.\n\nSome specific examples of missing data include the following:\n\n1. A survey participant forgetting to answer a question\n2. A malfunction in data collection equipment resulting in missing values\n3. A participant choosing not to answer a question due to sensitivity or discomfort\n\n[B:openstax-data-science:p0086:c00] (source: data-science.pdf#page=86, page 86, section: 2.4 Data Cleaning and Preprocessing)\n2.4 Data Cleaning and Preprocessing\n\nLearning Outcomes\nBy the end of this section, you should be able to:\n\n• 2.4.1 Apply methods to deal with missing data and outliers.\n• 2.4.2 Explain data standardization techniques, such as normalization, transformation, and\naggregation.\n• 2.4.3 Identify sources of noise in data and apply various data preprocessing methods to reduce\nnoise.\n\nData cleaning and preprocessing is an important stage in any data science task. It refers to the technique of\norganizing and converting raw data into usable structures for further analysis. It involves extracting irrelevant\nor duplicate data, handling missing values, and correcting errors or inconsistencies. This ensures that the data\nis accurate, comprehensive, and ready for analysis. Data cleaning and preprocessing typically involve the\nfollowing steps:\n\n1. Data integration. Data integration refers to merging data from multiple sources into a single dataset.\n\n[B:openstax-data-science:p0093:c00] (source: data-science.pdf#page=93, page 93, section: 2.4 Data Cleaning and Preprocessing)\naccurate conclusions and making predictions from the data. Most noisy data is caused by human errors in data\nentry, technical errors in data collection or transmission, or natural variability in the data itself. Noisy data is\nremoved and cleaned by identifying and correcting errors, removing outliers, and filtering out irrelevant\ninformation. Noisy data can negatively impact data analysis and modeling, and it may indicate that there are\nissues with the model's structure or assumptions. Noisy data is unwanted information that can be removed.\n\nStrategies to reduce the noisy data are summarized in Table 2.7.\n\nStrategy\nExample\n\nData cleaning\nRemoving duplicate or irrelevant data from a dataset, such as deleting repeated\nrows in a spreadsheet or filtering out incomplete or error-prone data entries.\n\n[B:openstax-data-science:p0094:c04] (source: data-science.pdf#page=94, page 94, section: 2.4 Data Cleaning and Preprocessing)\nConsider a marketing company conducting a survey on customer satisfaction for a new product launch. The\ncompany collected data from 1,000 respondents, but when the company started analyzing the data, it noticed\nseveral inconsistencies and missing values. The company's data analyst realized that the data standardization\nand validation processes were not adequately performed before the survey results were recorded. To correct\nthis issue, the data analyst first identified and removed all duplicate entries, reducing the total number of\nresponses to 900. Then, they used automated scripts to identify and fill in missing values, which accounted for\n95 responses. The remaining 805 responses were then checked for data accuracy using statistical analysis.\nAfter the data standardization and validation process, the company had a clean and reliable dataset of 805",
+    "n_searches": 3,
+    "usage": {
+      "prompt_tokens": 3766,
+      "completion_tokens": 163,
+      "llm_calls": 4
+    },
+    "elapsed_s": 4.5,
+    "cost_usd": 0.000663,
+    "status": "answered",
+    "answer": "During the data cleaning step, duplicate values are identified and removed from the dataset to ensure accuracy and reliability. For example, a data analyst may remove duplicate entries, which can significantly reduce the total number of records being analyzed, as seen in a case where duplicates reduced responses from 1,000 to 900 [B:openstax-data-science:p0094:c04].",
+    "citations": [
+      "B:openstax-data-science:p0094:c04"
+    ],
+    "context_evidence": false,
+    "first_search_hit3": false
+  },
+  {
+    "query_id": "q14",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "What does MCAR mean for missing data?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "MCAR missing data",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 53.9,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0087:c01",
+            "page": 87,
+            "score": 0.8695042807159272
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0087:c02",
+            "page": 87,
+            "score": 0.756171851614493
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0086:c03",
+            "page": 86,
+            "score": 0.7485992462277875
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0087:c01",
+          "B:openstax-data-science:p0087:c02",
+          "B:openstax-data-science:p0086:c03"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"MCAR (missing completely at random) refers to missing data that is not related to any other variables and has no underlying cause for its absence. For example, if respondents accidentally skip a question in a survey, the missing data is considered MCAR if it is unrelated to the other variables being collected.\", \"citations\": [\"B:openstax-data-science:p0087:c01\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0087:c01",
+      "B:openstax-data-science:p0087:c02",
+      "B:openstax-data-science:p0086:c03"
+    ],
+    "context_chars": 2435,
+    "context": "[B:openstax-data-science:p0087:c01] (source: data-science.pdf#page=87, page 87, section: 2.4 Data Cleaning and Preprocessing)\nIt is important to distinguish between different types of missing data. MCAR (missing completely at\nrandom) data is missing data not related to any other variables, with no underlying cause for its absence.\nConsider data collection with a survey asking about driving habits. One of the demographic questions asks\nfor income level. Some respondents accidentally skip this question, and so there is missing data for\nincome, but this is not related to the variables being collected related to driving habits.\n\n[B:openstax-data-science:p0087:c02] (source: data-science.pdf#page=87, page 87, section: 2.4 Data Cleaning and Preprocessing)\nMAR (missing at random) data is missing data related to other variables but not to any unknown or\nunmeasured variables. As an example, during data collection, a survey is sent to respondents and the\nsurvey asks about loneliness. One of the questions asks about memory retention. Some older respondents\nmight skip this question since they may be unwilling to share this type of information. The likelihood of\nmissing data for loneliness factors is related to age (older respondents). Thus, the missing data is related\nto an observed variable of age but not directly related to loneliness measurements.\n\n[B:openstax-data-science:p0086:c03] (source: data-science.pdf#page=86, page 86, section: 2.4 Data Cleaning and Preprocessing)\nThe goal of data cleaning and preprocessing is to guarantee that the data used for analysis is accurate,\nconsistent, and relevant. It helps to improve the quality of the results and increase the efficiency of the analysis\nprocess. A well-prepared dataset can lead to more accurate insights and better decision-making.\n\nHandling Missing Data and Outliers\n\nMissing data refers to any data points or values that are not present in a dataset. This could be due to data\ncollection errors, data corruption, or nonresponse from participants in a study. Missing data can impact the\naccuracy and validity of an analysis, as it reduces the sample size and potentially introduces bias.\n\nSome specific examples of missing data include the following:\n\n1. A survey participant forgetting to answer a question\n2. A malfunction in data collection equipment resulting in missing values\n3. A participant choosing not to answer a question due to sensitivity or discomfort",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1081,
+      "completion_tokens": 109,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.44,
+    "cost_usd": 0.000228,
+    "status": "answered",
+    "answer": "MCAR (missing completely at random) refers to missing data that is not related to any other variables and has no underlying cause for its absence. For example, if respondents accidentally skip a question in a survey, the missing data is considered MCAR if it is unrelated to the other variables being collected.",
+    "citations": [
+      "B:openstax-data-science:p0087:c01"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "q15",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "When should a log transformation be applied to data?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "log transformation data",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 48.5,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0092:c02",
+            "page": 92,
+            "score": 0.83514803647995
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0092:c01",
+            "page": 92,
+            "score": 0.7981444121513135
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0093:c02",
+            "page": 93,
+            "score": 0.7268173315172596
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0092:c02",
+          "B:openstax-data-science:p0092:c01",
+          "B:openstax-data-science:p0093:c02"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"A log transformation should be applied when the data is highly skewed, meaning most data points fall toward one end of the distribution. This transformation helps shift the distribution toward a more symmetrical shape, making it easier to analyze and improving the accuracy of statistical models that assume normality [B:openstax-data-science:p0092:c02].\", \"citations\": [\"B:openstax-data-science:p0092:c02\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0092:c02",
+      "B:openstax-data-science:p0092:c01",
+      "B:openstax-data-science:p0093:c02"
+    ],
+    "context_chars": 2796,
+    "context": "[B:openstax-data-science:p0092:c02] (source: data-science.pdf#page=92, page 92, section: 2.4 Data Cleaning and Preprocessing)\nOne commonly used data transformation technique is the log transformation, which requires taking the\nlogarithm of the data values. Log transformation is often used when the data is highly skewed, meaning most\nof the data points fall toward one end of the distribution. This can cause problems in data analysis as the data\nmay not follow a normal distribution. By taking the logarithm of the values, the distribution can be shifted\ntoward a more symmetrical shape, making it easier to analyze. Another common transformation technique is\nthe square root transformation, which involves taking the square root of the data values. Similar to log\ntransformation, square root transformation is often used to address issues with skewness and make the data\nmore normally distributed. Square root transformation is also useful when the data contains values close to\nzero, as taking the square root of these values can bring them closer to the rest of the data and reduce the\nimpact of extreme values.\n\n[B:openstax-data-science:p0092:c01] (source: data-science.pdf#page=92, page 92, section: 2.4 Data Cleaning and Preprocessing)\nData transformation is a statistical technique used to modify the original structure of the data in order to make\nit more suitable for analysis. Data transformation can involve various mathematical operations such as\nlogarithmic, square root, or exponential transformations. One of the main reasons for transforming data is to\naddress issues related to statistical assumptions. For example, some statistical models assume that the data is\nnormally distributed. If the data is not distributed normally, this can lead to incorrect results and\ninterpretations. In such cases, transforming the data can help to make it closer to a normal distribution and\nimprove the accuracy of the analysis.\n\n[B:openstax-data-science:p0093:c02] (source: data-science.pdf#page=93, page 93, section: 2.4 Data Cleaning and Preprocessing)\nBinning\nA researcher is studying the age demographics of a population in a city. Instead\nof looking at individual ages, the researcher decides to bin the data into age\ngroups of 10 years (e.g., 0–10, 10–20, 20–30, etc.). This allows for a more\ncomprehensive and easier analysis of the data.\n\nData transformation\nConsider the following dataset that shows the number of COVID-19 cases\nrecorded in a country at different points in time—01/01/2020, 02/02/2020, 03/\n01/2020—are 1000, 10000, 100000, respectively. To transform this data using\nlog, we can take the log base 10 of the number of cases column. This would\nresult in a transformed data as follows: 01/01/2020, 02/02/2020, 03/01/2020 are\n3, 4, 5, respectively.\n\nDimensionality\nreduction",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1228,
+      "completion_tokens": 118,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.55,
+    "cost_usd": 0.000255,
+    "status": "answered",
+    "answer": "A log transformation should be applied when the data is highly skewed, meaning most data points fall toward one end of the distribution. This transformation helps shift the distribution toward a more symmetrical shape, making it easier to analyze and improving the accuracy of statistical models that assume normality [B:openstax-data-science:p0092:c02].",
+    "citations": [
+      "B:openstax-data-science:p0092:c02"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "q16",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "Which kind of compression shrinks a file without throwing any data away?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "compression shrinks a file without throwing any data away",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 53.0,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0098:c05",
+            "page": 98,
+            "score": 0.8259956344368691
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0098:c04",
+            "page": 98,
+            "score": 0.8101076596911171
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0098:c06",
+            "page": 98,
+            "score": 0.7215517925291198
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0098:c05",
+          "B:openstax-data-science:p0098:c04",
+          "B:openstax-data-science:p0098:c06"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Lossless compression aims to reduce file size without removing any data. This method achieves compression by finding patterns and redundancies in the data and representing them more efficiently, allowing for the reconstruction of the original data without any loss in quality. Examples include ZIP, RAR, and PNG. [B:openstax-data-science:p0098:c05]\", \"citations\": [\"B:openstax-data-science:p0098:c05\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0098:c05",
+      "B:openstax-data-science:p0098:c04",
+      "B:openstax-data-science:p0098:c06"
+    ],
+    "context_chars": 1744,
+    "context": "[B:openstax-data-science:p0098:c05] (source: data-science.pdf#page=98, page 98, section: 2.5 Handling Large Datasets)\n• Lossy compression reduces the size of data by permanently extracting particular data that is considered\nirrelevant or redundant. This method can significantly decrease file sizes, but it also results in a loss of\nsome data. Lossy compression is often utilized for multimedia files and images, where slight modifications\nin quality may not be noticeable to the human eye. Examples of lossy compression include MP3 and JPEG.\n• Lossless compression aims to reduce file size without removing any data. This method achieves\ncompression by finding patterns and redundancies in the data and representing them more efficiently.\nThis allows for the reconstruction of the original data without any loss in quality. Lossless compression is\ncommonly used for text and numerical data, where every piece of information is crucial. Examples of\nlossless compression include ZIP, RAR, and PNG.\n\n[B:openstax-data-science:p0098:c04] (source: data-science.pdf#page=98, page 98, section: 2.5 Handling Large Datasets)\nData compression is a method of reducing file size while retaining essential information; it can be applied to\nmany types of databases. Data compression is classified into two categories, lossy and lossless:\n\n[B:openstax-data-science:p0098:c06] (source: data-science.pdf#page=98, page 98, section: 2.5 Handling Large Datasets)\nThere are several methods of data lossless compression, including Huffman coding. Huffman coding\nworks by assigning shorter binary codes to the most frequently used characters or symbols in a given\ndataset and longer codes to less frequently used characters, as shown in Figure 2.4. This results in a more",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 973,
+      "completion_tokens": 126,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.74,
+    "cost_usd": 0.000222,
+    "status": "answered",
+    "answer": "Lossless compression aims to reduce file size without removing any data. This method achieves compression by finding patterns and redundancies in the data and representing them more efficiently, allowing for the reconstruction of the original data without any loss in quality. Examples include ZIP, RAR, and PNG. [B:openstax-data-science:p0098:c05]",
+    "citations": [
+      "B:openstax-data-science:p0098:c05"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "t01",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "Why is it impossible to have duplicate keys?",
+    "model": "gpt-4o-mini",
+    "filters": {
+      "book": "intro_python"
+    },
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "duplicate keys in dictionaries",
+        "filter": {
+          "book": "intro_python"
+        },
+        "top_k": 3,
+        "latency_ms": 56.3,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0239:c00",
+            "page": 239,
+            "score": 0.8420820236206055
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0255:c01",
+            "page": 255,
+            "score": 0.7766164807538468
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0241:c03",
+            "page": 241,
+            "score": 0.7666732807950224
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0239:c00",
+          "B:openstax-intro-python:p0255:c01",
+          "B:openstax-intro-python:p0241:c03"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "why cannot have duplicate keys in dictionaries",
+        "filter": {
+          "book": "intro_python"
+        },
+        "top_k": 3,
+        "latency_ms": 53.9,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0239:c00",
+            "page": 239,
+            "score": 0.8219067560489933
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0255:c01",
+            "page": 255,
+            "score": 0.7766430181307178
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0241:c03",
+            "page": 241,
+            "score": 0.7529927786597277
+          }
+        ],
+        "new_context_ids": [],
+        "duplicate_ids": [
+          "B:openstax-intro-python:p0239:c00",
+          "B:openstax-intro-python:p0255:c01",
+          "B:openstax-intro-python:p0241:c03"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "duplicate keys dictionary explanation",
+        "filter": {
+          "book": "intro_python"
+        },
+        "top_k": 3,
+        "latency_ms": 68.4,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0239:c00",
+            "page": 239,
+            "score": 0.8321921725387691
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0255:c01",
+            "page": 255,
+            "score": 0.7665073414738693
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0241:c03",
+            "page": 241,
+            "score": 0.7645101547241265
+          }
+        ],
+        "new_context_ids": [],
+        "duplicate_ids": [
+          "B:openstax-intro-python:p0239:c00",
+          "B:openstax-intro-python:p0255:c01",
+          "B:openstax-intro-python:p0241:c03"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Không đủ bằng chứng để trả lời.\", \"citations\": [], \"abstain\": true}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0239:c00",
+      "B:openstax-intro-python:p0255:c01",
+      "B:openstax-intro-python:p0241:c03"
+    ],
+    "context_chars": 1842,
+    "context": "[B:openstax-intro-python:p0239:c00] (source: intro-python.pdf#page=239, page 239, section: 10.1 Dictionary basics)\nc. str\n\n5 . The encoding dictionary contains duplicate keys since it has both \"a\" and \"A\" as keys.\n\na. true\nb. false\n\n6 . A dictionary can have duplicate values.\na. true\nb. false\n\n[B:openstax-intro-python:p0255:c01] (source: intro-python.pdf#page=255, page 255, section: 10.6 Chapter summary)\n10.6 Chapter summary\n\nHighlights from this chapter include:\n\n• A dictionary in Python is a container object including key-value pairs.\n• The dict type implements a dictionary in Python.\n\n• A dictionary cannot have duplicate keys.\n• A dictionary is a mutable object but keys in the dictionary must be immutable objects.\n• A dictionary can be created using curly braces or the dict() method.\n\n• Values in the dictionary can be obtained through square bracket notation or the get() method.\n\n• Dictionary items, keys, and values can be obtained using items(), keys(), and values() methods,\n\nrespectively.\n• Existing items can be modified or new items can be added to a dictionary using square brackets notation\nor the update() method.\n\n• Items can be removed from a dictionary using the del keyword or the pop() method.\n\n[B:openstax-intro-python:p0241:c03] (source: intro-python.pdf#page=241, page 241, section: 10.3 Dictionary operations)\nEx: In the code below, a dictionary object my_dict is initialized with items {\"apple\": 2, \"banana\": 3,\n\n\"orange\": 4}. The square bracket notation and get() method are used to access values associated with the\n\nkeys \"banana\" and \"apple\", respectively. When accessing the dictionary to obtain the key \"pineapple\", -1\n\nis returned since the key does not exist in the dictionary.\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nprint(my_dict[\"banana\"]) # Prints: 3\nprint(my_dict.get(\"apple\")) # Prints: 2",
+    "n_searches": 3,
+    "usage": {
+      "prompt_tokens": 2826,
+      "completion_tokens": 81,
+      "llm_calls": 4
+    },
+    "elapsed_s": 3.19,
+    "cost_usd": 0.000472,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "abstain_reason": "model_abstained",
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "t02",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "How can I filter out items that do not meet a condition?",
+    "model": "gpt-4o-mini",
+    "filters": {
+      "book": "intro_python"
+    },
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "filter out items that do not meet a condition",
+        "filter": {
+          "book": "intro_python"
+        },
+        "top_k": 3,
+        "latency_ms": 133.9,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0234:c01",
+            "page": 234,
+            "score": 0.6546588951755934
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0234:c02",
+            "page": 234,
+            "score": 0.6474004983901978
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0251:c00",
+            "page": 251,
+            "score": 0.6424812078475952
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0234:c01",
+          "B:openstax-intro-python:p0234:c02",
+          "B:openstax-intro-python:p0251:c00"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "list comprehensions filtering",
+        "filter": {
+          "book": "intro_python"
+        },
+        "top_k": 3,
+        "latency_ms": 66.0,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0234:c02",
+            "page": 234,
+            "score": 0.8320623836443026
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0234:c00",
+            "page": 234,
+            "score": 0.8237868757502047
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0232:c01",
+            "page": 232,
+            "score": 0.8065287816771077
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0234:c00",
+          "B:openstax-intro-python:p0232:c01"
+        ],
+        "duplicate_ids": [
+          "B:openstax-intro-python:p0234:c02"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "how to filter items in a list comprehension",
+        "filter": {
+          "book": "intro_python"
+        },
+        "top_k": 3,
+        "latency_ms": 44.4,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0234:c00",
+            "page": 234,
+            "score": 0.8238504037946237
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0234:c02",
+            "page": 234,
+            "score": 0.8122739307717141
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0232:c01",
+            "page": 232,
+            "score": 0.7934023388144567
+          }
+        ],
+        "new_context_ids": [],
+        "duplicate_ids": [
+          "B:openstax-intro-python:p0234:c00",
+          "B:openstax-intro-python:p0234:c02",
+          "B:openstax-intro-python:p0232:c01"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"You can filter items from a list using list comprehensions by adding a condition. The syntax is: list_name = [expression for loop_variable in container if condition]. An element is included in list_name only if the condition is met [B:openstax-intro-python:p0234:c00].\", \"citations\": [\"B:openstax-intro-python:p0234:c00\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0234:c01",
+      "B:openstax-intro-python:p0234:c02",
+      "B:openstax-intro-python:p0251:c00",
+      "B:openstax-intro-python:p0234:c00",
+      "B:openstax-intro-python:p0232:c01"
+    ],
+    "context_chars": 2739,
+    "context": "[B:openstax-intro-python:p0234:c01] (source: intro-python.pdf#page=234, page 234, section: 9.5 List comprehensions)\nCHECKPOINT\n\nFiltering a list\n\nFiltering a list; ch 9, video 5 (https://www.openstax.org/r/filtering-list)\n\n[B:openstax-intro-python:p0234:c02] (source: intro-python.pdf#page=234, page 234, section: 9.5 List comprehensions)\nCONCEPTS IN PRACTICE\n\nFiltering using list comprehensions\n\nFor each code using list comprehension, select the correct resultant list in new_list.\n\n4 . my_list = [21, -1, 50, -9, 300, -50, 2]\n\n[B:openstax-intro-python:p0251:c00] (source: intro-python.pdf#page=251, page 251, section: 10.4 Conditionals and looping in dictionaries)\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n10-4-conditionals-and-looping-in-dictionaries)\n\n[B:openstax-intro-python:p0234:c00] (source: intro-python.pdf#page=234, page 234, section: 9.5 List comprehensions)\nCONCEPTS IN PRACTICE\n\nList comprehensions\n\n1 . The component of a list comprehension defining an element of the new list is the _____.\na. expression\nb. loop_variable\nc. container\n\n2 . What would be the contents of b_list after executing the code below?\n\na_list = [1, 2, 3, 4, 5]\nb_list = [i+2 for i in a_list]\n\na. [1, 2, 3, 4, 5]\n\nb. [0, 1, 2, 3, 4]\n\nc. [3, 4, 5, 6, 7]\n\n3 . What does new_list contain after executing the statement below?\n\nnew_list = [i//3 for i in range(1, 15, 3)]\n\na. [0.3333333333333333, 1.3333333333333333, 2.3333333333333335,\n\n3.3333333333333335, 4.333333333333333]\n\nb. [0, 1, 2, 3, 4]\n\nc. [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]\n\nFiltering using list comprehensions\n\nList comprehensions can be used to filter items from a given list. A condition is added to the list\ncomprehension.\n\nlist_name = [expression for loop_variable in container if condition]\n\nIn a filter list comprehension, an element is added into list_name only if the condition is met.\n\n[B:openstax-intro-python:p0232:c01] (source: intro-python.pdf#page=232, page 232, section: 9.5 List comprehensions)\n9.5 List comprehensions\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Identify the different components of a list comprehension statement.\n\n• Implement filtering using list comprehension.\n\nList comprehensions\n\nA list comprehension is a Python statement to compactly create a new list using a pattern.\n\nThe general form of a list comprehension statement is shown below.\n\nlist_name = [expression for loop_variable in iterable]\n\nlist_name refers to the name of a new list, which can be anything, and the for is the for loop keyword. An\n\nexpression defines what will become part of the new list. loop_variable is an iterator, and iterable is an\n\nobject that can be iterated, such as a list or string.",
+    "n_searches": 3,
+    "usage": {
+      "prompt_tokens": 3276,
+      "completion_tokens": 155,
+      "llm_calls": 4
+    },
+    "elapsed_s": 4.37,
+    "cost_usd": 0.000584,
+    "status": "answered",
+    "answer": "You can filter items from a list using list comprehensions by adding a condition. The syntax is: list_name = [expression for loop_variable in container if condition]. An element is included in list_name only if the condition is met [B:openstax-intro-python:p0234:c00].",
+    "citations": [
+      "B:openstax-intro-python:p0234:c00"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": false
+  },
+  {
+    "query_id": "t03",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "How does the syntax of dictionary comprehension differ from list comprehension?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "dictionary comprehension syntax list comprehension",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 50.2,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0253:c02",
+            "page": 253,
+            "score": 0.7953699353116803
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0253:c00",
+            "page": 253,
+            "score": 0.7882192134857178
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0232:c01",
+            "page": 232,
+            "score": 0.7864130266658662
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0253:c02",
+          "B:openstax-intro-python:p0253:c00",
+          "B:openstax-intro-python:p0232:c01"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"The syntax of dictionary comprehension differs from list comprehension in that dictionary comprehension uses curly braces and includes key-value pairs, while list comprehension uses square brackets and creates a list. The general syntax for dictionary comprehension is {key_expression: value_expression for element in iterable}, whereas for list comprehension it is [expression for loop_variable in iterable]. [B:openstax-intro-python:p0253:c00], [B:openstax-intro-python:p0232:c01]\",\"citations\":[\"B:openstax-intro-python:p0253:c00\",\"B:openstax-intro-python:p0232:c01\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0253:c02",
+      "B:openstax-intro-python:p0253:c00",
+      "B:openstax-intro-python:p0232:c01"
+    ],
+    "context_chars": 2380,
+    "context": "[B:openstax-intro-python:p0253:c02] (source: intro-python.pdf#page=253, page 253, section: 10.5 Nested dictionaries and dictionary comprehension)\nCONCEPTS IN PRACTICE\n\nDictionary comprehension\n\n4 . What is the output of the following code?\n\nnumbers = [1, 2, 3, 4, 5]\nmy_dict = {x: x**2 for x in numbers if x % 2 == 0}\nprint(my_dict)\n\na. {1: 1, 3: 9, 5: 25}\n\nb. {2: 4, 4: 16}\n\nc. {1: 2, 2: 4, 3: 6, 4: 8, 5: 10}\n\n5 . What is the output of the following dictionary comprehension?\n\nnames = [\"Alice \", \"Bob \", \"Charlie \"]\n\n[B:openstax-intro-python:p0253:c00] (source: intro-python.pdf#page=253, page 253, section: 10.5 Nested dictionaries and dictionary comprehension)\n2 . How can a value be accessed in a nested dictionary in Python?\na. by using the key of the outer dictionary\nb. by using the key of the inner dictionary\nc. By using both the keys of the outer and inner dictionaries\n\n3 . What is the syntax for creating a nested dictionary in Python?\na. {key: value}\n\nb. {key1: {key2: value}}\n\nc. {key: {value: key2}}\n\nDictionary comprehension\n\nDictionary comprehension is a concise and efficient way to create a dictionary in Python. With dictionary\ncomprehension, elements of an iterable object are transformed into key-value pairs. The syntax of dictionary\ncomprehension is similar to list comprehension, but instead of using square brackets, curly braces are used to\ndefine a dictionary.\n\nHere is a general syntax for dictionary comprehension:\n\nSYNTAX FOR DICTIONARY COMPREHENSION\n\n{key_expression: value_expression for element in iterable}\n\n[B:openstax-intro-python:p0232:c01] (source: intro-python.pdf#page=232, page 232, section: 9.5 List comprehensions)\n9.5 List comprehensions\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Identify the different components of a list comprehension statement.\n\n• Implement filtering using list comprehension.\n\nList comprehensions\n\nA list comprehension is a Python statement to compactly create a new list using a pattern.\n\nThe general form of a list comprehension statement is shown below.\n\nlist_name = [expression for loop_variable in iterable]\n\nlist_name refers to the name of a new list, which can be anything, and the for is the for loop keyword. An\n\nexpression defines what will become part of the new list. loop_variable is an iterator, and iterable is an\n\nobject that can be iterated, such as a list or string.",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1193,
+      "completion_tokens": 158,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.8,
+    "cost_usd": 0.000274,
+    "status": "answered",
+    "answer": "The syntax of dictionary comprehension differs from list comprehension in that dictionary comprehension uses curly braces and includes key-value pairs, while list comprehension uses square brackets and creates a list. The general syntax for dictionary comprehension is {key_expression: value_expression for element in iterable}, whereas for list comprehension it is [expression for loop_variable in iterable]. [B:openstax-intro-python:p0253:c00], [B:openstax-intro-python:p0232:c01]",
+    "citations": [
+      "B:openstax-intro-python:p0253:c00",
+      "B:openstax-intro-python:p0232:c01"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "t04",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "Why should outliers be removed before applying the min-max normalization formula?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "outliers min-max normalization",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 56.5,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0091:c03",
+            "page": 91,
+            "score": 0.7849238303439935
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0086:c04",
+            "page": 86,
+            "score": 0.7316279193273966
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0087:c06",
+            "page": 87,
+            "score": 0.7117210717866249
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0091:c03",
+          "B:openstax-data-science:p0086:c04",
+          "B:openstax-data-science:p0087:c06"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Outliers should be removed before applying the min-max normalization formula because their presence can significantly impact the calculated values of minimum and maximum, leading to inaccurate and unrepresentative results during normalization [B:openstax-data-science:p0091:c03].\", \"citations\": [\"B:openstax-data-science:p0091:c03\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0091:c03",
+      "B:openstax-data-science:p0086:c04",
+      "B:openstax-data-science:p0087:c06"
+    ],
+    "context_chars": 1786,
+    "context": "[B:openstax-data-science:p0091:c03] (source: data-science.pdf#page=91, page 91, section: 2.4 Data Cleaning and Preprocessing)\nThe normalization formula is a statistical formula utilized to scale down a dataset, typically to between one and\nzero. The largest data would have a normalized value of one, and the smallest data point would be zero. Note\nthat the presence of outliers can significantly impact the calculated values of minimum/maximum. As such, it\nis important to first remove any outliers from the dataset before performing normalization. This ensures more\naccurate and representative results.\n\nThe normalization formula:\n\n[B:openstax-data-science:p0086:c04] (source: data-science.pdf#page=86, page 86, section: 2.4 Data Cleaning and Preprocessing)\nAn outlier is a data point that differs significantly from other data points in a given dataset. This can be due to\nhuman error, measurement error, or a true outlier value in the data. Outliers can skew statistical analysis and\nbias results, which is why it is important to identify and handle them properly before analysis.\n\nMissing data and outliers are common problems that can affect the accuracy and reliability of results. It is\nimportant to identify and handle these issues properly to ensure the integrity of the data and the validity of\nthe analysis. You will find more details about outliers in Measures of Center, but here we summarize the\n\n[B:openstax-data-science:p0087:c06] (source: data-science.pdf#page=87, page 87, section: 2.4 Data Cleaning and Preprocessing)\nHandling missing data and outliers in a data science task requires careful consideration and appropriate\nmethods. It is important to understand the reasons behind these issues and to carefully document the process\nto ensure the validity of the results.",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 973,
+      "completion_tokens": 102,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.58,
+    "cost_usd": 0.000207,
+    "status": "answered",
+    "answer": "Outliers should be removed before applying the min-max normalization formula because their presence can significantly impact the calculated values of minimum and maximum, leading to inaccurate and unrepresentative results during normalization [B:openstax-data-science:p0091:c03].",
+    "citations": [
+      "B:openstax-data-science:p0091:c03"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "t05",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "What extra information is attached to each piece when a big dataset is split into chunks?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "extra information attached to each piece when a big dataset is split into chunks",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 55.2,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0100:c01",
+            "page": 100,
+            "score": 0.8165984372379317
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0100:c00",
+            "page": 100,
+            "score": 0.8041110751562685
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0100:c02",
+            "page": 100,
+            "score": 0.7688244122967488
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0100:c01",
+          "B:openstax-data-science:p0100:c00",
+          "B:openstax-data-science:p0100:c02"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"When a big dataset is split into chunks, extra information in the form of metadata is attached to each chunk, including the chunk number and the total number of chunks. This metadata facilitates the reassembly of the chunks into the original dataset after transmission or separate storage [B:openstax-data-science:p0100:c01].\", \"citations\": [\"B:openstax-data-science:p0100:c01\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0100:c01",
+      "B:openstax-data-science:p0100:c00",
+      "B:openstax-data-science:p0100:c02"
+    ],
+    "context_chars": 2494,
+    "context": "[B:openstax-data-science:p0100:c01] (source: data-science.pdf#page=100, page 100, section: 2.5 Handling Large Datasets)\nData chunking is used in data storage systems and data transmission over networks, and it is especially useful\nwhen working with large datasets that exceed the capacity of a single machine or when transferring data over\na network with limited bandwidth. The divided data in data chunking is known as a chunk or block. The size of\neach chunk can vary depending on the requirements and range from a few kilobytes to several gigabytes.\nThese chunks are typically organized sequentially, with each chunk containing a set of data from the larger\ndataset. The process of data chunking also involves adding metadata (data that provides information about\nother data), such as the chunk number and the total number of chunks, to each chunk. This metadata allows\nthe chunks to be reassembled into the original dataset after being transmitted or stored separately. Data\nchunking has several advantages, including the following:\n\n[B:openstax-data-science:p0100:c00] (source: data-science.pdf#page=100, page 100, section: 2.5 Handling Large Datasets)\nFigure 2.5 B-Tree Indexing\n\nData Chunking\n\nData chunking, also known as data segmentation or data partitioning, is a technique used to break down\nlarge datasets into smaller, more manageable chunks and make them easier to manage, process, analyze, and\nstore. Chunking is particularly useful when datasets are too large to be processed or analyzed as a single unit.\nBy dividing the data into smaller chunks, various processing tasks can be distributed across multiple\ncomputing nodes or processing units.\n\n[B:openstax-data-science:p0100:c02] (source: data-science.pdf#page=100, page 100, section: 2.5 Handling Large Datasets)\n1. Increased speed. By dividing a large dataset into smaller chunks, data processing and transmission can\nbe performed more quickly, reducing the overall processing time.\n2. Better utilization of resources. Data chunking enables data to be distributed and processed across\nmultiple machines, making better use of available computing resources.\n3. Increased fault tolerance. In case of data corruption or loss, data chunking allows for the retrieval of\nonly the affected chunk rather than the entire dataset.\n4. Flexibility. Data chunking allows for the transfer and processing of only the required chunks rather than\nthe entire dataset, providing flexibility in managing large datasets.\n\nDatabase Management Systems",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1127,
+      "completion_tokens": 126,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.59,
+    "cost_usd": 0.000245,
+    "status": "answered",
+    "answer": "When a big dataset is split into chunks, extra information in the form of metadata is attached to each chunk, including the chunk number and the total number of chunks. This metadata facilitates the reassembly of the chunks into the original dataset after transmission or separate storage [B:openstax-data-science:p0100:c01].",
+    "citations": [
+      "B:openstax-data-science:p0100:c01"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "t06",
+    "split": "dev",
+    "answerable": true,
+    "config": "A0_dense",
+    "question": "How does hash indexing work?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "hash indexing",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 53.9,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0099:c03",
+            "page": 99,
+            "score": 0.8295757523305524
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0099:c02",
+            "page": 99,
+            "score": 0.7432587521297142
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0100:c00",
+            "page": 100,
+            "score": 0.6538542921716819
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0099:c03",
+          "B:openstax-data-science:p0099:c02",
+          "B:openstax-data-science:p0100:c00"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "how does hash indexing work",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 46.7,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0099:c03",
+            "page": 99,
+            "score": 0.8448066367151335
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0099:c02",
+            "page": 99,
+            "score": 0.7442707045158957
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0250:c00",
+            "page": 250,
+            "score": 0.656076690192421
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0250:c00"
+        ],
+        "duplicate_ids": [
+          "B:openstax-data-science:p0099:c03",
+          "B:openstax-data-science:p0099:c02"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "hash function indexing",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 76.2,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0099:c03",
+            "page": 99,
+            "score": 0.8198098188582013
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0099:c02",
+            "page": 99,
+            "score": 0.6943892447468416
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0250:c00",
+            "page": 250,
+            "score": 0.6162499418109701
+          }
+        ],
+        "new_context_ids": [],
+        "duplicate_ids": [
+          "B:openstax-data-science:p0099:c03",
+          "B:openstax-data-science:p0099:c02",
+          "B:openstax-intro-python:p0250:c00"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\":\"Hash indexing involves using a hash function to map data to a specific index in a table, allowing for direct access to the data based on its hashed value, which makes retrieval faster than traditional sequential searching [B:openstax-data-science:p0099:c03].\",\"citations\":[\"B:openstax-data-science:p0099:c03\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0099:c03",
+      "B:openstax-data-science:p0099:c02",
+      "B:openstax-data-science:p0100:c00",
+      "B:openstax-intro-python:p0250:c00"
+    ],
+    "context_chars": 2715,
+    "context": "[B:openstax-data-science:p0099:c03] (source: data-science.pdf#page=99, page 99, section: 2.5 Handling Large Datasets)\nHashes indexing involves using a hash function to map data to a specific index in a table. This allows for direct\naccess to the data based on its hashed value, making retrieval faster than traditional sequential searching.\nBitmap indexing is a technique that involves creating a bitmap for each different value in a dataset. The\nbitmaps are then combined to quickly identify records that match a specific set of values, allowing efficient\ndata retrieval.\n\n[B:openstax-data-science:p0099:c02] (source: data-science.pdf#page=99, page 99, section: 2.5 Handling Large Datasets)\nData Indexing\n\nData indexing is an important aspect of data management and makes it easier to retrieve specific data quickly\nand efficiently. It is a crucial strategy for optimizing the performance of databases and other data storage\nsystems. Data indexing refers to the process of managing and saving the collected and generated data in a\ndatabase or other data storage system in a way that allows for efficient and fast return of specific data.\n\nIndexing techniques vary in how they organize and store data, but they all aim to improve data retrieval\nperformance. B-tree indexing is illustrated in Figure 2.5. It involves organizing data in a tree-like structure with\na root node and branches that contain pointers to other nodes. Each node contains a range of data values and\npointers to child nodes, allowing for efficient searching within a specific range of values.\n\n[B:openstax-data-science:p0100:c00] (source: data-science.pdf#page=100, page 100, section: 2.5 Handling Large Datasets)\nFigure 2.5 B-Tree Indexing\n\nData Chunking\n\nData chunking, also known as data segmentation or data partitioning, is a technique used to break down\nlarge datasets into smaller, more manageable chunks and make them easier to manage, process, analyze, and\nstore. Chunking is particularly useful when datasets are too large to be processed or analyzed as a single unit.\nBy dividing the data into smaller chunks, various processing tasks can be distributed across multiple\ncomputing nodes or processing units.\n\n[B:openstax-intro-python:p0250:c00] (source: intro-python.pdf#page=250, page 250, section: 10.4 Conditionals and looping in dictionaries)\nfruit_count = {\"apple\": 2, \"orange\": 5, \"banana\": 1}\nfor key in fruit_count.keys():\nprint(key, end = \" \")\n\na. apple orange banana\n\nb. 2 5 1\n\nc. (\"apple\", 2) (\"orange\", 5) (\"banana\", 1)\n\n6 . What is the output of the following code?\n\nfruit_count = {\"apple\": 2, \"orange\": 5, \"banana\": 1}\nfor value in fruit_count.values():\nprint(value * 2, end = \" \")\n\na. apple orange banana\n\nb. 2 5 1\n\nc. 4 10 2",
+    "n_searches": 3,
+    "usage": {
+      "prompt_tokens": 3147,
+      "completion_tokens": 134,
+      "llm_calls": 4
+    },
+    "elapsed_s": 3.89,
+    "cost_usd": 0.000552,
+    "status": "answered",
+    "answer": "Hash indexing involves using a hash function to map data to a specific index in a table, allowing for direct access to the data based on its hashed value, which makes retrieval faster than traditional sequential searching [B:openstax-data-science:p0099:c03].",
+    "citations": [
+      "B:openstax-data-science:p0099:c03"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "u01",
+    "split": "dev",
+    "answerable": false,
+    "config": "A0_dense",
+    "question": "How do you sort a list in descending order with the reverse=True argument of sort()?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "sort list descending order reverse=True",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 43.8,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0226:c01",
+            "page": 226,
+            "score": 0.8093328348398744
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0224:c02",
+            "page": 224,
+            "score": 0.8064152954097036
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0225:c01",
+            "page": 225,
+            "score": 0.7787976961253017
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0226:c01",
+          "B:openstax-intro-python:p0224:c02",
+          "B:openstax-intro-python:p0225:c01"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "sort() method reverse=True",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 51.3,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0226:c01",
+            "page": 226,
+            "score": 0.826119373672059
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0224:c02",
+            "page": 224,
+            "score": 0.805393338203436
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0225:c00",
+            "page": 225,
+            "score": 0.7714694006126775
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0225:c00"
+        ],
+        "duplicate_ids": [
+          "B:openstax-intro-python:p0226:c01",
+          "B:openstax-intro-python:p0224:c02"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "sort() method descending order",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 55.0,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0224:c02",
+            "page": 224,
+            "score": 0.7963846921920833
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0225:c00",
+            "page": 225,
+            "score": 0.7926419849778419
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0226:c01",
+            "page": 226,
+            "score": 0.7765669359823032
+          }
+        ],
+        "new_context_ids": [],
+        "duplicate_ids": [
+          "B:openstax-intro-python:p0224:c02",
+          "B:openstax-intro-python:p0225:c00",
+          "B:openstax-intro-python:p0226:c01"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Không đủ bằng chứng để trả lời.\", \"citations\": [], \"abstain\": true}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0226:c01",
+      "B:openstax-intro-python:p0224:c02",
+      "B:openstax-intro-python:p0225:c01",
+      "B:openstax-intro-python:p0225:c00"
+    ],
+    "context_chars": 2801,
+    "context": "[B:openstax-intro-python:p0226:c01] (source: intro-python.pdf#page=226, page 226, section: 9.2 Sorting and reversing lists)\nCONCEPTS IN PRACTICE\n\nsort() and reverse() methods\n\nUse the following list for the questions below.\n\nboard_games = [\"go\", \"chess\", \"scrabble\", \"checkers\"]\n\n4 . What is the correct way to sort the list board_games in ascending order?\n\na. sort(board_games)\n\nb. board_games.sort()\n\nc. board_games.sort('ascending')\n\n5 . What is the correct way to reverse the list board_games?\n\na. board_games.reverse()\n\nb. reverse(board_games)\n\n6 . What would be the last element of board_games after the reverse() method has been applied?\n\na. 'go'\n\nb. 'checkers'\n\nc. 'scrabble'\n\n[B:openstax-intro-python:p0224:c02] (source: intro-python.pdf#page=224, page 224, section: 9.2 Sorting and reversing lists)\n9.2 Sorting and reversing lists\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Understand the concept of sorting.\n• Use built-in sort() and reverse() methods.\n\nSorting\n\nOrdering elements in a sequence is often useful. Sorting is the task of arranging elements in a sequence in\nascending or descending order.\n\nSorting can work on numerical or non-numerical data. When ordering text, dictionary order is used. Ex: \"bat\"\ncomes before \"cat\" because \"b\" comes before \"c\".\n\n[B:openstax-intro-python:p0225:c01] (source: intro-python.pdf#page=225, page 225, section: 9.2 Sorting and reversing lists)\nEXAMPLE 9.2\n\nSorting and reversing lists\n\n# Setup a list of numbers\nnum_list = [38, 92, 23, 16]\nprint(num_list)\n\n# Sort the list\nnum_list.sort()\nprint(num_list)\n\n# Setup a list of words\ndance_list = [\"Stepping\", \"Ballet\", \"Salsa\", \"Kathak\", \"Hopak\", \"Flamenco\", \"Dabke\"]\n\n# Reverse the list\n\ndance_list.reverse()\nprint(dance_list)\n\n[B:openstax-intro-python:p0225:c00] (source: intro-python.pdf#page=225, page 225, section: 9.2 Sorting and reversing lists)\nCONCEPTS IN PRACTICE\n\nSorting\n\n1 . What would be the last element of the following list if it is sorted in descending order?\n[12, 3, 19, 25, 16, -3, 5]\n\na. 25\n\nb. -3\n\nc. 5\n\n2 . Arrange the following list in ascending order.\n[\"cat\", \"bat\", \"dog\", \"coyote\", \"wolf\"]\n\na. [\"bat\", \"cat\", \"coyote\", \"dog\", \"wolf\"]\n\nb. [\"wolf\", \"coyote\", \"dog\", \"cat\", \"bat\"]\n\n3 . How are the words \"flask\" and \"flash\" related in Python?\n\na. \"flask\" < \"flash\"\n\nb. \"flask\" == \"flash\"\n\nc. \"flask\" > \"flash\"\n\nUsing sort() and reverse()\n\nPython provides methods for arranging elements in a list.\n\n• The sort() method arranges the elements of a list in ascending order. For strings, ASCII values are used\n\nand uppercase characters come before lowercase characters, leading to unexpected results. Ex: \"A\" is\n\nordered before \"a\" in ascending order but so is \"G\"; thus, \"Gail\" comes before \"apple\".\n\n• The reverse() method reverses the elements in a list.",
+    "n_searches": 3,
+    "usage": {
+      "prompt_tokens": 3457,
+      "completion_tokens": 82,
+      "llm_calls": 4
+    },
+    "elapsed_s": 3.21,
+    "cost_usd": 0.000568,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "abstain_reason": "model_abstained"
+  },
+  {
+    "query_id": "u02",
+    "split": "dev",
+    "answerable": false,
+    "config": "A0_dense",
+    "question": "Which pandas function drops rows that contain missing values?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "pandas function drops rows that contain missing values",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 49.7,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0086:c03",
+            "page": 86,
+            "score": 0.7055830534945111
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0087:c04",
+            "page": 87,
+            "score": 0.7036858134831536
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0087:c06",
+            "page": 87,
+            "score": 0.6669857501413089
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0086:c03",
+          "B:openstax-data-science:p0087:c04",
+          "B:openstax-data-science:p0087:c06"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "pandas drop rows missing values function",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 61.0,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0086:c03",
+            "page": 86,
+            "score": 0.7145223617553711
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0087:c04",
+            "page": 87,
+            "score": 0.7010434030242728
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0087:c06",
+            "page": 87,
+            "score": 0.6634010477780093
+          }
+        ],
+        "new_context_ids": [],
+        "duplicate_ids": [
+          "B:openstax-data-science:p0086:c03",
+          "B:openstax-data-science:p0087:c04",
+          "B:openstax-data-science:p0087:c06"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "pandas dropna function",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 184.4,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0095:c01",
+            "page": 95,
+            "score": 0.6140549412933037
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0244:c00",
+            "page": 244,
+            "score": 0.6108950012388835
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0235:c01",
+            "page": 235,
+            "score": 0.6103519665775339
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0095:c01",
+          "B:openstax-intro-python:p0244:c00",
+          "B:openstax-intro-python:p0235:c01"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Không đủ bằng chứng để trả lời.\", \"citations\": [], \"abstain\": true}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0086:c03",
+      "B:openstax-data-science:p0087:c04",
+      "B:openstax-data-science:p0087:c06",
+      "B:openstax-data-science:p0095:c01",
+      "B:openstax-intro-python:p0244:c00",
+      "B:openstax-intro-python:p0235:c01"
+    ],
+    "context_chars": 4827,
+    "context": "[B:openstax-data-science:p0086:c03] (source: data-science.pdf#page=86, page 86, section: 2.4 Data Cleaning and Preprocessing)\nThe goal of data cleaning and preprocessing is to guarantee that the data used for analysis is accurate,\nconsistent, and relevant. It helps to improve the quality of the results and increase the efficiency of the analysis\nprocess. A well-prepared dataset can lead to more accurate insights and better decision-making.\n\nHandling Missing Data and Outliers\n\nMissing data refers to any data points or values that are not present in a dataset. This could be due to data\ncollection errors, data corruption, or nonresponse from participants in a study. Missing data can impact the\naccuracy and validity of an analysis, as it reduces the sample size and potentially introduces bias.\n\nSome specific examples of missing data include the following:\n\n1. A survey participant forgetting to answer a question\n2. A malfunction in data collection equipment resulting in missing values\n3. A participant choosing not to answer a question due to sensitivity or discomfort\n\n[B:openstax-data-science:p0087:c04] (source: data-science.pdf#page=87, page 87, section: 2.4 Data Cleaning and Preprocessing)\nSeveral approaches can be utilized to handle missing data. One option is to withdraw the missing data altogether, but this can lead to a loss of important information. Other methods include imputation, where the absent values are replaced with estimated values based on\nthe remaining data or using predictive models to fill in the missing values. 4. Consider the influence of outliers. Outliers can greatly affect the results of the analysis, so it is important\nto carefully consider their impact. One approach is to delete the outliers from the dataset, but this can also\nlead to a loss of valuable information. Another option is to deal with the outliers as an individual group\nand analyze them separately from the rest of the data. 5. Use robust statistical methods. When dealing with outliers, it is important to use statistical methods that\nare not affected by extreme values.\n\n[B:openstax-data-science:p0087:c06] (source: data-science.pdf#page=87, page 87, section: 2.4 Data Cleaning and Preprocessing)\nHandling missing data and outliers in a data science task requires careful consideration and appropriate\nmethods. It is important to understand the reasons behind these issues and to carefully document the process\nto ensure the validity of the results.\n\n[B:openstax-data-science:p0095:c01] (source: data-science.pdf#page=95, page 95, section: 2.4 Data Cleaning and Preprocessing)\nLowercasing\nConverting all\ntext to\nlowercase to\navoid multiple\nrepresentations\nof the identical\nword\n\nConsider: \"The sun was shining bright in the sky and the\nbirds were chirping. It was a lovely day in the park and\npeople were enjoying the beautiful weather.\"\n\nStopwords removal\nFiltering out\ncommonly\noccurring\nwords that do\nnot add\nmeaning or\ncontext\n\nAfter removing stopwords, the paragraph would be\ntransformed into: \"Sun shining bright sky birds chirping.\nLovely day park people enjoying beautiful weather.\"\n\nLemmatization and\nstemming\n\nReducing\nwords to their\n\nFor example, the words \"running,\" \"runs,\" and \"ran\" would all\nbe lemmatized to the base form \"run.\"\n\nroot forms to\nreduce\ncomplexity and\nimprove model\nperformance\n\nTable 2.8 Summary of Text Preprocessing Techniques\n\n[B:openstax-intro-python:p0244:c00] (source: intro-python.pdf#page=244, page 244, section: 10.3 Dictionary operations)\nprint(my_dict) # Prints: {\"apple\": 2, \"banana\": 3, \"orange\": 4, \"pineapple\": 1,\n\"cherry\": 0}\n\nTo modify a dictionary item, the two approaches above can be used on an existing dictionary key along with\nthe updated value. Ex:\n\n• Square bracket notation:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nmy_dict[\"apple\"] = 1\nprint(my_dict) # Prints: {\"apple\": 1, \"banana\": 3, \"orange\": 4}\n\n• update() method:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nmy_dict.update({\"apple\": 1})\nprint(my_dict) # Prints: {\"apple\": 1, \"banana\": 3, \"orange\": 4}\n\nItems can be deleted from a dictionary using the del keyword or the pop() method.\n\n• del keyword:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\ndel my_dict[\"orange\"]\nprint(my_dict) # Prints: {\"apple\": 2, \"banana\": 3}\n\n• pop() method:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\ndeleted_value = my_dict.pop(\"banana\")\nprint(deleted_value) # Prints: 3\nprint(my_dict) # Output: {\"apple\": 2, \"orange\": 4}\n\n[B:openstax-intro-python:p0235:c01] (source: intro-python.pdf#page=235, page 235, section: 9.5 List comprehensions)\nTRY IT\n\nSelecting five-letter words\n\nWrite a program that creates a list of only five-letter words from the given list and prints the new list.\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/9-5-list-\ncomprehensions)",
+    "n_searches": 3,
+    "usage": {
+      "prompt_tokens": 3628,
+      "completion_tokens": 87,
+      "llm_calls": 4
+    },
+    "elapsed_s": 3.3,
+    "cost_usd": 0.000596,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "abstain_reason": "model_abstained"
+  },
+  {
+    "query_id": "u03",
+    "split": "dev",
+    "answerable": false,
+    "config": "A0_dense",
+    "question": "What is the time complexity of looking up a key in a Python dictionary?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "time complexity of looking up a key in a Python dictionary",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 56.6,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0241:c02",
+            "page": 241,
+            "score": 0.7171218395233154
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0253:c00",
+            "page": 253,
+            "score": 0.7168617248535156
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0238:c01",
+            "page": 238,
+            "score": 0.7164008021354675
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0241:c02",
+          "B:openstax-intro-python:p0253:c00",
+          "B:openstax-intro-python:p0238:c01"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "Python dictionary lookup time complexity",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 55.1,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0254:c00",
+            "page": 254,
+            "score": 0.7024799940013943
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0238:c01",
+            "page": 238,
+            "score": 0.6980418326804887
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0248:c01",
+            "page": 248,
+            "score": 0.685950752624736
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0254:c00",
+          "B:openstax-intro-python:p0248:c01"
+        ],
+        "duplicate_ids": [
+          "B:openstax-intro-python:p0238:c01"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "dense",
+        "query": "dictionary lookup time complexity",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 152.6,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0254:c00",
+            "page": 254,
+            "score": 0.6868566087994951
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0238:c01",
+            "page": 238,
+            "score": 0.6802378106259007
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0248:c01",
+            "page": 248,
+            "score": 0.673736512660985
+          }
+        ],
+        "new_context_ids": [],
+        "duplicate_ids": [
+          "B:openstax-intro-python:p0254:c00",
+          "B:openstax-intro-python:p0238:c01",
+          "B:openstax-intro-python:p0248:c01"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Không đủ bằng chứng để trả lời.\", \"citations\": [], \"abstain\": true}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0241:c02",
+      "B:openstax-intro-python:p0253:c00",
+      "B:openstax-intro-python:p0238:c01",
+      "B:openstax-intro-python:p0254:c00",
+      "B:openstax-intro-python:p0248:c01"
+    ],
+    "context_chars": 3768,
+    "context": "[B:openstax-intro-python:p0241:c02] (source: intro-python.pdf#page=241, page 241, section: 10.3 Dictionary operations)\n10.3 Dictionary operations\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Recognize that a dictionary object is mutable.\n• Evaluate dictionary items, keys, and values.\n• Demonstrate the ability to access, evaluate, and modify dictionary items.\n• Modify a dictionary by adding items.\n• Modify a dictionary by removing items.\n\nAccessing dictionary items\n\nIn Python, values associated with keys in a dictionary can be accessed using the keys as indexes. Here are two\nways to access dictionary items in Python:\n\n• Square bracket notation: Square brackets [] with the key inside access the value associated with that key.\n\nIf the key is not found, an exception will be thrown.\n• get() method: The get() method is called with the key as an argument to access the value associated\n\nwith that key. If the key is not found, the method returns None by default, or a default value specified as\n\nthe second argument.\n\n[B:openstax-intro-python:p0253:c00] (source: intro-python.pdf#page=253, page 253, section: 10.5 Nested dictionaries and dictionary comprehension)\n2 . How can a value be accessed in a nested dictionary in Python?\na. by using the key of the outer dictionary\nb. by using the key of the inner dictionary\nc. By using both the keys of the outer and inner dictionaries\n\n3 . What is the syntax for creating a nested dictionary in Python?\na. {key: value}\n\nb. {key1: {key2: value}}\n\nc. {key: {value: key2}}\n\nDictionary comprehension\n\nDictionary comprehension is a concise and efficient way to create a dictionary in Python. With dictionary\ncomprehension, elements of an iterable object are transformed into key-value pairs. The syntax of dictionary\ncomprehension is similar to list comprehension, but instead of using square brackets, curly braces are used to\ndefine a dictionary.\n\nHere is a general syntax for dictionary comprehension:\n\nSYNTAX FOR DICTIONARY COMPREHENSION\n\n{key_expression: value_expression for element in iterable}\n\n[B:openstax-intro-python:p0238:c01] (source: intro-python.pdf#page=238, page 238, section: 10.1 Dictionary basics)\nCONCEPTS IN PRACTICE\n\nDictionary basics\n\nGiven the dictionary object days = {\"Sunday\": 1, \"Monday\": 2, \"Tuesday\": 3}, answer the\n\nfollowing questions.\n\n1 . What are the keys in the days dictionary object?\n\na. \"Sunday\", \"Monday\", \"Tuesday\"\n\nb. 1, 2, 3\n\nc. 0, 1, 2\n\n2 . What are the values in the days dictionary object?\n\na. 0, 1, 2\n\nb. 1, 2, 3\n\nc. \"Sunday\", \"Monday\", \"Tuesday\"\n\n3 . What is the value associated with key \"Sunday\"?\n\na. \"Sunday\"\n\nb. 1\n\nc. 0\n\nDictionary type and properties\n\nThe dict type implements a dictionary in Python. Since a dictionary object is used to look up values using keys,\na dictionary object cannot hold duplicate key values.\n\n[B:openstax-intro-python:p0254:c00] (source: intro-python.pdf#page=254, page 254, section: 10.5 Nested dictionaries and dictionary comprehension)\nname_lengths = {name: len(name) for name in names}\nprint(name_lengths)\n\na. { \"Alice \": 5, \"Bob \": 3, \"Charlie \": 7}\n\nb. {5: \"Alice \", 3: \"Bob \", 7: \"Charlie \"}\n\nc. { \"A \": 5, \"B \": 3, \"C \": 7}\n\n6 . What is the output of the following dictionary comprehension?\n\nmy_dict = {i: i**2 for i in range(4)}\nprint(my_dict)\n\na. {0: 0, 1: 1, 2: 4, 3: 9}\n\nb. {0: 0, 1: 1, 2: 4}\n\nc. {1: 1, 2: 4, 3: 9}\n\n[B:openstax-intro-python:p0248:c01] (source: intro-python.pdf#page=248, page 248, section: 10.4 Conditionals and looping in dictionaries)\nEXAMPLE 10.3\n\nIterating over a dictionary\n\ndict.items()\n\nzip_codes = {\"Berkeley\": 94709, \"Santa Cruz\": 95064, \"Mountain View\": 94030}\n\nfor key, value in zip_codes.items():\nprint(key, value)\n\nBerkeley 94709\nSanta Cruz 95064\nMountain View 94030\n\nTable 10.5",
+    "n_searches": 3,
+    "usage": {
+      "prompt_tokens": 4162,
+      "completion_tokens": 86,
+      "llm_calls": 4
+    },
+    "elapsed_s": 3.54,
+    "cost_usd": 0.000676,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "abstain_reason": "model_abstained"
+  }
+]

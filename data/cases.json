@@ -1,0 +1,275 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "Which list operation adds an element at the end of a list?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "Why can sorting a list of words put \"Gail\" before \"apple\"?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "Which built-in function gives the total of all numbers stored in a list?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "Under what condition do max() and min() work on a list?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "What is a nested list?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "What Python statement builds a new list compactly from a pattern in a single line?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "What does get() return when the requested key is not in the dictionary?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "Which functions return the keys, the values and the key-value pairs of a dictionary?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "Can the content of a dictionary be changed after the object has been created?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "What are nested dictionaries?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "In the Lists chapter, what does the pop() operation do?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "chapter": 9
+    }
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "In the Dictionaries chapter, how can an item be removed using pop() or another way?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "chapter": 10
+    }
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "What happens to duplicate values during the data cleaning step?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "book": "data_science"
+    }
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "What does MCAR mean for missing data?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "When should a log transformation be applied to data?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q16",
+    "split": "dev",
+    "question": "Which kind of compression shrinks a file without throwing any data away?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "t01",
+    "split": "dev",
+    "question": "Why is it impossible to have duplicate keys?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "book": "intro_python"
+    }
+  },
+  {
+    "id": "t02",
+    "split": "dev",
+    "question": "How can I filter out items that do not meet a condition?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "filter": {
+      "book": "intro_python"
+    }
+  },
+  {
+    "id": "t03",
+    "split": "dev",
+    "question": "How does the syntax of dictionary comprehension differ from list comprehension?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "t04",
+    "split": "dev",
+    "question": "Why should outliers be removed before applying the min-max normalization formula?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "t05",
+    "split": "dev",
+    "question": "What extra information is attached to each piece when a big dataset is split into chunks?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "t06",
+    "split": "dev",
+    "question": "How does hash indexing work?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "n01",
+    "split": "test",
+    "question": "What are the two ways to create an empty dictionary in Python?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "n02",
+    "split": "test",
+    "question": "How should nested loops be arranged to visit every element of a two-dimensional list-of-lists?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "n03",
+    "split": "test",
+    "question": "What is data standardization?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "n04",
+    "split": "test",
+    "question": "Which noise-reduction strategy uses something like a seven-day average to reveal the trend of daily stock index values?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "n05",
+    "split": "test",
+    "question": "In text preprocessing, what does stopwords removal do?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "n06",
+    "split": "test",
+    "question": "Which examples of cloud storage are given?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "n07",
+    "split": "test",
+    "question": "Against what is data examined during data validation?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "n08",
+    "split": "test",
+    "question": "In one-hot encoding of a review, how large is the binary vector created for each word?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "u01",
+    "split": "dev",
+    "question": "How do you sort a list in descending order with the reverse=True argument of sort()?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Corpus covers sort() (ascending) and reverse() on pages 224-226, 235-236 but never mentions a reverse= keyword argument; grep 'reverse=' and 'key=' over data/processed pages = 0 hits."
+  },
+  {
+    "id": "u02",
+    "split": "dev",
+    "question": "Which pandas function drops rows that contain missing values?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Missing data handling is covered on p.86-87 but no library is named; grep 'pandas' and 'dropna' = 0 hits."
+  },
+  {
+    "id": "u03",
+    "split": "dev",
+    "question": "What is the time complexity of looking up a key in a Python dictionary?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Dictionary lookup is described (p.238-241) without any complexity; 'complexity' only appears on DS p.95/98 in unrelated sense; 'O(n', 'Big-O', 'time complexity' = 0 hits."
+  },
+  {
+    "id": "u04",
+    "split": "test",
+    "question": "What value of K is recommended for KNN imputation of missing data?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Imputation is mentioned on p.87 and p.93 but no KNN method; grep 'KNN', 'nearest neighbor' = 0 hits."
+  },
+  {
+    "id": "u05",
+    "split": "test",
+    "question": "Starting from which Python version do dictionaries preserve insertion order?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "grep 'insertion order', '3.7' = 0 hits; 'ordered' appears only on p.225 about string sorting."
+  },
+  {
+    "id": "u06",
+    "split": "test",
+    "question": "How do you make a deep copy of a nested list using the copy module?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Only list.copy() is described (p.228-229, 236); grep 'deepcopy', 'deep copy', 'copy module' = 0 hits."
+  }
+]

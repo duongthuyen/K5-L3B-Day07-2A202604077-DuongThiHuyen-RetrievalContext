@@ -1,0 +1,21 @@
+{
+  "config": "R2_hybrid",
+  "method": "hybrid",
+  "top_k": 3,
+  "budget": 3000,
+  "neighbours": false,
+  "use_filter": true,
+  "note": "Improvement 1: RRF(dense, bm25) recovers questions where one retriever misses",
+  "split": "dev",
+  "N": 22,
+  "hit1": 16,
+  "hit3": 21,
+  "context_hit": 21,
+  "errors": 0,
+  "avg_context_chars": 2270,
+  "median_latency_ms": 92.5,
+  "cost_usd": 0.0,
+  "hit1_rate": 0.727,
+  "hit3_rate": 0.955,
+  "context_hit_rate": 0.955
+}

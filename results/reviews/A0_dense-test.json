@@ -1,0 +1,82 @@
+[
+  {
+    "query_id": "n01",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "n02",
+    "citation_support": [],
+    "reason": "Model trả lời đúng nhưng viết ID citation sai định dạng (p221 thay vì p0221) -> validator từ chối -> abstain, chấm 0. (p230/p231)",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "n03",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "n04",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "n05",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng; thiếu [id] inline nhưng citation p0095:c01 chứa ô bảng 'Stopwords removal'.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "n06",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng; câu 'Some examples of cloud storage are Amazon AWS...' nằm cuối chunk p0101:c03.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "n07",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "n08",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "u04",
+    "citation_support": [],
+    "reason": "Agent search 3 lần rồi từ chối, không thêm khẳng định nào; corpus thật sự không có (xem absence_reason).",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "u05",
+    "citation_support": [],
+    "reason": "Agent search 3 lần rồi từ chối, không thêm khẳng định nào; corpus thật sự không có (xem absence_reason).",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "u06",
+    "citation_support": [],
+    "reason": "Agent search 3 lần rồi từ chối, không thêm khẳng định nào; corpus thật sự không có (xem absence_reason).",
+    "abstention_correct": true
+  }
+]

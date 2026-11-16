@@ -1,0 +1,21 @@
+{
+  "config": "R5_hybrid_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget": 4500,
+  "neighbours": false,
+  "use_filter": true,
+  "note": "Improvement 3: more context (top-5, 4500 chars) for evidence at rank 4-5",
+  "split": "dev",
+  "N": 22,
+  "hit1": 16,
+  "hit3": 20,
+  "context_hit": 20,
+  "errors": 0,
+  "avg_context_chars": 3807,
+  "median_latency_ms": 2020.1,
+  "cost_usd": 0.0,
+  "hit1_rate": 0.727,
+  "hit3_rate": 0.909,
+  "context_hit_rate": 0.909
+}

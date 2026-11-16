@@ -1,0 +1,1521 @@
+[
+  {
+    "query_id": "n01",
+    "split": "test",
+    "answerable": true,
+    "config": "A1_hybrid_neighbours",
+    "question": "What are the two ways to create an empty dictionary in Python?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "create an empty dictionary in Python",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 45.6,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0239:c04",
+            "page": 239,
+            "score": 0.03278688524590164
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0239:c02",
+            "page": 239,
+            "score": 0.03200204813108039
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0253:c00",
+            "page": 253,
+            "score": 0.031009615384615385
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0239:c03",
+            "page": 239,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0239:c01",
+            "page": 239,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0253:c01",
+            "page": 253,
+            "score": null
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0239:c04",
+          "B:openstax-intro-python:p0239:c02",
+          "B:openstax-intro-python:p0253:c00",
+          "B:openstax-intro-python:p0239:c03",
+          "B:openstax-intro-python:p0239:c01",
+          "B:openstax-intro-python:p0253:c01"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Two methods exist for creating an empty dictionary: using curly braces {} (e.g., dict_1 = {}) and using the dict() function (e.g., dict_2 = dict()). [B:openstax-intro-python:p239:c02]\",\n\"citations\": [\"B:openstax-intro-python:p239:c02\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0239:c04",
+      "B:openstax-intro-python:p0239:c02",
+      "B:openstax-intro-python:p0253:c00",
+      "B:openstax-intro-python:p0239:c03",
+      "B:openstax-intro-python:p0239:c01",
+      "B:openstax-intro-python:p0253:c01"
+    ],
+    "context_chars": 2874,
+    "context": "[B:openstax-intro-python:p0239:c04] (source: intro-python.pdf#page=239, page 239, section: 10.2 Dictionary creation)\nCONCEPTS IN PRACTICE\n\nCreating dictionary exercises\n\n1 . What is the correct syntax to create an empty dictionary in Python?\na. my_dict = ()\n\nb. my_dict = {}\n\n[B:openstax-intro-python:p0239:c02] (source: intro-python.pdf#page=239, page 239, section: 10.2 Dictionary creation)\n10.2 Dictionary creation\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Create a dictionary object with given key/value pairs.\n\nDictionary creation\n\nTwo methods exist for creating an empty dictionary:\n\n• Using curly braces {}. Ex: dict_1 = {}.\n\n• Using the dict() function. Ex: dict_2 = dict().\n\nA dictionary object can also be created with initial key-value pairs enclosed in curly braces. Ex: my_dict =\n\n{\"pizza\": 2, \"pasta\": 3, \"drink\": 4} creates a dictionary object my_dict. A key and associated value\n\nare separated by a colon, and key-value pairs are separated by commas.\n\n[B:openstax-intro-python:p0253:c00] (source: intro-python.pdf#page=253, page 253, section: 10.5 Nested dictionaries and dictionary comprehension)\n2 . How can a value be accessed in a nested dictionary in Python?\na. by using the key of the outer dictionary\nb. by using the key of the inner dictionary\nc. By using both the keys of the outer and inner dictionaries\n\n3 . What is the syntax for creating a nested dictionary in Python?\na. {key: value}\n\nb. {key1: {key2: value}}\n\nc. {key: {value: key2}}\n\nDictionary comprehension\n\nDictionary comprehension is a concise and efficient way to create a dictionary in Python. With dictionary\ncomprehension, elements of an iterable object are transformed into key-value pairs. The syntax of dictionary\ncomprehension is similar to list comprehension, but instead of using square brackets, curly braces are used to\ndefine a dictionary.\n\nHere is a general syntax for dictionary comprehension:\n\nSYNTAX FOR DICTIONARY COMPREHENSION\n\n{key_expression: value_expression for element in iterable}\n\n[B:openstax-intro-python:p0239:c03] (source: intro-python.pdf#page=239, page 239, section: 10.2 Dictionary creation)\nCHECKPOINT\n\nCreating a dictionary object\n\nCreating a dictionary object; ch 10, video 3 (https://www.openstax.org/r/creating-dictionary-object)\n\n[B:openstax-intro-python:p0239:c01] (source: intro-python.pdf#page=239, page 239, section: 10.1 Dictionary basics)\nTRY IT\n\nInvestigate variable types\n\nGiven the variables in the code below, examine the variables' types.\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n10-1-dictionary-basics)\n\n[B:openstax-intro-python:p0253:c01] (source: intro-python.pdf#page=253, page 253, section: 10.5 Nested dictionaries and dictionary comprehension)\nCHECKPOINT\n\nSquares of numbers\n\nSquares of numbers; ch 10, video 8 (https://www.openstax.org/r/squares-of-numbers)",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1305,
+      "completion_tokens": 102,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.83,
+    "cost_usd": 0.000257,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "model_answer": "Two methods exist for creating an empty dictionary: using curly braces {} (e.g., dict_1 = {}) and using the dict() function (e.g., dict_2 = dict()). [B:openstax-intro-python:p239:c02]",
+    "abstain_reason": "citations_not_in_context: ['B:openstax-intro-python:p239:c02']",
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "n02",
+    "split": "test",
+    "answerable": true,
+    "config": "A1_hybrid_neighbours",
+    "question": "How should nested loops be arranged to visit every element of a two-dimensional list-of-lists?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "nested loops two-dimensional list-of-lists",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 57.1,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0229:c02",
+            "page": 229,
+            "score": 0.03278688524590164
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0230:c01",
+            "page": 230,
+            "score": 0.03225806451612903
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0230:c02",
+            "page": 230,
+            "score": 0.031746031746031744
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0229:c01",
+            "page": 229,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0230:c00",
+            "page": 230,
+            "score": null
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0229:c02",
+          "B:openstax-intro-python:p0230:c01",
+          "B:openstax-intro-python:p0230:c02",
+          "B:openstax-intro-python:p0229:c01",
+          "B:openstax-intro-python:p0230:c00"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"To visit every element of a two-dimensional list-of-lists, you should use an outer for loop for the rows and an inner for loop for the columns. This structure allows you to iterate through each element in the nested lists.\", \"citations\": [\"B:openstax-intro-python:p0230:c02\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0229:c02",
+      "B:openstax-intro-python:p0230:c01",
+      "B:openstax-intro-python:p0230:c02",
+      "B:openstax-intro-python:p0229:c01",
+      "B:openstax-intro-python:p0230:c00"
+    ],
+    "context_chars": 2825,
+    "context": "[B:openstax-intro-python:p0229:c02] (source: intro-python.pdf#page=229, page 229, section: 9.4 Nested lists)\n9.4 Nested lists\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Demonstrate the use of a list-of-lists to structure data.\n• Demonstrate individual element addressing using multi-dimensional indexing.\n• Use nested loops to iterate a list-of-lists.\n\nList-of-lists\n\nLists can be made of any type of element. A list element can also be a list. Ex: [2, [3, 5], 17] is a valid list\n\nwith the list [3, 5] being the element at index 1.\n\nWhen a list is an element inside a larger list, it is called a nested list. Nested lists are useful for expressing\nmultidimensional data. When each of the elements of a larger list is a smaller list, the larger list is called a list-\nof-lists.\n\nEx: A table can be stored as a two-dimensional list-of-lists, where each row of data is a list in the list-of-lists.\n\n[B:openstax-intro-python:p0230:c01] (source: intro-python.pdf#page=230, page 230, section: 9.4 Nested lists)\nCONCEPTS IN PRACTICE\n\nLists\n\nFor each of the questions below, consider the following matrix:\n\n1 . What would be the correct way to represent matA in Python?\n\na. [[7, 4, 5], [3, 9, 6], [1, 2, 8]]\n\nb. [7, 4, 5\n\n3, 9, 6\n1, 2, 8]\n\nc. [[7, 3, 1], [4, 9, 2], [1, 2, 8]\n\n2 . What would be the correct index for the number 6 in the above list?\n\na. [5]\n\nb. [2][1]\n\nc. [1][2]\n\n3 . What would be the result of the following code:\n\nprint(matA[0])\n\na. Error\n\nb. 7\n\nc. [7, 4, 5]\n\nUsing nested loops to iterate nested lists\n\nA nested loop structure can be used to iterate a list-of-lists. For a two-dimensional list-of-lists, an outer for\n\nloop can be used for rows, and an inner for loop can be used for columns.\n\n[B:openstax-intro-python:p0230:c02] (source: intro-python.pdf#page=230, page 230, section: 9.4 Nested lists)\nEXAMPLE 9.4\n\nIterating a list-of-lists\n\nThe code below demonstrates how to iterate a list-of-lists.\n\nThe outer loop on line 9 goes element by element for the larger list. Each element in the larger list is a list.\nThe inner loop on line 10 iterates through each element in each nested list.\n\n1 \"\"\"Iterating a list-of-lists.\"\"\"\n\n[B:openstax-intro-python:p0229:c01] (source: intro-python.pdf#page=229, page 229, section: 9.3 Common list operations)\nTRY IT\n\nCopy\n\nMake a copy of word_list called wisdom. Sort the list called wisdom. Create a sentence using the words in\n\neach list and print those sentences (no need to add periods at the end of the sentences).\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n9-3-common-list-operations)\n\n[B:openstax-intro-python:p0230:c00] (source: intro-python.pdf#page=230, page 230, section: 9.4 Nested lists)\nCHECKPOINT\n\nList-of-lists\n\nList-of-lists; ch 9, video 4 (https://www.openstax.org/r/list-of-lists)",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1427,
+      "completion_tokens": 99,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.32,
+    "cost_usd": 0.000273,
+    "status": "answered",
+    "answer": "To visit every element of a two-dimensional list-of-lists, you should use an outer for loop for the rows and an inner for loop for the columns. This structure allows you to iterate through each element in the nested lists.",
+    "citations": [
+      "B:openstax-intro-python:p0230:c02"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "n03",
+    "split": "test",
+    "answerable": true,
+    "config": "A1_hybrid_neighbours",
+    "question": "What is data standardization?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "data standardization",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 45.6,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0089:c01",
+            "page": 89,
+            "score": 0.03278688524590164
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0090:c03",
+            "page": 90,
+            "score": 0.03225806451612903
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0094:c04",
+            "page": 94,
+            "score": 0.031746031746031744
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0089:c00",
+            "page": 89,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0090:c02",
+            "page": 90,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0090:c04",
+            "page": 90,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0094:c03",
+            "page": 94,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0094:c05",
+            "page": 94,
+            "score": null
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0089:c01",
+          "B:openstax-data-science:p0090:c03",
+          "B:openstax-data-science:p0094:c04",
+          "B:openstax-data-science:p0089:c00",
+          "B:openstax-data-science:p0090:c02",
+          "B:openstax-data-science:p0090:c04",
+          "B:openstax-data-science:p0094:c03",
+          "B:openstax-data-science:p0094:c05"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Data standardization is the process of systematically transforming collected information into a consistent and manageable format, which involves the elimination of inconsistencies, errors, and ensuring data is organized and cleaned [B:openstax-data-science:p0089:c01].\", \"citations\": [\"B:openstax-data-science:p0089:c01\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0089:c01",
+      "B:openstax-data-science:p0090:c03",
+      "B:openstax-data-science:p0094:c04",
+      "B:openstax-data-science:p0089:c00",
+      "B:openstax-data-science:p0090:c02",
+      "B:openstax-data-science:p0090:c04",
+      "B:openstax-data-science:p0094:c03",
+      "B:openstax-data-science:p0094:c05"
+    ],
+    "context_chars": 5018,
+    "context": "[B:openstax-data-science:p0089:c01] (source: data-science.pdf#page=89, page 89, section: 2.4 Data Cleaning and Preprocessing)\nData standardization, transformation, and validation are critical steps in the data analysis preprocessing\npipeline. Data standardization is the process of systematically transforming collected information into a\nconsistent and manageable format. This procedure involves the elimination of inconsistencies, errors, and\n\n[B:openstax-data-science:p0090:c03] (source: data-science.pdf#page=90, page 90, section: 2.4 Data Cleaning and Preprocessing)\nNormalization is the process of applying these rules to a database. The data must be organized and cleaned,\nwhich involves removing duplicates and erroneous data, filling in missing values, and logically arranging the\ndata. To uphold data standardization, regular quality control measures should be implemented, including\nperiodic data audits to ascertain the accuracy and consistency of the data. It is also important to document the\nstandardization process, including the guidelines and procedures followed. Periodic review and updates of\ndata standards are necessary to ensure the ongoing reliability and relevance of the data.\n\n[B:openstax-data-science:p0094:c04] (source: data-science.pdf#page=94, page 94, section: 2.4 Data Cleaning and Preprocessing)\nConsider a marketing company conducting a survey on customer satisfaction for a new product launch. The\ncompany collected data from 1,000 respondents, but when the company started analyzing the data, it noticed\nseveral inconsistencies and missing values. The company's data analyst realized that the data standardization\nand validation processes were not adequately performed before the survey results were recorded. To correct\nthis issue, the data analyst first identified and removed all duplicate entries, reducing the total number of\nresponses to 900. Then, they used automated scripts to identify and fill in missing values, which accounted for\n95 responses. The remaining 805 responses were then checked for data accuracy using statistical analysis.\nAfter the data standardization and validation process, the company had a clean and reliable dataset of 805\n\n[B:openstax-data-science:p0089:c00] (source: data-science.pdf#page=89, page 89, section: 2.4 Data Cleaning and Preprocessing)\nDate\nNumber of\nEmployers × 1000\n\n4/1/1990\n5174\n\n5/1/1990\n5370\n\n6/1/1990\n9523\n\n7/1/1990\n5580\n\n8/1/1990\n5581\n\n9/1/1990\n5487\n\n10/1/1990\n5379\n\n11/1/1990\n5208\n\n12/1/1990\n4963\n\nTable 2.3 Monthly Employment over 1990\n\nThe median employment level from May 1, 1990, to July 1, 1990, is 5,289, as a replacement value for the\noutlier on May 28, 1990.\n\nThe adjusted data is presented in Figure 2.3.\n\nFigure 2.3 US Retail Employment Without Outliers\n(Data source: Bureau of Labor Statistics; credit: modification of work by Hyndman, R.J., & Athanasopoulos, G. (2021) Forecasting:\nprinciples and practice, 3rd edition, OTexts: Melbourne, Australia. OTexts.com/fpp3. Accessed on April 23, 2024)\n\nData Standardization, Transformation, and Validation\n\n[B:openstax-data-science:p0090:c02] (source: data-science.pdf#page=90, page 90, section: 2.4 Data Cleaning and Preprocessing)\ndata. This may include setting conventions for naming, data types, and formatting A normal form (NF) is a\nguideline or set of rules used in database design to ensure that a database is well-structured, organized, and\nfree from certain types of data irregularities, such as redundancy and inconsistency. The most commonly used\nnormal forms are 1NF, 2NF, 3NF (First, Second, and Third Normal Form), and BCNF (Boyce-Codd Normal\nForm).\n\n[B:openstax-data-science:p0090:c04] (source: data-science.pdf#page=90, page 90, section: 2.4 Data Cleaning and Preprocessing)\nData normalization ensures that data is maintainable regardless of its source. Consider a marketing team\ncollecting data on their customers' purchasing behavior so they can make some decisions about product\nplacement. The data is collected from numerous sources, such as online sales transactions, in-store purchases,\nand customer feedback surveys. In its raw form, this data could be disorganized and unreliable, making it\n\n[B:openstax-data-science:p0094:c03] (source: data-science.pdf#page=94, page 94, section: 2.4 Data Cleaning and Preprocessing)\nDocumentation of the validation process, including the steps taken and any issues identified, is important in\nfuture data audits or for reference purposes. Data validation is a continuous process, and data should be\nmonitored and updated to ensure its accuracy and validity.\n\n[B:openstax-data-science:p0094:c05] (source: data-science.pdf#page=94, page 94, section: 2.4 Data Cleaning and Preprocessing)\nresponses. The results showed that the product had a satisfaction rate of 85%, which was significantly higher\nthan the initial analysis of 78%. As a result of this correction, the marketing team was able to confidently report\nthe actual satisfaction rate and make better-informed decisions for future product development.\n\nData Aggregation",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1775,
+      "completion_tokens": 99,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.32,
+    "cost_usd": 0.000326,
+    "status": "answered",
+    "answer": "Data standardization is the process of systematically transforming collected information into a consistent and manageable format, which involves the elimination of inconsistencies, errors, and ensuring data is organized and cleaned [B:openstax-data-science:p0089:c01].",
+    "citations": [
+      "B:openstax-data-science:p0089:c01"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "n04",
+    "split": "test",
+    "answerable": true,
+    "config": "A1_hybrid_neighbours",
+    "question": "Which noise-reduction strategy uses something like a seven-day average to reveal the trend of daily stock index values?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "noise-reduction strategy seven-day average trend daily stock index values",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 53.8,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0093:c01",
+            "page": 93,
+            "score": 0.03278688524590164
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0093:c03",
+            "page": 93,
+            "score": 0.0304147465437788
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0095:c01",
+            "page": 95,
+            "score": 0.03007688828584351
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0093:c00",
+            "page": 93,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0093:c02",
+            "page": 93,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0093:c04",
+            "page": 93,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0095:c00",
+            "page": 95,
+            "score": null
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0093:c01",
+          "B:openstax-data-science:p0093:c03",
+          "B:openstax-data-science:p0095:c01",
+          "B:openstax-data-science:p0093:c00",
+          "B:openstax-data-science:p0093:c02",
+          "B:openstax-data-science:p0093:c04",
+          "B:openstax-data-science:p0095:c00"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"The noise-reduction strategy that uses a seven-day average to reveal the trend of daily stock index values is called data smoothing. This technique helps to remove fluctuations and reveal the overall trend of the index over time [B:openstax-data-science:p0093:c01].\", \"citations\": [\"B:openstax-data-science:p0093:c01\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0093:c01",
+      "B:openstax-data-science:p0093:c03",
+      "B:openstax-data-science:p0095:c01",
+      "B:openstax-data-science:p0093:c00",
+      "B:openstax-data-science:p0093:c02",
+      "B:openstax-data-science:p0093:c04",
+      "B:openstax-data-science:p0095:c00"
+    ],
+    "context_chars": 6025,
+    "context": "[B:openstax-data-science:p0093:c01] (source: data-science.pdf#page=93, page 93, section: 2.4 Data Cleaning and Preprocessing)\nData smoothing\nA technique used in data analysis to remove outliers or noise from a dataset in\norder to reveal underlying patterns or trends. One example is smoothing a\ndataset of daily stock market index values over the course of a month. The\nvalues may fluctuate greatly on a day-to-day basis, making it difficult to see any\noverall trend. By calculating a seven-day average, we can smooth out these\nfluctuations and see the overall trend of the index over the course of the\n\nmonth.\n\nImputation\nAn example of imputation is in a hospital setting where a patient's medical\nhistory is incomplete due to missing information. The hospital staff can use\nimputation to estimate the missing data based on the patient's known medical\nconditions and past treatments.\n\n[B:openstax-data-science:p0093:c03] (source: data-science.pdf#page=93, page 93, section: 2.4 Data Cleaning and Preprocessing)\nThe original dataset would have high dimensionality due to the large number\nof variables (100 companies) and time points (5 years). By applying principal\ncomponent analysis, we can reduce the dimensionality of the dataset to a few\nprincipal components that represent the overall trends and patterns in the\nstock market.\n\nEnsemble methods\nAn example of an ensemble method is the random forest algorithm. It\ncombines multiple decision trees, each trained on a random subset of the data,\nto make a more accurate prediction. This helps reduce overfitting and increase\nthe overall performance of the model. The final prediction is made by\naggregating the predictions of each individual tree.\n\nTable 2.7 Strategies to Reduce Noisy Data\n\nData Validation\n\n[B:openstax-data-science:p0095:c01] (source: data-science.pdf#page=95, page 95, section: 2.4 Data Cleaning and Preprocessing)\nLowercasing\nConverting all\ntext to\nlowercase to\navoid multiple\nrepresentations\nof the identical\nword\n\nConsider: \"The sun was shining bright in the sky and the\nbirds were chirping. It was a lovely day in the park and\npeople were enjoying the beautiful weather.\"\n\nStopwords removal\nFiltering out\ncommonly\noccurring\nwords that do\nnot add\nmeaning or\ncontext\n\nAfter removing stopwords, the paragraph would be\ntransformed into: \"Sun shining bright sky birds chirping.\nLovely day park people enjoying beautiful weather.\"\n\nLemmatization and\nstemming\n\nReducing\nwords to their\n\nFor example, the words \"running,\" \"runs,\" and \"ran\" would all\nbe lemmatized to the base form \"run.\"\n\nroot forms to\nreduce\ncomplexity and\nimprove model\nperformance\n\nTable 2.8 Summary of Text Preprocessing Techniques\n\n[B:openstax-data-science:p0093:c00] (source: data-science.pdf#page=93, page 93, section: 2.4 Data Cleaning and Preprocessing)\naccurate conclusions and making predictions from the data. Most noisy data is caused by human errors in data\nentry, technical errors in data collection or transmission, or natural variability in the data itself. Noisy data is\nremoved and cleaned by identifying and correcting errors, removing outliers, and filtering out irrelevant\ninformation. Noisy data can negatively impact data analysis and modeling, and it may indicate that there are\nissues with the model's structure or assumptions. Noisy data is unwanted information that can be removed.\n\nStrategies to reduce the noisy data are summarized in Table 2.7.\n\nStrategy\nExample\n\nData cleaning\nRemoving duplicate or irrelevant data from a dataset, such as deleting repeated\nrows in a spreadsheet or filtering out incomplete or error-prone data entries.\n\n[B:openstax-data-science:p0093:c02] (source: data-science.pdf#page=93, page 93, section: 2.4 Data Cleaning and Preprocessing)\nBinning\nA researcher is studying the age demographics of a population in a city. Instead\nof looking at individual ages, the researcher decides to bin the data into age\ngroups of 10 years (e.g., 0–10, 10–20, 20–30, etc.). This allows for a more\ncomprehensive and easier analysis of the data.\n\nData transformation\nConsider the following dataset that shows the number of COVID-19 cases\nrecorded in a country at different points in time—01/01/2020, 02/02/2020, 03/\n01/2020—are 1000, 10000, 100000, respectively. To transform this data using\nlog, we can take the log base 10 of the number of cases column. This would\nresult in a transformed data as follows: 01/01/2020, 02/02/2020, 03/01/2020 are\n3, 4, 5, respectively.\n\nDimensionality\nreduction\n\n[B:openstax-data-science:p0093:c04] (source: data-science.pdf#page=93, page 93, section: 2.4 Data Cleaning and Preprocessing)\nData validation is the process of ensuring the accuracy and quality of data examined against defined rules and\nstandards. This approach involves identifying and correcting any errors or inconsistencies in the collected data\nas well as ensuring that the data is relevant and reliable for analysis. Data validation can be performed\n\n[B:openstax-data-science:p0095:c00] (source: data-science.pdf#page=95, page 95, section: 2.4 Data Cleaning and Preprocessing)\naggregation to study energy consumption patterns.\n\nText Preprocessing\n\nText preprocessing is a technique of preparing data in text format for further analysis and natural language\nprocessing tasks. It involves transforming unstructured text data into a more structured format to be\ninterpreted by algorithms and models. Some common techniques used in text preprocessing are reviewed in\nTable 2.8.\n\nPreprocessing\n\nExplanation\nExample\n\nTechnique\n\nOriginal Text: \"Tokenization is the process of breaking down\na sentence, paragraph, or entire text into smaller parts\ncalled tokens.\"\n\nTokenization\nBreaking text\ndata into\nindividual\nwords or\nphrases\n(tokens)\n\nTokenized Text: \"Tokenization\", \"is\", \"the\", \"process\", \"of\",\n\"breaking\", \"down\", \"a\", \"sentence\", \",\", \"paragraph\", \",\", \"or\",\n\n\"entire\", \"text\", \"into\", \"smaller\", \"parts\", \"called\", \"tokens\", \".\"\n\nConsider the following sentence: \"John likes to eat pizza.\"\nAfter lowercasing it, the sentence becomes \"john likes to eat\npizza.\"",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 2044,
+      "completion_tokens": 114,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.42,
+    "cost_usd": 0.000375,
+    "status": "answered",
+    "answer": "The noise-reduction strategy that uses a seven-day average to reveal the trend of daily stock index values is called data smoothing. This technique helps to remove fluctuations and reveal the overall trend of the index over time [B:openstax-data-science:p0093:c01].",
+    "citations": [
+      "B:openstax-data-science:p0093:c01"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "n05",
+    "split": "test",
+    "answerable": true,
+    "config": "A1_hybrid_neighbours",
+    "question": "In text preprocessing, what does stopwords removal do?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "stopwords removal",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 49.3,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0095:c01",
+            "page": 95,
+            "score": 0.03278688524590164
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0096:c01",
+            "page": 96,
+            "score": 0.028949545078577336
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0222:c01",
+            "page": 222,
+            "score": 0.016129032258064516
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0095:c00",
+            "page": 95,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0096:c00",
+            "page": 96,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0222:c00",
+            "page": 222,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0222:c02",
+            "page": 222,
+            "score": null
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0095:c01",
+          "B:openstax-data-science:p0096:c01",
+          "B:openstax-intro-python:p0222:c01",
+          "B:openstax-data-science:p0095:c00",
+          "B:openstax-data-science:p0096:c00",
+          "B:openstax-intro-python:p0222:c00",
+          "B:openstax-intro-python:p0222:c02"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Stopwords removal filters out commonly occurring words that do not add meaning or context to the text, transforming it into a more concise form.\", \"citations\": [\"B:openstax-data-science:p0095:c01\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0095:c01",
+      "B:openstax-data-science:p0096:c01",
+      "B:openstax-intro-python:p0222:c01",
+      "B:openstax-data-science:p0095:c00",
+      "B:openstax-data-science:p0096:c00",
+      "B:openstax-intro-python:p0222:c00",
+      "B:openstax-intro-python:p0222:c02"
+    ],
+    "context_chars": 5913,
+    "context": "[B:openstax-data-science:p0095:c01] (source: data-science.pdf#page=95, page 95, section: 2.4 Data Cleaning and Preprocessing)\nLowercasing\nConverting all\ntext to\nlowercase to\navoid multiple\nrepresentations\nof the identical\nword\n\nConsider: \"The sun was shining bright in the sky and the\nbirds were chirping. It was a lovely day in the park and\npeople were enjoying the beautiful weather.\"\n\nStopwords removal\nFiltering out\ncommonly\noccurring\nwords that do\nnot add\nmeaning or\ncontext\n\nAfter removing stopwords, the paragraph would be\ntransformed into: \"Sun shining bright sky birds chirping.\nLovely day park people enjoying beautiful weather.\"\n\nLemmatization and\nstemming\n\nReducing\nwords to their\n\nFor example, the words \"running,\" \"runs,\" and \"ran\" would all\nbe lemmatized to the base form \"run.\"\n\nroot forms to\nreduce\ncomplexity and\nimprove model\nperformance\n\nTable 2.8 Summary of Text Preprocessing Techniques\n\n[B:openstax-data-science:p0096:c01] (source: data-science.pdf#page=96, page 96, section: 2.4 Data Cleaning and Preprocessing)\nLet's say a customer has left a review for a new laptop they\npurchased. The review reads: \"I am extremely satisfied with\nmy purchase. The laptop has exceeded all of my\nexpectations and has greatly improved my work efficiency.\nThanks for an amazing product!\"\n\nTo perform sentiment analysis, the text will first undergo\npreprocessing, which involves cleaning and preparing the\ntext data for analysis. This may include removing\npunctuation, converting all letters to lowercase, and\n\nremoving stopwords (commonly used words that do not add\nmuch meaning to a sentence, such as \"the\" or \"and\").\n\nAfter preprocessing, sentiment analysis techniques will be\napplied to analyze the emotions and opinions expressed in\nthe review. The analysis may identify key positive words such\nas \"satisfied\" and \"amazing\" and measure their overall\nsentiment score. It may also take into account the context\nand tone of the review to accurately determine the\nsentiment.\n\nTable 2.8 Summary of Text Preprocessing Techniques\n\n[B:openstax-intro-python:p0222:c01] (source: intro-python.pdf#page=222, page 222, section: 9.1 Modifying and iterating lists)\n['Jamie', 'Vicky', 'DeShawn', 'Tae']\n['Jamie', 'Vicky', 'DeShawn', 'Tae', 'Ming']\n\n['Vicky', 'DeShawn', 'Tae', 'Ming']\n['Vicky', 'DeShawn', 'Tae']\n\n[B:openstax-data-science:p0095:c00] (source: data-science.pdf#page=95, page 95, section: 2.4 Data Cleaning and Preprocessing)\naggregation to study energy consumption patterns.\n\nText Preprocessing\n\nText preprocessing is a technique of preparing data in text format for further analysis and natural language\nprocessing tasks. It involves transforming unstructured text data into a more structured format to be\ninterpreted by algorithms and models. Some common techniques used in text preprocessing are reviewed in\nTable 2.8.\n\nPreprocessing\n\nExplanation\nExample\n\nTechnique\n\nOriginal Text: \"Tokenization is the process of breaking down\na sentence, paragraph, or entire text into smaller parts\ncalled tokens.\"\n\nTokenization\nBreaking text\ndata into\nindividual\nwords or\nphrases\n(tokens)\n\nTokenized Text: \"Tokenization\", \"is\", \"the\", \"process\", \"of\",\n\"breaking\", \"down\", \"a\", \"sentence\", \",\", \"paragraph\", \",\", \"or\",\n\n\"entire\", \"text\", \"into\", \"smaller\", \"parts\", \"called\", \"tokens\", \".\"\n\nConsider the following sentence: \"John likes to eat pizza.\"\nAfter lowercasing it, the sentence becomes \"john likes to eat\npizza.\"\n\n[B:openstax-data-science:p0096:c00] (source: data-science.pdf#page=96, page 96, section: 2.4 Data Cleaning and Preprocessing)\nPreprocessing\n\nExplanation\nExample\n\nTechnique\n\nIn the sentence \"I went to the market to buy some fruits,\"\nthe words \"went\" and \"buy\" would be tagged as verbs,\n\"market\" and \"fruits\" as a noun, and \"some\" as adjectives.\n\nPart-of-speech tagging\nIdentifying the\ngrammatical\ncomponents of\neach word\nwhere each\nword in a\nsentence is\nassigned a\nspecific part-of-\nspeech tag\n(e.g., noun,\nverb, or\nadjective)\n\nNamed entity\nrecognition\n\nConsider the following text: \"John went to Paris last summer\nwith his colleagues at Microsoft.\"\n\nRecognizing\nand\ncategorizing\nnamed entities\nsuch as people,\nplaces, and\norganizations\n\nBy using named entity recognition, we can tag the named\nentities in this sentence as follows: \"John (person) went to\nParis (location) last summer with his colleagues at Microsoft\n(organization).\"\n\nSentiment analysis\nIdentifying and\ncategorizing\nthe emotions\nexpressed in\ntext\n\n[B:openstax-intro-python:p0222:c00] (source: intro-python.pdf#page=222, page 222, section: 9.1 Modifying and iterating lists)\nEXAMPLE 9.1\n\nSimple operations to modify a list\n\nThe code below demonstrates simple operations for modifying a list.\n\nLine 8 shows the append() operation, line 12 shows the remove() operation, and line 17 shows the pop()\n\noperation. Since the pop() operation removes the last element, no parameter is needed.\n\n1 \"\"\"Operations for adding and removing elements from a list.\"\"\"\n2\n3 # Create a list of students working on a project\n4 student_list = [\"Jamie\", \"Vicky\", \"DeShawn\", \"Tae\"]\n5 print(student_list)\n6\n7 # Another student joins the project. The student must be added to\nthe list.\n8 student_list.append(\"Ming\")\n9 print(student_list)\n10\n11 # \"Jamie\" withdraws from the project. Jamie must be removed from\nthe list.\n12 student_list.remove(\"Jamie\")\n13 print(student_list)\n14\n15 # Suppose \"Ming\" had to be removed from the list.\n16 # A pop() operation can be used since Ming is last in the list.\n17 student_list.pop()\n18 print(student_list)\n\nThe above code's output is:\n\n[B:openstax-intro-python:p0222:c02] (source: intro-python.pdf#page=222, page 222, section: 9.1 Modifying and iterating lists)\nCONCEPTS IN PRACTICE\n\nModifying lists\n\n1 . Which operation can be used to add an element to the end of a list?\na. add()\n\nb. append()\n\nc. pop()\n\n2 . What is the correct syntax to remove the element 23 from a list called number_list?\n\na. remove()\n\nb. number_list.remove()",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 2083,
+      "completion_tokens": 75,
+      "llm_calls": 2
+    },
+    "elapsed_s": 1.95,
+    "cost_usd": 0.000357,
+    "status": "answered",
+    "answer": "Stopwords removal filters out commonly occurring words that do not add meaning or context to the text, transforming it into a more concise form.",
+    "citations": [
+      "B:openstax-data-science:p0095:c01"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "n06",
+    "split": "test",
+    "answerable": true,
+    "config": "A1_hybrid_neighbours",
+    "question": "Which examples of cloud storage are given?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "cloud storage examples",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 50.6,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0101:c03",
+            "page": 101,
+            "score": 0.03278688524590164
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0101:c04",
+            "page": 101,
+            "score": 0.031754032258064516
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0102:c01",
+            "page": 102,
+            "score": 0.031754032258064516
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0101:c02",
+            "page": 101,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0102:c00",
+            "page": 102,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0102:c02",
+            "page": 102,
+            "score": null
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0101:c03",
+          "B:openstax-data-science:p0101:c04",
+          "B:openstax-data-science:p0102:c01",
+          "B:openstax-data-science:p0101:c02",
+          "B:openstax-data-science:p0102:c00",
+          "B:openstax-data-science:p0102:c02"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Examples of cloud storage include Amazon AWS, Microsoft Azure, and Google Cloud [B:openstax-data-science:p0101:c03].\", \"citations\": [\"B:openstax-data-science:p0101:c03\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0101:c03",
+      "B:openstax-data-science:p0101:c04",
+      "B:openstax-data-science:p0102:c01",
+      "B:openstax-data-science:p0101:c02",
+      "B:openstax-data-science:p0102:c00",
+      "B:openstax-data-science:p0102:c02"
+    ],
+    "context_chars": 4767,
+    "context": "[B:openstax-data-science:p0101:c03] (source: data-science.pdf#page=101, page 101, section: 2.5 Handling Large Datasets)\nCloud Computing\n\nCloud computing delivers a cost-effective solution for storing vast amounts of data, enabling seamless\ncollaboration and data transfer among remote groups. This technology comprises remote-access tools for\nstorage, processing, and analytics, facilitating multiple users' access regardless of their physical location.\nMoreover, cloud computing boasts a diverse range of data collection tools, including machine learning, and\ndata warehouses, streamlining the data assembly operation and improving overall efficiency. Cloud computing\nequips data scientists with the necessary resources and flexibility to effectively collect, manage, and analyze\ndata for their projects. Some examples of cloud storage are Amazon AWS, Microsoft Azure, and Google Cloud.\n\n[B:openstax-data-science:p0101:c04] (source: data-science.pdf#page=101, page 101, section: 2.5 Handling Large Datasets)\nEXAMPLE 2.8\n\nProblem\n\nThe CEO of a large insurance company faced the challenge of increasing digital processes and documents,\nleading to a need for more storage capacity and rising costs for maintaining servers and hardware. What\nare all the available options for the insurance company facing the need for additional storage capacity at a\nhigher cost, and which solution would be the most effective for decreasing costs and increasing capacity\nwhile ensuring data security?\n\nSolution\n\n1. Migrating to a cloud storage system: This would allow the company to offload the burden of\nmaintaining physical servers and hardware while also providing virtually unlimited storage capacity.\nThe cost of cloud storage is also generally more flexible and scalable, allowing the company to only pay\nfor the storage it needs. Additionally, with the use of cloud-based document management systems, the\ncompany can streamline and automate its processes, reducing the need for physical documentation\n\n[B:openstax-data-science:p0102:c01] (source: data-science.pdf#page=102, page 102, section: 2.5 Handling Large Datasets)\nConsolidating data and processes: The company could assess its current processes and systems to\nidentify areas where data and processes can be consolidated to reduce the need for multiple storage\nsystems and streamline workflows. 5. Implementing a virtual desktop infrastructure: A virtual desktop infrastructure allows employees to\naccess their desktop and applications from a central server, reducing the need for individual storage\nspace on devices. This can also improve security and data backup capabilities. 6. Upgrading or redesigning its current storage system: The company could invest in upgrading or\nredesigning its current storage system to improve efficiency and increase storage capacity. 7. Utilizing hybrid cloud storage: Instead of fully migrating to the cloud, the company could consider a\nhybrid approach where certain sensitive data is stored on-premises while less critical data is stored in\nthe cloud. This approach can offer the benefits of both on-premises and cloud storage.\n\n[B:openstax-data-science:p0101:c02] (source: data-science.pdf#page=101, page 101, section: 2.5 Handling Large Datasets)\nThrough accurate and efficient management and analysis of patient data,\nhospitals and health care providers are able to make informed decisions, eventually resulting in a more\nefficient and effective health care system overall.\n\n[B:openstax-data-science:p0102:c00] (source: data-science.pdf#page=102, page 102, section: 2.5 Handling Large Datasets)\nand increasing efficiency. However, this decision would require careful consideration of security\nmeasures and potentially training for employees to adapt to the new system. 2. Implementing a data archiving strategy: Instead of immediately migrating to the cloud or investing in\nnew technology, the company could consider implementing a data archiving strategy. This involves\nidentifying and storing infrequently used data in a separate, low-cost storage system, freeing up space\non servers and reducing costs. 3. Outsourcing data storage and management: The company could consider outsourcing its data storage\nand management to a third-party provider. This would eliminate the need for maintaining physical\nservers and hardware, and the provider may also offer advanced security measures and data backup\noptions. 4.\n\n[B:openstax-data-science:p0102:c02] (source: data-science.pdf#page=102, page 102, section: 2.5 Handling Large Datasets)\n8. Conducting regular audits of data usage and storage: The company could conduct regular audits of its\ndata usage and storage to identify areas of redundancy or inefficiency and adjust accordingly. This can\nhelp optimize storage and reduce costs over time.",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1547,
+      "completion_tokens": 78,
+      "llm_calls": 2
+    },
+    "elapsed_s": 1.98,
+    "cost_usd": 0.000279,
+    "status": "answered",
+    "answer": "Examples of cloud storage include Amazon AWS, Microsoft Azure, and Google Cloud [B:openstax-data-science:p0101:c03].",
+    "citations": [
+      "B:openstax-data-science:p0101:c03"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "n07",
+    "split": "test",
+    "answerable": true,
+    "config": "A1_hybrid_neighbours",
+    "question": "Against what is data examined during data validation?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "data validation",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 63.9,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0093:c04",
+            "page": 93,
+            "score": 0.03252247488101534
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0094:c03",
+            "page": 94,
+            "score": 0.03177805800756621
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0094:c01",
+            "page": 94,
+            "score": 0.03125763125763126
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0093:c03",
+            "page": 93,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0094:c02",
+            "page": 94,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0094:c04",
+            "page": 94,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0094:c00",
+            "page": 94,
+            "score": null
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0093:c04",
+          "B:openstax-data-science:p0094:c03",
+          "B:openstax-data-science:p0094:c01",
+          "B:openstax-data-science:p0093:c03",
+          "B:openstax-data-science:p0094:c02",
+          "B:openstax-data-science:p0094:c04",
+          "B:openstax-data-science:p0094:c00"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Data is examined against defined rules and standards during data validation to ensure its accuracy and quality. This includes checking for discrepancies, errors, and ensuring relevance and reliability for analysis [B:openstax-data-science:p0093:c04], [B:openstax-data-science:p0094:c00].\", \"citations\": [\"B:openstax-data-science:p0093:c04\", \"B:openstax-data-science:p0094:c00\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0093:c04",
+      "B:openstax-data-science:p0094:c03",
+      "B:openstax-data-science:p0094:c01",
+      "B:openstax-data-science:p0093:c03",
+      "B:openstax-data-science:p0094:c02",
+      "B:openstax-data-science:p0094:c04",
+      "B:openstax-data-science:p0094:c00"
+    ],
+    "context_chars": 5298,
+    "context": "[B:openstax-data-science:p0093:c04] (source: data-science.pdf#page=93, page 93, section: 2.4 Data Cleaning and Preprocessing)\nData validation is the process of ensuring the accuracy and quality of data examined against defined rules and\nstandards. This approach involves identifying and correcting any errors or inconsistencies in the collected data\nas well as ensuring that the data is relevant and reliable for analysis. Data validation can be performed\n\n[B:openstax-data-science:p0094:c03] (source: data-science.pdf#page=94, page 94, section: 2.4 Data Cleaning and Preprocessing)\nDocumentation of the validation process, including the steps taken and any issues identified, is important in\nfuture data audits or for reference purposes. Data validation is a continuous process, and data should be\nmonitored and updated to ensure its accuracy and validity.\n\n[B:openstax-data-science:p0094:c01] (source: data-science.pdf#page=94, page 94, section: 2.4 Data Cleaning and Preprocessing)\nAny discrepancies or\nerrors would be flagged for correction before the data is used for analysis or decision-making purposes. Through this data validation process, the company can ensure that its customer data is accurate, reliable, and\ncompliant with industry standards.\n\n[B:openstax-data-science:p0093:c03] (source: data-science.pdf#page=93, page 93, section: 2.4 Data Cleaning and Preprocessing)\nThe original dataset would have high dimensionality due to the large number\nof variables (100 companies) and time points (5 years). By applying principal\ncomponent analysis, we can reduce the dimensionality of the dataset to a few\nprincipal components that represent the overall trends and patterns in the\nstock market.\n\nEnsemble methods\nAn example of an ensemble method is the random forest algorithm. It\ncombines multiple decision trees, each trained on a random subset of the data,\nto make a more accurate prediction. This helps reduce overfitting and increase\nthe overall performance of the model. The final prediction is made by\naggregating the predictions of each individual tree.\n\nTable 2.7 Strategies to Reduce Noisy Data\n\nData Validation\n\n[B:openstax-data-science:p0094:c02] (source: data-science.pdf#page=94, page 94, section: 2.4 Data Cleaning and Preprocessing)\nAnother method to assess the data is to cross-reference it with reliable sources to identify any discrepancies or\nerrors in the collected data. A number of tools and techniques can be used to validate data. These can include\nstatistical analysis, data sampling, data profiling, and data auditing. It is important to identify and remove\noutliers before validating the data. Reasonability checks involve using common sense to check if the data is\nlogical and makes sense—for example, checking if a person's age is within a reasonable range or if a\ncompany's revenue is within a reasonable range for its industry. If possible, data should be verified with the\nsource to ensure its accuracy. This can involve contacting the person or organization who provided the data or\nchecking against official records. It is always a good idea to involve multiple team members or experts in the\nvalidation process to catch any errors or inconsistencies that may have been overlooked by a single person.\n\n[B:openstax-data-science:p0094:c04] (source: data-science.pdf#page=94, page 94, section: 2.4 Data Cleaning and Preprocessing)\nConsider a marketing company conducting a survey on customer satisfaction for a new product launch. The\ncompany collected data from 1,000 respondents, but when the company started analyzing the data, it noticed\nseveral inconsistencies and missing values. The company's data analyst realized that the data standardization\nand validation processes were not adequately performed before the survey results were recorded. To correct\nthis issue, the data analyst first identified and removed all duplicate entries, reducing the total number of\nresponses to 900. Then, they used automated scripts to identify and fill in missing values, which accounted for\n95 responses. The remaining 805 responses were then checked for data accuracy using statistical analysis.\nAfter the data standardization and validation process, the company had a clean and reliable dataset of 805\n\n[B:openstax-data-science:p0094:c00] (source: data-science.pdf#page=94, page 94, section: 2.4 Data Cleaning and Preprocessing)\nthrough a variety of techniques, including manual checks, automated scripts, and statistical analysis. Some\ncommon inspections in data validation include checking for duplicates, checking for mislaid values, and\nverifying data against external sources or references. Before collecting data, it is important to determine the\nconditions or criteria that the data needs to meet to be considered valid. This can include factors such as\nprecision, completeness, consistency, and timeliness. For example, a company may set up a data validation\nprocess to ensure that all customer information entered into its database follows a specific format. This would\ninvolve checking for correct spellings and proper formatting of phone numbers and addresses and validating\nthe correctness of customer names and account numbers. The data would also be checked against external\nsources, such as official government records, to verify the accuracy of the information.",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 1684,
+      "completion_tokens": 126,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.62,
+    "cost_usd": 0.000328,
+    "status": "answered",
+    "answer": "Data is examined against defined rules and standards during data validation to ensure its accuracy and quality. This includes checking for discrepancies, errors, and ensuring relevance and reliability for analysis [B:openstax-data-science:p0093:c04], [B:openstax-data-science:p0094:c00].",
+    "citations": [
+      "B:openstax-data-science:p0093:c04",
+      "B:openstax-data-science:p0094:c00"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "n08",
+    "split": "test",
+    "answerable": true,
+    "config": "A1_hybrid_neighbours",
+    "question": "In one-hot encoding of a review, how large is the binary vector created for each word?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "one-hot encoding binary vector size",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 58.1,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0097:c01",
+            "page": 97,
+            "score": 0.03278688524590164
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0099:c00",
+            "page": 99,
+            "score": 0.031754032258064516
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0098:c06",
+            "page": 98,
+            "score": 0.03076923076923077
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0097:c00",
+            "page": 97,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0097:c02",
+            "page": 97,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0099:c01",
+            "page": 99,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0098:c05",
+            "page": 98,
+            "score": null
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0097:c01",
+          "B:openstax-data-science:p0099:c00",
+          "B:openstax-data-science:p0098:c06",
+          "B:openstax-data-science:p0097:c00",
+          "B:openstax-data-science:p0097:c02",
+          "B:openstax-data-science:p0099:c01",
+          "B:openstax-data-science:p0098:c05"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"The size of the binary vector created for each word in one-hot encoding is equal to the size of the vocabulary [B:openstax-data-science:p0097:c01].\", \"citations\": [\"B:openstax-data-science:p0097:c01\"], \"abstain\": false}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0097:c01",
+      "B:openstax-data-science:p0099:c00",
+      "B:openstax-data-science:p0098:c06",
+      "B:openstax-data-science:p0097:c00",
+      "B:openstax-data-science:p0097:c02",
+      "B:openstax-data-science:p0099:c01",
+      "B:openstax-data-science:p0098:c05"
+    ],
+    "context_chars": 6654,
+    "context": "[B:openstax-data-science:p0097:c01] (source: data-science.pdf#page=97, page 97, section: 2.4 Data Cleaning and Preprocessing)\nEncoding\nConverting text\ninto a\nnumerical\nrepresentation\nfor machine\nlearning\nalgorithms to\nprocess\n\nOne-hot encoding involves creating a binary vector for each\nword in the review, where the size of the vector is equal to\nthe size of the vocabulary. For example, if the review\ncontains the words \"great,\" \"experience,\" \"restaurant,\" \"food,\"\n\"delicious,\" \"service,\" and \"top-notch,\" the one-hot encoded\nvectors for these words would be: great: [1, 0, 0, 0, 0, 0, 0];\nexperience: [0, 1, 0, 0, 0, 0, 0]; restaurant: [0, 0, 1, 0, 0, 0, 0];\nfood: [0, 0, 0, 1, 0, 0, 0]; delicious: [0, 0, 0, 0, 1, 0, 0]; service:\n[0, 0, 0, 0, 0, 1, 0]; top-notch: [0, 0, 0, 0, 0, 0, 1]. These one-\nhot encoded vectors can now be used as input features for\nmachine learning models.\n\nRemoving special\n\nSimplifying the\n\nConsider the input: \"Hello, this is a text with @special#\n\ntext for analysis\n\ncharacters and\npunctuation\n\ncharacters!*\" and the output: \"Hello this is a text with special\ncharacters\"\n\n[B:openstax-data-science:p0099:c00] (source: data-science.pdf#page=99, page 99, section: 2.5 Handling Large Datasets)\nefficient use of binary digits and reduces the overall size of the data without losing any information during\ncompression. Huffman coding is applied to data that require fast and efficient compression, such as video\ncompression, image compression, and data transmission and storage.\n\nFigure 2.4 Huffman Tree Diagrams\n\nData Storage\n\nBig data requires storage solutions that can handle large volumes of diverse data types, offer high\nperformance for data access and processing, guarantee scalability for growing datasets, and are thoroughly\nreliable. The choice of storage solution will depend on data volume, variety, velocity, performance\nrequirements, scalability needs, budget constraints, and existing infrastructure. Organizations often deploy a\ncombination of storage technologies to address different uses and requirements within their big data\nenvironments. Some common types of storage solutions used for big data include:\n\n[B:openstax-data-science:p0098:c06] (source: data-science.pdf#page=98, page 98, section: 2.5 Handling Large Datasets)\nThere are several methods of data lossless compression, including Huffman coding. Huffman coding\nworks by assigning shorter binary codes to the most frequently used characters or symbols in a given\ndataset and longer codes to less frequently used characters, as shown in Figure 2.4. This results in a more\n\n[B:openstax-data-science:p0097:c00] (source: data-science.pdf#page=97, page 97, section: 2.4 Data Cleaning and Preprocessing)\nPreprocessing\n\nExplanation\nExample\n\nTechnique\n\nSpell-checking and\ncorrection\n\nCorrecting\nspelling errors\nto improve\naccuracy\n\nSuppose we have a text like: \"The writting was very\ninpprecise and had many trgical mistakes.\" With spell-\nchecking and correction, this text can be processed and\ncorrected to: \"The writing was very imprecise and had many\ntragic mistakes.\" This involves identifying and correcting\nmisspelled words.\n\nIn this case, \"writting\" was corrected to \"writing,\"\n\"inpprecise\" to \"imprecise,\" and \"trgical\" to \"tragic.\" This not\nonly improves the readability and accuracy of the text but\nalso helps in better understanding and analysis of the text.\n\nLet's say we have a dataset of customer reviews for a\nrestaurant. Each review is a string of text, such as: \"I had a\ngreat experience at this restaurant, the food was delicious\nand the service was top-notch.\" To encode this text data, we\ncan use techniques such as one-hot encoding or word\nembedding.\n\n[B:openstax-data-science:p0097:c02] (source: data-science.pdf#page=97, page 97, section: 2.4 Data Cleaning and Preprocessing)\nTable 2.8 Summary of Text Preprocessing Techniques\n\nText preprocessing is crucial to effectively use text data for tasks such as text classification and information\nextraction. By transforming the raw text data, the accuracy and performance of machine learning models can\ngreatly improve and provide meaningful insights and predictions.\n\nText preprocessing is especially important in artificial intelligence, as it can lay the foundation for effective text\nanalysis, classification, information retrieval, sentiment analysis, and many other natural language processing\ntasks (see Natural Language Processing). A well-designed preprocessing pipeline can lead to better model\nperformance, improved efficiency, and more accurate insights from text data.\n\n[B:openstax-data-science:p0099:c01] (source: data-science.pdf#page=99, page 99, section: 2.5 Handling Large Datasets)\n1. Relational databases: Relational databases. organize data in tables and uses structured query language\n(SQL) for data retrieval and management. They are commonly used for traditional, structured data such as\nfinancial data.\n2. NoSQL databases. These databases are designed to handle unstructured data, such as social media\ncontent or data from sensors, and use non-relational data models.\n3. Data warehouses. A data warehouse is a centralized repository of data that combines data from multiple\nsources and allows for complex queries and analysis. It is commonly used for business intelligence and\nreporting intentions.\n4. Cloud storage. Cloud storage involves storing data in remote servers accessed over the internet. It offers\nscalability, cost-effectiveness, and remote accessibility.\n5. Object storage. With object storage, data are stored as objects that consist of both data and metadata.\nThis method is often used for storing large volumes of unstructured data, such as images and videos.\n\n[B:openstax-data-science:p0098:c05] (source: data-science.pdf#page=98, page 98, section: 2.5 Handling Large Datasets)\n• Lossy compression reduces the size of data by permanently extracting particular data that is considered\nirrelevant or redundant. This method can significantly decrease file sizes, but it also results in a loss of\nsome data. Lossy compression is often utilized for multimedia files and images, where slight modifications\nin quality may not be noticeable to the human eye. Examples of lossy compression include MP3 and JPEG.\n• Lossless compression aims to reduce file size without removing any data. This method achieves\ncompression by finding patterns and redundancies in the data and representing them more efficiently.\nThis allows for the reconstruction of the original data without any loss in quality. Lossless compression is\ncommonly used for text and numerical data, where every piece of information is crucial. Examples of\nlossless compression include ZIP, RAR, and PNG.",
+    "n_searches": 1,
+    "usage": {
+      "prompt_tokens": 2163,
+      "completion_tokens": 89,
+      "llm_calls": 2
+    },
+    "elapsed_s": 2.29,
+    "cost_usd": 0.000378,
+    "status": "answered",
+    "answer": "The size of the binary vector created for each word in one-hot encoding is equal to the size of the vocabulary [B:openstax-data-science:p0097:c01].",
+    "citations": [
+      "B:openstax-data-science:p0097:c01"
+    ],
+    "context_evidence": true,
+    "first_search_hit3": true
+  },
+  {
+    "query_id": "u04",
+    "split": "test",
+    "answerable": false,
+    "config": "A1_hybrid_neighbours",
+    "question": "What value of K is recommended for KNN imputation of missing data?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "KNN imputation missing data value of K recommended",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 50.3,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0087:c02",
+            "page": 87,
+            "score": 0.031754032258064516
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0087:c01",
+            "page": 87,
+            "score": 0.031746031746031744
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0086:c03",
+            "page": 86,
+            "score": 0.031544957774465976
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0087:c03",
+            "page": 87,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0087:c00",
+            "page": 87,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0086:c02",
+            "page": 86,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0086:c04",
+            "page": 86,
+            "score": null
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0087:c02",
+          "B:openstax-data-science:p0087:c01",
+          "B:openstax-data-science:p0086:c03",
+          "B:openstax-data-science:p0087:c03",
+          "B:openstax-data-science:p0087:c00",
+          "B:openstax-data-science:p0086:c02",
+          "B:openstax-data-science:p0086:c04"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "KNN imputation recommended value of K",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 55.6,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0087:c04",
+            "page": 87,
+            "score": 0.031754032258064516
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0093:c01",
+            "page": 93,
+            "score": 0.031099324975891997
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0249:c00",
+            "page": 249,
+            "score": 0.026356857985087564
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0087:c03",
+            "page": 87,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0087:c05",
+            "page": 87,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0093:c00",
+            "page": 93,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0093:c02",
+            "page": 93,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0249:c01",
+            "page": 249,
+            "score": null
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-data-science:p0087:c04",
+          "B:openstax-data-science:p0093:c01",
+          "B:openstax-intro-python:p0249:c00",
+          "B:openstax-intro-python:p0249:c01"
+        ],
+        "duplicate_ids": [
+          "B:openstax-data-science:p0087:c03"
+        ],
+        "dropped_ids": [
+          "B:openstax-data-science:p0087:c05",
+          "B:openstax-data-science:p0093:c00",
+          "B:openstax-data-science:p0093:c02"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "KNN imputation value of K best practices",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 59.2,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-data-science:p0087:c04",
+            "page": 87,
+            "score": 0.03225806451612903
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-data-science:p0093:c01",
+            "page": 93,
+            "score": 0.03177805800756621
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-data-science:p0091:c04",
+            "page": 91,
+            "score": 0.02804284323271665
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0087:c03",
+            "page": 87,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0087:c05",
+            "page": 87,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0093:c00",
+            "page": 93,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0093:c02",
+            "page": 93,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0091:c03",
+            "page": 91,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-data-science:p0091:c05",
+            "page": 91,
+            "score": null
+          }
+        ],
+        "new_context_ids": [],
+        "duplicate_ids": [
+          "B:openstax-data-science:p0087:c04",
+          "B:openstax-data-science:p0093:c01",
+          "B:openstax-data-science:p0087:c03"
+        ],
+        "dropped_ids": [
+          "B:openstax-data-science:p0091:c04",
+          "B:openstax-data-science:p0087:c05",
+          "B:openstax-data-science:p0093:c00",
+          "B:openstax-data-science:p0093:c02",
+          "B:openstax-data-science:p0091:c03",
+          "B:openstax-data-science:p0091:c05"
+        ]
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Không đủ bằng chứng để trả lời.\", \"citations\": [], \"abstain\": true}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0087:c02",
+      "B:openstax-data-science:p0087:c01",
+      "B:openstax-data-science:p0086:c03",
+      "B:openstax-data-science:p0087:c03",
+      "B:openstax-data-science:p0087:c00",
+      "B:openstax-data-science:p0086:c02",
+      "B:openstax-data-science:p0086:c04",
+      "B:openstax-data-science:p0087:c04",
+      "B:openstax-data-science:p0093:c01",
+      "B:openstax-intro-python:p0249:c00",
+      "B:openstax-intro-python:p0249:c01"
+    ],
+    "context_chars": 7922,
+    "context": "[B:openstax-data-science:p0087:c02] (source: data-science.pdf#page=87, page 87, section: 2.4 Data Cleaning and Preprocessing)\nMAR (missing at random) data is missing data related to other variables but not to any unknown or\nunmeasured variables. As an example, during data collection, a survey is sent to respondents and the\nsurvey asks about loneliness. One of the questions asks about memory retention. Some older respondents\nmight skip this question since they may be unwilling to share this type of information. The likelihood of\nmissing data for loneliness factors is related to age (older respondents). Thus, the missing data is related\nto an observed variable of age but not directly related to loneliness measurements.\n\n[B:openstax-data-science:p0087:c01] (source: data-science.pdf#page=87, page 87, section: 2.4 Data Cleaning and Preprocessing)\nIt is important to distinguish between different types of missing data. MCAR (missing completely at\nrandom) data is missing data not related to any other variables, with no underlying cause for its absence.\nConsider data collection with a survey asking about driving habits. One of the demographic questions asks\nfor income level. Some respondents accidentally skip this question, and so there is missing data for\nincome, but this is not related to the variables being collected related to driving habits.\n\n[B:openstax-data-science:p0086:c03] (source: data-science.pdf#page=86, page 86, section: 2.4 Data Cleaning and Preprocessing)\nThe goal of data cleaning and preprocessing is to guarantee that the data used for analysis is accurate,\nconsistent, and relevant. It helps to improve the quality of the results and increase the efficiency of the analysis\nprocess. A well-prepared dataset can lead to more accurate insights and better decision-making.\n\nHandling Missing Data and Outliers\n\nMissing data refers to any data points or values that are not present in a dataset. This could be due to data\ncollection errors, data corruption, or nonresponse from participants in a study. Missing data can impact the\naccuracy and validity of an analysis, as it reduces the sample size and potentially introduces bias.\n\nSome specific examples of missing data include the following:\n\n1. A survey participant forgetting to answer a question\n2. A malfunction in data collection equipment resulting in missing values\n3. A participant choosing not to answer a question due to sensitivity or discomfort\n\n[B:openstax-data-science:p0087:c03] (source: data-science.pdf#page=87, page 87, section: 2.4 Data Cleaning and Preprocessing)\nMNAR (missing not at random) data refers to a situation in which the absence of data depends on\nobserved data but not on unobserved data. For example, during data collection, a survey is sent to\nrespondents and the survey asks about debt levels. One of the questions asks about outstanding debt that\nthe customers have such as credit card debt. Some respondents with high credit card debt are less likely\nto respond to certain questions. Here the missing credit card information is related to the unobserved\ndebt levels. 2. Determine the reasons behind missing data and outliers. It is helpful to understand the reasons\nbehind the missing data and outliers. Some expected reasons for missing data include measurement\nerrors, human error, or data not being collected for a particular variable. Similarly, outliers can be caused\nby incorrect data entry, measurement errors, or genuine extreme values in the data. 3. Determine how to solve missing data issues.\n\n[B:openstax-data-science:p0087:c00] (source: data-science.pdf#page=87, page 87, section: 2.4 Data Cleaning and Preprocessing)\nmeasures typically used to handle missing data and outliers in a data science project:\n\n1. Identify the missing data and outliers. The first stage is to identify which data points are missing or\nappear to be outliers. This can be done through visualization techniques, such as scatterplots, box plots,\nIQR (interquartile range), or histograms, or through statistical methods, such as calculating the mean,\nmedian, and standard deviation (see Measures of Center and Measures of Variation as well as Encoding\nUnivariate Data).\n\n[B:openstax-data-science:p0086:c02] (source: data-science.pdf#page=86, page 86, section: 2.4 Data Cleaning and Preprocessing)\nIn such cases, a sample\nof the data can be taken for analysis while still maintaining the overall characteristics of the original\ndataset.\n\n[B:openstax-data-science:p0086:c04] (source: data-science.pdf#page=86, page 86, section: 2.4 Data Cleaning and Preprocessing)\nAn outlier is a data point that differs significantly from other data points in a given dataset. This can be due to\nhuman error, measurement error, or a true outlier value in the data. Outliers can skew statistical analysis and\nbias results, which is why it is important to identify and handle them properly before analysis.\n\nMissing data and outliers are common problems that can affect the accuracy and reliability of results. It is\nimportant to identify and handle these issues properly to ensure the integrity of the data and the validity of\nthe analysis. You will find more details about outliers in Measures of Center, but here we summarize the\n\n[B:openstax-data-science:p0087:c04] (source: data-science.pdf#page=87, page 87, section: 2.4 Data Cleaning and Preprocessing)\nSeveral approaches can be utilized to handle missing data. One option is to withdraw the missing data altogether, but this can lead to a loss of important information. Other methods include imputation, where the absent values are replaced with estimated values based on\nthe remaining data or using predictive models to fill in the missing values. 4. Consider the influence of outliers. Outliers can greatly affect the results of the analysis, so it is important\nto carefully consider their impact. One approach is to delete the outliers from the dataset, but this can also\nlead to a loss of valuable information. Another option is to deal with the outliers as an individual group\nand analyze them separately from the rest of the data. 5. Use robust statistical methods. When dealing with outliers, it is important to use statistical methods that\nare not affected by extreme values.\n\n[B:openstax-data-science:p0093:c01] (source: data-science.pdf#page=93, page 93, section: 2.4 Data Cleaning and Preprocessing)\nData smoothing\nA technique used in data analysis to remove outliers or noise from a dataset in\norder to reveal underlying patterns or trends. One example is smoothing a\ndataset of daily stock market index values over the course of a month. The\nvalues may fluctuate greatly on a day-to-day basis, making it difficult to see any\noverall trend. By calculating a seven-day average, we can smooth out these\nfluctuations and see the overall trend of the index over the course of the\n\nmonth.\n\nImputation\nAn example of imputation is in a hospital setting where a patient's medical\nhistory is incomplete due to missing information. The hospital staff can use\nimputation to estimate the missing data based on the patient's known medical\nconditions and past treatments.\n\n[B:openstax-intro-python:p0249:c00] (source: intro-python.pdf#page=249, page 249, section: 10.4 Conditionals and looping in dictionaries)\ndict.keys()\n\nzip_codes = {\"Berkeley\": 94709, \"Santa Cruz\": 95064, \"Mountain View\": 94030}\n\nfor key in zip_codes.keys():\nprint(key)\n\nBerkeley\nSanta Cruz\nMountain View\n\nTable 10.6\n\ndict.values()\n\nzip_codes = {\"Berkeley\": 94709, \"Santa Cruz\": 95064, \"Mountain View\": 94030}\n\nfor value in zip_codes.values():\nprint(value)\n\n94709\n95064\n94030\n\nTable 10.7\n\n[B:openstax-intro-python:p0249:c01] (source: intro-python.pdf#page=249, page 249, section: 10.4 Conditionals and looping in dictionaries)\nCONCEPTS IN PRACTICE\n\nLoops on dictionaries\n\n4 . Which method is used to loop over the values in a Python dictionary?\na. keys()\n\nb. values()\n\nc. items()\n\n5 . What is the output of the following code?",
+    "n_searches": 3,
+    "usage": {
+      "prompt_tokens": 6173,
+      "completion_tokens": 93,
+      "llm_calls": 4
+    },
+    "elapsed_s": 3.83,
+    "cost_usd": 0.000982,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "abstain_reason": "model_abstained"
+  },
+  {
+    "query_id": "u05",
+    "split": "test",
+    "answerable": false,
+    "config": "A1_hybrid_neighbours",
+    "question": "Starting from which Python version do dictionaries preserve insertion order?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "Python version dictionaries preserve insertion order",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 67.3,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0251:c01",
+            "page": 251,
+            "score": 0.031024531024531024
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0251:c00",
+            "page": 251,
+            "score": 0.030886196246139225
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0238:c00",
+            "page": 238,
+            "score": 0.030090497737556562
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0238:c01",
+            "page": 238,
+            "score": null
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0251:c01",
+          "B:openstax-intro-python:p0251:c00",
+          "B:openstax-intro-python:p0238:c00",
+          "B:openstax-intro-python:p0238:c01"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "Python dictionaries insertion order version",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 53.5,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0251:c01",
+            "page": 251,
+            "score": 0.031024531024531024
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0237:c02",
+            "page": 237,
+            "score": 0.029850746268656716
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0255:c02",
+            "page": 255,
+            "score": 0.02854251012145749
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0251:c00",
+            "page": 251,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0237:c01",
+            "page": 237,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0237:c03",
+            "page": 237,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0255:c01",
+            "page": 255,
+            "score": null
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0237:c02",
+          "B:openstax-intro-python:p0255:c02",
+          "B:openstax-intro-python:p0237:c01",
+          "B:openstax-intro-python:p0237:c03",
+          "B:openstax-intro-python:p0255:c01"
+        ],
+        "duplicate_ids": [
+          "B:openstax-intro-python:p0251:c01",
+          "B:openstax-intro-python:p0251:c00"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "Python version dictionaries insertion order guarantee",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 49.1,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0238:c00",
+            "page": 238,
+            "score": 0.029857397504456328
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0251:c00",
+            "page": 251,
+            "score": 0.029726775956284153
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0255:c02",
+            "page": 255,
+            "score": 0.029551337359792925
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0238:c01",
+            "page": 238,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0251:c01",
+            "page": 251,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0255:c01",
+            "page": 255,
+            "score": null
+          }
+        ],
+        "new_context_ids": [],
+        "duplicate_ids": [
+          "B:openstax-intro-python:p0238:c00",
+          "B:openstax-intro-python:p0251:c00",
+          "B:openstax-intro-python:p0255:c02",
+          "B:openstax-intro-python:p0238:c01",
+          "B:openstax-intro-python:p0251:c01",
+          "B:openstax-intro-python:p0255:c01"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Không đủ bằng chứng để trả lời.\", \"citations\": [], \"abstain\": true}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0251:c01",
+      "B:openstax-intro-python:p0251:c00",
+      "B:openstax-intro-python:p0238:c00",
+      "B:openstax-intro-python:p0238:c01",
+      "B:openstax-intro-python:p0237:c02",
+      "B:openstax-intro-python:p0255:c02",
+      "B:openstax-intro-python:p0237:c01",
+      "B:openstax-intro-python:p0237:c03",
+      "B:openstax-intro-python:p0255:c01"
+    ],
+    "context_chars": 5166,
+    "context": "[B:openstax-intro-python:p0251:c01] (source: intro-python.pdf#page=251, page 251, section: 10.5 Nested dictionaries and dictionary comprehension)\n10.5 Nested dictionaries and dictionary comprehension\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Explain the structure of nested dictionaries.\n• Use dictionary comprehension to create a dictionary object.\n\nNested dictionaries\n\nAs described before, Python dictionaries are a type of data structure that allows for storing data in key-value\npairs. Nested dictionaries are dictionaries that are stored as values within another dictionary. Ex: An\norganizational chart with keys being different departments and values being dictionaries of employees in a\ngiven department. For storing employee information in a department, a dictionary can be used with keys\nbeing employee IDs and values being employee names. The tables below outline the structure of such nested\ndictionaries and how nested values can be accessed.\n\n[B:openstax-intro-python:p0251:c00] (source: intro-python.pdf#page=251, page 251, section: 10.4 Conditionals and looping in dictionaries)\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n10-4-conditionals-and-looping-in-dictionaries)\n\n[B:openstax-intro-python:p0238:c00] (source: intro-python.pdf#page=238, page 238, section: 10.1 Dictionary basics)\nCHECKPOINT\n\nDictionaries\n\nDictionaries; ch 10, video 1 (https://www.openstax.org/r/dictionaries)\n\n[B:openstax-intro-python:p0238:c01] (source: intro-python.pdf#page=238, page 238, section: 10.1 Dictionary basics)\nCONCEPTS IN PRACTICE\n\nDictionary basics\n\nGiven the dictionary object days = {\"Sunday\": 1, \"Monday\": 2, \"Tuesday\": 3}, answer the\n\nfollowing questions.\n\n1 . What are the keys in the days dictionary object?\n\na. \"Sunday\", \"Monday\", \"Tuesday\"\n\nb. 1, 2, 3\n\nc. 0, 1, 2\n\n2 . What are the values in the days dictionary object?\n\na. 0, 1, 2\n\nb. 1, 2, 3\n\nc. \"Sunday\", \"Monday\", \"Tuesday\"\n\n3 . What is the value associated with key \"Sunday\"?\n\na. \"Sunday\"\n\nb. 1\n\nc. 0\n\nDictionary type and properties\n\nThe dict type implements a dictionary in Python. Since a dictionary object is used to look up values using keys,\na dictionary object cannot hold duplicate key values.\n\n[B:openstax-intro-python:p0237:c02] (source: intro-python.pdf#page=237, page 237, section: 10.1 Dictionary basics)\nIntroduction\n\nA Python dictionary is a data type for storing the data in a key-value pair format. In this chapter, the dictionary\ndata type is introduced. This chapter also introduces ways to use dictionaries, including looping over dictionary\n\nitems and performing conditional statements on a dictionary.\n\n[B:openstax-intro-python:p0255:c02] (source: intro-python.pdf#page=255, page 255, section: 10.6 Chapter summary)\n• Conditional statements can be used with a dictionary to check if the dictionary contains specific keys,\nvalues, or key-value pairs.\n• Looping on a dictionary can be done by iterating over keys, values, or items.\n• Nested dictionaries are dictionaries that are stored as values within another dictionary.\n• With dictionary comprehension, elements of an iterable object are transformed into key-value pairs.\n\nAt this point, you should be able to use dictionaries in your programs. The programming practice below ties\ntogether most topics presented in the chapter.\n\n[B:openstax-intro-python:p0237:c01] (source: intro-python.pdf#page=237, page 237, section: 9.6 Chapter summary)\nChapter Outline\n\n10.1 Dictionary basics\n10.2 Dictionary creation\n10.3 Dictionary operations\n10.4 Conditionals and looping in dictionaries\n10.5 Nested dictionaries and dictionary comprehension\n10.6 Chapter summary\n\n[B:openstax-intro-python:p0237:c03] (source: intro-python.pdf#page=237, page 237, section: 10.1 Dictionary basics)\n10.1 Dictionary basics\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Describe the structure of a dictionary object.\n• Use type() to identify the type of a dictionary object.\n\n• Explain why a dictionary object does not have duplicate key values.\n\nDictionaries\n\nA dictionary in Python is a container object including key-value pairs. An example of a key-value item is a\nword in an English dictionary with its corresponding definition.\n\n[B:openstax-intro-python:p0255:c01] (source: intro-python.pdf#page=255, page 255, section: 10.6 Chapter summary)\n10.6 Chapter summary\n\nHighlights from this chapter include:\n\n• A dictionary in Python is a container object including key-value pairs.\n• The dict type implements a dictionary in Python.\n\n• A dictionary cannot have duplicate keys.\n• A dictionary is a mutable object but keys in the dictionary must be immutable objects.\n• A dictionary can be created using curly braces or the dict() method.\n\n• Values in the dictionary can be obtained through square bracket notation or the get() method.\n\n• Dictionary items, keys, and values can be obtained using items(), keys(), and values() methods,\n\nrespectively.\n• Existing items can be modified or new items can be added to a dictionary using square brackets notation\nor the update() method.\n\n• Items can be removed from a dictionary using the del keyword or the pop() method.",
+    "n_searches": 3,
+    "usage": {
+      "prompt_tokens": 4405,
+      "completion_tokens": 83,
+      "llm_calls": 4
+    },
+    "elapsed_s": 5.03,
+    "cost_usd": 0.000711,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "abstain_reason": "model_abstained"
+  },
+  {
+    "query_id": "u06",
+    "split": "test",
+    "answerable": false,
+    "config": "A1_hybrid_neighbours",
+    "question": "How do you make a deep copy of a nested list using the copy module?",
+    "model": "gpt-4o-mini",
+    "filters": null,
+    "params": {
+      "top_k": 3,
+      "max_searches": 3,
+      "budget_chars": 8000,
+      "temperature": 0.0
+    },
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "deep copy nested list copy module",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 47.5,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0236:c01",
+            "page": 236,
+            "score": 0.03278688524590164
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0236:c00",
+            "page": 236,
+            "score": 0.03200204813108039
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0229:c00",
+            "page": 229,
+            "score": 0.031024531024531024
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0229:c01",
+            "page": 229,
+            "score": null
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0236:c01",
+          "B:openstax-intro-python:p0236:c00",
+          "B:openstax-intro-python:p0229:c00",
+          "B:openstax-intro-python:p0229:c01"
+        ],
+        "duplicate_ids": [],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "deep copy nested list",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 57.0,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0236:c01",
+            "page": 236,
+            "score": 0.03278688524590164
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0236:c00",
+            "page": 236,
+            "score": 0.03200204813108039
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0229:c02",
+            "page": 229,
+            "score": 0.0315136476426799
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0229:c01",
+            "page": 229,
+            "score": null
+          }
+        ],
+        "new_context_ids": [
+          "B:openstax-intro-python:p0229:c02"
+        ],
+        "duplicate_ids": [
+          "B:openstax-intro-python:p0236:c01",
+          "B:openstax-intro-python:p0236:c00",
+          "B:openstax-intro-python:p0229:c01"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "search",
+        "tool": "search_corpus",
+        "retriever": "hybrid_rrf+neighbours",
+        "query": "copy module deep copy",
+        "filter": null,
+        "top_k": 3,
+        "latency_ms": 52.8,
+        "results": [
+          {
+            "rank": 1,
+            "id": "B:openstax-intro-python:p0236:c01",
+            "page": 236,
+            "score": 0.03278688524590164
+          },
+          {
+            "rank": 2,
+            "id": "B:openstax-intro-python:p0229:c01",
+            "page": 229,
+            "score": 0.03200204813108039
+          },
+          {
+            "rank": 3,
+            "id": "B:openstax-intro-python:p0229:c00",
+            "page": 229,
+            "score": 0.031009615384615385
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0236:c00",
+            "page": 236,
+            "score": null
+          },
+          {
+            "rank": null,
+            "id": "B:openstax-intro-python:p0229:c02",
+            "page": 229,
+            "score": null
+          }
+        ],
+        "new_context_ids": [],
+        "duplicate_ids": [
+          "B:openstax-intro-python:p0236:c01",
+          "B:openstax-intro-python:p0229:c01",
+          "B:openstax-intro-python:p0229:c00",
+          "B:openstax-intro-python:p0236:c00",
+          "B:openstax-intro-python:p0229:c02"
+        ],
+        "dropped_ids": []
+      },
+      {
+        "event": "final",
+        "raw": "{\"answer\": \"Không đủ bằng chứng để trả lời.\", \"citations\": [], \"abstain\": true}"
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0236:c01",
+      "B:openstax-intro-python:p0236:c00",
+      "B:openstax-intro-python:p0229:c00",
+      "B:openstax-intro-python:p0229:c01",
+      "B:openstax-intro-python:p0229:c02"
+    ],
+    "context_chars": 3031,
+    "context": "[B:openstax-intro-python:p0236:c01] (source: intro-python.pdf#page=236, page 236, section: 9.6 Chapter summary)\ncopy()\nMakes a complete copy of a list.\n\nTable 9.1 Chapter 9 reference.\n\n[B:openstax-intro-python:p0236:c00] (source: intro-python.pdf#page=236, page 236, section: 9.6 Chapter summary)\n• The reverse() operation reverses a list.\n\n• The copy() method is used to create a copy of a list.\n\n• Lists have built-in functions for finding the maximum, minimum, and summation of a list for lists with only\nnumeric values.\n• Lists can be nested to represent multidimensional data.\n• A list comprehension is a compact way of creating a new list, which can be used to filter items from an\nexisting list.\n\nAt this point, you should be able to write programs using lists.\n\nFunction\nDescription\n\nappend(element)\nAdds the specified element to the end of a list.\n\nremove(element)\nRemoves the specified element from the list if the element exists.\n\npop()\nRemoves the last element of a list.\n\nmax(list)\nReturns the maximum element of the list specified.\n\nmin(list)\nReturns the maximum element of the list specified.\n\nsum(list)\nReturns the summation of a list composed of numbers.\n\nsort()\nSorts a list on which the method is called in ascending order.\n\nreverse()\nReverses the order of elements in a list.\n\n[B:openstax-intro-python:p0229:c00] (source: intro-python.pdf#page=229, page 229, section: 9.3 Common list operations)\nlist2 = my_list.copy()\nlist2[0] = 13\nprint(max(my_list))\n\na. 3\n\nb. 13\n\nc. 18\n\n6 . What is the output of the following code?\n\nmy_list = [\"Cat\", \"Dog\", \"Hamster\"]\nlist2 = my_list\nlist2[2] = \"Pigeon\"\nprint(sum(my_list))\n\na. CatDogPigeon\n\nb. Error\n\n[B:openstax-intro-python:p0229:c01] (source: intro-python.pdf#page=229, page 229, section: 9.3 Common list operations)\nTRY IT\n\nCopy\n\nMake a copy of word_list called wisdom. Sort the list called wisdom. Create a sentence using the words in\n\neach list and print those sentences (no need to add periods at the end of the sentences).\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n9-3-common-list-operations)\n\n[B:openstax-intro-python:p0229:c02] (source: intro-python.pdf#page=229, page 229, section: 9.4 Nested lists)\n9.4 Nested lists\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Demonstrate the use of a list-of-lists to structure data.\n• Demonstrate individual element addressing using multi-dimensional indexing.\n• Use nested loops to iterate a list-of-lists.\n\nList-of-lists\n\nLists can be made of any type of element. A list element can also be a list. Ex: [2, [3, 5], 17] is a valid list\n\nwith the list [3, 5] being the element at index 1.\n\nWhen a list is an element inside a larger list, it is called a nested list. Nested lists are useful for expressing\nmultidimensional data. When each of the elements of a larger list is a smaller list, the larger list is called a list-\nof-lists.\n\nEx: A table can be stored as a two-dimensional list-of-lists, where each row of data is a list in the list-of-lists.",
+    "n_searches": 3,
+    "usage": {
+      "prompt_tokens": 3603,
+      "completion_tokens": 80,
+      "llm_calls": 4
+    },
+    "elapsed_s": 3.3,
+    "cost_usd": 0.000588,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "abstain_reason": "model_abstained"
+  }
+]

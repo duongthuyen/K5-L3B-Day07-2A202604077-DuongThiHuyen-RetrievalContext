@@ -1,0 +1,634 @@
+[
+  {
+    "query_id": "n01",
+    "split": "test",
+    "type": "direct",
+    "question": "What are the two ways to create an empty dictionary in Python?",
+    "query_sent": "What are the two ways to create an empty dictionary in Python?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0239:c04",
+        "source": "intro-python.pdf#page=239",
+        "page": 239,
+        "score": 0.03278688524590164,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 1,
+            "score": 0.8765010311304924
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 20.476446347760085
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0239:c02",
+        "source": "intro-python.pdf#page=239",
+        "page": 239,
+        "score": 0.03225806451612903,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 2,
+            "score": 0.8494285345077515
+          },
+          "bm25": {
+            "rank": 2,
+            "score": 14.862699856411535
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0240:c02",
+        "source": "intro-python.pdf#page=240",
+        "page": 240,
+        "score": 0.03057889822595705,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 3,
+            "score": 0.7951679229736328
+          },
+          "bm25": {
+            "rank": 8,
+            "score": 10.77663973010697
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0239:c04",
+      "B:openstax-intro-python:p0239:c02",
+      "B:openstax-intro-python:p0240:c02",
+      "B:openstax-intro-python:p0239:c03",
+      "B:openstax-intro-python:p0239:c01",
+      "B:openstax-intro-python:p0240:c01"
+    ],
+    "context_chars": 2359,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 53.2
+  },
+  {
+    "query_id": "n02",
+    "split": "test",
+    "type": "paraphrase",
+    "question": "How should nested loops be arranged to visit every element of a two-dimensional list-of-lists?",
+    "query_sent": "How should nested loops be arranged to visit every element of a two-dimensional list-of-lists?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0229:c02",
+        "source": "intro-python.pdf#page=229",
+        "page": 229,
+        "score": 0.03278688524590164,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 1,
+            "score": 0.8038137672058497
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 29.867002813052082
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0230:c01",
+        "source": "intro-python.pdf#page=230",
+        "page": 230,
+        "score": 0.03225806451612903,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 2,
+            "score": 0.7877238988876398
+          },
+          "bm25": {
+            "rank": 2,
+            "score": 20.41681154812797
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0230:c02",
+        "source": "intro-python.pdf#page=230",
+        "page": 230,
+        "score": 0.03149801587301587,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 4,
+            "score": 0.7558440115544802
+          },
+          "bm25": {
+            "rank": 3,
+            "score": 19.546549964526893
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0229:c02",
+      "B:openstax-intro-python:p0230:c01",
+      "B:openstax-intro-python:p0230:c02",
+      "B:openstax-intro-python:p0229:c01",
+      "B:openstax-intro-python:p0230:c00"
+    ],
+    "context_chars": 2833,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 57.7
+  },
+  {
+    "query_id": "n03",
+    "split": "test",
+    "type": "direct",
+    "question": "What is data standardization?",
+    "query_sent": "What is data standardization?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0089:c01",
+        "source": "data-science.pdf#page=89",
+        "page": 89,
+        "score": 0.03278688524590164,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 1,
+            "score": 0.877543542458313
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 8.137269465879815
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0090:c03",
+        "source": "data-science.pdf#page=90",
+        "page": 90,
+        "score": 0.03225806451612903,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 2,
+            "score": 0.8000875472996402
+          },
+          "bm25": {
+            "rank": 2,
+            "score": 7.1434123585366525
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0086:c00",
+        "source": "data-science.pdf#page=86",
+        "page": 86,
+        "score": 0.031009615384615385,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 4,
+            "score": 0.7261411278079596
+          },
+          "bm25": {
+            "rank": 5,
+            "score": 4.948566276193793
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0089:c01",
+      "B:openstax-data-science:p0090:c03",
+      "B:openstax-data-science:p0086:c00",
+      "B:openstax-data-science:p0089:c00",
+      "B:openstax-data-science:p0090:c02",
+      "B:openstax-data-science:p0090:c04",
+      "B:openstax-data-science:p0086:c01"
+    ],
+    "context_chars": 5282,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 56.1
+  },
+  {
+    "query_id": "n04",
+    "split": "test",
+    "type": "paraphrase",
+    "question": "Which noise-reduction strategy uses something like a seven-day average to reveal the trend of daily stock index values?",
+    "query_sent": "Which noise-reduction strategy uses something like a seven-day average to reveal the trend of daily stock index values?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0093:c01",
+        "source": "data-science.pdf#page=93",
+        "page": 93,
+        "score": 0.03278688524590164,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 1,
+            "score": 0.6808389209700966
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 41.43721608153381
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0094:c07",
+        "source": "data-science.pdf#page=94",
+        "page": 94,
+        "score": 0.0315136476426799,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 5,
+            "score": 0.5884770154953003
+          },
+          "bm25": {
+            "rank": 2,
+            "score": 10.138130616601813
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0093:c03",
+        "source": "data-science.pdf#page=93",
+        "page": 93,
+        "score": 0.029827662395050816,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 2,
+            "score": 0.6497412532722214
+          },
+          "bm25": {
+            "rank": 13,
+            "score": 5.522375759073834
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0093:c01",
+      "B:openstax-data-science:p0094:c07",
+      "B:openstax-data-science:p0093:c03",
+      "B:openstax-data-science:p0093:c00",
+      "B:openstax-data-science:p0093:c02",
+      "B:openstax-data-science:p0094:c06",
+      "B:openstax-data-science:p0093:c04"
+    ],
+    "context_chars": 5547,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 58.6
+  },
+  {
+    "query_id": "n05",
+    "split": "test",
+    "type": "table",
+    "question": "In text preprocessing, what does stopwords removal do?",
+    "query_sent": "In text preprocessing, what does stopwords removal do?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0097:c02",
+        "source": "data-science.pdf#page=97",
+        "page": 97,
+        "score": 0.032266458495966696,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 1,
+            "score": 0.7772616876803836
+          },
+          "bm25": {
+            "rank": 3,
+            "score": 10.915993356352246
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0096:c01",
+        "source": "data-science.pdf#page=96",
+        "page": 96,
+        "score": 0.03200204813108039,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 3,
+            "score": 0.731394382549007
+          },
+          "bm25": {
+            "rank": 2,
+            "score": 13.987391135060088
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0095:c01",
+        "source": "data-science.pdf#page=95",
+        "page": 95,
+        "score": 0.03177805800756621,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 5,
+            "score": 0.7303519248962402
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 19.221929333748978
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0097:c02",
+      "B:openstax-data-science:p0096:c01",
+      "B:openstax-data-science:p0095:c01",
+      "B:openstax-data-science:p0097:c01",
+      "B:openstax-data-science:p0097:c03",
+      "B:openstax-data-science:p0096:c00"
+    ],
+    "context_chars": 5595,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 55.9
+  },
+  {
+    "query_id": "n06",
+    "split": "test",
+    "type": "direct",
+    "question": "Which examples of cloud storage are given?",
+    "query_sent": "Which examples of cloud storage are given?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0101:c03",
+        "source": "data-science.pdf#page=101",
+        "page": 101,
+        "score": 0.03278688524590164,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 1,
+            "score": 0.7865902908688625
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 13.927415598394747
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0101:c04",
+        "source": "data-science.pdf#page=101",
+        "page": 101,
+        "score": 0.03225806451612903,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 2,
+            "score": 0.7305525541305542
+          },
+          "bm25": {
+            "rank": 2,
+            "score": 11.42295546793687
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0102:c01",
+        "source": "data-science.pdf#page=102",
+        "page": 102,
+        "score": 0.03149801587301587,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 4,
+            "score": 0.7086177641977225
+          },
+          "bm25": {
+            "rank": 3,
+            "score": 9.591968238383966
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0101:c03",
+      "B:openstax-data-science:p0101:c04",
+      "B:openstax-data-science:p0102:c01",
+      "B:openstax-data-science:p0101:c02",
+      "B:openstax-data-science:p0102:c00",
+      "B:openstax-data-science:p0102:c02"
+    ],
+    "context_chars": 4777,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 61.5
+  },
+  {
+    "query_id": "n07",
+    "split": "test",
+    "type": "condition",
+    "question": "Against what is data examined during data validation?",
+    "query_sent": "Against what is data examined during data validation?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0093:c04",
+        "source": "data-science.pdf#page=93",
+        "page": 93,
+        "score": 0.03278688524590164,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 1,
+            "score": 0.8193882596128156
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 19.40551773968048
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0094:c00",
+        "source": "data-science.pdf#page=94",
+        "page": 94,
+        "score": 0.03225806451612903,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 2,
+            "score": 0.8038570880889893
+          },
+          "bm25": {
+            "rank": 2,
+            "score": 11.274829356399582
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0094:c02",
+        "source": "data-science.pdf#page=94",
+        "page": 94,
+        "score": 0.031746031746031744,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 3,
+            "score": 0.8000794649124146
+          },
+          "bm25": {
+            "rank": 3,
+            "score": 8.884382892607642
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0093:c04",
+      "B:openstax-data-science:p0094:c00",
+      "B:openstax-data-science:p0094:c02",
+      "B:openstax-data-science:p0093:c03",
+      "B:openstax-data-science:p0094:c01",
+      "B:openstax-data-science:p0094:c03"
+    ],
+    "context_chars": 4320,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 134.3
+  },
+  {
+    "query_id": "n08",
+    "split": "test",
+    "type": "table",
+    "question": "In one-hot encoding of a review, how large is the binary vector created for each word?",
+    "query_sent": "In one-hot encoding of a review, how large is the binary vector created for each word?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0097:c01",
+        "source": "data-science.pdf#page=97",
+        "page": 97,
+        "score": 0.03278688524590164,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 1,
+            "score": 0.8374129783336219
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 31.040766636724694
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0097:c00",
+        "source": "data-science.pdf#page=97",
+        "page": 97,
+        "score": 0.03225806451612903,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 2,
+            "score": 0.6327332446793692
+          },
+          "bm25": {
+            "rank": 2,
+            "score": 16.42796819336184
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0099:c00",
+        "source": "data-science.pdf#page=99",
+        "page": 99,
+        "score": 0.02967032967032967,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 5,
+            "score": 0.5905724343828095
+          },
+          "bm25": {
+            "rank": 10,
+            "score": 7.884106378662941
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0097:c01",
+      "B:openstax-data-science:p0097:c00",
+      "B:openstax-data-science:p0099:c00",
+      "B:openstax-data-science:p0097:c02",
+      "B:openstax-data-science:p0099:c01"
+    ],
+    "context_chars": 5243,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 63.9
+  }
+]

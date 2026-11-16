@@ -1,0 +1,34 @@
+{
+  "config": "A1_hybrid_neighbours",
+  "method": "hybrid+neighbours",
+  "top_k": 3,
+  "max_searches": 3,
+  "budget": 8000,
+  "note": "Selected on dev (R8): hybrid RRF tool + same-page neighbour chunks",
+  "model": "gpt-4o-mini",
+  "split": "test",
+  "cases": 11,
+  "errors": 0,
+  "tool_use": {
+    "n": 11,
+    "N": 11
+  },
+  "searches_distribution": {
+    "1": 8,
+    "3": 3
+  },
+  "context_evidence_rate": {
+    "n": 8,
+    "N": 8
+  },
+  "status": {
+    "abstain": 4,
+    "answered": 7
+  },
+  "llm_calls": 28,
+  "prompt_tokens": 28209,
+  "completion_tokens": 1038,
+  "cost_usd": 0.00485,
+  "median_elapsed_s": 2.42,
+  "total_elapsed_s": 30.9
+}

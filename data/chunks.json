@@ -1,0 +1,3215 @@
+[
+  {
+    "id": "B:openstax-data-science:p0086:c00",
+    "text": "2.4 Data Cleaning and Preprocessing\n\nLearning Outcomes\nBy the end of this section, you should be able to:\n\n• 2.4.1 Apply methods to deal with missing data and outliers.\n• 2.4.2 Explain data standardization techniques, such as normalization, transformation, and\naggregation.\n• 2.4.3 Identify sources of noise in data and apply various data preprocessing methods to reduce\nnoise.\n\nData cleaning and preprocessing is an important stage in any data science task. It refers to the technique of\norganizing and converting raw data into usable structures for further analysis. It involves extracting irrelevant\nor duplicate data, handling missing values, and correcting errors or inconsistencies. This ensures that the data\nis accurate, comprehensive, and ready for analysis. Data cleaning and preprocessing typically involve the\nfollowing steps:\n\n1. Data integration. Data integration refers to merging data from multiple sources into a single dataset.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=86",
+    "page": 86,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 945,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "ffc62354a8d96a4adb1562412887c5b281d0d1166ccb991e3b2d968fc726d6ad",
+      "printed_page": 76
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0086:c01",
+    "text": "2. Data cleaning. In this step, data is assessed for any errors or inconsistencies, and appropriate actions are\ntaken to correct them. This may include removing duplicate values, handling missing data, and correcting\nformatting misconceptions. 3. Data transformation. This step prepares the data for the next step by transforming the data into a\nformat that is suitable for further analysis. This may involve converting data types, scaling or normalizing\nnumerical data, or encoding categorical variables. 4. Data reduction. If the dataset contains a large number of columns or features, data reduction techniques\nmay be used to select only the most appropriate ones for analysis. 5. Data discretization. Data discretization involves grouping continuous data into categories or ranges,\nwhich can help facilitate analysis. 6. Data sampling. In some cases, the data may be too large to analyze in its entirety.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=86",
+    "page": 86,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 1855,
+      "chunking": "paragraph_max1000",
+      "char_start": 947,
+      "content_hash": "e637fbe74fd104d211ea5ba1f22585035a4510fe8d0e075a809b4291c87a0538",
+      "printed_page": 76
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0086:c02",
+    "text": "In such cases, a sample\nof the data can be taken for analysis while still maintaining the overall characteristics of the original\ndataset.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=86",
+    "page": 86,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 1993,
+      "chunking": "paragraph_max1000",
+      "char_start": 1855,
+      "content_hash": "2dc51e7406ceaac9612c78de4bdf52eca8229a3aa6c824c3195e235c78800f5d",
+      "printed_page": 76
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0086:c03",
+    "text": "The goal of data cleaning and preprocessing is to guarantee that the data used for analysis is accurate,\nconsistent, and relevant. It helps to improve the quality of the results and increase the efficiency of the analysis\nprocess. A well-prepared dataset can lead to more accurate insights and better decision-making.\n\nHandling Missing Data and Outliers\n\nMissing data refers to any data points or values that are not present in a dataset. This could be due to data\ncollection errors, data corruption, or nonresponse from participants in a study. Missing data can impact the\naccuracy and validity of an analysis, as it reduces the sample size and potentially introduces bias.\n\nSome specific examples of missing data include the following:\n\n1. A survey participant forgetting to answer a question\n2. A malfunction in data collection equipment resulting in missing values\n3. A participant choosing not to answer a question due to sensitivity or discomfort",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=86",
+    "page": 86,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 2948,
+      "chunking": "paragraph_max1000",
+      "char_start": 1996,
+      "content_hash": "9bccca415ccaff0dda44528e6f02404713d23a89e7193091a83eb2fdb6fe88b5",
+      "printed_page": 76
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0086:c04",
+    "text": "An outlier is a data point that differs significantly from other data points in a given dataset. This can be due to\nhuman error, measurement error, or a true outlier value in the data. Outliers can skew statistical analysis and\nbias results, which is why it is important to identify and handle them properly before analysis.\n\nMissing data and outliers are common problems that can affect the accuracy and reliability of results. It is\nimportant to identify and handle these issues properly to ensure the integrity of the data and the validity of\nthe analysis. You will find more details about outliers in Measures of Center, but here we summarize the",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=86",
+    "page": 86,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 3600,
+      "chunking": "paragraph_max1000",
+      "char_start": 2950,
+      "content_hash": "bbef867752cacb2e9ed85bc646f699cfe19778a4f0c50509ef24f9af04d8cfb3",
+      "printed_page": 76
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0087:c00",
+    "text": "measures typically used to handle missing data and outliers in a data science project:\n\n1. Identify the missing data and outliers. The first stage is to identify which data points are missing or\nappear to be outliers. This can be done through visualization techniques, such as scatterplots, box plots,\nIQR (interquartile range), or histograms, or through statistical methods, such as calculating the mean,\nmedian, and standard deviation (see Measures of Center and Measures of Variation as well as Encoding\nUnivariate Data).",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=87",
+    "page": 87,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 524,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "16851033f8caafa8c5006eb31553a7a6ff19177b3d160dae68f3d5efb3d574dc",
+      "printed_page": 77
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0087:c01",
+    "text": "It is important to distinguish between different types of missing data. MCAR (missing completely at\nrandom) data is missing data not related to any other variables, with no underlying cause for its absence.\nConsider data collection with a survey asking about driving habits. One of the demographic questions asks\nfor income level. Some respondents accidentally skip this question, and so there is missing data for\nincome, but this is not related to the variables being collected related to driving habits.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=87",
+    "page": 87,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 1031,
+      "chunking": "paragraph_max1000",
+      "char_start": 526,
+      "content_hash": "cca0446388205f68cda90720a5f99fc9c6d865237fd762d304f9ad588b21b8f0",
+      "printed_page": 77
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0087:c02",
+    "text": "MAR (missing at random) data is missing data related to other variables but not to any unknown or\nunmeasured variables. As an example, during data collection, a survey is sent to respondents and the\nsurvey asks about loneliness. One of the questions asks about memory retention. Some older respondents\nmight skip this question since they may be unwilling to share this type of information. The likelihood of\nmissing data for loneliness factors is related to age (older respondents). Thus, the missing data is related\nto an observed variable of age but not directly related to loneliness measurements.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=87",
+    "page": 87,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 1633,
+      "chunking": "paragraph_max1000",
+      "char_start": 1033,
+      "content_hash": "3da5a91d5ce67f689f6324d65732346dd002a78293072adc7006a796e84f942c",
+      "printed_page": 77
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0087:c03",
+    "text": "MNAR (missing not at random) data refers to a situation in which the absence of data depends on\nobserved data but not on unobserved data. For example, during data collection, a survey is sent to\nrespondents and the survey asks about debt levels. One of the questions asks about outstanding debt that\nthe customers have such as credit card debt. Some respondents with high credit card debt are less likely\nto respond to certain questions. Here the missing credit card information is related to the unobserved\ndebt levels. 2. Determine the reasons behind missing data and outliers. It is helpful to understand the reasons\nbehind the missing data and outliers. Some expected reasons for missing data include measurement\nerrors, human error, or data not being collected for a particular variable. Similarly, outliers can be caused\nby incorrect data entry, measurement errors, or genuine extreme values in the data. 3. Determine how to solve missing data issues.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=87",
+    "page": 87,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 2592,
+      "chunking": "paragraph_max1000",
+      "char_start": 1635,
+      "content_hash": "c199586779fc411669e788c1335d974622bc238609a8eb51e793014b947c8285",
+      "printed_page": 77
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0087:c04",
+    "text": "Several approaches can be utilized to handle missing data. One option is to withdraw the missing data altogether, but this can lead to a loss of important information. Other methods include imputation, where the absent values are replaced with estimated values based on\nthe remaining data or using predictive models to fill in the missing values. 4. Consider the influence of outliers. Outliers can greatly affect the results of the analysis, so it is important\nto carefully consider their impact. One approach is to delete the outliers from the dataset, but this can also\nlead to a loss of valuable information. Another option is to deal with the outliers as an individual group\nand analyze them separately from the rest of the data. 5. Use robust statistical methods. When dealing with outliers, it is important to use statistical methods that\nare not affected by extreme values.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=87",
+    "page": 87,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 3473,
+      "chunking": "paragraph_max1000",
+      "char_start": 2592,
+      "content_hash": "2d7844a988f258fadd2e0bc954445443437a3271f9a0912c9192235efcca58f4",
+      "printed_page": 77
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0087:c05",
+    "text": "This includes using median instead of mean and using nonparametric\ntests instead of parametric tests, as explained in Statistical Inference and Confidence Intervals. 6. Validate the results. After handling the missing data and outliers, it is important to validate the results to\nensure that they are robust and accurate. This can be done through various methods, such as cross-\nvalidation or comparing the results to external data sources.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=87",
+    "page": 87,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 3913,
+      "chunking": "paragraph_max1000",
+      "char_start": 3473,
+      "content_hash": "2d6f0df0585fcb2bbffda374be741ad2c616eae30090a165faba51bd94935696",
+      "printed_page": 77
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0087:c06",
+    "text": "Handling missing data and outliers in a data science task requires careful consideration and appropriate\nmethods. It is important to understand the reasons behind these issues and to carefully document the process\nto ensure the validity of the results.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=87",
+    "page": 87,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 4169,
+      "chunking": "paragraph_max1000",
+      "char_start": 3917,
+      "content_hash": "b45391747223d2fbe039332cadfffec542040786f9b0f79a1e0f8f9863a4c90e",
+      "printed_page": 77
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0088:c00",
+    "text": "EXAMPLE 2.6\n\nProblem\n\nStarting in 1939, the United States Bureau of Labor Statistics tracked employment on a monthly basis. The\nnumber of employers in the construction field between 1939 and 2019 is presented in Figure 2.2.\n\na. Determine if there is any outlier in the dataset that deviates significantly from the overall trend.\nb. In the event that the outlier is not a reflection of real employment numbers, how would you handle the\n\noutliers?\n\nFigure 2.2 US Retail Employment with Outliers\n(Data source: Bureau of Labor Statistics; credit: modification of work by Hyndman, R.J., & Athanasopoulos, G. (2021)\nForecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia. OTexts.com/fpp3. Accessed on April 23, 2024)\n\nSolution\n\na. Based on the visual evidence, it appears that an outlier is present in the employment data for March 28,",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=88",
+    "page": 88,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 854,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "102ee602ead00703ec6a46abab06568fe16212478574e0e249cfa0c16b98b867",
+      "printed_page": 78
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0088:c01",
+    "text": "1990. The employment level during this month shows a significant jump from approximately 5,400 to\n9,500, exceeding the overall maximum employment level recorded between 1939 and 2019.\nb. A possible approach to addressing this outlier is to replace it with median, calculated by taking the\n\nmean of the points before and after the outlier. This method can help to improve the smoothness and\nrealism of the employment curve as well as mitigate any potential impacts the outlier may have on\nstatistical analysis or modeling processes. (See Table 2.3.)\n\nDate\nNumber of\nEmployers × 1000\n\n1/1/1990\n4974\n\n2/1/1990\n4933\n\n3/1/1990\n4989",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=88",
+    "page": 88,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 1482,
+      "chunking": "paragraph_max1000",
+      "char_start": 856,
+      "content_hash": "e3321ebaf2859880a2251e23581fe9020168f831f2af18bd5387d2703044d903",
+      "printed_page": 78
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0089:c00",
+    "text": "Date\nNumber of\nEmployers × 1000\n\n4/1/1990\n5174\n\n5/1/1990\n5370\n\n6/1/1990\n9523\n\n7/1/1990\n5580\n\n8/1/1990\n5581\n\n9/1/1990\n5487\n\n10/1/1990\n5379\n\n11/1/1990\n5208\n\n12/1/1990\n4963\n\nTable 2.3 Monthly Employment over 1990\n\nThe median employment level from May 1, 1990, to July 1, 1990, is 5,289, as a replacement value for the\noutlier on May 28, 1990.\n\nThe adjusted data is presented in Figure 2.3.\n\nFigure 2.3 US Retail Employment Without Outliers\n(Data source: Bureau of Labor Statistics; credit: modification of work by Hyndman, R.J., & Athanasopoulos, G. (2021) Forecasting:\nprinciples and practice, 3rd edition, OTexts: Melbourne, Australia. OTexts.com/fpp3. Accessed on April 23, 2024)\n\nData Standardization, Transformation, and Validation",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=89",
+    "page": 89,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 733,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "8efc1de7a9699c329e5adac110f0e92c1b067d7cf701677f02e60eeca04661ef",
+      "printed_page": 79
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0089:c01",
+    "text": "Data standardization, transformation, and validation are critical steps in the data analysis preprocessing\npipeline. Data standardization is the process of systematically transforming collected information into a\nconsistent and manageable format. This procedure involves the elimination of inconsistencies, errors, and",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=89",
+    "page": 89,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 1053,
+      "chunking": "paragraph_max1000",
+      "char_start": 735,
+      "content_hash": "31f8b970b79fa569aa70aaf713a34e5304360828ac240fa4b71ce6f2c8310afb",
+      "printed_page": 79
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0090:c00",
+    "text": "duplicates as well as converting data from various sources into a unified format, often termed a normal form\n(defined in the next section). Data transformation involves modifying the data to make it more suitable for\nthe analysis that is planned. Data validation ensures that the data is accurate and consistent and meets\ncertain criteria or standards. Table 2.4 summarizes these processes, which are explored in more depth later in\nthe chapter.\n\nPurpose\nTechniques\nExample\n\nNormalization\nTo eliminate\nredundant data\nand ensure data\ndependencies\nmake sense\n\nA customer database table with\nredundant data can be\nnormalized by splitting it into\ntwo tables for customer\ninformation and orders and\nestablishing the relationship\nbetween them.\n\nInvolve breaking\ndown a larger\ndatabase into smaller,\nmore manageable\ntables and\nestablishing\nrelationships\nbetween them.\n\nTransformation\nTo make the data\n\nInclude data\n\nA dataset with different date\n\nmore consistent,\ncoherent, and\nmeaningful for\nanalysis.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=90",
+    "page": 90,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 995,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "07877cd4d783e23db960b97a1c2265ae726a85769177e6acf3866286d6a37c40",
+      "printed_page": 80
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0090:c01",
+    "text": "cleaning, data\nmerging, data\nsplitting, data\nconversion, and data\naggregation.\n\nformats, such as \"MM/DD/YYYY\"\nand \"YYYY/MM/DD.\" Data\ntransformation can be used to\nconvert all dates to a single\nformat\n\nInclude data\nprofiling, data audits,\nand data cleansing.\n\nIn a survey, the respondent's age\nis recorded as 150 years.\nThrough data validation, this\nvalue can be identified as\nerroneous.\n\nValidation\nTo improve the\nquality of data\nused in analysis. It\nensures that the\ndata is accurate,\nrelevant, and\nconsistent.\n\nTable 2.4 Comparison of Data Standardization, Transformation, and Validation Processes\n\nData Normalization\n\nThe first step in standardizing data is to establish guidelines and rules for formatting and structuring the",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=90",
+    "page": 90,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 1726,
+      "chunking": "paragraph_max1000",
+      "char_start": 997,
+      "content_hash": "c6c62b7c4190fc3a238944e0aa27d331b6dd1e1b2ba74ab50de62831a57cc0e9",
+      "printed_page": 80
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0090:c02",
+    "text": "data. This may include setting conventions for naming, data types, and formatting A normal form (NF) is a\nguideline or set of rules used in database design to ensure that a database is well-structured, organized, and\nfree from certain types of data irregularities, such as redundancy and inconsistency. The most commonly used\nnormal forms are 1NF, 2NF, 3NF (First, Second, and Third Normal Form), and BCNF (Boyce-Codd Normal\nForm).",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=90",
+    "page": 90,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 2159,
+      "chunking": "paragraph_max1000",
+      "char_start": 1728,
+      "content_hash": "3f4fc504779d7179ffdd0f230294fc1fbfe8cb279b7cc8794f7d6c02b2059100",
+      "printed_page": 80
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0090:c03",
+    "text": "Normalization is the process of applying these rules to a database. The data must be organized and cleaned,\nwhich involves removing duplicates and erroneous data, filling in missing values, and logically arranging the\ndata. To uphold data standardization, regular quality control measures should be implemented, including\nperiodic data audits to ascertain the accuracy and consistency of the data. It is also important to document the\nstandardization process, including the guidelines and procedures followed. Periodic review and updates of\ndata standards are necessary to ensure the ongoing reliability and relevance of the data.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=90",
+    "page": 90,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 2791,
+      "chunking": "paragraph_max1000",
+      "char_start": 2161,
+      "content_hash": "8b4f96ef86b58992eaeb8e331192f6b64d8708c801f0d889bfd066a56146b8d3",
+      "printed_page": 80
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0090:c04",
+    "text": "Data normalization ensures that data is maintainable regardless of its source. Consider a marketing team\ncollecting data on their customers' purchasing behavior so they can make some decisions about product\nplacement. The data is collected from numerous sources, such as online sales transactions, in-store purchases,\nand customer feedback surveys. In its raw form, this data could be disorganized and unreliable, making it",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=90",
+    "page": 90,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 3216,
+      "chunking": "paragraph_max1000",
+      "char_start": 2793,
+      "content_hash": "710db5ae45d6ae9d77ab6d0cc4983f21e3363df9598a05507c24744153acef3e",
+      "printed_page": 80
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0091:c00",
+    "text": "difficult to analyze. It is hard to draw meaningful insights from badly organized data.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=91",
+    "page": 91,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 87,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "6375e7af6e9c8dbca91303670dcb1de6d92d800656d382f03ce0eba56e82d0fd",
+      "printed_page": 81
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0091:c01",
+    "text": "To normalize this data, the marketing team would go through multiple steps. First, they would identify the key\ndata elements, such as customer name, product purchased, and transaction date. Then, they would ensure\nthat these elements are consistently formatted in all data sources. For instance, they might employ the same\ndate format across all data sources or standardize customer names to the first name and the last name fields. Subsequently, they would eliminate any redundant or irrelevant data elements. In this case, if the data is\ncollected from both online and in-store purchases, they might choose one or the other to avoid duplication. The marketing team would ensure that the data is properly structured and organized. This could involve\ncreating a data table with domains for each data element, such as a customer ID, product code, and purchase\namount.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=91",
+    "page": 91,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 955,
+      "chunking": "paragraph_max1000",
+      "char_start": 89,
+      "content_hash": "eb569e992497a427c4fad892b3ace6ca315d5114e3e0b8bf1e9f8da6f317be17",
+      "printed_page": 81
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0091:c02",
+    "text": "By normalizing the data, the marketing team can efficiently follow and investigate the customers'\npurchasing behavior, identify patterns and trends, and make data-driven judgments to enhance their\nmarketing systems.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=91",
+    "page": 91,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 1170,
+      "chunking": "paragraph_max1000",
+      "char_start": 955,
+      "content_hash": "ecd8e2df0ac02fe6377b47697044677a6c288aabbc45c02692a1c230da758dec",
+      "printed_page": 81
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0091:c03",
+    "text": "The normalization formula is a statistical formula utilized to scale down a dataset, typically to between one and\nzero. The largest data would have a normalized value of one, and the smallest data point would be zero. Note\nthat the presence of outliers can significantly impact the calculated values of minimum/maximum. As such, it\nis important to first remove any outliers from the dataset before performing normalization. This ensures more\naccurate and representative results.\n\nThe normalization formula:",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=91",
+    "page": 91,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 1679,
+      "chunking": "paragraph_max1000",
+      "char_start": 1173,
+      "content_hash": "adec7e5e76a090fd30d9b94a4a5a600b62e4db8c9f0a8ab4f9e5f1f5fb22fec6",
+      "printed_page": 81
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0091:c04",
+    "text": "EXAMPLE 2.7\n\nProblem\n\nA retail company with eight branches across the country wants to analyze its product sales to identify its\ntop-selling items. The company collects data from each branch and stores it in Table 2.5, listing the sales\nand profits for each product. From previous reports, it discovered that its top-selling products are jewelry,\nTV accessories, beauty products, DVDs, kids' toys, video games, women's boutique apparel, and designer\nand fashion sunglasses. However, the company wants to arrange these products in order from highest to\nlowest based on best sales and profits. Determine which product is the top-selling product by normalizing\nthe data in Table 2.5.\n\nBranch\nProduct\nSales ($)\nProfits ($)\n\nBranch 1\nJewelry\n50000\n20000\n\nBranch 2\nTV Accessories\n25000\n12500\n\nBranch 3\nBeauty Products\n30000\n15000\n\nBranch 4\nDVDs\n15000\n7500\n\nBranch 5\nKids' Toys\n45000\n22500\n\nBranch 6\nVideo Games\n35000\n17500\n\nBranch 7\nWomen's Boutique Apparel\n40000\n20000\n\n55000\n27500",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=91",
+    "page": 91,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 2657,
+      "chunking": "paragraph_max1000",
+      "char_start": 1681,
+      "content_hash": "f12952045b7f997befe78d0c7b70629718f169c7c5b419c9fc305c1b92f0405a",
+      "printed_page": 81
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0091:c05",
+    "text": "Branch 8\nDesigner & Fashion\nSunglasses\n\nTable 2.5 Retail Company Sales and Profits",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=91",
+    "page": 91,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 2741,
+      "chunking": "paragraph_max1000",
+      "char_start": 2659,
+      "content_hash": "4cc727a4dd9dc3d63dabb719f8e87f2d5bc4313f1a62abedde2abd69d74a8701",
+      "printed_page": 81
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0092:c00",
+    "text": "Solution\n\nUsing the normalization formula, the maximum sale is $55,000, and the minimum sale is $15,000, as shown\nin Table 2.6.\n\nBranch\nProduct\nSales ($)\nProfits ($)\nNormalization\n\nScale\n\nBranch 1\nJewelry\n50000\n20000\n0.88\n\nBranch 2\nTV Accessories\n25000\n12500\n0.25\n\nBranch 3\nBeauty Products\n30000\n15000\n0.38\n\nBranch 4\nDVDs\n15000\n7500\n0.00\n\nBranch 5\nKids' Toys\n45000\n22500\n0.75\n\nBranch 6\nVideo Games\n35000\n17500\n0.50\n\nBranch 7\nWomen's Boutique Apparel\n40000\n20000\n0.63\n\n55000\n27500\n1.00\n\nBranch 8\nDesigner & Fashion\nSunglasses\n\nTable 2.6 Data of Retail Company Sales on Normalization Scale\n\nOverall, the retail company's top-selling products generate the most profits for the company, with \"Designer\n& Fashion Sunglasses\" being the highest in the normalization scale. The company can use this information\nto focus on promoting and restocking these items at each branch to continue driving sales and profits.\n\nData Transformation",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=92",
+    "page": 92,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 926,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "e499cd1800d25c4d0de0031c5f68cdd0f0226de48ddd04d1caed2d61bb18c40a",
+      "printed_page": 82
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0092:c01",
+    "text": "Data transformation is a statistical technique used to modify the original structure of the data in order to make\nit more suitable for analysis. Data transformation can involve various mathematical operations such as\nlogarithmic, square root, or exponential transformations. One of the main reasons for transforming data is to\naddress issues related to statistical assumptions. For example, some statistical models assume that the data is\nnormally distributed. If the data is not distributed normally, this can lead to incorrect results and\ninterpretations. In such cases, transforming the data can help to make it closer to a normal distribution and\nimprove the accuracy of the analysis.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=92",
+    "page": 92,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 1616,
+      "chunking": "paragraph_max1000",
+      "char_start": 928,
+      "content_hash": "0722686c98309dd5e9ff71e19db56bee58e7b5e7e1458ff4f9c90dae38b91e45",
+      "printed_page": 82
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0092:c02",
+    "text": "One commonly used data transformation technique is the log transformation, which requires taking the\nlogarithm of the data values. Log transformation is often used when the data is highly skewed, meaning most\nof the data points fall toward one end of the distribution. This can cause problems in data analysis as the data\nmay not follow a normal distribution. By taking the logarithm of the values, the distribution can be shifted\ntoward a more symmetrical shape, making it easier to analyze. Another common transformation technique is\nthe square root transformation, which involves taking the square root of the data values. Similar to log\ntransformation, square root transformation is often used to address issues with skewness and make the data\nmore normally distributed. Square root transformation is also useful when the data contains values close to\nzero, as taking the square root of these values can bring them closer to the rest of the data and reduce the\nimpact of extreme values.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=92",
+    "page": 92,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 2608,
+      "chunking": "paragraph_max1000",
+      "char_start": 1618,
+      "content_hash": "666f1c8f91bb07eed259b68bf34c8110cc1fbaed329d3639b03f09f16c0e5363",
+      "printed_page": 82
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0092:c03",
+    "text": "Exponential transformations involve taking the exponent of the data values. Whichever operation is used, data transformation can be a useful tool for data analysts to address issues with\ndata distribution and improve the accuracy of their analyses.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=92",
+    "page": 92,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 2856,
+      "chunking": "paragraph_max1000",
+      "char_start": 2608,
+      "content_hash": "9fd84ea3bb13c193bc8e3f513ea6ee26cae5ccb903beb44a8c4db2075f6eafee",
+      "printed_page": 82
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0092:c04",
+    "text": "Dealing with Noisy Data\n\nNoisy data refers to data that retains errors, outliers, or irrelevant information that can conceal true patterns\nand relationships within the dataset. The presence of noisy data in the dataset causes difficulty in drawing",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=92",
+    "page": 92,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 3106,
+      "chunking": "paragraph_max1000",
+      "char_start": 2859,
+      "content_hash": "24032bf1c229f7df47fdf840c3483f377e5be63bef6d252ad888fbf312c6f94b",
+      "printed_page": 82
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0093:c00",
+    "text": "accurate conclusions and making predictions from the data. Most noisy data is caused by human errors in data\nentry, technical errors in data collection or transmission, or natural variability in the data itself. Noisy data is\nremoved and cleaned by identifying and correcting errors, removing outliers, and filtering out irrelevant\ninformation. Noisy data can negatively impact data analysis and modeling, and it may indicate that there are\nissues with the model's structure or assumptions. Noisy data is unwanted information that can be removed.\n\nStrategies to reduce the noisy data are summarized in Table 2.7.\n\nStrategy\nExample\n\nData cleaning\nRemoving duplicate or irrelevant data from a dataset, such as deleting repeated\nrows in a spreadsheet or filtering out incomplete or error-prone data entries.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=93",
+    "page": 93,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 804,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "a24a015e1fd3e9034716911e13d863feb43f0dd7da1aebe5821adf27ef8c0185",
+      "printed_page": 83
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0093:c01",
+    "text": "Data smoothing\nA technique used in data analysis to remove outliers or noise from a dataset in\norder to reveal underlying patterns or trends. One example is smoothing a\ndataset of daily stock market index values over the course of a month. The\nvalues may fluctuate greatly on a day-to-day basis, making it difficult to see any\noverall trend. By calculating a seven-day average, we can smooth out these\nfluctuations and see the overall trend of the index over the course of the\n\nmonth.\n\nImputation\nAn example of imputation is in a hospital setting where a patient's medical\nhistory is incomplete due to missing information. The hospital staff can use\nimputation to estimate the missing data based on the patient's known medical\nconditions and past treatments.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=93",
+    "page": 93,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 1564,
+      "chunking": "paragraph_max1000",
+      "char_start": 806,
+      "content_hash": "aa9fcc6fd39f8f8c1f75b9f0faf253fe7bde9a14a38f9d42be757bed24675cd7",
+      "printed_page": 83
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0093:c02",
+    "text": "Binning\nA researcher is studying the age demographics of a population in a city. Instead\nof looking at individual ages, the researcher decides to bin the data into age\ngroups of 10 years (e.g., 0–10, 10–20, 20–30, etc.). This allows for a more\ncomprehensive and easier analysis of the data.\n\nData transformation\nConsider the following dataset that shows the number of COVID-19 cases\nrecorded in a country at different points in time—01/01/2020, 02/02/2020, 03/\n01/2020—are 1000, 10000, 100000, respectively. To transform this data using\nlog, we can take the log base 10 of the number of cases column. This would\nresult in a transformed data as follows: 01/01/2020, 02/02/2020, 03/01/2020 are\n3, 4, 5, respectively.\n\nDimensionality\nreduction",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=93",
+    "page": 93,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 2306,
+      "chunking": "paragraph_max1000",
+      "char_start": 1566,
+      "content_hash": "663862a4f7a97408bd1f15f628fab6bd2eca1d7a68bc33009ed11f5217de61d6",
+      "printed_page": 83
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0093:c03",
+    "text": "The original dataset would have high dimensionality due to the large number\nof variables (100 companies) and time points (5 years). By applying principal\ncomponent analysis, we can reduce the dimensionality of the dataset to a few\nprincipal components that represent the overall trends and patterns in the\nstock market.\n\nEnsemble methods\nAn example of an ensemble method is the random forest algorithm. It\ncombines multiple decision trees, each trained on a random subset of the data,\nto make a more accurate prediction. This helps reduce overfitting and increase\nthe overall performance of the model. The final prediction is made by\naggregating the predictions of each individual tree.\n\nTable 2.7 Strategies to Reduce Noisy Data\n\nData Validation",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=93",
+    "page": 93,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 3054,
+      "chunking": "paragraph_max1000",
+      "char_start": 2308,
+      "content_hash": "4b693f6bb06c3105fc700c752c0ce3109245ec7d5e185fe38d711a2bb2664a5c",
+      "printed_page": 83
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0093:c04",
+    "text": "Data validation is the process of ensuring the accuracy and quality of data examined against defined rules and\nstandards. This approach involves identifying and correcting any errors or inconsistencies in the collected data\nas well as ensuring that the data is relevant and reliable for analysis. Data validation can be performed",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=93",
+    "page": 93,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 3385,
+      "chunking": "paragraph_max1000",
+      "char_start": 3056,
+      "content_hash": "2d7e3fb7219a3f2964bd1040a86272a703c664e696aa98147aac49cc7d8b679d",
+      "printed_page": 83
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0094:c00",
+    "text": "through a variety of techniques, including manual checks, automated scripts, and statistical analysis. Some\ncommon inspections in data validation include checking for duplicates, checking for mislaid values, and\nverifying data against external sources or references. Before collecting data, it is important to determine the\nconditions or criteria that the data needs to meet to be considered valid. This can include factors such as\nprecision, completeness, consistency, and timeliness. For example, a company may set up a data validation\nprocess to ensure that all customer information entered into its database follows a specific format. This would\ninvolve checking for correct spellings and proper formatting of phone numbers and addresses and validating\nthe correctness of customer names and account numbers. The data would also be checked against external\nsources, such as official government records, to verify the accuracy of the information.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=94",
+    "page": 94,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 948,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "c0d302b6c3c94c3c07f310d1075f888e9ecbd71a53e2df52a7de869a6c48a3d9",
+      "printed_page": 84
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0094:c01",
+    "text": "Any discrepancies or\nerrors would be flagged for correction before the data is used for analysis or decision-making purposes. Through this data validation process, the company can ensure that its customer data is accurate, reliable, and\ncompliant with industry standards.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=94",
+    "page": 94,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 1219,
+      "chunking": "paragraph_max1000",
+      "char_start": 948,
+      "content_hash": "47c94fc8d525a95b3b64be4158581fb7ca946aa75a47f54122f2207bb7c605e3",
+      "printed_page": 84
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0094:c02",
+    "text": "Another method to assess the data is to cross-reference it with reliable sources to identify any discrepancies or\nerrors in the collected data. A number of tools and techniques can be used to validate data. These can include\nstatistical analysis, data sampling, data profiling, and data auditing. It is important to identify and remove\noutliers before validating the data. Reasonability checks involve using common sense to check if the data is\nlogical and makes sense—for example, checking if a person's age is within a reasonable range or if a\ncompany's revenue is within a reasonable range for its industry. If possible, data should be verified with the\nsource to ensure its accuracy. This can involve contacting the person or organization who provided the data or\nchecking against official records. It is always a good idea to involve multiple team members or experts in the\nvalidation process to catch any errors or inconsistencies that may have been overlooked by a single person.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=94",
+    "page": 94,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 2208,
+      "chunking": "paragraph_max1000",
+      "char_start": 1222,
+      "content_hash": "aa31acc1db25dc5bcd4a5adb19cb5f9b1a11c17f151a536be58155c5036af629",
+      "printed_page": 84
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0094:c03",
+    "text": "Documentation of the validation process, including the steps taken and any issues identified, is important in\nfuture data audits or for reference purposes. Data validation is a continuous process, and data should be\nmonitored and updated to ensure its accuracy and validity.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=94",
+    "page": 94,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 2482,
+      "chunking": "paragraph_max1000",
+      "char_start": 2208,
+      "content_hash": "c1d0f00213249907d3a440712d3b4b866966a9881686fe7b9d8420a84fa1dccd",
+      "printed_page": 84
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0094:c04",
+    "text": "Consider a marketing company conducting a survey on customer satisfaction for a new product launch. The\ncompany collected data from 1,000 respondents, but when the company started analyzing the data, it noticed\nseveral inconsistencies and missing values. The company's data analyst realized that the data standardization\nand validation processes were not adequately performed before the survey results were recorded. To correct\nthis issue, the data analyst first identified and removed all duplicate entries, reducing the total number of\nresponses to 900. Then, they used automated scripts to identify and fill in missing values, which accounted for\n95 responses. The remaining 805 responses were then checked for data accuracy using statistical analysis.\nAfter the data standardization and validation process, the company had a clean and reliable dataset of 805",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=94",
+    "page": 94,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 3347,
+      "chunking": "paragraph_max1000",
+      "char_start": 2485,
+      "content_hash": "86574a049a3f9fb94752f908c73922ecc1ace530f4053917228527ccdef6cab5",
+      "printed_page": 84
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0094:c05",
+    "text": "responses. The results showed that the product had a satisfaction rate of 85%, which was significantly higher\nthan the initial analysis of 78%. As a result of this correction, the marketing team was able to confidently report\nthe actual satisfaction rate and make better-informed decisions for future product development.\n\nData Aggregation",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=94",
+    "page": 94,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 3688,
+      "chunking": "paragraph_max1000",
+      "char_start": 3349,
+      "content_hash": "99759c990c780ffb29390bf66d4ce39d851d6f67d94b92965250226ff0e26df0",
+      "printed_page": 84
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0094:c06",
+    "text": "Data aggregation is the process by which information from multiple origins is gathered and merged into a\nsingle set that provides insights and meaningful conclusions. It involves gathering, managing, and delivering\ndata from different sources in a structured manner to facilitate analysis and decision-making. Data\naggregation can be performed manually or by using automated tools and techniques. The data aggregation\nprocess is utilized to identify patterns and trends between different data points, which extracts valuable\ninsights. Some standard types of data aggregation are spatial aggregation, statistical aggregation, attribute\naggregation, and temporal aggregation. This methodology is commonly operated in marketing, finance,\nhealth care, and research to analyze large sets of data. Data aggregation is used in various industries to\ncombine and analyze large sets of data.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=94",
+    "page": 94,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 4571,
+      "chunking": "paragraph_max1000",
+      "char_start": 3690,
+      "content_hash": "bfb96e143dc738fc588bb68ddca37cc719bc8b076a43eb6094814da6783205d6",
+      "printed_page": 84
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0094:c07",
+    "text": "Examples include calculating total sales for a company from different\ndepartments, determining average temperature for a region including multiple cities, and analyzing website\ntraffic by country. It is also used in fields such as stock market indices, population growth, customer\nsatisfaction scores, credit scores, and airline flight delays. Governments and utility companies also utilize data",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=94",
+    "page": 94,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 4966,
+      "chunking": "paragraph_max1000",
+      "char_start": 4571,
+      "content_hash": "e47f276497d9743c12ae071a582c1feb609420d45468c395626a268694e91811",
+      "printed_page": 84
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0095:c00",
+    "text": "aggregation to study energy consumption patterns.\n\nText Preprocessing\n\nText preprocessing is a technique of preparing data in text format for further analysis and natural language\nprocessing tasks. It involves transforming unstructured text data into a more structured format to be\ninterpreted by algorithms and models. Some common techniques used in text preprocessing are reviewed in\nTable 2.8.\n\nPreprocessing\n\nExplanation\nExample\n\nTechnique\n\nOriginal Text: \"Tokenization is the process of breaking down\na sentence, paragraph, or entire text into smaller parts\ncalled tokens.\"\n\nTokenization\nBreaking text\ndata into\nindividual\nwords or\nphrases\n(tokens)\n\nTokenized Text: \"Tokenization\", \"is\", \"the\", \"process\", \"of\",\n\"breaking\", \"down\", \"a\", \"sentence\", \",\", \"paragraph\", \",\", \"or\",\n\n\"entire\", \"text\", \"into\", \"smaller\", \"parts\", \"called\", \"tokens\", \".\"\n\nConsider the following sentence: \"John likes to eat pizza.\"\nAfter lowercasing it, the sentence becomes \"john likes to eat\npizza.\"",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=95",
+    "page": 95,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 984,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "770ec2c4c70d91085567ac61b756bb0f030e3291f8b79eb6d79ca5ff34badf73",
+      "printed_page": 85
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0095:c01",
+    "text": "Lowercasing\nConverting all\ntext to\nlowercase to\navoid multiple\nrepresentations\nof the identical\nword\n\nConsider: \"The sun was shining bright in the sky and the\nbirds were chirping. It was a lovely day in the park and\npeople were enjoying the beautiful weather.\"\n\nStopwords removal\nFiltering out\ncommonly\noccurring\nwords that do\nnot add\nmeaning or\ncontext\n\nAfter removing stopwords, the paragraph would be\ntransformed into: \"Sun shining bright sky birds chirping.\nLovely day park people enjoying beautiful weather.\"\n\nLemmatization and\nstemming\n\nReducing\nwords to their\n\nFor example, the words \"running,\" \"runs,\" and \"ran\" would all\nbe lemmatized to the base form \"run.\"\n\nroot forms to\nreduce\ncomplexity and\nimprove model\nperformance\n\nTable 2.8 Summary of Text Preprocessing Techniques",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=95",
+    "page": 95,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 1768,
+      "chunking": "paragraph_max1000",
+      "char_start": 986,
+      "content_hash": "e217171eaa8a7c70d8d5ca05f5528215c9f4c3cd13eda22177a57756396592a1",
+      "printed_page": 85
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0096:c00",
+    "text": "Preprocessing\n\nExplanation\nExample\n\nTechnique\n\nIn the sentence \"I went to the market to buy some fruits,\"\nthe words \"went\" and \"buy\" would be tagged as verbs,\n\"market\" and \"fruits\" as a noun, and \"some\" as adjectives.\n\nPart-of-speech tagging\nIdentifying the\ngrammatical\ncomponents of\neach word\nwhere each\nword in a\nsentence is\nassigned a\nspecific part-of-\nspeech tag\n(e.g., noun,\nverb, or\nadjective)\n\nNamed entity\nrecognition\n\nConsider the following text: \"John went to Paris last summer\nwith his colleagues at Microsoft.\"\n\nRecognizing\nand\ncategorizing\nnamed entities\nsuch as people,\nplaces, and\norganizations\n\nBy using named entity recognition, we can tag the named\nentities in this sentence as follows: \"John (person) went to\nParis (location) last summer with his colleagues at Microsoft\n(organization).\"\n\nSentiment analysis\nIdentifying and\ncategorizing\nthe emotions\nexpressed in\ntext",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=96",
+    "page": 96,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 886,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "f19db01ae2998abcfef18d89977a9b17b0dc86792ce2fd1c67c45e751b9620f8",
+      "printed_page": 86
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0096:c01",
+    "text": "Let's say a customer has left a review for a new laptop they\npurchased. The review reads: \"I am extremely satisfied with\nmy purchase. The laptop has exceeded all of my\nexpectations and has greatly improved my work efficiency.\nThanks for an amazing product!\"\n\nTo perform sentiment analysis, the text will first undergo\npreprocessing, which involves cleaning and preparing the\ntext data for analysis. This may include removing\npunctuation, converting all letters to lowercase, and\n\nremoving stopwords (commonly used words that do not add\nmuch meaning to a sentence, such as \"the\" or \"and\").\n\nAfter preprocessing, sentiment analysis techniques will be\napplied to analyze the emotions and opinions expressed in\nthe review. The analysis may identify key positive words such\nas \"satisfied\" and \"amazing\" and measure their overall\nsentiment score. It may also take into account the context\nand tone of the review to accurately determine the\nsentiment.\n\nTable 2.8 Summary of Text Preprocessing Techniques",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=96",
+    "page": 96,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 1884,
+      "chunking": "paragraph_max1000",
+      "char_start": 888,
+      "content_hash": "f5779492b796768aae6d49d0ea039b21ac9a45ada68f2d3c3624cd240f738fa1",
+      "printed_page": 86
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0097:c00",
+    "text": "Preprocessing\n\nExplanation\nExample\n\nTechnique\n\nSpell-checking and\ncorrection\n\nCorrecting\nspelling errors\nto improve\naccuracy\n\nSuppose we have a text like: \"The writting was very\ninpprecise and had many trgical mistakes.\" With spell-\nchecking and correction, this text can be processed and\ncorrected to: \"The writing was very imprecise and had many\ntragic mistakes.\" This involves identifying and correcting\nmisspelled words.\n\nIn this case, \"writting\" was corrected to \"writing,\"\n\"inpprecise\" to \"imprecise,\" and \"trgical\" to \"tragic.\" This not\nonly improves the readability and accuracy of the text but\nalso helps in better understanding and analysis of the text.\n\nLet's say we have a dataset of customer reviews for a\nrestaurant. Each review is a string of text, such as: \"I had a\ngreat experience at this restaurant, the food was delicious\nand the service was top-notch.\" To encode this text data, we\ncan use techniques such as one-hot encoding or word\nembedding.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=97",
+    "page": 97,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 965,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "3afa8d3eac13f7968b47deb8b34ed7ee5e498e16b31cb80d57b057b2e5fa2ac7",
+      "printed_page": 87
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0097:c01",
+    "text": "Encoding\nConverting text\ninto a\nnumerical\nrepresentation\nfor machine\nlearning\nalgorithms to\nprocess\n\nOne-hot encoding involves creating a binary vector for each\nword in the review, where the size of the vector is equal to\nthe size of the vocabulary. For example, if the review\ncontains the words \"great,\" \"experience,\" \"restaurant,\" \"food,\"\n\"delicious,\" \"service,\" and \"top-notch,\" the one-hot encoded\nvectors for these words would be: great: [1, 0, 0, 0, 0, 0, 0];\nexperience: [0, 1, 0, 0, 0, 0, 0]; restaurant: [0, 0, 1, 0, 0, 0, 0];\nfood: [0, 0, 0, 1, 0, 0, 0]; delicious: [0, 0, 0, 0, 1, 0, 0]; service:\n[0, 0, 0, 0, 0, 1, 0]; top-notch: [0, 0, 0, 0, 0, 0, 1]. These one-\nhot encoded vectors can now be used as input features for\nmachine learning models.\n\nRemoving special\n\nSimplifying the\n\nConsider the input: \"Hello, this is a text with @special#\n\ntext for analysis\n\ncharacters and\npunctuation\n\ncharacters!*\" and the output: \"Hello this is a text with special\ncharacters\"",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=97",
+    "page": 97,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 1944,
+      "chunking": "paragraph_max1000",
+      "char_start": 967,
+      "content_hash": "1a6ae7025665d382821135b3c1cc84e1aed460afc9a293a0641703776fabcae0",
+      "printed_page": 87
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0097:c02",
+    "text": "Table 2.8 Summary of Text Preprocessing Techniques\n\nText preprocessing is crucial to effectively use text data for tasks such as text classification and information\nextraction. By transforming the raw text data, the accuracy and performance of machine learning models can\ngreatly improve and provide meaningful insights and predictions.\n\nText preprocessing is especially important in artificial intelligence, as it can lay the foundation for effective text\nanalysis, classification, information retrieval, sentiment analysis, and many other natural language processing\ntasks (see Natural Language Processing). A well-designed preprocessing pipeline can lead to better model\nperformance, improved efficiency, and more accurate insights from text data.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=97",
+    "page": 97,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 2696,
+      "chunking": "paragraph_max1000",
+      "char_start": 1946,
+      "content_hash": "f5bc6a8df951802b28cee5dd9af20de19c1f73dd31e0d3e5b52635a670965c5d",
+      "printed_page": 87
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0097:c03",
+    "text": "An example of text preprocessing in artificial intelligence involves the conversion of text data into a more\nstandardized and consistent format. This can include tasks such as removing accents and diacritics, expanding\ncontractions, and converting numbers into their written representations (e.g., \"10\" to \"ten\"). Normalizing text\ndata helps to reduce the number of variations and therefore improves the efficiency and accuracy of natural",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=97",
+    "page": 97,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 3136,
+      "chunking": "paragraph_max1000",
+      "char_start": 2698,
+      "content_hash": "d3135b1d7eb19757b1c94561905e02e3ee43e36d91291e1ee0ad9b1c853edb88",
+      "printed_page": 87
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0098:c00",
+    "text": "language processing tasks. It also makes the data more easily interpretable for machine learning algorithms.\nFor example, when analyzing customer reviews, it may be beneficial to normalize text data so that variations of\nthe same word (e.g., \"colour\" and \"color\") are treated as the same, providing a more accurate understanding of\nsentiment toward a product or service.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=98",
+    "page": 98,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.4 Data Cleaning and Preprocessing",
+      "char_end": 370,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "7521a429d55cb79edee006259793da0052c5d6e8ccb13c674be80dbfe351249c",
+      "printed_page": 88
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0098:c01",
+    "text": "2.5 Handling Large Datasets\n\nLearning Outcomes\nBy the end of this section, you should be able to:\n\n• 2.5.1 Recognize the challenges associated with large data, including storage, processing, and\nanalysis limitations.\n• 2.5.2 Implement techniques for efficient storage and retrieval of large datasets, including\ncompression, indexing, and chunking.\n• 2.5.3 Discuss database management systems and cloud computing and their key characteristics with\nregard to large datasets.\n\nLarge datasets, also known as big data, are extremely large and complex sets of data that traditional data",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=98",
+    "page": 98,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 952,
+      "chunking": "paragraph_max1000",
+      "char_start": 372,
+      "content_hash": "b368a2a479461bf43450383de7657f44f2b8d3e636c2a00c96437063883e90e4",
+      "printed_page": 88
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0098:c02",
+    "text": "processing methods and tools are unable to handle. These datasets typically include sizeable volumes, variety,\nand velocity of data, making it challenging to process, manage, and analyze them using traditional methods.\nLarge datasets can be generated by a variety of sources, including social media, sensors, and financial\ntransactions. They generally possess a high degree of complexity and may have structured, unstructured, or\nsemi-structured data. Large datasets are covered in more depth in Other Machine Learning Techniques.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=98",
+    "page": 98,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 1484,
+      "chunking": "paragraph_max1000",
+      "char_start": 954,
+      "content_hash": "8f1ff142ad3c7030adf0dce80633c1ee9ad1fe0dfdf50ac27bb5ee92082b0ded",
+      "printed_page": 88
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0098:c03",
+    "text": "We have also already discussed a number of the techniques and strategies used to gain meaningful insights\nfrom big data. Survey Design and Implementation discussed sampling techniques that allow those working\nwith data to analyze and examine large datasets by select a representative subset, or representative random\nsample. Preprocessing techniques covered in Data Cleaning and Preprocessing are also used to clean,\nnormalize, and transform data to make sure it is consistent before it can be analyzed. This includes handling\nmissing values, removing outliers, and standardizing data formats.\n\nIn this section we will consider several other aspects of data management that are especially useful with big\ndata, including data compression, data storage, data indexing, and chunking. In addition, we'll discuss\ndatabase management systems—software that allows for the organization, manipulation, and retrieval of data\nthat is stored in a structured format—and cloud computing.\n\nData Compression",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=98",
+    "page": 98,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 2478,
+      "chunking": "paragraph_max1000",
+      "char_start": 1486,
+      "content_hash": "af6b7b06a8fcc82e25d7d40c789fbb25bd6ee94ac102cca78621336393d94e20",
+      "printed_page": 88
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0098:c04",
+    "text": "Data compression is a method of reducing file size while retaining essential information; it can be applied to\nmany types of databases. Data compression is classified into two categories, lossy and lossless:",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=98",
+    "page": 98,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 2687,
+      "chunking": "paragraph_max1000",
+      "char_start": 2480,
+      "content_hash": "f5dc97394537650545b0e3608a413cbd8b898e5d84e3f8b6dc83052a60220c99",
+      "printed_page": 88
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0098:c05",
+    "text": "• Lossy compression reduces the size of data by permanently extracting particular data that is considered\nirrelevant or redundant. This method can significantly decrease file sizes, but it also results in a loss of\nsome data. Lossy compression is often utilized for multimedia files and images, where slight modifications\nin quality may not be noticeable to the human eye. Examples of lossy compression include MP3 and JPEG.\n• Lossless compression aims to reduce file size without removing any data. This method achieves\ncompression by finding patterns and redundancies in the data and representing them more efficiently.\nThis allows for the reconstruction of the original data without any loss in quality. Lossless compression is\ncommonly used for text and numerical data, where every piece of information is crucial. Examples of\nlossless compression include ZIP, RAR, and PNG.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=98",
+    "page": 98,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 3567,
+      "chunking": "paragraph_max1000",
+      "char_start": 2689,
+      "content_hash": "22a6589e9ea1cc126ea4052b32fc668d24d3e8a962b83d5c52f7c9b8a8b6ab49",
+      "printed_page": 88
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0098:c06",
+    "text": "There are several methods of data lossless compression, including Huffman coding. Huffman coding\nworks by assigning shorter binary codes to the most frequently used characters or symbols in a given\ndataset and longer codes to less frequently used characters, as shown in Figure 2.4. This results in a more",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=98",
+    "page": 98,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 3874,
+      "chunking": "paragraph_max1000",
+      "char_start": 3569,
+      "content_hash": "2baeb0782002f2745791e7dfa5011056988c1a303c74cc0849f2a430fdd0f262",
+      "printed_page": 88
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0099:c00",
+    "text": "efficient use of binary digits and reduces the overall size of the data without losing any information during\ncompression. Huffman coding is applied to data that require fast and efficient compression, such as video\ncompression, image compression, and data transmission and storage.\n\nFigure 2.4 Huffman Tree Diagrams\n\nData Storage\n\nBig data requires storage solutions that can handle large volumes of diverse data types, offer high\nperformance for data access and processing, guarantee scalability for growing datasets, and are thoroughly\nreliable. The choice of storage solution will depend on data volume, variety, velocity, performance\nrequirements, scalability needs, budget constraints, and existing infrastructure. Organizations often deploy a\ncombination of storage technologies to address different uses and requirements within their big data\nenvironments. Some common types of storage solutions used for big data include:",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=99",
+    "page": 99,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 930,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "7d6cb1562f8e1ca2bd012b0d7aa53b2f4dfcc40e63152f571061467c7eeaa444",
+      "printed_page": 89
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0099:c01",
+    "text": "1. Relational databases: Relational databases. organize data in tables and uses structured query language\n(SQL) for data retrieval and management. They are commonly used for traditional, structured data such as\nfinancial data.\n2. NoSQL databases. These databases are designed to handle unstructured data, such as social media\ncontent or data from sensors, and use non-relational data models.\n3. Data warehouses. A data warehouse is a centralized repository of data that combines data from multiple\nsources and allows for complex queries and analysis. It is commonly used for business intelligence and\nreporting intentions.\n4. Cloud storage. Cloud storage involves storing data in remote servers accessed over the internet. It offers\nscalability, cost-effectiveness, and remote accessibility.\n5. Object storage. With object storage, data are stored as objects that consist of both data and metadata.\nThis method is often used for storing large volumes of unstructured data, such as images and videos.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=99",
+    "page": 99,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 1931,
+      "chunking": "paragraph_max1000",
+      "char_start": 932,
+      "content_hash": "5396c368cba099f477445fb8198516285a78b7d415db8396f16721f4f969b31b",
+      "printed_page": 89
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0099:c02",
+    "text": "Data Indexing\n\nData indexing is an important aspect of data management and makes it easier to retrieve specific data quickly\nand efficiently. It is a crucial strategy for optimizing the performance of databases and other data storage\nsystems. Data indexing refers to the process of managing and saving the collected and generated data in a\ndatabase or other data storage system in a way that allows for efficient and fast return of specific data.\n\nIndexing techniques vary in how they organize and store data, but they all aim to improve data retrieval\nperformance. B-tree indexing is illustrated in Figure 2.5. It involves organizing data in a tree-like structure with\na root node and branches that contain pointers to other nodes. Each node contains a range of data values and\npointers to child nodes, allowing for efficient searching within a specific range of values.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=99",
+    "page": 99,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 2804,
+      "chunking": "paragraph_max1000",
+      "char_start": 1933,
+      "content_hash": "99e87dfb4c2c95ed661fa5cc05dbb80d855e5fbe5b9035b3fea8c94d8032a4af",
+      "printed_page": 89
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0099:c03",
+    "text": "Hashes indexing involves using a hash function to map data to a specific index in a table. This allows for direct\naccess to the data based on its hashed value, making retrieval faster than traditional sequential searching.\nBitmap indexing is a technique that involves creating a bitmap for each different value in a dataset. The\nbitmaps are then combined to quickly identify records that match a specific set of values, allowing efficient\ndata retrieval.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=99",
+    "page": 99,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 3260,
+      "chunking": "paragraph_max1000",
+      "char_start": 2806,
+      "content_hash": "88ccd06ddc8e041a3d79d7d2b8f27593caea2c1d559b02398e70da7f5fad479f",
+      "printed_page": 89
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0100:c00",
+    "text": "Figure 2.5 B-Tree Indexing\n\nData Chunking\n\nData chunking, also known as data segmentation or data partitioning, is a technique used to break down\nlarge datasets into smaller, more manageable chunks and make them easier to manage, process, analyze, and\nstore. Chunking is particularly useful when datasets are too large to be processed or analyzed as a single unit.\nBy dividing the data into smaller chunks, various processing tasks can be distributed across multiple\ncomputing nodes or processing units.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=100",
+    "page": 100,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 503,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "579fee839cceda165a3652eb3c9e5b2978d57ae6bcb6cf0cb09684b2873ef75f",
+      "printed_page": 90
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0100:c01",
+    "text": "Data chunking is used in data storage systems and data transmission over networks, and it is especially useful\nwhen working with large datasets that exceed the capacity of a single machine or when transferring data over\na network with limited bandwidth. The divided data in data chunking is known as a chunk or block. The size of\neach chunk can vary depending on the requirements and range from a few kilobytes to several gigabytes.\nThese chunks are typically organized sequentially, with each chunk containing a set of data from the larger\ndataset. The process of data chunking also involves adding metadata (data that provides information about\nother data), such as the chunk number and the total number of chunks, to each chunk. This metadata allows\nthe chunks to be reassembled into the original dataset after being transmitted or stored separately. Data\nchunking has several advantages, including the following:",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=100",
+    "page": 100,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 1421,
+      "chunking": "paragraph_max1000",
+      "char_start": 505,
+      "content_hash": "7ee300a0cd2c10dfc2aabab47272199179f85f701723012942a19ece10a7a237",
+      "printed_page": 90
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0100:c02",
+    "text": "1. Increased speed. By dividing a large dataset into smaller chunks, data processing and transmission can\nbe performed more quickly, reducing the overall processing time.\n2. Better utilization of resources. Data chunking enables data to be distributed and processed across\nmultiple machines, making better use of available computing resources.\n3. Increased fault tolerance. In case of data corruption or loss, data chunking allows for the retrieval of\nonly the affected chunk rather than the entire dataset.\n4. Flexibility. Data chunking allows for the transfer and processing of only the required chunks rather than\nthe entire dataset, providing flexibility in managing large datasets.\n\nDatabase Management Systems",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=100",
+    "page": 100,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 2138,
+      "chunking": "paragraph_max1000",
+      "char_start": 1423,
+      "content_hash": "36b96e8c089109052cbcb3a50371c72554011ace90b1afc9e4ab011320fc0756",
+      "printed_page": 90
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0100:c03",
+    "text": "Database management is a crucial aspect of data science projects as it involves organizing, storing, retrieving,\nand managing large volumes of data. In a data science project, a database management system (DBMS) is\nused to ensure the efficient storage and retrieval of data. Database management systems are software tools\nused for managing data in a structured format. Their functions are summarized in Table 2.9.\n\nDBMS Function\nDescription\nBenefit\n\nMakes data easy to retrieve and analyze\n\nData storage\nProvides a centralized\nwarehouse for storing different\ntypes of data in a structured\nformat\n\nMakes data more accessible to data\nscientists\n\nData retrieval\nAllows for efficient and fast\nretrieval of data from the\ndatabase using queries and\nfilters\n\nTable 2.9 Functions of Database Management Systems (DBMS)",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=100",
+    "page": 100,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 2949,
+      "chunking": "paragraph_max1000",
+      "char_start": 2140,
+      "content_hash": "531ca8fca795d71115f0dac8fa168cf84b8350ac3e33a7dcac74aee835510513",
+      "printed_page": 90
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0101:c00",
+    "text": "DBMS Function\nDescription\nBenefit\n\nData organization\nHelps to manage data in a\nstructured format\n\nMakes data more manageable for\nperforming analysis and identifying patterns\nor relationships between different data\npoints\n\nData security\nProvides strong security\nmeasures to protect sensitive\ndata from unauthorized access\n\nProtects sensitive data such as personal\ninformation or financial data from\nunauthorized access\n\nData integration\nPermits the integration of data\nfrom multiple sources\n\nMakes it possible to combine and analyze\ndata from different datasets\n\nTable 2.9 Functions of Database Management Systems (DBMS)",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=101",
+    "page": 101,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 619,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "1bc9da34ac670b6a7ad8fc9929a7115fa4a83f319357323f8892fd406850272f",
+      "printed_page": 91
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0101:c01",
+    "text": "Implementation of database management techniques has become important for hospitals in achieving better\npatient outcomes and reducing costs. This strategy involves the collection and analysis of patient data from\ndifferent sources, including electronic health records, medical imaging, and lab results. For example, hospitals\nare utilizing this approach to improve treatment for patients with chronic conditions such as diabetes and\nheart disease. By leveraging data-driven insights and identifying patterns, health care experts can develop\npersonalized remedy plans for each patient, guiding them to enhanced health and wellness as well as cost\nsavings for the hospital. This showcases the significance of incorporating advanced data management\ntechniques in health care systems.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=101",
+    "page": 101,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 1401,
+      "chunking": "paragraph_max1000",
+      "char_start": 621,
+      "content_hash": "580997d6aad12906061639d57116623b2b26e77214b0e13e72204a04020c71c7",
+      "printed_page": 91
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0101:c02",
+    "text": "Through accurate and efficient management and analysis of patient data,\nhospitals and health care providers are able to make informed decisions, eventually resulting in a more\nefficient and effective health care system overall.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=101",
+    "page": 101,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 1628,
+      "chunking": "paragraph_max1000",
+      "char_start": 1401,
+      "content_hash": "7eed34f8db400052e7f40434bf22622c87331ba80c690aa98a43dc050486c32f",
+      "printed_page": 91
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0101:c03",
+    "text": "Cloud Computing\n\nCloud computing delivers a cost-effective solution for storing vast amounts of data, enabling seamless\ncollaboration and data transfer among remote groups. This technology comprises remote-access tools for\nstorage, processing, and analytics, facilitating multiple users' access regardless of their physical location.\nMoreover, cloud computing boasts a diverse range of data collection tools, including machine learning, and\ndata warehouses, streamlining the data assembly operation and improving overall efficiency. Cloud computing\nequips data scientists with the necessary resources and flexibility to effectively collect, manage, and analyze\ndata for their projects. Some examples of cloud storage are Amazon AWS, Microsoft Azure, and Google Cloud.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=101",
+    "page": 101,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 2398,
+      "chunking": "paragraph_max1000",
+      "char_start": 1631,
+      "content_hash": "acf2328757474dd0f40cbcee933ea0fca01fe0a15feb2214c2fd1b4503c97f9d",
+      "printed_page": 91
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0101:c04",
+    "text": "EXAMPLE 2.8\n\nProblem\n\nThe CEO of a large insurance company faced the challenge of increasing digital processes and documents,\nleading to a need for more storage capacity and rising costs for maintaining servers and hardware. What\nare all the available options for the insurance company facing the need for additional storage capacity at a\nhigher cost, and which solution would be the most effective for decreasing costs and increasing capacity\nwhile ensuring data security?\n\nSolution\n\n1. Migrating to a cloud storage system: This would allow the company to offload the burden of\nmaintaining physical servers and hardware while also providing virtually unlimited storage capacity.\nThe cost of cloud storage is also generally more flexible and scalable, allowing the company to only pay\nfor the storage it needs. Additionally, with the use of cloud-based document management systems, the\ncompany can streamline and automate its processes, reducing the need for physical documentation",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=101",
+    "page": 101,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 3381,
+      "chunking": "paragraph_max1000",
+      "char_start": 2400,
+      "content_hash": "ddb7764aacaae13981655d5b207f83681e4f6dd53c8d30953be2d73679ba9185",
+      "printed_page": 91
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0102:c00",
+    "text": "and increasing efficiency. However, this decision would require careful consideration of security\nmeasures and potentially training for employees to adapt to the new system. 2. Implementing a data archiving strategy: Instead of immediately migrating to the cloud or investing in\nnew technology, the company could consider implementing a data archiving strategy. This involves\nidentifying and storing infrequently used data in a separate, low-cost storage system, freeing up space\non servers and reducing costs. 3. Outsourcing data storage and management: The company could consider outsourcing its data storage\nand management to a third-party provider. This would eliminate the need for maintaining physical\nservers and hardware, and the provider may also offer advanced security measures and data backup\noptions. 4.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=102",
+    "page": 102,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 816,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "4d45284437b768c6544ac12fd891fa76e637a7fc6f7d77c45abf38604dd09cb3",
+      "printed_page": 92
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0102:c01",
+    "text": "Consolidating data and processes: The company could assess its current processes and systems to\nidentify areas where data and processes can be consolidated to reduce the need for multiple storage\nsystems and streamline workflows. 5. Implementing a virtual desktop infrastructure: A virtual desktop infrastructure allows employees to\naccess their desktop and applications from a central server, reducing the need for individual storage\nspace on devices. This can also improve security and data backup capabilities. 6. Upgrading or redesigning its current storage system: The company could invest in upgrading or\nredesigning its current storage system to improve efficiency and increase storage capacity. 7. Utilizing hybrid cloud storage: Instead of fully migrating to the cloud, the company could consider a\nhybrid approach where certain sensitive data is stored on-premises while less critical data is stored in\nthe cloud. This approach can offer the benefits of both on-premises and cloud storage.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=102",
+    "page": 102,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 1815,
+      "chunking": "paragraph_max1000",
+      "char_start": 816,
+      "content_hash": "4f06f58e505d0f4d9769f401fb81aa1d52d41ee79b5f2b611dd7cf53e731d5a7",
+      "printed_page": 92
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0102:c02",
+    "text": "8. Conducting regular audits of data usage and storage: The company could conduct regular audits of its\ndata usage and storage to identify areas of redundancy or inefficiency and adjust accordingly. This can\nhelp optimize storage and reduce costs over time.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=102",
+    "page": 102,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 2072,
+      "chunking": "paragraph_max1000",
+      "char_start": 1815,
+      "content_hash": "bdf4dfd4002eeca955e056909687512baf7d47fde72898b1870051469710e383",
+      "printed_page": 92
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0102:c03",
+    "text": "EXAMPLE 2.9\n\nProblem\n\nWhat is the descending order of storage capacity in Example 2.8, starting from highest to lowest, while\nmaintaining the same cost and the same level of security?\n\nSolution\n\nThe available storage options in Example 2.8, ranked from highest to lowest capacity at the same cost and\nsecurity level, are:",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=102",
+    "page": 102,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 2397,
+      "chunking": "paragraph_max1000",
+      "char_start": 2076,
+      "content_hash": "3299b3d2e00b58d4993bb293b041a8061fdad2b2c4646e6dea0f7ed583a0af5d",
+      "printed_page": 92
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0102:c04",
+    "text": "1. Cloud storage system: This option would provide virtually unlimited storage capacity, as the company\ncan scale up as needed at a relatively low cost. However, the overall capacity and cost would depend on\nthe specific cloud storage plan chosen. 2. Data archiving strategy: By identifying and storing infrequently used data, the company can free up\nspace on its current servers and reduce costs. However, the storage capacity will be limited to the\nexisting servers. 3. Outsourcing data storage and management: By outsourcing to a third-party provider, the company can\npotentially access higher storage capacity than its current setup, as the provider may have more\nadvanced storage options. However, this would also depend on the specific plan and cost negotiated. 4. Implementing a virtual desktop infrastructure: This option may provide slightly lower storage capacity\ncompared to outsourcing, as it still relies on a central server.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=102",
+    "page": 102,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 3337,
+      "chunking": "paragraph_max1000",
+      "char_start": 2399,
+      "content_hash": "b17a5b37e63dfc4ad5217eec07d7b6367bdfbc1fcf0aade4913dccc7fa0b999e",
+      "printed_page": 92
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0102:c05",
+    "text": "However, it can still be an improvement\ncompared to the company's current setup.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=102",
+    "page": 102,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 3417,
+      "chunking": "paragraph_max1000",
+      "char_start": 3337,
+      "content_hash": "3f7cdeb5ecd38b7dd5521964750f94441095bfe81af74b2fdcea8ba2666159a6",
+      "printed_page": 92
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0103:c00",
+    "text": "5. Upgrading or redesigning its current storage system: This option may also result in lower storage\ncapacity compared to outsourcing, as it only involves improving the existing server setup rather than\nusing an external provider. However, it can still provide a significant increase in capacity depending on\nthe specific upgrades implemented. 6. Hybrid cloud storage: This option can provide a mix of higher and lower storage capacity depending on\nthe specific data stored in the cloud and on-premises. Sensitive data may have lower capacity on the\ncloud, while less critical data can be stored at higher capacity. 7. Consolidating data and processes: By streamlining processes and eliminating redundancies, the\ncompany can potentially reduce the need for excessive storage capacity. However, this would also\ndepend on the company's current setup and level of optimization. 8.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=103",
+    "page": 103,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 877,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "278399603dc622397232b7ae87b57df1fe3241a368588371e88a58d9ed91a6c8",
+      "printed_page": 93
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0103:c01",
+    "text": "Regular audits of data usage and storage: This option may not directly impact storage capacity, but by\nidentifying and eliminating redundancies, the company can optimize its existing storage capacity and\npotentially reduce costs in the long run.",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=103",
+    "page": 103,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 1122,
+      "chunking": "paragraph_max1000",
+      "char_start": 877,
+      "content_hash": "5192abc93415aac5400ff632b14a00cf7acc1f306fd7f5a0968692ba4476c29a",
+      "printed_page": 93
+    }
+  },
+  {
+    "id": "B:openstax-data-science:p0103:c02",
+    "text": "Datasets\n\nNote: The primary datasets referenced in the chapter code may also be downloaded here\n(https://openstax.org/r/drive).)",
+    "source_id": "openstax-data-science",
+    "source": "data-science.pdf#page=103",
+    "page": 103,
+    "metadata": {
+      "book": "data_science",
+      "chapter": 2,
+      "section": "2.5 Handling Large Datasets",
+      "char_end": 1253,
+      "chunking": "paragraph_max1000",
+      "char_start": 1125,
+      "content_hash": "033b521184a675b44950d7b852745e4656076ddb679c91f005bdec6c8bdf8a49",
+      "printed_page": 93
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0221:c00",
+    "text": "Lists\n9\n\nFigure 9.1 credit: modification of work \"Budget and Bills\" by Alabama Extension/Flickr, Public Domain",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=221",
+    "page": 221,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "8.6 Chapter summary",
+      "char_end": 110,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "78a85e206037484dff4ed586cabaa9bdfaf2e72a249faa714684895468d39421",
+      "printed_page": null
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0221:c01",
+    "text": "Chapter Outline\n\n9.1 Modifying and iterating lists\n9.2 Sorting and reversing lists\n9.3 Common list operations\n9.4 Nested lists\n9.5 List comprehensions\n9.6 Chapter summary",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=221",
+    "page": 221,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "8.6 Chapter summary",
+      "char_end": 282,
+      "chunking": "paragraph_max1000",
+      "char_start": 112,
+      "content_hash": "0a60237630261ecf6f3f1c4aa27af2316c8fc69bd4b6e76ebd2335bb78dac2e7",
+      "printed_page": null
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0221:c02",
+    "text": "Introduction\n\nProgrammers often work on collections of data. Lists are a useful way of collecting data elements. Python lists\nare extremely flexible, and, unlike strings, a list's contents can be changed.\n\nThe Objects chapter introduced lists. This chapter explores operations that can be performed on lists.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=221",
+    "page": 221,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.1 Modifying and iterating lists",
+      "char_end": 592,
+      "chunking": "paragraph_max1000",
+      "char_start": 284,
+      "content_hash": "dc78086ad625c4e53660c52bd703cedd857081408ae3d50ac66a6c5ee4c95508",
+      "printed_page": null
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0221:c03",
+    "text": "9.1 Modifying and iterating lists\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Modify a list using append(), remove(), and pop() list operations.\n\n• Search a list using a for loop.\n\nUsing list operations to modify a list\n\nAn append() operation is used to add an element to the end of a list. In programming, append means add to\n\nthe end. A remove() operation removes the specified element from a list. A pop() operation removes the last\n\nitem of a list.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=221",
+    "page": 221,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.1 Modifying and iterating lists",
+      "char_end": 1076,
+      "chunking": "paragraph_max1000",
+      "char_start": 594,
+      "content_hash": "8bd2853f3f0d631617ba5f5e487744e412415a108180cff2441c238e0d943854",
+      "printed_page": null
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0222:c00",
+    "text": "EXAMPLE 9.1\n\nSimple operations to modify a list\n\nThe code below demonstrates simple operations for modifying a list.\n\nLine 8 shows the append() operation, line 12 shows the remove() operation, and line 17 shows the pop()\n\noperation. Since the pop() operation removes the last element, no parameter is needed.\n\n1 \"\"\"Operations for adding and removing elements from a list.\"\"\"\n2\n3 # Create a list of students working on a project\n4 student_list = [\"Jamie\", \"Vicky\", \"DeShawn\", \"Tae\"]\n5 print(student_list)\n6\n7 # Another student joins the project. The student must be added to\nthe list.\n8 student_list.append(\"Ming\")\n9 print(student_list)\n10\n11 # \"Jamie\" withdraws from the project. Jamie must be removed from\nthe list.\n12 student_list.remove(\"Jamie\")\n13 print(student_list)\n14\n15 # Suppose \"Ming\" had to be removed from the list.\n16 # A pop() operation can be used since Ming is last in the list.\n17 student_list.pop()\n18 print(student_list)\n\nThe above code's output is:",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=222",
+    "page": 222,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.1 Modifying and iterating lists",
+      "char_end": 968,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "dcd4be1335e1f0686814cdd2d0a0cec3d3f07b372c5c1d64cce367c8874a3cf6",
+      "printed_page": 212
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0222:c01",
+    "text": "['Jamie', 'Vicky', 'DeShawn', 'Tae']\n['Jamie', 'Vicky', 'DeShawn', 'Tae', 'Ming']\n\n['Vicky', 'DeShawn', 'Tae', 'Ming']\n['Vicky', 'DeShawn', 'Tae']",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=222",
+    "page": 222,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.1 Modifying and iterating lists",
+      "char_end": 1116,
+      "chunking": "paragraph_max1000",
+      "char_start": 970,
+      "content_hash": "64f3df4f5262f8b36ce1807e37b462f844fb5885fb71df80d47583596ce536ce",
+      "printed_page": 212
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0222:c02",
+    "text": "CONCEPTS IN PRACTICE\n\nModifying lists\n\n1 . Which operation can be used to add an element to the end of a list?\na. add()\n\nb. append()\n\nc. pop()\n\n2 . What is the correct syntax to remove the element 23 from a list called number_list?\n\na. remove()\n\nb. number_list.remove()",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=222",
+    "page": 222,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.1 Modifying and iterating lists",
+      "char_end": 1387,
+      "chunking": "paragraph_max1000",
+      "char_start": 1118,
+      "content_hash": "0c5f7de9a148fb96791ac5ebe1737990c7d3bf89c8a070228d1df119aade0f56",
+      "printed_page": 212
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0223:c00",
+    "text": "c. number_list.remove(23)\n\n3 . Which operation can be used to remove an element from the end of a list?\na. only pop()\n\nb. only remove()\n\nc. either pop() or remove()\n\nIterating lists\n\nAn iterative for loop can be used to iterate through a list. Alternatively, lists can be iterated using list indexes\nwith a counting for loop. The animation below shows both ways of iterating a list.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=223",
+    "page": 223,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.1 Modifying and iterating lists",
+      "char_end": 382,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "df6291325f04f89de5ee03171defb7b0045eb39c5ec45ce8ddae994483fff387",
+      "printed_page": 213
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0223:c01",
+    "text": "CHECKPOINT\n\nUsing len() to get the length of a list\n\nUsing len() to get the length of a list; ch 9, video 1 (https://www.openstax.org/r/len-function)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=223",
+    "page": 223,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.1 Modifying and iterating lists",
+      "char_end": 533,
+      "chunking": "paragraph_max1000",
+      "char_start": 384,
+      "content_hash": "c42d469cd0e68d200b079bfffaf82b88fa1e1a24398a7941a7eabf9407081192",
+      "printed_page": 213
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0223:c02",
+    "text": "CONCEPTS IN PRACTICE\n\nIterating lists\n\nFor the following questions, consider the list:\n\nmy_list = [2, 3, 5, 7, 9]\n\n4 . How many times will the following for loop execute?\n\nfor element in my_list:\n\na. 5\nb. 4\n\n5 . What is the final value of i for the following counting for loop?\n\nfor i in range(0, len(my_list)):\n\na. 9\n\nb. 4\n\nc. 5\n\n6 . What is the output of the code below?\n\nfor i in range(0, len(my_list), 2):\nprint(my_list[i], end=' ')\n\na. 2 5 9\n\nb. 2 3 5 7 9\n\nc. 2\n\n5\n\n9",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=223",
+    "page": 223,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.1 Modifying and iterating lists",
+      "char_end": 1007,
+      "chunking": "paragraph_max1000",
+      "char_start": 535,
+      "content_hash": "d710eba5d861d483d28125d0258c0f2f51c5004d623e6453026928562cbd014a",
+      "printed_page": 213
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0224:c00",
+    "text": "TRY IT\n\nSports list\n\nCreate a list of sports played on a college campus. The sports to be included are baseball, football, tennis,\nand table tennis.\n\nNext, add volleyball to the list.\n\nNext, remove \"football\" from the list and add \"soccer\" to the list.\n\nShow the list contents after each modification.\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n9-1-modifying-and-iterating-lists)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=224",
+    "page": 224,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.1 Modifying and iterating lists",
+      "char_end": 429,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "971eac18301579746669231469746f93dac0066af8c5e27aa28d4d9efd5fecad",
+      "printed_page": 214
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0224:c01",
+    "text": "TRY IT\n\nSimple Searching\n\nWrite a program that prints \"found!\" if \"soccer\" is found in the given list.\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n9-1-modifying-and-iterating-lists)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=224",
+    "page": 224,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.1 Modifying and iterating lists",
+      "char_end": 661,
+      "chunking": "paragraph_max1000",
+      "char_start": 431,
+      "content_hash": "5b544124106eb943f94712ee0ac2810544ecf4deaf5df896f2abf7dd7dbf21e9",
+      "printed_page": 214
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0224:c02",
+    "text": "9.2 Sorting and reversing lists\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Understand the concept of sorting.\n• Use built-in sort() and reverse() methods.\n\nSorting\n\nOrdering elements in a sequence is often useful. Sorting is the task of arranging elements in a sequence in\nascending or descending order.\n\nSorting can work on numerical or non-numerical data. When ordering text, dictionary order is used. Ex: \"bat\"\ncomes before \"cat\" because \"b\" comes before \"c\".",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=224",
+    "page": 224,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.2 Sorting and reversing lists",
+      "char_end": 1156,
+      "chunking": "paragraph_max1000",
+      "char_start": 663,
+      "content_hash": "45388c74377cd94f385df7198d1b705e64c1ad1912d9f5c09b4be03e9578a6b3",
+      "printed_page": 214
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0224:c03",
+    "text": "CHECKPOINT\n\nSorting\n\nSorting; ch 9, video 2 (https://www.openstax.org/r/sorting)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=224",
+    "page": 224,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.2 Sorting and reversing lists",
+      "char_end": 1238,
+      "chunking": "paragraph_max1000",
+      "char_start": 1158,
+      "content_hash": "48556423aadebd777253f44b5357a70e891f995223807d22e919a65b15b854f0",
+      "printed_page": 214
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0225:c00",
+    "text": "CONCEPTS IN PRACTICE\n\nSorting\n\n1 . What would be the last element of the following list if it is sorted in descending order?\n[12, 3, 19, 25, 16, -3, 5]\n\na. 25\n\nb. -3\n\nc. 5\n\n2 . Arrange the following list in ascending order.\n[\"cat\", \"bat\", \"dog\", \"coyote\", \"wolf\"]\n\na. [\"bat\", \"cat\", \"coyote\", \"dog\", \"wolf\"]\n\nb. [\"wolf\", \"coyote\", \"dog\", \"cat\", \"bat\"]\n\n3 . How are the words \"flask\" and \"flash\" related in Python?\n\na. \"flask\" < \"flash\"\n\nb. \"flask\" == \"flash\"\n\nc. \"flask\" > \"flash\"\n\nUsing sort() and reverse()\n\nPython provides methods for arranging elements in a list.\n\n• The sort() method arranges the elements of a list in ascending order. For strings, ASCII values are used\n\nand uppercase characters come before lowercase characters, leading to unexpected results. Ex: \"A\" is\n\nordered before \"a\" in ascending order but so is \"G\"; thus, \"Gail\" comes before \"apple\".\n\n• The reverse() method reverses the elements in a list.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=225",
+    "page": 225,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.2 Sorting and reversing lists",
+      "char_end": 923,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "7fd6d1778795fe089d34e32cc561d194606c63122056b71404d91443e0daaf6b",
+      "printed_page": 215
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0225:c01",
+    "text": "EXAMPLE 9.2\n\nSorting and reversing lists\n\n# Setup a list of numbers\nnum_list = [38, 92, 23, 16]\nprint(num_list)\n\n# Sort the list\nnum_list.sort()\nprint(num_list)\n\n# Setup a list of words\ndance_list = [\"Stepping\", \"Ballet\", \"Salsa\", \"Kathak\", \"Hopak\", \"Flamenco\", \"Dabke\"]\n\n# Reverse the list\n\ndance_list.reverse()\nprint(dance_list)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=225",
+    "page": 225,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.2 Sorting and reversing lists",
+      "char_end": 1255,
+      "chunking": "paragraph_max1000",
+      "char_start": 925,
+      "content_hash": "5770e25602fc3053510b5a652b21ddb7d95dabac0ecb630c5be9d55608de9c4e",
+      "printed_page": 215
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0226:c00",
+    "text": "# Sort the list\ndance_list.sort()\nprint(dance_list)\n\nThe above code's output is:\n\n[38, 92, 23, 16]\n[16, 23, 38, 92]\n[\"Dabke\", \"Flamenco\", \"Hopak\", \"Kathak\", \"Salsa\", \"Ballet\", \"Stepping\"]\n[\"Ballet\", \"Dabke\", \"Flamenco\", \"Hopak\", \"Kathak\", \"Salsa\", \"Stepping\"]",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=226",
+    "page": 226,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.2 Sorting and reversing lists",
+      "char_end": 259,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "ca36d6d9055a172326e2db5043512392d200aea832aa98f929795dc45e57a0e4",
+      "printed_page": 216
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0226:c01",
+    "text": "CONCEPTS IN PRACTICE\n\nsort() and reverse() methods\n\nUse the following list for the questions below.\n\nboard_games = [\"go\", \"chess\", \"scrabble\", \"checkers\"]\n\n4 . What is the correct way to sort the list board_games in ascending order?\n\na. sort(board_games)\n\nb. board_games.sort()\n\nc. board_games.sort('ascending')\n\n5 . What is the correct way to reverse the list board_games?\n\na. board_games.reverse()\n\nb. reverse(board_games)\n\n6 . What would be the last element of board_games after the reverse() method has been applied?\n\na. 'go'\n\nb. 'checkers'\n\nc. 'scrabble'",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=226",
+    "page": 226,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.2 Sorting and reversing lists",
+      "char_end": 820,
+      "chunking": "paragraph_max1000",
+      "char_start": 261,
+      "content_hash": "63bbfc40cdfc07718f42965efcce8322e2a6181bac98bde1636c90ad23d10634",
+      "printed_page": 216
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0226:c02",
+    "text": "TRY IT\n\nSorting and reversing\n\nComplete the program below to arrange and print the numbers in ascending and descending order.\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n9-2-sorting-and-reversing-lists)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=226",
+    "page": 226,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.2 Sorting and reversing lists",
+      "char_end": 1073,
+      "chunking": "paragraph_max1000",
+      "char_start": 822,
+      "content_hash": "d9c70631e78fa655459352795ff79364b8ac4ec26425aa0168f9bcf69f4454a6",
+      "printed_page": 216
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0226:c03",
+    "text": "9.3 Common list operations\n\nLearning objectives\n\nBy the end of this section you should be able to",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=226",
+    "page": 226,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.3 Common list operations",
+      "char_end": 1172,
+      "chunking": "paragraph_max1000",
+      "char_start": 1075,
+      "content_hash": "13ed080c06bcd23c578ab8063804f63a62c2121f2ad11d85f55703ad49234f59",
+      "printed_page": 216
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0227:c00",
+    "text": "• Use built-in functions max(), min(), and sum().\n\n• Demonstrate how to copy a list.\n\nUsing built-in operations\n\nThe max() function called on a list returns the largest element in the list. The min() function called on a list\n\nreturns the smallest element in the list. The max() and min() functions work for lists as long as elements\n\nwithin the list are comparable.\n\nThe sum() function called on a list of numbers returns the sum of all elements in the list.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=227",
+    "page": 227,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.3 Common list operations",
+      "char_end": 459,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "3afee08e45f3830c0ca326f2c85c648b2c06be0890551d4c8124bdfab2766273",
+      "printed_page": 217
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0227:c01",
+    "text": "EXAMPLE 9.3\n\nCommon list operations\n\n\"\"\"Common list operations.\"\"\"\n\n# Set up a list of number\nsnum_list = [28, 92, 17, 3, -5, 999, 1]\n\n# Set up a list of words\ncity_list = [\"New York\", \"Missoula\", \"Chicago\", \"Bozeman\",\n\"Birmingham\", \"Austin\", \"Sacramento\"]\n\n# Usage of the max() funtion\nprint(max(num_list))\n\n# max() function works for strings as well\nprint(max(city_list))\n\n# Usage of the min() funtion which also works for strings\nprint(min(num_list))\n\nprint(min(city_list))\n\n# sum() only works for a list of numbers\nprint(sum(num_list))\n\nThe above code's output is:\n\n999\nSacramento\n-5\nAustin\n1135",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=227",
+    "page": 227,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.3 Common list operations",
+      "char_end": 1060,
+      "chunking": "paragraph_max1000",
+      "char_start": 461,
+      "content_hash": "ba365fb9715ba884ee764fa71aab79c26d32a908b6c94658e19ec1355db42335",
+      "printed_page": 217
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0228:c00",
+    "text": "CONCEPTS IN PRACTICE\n\nList operations\n\n1 . What is the correct way to get the minimum of a list named nums_list?\n\na. min(nums_list)\n\nb. nums_list.min()\n\nc. minimum(nums_list)\n\n2 . What is the minimum of the following list?\n[\"Lollapalooza\", \"Coachella\", \"Newport Jazz festival\", \"Hardly Strictly\n\nBluegrass\", \"Austin City Limits\"]\n\na. Coachella\n\nb. Austin City Limits\n\nc. The minimum doesn't exist.\n\n3 . What value does the function call return?\nsum([1.2, 2.1, 3.2, 5.9])\n\na. sum() only works for integers.\n\nb. 11\n\nc. 12.4\n\nCopying a list\n\nThe copy() method is used to create a copy of a list.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=228",
+    "page": 228,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.3 Common list operations",
+      "char_end": 592,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "1dbc7cbf553eb3e797928c54d5a98928d970bb1c6e055aa21f26287c48646229",
+      "printed_page": 218
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0228:c01",
+    "text": "CHECKPOINT\n\nCopying a list\n\nCopying a list; ch 9, video 3 (https://www.openstax.org/r/copying-list)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=228",
+    "page": 228,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.3 Common list operations",
+      "char_end": 693,
+      "chunking": "paragraph_max1000",
+      "char_start": 594,
+      "content_hash": "13d970254e37e3e11bb86b69cadf00caa74ac6514a319a721cc09dd982bf7084",
+      "printed_page": 218
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0228:c02",
+    "text": "CONCEPTS IN PRACTICE\n\nCopying a list\n\n4 . What is the output of the following code?\n\nmy_list = [1, 2, 3]\nlist2 = my_list\nlist2[0] = 13\nprint(sum(my_list))\n\na. 6\n\nb. 13\n\nc. 18\n\n5 . What is the output of the following code?\n\nmy_list = [1, 2, 3]",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=228",
+    "page": 228,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.3 Common list operations",
+      "char_end": 937,
+      "chunking": "paragraph_max1000",
+      "char_start": 695,
+      "content_hash": "04d36e8166d8817b5e74fc74a1f2960da709b43318a62cac64d7d2c6cbef50ea",
+      "printed_page": 218
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0229:c00",
+    "text": "list2 = my_list.copy()\nlist2[0] = 13\nprint(max(my_list))\n\na. 3\n\nb. 13\n\nc. 18\n\n6 . What is the output of the following code?\n\nmy_list = [\"Cat\", \"Dog\", \"Hamster\"]\nlist2 = my_list\nlist2[2] = \"Pigeon\"\nprint(sum(my_list))\n\na. CatDogPigeon\n\nb. Error",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=229",
+    "page": 229,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.3 Common list operations",
+      "char_end": 243,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "6aa84d99c3ed0644e3444ea1a3e898be09e3d29eccf55a4bf5f14c95b896ecb4",
+      "printed_page": 219
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0229:c01",
+    "text": "TRY IT\n\nCopy\n\nMake a copy of word_list called wisdom. Sort the list called wisdom. Create a sentence using the words in\n\neach list and print those sentences (no need to add periods at the end of the sentences).\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n9-3-common-list-operations)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=229",
+    "page": 229,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.3 Common list operations",
+      "char_end": 576,
+      "chunking": "paragraph_max1000",
+      "char_start": 245,
+      "content_hash": "329f642fb7536602758eaab38a2c027ac8aff9b26ad51d7001ffd37aaf3fc391",
+      "printed_page": 219
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0229:c02",
+    "text": "9.4 Nested lists\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Demonstrate the use of a list-of-lists to structure data.\n• Demonstrate individual element addressing using multi-dimensional indexing.\n• Use nested loops to iterate a list-of-lists.\n\nList-of-lists\n\nLists can be made of any type of element. A list element can also be a list. Ex: [2, [3, 5], 17] is a valid list\n\nwith the list [3, 5] being the element at index 1.\n\nWhen a list is an element inside a larger list, it is called a nested list. Nested lists are useful for expressing\nmultidimensional data. When each of the elements of a larger list is a smaller list, the larger list is called a list-\nof-lists.\n\nEx: A table can be stored as a two-dimensional list-of-lists, where each row of data is a list in the list-of-lists.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=229",
+    "page": 229,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.4 Nested lists",
+      "char_end": 1395,
+      "chunking": "paragraph_max1000",
+      "char_start": 578,
+      "content_hash": "4ba73b0e5e4fd8fb4aed0e3c730c4e29644d0a5862a92d7d49655945ed9542c8",
+      "printed_page": 219
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0230:c00",
+    "text": "CHECKPOINT\n\nList-of-lists\n\nList-of-lists; ch 9, video 4 (https://www.openstax.org/r/list-of-lists)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=230",
+    "page": 230,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.4 Nested lists",
+      "char_end": 98,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "9511af278123751f7dd3db226ada537183daf317e302d5cda379be179c89265c",
+      "printed_page": 220
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0230:c01",
+    "text": "CONCEPTS IN PRACTICE\n\nLists\n\nFor each of the questions below, consider the following matrix:\n\n1 . What would be the correct way to represent matA in Python?\n\na. [[7, 4, 5], [3, 9, 6], [1, 2, 8]]\n\nb. [7, 4, 5\n\n3, 9, 6\n1, 2, 8]\n\nc. [[7, 3, 1], [4, 9, 2], [1, 2, 8]\n\n2 . What would be the correct index for the number 6 in the above list?\n\na. [5]\n\nb. [2][1]\n\nc. [1][2]\n\n3 . What would be the result of the following code:\n\nprint(matA[0])\n\na. Error\n\nb. 7\n\nc. [7, 4, 5]\n\nUsing nested loops to iterate nested lists\n\nA nested loop structure can be used to iterate a list-of-lists. For a two-dimensional list-of-lists, an outer for\n\nloop can be used for rows, and an inner for loop can be used for columns.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=230",
+    "page": 230,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.4 Nested lists",
+      "char_end": 798,
+      "chunking": "paragraph_max1000",
+      "char_start": 100,
+      "content_hash": "1d0c9173bbab8829b9f3d61f066d845667003e90a19a471fc53199ef2691edd7",
+      "printed_page": 220
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0230:c02",
+    "text": "EXAMPLE 9.4\n\nIterating a list-of-lists\n\nThe code below demonstrates how to iterate a list-of-lists.\n\nThe outer loop on line 9 goes element by element for the larger list. Each element in the larger list is a list.\nThe inner loop on line 10 iterates through each element in each nested list.\n\n1 \"\"\"Iterating a list-of-lists.\"\"\"",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=230",
+    "page": 230,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.4 Nested lists",
+      "char_end": 1126,
+      "chunking": "paragraph_max1000",
+      "char_start": 800,
+      "content_hash": "c1c565bb74b82032afa405838bfca8c1e558489ab80deab64679be764c89824f",
+      "printed_page": 220
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0231:c00",
+    "text": "2\n3 # Create a list of numbers\n4 list1 = [[1, 2, 3],\n5 [1, 4, 9],\n6 [1, 8, 27]]\n7\n8 # Iterating the list-of-lists\n9 for row in list1:\n10 for num in row:\n11 print(num, end=\" \")\n12 print()\n\nThe above code's output is:\n\n1 2 3\n1 4 9\n1 8 27",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=231",
+    "page": 231,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.4 Nested lists",
+      "char_end": 235,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "f3a6a7e520303c956ab7a3cf2f06f60d06f360e59b459aed57f9824ef4ffbcd4",
+      "printed_page": 221
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0231:c01",
+    "text": "CONCEPTS IN PRACTICE\n\nIterating a list-of-lists\n\nFor each question below, consider the following list:\n\nmy_list = [[7, 4, 5, 12],\n[24, 3, 9, 16],\n[12, 8, 91, -5]]\n\n4 . Which code prints each number in my_list starting from 7, then 4, and so on ending with -5?\n\na. for row in my_list:\n\nfor elem in row:\nprint(elem)\n\nb. for elem in my_list:\n\nprint(elem)\n\n5 . The range() function can also be used to iterate a list-of-lists. Which code prints each number in\n\nmy_list starting from 7, then 4, and so on, ending with -5, using counting for loops?\n\na. for column_index in range(0, len(my_list[0])):\n\nfor row_index in range (0, len(my_list)):\nprint(my_list[row_index][column_index])\n\nb. for row_index in range(0, len(my_list)):\n\nfor column_index in range (0, len(my_list)):\nprint(my_list[row_index][column_index])\nprint()\n\nc. for row_index in range(0, len(my_list)):\n\nfor column_index in range (0, len(my_list[0])):\nprint(my_list[row_index][column_index])",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=231",
+    "page": 231,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.4 Nested lists",
+      "char_end": 1186,
+      "chunking": "paragraph_max1000",
+      "char_start": 237,
+      "content_hash": "4ab84a426771069ac952e7de63be8de02850af7dc79fcb3978ee16d99ba04a41",
+      "printed_page": 221
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0232:c00",
+    "text": "TRY IT\n\nMatrix multiplication\n\nWrite a program that calculates the matrix multiplication product of the matrices matW and matZ below\nand prints the result. The expected result is shown.\n\nIn the result matrix, each element is calculated according to the position of the element. The result at\nposition [i][j] is calculated using row i from the first matrix, W, and column j from the second matrix, Z.\n\nEx:\n\nresult[1][2] = (row 1 in W) times (column 2 in Z)\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n9-4-nested-lists)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=232",
+    "page": 232,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.4 Nested lists",
+      "char_end": 566,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "f22ec201fa5894b334f5e244712aeeb610c7190738c793cdb904aa861ade6a43",
+      "printed_page": 222
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0232:c01",
+    "text": "9.5 List comprehensions\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Identify the different components of a list comprehension statement.\n\n• Implement filtering using list comprehension.\n\nList comprehensions\n\nA list comprehension is a Python statement to compactly create a new list using a pattern.\n\nThe general form of a list comprehension statement is shown below.\n\nlist_name = [expression for loop_variable in iterable]\n\nlist_name refers to the name of a new list, which can be anything, and the for is the for loop keyword. An\n\nexpression defines what will become part of the new list. loop_variable is an iterator, and iterable is an\n\nobject that can be iterated, such as a list or string.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=232",
+    "page": 232,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.5 List comprehensions",
+      "char_end": 1292,
+      "chunking": "paragraph_max1000",
+      "char_start": 568,
+      "content_hash": "15c624b88a9bfa6370dd7ae2dde366b6a9878af4b034f0188e62f002440796b5",
+      "printed_page": 222
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0233:c00",
+    "text": "EXAMPLE 9.5\n\nCreating a new list with a list comprehension\n\nA list comprehension shown below in the second code has the same effect as the regular for loop shown in\n\nthe first code. The resultant list is [0, 1, 4, 9, 16, 25, 36, 49, 64, 81] in both cases.\n\nCreating a list of squares using a for loop.\n\n# Create an empty List.\nsquares_list = []\n\n# Add items to a list, as squares of numbers starting at 0 and ending at 9.\nfor i in range(10):\nsquares_list.append(i*i)\n\nCreating a list of squares using the list comprehension.\n\nsquare_list = [i*i for i in range(10)]\n\nThe expression i*i is applied for each value of the loop_variable i.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=233",
+    "page": 233,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.5 List comprehensions",
+      "char_end": 634,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "3caa1edf019c56b112655cc442c4d69f7fef68f3e1419aae11cfa6b7ee68abdb",
+      "printed_page": 223
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0233:c01",
+    "text": "EXAMPLE 9.6\n\nA Dr. Seuss poem\n\nA list comprehension can be used to create a list based on another list. In line 6, the for loop is written on\n\nthe list poem_lines.\n\n1 # Create a list of words\n2 words_list = [\"one\", \"two\", \"red\", \"blue\"]\n3\n4 # Use a list comprehension to create a new list called poem_lines\n5 # Inserting the word \"fish\" attached to each word in words_list\n6 poem_lines = [w + \" fish\" for w in words_list]\n7 for line in poem_lines:\n8 print(line)\n\nThe above code's output is:\n\none fish\ntwo fish\nred fish\nblue fish",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=233",
+    "page": 233,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.5 List comprehensions",
+      "char_end": 1164,
+      "chunking": "paragraph_max1000",
+      "char_start": 636,
+      "content_hash": "111213e8bb3e88896915e39553cf19db567241f1b7b6b248787a60b834ff4544",
+      "printed_page": 223
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0234:c00",
+    "text": "CONCEPTS IN PRACTICE\n\nList comprehensions\n\n1 . The component of a list comprehension defining an element of the new list is the _____.\na. expression\nb. loop_variable\nc. container\n\n2 . What would be the contents of b_list after executing the code below?\n\na_list = [1, 2, 3, 4, 5]\nb_list = [i+2 for i in a_list]\n\na. [1, 2, 3, 4, 5]\n\nb. [0, 1, 2, 3, 4]\n\nc. [3, 4, 5, 6, 7]\n\n3 . What does new_list contain after executing the statement below?\n\nnew_list = [i//3 for i in range(1, 15, 3)]\n\na. [0.3333333333333333, 1.3333333333333333, 2.3333333333333335,\n\n3.3333333333333335, 4.333333333333333]\n\nb. [0, 1, 2, 3, 4]\n\nc. [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]\n\nFiltering using list comprehensions\n\nList comprehensions can be used to filter items from a given list. A condition is added to the list\ncomprehension.\n\nlist_name = [expression for loop_variable in container if condition]\n\nIn a filter list comprehension, an element is added into list_name only if the condition is met.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=234",
+    "page": 234,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.5 List comprehensions",
+      "char_end": 980,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "d7c649eb5d53061a1661d86944864cd4a589d576fc59f998c34228bbb43be124",
+      "printed_page": 224
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0234:c01",
+    "text": "CHECKPOINT\n\nFiltering a list\n\nFiltering a list; ch 9, video 5 (https://www.openstax.org/r/filtering-list)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=234",
+    "page": 234,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.5 List comprehensions",
+      "char_end": 1087,
+      "chunking": "paragraph_max1000",
+      "char_start": 982,
+      "content_hash": "027f1564b8aa28baea88f941d229c1b0d7cfd6f39295683906da441476281479",
+      "printed_page": 224
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0234:c02",
+    "text": "CONCEPTS IN PRACTICE\n\nFiltering using list comprehensions\n\nFor each code using list comprehension, select the correct resultant list in new_list.\n\n4 . my_list = [21, -1, 50, -9, 300, -50, 2]",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=234",
+    "page": 234,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.5 List comprehensions",
+      "char_end": 1279,
+      "chunking": "paragraph_max1000",
+      "char_start": 1089,
+      "content_hash": "be709cc202720dc45a070173d56cc5c0da5ca22c7e7a1c29c3ab2db5c80006d9",
+      "printed_page": 224
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0235:c00",
+    "text": "new_list = [m for m in my_list if m < 0]\n\na. [21, 50, 300, 2]\n\nb. [21, -1, 50, -9, 300, -50, 2]\n\nc. [-1, -9, -50]\n\n5 . my_string = \"This is a home.\"\n\nnew_list = [i for i in my_string if i in 'aeiou']\n\na. [i, i, a, o, e]\n\nb. ['i', 'i'', 'a', 'o', 'e']\n\nc. Error\n\n6 . new_list = [r for r in range (0, 21, 2) if r%2 != 0]\n\na. []\n\nb. [21]\n\nc. [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=235",
+    "page": 235,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.5 List comprehensions",
+      "char_end": 374,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "4c95fbe5e923b05b51980336308d76e278774fb0d7809c49b36c4de4b2fab2d4",
+      "printed_page": 225
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0235:c01",
+    "text": "TRY IT\n\nSelecting five-letter words\n\nWrite a program that creates a list of only five-letter words from the given list and prints the new list.\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/9-5-list-\ncomprehensions)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=235",
+    "page": 235,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.5 List comprehensions",
+      "char_end": 637,
+      "chunking": "paragraph_max1000",
+      "char_start": 376,
+      "content_hash": "db34093dd58082cd9ed4ead54a8a5c15f5ee8e0690fe62b9057ab01d3161ca23",
+      "printed_page": 225
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0235:c02",
+    "text": "TRY IT\n\nBooks starting with \"A\"\n\nWrite a program that selects words that begin with an \"A\" in the given list. Make sure the new list is then\nsorted in dictionary order. Finally, print the new sorted list.\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/9-5-list-\ncomprehensions)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=235",
+    "page": 235,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.5 List comprehensions",
+      "char_end": 961,
+      "chunking": "paragraph_max1000",
+      "char_start": 639,
+      "content_hash": "b107105560304b737f4a7a06f62a78a70cddf100ef72df41c62841be9903622b",
+      "printed_page": 225
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0235:c03",
+    "text": "9.6 Chapter summary\n\nHighlights from this chapter include:\n\n• Lists are mutable and can be easily modified by using append(), remove(), and pop() operations.\n\n• Lists are iterable and can be iterated using an iterator or element indexes.\n• The sort() operation arranges the elements of a list in ascending order if all elements of the list are of\n\nthe same type.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=235",
+    "page": 235,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.6 Chapter summary",
+      "char_end": 1325,
+      "chunking": "paragraph_max1000",
+      "char_start": 963,
+      "content_hash": "e776a5e614440b9c0b2225aa948132d2dd18a0bc2f07fe63af594cbbe6d1eade",
+      "printed_page": 225
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0236:c00",
+    "text": "• The reverse() operation reverses a list.\n\n• The copy() method is used to create a copy of a list.\n\n• Lists have built-in functions for finding the maximum, minimum, and summation of a list for lists with only\nnumeric values.\n• Lists can be nested to represent multidimensional data.\n• A list comprehension is a compact way of creating a new list, which can be used to filter items from an\nexisting list.\n\nAt this point, you should be able to write programs using lists.\n\nFunction\nDescription\n\nappend(element)\nAdds the specified element to the end of a list.\n\nremove(element)\nRemoves the specified element from the list if the element exists.\n\npop()\nRemoves the last element of a list.\n\nmax(list)\nReturns the maximum element of the list specified.\n\nmin(list)\nReturns the maximum element of the list specified.\n\nsum(list)\nReturns the summation of a list composed of numbers.\n\nsort()\nSorts a list on which the method is called in ascending order.\n\nreverse()\nReverses the order of elements in a list.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=236",
+    "page": 236,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.6 Chapter summary",
+      "char_end": 998,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "6e82eba3fd896a09355ee47b8ddc185462fac305e13e299190ef08f77e93e593",
+      "printed_page": 226
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0236:c01",
+    "text": "copy()\nMakes a complete copy of a list.\n\nTable 9.1 Chapter 9 reference.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=236",
+    "page": 236,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 9,
+      "section": "9.6 Chapter summary",
+      "char_end": 1071,
+      "chunking": "paragraph_max1000",
+      "char_start": 1000,
+      "content_hash": "b6065a1d9e40a5d64e11d29293c01926348a5e62b16fe71af5fdd5d3069413c6",
+      "printed_page": 226
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0237:c00",
+    "text": "Dictionaries\n10\n\nFigure 10.1 credit: modification of work \"Dictionary\", by Caleb Roenigk/Flickr, CC BY 2.0",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=237",
+    "page": 237,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "9.6 Chapter summary",
+      "char_end": 106,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "15daca412a9cfe19d7f315e419b872413fd5d689f73751c0fd7de5920941a418",
+      "printed_page": null
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0237:c01",
+    "text": "Chapter Outline\n\n10.1 Dictionary basics\n10.2 Dictionary creation\n10.3 Dictionary operations\n10.4 Conditionals and looping in dictionaries\n10.5 Nested dictionaries and dictionary comprehension\n10.6 Chapter summary",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=237",
+    "page": 237,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "9.6 Chapter summary",
+      "char_end": 320,
+      "chunking": "paragraph_max1000",
+      "char_start": 108,
+      "content_hash": "4004cc6ef7baaff9644ef8af8b4c95618d3ed2ad7c8aa184b1a9ed573752a27a",
+      "printed_page": null
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0237:c02",
+    "text": "Introduction\n\nA Python dictionary is a data type for storing the data in a key-value pair format. In this chapter, the dictionary\ndata type is introduced. This chapter also introduces ways to use dictionaries, including looping over dictionary\n\nitems and performing conditional statements on a dictionary.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=237",
+    "page": 237,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.1 Dictionary basics",
+      "char_end": 627,
+      "chunking": "paragraph_max1000",
+      "char_start": 322,
+      "content_hash": "5932c31722571191577daac2466be999dddb13fb4fbaa72b6dc4b3f96f28884b",
+      "printed_page": null
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0237:c03",
+    "text": "10.1 Dictionary basics\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Describe the structure of a dictionary object.\n• Use type() to identify the type of a dictionary object.\n\n• Explain why a dictionary object does not have duplicate key values.\n\nDictionaries\n\nA dictionary in Python is a container object including key-value pairs. An example of a key-value item is a\nword in an English dictionary with its corresponding definition.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=237",
+    "page": 237,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.1 Dictionary basics",
+      "char_end": 1089,
+      "chunking": "paragraph_max1000",
+      "char_start": 629,
+      "content_hash": "dcaf1bb80be153523061d90c0fbf8e9478f5c6254a8b8be1f17923d0c46141b5",
+      "printed_page": null
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0238:c00",
+    "text": "CHECKPOINT\n\nDictionaries\n\nDictionaries; ch 10, video 1 (https://www.openstax.org/r/dictionaries)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=238",
+    "page": 238,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.1 Dictionary basics",
+      "char_end": 96,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "b08843d4cca7cf91f27523a2f775225d7399ce0ae10de5bf247e5705e12a7626",
+      "printed_page": 228
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0238:c01",
+    "text": "CONCEPTS IN PRACTICE\n\nDictionary basics\n\nGiven the dictionary object days = {\"Sunday\": 1, \"Monday\": 2, \"Tuesday\": 3}, answer the\n\nfollowing questions.\n\n1 . What are the keys in the days dictionary object?\n\na. \"Sunday\", \"Monday\", \"Tuesday\"\n\nb. 1, 2, 3\n\nc. 0, 1, 2\n\n2 . What are the values in the days dictionary object?\n\na. 0, 1, 2\n\nb. 1, 2, 3\n\nc. \"Sunday\", \"Monday\", \"Tuesday\"\n\n3 . What is the value associated with key \"Sunday\"?\n\na. \"Sunday\"\n\nb. 1\n\nc. 0\n\nDictionary type and properties\n\nThe dict type implements a dictionary in Python. Since a dictionary object is used to look up values using keys,\na dictionary object cannot hold duplicate key values.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=238",
+    "page": 238,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.1 Dictionary basics",
+      "char_end": 752,
+      "chunking": "paragraph_max1000",
+      "char_start": 98,
+      "content_hash": "8ceff09bbc6cd646a9f8b89b1d16b1f87d64f886b13dba1c76bc1f928f216f51",
+      "printed_page": 228
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0238:c02",
+    "text": "CHECKPOINT\n\nDictionary properties\n\nDictionary properties; ch 10, video 2 (https://www.openstax.org/r/dictionary-properties)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=238",
+    "page": 238,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.1 Dictionary basics",
+      "char_end": 877,
+      "chunking": "paragraph_max1000",
+      "char_start": 754,
+      "content_hash": "f7e8b488581c2a52ded0581236a3186e064b64f31e0d3b9e5c364ec3cb722a29",
+      "printed_page": 228
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0238:c03",
+    "text": "CONCEPTS IN PRACTICE\n\nDictionary type and properties\n\nGiven the dictionary object encoding = {\"a\": 97, \"b\": 98, \"A\": 65, \"B\": 66}, answer the\n\nfollowing questions.\n\n4 . What does type(encoding) return?\n\na. dictionary\n\nb. dict",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=238",
+    "page": 238,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.1 Dictionary basics",
+      "char_end": 1104,
+      "chunking": "paragraph_max1000",
+      "char_start": 879,
+      "content_hash": "f4656bc119422ce74f5aa5adcc49239cac46e939f0ff66e05ccf7529e2397ff7",
+      "printed_page": 228
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0239:c00",
+    "text": "c. str\n\n5 . The encoding dictionary contains duplicate keys since it has both \"a\" and \"A\" as keys.\n\na. true\nb. false\n\n6 . A dictionary can have duplicate values.\na. true\nb. false",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=239",
+    "page": 239,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.1 Dictionary basics",
+      "char_end": 178,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "a873184db78608943fdd50c2d266dd690519b33aee0e862dc45115dcd403309f",
+      "printed_page": 229
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0239:c01",
+    "text": "TRY IT\n\nInvestigate variable types\n\nGiven the variables in the code below, examine the variables' types.\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n10-1-dictionary-basics)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=239",
+    "page": 239,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.1 Dictionary basics",
+      "char_end": 401,
+      "chunking": "paragraph_max1000",
+      "char_start": 180,
+      "content_hash": "d91475a2c51709f5b7e5578f235c14c044fb781986c8908b737a9c27359541bb",
+      "printed_page": 229
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0239:c02",
+    "text": "10.2 Dictionary creation\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Create a dictionary object with given key/value pairs.\n\nDictionary creation\n\nTwo methods exist for creating an empty dictionary:\n\n• Using curly braces {}. Ex: dict_1 = {}.\n\n• Using the dict() function. Ex: dict_2 = dict().\n\nA dictionary object can also be created with initial key-value pairs enclosed in curly braces. Ex: my_dict =\n\n{\"pizza\": 2, \"pasta\": 3, \"drink\": 4} creates a dictionary object my_dict. A key and associated value\n\nare separated by a colon, and key-value pairs are separated by commas.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=239",
+    "page": 239,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.2 Dictionary creation",
+      "char_end": 1008,
+      "chunking": "paragraph_max1000",
+      "char_start": 403,
+      "content_hash": "60ef67f25e994f889e1259b2a2d98e8807773082a510df490a70ebb848001d37",
+      "printed_page": 229
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0239:c03",
+    "text": "CHECKPOINT\n\nCreating a dictionary object\n\nCreating a dictionary object; ch 10, video 3 (https://www.openstax.org/r/creating-dictionary-object)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=239",
+    "page": 239,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.2 Dictionary creation",
+      "char_end": 1152,
+      "chunking": "paragraph_max1000",
+      "char_start": 1010,
+      "content_hash": "098ac186ad071be6804c7d322395c2f830592351d8da620180cfccc947c103d0",
+      "printed_page": 229
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0239:c04",
+    "text": "CONCEPTS IN PRACTICE\n\nCreating dictionary exercises\n\n1 . What is the correct syntax to create an empty dictionary in Python?\na. my_dict = ()\n\nb. my_dict = {}",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=239",
+    "page": 239,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.2 Dictionary creation",
+      "char_end": 1311,
+      "chunking": "paragraph_max1000",
+      "char_start": 1154,
+      "content_hash": "5c1294b205be5fb601ec02eb7e89c0e855bf26c514e6f662a04468ff20050e0d",
+      "printed_page": 229
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0240:c00",
+    "text": "c. my_dict = []\n\n2 . What is the correct syntax to create a dictionary with one item \"one\": 1?\n\na. my_dict = (\"one\": 1)\n\nb. my_dict = (\"one\", 1)\n\nc. my_dict = {\"one\": 1}\n\n3 . How many items does the my_dict object contain?\n\nmy_dict = {\"a\": 1, \"b\": 2}\n\na. 1\nb. 2\nc. 4\n\ndict() for dictionary creation\n\nA dictionary object can be created with initial key-value pairs using the dict() function.\n\n• Creating a dictionary from a list of tuples.\n\nmy_list = [(\"apple\", 2), (\"banana\", 3), (\"orange\", 4)]\nmy_dict = dict(my_list)\n\n• Creating a dictionary using keyword arguments.\n\nmy_dict = dict(apple=2, banana=3, orange=4)\n\n• Creating a dictionary from another dictionary.\n\nold_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nnew_dict = dict(old_dict)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=240",
+    "page": 240,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.2 Dictionary creation",
+      "char_end": 740,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "687bc101a9410f9448ff916a15946653e718fb8892ba69e43e1ea3df0ab69efc",
+      "printed_page": 230
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0240:c01",
+    "text": "CHECKPOINT\n\ndict() for dictionary initialization\n\ndict()for dictionary initialization; ch 10, video 4 (https://www.openstax.org/r/dict-initialization)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=240",
+    "page": 240,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.2 Dictionary creation",
+      "char_end": 892,
+      "chunking": "paragraph_max1000",
+      "char_start": 742,
+      "content_hash": "a7887115eac76e57e2f4f127d315d5b636799c0900517106a92bc4109796472b",
+      "printed_page": 230
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0240:c02",
+    "text": "CONCEPTS IN PRACTICE\n\ndict() function for dictionary creation\n\n4 . What is the correct syntax to create a dictionary with initial values in Python?\na. my_dict = [key1:value1, key2:value2]\n\nb. my_dict = dict(key1=value1, key2=value2)\n\nc. my_dict = {key1=value1, key2=value2}\n\n5 . What is the output of the following code?\n\nmy_dict = dict({\"a\": 1})\nprint(my_dict)\n\na. {\"a\": 1}",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=240",
+    "page": 240,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.2 Dictionary creation",
+      "char_end": 1268,
+      "chunking": "paragraph_max1000",
+      "char_start": 894,
+      "content_hash": "ce079e0112e5cac0b9082c4364ae79ae07d66d44b049c7d3b8054f0dddc52b0f",
+      "printed_page": 230
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0241:c00",
+    "text": "b. <class, 'dict'>\n\nc. \"a\"\n\n1\n\n6 . Which option creates a dictionary with two key-value pairs, \"a\": \"A\" and \"b\": \"B\"?\n\na. dict(a: A, b: B)\n\nb. dict([(\"a\", \"A\"), (\"b\", \"B\")])\n\nc. dict({\"a\" = \"A\", \"b\" = \"B\"})",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=241",
+    "page": 241,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.2 Dictionary creation",
+      "char_end": 206,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "847fe46bf7ab59e52ea82356796af3d668d4dbd0d427a7b1813c4e65a646cba7",
+      "printed_page": 231
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0241:c01",
+    "text": "TRY IT\n\nPersonal information dictionary\n\nCreate a dictionary, my_info, with three key-value pairs. The keys should be \"first name\", \"last\n\nname\", and \"age\" with the values being corresponding information about yourself. Then, print my_info.\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n10-2-dictionary-creation)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=241",
+    "page": 241,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.2 Dictionary creation",
+      "char_end": 567,
+      "chunking": "paragraph_max1000",
+      "char_start": 208,
+      "content_hash": "8068da0ced0288f175cc5c64d16aa0f9de8ca40c8d8b900e45824092782ad576",
+      "printed_page": 231
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0241:c02",
+    "text": "10.3 Dictionary operations\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Recognize that a dictionary object is mutable.\n• Evaluate dictionary items, keys, and values.\n• Demonstrate the ability to access, evaluate, and modify dictionary items.\n• Modify a dictionary by adding items.\n• Modify a dictionary by removing items.\n\nAccessing dictionary items\n\nIn Python, values associated with keys in a dictionary can be accessed using the keys as indexes. Here are two\nways to access dictionary items in Python:\n\n• Square bracket notation: Square brackets [] with the key inside access the value associated with that key.\n\nIf the key is not found, an exception will be thrown.\n• get() method: The get() method is called with the key as an argument to access the value associated\n\nwith that key. If the key is not found, the method returns None by default, or a default value specified as\n\nthe second argument.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=241",
+    "page": 241,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.3 Dictionary operations",
+      "char_end": 1500,
+      "chunking": "paragraph_max1000",
+      "char_start": 569,
+      "content_hash": "291da94a7b4a9411be88df58c3a973907272f4f58d1d35bc661f612a67a94bb3",
+      "printed_page": 231
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0241:c03",
+    "text": "Ex: In the code below, a dictionary object my_dict is initialized with items {\"apple\": 2, \"banana\": 3,\n\n\"orange\": 4}. The square bracket notation and get() method are used to access values associated with the\n\nkeys \"banana\" and \"apple\", respectively. When accessing the dictionary to obtain the key \"pineapple\", -1\n\nis returned since the key does not exist in the dictionary.\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nprint(my_dict[\"banana\"]) # Prints: 3\nprint(my_dict.get(\"apple\")) # Prints: 2",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=241",
+    "page": 241,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.3 Dictionary operations",
+      "char_end": 2004,
+      "chunking": "paragraph_max1000",
+      "char_start": 1502,
+      "content_hash": "d8238d1c5b5d742549bc510ef0f96a1ee6b5ee0b11401a6dff02d8b3c819d384",
+      "printed_page": 231
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0242:c00",
+    "text": "print(my_dict.get(\"pineapple\", -1)) # Prints: -1",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=242",
+    "page": 242,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.3 Dictionary operations",
+      "char_end": 48,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "1b6b9b6144bc533dbeb6ef4da13ca1f015a62b3f1b8f03e81443fad5645d1b22",
+      "printed_page": 232
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0242:c01",
+    "text": "CHECKPOINT\n\nAccessing dictionary items\n\nAccessing dictionary items; ch 10, video 5 (https://www.openstax.org/r/accessing-dictionary)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=242",
+    "page": 242,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.3 Dictionary operations",
+      "char_end": 182,
+      "chunking": "paragraph_max1000",
+      "char_start": 50,
+      "content_hash": "d4c447bf1f1632b6341864d197542c61ef753e2f885c7a979e5d23501843850d",
+      "printed_page": 232
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0242:c02",
+    "text": "CONCEPTS IN PRACTICE\n\nDictionary items\n\nGiven the dictionary members = {\"Jaya\": \"Student\", \"John\": \"TA\", \"Ksenia\": \"Staff\"},\n\nanswer the following questions.\n\n1 . What is the output of members[\"Jaya\"]?\n\na. 0\n\nb. None\n\nc. \"Student\"\n\n2 . What is the output of members.get(\"jaya\")?\n\na. 0\n\nb. None\n\nc. \"Student\"\n\n3 . What is the output of members.get(\"jaya\", \"does not exist\")?\n\na. \"Student\"\n\nb. \"does not exist\"\n\nc. None\n\nObtaining dictionary keys and values\n\nDictionary keys, values, and both keys and values can be obtained using keys(), values(), and items()\n\nfunction calls, respectively. The return type of keys(), values(), and items() are dict_keys,\n\ndict_values, and dict_items, which can be converted to a list object using the list constructor list().",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=242",
+    "page": 242,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.3 Dictionary operations",
+      "char_end": 942,
+      "chunking": "paragraph_max1000",
+      "char_start": 184,
+      "content_hash": "b6a5af53160fade4dcf1016ddc397189261fd78b5694a527fa8ac6ef4703fa4f",
+      "printed_page": 232
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0242:c03",
+    "text": "EXAMPLE 10.1\n\nString template formatting for course enrollment requests\n\nA dictionary object with items {\"a\": 97, \"b\": 98, \"c\": 99} is created. Functions keys(), values(),\n\nand items() are called to obtain keys, values, and items in the dictionary, respectively. list() is also used\n\nto convert the output to a list object.\n\ndictionary_object = {\"a\": 97, \"b\": 98, \"c\": 99}\n\nprint(dictionary_object.keys())\nprint(list(dictionary_object.keys()))\nprint(dictionary_object.values())",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=242",
+    "page": 242,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.3 Dictionary operations",
+      "char_end": 1421,
+      "chunking": "paragraph_max1000",
+      "char_start": 944,
+      "content_hash": "e4d4eed35977a56b141d40361c01228aa1db547604f682909e1ca23b8bf4692b",
+      "printed_page": 232
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0243:c00",
+    "text": "print(dictionary_object.items())\n\nThe above code's output is:\n\ndict_keys([\"a\", \"b\", \"c\"])\n[\"a\", \"b\", \"c\"]\ndict_values([97, 98, 99])\ndict_items([(\"a\", 97), (\"b\", 98), (\"c\", 99)])",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=243",
+    "page": 243,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.3 Dictionary operations",
+      "char_end": 177,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "2454fa713a3c1f11c5df0dd865117ff53a40eabf7a8209a31e3393ac353d9b7b",
+      "printed_page": 233
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0243:c01",
+    "text": "CONCEPTS IN PRACTICE\n\nDictionary keys and values\n\nGiven the dictionary numbers = {\"one\": 1, \"two\": 2, \"three\": 3}, answer the following questions.\n\n4 . What is the output type of numbers.keys()?\n\na. dict_keys\n\nb. dict_values\n\nc. list\n\n5 . What is the output of print(numbers.values())?\n\na. [1, 2, 3]\n\nb. dict_keys([1, 2, 3])\n\nc. dict_values([1, 2, 3])\n\n6 . What is the output of print(list(numbers.keys()))?\n\na. [\"three\", \"two\", \"one\"]\n\nb. [\"one\", \"two\", \"three\"]\n\nc. dict_keys([\"one\", \"two\", \"three\"])\n\nDictionary mutability\n\nIn Python, a dictionary is a mutable data type, which means that a dictionary's content can be modified after\ncreation. Dictionary items can be added, updated, or deleted from a dictionary after a dictionary object is\ncreated.\n\nTo add an item to a dictionary, either the square bracket notation or update() function can be used.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=243",
+    "page": 243,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.3 Dictionary operations",
+      "char_end": 1034,
+      "chunking": "paragraph_max1000",
+      "char_start": 179,
+      "content_hash": "341d96ab538da8e0a71a7c0e1dbe4cbd4c332744c6629db5a3f0a3a24bdc53df",
+      "printed_page": 233
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0243:c02",
+    "text": "• Square bracket notation: When using square brackets to create a new key object and assign a value to the\nkey, the new key-value pair will be added to the dictionary.\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nmy_dict[\"pineapple\"] = 1\nprint(my_dict) # Prints: {\"apple\": 2, \"banana\": 3, \"orange\": 4, \"pineapple\": 1}\n\n• update() method: the update() method can be called with additional key-value pairs to update the\n\ndictionary content.\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nmy_dict.update({\"pineapple\": 1, \"cherry\": 0})",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=243",
+    "page": 243,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.3 Dictionary operations",
+      "char_end": 1575,
+      "chunking": "paragraph_max1000",
+      "char_start": 1036,
+      "content_hash": "0d15e577f144712479758e4065266bb3948d7e46b59b646f409f39e52cabed2d",
+      "printed_page": 233
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0244:c00",
+    "text": "print(my_dict) # Prints: {\"apple\": 2, \"banana\": 3, \"orange\": 4, \"pineapple\": 1,\n\"cherry\": 0}\n\nTo modify a dictionary item, the two approaches above can be used on an existing dictionary key along with\nthe updated value. Ex:\n\n• Square bracket notation:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nmy_dict[\"apple\"] = 1\nprint(my_dict) # Prints: {\"apple\": 1, \"banana\": 3, \"orange\": 4}\n\n• update() method:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\nmy_dict.update({\"apple\": 1})\nprint(my_dict) # Prints: {\"apple\": 1, \"banana\": 3, \"orange\": 4}\n\nItems can be deleted from a dictionary using the del keyword or the pop() method.\n\n• del keyword:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\ndel my_dict[\"orange\"]\nprint(my_dict) # Prints: {\"apple\": 2, \"banana\": 3}\n\n• pop() method:\n\nmy_dict = {\"apple\": 2, \"banana\": 3, \"orange\": 4}\ndeleted_value = my_dict.pop(\"banana\")\nprint(deleted_value) # Prints: 3\nprint(my_dict) # Output: {\"apple\": 2, \"orange\": 4}",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=244",
+    "page": 244,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.3 Dictionary operations",
+      "char_end": 960,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "9f4b0a1e848024b0076249a00427947ae1a6978a86c9b7647302c447f4b074bf",
+      "printed_page": 234
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0244:c01",
+    "text": "CHECKPOINT\n\nModifying dictionary items\n\nModifying dictionary items; ch 10, video 7 (https://www.openstax.org/r/modifying-dictionary)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=244",
+    "page": 244,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.3 Dictionary operations",
+      "char_end": 1094,
+      "chunking": "paragraph_max1000",
+      "char_start": 962,
+      "content_hash": "9e17a4c957aeb49ca1a3306146752edbc245f16c8e7ebd185246b1f54649484e",
+      "printed_page": 234
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0244:c02",
+    "text": "CONCEPTS IN PRACTICE\n\nModifying a dictionary\n\nGiven the dictionary food = {\"Coconut soup\": \"$15\", \"Butter Chicken\": \"$18\", \"Kabob\":\n\n\"$20\"}, answer the following questions.\n\n7 . Which option modifies the value for the key \"Coconut soup\" to \"$11\" while keeping other items the\n\nsame?\na. food = {\"\"Coconut soup\": \"$15\"\"}\n\nb. food[\"Coconut soup\"] = 11\n\nc. food[\"Coconut soup\"] = \"$11\"\n\n8 . Which option removes the item \"Butter Chicken\": \"$18\" from the food dictionary?",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=244",
+    "page": 244,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.3 Dictionary operations",
+      "char_end": 1562,
+      "chunking": "paragraph_max1000",
+      "char_start": 1096,
+      "content_hash": "6c4c50fd30b98d4fd76a031cde7f110d55f68ff8f8f46bf1a53707b7042eb188",
+      "printed_page": 234
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0245:c00",
+    "text": "a. food.remove(\"Butter Chicken\")\n\nb. del food[\"Butter Chicken\"]\n\nc. del food.del(\"Butter Chicken\")\n\n9 . What is the content of the food dictionary after calling food.update({\"Kabob\": \"$22\", \"Sushi\":\n\n\"$16\"})?\n\na. {\"Coconut soup\": \"$15\", \"Butter Chicken\": \"$18\", \"Kabob\": \"$22\", \"Sushi\":\n\n\"$16\"}\n\nb. {\"Coconut soup\": \"$15\", \"Butter Chicken\": \"$18\", \"Kabob\": \"$20\", \"Sushi\":\n\n\"$16\"}\n\nc. { \"Sushi\": \"$16\", \"Coconut soup\": \"$15\", \"Butter Chicken\": \"$18\", \"Kabob\":\n\n\"$20\"}",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=245",
+    "page": 245,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.3 Dictionary operations",
+      "char_end": 467,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "664ba70f1f1f3b942d22f9f4ba30cd26c7f9a803913848fd789c844dba7d21e6",
+      "printed_page": 235
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0245:c01",
+    "text": "TRY IT\n\nCreate a dictionary of cars step-by-step\n\nFollow the steps below to create a dictionary of cars and modify it step-by-step.\n\n1. Create an empty dictionary.\n2. Add a key-value pair of \"Mustang\": 10.\n\n3. Add another key-value pair of \"Volt\": 3.\n\n4. Print the dictionary.\n5. Modify the value associated with key \"Mustang\" to be equal to 2.\n\n6. Delete key \"Volt\" and the associated value.\n\n7. Print the dictionary content.\n\nPrints {\"Mustang\": 2}\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n10-3-dictionary-operations)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=245",
+    "page": 245,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.3 Dictionary operations",
+      "char_end": 1039,
+      "chunking": "paragraph_max1000",
+      "char_start": 469,
+      "content_hash": "fd2fb7474b343a9c9536079b414a6d021bb3668372d10641e6ed2a8630408329",
+      "printed_page": 235
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0245:c02",
+    "text": "TRY IT\n\nThe number of unique characters\n\nGiven a string value, calculate and print the number of unique characters using a dictionary.\n\nInput:\nstring_value = \"This is a string\"\n\nPrints 10\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n10-3-dictionary-operations)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=245",
+    "page": 245,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.3 Dictionary operations",
+      "char_end": 1349,
+      "chunking": "paragraph_max1000",
+      "char_start": 1041,
+      "content_hash": "a0ecccb2fead05715a651041e4c65d34b20527110c4e58dd321a9cf4809bfff9",
+      "printed_page": 235
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0246:c00",
+    "text": "10.4 Conditionals and looping in dictionaries\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Write a conditional statement to check for a key/value.\n• Write a for loop to iterate over elements of a dictionary.\n\nConditionals for dictionary\n\nConditional statements can be used with dictionaries to check if certain keys, values, or dictionary items exist\nin the dictionary or if a value satisfies a particular condition.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=246",
+    "page": 246,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.4 Conditionals and looping in dictionaries",
+      "char_end": 445,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "61bd7d751620c87c8aff9e7d84207c9061ce0200189d90d238e4ac75af5d1640",
+      "printed_page": 236
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0246:c01",
+    "text": "EXAMPLE 10.2\n\nTemplates and examples of a conditional statement on a dictionary\n\ndict.items()\n\n# (key, value) in dictionary.items()\n\nmovies = {\"The godfather\": 1974, \"Interstellar\": 2014}\n\nprint((\"Interstellar\", 2014) in movies.items())\n\nTrue\n\nTable 10.1\n\nConditionals on values or keys\n\n# dictionary[key] operand test_value\n\nmovies = {\"The godfather\": 1974, \"Interstellar\": 2014}\n\nprint(movies[\"The godfather\"] < 2000)\n\nTrue\n\nTable 10.2",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=246",
+    "page": 246,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.4 Conditionals and looping in dictionaries",
+      "char_end": 884,
+      "chunking": "paragraph_max1000",
+      "char_start": 447,
+      "content_hash": "a4a63b7613ffc4d447ffa56331e2e1afbf76d589cafa4dd86aeb1dad103aada2",
+      "printed_page": 236
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0247:c00",
+    "text": "dict.keys()\n\n# key in dictionary.keys()\n\nmovies = {\"The godfather\": 1974, \"Interstellar\": 2014}\n\nprint(\"Interstellar\" in movies.keys())\n\nTrue\n\nTable 10.3\n\ndict.values()\n\n# value in dictionary.values()\n\nmovies = {\"The godfather\": 1974, \"Interstellar\": 2014}\n\nprint(2014 in movies.values())\n\nTrue\n\nTable 10.4",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=247",
+    "page": 247,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.4 Conditionals and looping in dictionaries",
+      "char_end": 306,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "7acd8329060ac041ae4b7c075045e8500e67d8720b1895d402ef576de8e55de4",
+      "printed_page": 237
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0247:c01",
+    "text": "CONCEPTS IN PRACTICE\n\nConditionals on dictionaries\n\nGiven the dictionary fruit_count = {\"apple\": 2, \"orange\": 5, \"pomegranate\": 1}, answer the\n\nfollowing questions.\n\n1 . What is the output of \"apple\" in fruit_count.keys()?\n\na. True\n\nb. False\n\n2 . What is the output of (\"orange\", 5) in fruit_count.items()?\n\na. SyntaxError\n\nb. True\n\nc. False\n\n3 . Which conditional statement checks if the value associated with the key \"pomegranate\" is greater",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=247",
+    "page": 247,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.4 Conditionals and looping in dictionaries",
+      "char_end": 751,
+      "chunking": "paragraph_max1000",
+      "char_start": 308,
+      "content_hash": "0bcf1856ae67d6fca9f6fc2eb15632b29eef2886d78b8a7b26a0a2b490cdcf29",
+      "printed_page": 237
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0248:c00",
+    "text": "than 0?\n\na. fruit_count(\"pomegranate\") > 0\n\nb. fruit_count[\"pomegranate\"] > 0\n\nc. fruit_count.get(\"pomegranate\" > 0)\n\nLooping on a dictionary\n\nLooping over a Python dictionary is a way to iterate through key-value pairs in the dictionary. Looping in a\ndictionary can be done by iterating over keys or items. When looping using keys, keys are obtained using the\nkeys() function and are passed to the loop variable one at a time. When looping over items using the\n\nitems() function, both the key and value for each item are passed to the loop variable.\n\nA FOR LOOP OVER A DICTIONARY RETRIEVES EACH KEY IN THE DICTIONARY\n\nfor key in dictionary: # Loop expression\n# Statements to execute in the loop\n\n# Statements to execute after the loop",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=248",
+    "page": 248,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.4 Conditionals and looping in dictionaries",
+      "char_end": 735,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "4c291406d4f66eaa584951342154048aaee1537ac3718f82a4a12e33c538df6a",
+      "printed_page": 238
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0248:c01",
+    "text": "EXAMPLE 10.3\n\nIterating over a dictionary\n\ndict.items()\n\nzip_codes = {\"Berkeley\": 94709, \"Santa Cruz\": 95064, \"Mountain View\": 94030}\n\nfor key, value in zip_codes.items():\nprint(key, value)\n\nBerkeley 94709\nSanta Cruz 95064\nMountain View 94030\n\nTable 10.5",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=248",
+    "page": 248,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.4 Conditionals and looping in dictionaries",
+      "char_end": 991,
+      "chunking": "paragraph_max1000",
+      "char_start": 737,
+      "content_hash": "00c6a01fa616bb25640738077deacdf7db59ff989e9c8d0516e63755346777a6",
+      "printed_page": 238
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0249:c00",
+    "text": "dict.keys()\n\nzip_codes = {\"Berkeley\": 94709, \"Santa Cruz\": 95064, \"Mountain View\": 94030}\n\nfor key in zip_codes.keys():\nprint(key)\n\nBerkeley\nSanta Cruz\nMountain View\n\nTable 10.6\n\ndict.values()\n\nzip_codes = {\"Berkeley\": 94709, \"Santa Cruz\": 95064, \"Mountain View\": 94030}\n\nfor value in zip_codes.values():\nprint(value)\n\n94709\n95064\n94030\n\nTable 10.7",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=249",
+    "page": 249,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.4 Conditionals and looping in dictionaries",
+      "char_end": 348,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "063559a25c0eb83ba66f7776c76d7521d993a93f8fdd55e57acd511d06c85b7f",
+      "printed_page": 239
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0249:c01",
+    "text": "CONCEPTS IN PRACTICE\n\nLoops on dictionaries\n\n4 . Which method is used to loop over the values in a Python dictionary?\na. keys()\n\nb. values()\n\nc. items()\n\n5 . What is the output of the following code?",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=249",
+    "page": 249,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.4 Conditionals and looping in dictionaries",
+      "char_end": 549,
+      "chunking": "paragraph_max1000",
+      "char_start": 350,
+      "content_hash": "f2715598b8648c1763ba3556bfa704e0580a500b65cd7c59292979c8a06d7be4",
+      "printed_page": 239
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0250:c00",
+    "text": "fruit_count = {\"apple\": 2, \"orange\": 5, \"banana\": 1}\nfor key in fruit_count.keys():\nprint(key, end = \" \")\n\na. apple orange banana\n\nb. 2 5 1\n\nc. (\"apple\", 2) (\"orange\", 5) (\"banana\", 1)\n\n6 . What is the output of the following code?\n\nfruit_count = {\"apple\": 2, \"orange\": 5, \"banana\": 1}\nfor value in fruit_count.values():\nprint(value * 2, end = \" \")\n\na. apple orange banana\n\nb. 2 5 1\n\nc. 4 10 2",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=250",
+    "page": 250,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.4 Conditionals and looping in dictionaries",
+      "char_end": 393,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "14b1b60f54f8e4a28a6bb67b96b86ef7a6dc9a802eb1fd09ef634db5725da6cb",
+      "printed_page": 240
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0250:c01",
+    "text": "TRY IT\n\nCharacter count in a string\n\nGiven a string value, calculate and print the number of occurrences of all characters using a dictionary.\n\nInput:\nstring_value = \"This is a string\"\n\nPrints {\"T\": 1, \"h\": 1, \"i\": 3, \"s\": 3, \" \": 3, \"a\": 1, \"t\": 1, \"r\": 1, \"n\": 1,\n\"g\": 1}\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n\n10-4-conditionals-and-looping-in-dictionaries)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=250",
+    "page": 250,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.4 Conditionals and looping in dictionaries",
+      "char_end": 809,
+      "chunking": "paragraph_max1000",
+      "char_start": 395,
+      "content_hash": "47d5160b11570e7a31ad684dfb1e13c830cb942684c9ff42a6543482554525aa",
+      "printed_page": 240
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0250:c02",
+    "text": "TRY IT\n\nCalculate the total number of fruits\n\nGiven a fruit_count dictionary that contains information about fruits and the count of each fruit,\n\ncalculate the total number of fruits across all fruit types.\n\nInput:\nfruit_count = {\"banana\": 2, \"orange\": 5, \"peach\": 5}\n\nPrints 12",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=250",
+    "page": 250,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.4 Conditionals and looping in dictionaries",
+      "char_end": 1089,
+      "chunking": "paragraph_max1000",
+      "char_start": 811,
+      "content_hash": "2f7ed13bfc76024b3d68a375dff43c4344c23736d3a9a50fee3b64f7286695da",
+      "printed_page": 240
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0251:c00",
+    "text": "Access multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n10-4-conditionals-and-looping-in-dictionaries)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=251",
+    "page": 251,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.4 Conditionals and looping in dictionaries",
+      "char_end": 138,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "a717a8b486d2960395e8204a6daad60b122aca5c7976c4fefd99679351989596",
+      "printed_page": 241
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0251:c01",
+    "text": "10.5 Nested dictionaries and dictionary comprehension\n\nLearning objectives\n\nBy the end of this section you should be able to\n\n• Explain the structure of nested dictionaries.\n• Use dictionary comprehension to create a dictionary object.\n\nNested dictionaries\n\nAs described before, Python dictionaries are a type of data structure that allows for storing data in key-value\npairs. Nested dictionaries are dictionaries that are stored as values within another dictionary. Ex: An\norganizational chart with keys being different departments and values being dictionaries of employees in a\ngiven department. For storing employee information in a department, a dictionary can be used with keys\nbeing employee IDs and values being employee names. The tables below outline the structure of such nested\ndictionaries and how nested values can be accessed.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=251",
+    "page": 251,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.5 Nested dictionaries and dictionary comprehension",
+      "char_end": 981,
+      "chunking": "paragraph_max1000",
+      "char_start": 140,
+      "content_hash": "94d6c7644d101ad55e19ca5bd6cb04028e1c511a2239c6086fc91ef6025176ed",
+      "printed_page": 241
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0252:c00",
+    "text": "EXAMPLE 10.4\n\nDefining nested dictionaries and accessing elements\n\nDefining nested dictionaries\n\ncompany_org_chart = {\n\"Marketing\": {\n\"ID234\": \"Jane Smith\"\n},\n\"Sales\": {\n\"ID123\": \"Bob Johnson\",\n\"ID122\": \"David Lee\"\n},\n\"Engineering\": {\n\"ID303\": \"Radhika Potlapally\",\n\"ID321\": \"Maryam Samimi\"\n}\n}\n\nTable 10.8\n\nAccessing nested dictionary items\n\nprint(company_org_chart[\"Sales\"][\"ID122\"])\nprint(company_org_chart[\"Engineering\"][\"ID321\"])\n\nDavid Lee\nMaryam Samimi\n\nTable 10.9",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=252",
+    "page": 252,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.5 Nested dictionaries and dictionary comprehension",
+      "char_end": 471,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "d7f45eb37ea4e073b76623da60f1dee651de1d5e73cef4e128f4ce3badd1ea1c",
+      "printed_page": 242
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0252:c01",
+    "text": "CONCEPTS IN PRACTICE\n\nNested dictionary structure\n\n1 . What is a nested dictionary in Python?\na. A dictionary that contains only integers as keys and values.\nb. A dictionary that contains another dictionary as a value.\nc. A dictionary that contains only strings as keys and values.\nd. A dictionary that contains only lists as keys and values.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=252",
+    "page": 252,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.5 Nested dictionaries and dictionary comprehension",
+      "char_end": 815,
+      "chunking": "paragraph_max1000",
+      "char_start": 473,
+      "content_hash": "24c5fa5065cd2f1dab0218c3bbd8d58fdedf2aa38745cf474f51c1c06d7f575c",
+      "printed_page": 242
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0253:c00",
+    "text": "2 . How can a value be accessed in a nested dictionary in Python?\na. by using the key of the outer dictionary\nb. by using the key of the inner dictionary\nc. By using both the keys of the outer and inner dictionaries\n\n3 . What is the syntax for creating a nested dictionary in Python?\na. {key: value}\n\nb. {key1: {key2: value}}\n\nc. {key: {value: key2}}\n\nDictionary comprehension\n\nDictionary comprehension is a concise and efficient way to create a dictionary in Python. With dictionary\ncomprehension, elements of an iterable object are transformed into key-value pairs. The syntax of dictionary\ncomprehension is similar to list comprehension, but instead of using square brackets, curly braces are used to\ndefine a dictionary.\n\nHere is a general syntax for dictionary comprehension:\n\nSYNTAX FOR DICTIONARY COMPREHENSION\n\n{key_expression: value_expression for element in iterable}",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=253",
+    "page": 253,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.5 Nested dictionaries and dictionary comprehension",
+      "char_end": 877,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "ec266f140921891fae98ff2c37b697050a9cb5d0230b7e6997ea0d243bc731d5",
+      "printed_page": 243
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0253:c01",
+    "text": "CHECKPOINT\n\nSquares of numbers\n\nSquares of numbers; ch 10, video 8 (https://www.openstax.org/r/squares-of-numbers)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=253",
+    "page": 253,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.5 Nested dictionaries and dictionary comprehension",
+      "char_end": 993,
+      "chunking": "paragraph_max1000",
+      "char_start": 879,
+      "content_hash": "b746f0a8790ad6f6407882bf7f0dac705b8ed8060a29833e92c0da9660dd32dc",
+      "printed_page": 243
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0253:c02",
+    "text": "CONCEPTS IN PRACTICE\n\nDictionary comprehension\n\n4 . What is the output of the following code?\n\nnumbers = [1, 2, 3, 4, 5]\nmy_dict = {x: x**2 for x in numbers if x % 2 == 0}\nprint(my_dict)\n\na. {1: 1, 3: 9, 5: 25}\n\nb. {2: 4, 4: 16}\n\nc. {1: 2, 2: 4, 3: 6, 4: 8, 5: 10}\n\n5 . What is the output of the following dictionary comprehension?\n\nnames = [\"Alice \", \"Bob \", \"Charlie \"]",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=253",
+    "page": 253,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.5 Nested dictionaries and dictionary comprehension",
+      "char_end": 1366,
+      "chunking": "paragraph_max1000",
+      "char_start": 995,
+      "content_hash": "a11bc46924f0eee54c379539e459e48e07e011363bdc1693da5261b05a58008b",
+      "printed_page": 243
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0254:c00",
+    "text": "name_lengths = {name: len(name) for name in names}\nprint(name_lengths)\n\na. { \"Alice \": 5, \"Bob \": 3, \"Charlie \": 7}\n\nb. {5: \"Alice \", 3: \"Bob \", 7: \"Charlie \"}\n\nc. { \"A \": 5, \"B \": 3, \"C \": 7}\n\n6 . What is the output of the following dictionary comprehension?\n\nmy_dict = {i: i**2 for i in range(4)}\nprint(my_dict)\n\na. {0: 0, 1: 1, 2: 4, 3: 9}\n\nb. {0: 0, 1: 1, 2: 4}\n\nc. {1: 1, 2: 4, 3: 9}",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=254",
+    "page": 254,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.5 Nested dictionaries and dictionary comprehension",
+      "char_end": 388,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "529dd43a315509438bb123cf432bb86591b9ca86cb4336064d1b0bccb98daf9a",
+      "printed_page": 244
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0254:c01",
+    "text": "TRY IT\n\nProduct prices\n\nSuppose you have a dictionary of product prices, where the keys are product names and the values are\ntheir respective prices in dollars. Write a Python program that uses dictionary comprehension to create a\nnew dictionary that has the same keys as the original dictionary, but the values are the prices in euros.\nAssume that the exchange rate is 1 dollar = 0.85 euros.\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n10-5-nested-dictionaries-and-dictionary-comprehension)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=254",
+    "page": 254,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.5 Nested dictionaries and dictionary comprehension",
+      "char_end": 930,
+      "chunking": "paragraph_max1000",
+      "char_start": 390,
+      "content_hash": "f22bbbee4354c28f88cbae108a018b619e925486499a2ba74c6c69b394a614f5",
+      "printed_page": 244
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0254:c02",
+    "text": "TRY IT\n\nRestructuring the company data\n\nSuppose you have a dictionary that contains information about employees at a company. Each employee is\nidentified by an ID number, and their information includes their name, department, and salary. You want to\ncreate a nested dictionary that groups employees by department so that you can easily see the names and\nsalaries of all employees in each department. Write a Python program that when given a dictionary,\nemployees, outputs a nested dictionary, dept_employees, which groups employees by department.\n\nInput:\nemployees = {\n1001: {\"name\": \"Alice\", \"department\": \"Engineering\", \"salary\": 75000},\n1002: {\"name\": \"Bob\", \"department\": \"Sales\", \"salary\": 50000},\n1003: {\"name\": \"Charlie\", \"department\": \"Engineering\", \"salary\": 80000},\n1004: {\"name\": \"Dave\", \"department\": \"Marketing\", \"salary\": 60000},\n1005: {\"name\": \"Eve\", \"department\": \"Sales\", \"salary\": 55000}\n}",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=254",
+    "page": 254,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.5 Nested dictionaries and dictionary comprehension",
+      "char_end": 1839,
+      "chunking": "paragraph_max1000",
+      "char_start": 932,
+      "content_hash": "53393af351c3476b9dc86c6e0e4fea3fed68e242f2797775acd2fb400be2923d",
+      "printed_page": 244
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0255:c00",
+    "text": "Resulting dictionary:\n\n{\n\"Engineering\": {1001: {\"name\": \"Alice\", \"salary\": 75000}, 1003: {\"name\":\n\"Charlie\", \"salary\": 80000}},\n\"Sales\": {1002: {\"name\": \"Bob\", \"salary\": 50000}, 1005: {\"name\": \"Eve\",\n\"salary\": 55000}},\n\"Marketing\": {1004: {\"name\": \"Dave\", \"salary\": 60000}}\n}\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n10-5-nested-dictionaries-and-dictionary-comprehension)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=255",
+    "page": 255,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.5 Nested dictionaries and dictionary comprehension",
+      "char_end": 423,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "20ef0d430d6af4097a8e1321f62145b0656a5de3c9916e2c211d3037c7ba1862",
+      "printed_page": 245
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0255:c01",
+    "text": "10.6 Chapter summary\n\nHighlights from this chapter include:\n\n• A dictionary in Python is a container object including key-value pairs.\n• The dict type implements a dictionary in Python.\n\n• A dictionary cannot have duplicate keys.\n• A dictionary is a mutable object but keys in the dictionary must be immutable objects.\n• A dictionary can be created using curly braces or the dict() method.\n\n• Values in the dictionary can be obtained through square bracket notation or the get() method.\n\n• Dictionary items, keys, and values can be obtained using items(), keys(), and values() methods,\n\nrespectively.\n• Existing items can be modified or new items can be added to a dictionary using square brackets notation\nor the update() method.\n\n• Items can be removed from a dictionary using the del keyword or the pop() method.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=255",
+    "page": 255,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.6 Chapter summary",
+      "char_end": 1240,
+      "chunking": "paragraph_max1000",
+      "char_start": 425,
+      "content_hash": "c2701a6f838b4dd36b04cb2e2c9c4f8cf606dc84052956954c3c3669f4ee890c",
+      "printed_page": 245
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0255:c02",
+    "text": "• Conditional statements can be used with a dictionary to check if the dictionary contains specific keys,\nvalues, or key-value pairs.\n• Looping on a dictionary can be done by iterating over keys, values, or items.\n• Nested dictionaries are dictionaries that are stored as values within another dictionary.\n• With dictionary comprehension, elements of an iterable object are transformed into key-value pairs.\n\nAt this point, you should be able to use dictionaries in your programs. The programming practice below ties\ntogether most topics presented in the chapter.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=255",
+    "page": 255,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.6 Chapter summary",
+      "char_end": 1805,
+      "chunking": "paragraph_max1000",
+      "char_start": 1242,
+      "content_hash": "1d1bea7a248d7aebf96a668c7e130c18cd4f805cdcc5c47c18f652c4d12fcda3",
+      "printed_page": 245
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0256:c00",
+    "text": "Concept\nDescription\n\nDictionary creation using curly braces\nmy_dict = {key1:value1, key2:value2}\n\n# Using a list\nmy_list = [(key1, value1), (key2, value2)]\nmy_dict = dict(my_list)\n\nDictionary creation using the dict() method\n\n# Using keyword arguments\nmy_dict = dict(key1=value1, key2=value2)\n\n# From another dictionary\nold_dict = {key1: value1, key2: value2}\nnew_dict = dict(old_dict)\n\nmy_dict = {key1: value1, key2: value2}\n\nAccessing dictionary items\n\n# Accessing item using square bracket\nnotation\nmy_dict[key1]\n\n# Accessing item through get() method\nmy_dict.get(key1)\n\nAccessing all dictionary items\nmy_dict.items()\n\nAccessing all dictionary keys\nmy_dict.keys()\n\nAccessing all dictionary values\nmy_dict.values()\n\nTable 10.10 Chapter 10 reference.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=256",
+    "page": 256,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.6 Chapter summary",
+      "char_end": 751,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "3069935e616206f72fbacbebd72685ec75f7875782398bb6737c60dd0f2fe5fc",
+      "printed_page": 246
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0257:c00",
+    "text": "Concept\nDescription\n\nmy_dict = {key1: value1, key2: value2}\n\nAdding a new key-value pair or updating an\nexisting key-value pair\n\n# Updating an item using square bracket\nnotation\nmy_dict[key1] = new_value\n# Adding a new key-value pair using square\nbracket notation\nmy_dict[key3] = value3\n\n# Updating an item using update() method\nmy_dict.update({key1: new_value})\n# Adding a new key-value pair using\nupdate() method\nmy_dict.update({key3: value3})\n\nmy_dict = {key1: value1, key2: value2}\n\nDeleting a key-value pair from a dictionary\n\n# Using del keyword\ndel my_dict[key1]\n\n# Using pop() method\ndeleted_value = my_dict.pop(key1)\n\nfor key in dictionary: # Loop expression\n\n# Statements to execute in the loop\n\nIterating over a dictionary\n\n#Statements to execute after the loop\n\nTable 10.10 Chapter 10 reference.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=257",
+    "page": 257,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.6 Chapter summary",
+      "char_end": 807,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "ca188852efa1ed7def0f5315e4fbded61dc4e1414746923ec412346aedafeee7",
+      "printed_page": 247
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0258:c00",
+    "text": "Concept\nDescription\n\nNested dictionaries\n\n{\nkey_1:{key11:value11, key12:value12},\nkey_2:{key21:value21, key22:value22}\n}\n\nDictionary comprehension\n{key_expression: value_expression for\nelement in iterable}\n\nTable 10.10 Chapter 10 reference.",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=258",
+    "page": 258,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.6 Chapter summary",
+      "char_end": 240,
+      "chunking": "paragraph_max1000",
+      "char_start": 0,
+      "content_hash": "ea4b9a81970300c7b4483398d4134954a548d1912be5d7f48458bbc3b250378b",
+      "printed_page": 248
+    }
+  },
+  {
+    "id": "B:openstax-intro-python:p0258:c01",
+    "text": "TRY IT\n\nEven and odd values\n\nGiven a list, create a dictionary with two keys, \"even\" and \"odd\". The values associated with each key must\n\nbe the list of corresponding even and odd values in the given list.\n\nInput:\ninput_list = [3, 5, 6, 1]\n\nPrints {\"even\": [6], \"odd\":[3, 5, 1]}\n\nAccess multimedia content (http://openstax.org/books/introduction-python-programming/pages/\n10-6-chapter-summary)",
+    "source_id": "openstax-intro-python",
+    "source": "intro-python.pdf#page=258",
+    "page": 258,
+    "metadata": {
+      "book": "intro_python",
+      "chapter": 10,
+      "section": "10.6 Chapter summary",
+      "char_end": 635,
+      "chunking": "paragraph_max1000",
+      "char_start": 242,
+      "content_hash": "eef72da5707457a16896f2104b38b3c41313adbe247f8996204d65094897932e",
+      "printed_page": 248
+    }
+  }
+]

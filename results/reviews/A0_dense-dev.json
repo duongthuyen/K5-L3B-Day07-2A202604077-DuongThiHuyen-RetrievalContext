@@ -1,0 +1,194 @@
+[
+  {
+    "query_id": "q01",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q02",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q03",
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "sum() đúng; c00 nêu sum(), c01 là ví dụ sum(num_list) -> cả hai hỗ trợ. Câu trả lời thiếu [id] inline nhưng có trong citations.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q04",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q05",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q06",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q07",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q08",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng; citation p0242:c03 (Example 10.1) không phải chunk gold nhưng nói rõ keys()/values()/items() trả về keys, values, items.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q09",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng (có thể sửa/xóa); evidence gold p0243 KHÔNG có trong context nhưng p0244:c00 minh họa sửa/xóa item nên vẫn hỗ trợ.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q10",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q11",
+    "citation_support": [],
+    "reason": "Model trả lời đúng nhưng viết ID citation sai định dạng (p221 thay vì p0221) -> validator từ chối -> abstain, chấm 0.",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "q12",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q13",
+    "citation_support": [
+      true
+    ],
+    "reason": "Ý chính đúng (duplicate bị loại bỏ); trích ví dụ p0094:c04 (xóa duplicate 1000->900) thay vì định nghĩa p0086; vẫn hỗ trợ.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q14",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q15",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q16",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "t01",
+    "citation_support": [],
+    "reason": "Từ chối nhầm: evidence p0238/p0255 có trong context nhưng model không nhận ra lý do.",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "t02",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "t03",
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng: curly braces vs square brackets; p0253:c00 chứa evidence, p0232:c01 hỗ trợ cú pháp list comprehension.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "t04",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "t05",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "t06",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ so với expected; citation chứa câu evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "u01",
+    "citation_support": [],
+    "reason": "Agent search 3 lần rồi từ chối, không thêm khẳng định nào; corpus thật sự không có (xem absence_reason).",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "u02",
+    "citation_support": [],
+    "reason": "Agent search 3 lần rồi từ chối, không thêm khẳng định nào; corpus thật sự không có (xem absence_reason).",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "u03",
+    "citation_support": [],
+    "reason": "Agent search 3 lần rồi từ chối, không thêm khẳng định nào; corpus thật sự không có (xem absence_reason).",
+    "abstention_correct": true
+  }
+]

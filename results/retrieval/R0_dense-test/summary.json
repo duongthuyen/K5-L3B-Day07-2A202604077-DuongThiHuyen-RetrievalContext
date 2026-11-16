@@ -1,0 +1,21 @@
+{
+  "config": "R0_dense",
+  "method": "dense",
+  "top_k": 3,
+  "budget": 3000,
+  "neighbours": false,
+  "use_filter": true,
+  "note": "Baseline = Day 6 chosen config C (B chunks + user filter) as a retriever",
+  "split": "test",
+  "N": 8,
+  "hit1": 5,
+  "hit3": 7,
+  "context_hit": 7,
+  "errors": 0,
+  "avg_context_chars": 2263,
+  "median_latency_ms": 54.8,
+  "cost_usd": 0.0,
+  "hit1_rate": 0.625,
+  "hit3_rate": 0.875,
+  "context_hit_rate": 0.875
+}

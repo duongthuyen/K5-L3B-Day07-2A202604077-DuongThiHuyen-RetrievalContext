@@ -1,0 +1,368 @@
+[
+  {
+    "query_id": "n01",
+    "split": "test",
+    "type": "direct",
+    "question": "What are the two ways to create an empty dictionary in Python?",
+    "query_sent": "What are the two ways to create an empty dictionary in Python?",
+    "filter": null,
+    "config": "R0_dense",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0239:c04",
+        "source": "intro-python.pdf#page=239",
+        "page": 239,
+        "score": 0.8765010311304924,
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0239:c02",
+        "source": "intro-python.pdf#page=239",
+        "page": 239,
+        "score": 0.8494285345077515,
+        "hit": true
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0240:c02",
+        "source": "intro-python.pdf#page=240",
+        "page": 240,
+        "score": 0.7951679229736328,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0239:c04",
+      "B:openstax-intro-python:p0239:c02",
+      "B:openstax-intro-python:p0240:c02"
+    ],
+    "context_chars": 1491,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 61.3
+  },
+  {
+    "query_id": "n02",
+    "split": "test",
+    "type": "paraphrase",
+    "question": "How should nested loops be arranged to visit every element of a two-dimensional list-of-lists?",
+    "query_sent": "How should nested loops be arranged to visit every element of a two-dimensional list-of-lists?",
+    "filter": null,
+    "config": "R0_dense",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0229:c02",
+        "source": "intro-python.pdf#page=229",
+        "page": 229,
+        "score": 0.8038137672058497,
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0230:c01",
+        "source": "intro-python.pdf#page=230",
+        "page": 230,
+        "score": 0.7877238988876398,
+        "hit": true
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0231:c01",
+        "source": "intro-python.pdf#page=231",
+        "page": 231,
+        "score": 0.7597013998387575,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0229:c02",
+      "B:openstax-intro-python:p0230:c01",
+      "B:openstax-intro-python:p0231:c01"
+    ],
+    "context_chars": 2795,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 59.4
+  },
+  {
+    "query_id": "n03",
+    "split": "test",
+    "type": "direct",
+    "question": "What is data standardization?",
+    "query_sent": "What is data standardization?",
+    "filter": null,
+    "config": "R0_dense",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0089:c01",
+        "source": "data-science.pdf#page=89",
+        "page": 89,
+        "score": 0.877543542458313,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0090:c03",
+        "source": "data-science.pdf#page=90",
+        "page": 90,
+        "score": 0.8000875472996402,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0093:c04",
+        "source": "data-science.pdf#page=93",
+        "page": 93,
+        "score": 0.7568656802177482,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0089:c01",
+      "B:openstax-data-science:p0090:c03",
+      "B:openstax-data-science:p0093:c04"
+    ],
+    "context_chars": 1659,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 56.9
+  },
+  {
+    "query_id": "n04",
+    "split": "test",
+    "type": "paraphrase",
+    "question": "Which noise-reduction strategy uses something like a seven-day average to reveal the trend of daily stock index values?",
+    "query_sent": "Which noise-reduction strategy uses something like a seven-day average to reveal the trend of daily stock index values?",
+    "filter": null,
+    "config": "R0_dense",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0093:c01",
+        "source": "data-science.pdf#page=93",
+        "page": 93,
+        "score": 0.6808389209700966,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0093:c03",
+        "source": "data-science.pdf#page=93",
+        "page": 93,
+        "score": 0.6497412532722214,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0093:c00",
+        "source": "data-science.pdf#page=93",
+        "page": 93,
+        "score": 0.6176838050892248,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0093:c01",
+      "B:openstax-data-science:p0093:c03",
+      "B:openstax-data-science:p0093:c00"
+    ],
+    "context_chars": 2690,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 55.2
+  },
+  {
+    "query_id": "n05",
+    "split": "test",
+    "type": "table",
+    "question": "In text preprocessing, what does stopwords removal do?",
+    "query_sent": "In text preprocessing, what does stopwords removal do?",
+    "filter": null,
+    "config": "R0_dense",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0097:c02",
+        "source": "data-science.pdf#page=97",
+        "page": 97,
+        "score": 0.7772616876803836,
+        "hit": false
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0095:c00",
+        "source": "data-science.pdf#page=95",
+        "page": 95,
+        "score": 0.7680190205574036,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0096:c01",
+        "source": "data-science.pdf#page=96",
+        "page": 96,
+        "score": 0.731394382549007,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0097:c02",
+      "B:openstax-data-science:p0095:c00"
+    ],
+    "context_chars": 1988,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false,
+    "latency_ms": 52.2
+  },
+  {
+    "query_id": "n06",
+    "split": "test",
+    "type": "direct",
+    "question": "Which examples of cloud storage are given?",
+    "query_sent": "Which examples of cloud storage are given?",
+    "filter": null,
+    "config": "R0_dense",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0101:c03",
+        "source": "data-science.pdf#page=101",
+        "page": 101,
+        "score": 0.7865902908688625,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0101:c04",
+        "source": "data-science.pdf#page=101",
+        "page": 101,
+        "score": 0.7305525541305542,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0102:c04",
+        "source": "data-science.pdf#page=102",
+        "page": 102,
+        "score": 0.72937695559126,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0101:c03",
+      "B:openstax-data-science:p0101:c04"
+    ],
+    "context_chars": 1990,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 52.3
+  },
+  {
+    "query_id": "n07",
+    "split": "test",
+    "type": "condition",
+    "question": "Against what is data examined during data validation?",
+    "query_sent": "Against what is data examined during data validation?",
+    "filter": null,
+    "config": "R0_dense",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0093:c04",
+        "source": "data-science.pdf#page=93",
+        "page": 93,
+        "score": 0.8193882596128156,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0094:c00",
+        "source": "data-science.pdf#page=94",
+        "page": 94,
+        "score": 0.8038570880889893,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0094:c02",
+        "source": "data-science.pdf#page=94",
+        "page": 94,
+        "score": 0.8000794649124146,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0093:c04",
+      "B:openstax-data-science:p0094:c00",
+      "B:openstax-data-science:p0094:c02"
+    ],
+    "context_chars": 2645,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 48.2
+  },
+  {
+    "query_id": "n08",
+    "split": "test",
+    "type": "table",
+    "question": "In one-hot encoding of a review, how large is the binary vector created for each word?",
+    "query_sent": "In one-hot encoding of a review, how large is the binary vector created for each word?",
+    "filter": null,
+    "config": "R0_dense",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0097:c01",
+        "source": "data-science.pdf#page=97",
+        "page": 97,
+        "score": 0.8374129783336219,
+        "hit": true
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0097:c00",
+        "source": "data-science.pdf#page=97",
+        "page": 97,
+        "score": 0.6327332446793692,
+        "hit": false
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0098:c02",
+        "source": "data-science.pdf#page=98",
+        "page": 98,
+        "score": 0.6032795366693025,
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0097:c01",
+      "B:openstax-data-science:p0097:c00",
+      "B:openstax-data-science:p0098:c02"
+    ],
+    "context_chars": 2846,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 54.4
+  }
+]
