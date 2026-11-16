@@ -1,0 +1,182 @@
+[
+ {
+  "id": "AT01",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng; citation đúng trang."
+ },
+ {
+  "id": "AT02",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng; citation đúng trang."
+ },
+ {
+  "id": "AT03",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng; citation đúng trang."
+ },
+ {
+  "id": "AT04",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng; citation đúng trang."
+ },
+ {
+  "id": "AT05",
+  "group": "table",
+  "pass": false,
+  "reason": "Sai: chọn TV Accessories (50%); đúng là Jewelry 40%."
+ },
+ {
+  "id": "AT06",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng; citation đúng trang."
+ },
+ {
+  "id": "AT07",
+  "group": "image",
+  "pass": false,
+  "reason": "Từ chối: index chỉ có text, không thấy Figure 2.4."
+ },
+ {
+  "id": "AT08",
+  "group": "image",
+  "pass": false,
+  "reason": "Sai: 'Blue classification' (nhầm với hình khác); đúng là Dog."
+ },
+ {
+  "id": "AT09",
+  "group": "image",
+  "pass": false,
+  "reason": "Từ chối/không nêu được số neuron."
+ },
+ {
+  "id": "AT10",
+  "group": "image",
+  "pass": false,
+  "reason": "Từ chối: quyền CPRA chỉ có trong hình."
+ },
+ {
+  "id": "AT11",
+  "group": "image",
+  "pass": false,
+  "reason": "Sai: trả lời chung chung từ text, không phải 'Reliability & Accuracy'."
+ },
+ {
+  "id": "AT12",
+  "group": "chart",
+  "pass": false,
+  "reason": "Không nêu được relative frequency 0.4."
+ },
+ {
+  "id": "AT13",
+  "group": "chart",
+  "pass": false,
+  "reason": "Không nêu được 6.2."
+ },
+ {
+  "id": "AT14",
+  "group": "chart",
+  "pass": false,
+  "reason": "Sai giá trị: ~20,000 vào giữa 2020 (thực tế ≈ 23,500, khoảng tháng 3-4/2020)."
+ },
+ {
+  "id": "AT15",
+  "group": "chart",
+  "pass": false,
+  "reason": "Sai nhãn trục ('Market Share in %')."
+ },
+ {
+  "id": "AT16",
+  "group": "chart",
+  "pass": false,
+  "reason": "Từ chối."
+ },
+ {
+  "id": "AT17",
+  "group": "multihop",
+  "pass": false,
+  "reason": "Từ chối."
+ },
+ {
+  "id": "AT18",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng; citation đúng trang."
+ },
+ {
+  "id": "AT19",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng; citation đúng trang."
+ },
+ {
+  "id": "AT20",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng; citation đúng trang."
+ },
+ {
+  "id": "AT21",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng; citation đúng trang."
+ },
+ {
+  "id": "AT22",
+  "group": "text",
+  "pass": false,
+  "reason": "Từ chối dù câu có trong text p430 (retrieval text-only không đưa được đoạn này lên)."
+ },
+ {
+  "id": "AT23",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng; citation đúng trang."
+ },
+ {
+  "id": "AT24",
+  "group": "text",
+  "pass": false,
+  "reason": "Từ chối dù ví dụ có trong text p143."
+ },
+ {
+  "id": "ATU1",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Đúng; citation đúng trang."
+ },
+ {
+  "id": "ATU2",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Đúng; citation đúng trang."
+ },
+ {
+  "id": "ATU3",
+  "group": "unanswerable",
+  "pass": false,
+  "reason": "Từ chối nhưng thêm khẳng định sai: 'latest available data is Spring 2023' (dữ liệu cuối là 2023 Winter)."
+ },
+ {
+  "id": "ATU4",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Đúng; citation đúng trang."
+ },
+ {
+  "id": "ATU5",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Đúng; citation đúng trang."
+ },
+ {
+  "id": "ATU6",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Đúng; citation đúng trang."
+ }
+]

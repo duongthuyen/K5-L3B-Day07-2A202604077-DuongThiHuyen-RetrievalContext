@@ -1,0 +1,182 @@
+[
+ {
+  "id": "AT01",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT02",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT03",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT04",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT05",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT06",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT07",
+  "group": "image",
+  "pass": false,
+  "reason": "Sai: trả lời code '011'; trên Figure 2.4 (p99) đường đi tới D là 15 -1-> 9 -0-> 4 -1-> D = 101. Model đã xem trang nhưng đọc sai cạnh."
+ },
+ {
+  "id": "AT08",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT09",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT10",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT11",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT12",
+  "group": "chart",
+  "pass": false,
+  "reason": "Một phần: 0.4 và 40 cầu thủ đúng, nhưng nói bin 'centered at 65.95 inches'; cột cao nhất nằm giữa 65.95 và 67.95 (p430) -> sai bin."
+ },
+ {
+  "id": "AT13",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT14",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đạt: 'early 2020, gần 25,000 (1000s of tons)'; minimum ≈ 23,500 khoảng tháng 3-4/2020; trích Figure 5.6 (p234, cùng chuỗi dữ liệu, có trendline), agent đã xem p234."
+ },
+ {
+  "id": "AT15",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT16",
+  "group": "chart",
+  "pass": false,
+  "reason": "Một phần: chỉ nêu x = 7; Figure 3.6 (p143) có hai cột cao bằng nhau ở x = 6 và x = 7 (Poisson μ = 7: P(6) = P(7))."
+ },
+ {
+  "id": "AT17",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT18",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT19",
+  "group": "multihop",
+  "pass": false,
+  "reason": "Câu trả lời đúng (12; 73%) nhưng citation chỉ gồm Table 6.6 + câu dẫn ở p300; trang 301 chứa 'accuracy of ... = 0.73, or 73%' (evidence bắt buộc thứ hai) không được trích dù agent đã xem p301."
+ },
+ {
+  "id": "AT20",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT21",
+  "group": "text",
+  "pass": true,
+  "reason": "Đạt: sách ghi 'a quarter to a third of the time each'."
+ },
+ {
+  "id": "AT22",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT23",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "AT24",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "ATU1",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Đạt: từ chối và chỉ nêu số liệu 2019 có thật (18.6%)."
+ },
+ {
+  "id": "ATU2",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần dữ liệu không có."
+ },
+ {
+  "id": "ATU3",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần dữ liệu không có."
+ },
+ {
+  "id": "ATU4",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần dữ liệu không có."
+ },
+ {
+  "id": "ATU5",
+  "group": "unanswerable",
+  "pass": false,
+  "reason": "Có từ chối nhưng thêm khẳng định sai 'the symbols are not labeled in the diagram' (Figure 2.4 có nhãn A, B, C, D)."
+ },
+ {
+  "id": "ATU6",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần dữ liệu không có."
+ }
+]

@@ -1,0 +1,5618 @@
+[
+ {
+  "id": "AT01",
+  "group": "table",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In the global soft drinks top-10 table (2019, share of volume), by how many percentage points does Pepsi's share exceed Diet Pepsi's?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "global soft drinks top-10 2019 share of volume",
+    "filter": null,
+    "latency_ms": 133.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0408:t01",
+      "page": 408,
+      "kind": "text",
+      "label": null,
+      "score": 0.8175040701026891
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0408:t00",
+      "page": 408,
+      "kind": "text",
+      "label": null,
+      "score": 0.6324944496154785
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0532:t01",
+      "page": 532,
+      "kind": "text",
+      "label": null,
+      "score": 0.5985903261411621
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0533:t00",
+      "page": 533,
+      "kind": "text",
+      "label": null,
+      "score": 0.5794820189476013
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0564:t03",
+      "page": 564,
+      "kind": "text",
+      "label": null,
+      "score": 0.5555368661880493
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0408:t01",
+     "ADV:p0408:t00",
+     "ADV:p0532:t01",
+     "ADV:p0533:t00",
+     "ADV:p0564:t03"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"Pepsi's share of volume is 9.1% and Diet Pepsi's share of volume is 3.5%. The difference is 9.1% - 3.5% = 5.6 percentage points.\",\"citations\":[\"ADV:p0408:t01\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0408:t01",
+   "ADV:p0408:t00",
+   "ADV:p0532:t01",
+   "ADV:p0533:t00",
+   "ADV:p0564:t03"
+  ],
+  "context_chars": 3563,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1860,
+   "completion_tokens": 93,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.41,
+  "cost_usd": 0.000893,
+  "status": "answered",
+  "answer": "Pepsi's share of volume is 9.1% and Diet Pepsi's share of volume is 3.5%. The difference is 9.1% - 3.5% = 5.6 percentage points.",
+  "citations": [
+   "ADV:p0408:t01"
+  ],
+  "cited_pages": [
+   408
+  ],
+  "gold_pages": [
+   408
+  ],
+  "gold_pages_in_context": [
+   408
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AT02",
+  "group": "table",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In the smartphone defect data, which failure category is most frequent, and what is the total number of defects across all categories?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "smartphone defect data failure category frequency total defects",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 96.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0434:t01",
+      "page": 434,
+      "kind": "text",
+      "label": null,
+      "score": 0.8124880790710507
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0436:t00",
+      "page": 436,
+      "kind": "text",
+      "label": null,
+      "score": 0.7039294662433557
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0435:t01",
+      "page": 435,
+      "kind": "text",
+      "label": null,
+      "score": 0.6513834387888585
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0182:t02",
+      "page": 182,
+      "kind": "text",
+      "label": null,
+      "score": 0.645811179030609
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0331:t00",
+      "page": 331,
+      "kind": "text",
+      "label": null,
+      "score": 0.6446919825489522
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0434:t01",
+     "ADV:p0436:t00",
+     "ADV:p0435:t01",
+     "ADV:p0182:t02",
+     "ADV:p0331:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The most frequent failure category in the smartphone defect data is \\\"Scratches on case\\\" with 1543 defects. The total number of defects across all categories is the sum of defects in each category: 1348 (Cracked screen) + 739 (Power button nonfunctional) + 1543 (Scratches on case) + 1410 (Does not charge) + 595 (Volume controls nonfunctional) = 5635 defects.\",\"citations\":[\"ADV:p0434:t01\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0434:t01",
+   "ADV:p0436:t00",
+   "ADV:p0435:t01",
+   "ADV:p0182:t02",
+   "ADV:p0331:t00"
+  ],
+  "context_chars": 3827,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1787,
+   "completion_tokens": 138,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.91,
+  "cost_usd": 0.000936,
+  "status": "answered",
+  "answer": "The most frequent failure category in the smartphone defect data is \"Scratches on case\" with 1543 defects. The total number of defects across all categories is the sum of defects in each category: 1348 (Cracked screen) + 739 (Power button nonfunctional) + 1543 (Scratches on case) + 1410 (Does not charge) + 595 (Volume controls nonfunctional) = 5635 defects.",
+  "citations": [
+   "ADV:p0434:t01"
+  ],
+  "cited_pages": [
+   434
+  ],
+  "gold_pages": [
+   434
+  ],
+  "gold_pages_in_context": [
+   434
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AT03",
+  "group": "table",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "What is the typical value of z_c for a 90% confidence level?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "z_c 90% confidence level",
+    "filter": null,
+    "latency_ms": 93.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0160:t01",
+      "page": 160,
+      "kind": "text",
+      "label": null,
+      "score": 0.7058678094069857
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0160:t00",
+      "page": 160,
+      "kind": "text",
+      "label": null,
+      "score": 0.7036171798249697
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0219:t02",
+      "page": 219,
+      "kind": "text",
+      "label": null,
+      "score": 0.6868402771258532
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0217:t01",
+      "page": 217,
+      "kind": "text",
+      "label": null,
+      "score": 0.6768090339671414
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0161:t00",
+      "page": 161,
+      "kind": "text",
+      "label": null,
+      "score": 0.657156883820017
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0160:t01",
+     "ADV:p0160:t00",
+     "ADV:p0219:t02",
+     "ADV:p0217:t01",
+     "ADV:p0161:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The typical value of z_c for a 90% confidence level is 1.645.\",\"citations\":[\"ADV:p0160:t01\",\"ADV:p0160:t00\"] ,\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0160:t01",
+   "ADV:p0160:t00",
+   "ADV:p0219:t02",
+   "ADV:p0217:t01",
+   "ADV:p0161:t00"
+  ],
+  "context_chars": 4451,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1860,
+   "completion_tokens": 67,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.18,
+  "cost_usd": 0.000851,
+  "status": "answered",
+  "answer": "The typical value of z_c for a 90% confidence level is 1.645.",
+  "citations": [
+   "ADV:p0160:t01",
+   "ADV:p0160:t00"
+  ],
+  "cited_pages": [
+   160
+  ],
+  "gold_pages": [
+   160
+  ],
+  "gold_pages_in_context": [
+   160
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AT04",
+  "group": "table",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "According to the Brief History of NLP table, what was introduced in 2003 and by whom?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Brief History of NLP table 2003",
+    "filter": null,
+    "latency_ms": 105.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0372:t00",
+      "page": 372,
+      "kind": "text",
+      "label": null,
+      "score": 0.7426964197935821
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0371:t00",
+      "page": 371,
+      "kind": "text",
+      "label": null,
+      "score": 0.7401953804143596
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0369:t04",
+      "page": 369,
+      "kind": "text",
+      "label": null,
+      "score": 0.7174238471823025
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0371:t01",
+      "page": 371,
+      "kind": "text",
+      "label": null,
+      "score": 0.7061405532192524
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0371:t02",
+      "page": 371,
+      "kind": "text",
+      "label": null,
+      "score": 0.7048015384435223
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0372:t00",
+     "ADV:p0371:t00",
+     "ADV:p0369:t04",
+     "ADV:p0371:t01",
+     "ADV:p0371:t02"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"In 2003, Moses, an open-source statistical machine translation system, was introduced by Philipp Koehn and colleagues.\",\"citations\":[\"ADV:p0371:t01\"] ,\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0372:t00",
+   "ADV:p0371:t00",
+   "ADV:p0369:t04",
+   "ADV:p0371:t01",
+   "ADV:p0371:t02"
+  ],
+  "context_chars": 4491,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1871,
+   "completion_tokens": 66,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.19,
+  "cost_usd": 0.000854,
+  "status": "answered",
+  "answer": "In 2003, Moses, an open-source statistical machine translation system, was introduced by Philipp Koehn and colleagues.",
+  "citations": [
+   "ADV:p0371:t01"
+  ],
+  "cited_pages": [
+   371
+  ],
+  "gold_pages": [
+   371
+  ],
+  "gold_pages_in_context": [
+   371
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 2
+ },
+ {
+  "id": "AT05",
+  "group": "table",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In the retail company sales and profits table, which product's profit is less than half of its sales, and what is its profit-to-sales ratio?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "retail company sales and profits table",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 61.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0091:t03",
+      "page": 91,
+      "kind": "text",
+      "label": null,
+      "score": 0.7782356871226034
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0091:t04",
+      "page": 91,
+      "kind": "text",
+      "label": null,
+      "score": 0.7596945000241114
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0092:t00",
+      "page": 92,
+      "kind": "text",
+      "label": null,
+      "score": 0.7229239674897233
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0501:t01",
+      "page": 501,
+      "kind": "text",
+      "label": null,
+      "score": 0.6638786797740448
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0521:t00",
+      "page": 521,
+      "kind": "text",
+      "label": null,
+      "score": 0.6602385842657945
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0091:t03",
+     "ADV:p0091:t04",
+     "ADV:p0092:t00",
+     "ADV:p0501:t01",
+     "ADV:p0521:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The product whose profit is less than half of its sales is TV Accessories. Its sales are $25,000 and its profits are $12,500. The profit-to-sales ratio is 12,500 / 25,000 = 0.5 (or 50%).\",\"citations\":[\"ADV:p0091:t03\",\"ADV:p0091:t04\"]}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0091:t03",
+   "ADV:p0091:t04",
+   "ADV:p0092:t00",
+   "ADV:p0501:t01",
+   "ADV:p0521:t00"
+  ],
+  "context_chars": 3907,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1924,
+   "completion_tokens": 103,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.22,
+  "cost_usd": 0.000934,
+  "status": "answered",
+  "answer": "The product whose profit is less than half of its sales is TV Accessories. Its sales are $25,000 and its profits are $12,500. The profit-to-sales ratio is 12,500 / 25,000 = 0.5 (or 50%).",
+  "citations": [
+   "ADV:p0091:t03",
+   "ADV:p0091:t04"
+  ],
+  "cited_pages": [
+   91
+  ],
+  "gold_pages": [
+   91
+  ],
+  "gold_pages_in_context": [
+   91
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AT06",
+  "group": "table",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In Table 6.3, what does the linear model predict for x = 10, and what is its absolute error there?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Table 6.3 linear model prediction x=10 absolute error",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 57.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0283:t01",
+      "page": 283,
+      "kind": "text",
+      "label": null,
+      "score": 0.7728134664519524
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0282:t00",
+      "page": 282,
+      "kind": "text",
+      "label": null,
+      "score": 0.7297659999550594
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0280:t01",
+      "page": 280,
+      "kind": "text",
+      "label": null,
+      "score": 0.7212249705255102
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0281:t02",
+      "page": 281,
+      "kind": "text",
+      "label": null,
+      "score": 0.7185110953132352
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0282:t01",
+      "page": 282,
+      "kind": "text",
+      "label": null,
+      "score": 0.7103338586886148
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0283:t01",
+     "ADV:p0282:t00",
+     "ADV:p0280:t01",
+     "ADV:p0281:t02",
+     "ADV:p0282:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "The linear model predicts a value of 5 for x = 10. The absolute error at x = 10 is 1 (the difference between the actual value 4 and the predicted value 5).\n\nThis information is found in Table 6.3 on page 282, where the row for x = 10 shows:\n- Actual value: 4\n- Linear model prediction: 5\n- Absolute error: 1\n\n{\"answer\":\"For x = 10, the linear model predicts a value of 5, and the absolute error there is 1.\",\"citations\":[\"ADV:p0282:t01\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0283:t01",
+   "ADV:p0282:t00",
+   "ADV:p0280:t01",
+   "ADV:p0281:t02",
+   "ADV:p0282:t01"
+  ],
+  "context_chars": 4072,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 2132,
+   "completion_tokens": 165,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.61,
+  "cost_usd": 0.001117,
+  "status": "answered",
+  "answer": "For x = 10, the linear model predicts a value of 5, and the absolute error there is 1.",
+  "citations": [
+   "ADV:p0282:t01"
+  ],
+  "cited_pages": [
+   282
+  ],
+  "gold_pages": [
+   282
+  ],
+  "gold_pages_in_context": [
+   282
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 2
+ },
+ {
+  "id": "AT07",
+  "group": "image",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In the Huffman tree diagram, what binary code is assigned to symbol D?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Huffman tree symbol D binary code",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 52.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0098:t05",
+      "page": 98,
+      "kind": "text",
+      "label": null,
+      "score": 0.7635567870935909
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0099:t00",
+      "page": 99,
+      "kind": "text",
+      "label": null,
+      "score": 0.6790146434013442
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0104:t03",
+      "page": 104,
+      "kind": "text",
+      "label": null,
+      "score": 0.6560144815453578
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0324:t00",
+      "page": 324,
+      "kind": "text",
+      "label": null,
+      "score": 0.6478544280572432
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0553:t01",
+      "page": 553,
+      "kind": "text",
+      "label": null,
+      "score": 0.6475193693494612
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0098:t05",
+     "ADV:p0099:t00",
+     "ADV:p0104:t03",
+     "ADV:p0324:t00",
+     "ADV:p0553:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Huffman tree diagram symbol D binary code",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 74.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0098:t05",
+      "page": 98,
+      "kind": "text",
+      "label": null,
+      "score": 0.7439111027770696
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0324:t00",
+      "page": 324,
+      "kind": "text",
+      "label": null,
+      "score": 0.6744248257115807
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0099:t00",
+      "page": 99,
+      "kind": "text",
+      "label": null,
+      "score": 0.6656382482483139
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0323:t03",
+      "page": 323,
+      "kind": "text",
+      "label": null,
+      "score": 0.655155064733912
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0104:t03",
+      "page": 104,
+      "kind": "text",
+      "label": null,
+      "score": 0.6530304563316367
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0323:t03"
+    ],
+    "duplicate_ids": [
+     "ADV:p0098:t05",
+     "ADV:p0324:t00",
+     "ADV:p0099:t00",
+     "ADV:p0104:t03"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Huffman tree diagram",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 53.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0098:t05",
+      "page": 98,
+      "kind": "text",
+      "label": null,
+      "score": 0.6892040967941333
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0324:t00",
+      "page": 324,
+      "kind": "text",
+      "label": null,
+      "score": 0.6845013279317227
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0099:t00",
+      "page": 99,
+      "kind": "text",
+      "label": null,
+      "score": 0.6569872702963799
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0323:t03",
+      "page": 323,
+      "kind": "text",
+      "label": null,
+      "score": 0.6567396930766471
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0321:t00",
+      "page": 321,
+      "kind": "text",
+      "label": null,
+      "score": 0.648626330740513
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0321:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0098:t05",
+     "ADV:p0324:t00",
+     "ADV:p0099:t00",
+     "ADV:p0323:t03"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Huffman tree diagram symbol D",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 81.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0098:t05",
+      "page": 98,
+      "kind": "text",
+      "label": null,
+      "score": 0.6667599082076471
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0324:t00",
+      "page": 324,
+      "kind": "text",
+      "label": null,
+      "score": 0.6662803689753926
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0323:t03",
+      "page": 323,
+      "kind": "text",
+      "label": null,
+      "score": 0.6540655894856006
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0321:t00",
+      "page": 321,
+      "kind": "text",
+      "label": null,
+      "score": 0.62705582734444
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0322:t00",
+      "page": 322,
+      "kind": "text",
+      "label": null,
+      "score": 0.6150505955502238
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0322:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0098:t05",
+     "ADV:p0324:t00",
+     "ADV:p0323:t03",
+     "ADV:p0321:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "The document does not contain the Huffman tree diagram with the binary code assigned to symbol D. The searches found references to Huffman coding and decision trees, but no specific Huffman tree diagram or the binary code for symbol D is shown.\n\n{\"answer\": \"The document does not contain the Huffman tree diagram or the binary code assigned to symbol D.\", \"citations\": [\"ADV:p0098:t05\", \"ADV:p0099:t00\", \"ADV:p0321:t00\", \"ADV:p0322:t00\", \"ADV:p0323:t03\"], \"abstain\": true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0098:t05",
+   "ADV:p0099:t00",
+   "ADV:p0104:t03",
+   "ADV:p0324:t00",
+   "ADV:p0553:t01",
+   "ADV:p0323:t03",
+   "ADV:p0321:t00",
+   "ADV:p0322:t00"
+  ],
+  "context_chars": 5942,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 7019,
+   "completion_tokens": 215,
+   "llm_calls": 5
+  },
+  "elapsed_s": 5.54,
+  "cost_usd": 0.003152,
+  "status": "abstain",
+  "answer": "The document does not contain the Huffman tree diagram or the binary code assigned to symbol D.",
+  "citations": [],
+  "abstain_reason": "model_abstained",
+  "gold_pages": [
+   99
+  ],
+  "gold_pages_in_context": [
+   99
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 2
+ },
+ {
+  "id": "AT08",
+  "group": "image",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In the simple decision tree figure, what is the classification for something that is living, is an animal, and does not walk on two legs?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "simple decision tree classification living animal does not walk on two legs",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 61.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0317:t00",
+      "page": 317,
+      "kind": "text",
+      "label": null,
+      "score": 0.7214600013816369
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0327:t01",
+      "page": 327,
+      "kind": "text",
+      "label": null,
+      "score": 0.6960079617486081
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0322:t00",
+      "page": 322,
+      "kind": "text",
+      "label": null,
+      "score": 0.690961516980944
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0486:t00",
+      "page": 486,
+      "kind": "text",
+      "label": null,
+      "score": 0.6739888981587363
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0324:t00",
+      "page": 324,
+      "kind": "text",
+      "label": null,
+      "score": 0.6738232166977862
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0317:t00",
+     "ADV:p0327:t01",
+     "ADV:p0322:t00",
+     "ADV:p0486:t00",
+     "ADV:p0324:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "simple decision tree figure classification living animal does not walk on two legs",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 73.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0317:t00",
+      "page": 317,
+      "kind": "text",
+      "label": null,
+      "score": 0.7091928471096987
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0322:t00",
+      "page": 322,
+      "kind": "text",
+      "label": null,
+      "score": 0.6845564810234652
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0324:t00",
+      "page": 324,
+      "kind": "text",
+      "label": null,
+      "score": 0.6815646860185839
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0327:t01",
+      "page": 327,
+      "kind": "text",
+      "label": null,
+      "score": 0.6760294017721649
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0323:t03",
+      "page": 323,
+      "kind": "text",
+      "label": null,
+      "score": 0.6637802129184831
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0323:t03"
+    ],
+    "duplicate_ids": [
+     "ADV:p0317:t00",
+     "ADV:p0322:t00",
+     "ADV:p0324:t00",
+     "ADV:p0327:t01"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "simple decision tree figure classification living animal walk on two legs",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 80.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0317:t00",
+      "page": 317,
+      "kind": "text",
+      "label": null,
+      "score": 0.737497866153717
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0322:t00",
+      "page": 322,
+      "kind": "text",
+      "label": null,
+      "score": 0.7063273366494587
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0327:t01",
+      "page": 327,
+      "kind": "text",
+      "label": null,
+      "score": 0.696034586902315
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0327:t02",
+      "page": 327,
+      "kind": "text",
+      "label": null,
+      "score": 0.6943256855010986
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0326:t00",
+      "page": 326,
+      "kind": "text",
+      "label": null,
+      "score": 0.6941493360444708
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0327:t02",
+     "ADV:p0326:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0317:t00",
+     "ADV:p0322:t00",
+     "ADV:p0327:t01"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "simple decision tree figure classification living animal walk on two legs",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 80.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0317:t00",
+      "page": 317,
+      "kind": "text",
+      "label": null,
+      "score": 0.737497866153717
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0322:t00",
+      "page": 322,
+      "kind": "text",
+      "label": null,
+      "score": 0.7063273366494587
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0327:t01",
+      "page": 327,
+      "kind": "text",
+      "label": null,
+      "score": 0.696034586902315
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0327:t02",
+      "page": 327,
+      "kind": "text",
+      "label": null,
+      "score": 0.6943256855010986
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0326:t00",
+      "page": 326,
+      "kind": "text",
+      "label": null,
+      "score": 0.6941493360444708
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0317:t00",
+     "ADV:p0322:t00",
+     "ADV:p0327:t01",
+     "ADV:p0327:t02",
+     "ADV:p0326:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The simple decision tree figure classifies something that is living, is an animal, and does not walk on two legs as a Blue classification.\",\"citations\":[\"ADV:p0317:t00\"] ,\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0317:t00",
+   "ADV:p0327:t01",
+   "ADV:p0322:t00",
+   "ADV:p0486:t00",
+   "ADV:p0324:t00",
+   "ADV:p0323:t03",
+   "ADV:p0327:t02",
+   "ADV:p0326:t00"
+  ],
+  "context_chars": 6994,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 8668,
+   "completion_tokens": 163,
+   "llm_calls": 5
+  },
+  "elapsed_s": 4.82,
+  "cost_usd": 0.003728,
+  "status": "answered",
+  "answer": "The simple decision tree figure classifies something that is living, is an animal, and does not walk on two legs as a Blue classification.",
+  "citations": [
+   "ADV:p0317:t00"
+  ],
+  "cited_pages": [
+   317
+  ],
+  "gold_pages": [
+   317
+  ],
+  "gold_pages_in_context": [
+   317
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AT09",
+  "group": "image",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In the neural network diagram with four layers (Figure 7.3), how many neurons does each hidden layer have?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 7.3 neural network layers neurons",
+    "filter": null,
+    "latency_ms": 44.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0343:t00",
+      "page": 343,
+      "kind": "text",
+      "label": null,
+      "score": 0.8103875147834403
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0343:t01",
+      "page": 343,
+      "kind": "text",
+      "label": null,
+      "score": 0.8017248269811597
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0341:t00",
+      "page": 341,
+      "kind": "text",
+      "label": null,
+      "score": 0.7941648609441685
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0363:t00",
+      "page": 363,
+      "kind": "text",
+      "label": null,
+      "score": 0.7934200537049688
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0382:t04",
+      "page": 382,
+      "kind": "text",
+      "label": null,
+      "score": 0.7819847594508686
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0343:t00",
+     "ADV:p0343:t01",
+     "ADV:p0341:t00",
+     "ADV:p0363:t00",
+     "ADV:p0382:t04"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 7.3 number of neurons in each hidden layer",
+    "filter": null,
+    "latency_ms": 60.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0343:t00",
+      "page": 343,
+      "kind": "text",
+      "label": null,
+      "score": 0.7927429676055965
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0343:t01",
+      "page": 343,
+      "kind": "text",
+      "label": null,
+      "score": 0.7706840174982661
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0382:t04",
+      "page": 382,
+      "kind": "text",
+      "label": null,
+      "score": 0.7679063539449201
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0365:t04",
+      "page": 365,
+      "kind": "text",
+      "label": null,
+      "score": 0.7524849028876379
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0363:t00",
+      "page": 363,
+      "kind": "text",
+      "label": null,
+      "score": 0.7373991765142096
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0365:t04"
+    ],
+    "duplicate_ids": [
+     "ADV:p0343:t00",
+     "ADV:p0343:t01",
+     "ADV:p0382:t04",
+     "ADV:p0363:t00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 7.3 neural network diagram hidden layers neurons",
+    "filter": null,
+    "latency_ms": 52.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0343:t01",
+      "page": 343,
+      "kind": "text",
+      "label": null,
+      "score": 0.8167357663231233
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0382:t04",
+      "page": 382,
+      "kind": "text",
+      "label": null,
+      "score": 0.8147597908973694
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0363:t00",
+      "page": 363,
+      "kind": "text",
+      "label": null,
+      "score": 0.788421596476847
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0363:t02",
+      "page": 363,
+      "kind": "text",
+      "label": null,
+      "score": 0.7864207029342651
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0343:t00",
+      "page": 343,
+      "kind": "text",
+      "label": null,
+      "score": 0.7863957413199116
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0363:t02"
+    ],
+    "duplicate_ids": [
+     "ADV:p0343:t01",
+     "ADV:p0382:t04",
+     "ADV:p0363:t00",
+     "ADV:p0343:t00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 7.3 neural network diagram hidden layers neurons count",
+    "filter": null,
+    "latency_ms": 65.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0343:t01",
+      "page": 343,
+      "kind": "text",
+      "label": null,
+      "score": 0.8072866431133038
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0343:t00",
+      "page": 343,
+      "kind": "text",
+      "label": null,
+      "score": 0.796719980435374
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0382:t04",
+      "page": 382,
+      "kind": "text",
+      "label": null,
+      "score": 0.7965530157089233
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0365:t04",
+      "page": 365,
+      "kind": "text",
+      "label": null,
+      "score": 0.7846108078956604
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0363:t02",
+      "page": 363,
+      "kind": "text",
+      "label": null,
+      "score": 0.7741190791130066
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0343:t01",
+     "ADV:p0343:t00",
+     "ADV:p0382:t04",
+     "ADV:p0365:t04",
+     "ADV:p0363:t02"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"In the neural network diagram shown in Figure 7.3, there are two hidden layers. However, the exact number of neurons in each hidden layer is not explicitly stated in the document for Figure 7.3. The document mentions an example neural network with a hidden layer of 128 neurons and another hidden layer of 64 neurons in a different context (TensorFlow example), but this is not directly linked to Figure 7.3.\",\"citations\":[\"ADV:p0343:t01\",\"ADV:p0365:t04\"],\"abstain\":true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0343:t00",
+   "ADV:p0343:t01",
+   "ADV:p0341:t00",
+   "ADV:p0363:t00",
+   "ADV:p0382:t04",
+   "ADV:p0365:t04",
+   "ADV:p0363:t02"
+  ],
+  "context_chars": 4881,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 6354,
+   "completion_tokens": 212,
+   "llm_calls": 5
+  },
+  "elapsed_s": 5.34,
+  "cost_usd": 0.002881,
+  "status": "abstain",
+  "answer": "In the neural network diagram shown in Figure 7.3, there are two hidden layers. However, the exact number of neurons in each hidden layer is not explicitly stated in the document for Figure 7.3. The document mentions an example neural network with a hidden layer of 128 neurons and another hidden layer of 64 neurons in a different context (TensorFlow example), but this is not directly linked to Figure 7.3.",
+  "citations": [],
+  "abstain_reason": "model_abstained",
+  "gold_pages": [
+   343
+  ],
+  "gold_pages_in_context": [
+   343
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AT10",
+  "group": "image",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "According to the CCPA/CPRA principles figure, which rights are listed under CPRA?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "CCPA CPRA principles figure",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 45.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0389:t00",
+      "page": 389,
+      "kind": "text",
+      "label": null,
+      "score": 0.7717376759521363
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0011:t04",
+      "page": 11,
+      "kind": "text",
+      "label": null,
+      "score": 0.5970263009620377
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0420:t00",
+      "page": 420,
+      "kind": "text",
+      "label": null,
+      "score": 0.5952783595851995
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0390:t00",
+      "page": 390,
+      "kind": "text",
+      "label": null,
+      "score": 0.5898026716944412
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0016:t00",
+      "page": 16,
+      "kind": "text",
+      "label": null,
+      "score": 0.5886241267361593
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0389:t00",
+     "ADV:p0011:t04",
+     "ADV:p0420:t00",
+     "ADV:p0390:t00",
+     "ADV:p0016:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 8.3 CCPA/CPRA Principles",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 76.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0389:t00",
+      "page": 389,
+      "kind": "text",
+      "label": null,
+      "score": 0.8021695731777222
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0420:t00",
+      "page": 420,
+      "kind": "text",
+      "label": null,
+      "score": 0.6526558217220565
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0011:t04",
+      "page": 11,
+      "kind": "text",
+      "label": null,
+      "score": 0.6333624343060007
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0504:t00",
+      "page": 504,
+      "kind": "text",
+      "label": null,
+      "score": 0.6185239184782565
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0383:t04",
+      "page": 383,
+      "kind": "text",
+      "label": null,
+      "score": 0.6182481050491333
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0504:t00",
+     "ADV:p0383:t04"
+    ],
+    "duplicate_ids": [
+     "ADV:p0389:t00",
+     "ADV:p0420:t00",
+     "ADV:p0011:t04"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 8.3 CCPA/CPRA Principles",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 59.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0389:t00",
+      "page": 389,
+      "kind": "text",
+      "label": null,
+      "score": 0.8021695731777222
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0420:t00",
+      "page": 420,
+      "kind": "text",
+      "label": null,
+      "score": 0.6526558217220565
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0011:t04",
+      "page": 11,
+      "kind": "text",
+      "label": null,
+      "score": 0.6333624343060007
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0504:t00",
+      "page": 504,
+      "kind": "text",
+      "label": null,
+      "score": 0.6185239184782565
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0383:t04",
+      "page": 383,
+      "kind": "text",
+      "label": null,
+      "score": 0.6182481050491333
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0389:t00",
+     "ADV:p0420:t00",
+     "ADV:p0011:t04",
+     "ADV:p0504:t00",
+     "ADV:p0383:t04"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "CPRA rights",
+    "filter": {
+     "kind": "text"
+    },
+    "latency_ms": 53.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0389:t00",
+      "page": 389,
+      "kind": "text",
+      "label": null,
+      "score": 0.6667916576030383
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0390:t00",
+      "page": 390,
+      "kind": "text",
+      "label": null,
+      "score": 0.6452121330860896
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0394:t01",
+      "page": 394,
+      "kind": "text",
+      "label": null,
+      "score": 0.6172634775262059
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0389:t02",
+      "page": 389,
+      "kind": "text",
+      "label": null,
+      "score": 0.6092765512846875
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0420:t01",
+      "page": 420,
+      "kind": "text",
+      "label": null,
+      "score": 0.59274019577325
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0394:t01",
+     "ADV:p0389:t02",
+     "ADV:p0420:t01"
+    ],
+    "duplicate_ids": [
+     "ADV:p0389:t00",
+     "ADV:p0390:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "The document mentions Figure 8.3 as summarizing the CCPA/CPRA principles, but the exact rights listed under CPRA in that figure are not explicitly detailed in the text search results. The figure itself is referenced on page 389 but the text does not enumerate the specific rights under CPRA.\n\nTherefore, the exact rights listed under CPRA according to the CCPA/CPRA principles figure are not found in the searchable text of the document.\n\n{\"answer\": \"The document references Figure 8.3 as summarizing the CCPA/CPRA principles but does not explicitly list the rights under CPRA in the text. The specific rights under CPRA according to the figure are not provided in the searchable content.\", \"citations\": [\"ADV:p0389:t00\"], \"abstain\": true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0389:t00",
+   "ADV:p0011:t04",
+   "ADV:p0420:t00",
+   "ADV:p0390:t00",
+   "ADV:p0016:t00",
+   "ADV:p0504:t00",
+   "ADV:p0383:t04",
+   "ADV:p0394:t01",
+   "ADV:p0389:t02",
+   "ADV:p0420:t01"
+  ],
+  "context_chars": 7057,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 7571,
+   "completion_tokens": 264,
+   "llm_calls": 5
+  },
+  "elapsed_s": 7.28,
+  "cost_usd": 0.003451,
+  "status": "abstain",
+  "answer": "The document references Figure 8.3 as summarizing the CCPA/CPRA principles but does not explicitly list the rights under CPRA in the text. The specific rights under CPRA according to the figure are not provided in the searchable content.",
+  "citations": [],
+  "abstain_reason": "model_abstained",
+  "gold_pages": [
+   389
+  ],
+  "gold_pages_in_context": [
+   389
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AT11",
+  "group": "image",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In the Venn diagram relating ethical rules, cross-validation and outlier detection, what lies at the intersection of all three?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Venn diagram ethical rules cross-validation outlier detection",
+    "filter": null,
+    "latency_ms": 61.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0404:t00",
+      "page": 404,
+      "kind": "text",
+      "label": null,
+      "score": 0.850099471193648
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0403:t04",
+      "page": 403,
+      "kind": "text",
+      "label": null,
+      "score": 0.8249277330999705
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0403:t03",
+      "page": 403,
+      "kind": "text",
+      "label": null,
+      "score": 0.8054487457069032
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0418:t01",
+      "page": 418,
+      "kind": "text",
+      "label": null,
+      "score": 0.7587930251606727
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0403:t02",
+      "page": 403,
+      "kind": "text",
+      "label": null,
+      "score": 0.7546337685643861
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0404:t00",
+     "ADV:p0403:t04",
+     "ADV:p0403:t03",
+     "ADV:p0418:t01",
+     "ADV:p0403:t02"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "intersection ethical rules cross-validation outlier detection",
+    "filter": null,
+    "latency_ms": 93.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0403:t04",
+      "page": 403,
+      "kind": "text",
+      "label": null,
+      "score": 0.8881070215797745
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0404:t00",
+      "page": 404,
+      "kind": "text",
+      "label": null,
+      "score": 0.8761056065559449
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0403:t03",
+      "page": 403,
+      "kind": "text",
+      "label": null,
+      "score": 0.8447345495224059
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0398:t02",
+      "page": 398,
+      "kind": "text",
+      "label": null,
+      "score": 0.7877189517021235
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0403:t02",
+      "page": 403,
+      "kind": "text",
+      "label": null,
+      "score": 0.7741190195083674
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0398:t02"
+    ],
+    "duplicate_ids": [
+     "ADV:p0403:t04",
+     "ADV:p0404:t00",
+     "ADV:p0403:t03",
+     "ADV:p0403:t02"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "intersection of ethical rules cross-validation outlier detection",
+    "filter": null,
+    "latency_ms": 84.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0403:t04",
+      "page": 403,
+      "kind": "text",
+      "label": null,
+      "score": 0.90171822612638
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0404:t00",
+      "page": 404,
+      "kind": "text",
+      "label": null,
+      "score": 0.88692838627527
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0403:t03",
+      "page": 403,
+      "kind": "text",
+      "label": null,
+      "score": 0.8666046341297264
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0403:t02",
+      "page": 403,
+      "kind": "text",
+      "label": null,
+      "score": 0.8014333962539808
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0398:t02",
+      "page": 398,
+      "kind": "text",
+      "label": null,
+      "score": 0.7964769127084679
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0403:t04",
+     "ADV:p0404:t00",
+     "ADV:p0403:t03",
+     "ADV:p0403:t02",
+     "ADV:p0398:t02"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"At the intersection of ethical rules, cross-validation, and outlier detection lies the combined goal of ensuring the reliability, fairness, and robustness of data-driven models and analyses. This intersection represents the integration of ethical guidelines with technical validation methods to produce unbiased, fair, and accurate models that are robust to outliers and validated through cross-validation techniques.\",\"citations\":[\"ADV:p0404:t00\",\"ADV:p0403:t04\",\"ADV:p0403:t03\",\"ADV:p0403:t02\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0404:t00",
+   "ADV:p0403:t04",
+   "ADV:p0403:t03",
+   "ADV:p0418:t01",
+   "ADV:p0403:t02",
+   "ADV:p0398:t02"
+  ],
+  "context_chars": 5086,
+  "viewed_pages": [],
+  "n_searches": 3,
+  "usage": {
+   "prompt_tokens": 4970,
+   "completion_tokens": 176,
+   "llm_calls": 4
+  },
+  "elapsed_s": 4.45,
+  "cost_usd": 0.00227,
+  "status": "answered",
+  "answer": "At the intersection of ethical rules, cross-validation, and outlier detection lies the combined goal of ensuring the reliability, fairness, and robustness of data-driven models and analyses. This intersection represents the integration of ethical guidelines with technical validation methods to produce unbiased, fair, and accurate models that are robust to outliers and validated through cross-validation techniques.",
+  "citations": [
+   "ADV:p0404:t00",
+   "ADV:p0403:t04",
+   "ADV:p0403:t03",
+   "ADV:p0403:t02"
+  ],
+  "cited_pages": [
+   403,
+   404
+  ],
+  "gold_pages": [
+   404
+  ],
+  "gold_pages_in_context": [
+   404
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AT12",
+  "group": "chart",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In the histogram of heights of 100 male semiprofessional soccer players, which bin has the tallest bar and what is its relative frequency? How many players does that correspond to?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "histogram heights male semiprofessional soccer players",
+    "filter": null,
+    "latency_ms": 70.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0429:t01",
+      "page": 429,
+      "kind": "text",
+      "label": null,
+      "score": 0.8456742259458184
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0430:t00",
+      "page": 430,
+      "kind": "text",
+      "label": null,
+      "score": 0.7685501255333329
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0426:t02",
+      "page": 426,
+      "kind": "text",
+      "label": null,
+      "score": 0.675314724445343
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0433:t00",
+      "page": 433,
+      "kind": "text",
+      "label": null,
+      "score": 0.662269651889801
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0431:t01",
+      "page": 431,
+      "kind": "text",
+      "label": null,
+      "score": 0.647518077344781
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0429:t01",
+     "ADV:p0430:t00",
+     "ADV:p0426:t02",
+     "ADV:p0433:t00",
+     "ADV:p0431:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 9.2 histogram heights male semiprofessional soccer players tallest bar relative frequency",
+    "filter": null,
+    "latency_ms": 56.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0429:t01",
+      "page": 429,
+      "kind": "text",
+      "label": null,
+      "score": 0.9172116616712019
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0430:t00",
+      "page": 430,
+      "kind": "text",
+      "label": null,
+      "score": 0.8158881993493692
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0433:t00",
+      "page": 433,
+      "kind": "text",
+      "label": null,
+      "score": 0.7113381200231255
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0430:t02",
+      "page": 430,
+      "kind": "text",
+      "label": null,
+      "score": 0.6929677907843727
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0431:t01",
+      "page": 431,
+      "kind": "text",
+      "label": null,
+      "score": 0.6810647249221851
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0430:t02"
+    ],
+    "duplicate_ids": [
+     "ADV:p0429:t01",
+     "ADV:p0430:t00",
+     "ADV:p0433:t00",
+     "ADV:p0431:t01"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 9.2 tallest bar relative frequency number of players",
+    "filter": null,
+    "latency_ms": 55.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0429:t01",
+      "page": 429,
+      "kind": "text",
+      "label": null,
+      "score": 0.7976948022842464
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0430:t00",
+      "page": 430,
+      "kind": "text",
+      "label": null,
+      "score": 0.6910531704990277
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0426:t02",
+      "page": 426,
+      "kind": "text",
+      "label": null,
+      "score": 0.677415172899675
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0512:t00",
+      "page": 512,
+      "kind": "text",
+      "label": null,
+      "score": 0.6764253570780053
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0304:t03",
+      "page": 304,
+      "kind": "text",
+      "label": null,
+      "score": 0.6757451295852709
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0512:t00",
+     "ADV:p0304:t03"
+    ],
+    "duplicate_ids": [
+     "ADV:p0429:t01",
+     "ADV:p0430:t00",
+     "ADV:p0426:t02"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 9.2 histogram heights male semiprofessional soccer players tallest bar relative frequency number of players",
+    "filter": null,
+    "latency_ms": 69.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0429:t01",
+      "page": 429,
+      "kind": "text",
+      "label": null,
+      "score": 0.9136147602063703
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0430:t00",
+      "page": 430,
+      "kind": "text",
+      "label": null,
+      "score": 0.8104763369900592
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0433:t00",
+      "page": 433,
+      "kind": "text",
+      "label": null,
+      "score": 0.7071144159368041
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0430:t02",
+      "page": 430,
+      "kind": "text",
+      "label": null,
+      "score": 0.6780096484416945
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0426:t02",
+      "page": 426,
+      "kind": "text",
+      "label": null,
+      "score": 0.6750008657574149
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0429:t01",
+     "ADV:p0430:t00",
+     "ADV:p0433:t00",
+     "ADV:p0430:t02",
+     "ADV:p0426:t02"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The tallest bar in the histogram of heights of 100 male semiprofessional soccer players corresponds to the bin with heights between 65.95 and 67.95 inches. The relative frequency of this bin is not explicitly stated in the text, but since the histogram is based on 100 players, the relative frequency can be interpreted as the proportion of players in that bin. The exact number of players in this bin is not given in the text, but it corresponds to the tallest bar in the histogram, indicating it has the highest count among the bins.\",\"citations\":[\"ADV:p0429:t01\",\"ADV:p0430:t00\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0429:t01",
+   "ADV:p0430:t00",
+   "ADV:p0426:t02",
+   "ADV:p0433:t00",
+   "ADV:p0431:t01",
+   "ADV:p0430:t02",
+   "ADV:p0512:t00",
+   "ADV:p0304:t03"
+  ],
+  "context_chars": 6566,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 7977,
+   "completion_tokens": 252,
+   "llm_calls": 5
+  },
+  "elapsed_s": 5.61,
+  "cost_usd": 0.003594,
+  "status": "answered",
+  "answer": "The tallest bar in the histogram of heights of 100 male semiprofessional soccer players corresponds to the bin with heights between 65.95 and 67.95 inches. The relative frequency of this bin is not explicitly stated in the text, but since the histogram is based on 100 players, the relative frequency can be interpreted as the proportion of players in that bin. The exact number of players in this bin is not given in the text, but it corresponds to the tallest bar in the histogram, indicating it has the highest count among the bins.",
+  "citations": [
+   "ADV:p0429:t01",
+   "ADV:p0430:t00"
+  ],
+  "cited_pages": [
+   429,
+   430
+  ],
+  "gold_pages": [
+   430
+  ],
+  "gold_pages_in_context": [
+   430
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 2
+ },
+ {
+  "id": "AT13",
+  "group": "chart",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In the grid heatmap of crop harvest by local farmer (tons/year), what is the potato harvest for BioGoods Ltd.?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "grid heatmap crop harvest potato BioGoods Ltd.",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 88.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0451:t00",
+      "page": 451,
+      "kind": "text",
+      "label": null,
+      "score": 0.7517310824875102
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0451:t01",
+      "page": 451,
+      "kind": "text",
+      "label": null,
+      "score": 0.6906520724296619
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0450:t01",
+      "page": 450,
+      "kind": "text",
+      "label": null,
+      "score": 0.6407456826274773
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0450:t03",
+      "page": 450,
+      "kind": "text",
+      "label": null,
+      "score": 0.6348215559231318
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0301:t05",
+      "page": 301,
+      "kind": "text",
+      "label": null,
+      "score": 0.6224877317271723
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0451:t00",
+     "ADV:p0451:t01",
+     "ADV:p0450:t01",
+     "ADV:p0450:t03",
+     "ADV:p0301:t05"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 9.7 Grid Heatmap crop harvest BioGoods Ltd potato",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 48.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0451:t00",
+      "page": 451,
+      "kind": "text",
+      "label": null,
+      "score": 0.7889238847584917
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0451:t01",
+      "page": 451,
+      "kind": "text",
+      "label": null,
+      "score": 0.7538558694038326
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0301:t05",
+      "page": 301,
+      "kind": "text",
+      "label": null,
+      "score": 0.6825504085361519
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0449:t01",
+      "page": 449,
+      "kind": "text",
+      "label": null,
+      "score": 0.6689274705734931
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0450:t03",
+      "page": 450,
+      "kind": "text",
+      "label": null,
+      "score": 0.663913369178772
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0449:t01"
+    ],
+    "duplicate_ids": [
+     "ADV:p0451:t00",
+     "ADV:p0451:t01",
+     "ADV:p0301:t05",
+     "ADV:p0450:t03"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 9.7 Grid Heatmap crop harvest potato BioGoods Ltd",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 53.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0451:t00",
+      "page": 451,
+      "kind": "text",
+      "label": null,
+      "score": 0.7953839667944982
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0451:t01",
+      "page": 451,
+      "kind": "text",
+      "label": null,
+      "score": 0.7585860490799005
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0301:t05",
+      "page": 301,
+      "kind": "text",
+      "label": null,
+      "score": 0.6851894226331563
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0450:t03",
+      "page": 450,
+      "kind": "text",
+      "label": null,
+      "score": 0.6735076502855044
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0449:t01",
+      "page": 449,
+      "kind": "text",
+      "label": null,
+      "score": 0.6723220338245581
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0451:t00",
+     "ADV:p0451:t01",
+     "ADV:p0301:t05",
+     "ADV:p0450:t03",
+     "ADV:p0449:t01"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The exact potato harvest value for BioGoods Ltd. in the grid heatmap of crop harvest by local farmer (tons/year) is not explicitly stated in the text. However, it is mentioned that the highest harvests appear to be for potatoes at BioGoods Ltd. The heatmap uses green and yellow shading to represent higher harvest levels, indicating BioGoods Ltd. has a high potato harvest, but the specific tonnage is not provided in the document.\",\"citations\":[\"ADV:p0451:t00\",\"ADV:p0451:t01\"],\"abstain\":true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0451:t00",
+   "ADV:p0451:t01",
+   "ADV:p0450:t01",
+   "ADV:p0450:t03",
+   "ADV:p0301:t05",
+   "ADV:p0449:t01"
+  ],
+  "context_chars": 4510,
+  "viewed_pages": [],
+  "n_searches": 3,
+  "usage": {
+   "prompt_tokens": 4991,
+   "completion_tokens": 206,
+   "llm_calls": 4
+  },
+  "elapsed_s": 4.37,
+  "cost_usd": 0.002326,
+  "status": "abstain",
+  "answer": "The exact potato harvest value for BioGoods Ltd. in the grid heatmap of crop harvest by local farmer (tons/year) is not explicitly stated in the text. However, it is mentioned that the highest harvests appear to be for potatoes at BioGoods Ltd. The heatmap uses green and yellow shading to represent higher harvest levels, indicating BioGoods Ltd. has a high potato harvest, but the specific tonnage is not provided in the document.",
+  "citations": [],
+  "abstain_reason": "model_abstained",
+  "gold_pages": [
+   451
+  ],
+  "gold_pages_in_context": [
+   451
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AT14",
+  "group": "chart",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In the chart of monthly coal consumption for electricity generation in the U.S. (2016-2022), around when is the lowest value and roughly what is it? Give the unit.",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "monthly coal consumption electricity generation U.S. 2016-2022",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 73.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0233:t02",
+      "page": 233,
+      "kind": "text",
+      "label": null,
+      "score": 0.83925695185322
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0234:t00",
+      "page": 234,
+      "kind": "text",
+      "label": null,
+      "score": 0.8075024829800471
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0359:t03",
+      "page": 359,
+      "kind": "text",
+      "label": null,
+      "score": 0.7733431132622822
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0245:t00",
+      "page": 245,
+      "kind": "text",
+      "label": null,
+      "score": 0.7231141493848486
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0266:t01",
+      "page": 266,
+      "kind": "text",
+      "label": null,
+      "score": 0.7065699871438762
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0233:t02",
+     "ADV:p0234:t00",
+     "ADV:p0359:t03",
+     "ADV:p0245:t00",
+     "ADV:p0266:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 5.5 Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 54.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0233:t02",
+      "page": 233,
+      "kind": "text",
+      "label": null,
+      "score": 0.881674237151491
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0234:t00",
+      "page": 234,
+      "kind": "text",
+      "label": null,
+      "score": 0.8390503217487967
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0359:t03",
+      "page": 359,
+      "kind": "text",
+      "label": null,
+      "score": 0.7550066405526829
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0245:t00",
+      "page": 245,
+      "kind": "text",
+      "label": null,
+      "score": 0.7250110670917603
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0362:t01",
+      "page": 362,
+      "kind": "text",
+      "label": null,
+      "score": 0.7087226683662744
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0362:t01"
+    ],
+    "duplicate_ids": [
+     "ADV:p0233:t02",
+     "ADV:p0234:t00",
+     "ADV:p0359:t03",
+     "ADV:p0245:t00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "lowest monthly coal consumption electricity generation U.S. 2016-2022",
+    "filter": {
+     "kind": "text"
+    },
+    "latency_ms": 97.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0233:t02",
+      "page": 233,
+      "kind": "text",
+      "label": null,
+      "score": 0.7652079602952041
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0234:t00",
+      "page": 234,
+      "kind": "text",
+      "label": null,
+      "score": 0.7350590106739395
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0359:t03",
+      "page": 359,
+      "kind": "text",
+      "label": null,
+      "score": 0.7086404909324061
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0245:t00",
+      "page": 245,
+      "kind": "text",
+      "label": null,
+      "score": 0.6754889085597462
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0362:t01",
+      "page": 362,
+      "kind": "text",
+      "label": null,
+      "score": 0.636734090046044
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0233:t02",
+     "ADV:p0234:t00",
+     "ADV:p0359:t03",
+     "ADV:p0245:t00",
+     "ADV:p0362:t01"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The lowest value of monthly coal consumption for electricity generation in the U.S. from 2016 to 2022 occurs around mid-2020. The approximate value is about 20,000 (in 1000s of tons), which means roughly 20 million tons. The unit is 1000s of tons. This is based on the chart in Figure 5.5 on page 233 showing monthly coal consumption from 2016 to 2022.\",\"citations\":[\"ADV:p0233:t02\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0233:t02",
+   "ADV:p0234:t00",
+   "ADV:p0359:t03",
+   "ADV:p0245:t00",
+   "ADV:p0266:t01",
+   "ADV:p0362:t01"
+  ],
+  "context_chars": 3860,
+  "viewed_pages": [],
+  "n_searches": 3,
+  "usage": {
+   "prompt_tokens": 4950,
+   "completion_tokens": 220,
+   "llm_calls": 4
+  },
+  "elapsed_s": 4.51,
+  "cost_usd": 0.002332,
+  "status": "answered",
+  "answer": "The lowest value of monthly coal consumption for electricity generation in the U.S. from 2016 to 2022 occurs around mid-2020. The approximate value is about 20,000 (in 1000s of tons), which means roughly 20 million tons. The unit is 1000s of tons. This is based on the chart in Figure 5.5 on page 233 showing monthly coal consumption from 2016 to 2022.",
+  "citations": [
+   "ADV:p0233:t02"
+  ],
+  "cited_pages": [
+   233
+  ],
+  "gold_pages": [
+   233
+  ],
+  "gold_pages_in_context": [
+   233
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AT15",
+  "group": "chart",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In Graph A of the soft-drink market share bar charts, which brand has the third-tallest bar and what is the y-axis label?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "soft-drink market share bar charts Graph A",
+    "filter": null,
+    "latency_ms": 68.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0408:t00",
+      "page": 408,
+      "kind": "text",
+      "label": null,
+      "score": 0.7896490097045898
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0408:t01",
+      "page": 408,
+      "kind": "text",
+      "label": null,
+      "score": 0.7435803719067183
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0422:t05",
+      "page": 422,
+      "kind": "text",
+      "label": null,
+      "score": 0.685839056968689
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0433:t01",
+      "page": 433,
+      "kind": "text",
+      "label": null,
+      "score": 0.6830121874809265
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0528:t01",
+      "page": 528,
+      "kind": "text",
+      "label": null,
+      "score": 0.6732094081390657
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0408:t00",
+     "ADV:p0408:t01",
+     "ADV:p0422:t05",
+     "ADV:p0433:t01",
+     "ADV:p0528:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Graph A soft-drink market share bar charts y-axis label",
+    "filter": null,
+    "latency_ms": 58.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0408:t00",
+      "page": 408,
+      "kind": "text",
+      "label": null,
+      "score": 0.7984222889886936
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0208:t01",
+      "page": 208,
+      "kind": "text",
+      "label": null,
+      "score": 0.7546157533388432
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0528:t01",
+      "page": 528,
+      "kind": "text",
+      "label": null,
+      "score": 0.7545212350151728
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0456:t01",
+      "page": 456,
+      "kind": "text",
+      "label": null,
+      "score": 0.7532052544829111
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0422:t05",
+      "page": 422,
+      "kind": "text",
+      "label": null,
+      "score": 0.7432112250798224
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0208:t01",
+     "ADV:p0456:t01"
+    ],
+    "duplicate_ids": [
+     "ADV:p0408:t00",
+     "ADV:p0528:t01",
+     "ADV:p0422:t05"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "soft-drink market share bar charts Graph A third-tallest bar brand y-axis label",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 52.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0408:t00",
+      "page": 408,
+      "kind": "text",
+      "label": null,
+      "score": 0.7734030755277836
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0408:t01",
+      "page": 408,
+      "kind": "text",
+      "label": null,
+      "score": 0.7255926786440186
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0409:t00",
+      "page": 409,
+      "kind": "text",
+      "label": null,
+      "score": 0.6977791134514022
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0433:t00",
+      "page": 433,
+      "kind": "text",
+      "label": null,
+      "score": 0.691770232704855
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0422:t05",
+      "page": 422,
+      "kind": "text",
+      "label": null,
+      "score": 0.6910972963455612
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0409:t00",
+     "ADV:p0433:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0408:t00",
+     "ADV:p0408:t01",
+     "ADV:p0422:t05"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 8.7 Graph A soft-drink market share bar chart third-tallest bar brand y-axis label",
+    "filter": null,
+    "latency_ms": 57.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0408:t00",
+      "page": 408,
+      "kind": "text",
+      "label": null,
+      "score": 0.7777960300445557
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0409:t00",
+      "page": 409,
+      "kind": "text",
+      "label": null,
+      "score": 0.7415837203512372
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0408:t01",
+      "page": 408,
+      "kind": "text",
+      "label": null,
+      "score": 0.7291124189958125
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0513:t00",
+      "page": 513,
+      "kind": "text",
+      "label": null,
+      "score": 0.710215151309967
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0528:t01",
+      "page": 528,
+      "kind": "text",
+      "label": null,
+      "score": 0.7050999754548152
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0513:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0408:t00",
+     "ADV:p0409:t00",
+     "ADV:p0408:t01",
+     "ADV:p0528:t01"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "The third-tallest bar in Graph A of the soft-drink market share bar charts corresponds to the brand \"Diet Coke.\" The y-axis label for this graph is \"Market Share in %.\"\n\nThis is based on the description of Graph A in Figure 8.7 on page 409, which shows the market share proportions of various soft drink brands with correct labeling and scaling of axes, facilitating easy interpretation and comparison of the data (ADV:p0408:t00, ADV:p0409:t00).\n\nThe exact order of the bars by height from the data in Table 8.1 on page 408 is:\n1. Coca-Cola (18.6%)\n2. Pepsi (9.1%)\n3. Diet Coke (8.0%)\n\nThe y-axis label is indicated as \"Market Share in %\" in the context of these bar charts (ADV:p0408:t00, ADV:p0409:t00).\n\n{\"answer\": \"The brand with the third-tallest bar in Graph A of the soft-drink market share bar charts is Diet Coke. The y-axis label is 'Market Share in %'.\", \"citations\": [\"ADV:p0408:t00\", \"ADV:p0409:t00\"], \"abstain\": false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0408:t00",
+   "ADV:p0408:t01",
+   "ADV:p0422:t05",
+   "ADV:p0433:t01",
+   "ADV:p0528:t01",
+   "ADV:p0208:t01",
+   "ADV:p0456:t01",
+   "ADV:p0409:t00",
+   "ADV:p0433:t00",
+   "ADV:p0513:t00"
+  ],
+  "context_chars": 6912,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 7785,
+   "completion_tokens": 371,
+   "llm_calls": 5
+  },
+  "elapsed_s": 6.55,
+  "cost_usd": 0.003708,
+  "status": "answered",
+  "answer": "The brand with the third-tallest bar in Graph A of the soft-drink market share bar charts is Diet Coke. The y-axis label is 'Market Share in %'.",
+  "citations": [
+   "ADV:p0408:t00",
+   "ADV:p0409:t00"
+  ],
+  "cited_pages": [
+   408,
+   409
+  ],
+  "gold_pages": [
+   409
+  ],
+  "gold_pages_in_context": [
+   409
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": null
+ },
+ {
+  "id": "AT16",
+  "group": "chart",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In the graph of the Poisson distribution for μ = 7 (Figure 3.6), at which value(s) of x does P(x) reach its maximum, and what is the approximate maximum probability?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Poisson distribution μ = 7 maximum probability Figure 3.6",
+    "filter": null,
+    "latency_ms": 59.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0446:t01",
+      "page": 446,
+      "kind": "text",
+      "label": null,
+      "score": 0.7673640528483328
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0446:t00",
+      "page": 446,
+      "kind": "text",
+      "label": null,
+      "score": 0.7664173523882207
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0139:t05",
+      "page": 139,
+      "kind": "text",
+      "label": null,
+      "score": 0.7591125060185783
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0143:t00",
+      "page": 143,
+      "kind": "text",
+      "label": null,
+      "score": 0.7433021817623282
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0547:t01",
+      "page": 547,
+      "kind": "text",
+      "label": null,
+      "score": 0.7402231848106884
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0446:t01",
+     "ADV:p0446:t00",
+     "ADV:p0139:t05",
+     "ADV:p0143:t00",
+     "ADV:p0547:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 3.6 Poisson distribution μ = 7 maximum probability",
+    "filter": null,
+    "latency_ms": 60.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0446:t00",
+      "page": 446,
+      "kind": "text",
+      "label": null,
+      "score": 0.76416988586367
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0139:t05",
+      "page": 139,
+      "kind": "text",
+      "label": null,
+      "score": 0.7635831973801152
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0446:t01",
+      "page": 446,
+      "kind": "text",
+      "label": null,
+      "score": 0.7511782198442103
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0143:t00",
+      "page": 143,
+      "kind": "text",
+      "label": null,
+      "score": 0.750481367111206
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0142:t01",
+      "page": 142,
+      "kind": "text",
+      "label": null,
+      "score": 0.7472679615020752
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0142:t01"
+    ],
+    "duplicate_ids": [
+     "ADV:p0446:t00",
+     "ADV:p0139:t05",
+     "ADV:p0446:t01",
+     "ADV:p0143:t00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 3.6 Poisson distribution μ = 7 maximum probability x value",
+    "filter": null,
+    "latency_ms": 50.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0446:t00",
+      "page": 446,
+      "kind": "text",
+      "label": null,
+      "score": 0.7717503717392032
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0139:t05",
+      "page": 139,
+      "kind": "text",
+      "label": null,
+      "score": 0.7595589590861288
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0143:t00",
+      "page": 143,
+      "kind": "text",
+      "label": null,
+      "score": 0.7586075951328815
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0446:t01",
+      "page": 446,
+      "kind": "text",
+      "label": null,
+      "score": 0.7552959164447948
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0547:t01",
+      "page": 547,
+      "kind": "text",
+      "label": null,
+      "score": 0.7551524334964289
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0446:t00",
+     "ADV:p0139:t05",
+     "ADV:p0143:t00",
+     "ADV:p0446:t01",
+     "ADV:p0547:t01"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "The document contains Figure 3.6 illustrating a Poisson distribution, but the specific details for μ = 7, including the value(s) of x at which P(x) reaches its maximum and the approximate maximum probability, are not explicitly provided in the text or figure descriptions available.\n\nTherefore, I must abstain from answering as the exact values for μ = 7 in Figure 3.6 are missing.\n\n{\"answer\": \"The document does not provide the specific value(s) of x at which P(x) reaches its maximum or the approximate maximum probability for the Poisson distribution with μ = 7 in Figure 3.6.\", \"citations\": [\"ADV:p0143:t00\", \"ADV:p0139:t05\"], \"abstain\": true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0446:t01",
+   "ADV:p0446:t00",
+   "ADV:p0139:t05",
+   "ADV:p0143:t00",
+   "ADV:p0547:t01",
+   "ADV:p0142:t01"
+  ],
+  "context_chars": 4378,
+  "viewed_pages": [],
+  "n_searches": 3,
+  "usage": {
+   "prompt_tokens": 4888,
+   "completion_tokens": 240,
+   "llm_calls": 4
+  },
+  "elapsed_s": 5.02,
+  "cost_usd": 0.002339,
+  "status": "abstain",
+  "answer": "The document does not provide the specific value(s) of x at which P(x) reaches its maximum or the approximate maximum probability for the Poisson distribution with μ = 7 in Figure 3.6.",
+  "citations": [],
+  "abstain_reason": "model_abstained",
+  "gold_pages": [
+   143
+  ],
+  "gold_pages_in_context": [
+   143
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 4
+ },
+ {
+  "id": "AT17",
+  "group": "multihop",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "Which quarter shows the highest revenue in the line chart of quarterly kayak and canoe rental revenues, and what is the exact revenue for that quarter in the data table?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "quarterly kayak and canoe rental revenues line chart",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 89.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0250:t02",
+      "page": 250,
+      "kind": "text",
+      "label": null,
+      "score": 0.8567592247106494
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0251:t00",
+      "page": 251,
+      "kind": "text",
+      "label": null,
+      "score": 0.805506967841754
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0235:t02",
+      "page": 235,
+      "kind": "text",
+      "label": null,
+      "score": 0.8001799940741087
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0521:t00",
+      "page": 521,
+      "kind": "text",
+      "label": null,
+      "score": 0.6533946212059757
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0456:t01",
+      "page": 456,
+      "kind": "text",
+      "label": null,
+      "score": 0.6490278662409988
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0250:t02",
+     "ADV:p0251:t00",
+     "ADV:p0235:t02",
+     "ADV:p0521:t00",
+     "ADV:p0456:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 5.18 Quarterly Revenues for Kayak and Canoe Rentals",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 57.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0250:t02",
+      "page": 250,
+      "kind": "text",
+      "label": null,
+      "score": 0.840751905351656
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0251:t00",
+      "page": 251,
+      "kind": "text",
+      "label": null,
+      "score": 0.7907654047012329
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0235:t02",
+      "page": 235,
+      "kind": "text",
+      "label": null,
+      "score": 0.7781918181066635
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0521:t00",
+      "page": 521,
+      "kind": "text",
+      "label": null,
+      "score": 0.613343358039856
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0522:t00",
+      "page": 522,
+      "kind": "text",
+      "label": null,
+      "score": 0.595685100298233
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0522:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0250:t02",
+     "ADV:p0251:t00",
+     "ADV:p0235:t02",
+     "ADV:p0521:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "The highest revenue quarter in the line chart of quarterly kayak and canoe rental revenues is 2023 Summer, with an exact revenue of $3849 as shown in the data table (Table 5.2 Quarterly Revenues for Kayak and Canoe Rentals). This is confirmed by the data in Table 5.4 and the description of Figure 5.18 which shows the quarterly revenues including seasonal components and adjustments.\n\nCitations: [\"ADV:p0235:t02\", \"ADV:p0251:t00\"] (pages 235, 251)"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0250:t02",
+   "ADV:p0251:t00",
+   "ADV:p0235:t02",
+   "ADV:p0521:t00",
+   "ADV:p0456:t01",
+   "ADV:p0522:t00"
+  ],
+  "context_chars": 4951,
+  "viewed_pages": [],
+  "n_searches": 2,
+  "usage": {
+   "prompt_tokens": 3973,
+   "completion_tokens": 170,
+   "llm_calls": 3
+  },
+  "elapsed_s": 3.52,
+  "cost_usd": 0.001861,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng để trả lời.",
+  "citations": [],
+  "abstain_reason": "unparseable_final",
+  "gold_pages": [
+   235,
+   236
+  ],
+  "gold_pages_in_context": [
+   235
+  ],
+  "all_gold_pages_in_context": false,
+  "first_search_gold_page_rank": 3
+ },
+ {
+  "id": "AT18",
+  "group": "multihop",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "Graph B of the soft-drink market share example scales its vertical axis up to what value, and what is the largest actual share in the underlying Table 8.1?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "soft-drink market share Graph B vertical axis largest actual share Table 8.1",
+    "filter": null,
+    "latency_ms": 48.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0408:t00",
+      "page": 408,
+      "kind": "text",
+      "label": null,
+      "score": 0.7806673049926758
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0408:t01",
+      "page": 408,
+      "kind": "text",
+      "label": null,
+      "score": 0.7743703395878919
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0409:t00",
+      "page": 409,
+      "kind": "text",
+      "label": null,
+      "score": 0.7246243521795076
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0532:t01",
+      "page": 532,
+      "kind": "text",
+      "label": null,
+      "score": 0.6792834614853265
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0528:t01",
+      "page": 528,
+      "kind": "text",
+      "label": null,
+      "score": 0.6784899618041609
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0408:t00",
+     "ADV:p0408:t01",
+     "ADV:p0409:t00",
+     "ADV:p0532:t01",
+     "ADV:p0528:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "Graph B of the soft-drink market share example scales its vertical axis from 0 to 100. The largest actual share in the underlying Table 8.1 is Coca-Cola with 18.6%.\n\nThis is supported by the text on page 408 and 409, which states that Graph B scales the vertical axis from 0 to 100, and Table 8.1 lists Coca-Cola with the largest share of 18.6% among the top 10 brands.\n\n{\"answer\": \"Graph B scales its vertical axis from 0 to 100. The largest actual share in Table 8.1 is Coca-Cola with 18.6%.\", \"citations\": [\"ADV:p0408:t00\", \"ADV:p0408:t01\", \"ADV:p0409:t00\"], \"abstain\": false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0408:t00",
+   "ADV:p0408:t01",
+   "ADV:p0409:t00",
+   "ADV:p0532:t01",
+   "ADV:p0528:t01"
+  ],
+  "context_chars": 3356,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1770,
+   "completion_tokens": 205,
+   "llm_calls": 2
+  },
+  "elapsed_s": 3.0,
+  "cost_usd": 0.001036,
+  "status": "answered",
+  "answer": "Graph B scales its vertical axis from 0 to 100. The largest actual share in Table 8.1 is Coca-Cola with 18.6%.",
+  "citations": [
+   "ADV:p0408:t00",
+   "ADV:p0408:t01",
+   "ADV:p0409:t00"
+  ],
+  "cited_pages": [
+   408,
+   409
+  ],
+  "gold_pages": [
+   408,
+   409
+  ],
+  "gold_pages_in_context": [
+   408,
+   409
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AT19",
+  "group": "multihop",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In the flower/tree/grass confusion matrix, how many grasses were misidentified as flowers, and what overall accuracy does the book compute for this model?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "flower tree grass confusion matrix accuracy",
+    "filter": null,
+    "latency_ms": 41.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0300:t01",
+      "page": 300,
+      "kind": "text",
+      "label": null,
+      "score": 0.8256420001005066
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0300:t00",
+      "page": 300,
+      "kind": "text",
+      "label": null,
+      "score": 0.8038702484485374
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0301:t01",
+      "page": 301,
+      "kind": "text",
+      "label": null,
+      "score": 0.7887286795701226
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0302:t00",
+      "page": 302,
+      "kind": "text",
+      "label": null,
+      "score": 0.7720369372323881
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0301:t05",
+      "page": 301,
+      "kind": "text",
+      "label": null,
+      "score": 0.7577859144721235
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0300:t01",
+     "ADV:p0300:t00",
+     "ADV:p0301:t01",
+     "ADV:p0302:t00",
+     "ADV:p0301:t05"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "overall accuracy flower tree grass model",
+    "filter": null,
+    "latency_ms": 47.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0300:t01",
+      "page": 300,
+      "kind": "text",
+      "label": null,
+      "score": 0.7524463386801696
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0322:t02",
+      "page": 322,
+      "kind": "text",
+      "label": null,
+      "score": 0.7253251887954831
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0325:t00",
+      "page": 325,
+      "kind": "text",
+      "label": null,
+      "score": 0.7245093152219478
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0301:t01",
+      "page": 301,
+      "kind": "text",
+      "label": null,
+      "score": 0.7164295315742493
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0280:t01",
+      "page": 280,
+      "kind": "text",
+      "label": null,
+      "score": 0.7126620754406413
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0322:t02",
+     "ADV:p0325:t00",
+     "ADV:p0280:t01"
+    ],
+    "duplicate_ids": [
+     "ADV:p0300:t01",
+     "ADV:p0301:t01"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "In the flower/tree/grass confusion matrix, 12 grasses were misidentified as flowers.\n\nThe overall accuracy computed for this model is not explicitly stated in the provided passages, but the confusion matrix shows the following correct identifications:\n- 23 flowers correctly identified as flowers,\n- 32 trees correctly identified as trees,\n- 18 grasses correctly identified as grasses.\n\nThe total number of samples is 100 (as mentioned in the text). The sum of correct identifications is 23 + 32 + 18 = 73.\n\nTherefore, the overall accuracy is 73%.\n\nThis is derived from the confusion matrix in Table 6.6 on page 300 and the accompanying explanation on pages 300-301 (ADV:p0300:t01, ADV:p0301:t01).\n\n{\"answer\": \"12 grasses were misidentified as flowers. The overall accuracy of the model is 73%, calculated as the sum of correct identifications (23 flowers + 32 trees + 18 grasses = 73) out of 100 total samples.\", \"citations\": [\"ADV:p0300:t01\", \"ADV:p0301:t01\"], \"abstain\": false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0300:t01",
+   "ADV:p0300:t00",
+   "ADV:p0301:t01",
+   "ADV:p0302:t00",
+   "ADV:p0301:t05",
+   "ADV:p0322:t02",
+   "ADV:p0325:t00",
+   "ADV:p0280:t01"
+  ],
+  "context_chars": 6548,
+  "viewed_pages": [],
+  "n_searches": 2,
+  "usage": {
+   "prompt_tokens": 4027,
+   "completion_tokens": 275,
+   "llm_calls": 3
+  },
+  "elapsed_s": 4.57,
+  "cost_usd": 0.002051,
+  "status": "answered",
+  "answer": "12 grasses were misidentified as flowers. The overall accuracy of the model is 73%, calculated as the sum of correct identifications (23 flowers + 32 trees + 18 grasses = 73) out of 100 total samples.",
+  "citations": [
+   "ADV:p0300:t01",
+   "ADV:p0301:t01"
+  ],
+  "cited_pages": [
+   300,
+   301
+  ],
+  "gold_pages": [
+   300,
+   301
+  ],
+  "gold_pages_in_context": [
+   300,
+   301
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AT20",
+  "group": "multihop",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "According to the Brief History of NLP, how many years passed between the introduction of the Transformer architecture and the release of ChatGPT?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Brief History of NLP Transformer ChatGPT",
+    "filter": null,
+    "latency_ms": 77.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0370:t02",
+      "page": 370,
+      "kind": "text",
+      "label": null,
+      "score": 0.8543382969893055
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0376:t01",
+      "page": 376,
+      "kind": "text",
+      "label": null,
+      "score": 0.8497900635379454
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0369:t04",
+      "page": 369,
+      "kind": "text",
+      "label": null,
+      "score": 0.8412354872401693
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0371:t02",
+      "page": 371,
+      "kind": "text",
+      "label": null,
+      "score": 0.8117584940267091
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0372:t00",
+      "page": 372,
+      "kind": "text",
+      "label": null,
+      "score": 0.798480761141733
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0370:t02",
+     "ADV:p0376:t01",
+     "ADV:p0369:t04",
+     "ADV:p0371:t02",
+     "ADV:p0372:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The Transformer architecture was introduced in 2017, and ChatGPT was released in 2022. Therefore, 5 years passed between the introduction of the Transformer architecture and the release of ChatGPT.\",\"citations\":[\"ADV:p0371:t02\",\"ADV:p0372:t00\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0370:t02",
+   "ADV:p0376:t01",
+   "ADV:p0369:t04",
+   "ADV:p0371:t02",
+   "ADV:p0372:t00"
+  ],
+  "context_chars": 4303,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1812,
+   "completion_tokens": 88,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.3,
+  "cost_usd": 0.000866,
+  "status": "answered",
+  "answer": "The Transformer architecture was introduced in 2017, and ChatGPT was released in 2022. Therefore, 5 years passed between the introduction of the Transformer architecture and the release of ChatGPT.",
+  "citations": [
+   "ADV:p0371:t02",
+   "ADV:p0372:t00"
+  ],
+  "cited_pages": [
+   371,
+   372
+  ],
+  "gold_pages": [
+   371,
+   372
+  ],
+  "gold_pages_in_context": [
+   371,
+   372
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 4
+ },
+ {
+  "id": "AT21",
+  "group": "text",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "According to the Anaconda (2020) survey cited in the book, how much of the data science process do data scientists spend on data collection and cleaning, and how much on analysis and communication?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Anaconda 2020 survey data collection cleaning analysis communication",
+    "filter": null,
+    "latency_ms": 69.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0094:t04",
+      "page": 94,
+      "kind": "text",
+      "label": null,
+      "score": 0.6829659531732838
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0224:t04",
+      "page": 224,
+      "kind": "text",
+      "label": null,
+      "score": 0.6814431331821521
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0073:t06",
+      "page": 73,
+      "kind": "text",
+      "label": null,
+      "score": 0.6785672903060961
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0067:t00",
+      "page": 67,
+      "kind": "text",
+      "label": null,
+      "score": 0.6719900760662465
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0021:t00",
+      "page": 21,
+      "kind": "text",
+      "label": null,
+      "score": 0.6594758642657057
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0094:t04",
+     "ADV:p0224:t04",
+     "ADV:p0073:t06",
+     "ADV:p0067:t00",
+     "ADV:p0021:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"According to the Anaconda (2020) survey cited in the book, data scientists spend about half of the entire data science process on data collection and cleaning. Data analysis and communication each take about a quarter to a third of the time, depending on the job.\",\"citations\":[\"ADV:p0021:t00\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0094:t04",
+   "ADV:p0224:t04",
+   "ADV:p0073:t06",
+   "ADV:p0067:t00",
+   "ADV:p0021:t00"
+  ],
+  "context_chars": 3663,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1694,
+   "completion_tokens": 98,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.19,
+  "cost_usd": 0.000834,
+  "status": "answered",
+  "answer": "According to the Anaconda (2020) survey cited in the book, data scientists spend about half of the entire data science process on data collection and cleaning. Data analysis and communication each take about a quarter to a third of the time, depending on the job.",
+  "citations": [
+   "ADV:p0021:t00"
+  ],
+  "cited_pages": [
+   21
+  ],
+  "gold_pages": [
+   21
+  ],
+  "gold_pages_in_context": [
+   21
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 5
+ },
+ {
+  "id": "AT22",
+  "group": "text",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "What rule of thumb does the book give for choosing the number of histogram bins, and how many bins would that give for 500 data values?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "histogram bins rule of thumb",
+    "filter": null,
+    "latency_ms": 54.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0430:t01",
+      "page": 430,
+      "kind": "text",
+      "label": null,
+      "score": 0.7882469892501887
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0433:t00",
+      "page": 433,
+      "kind": "text",
+      "label": null,
+      "score": 0.745644554236208
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0432:t00",
+      "page": 432,
+      "kind": "text",
+      "label": null,
+      "score": 0.7216792868567053
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0430:t00",
+      "page": 430,
+      "kind": "text",
+      "label": null,
+      "score": 0.7044022259472587
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0365:t02",
+      "page": 365,
+      "kind": "text",
+      "label": null,
+      "score": 0.7023731292708606
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0430:t01",
+     "ADV:p0433:t00",
+     "ADV:p0432:t00",
+     "ADV:p0430:t00",
+     "ADV:p0365:t02"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "The book gives the rule of thumb for choosing the number of histogram bins as approximately the square root of the number of data points. For example, if there are 500 data values, then a researcher might decide to use approximately 22 bins to organize the data.\n\nThis is stated as: \"a rule of thumb is to set up the number of bins to approximate the square root of the number of data points. For example, if there are 500 data values, then a researcher might decide to use approximately 22 bins to organize the data.\"\n\nCitation: ADV:p0430:t01 (page 430, text)"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0430:t01",
+   "ADV:p0433:t00",
+   "ADV:p0432:t00",
+   "ADV:p0430:t00",
+   "ADV:p0365:t02"
+  ],
+  "context_chars": 4807,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 2025,
+   "completion_tokens": 145,
+   "llm_calls": 2
+  },
+  "elapsed_s": 3.35,
+  "cost_usd": 0.001042,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng để trả lời.",
+  "citations": [],
+  "abstain_reason": "unparseable_final",
+  "gold_pages": [
+   430
+  ],
+  "gold_pages_in_context": [
+   430
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AT23",
+  "group": "text",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "What share of global electricity demand is ICT estimated to account for, and what is expected for its greenhouse gas emissions by 2040?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "ICT share of global electricity demand and greenhouse gas emissions by 2040",
+    "filter": null,
+    "latency_ms": 76.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0404:t02",
+      "page": 404,
+      "kind": "text",
+      "label": null,
+      "score": 0.8184704780578613
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0404:t01",
+      "page": 404,
+      "kind": "text",
+      "label": null,
+      "score": 0.694512105642311
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0420:t00",
+      "page": 420,
+      "kind": "text",
+      "label": null,
+      "score": 0.6809084795822574
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0419:t01",
+      "page": 419,
+      "kind": "text",
+      "label": null,
+      "score": 0.6449004411697388
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0233:t02",
+      "page": 233,
+      "kind": "text",
+      "label": null,
+      "score": 0.6418190002441406
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0404:t02",
+     "ADV:p0404:t01",
+     "ADV:p0420:t00",
+     "ADV:p0419:t01",
+     "ADV:p0233:t02"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"Information and communication technology (ICT) is estimated to account for between 1 and 1.5% of all global electricity demand. Greenhouse gas emissions from these sources are expected to exceed 14% of global emissions of greenhouse gases by 2040.\",\"citations\":[\"ADV:p0404:t02\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0404:t02",
+   "ADV:p0404:t01",
+   "ADV:p0420:t00",
+   "ADV:p0419:t01",
+   "ADV:p0233:t02"
+  ],
+  "context_chars": 4564,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1953,
+   "completion_tokens": 100,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.14,
+  "cost_usd": 0.000941,
+  "status": "answered",
+  "answer": "Information and communication technology (ICT) is estimated to account for between 1 and 1.5% of all global electricity demand. Greenhouse gas emissions from these sources are expected to exceed 14% of global emissions of greenhouse gases by 2040.",
+  "citations": [
+   "ADV:p0404:t02"
+  ],
+  "cited_pages": [
+   404
+  ],
+  "gold_pages": [
+   404
+  ],
+  "gold_pages_in_context": [
+   404
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AT24",
+  "group": "text",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In the Poisson example about vehicles entering a parking garage (mean 7 per 10-minute interval), what is the probability that 9 vehicles enter in a 10-minute interval?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Poisson vehicles entering parking garage mean 7 10-minute interval probability 9 vehicles",
+    "filter": null,
+    "latency_ms": 47.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0142:t03",
+      "page": 142,
+      "kind": "text",
+      "label": null,
+      "score": 0.8875292010587946
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0143:t00",
+      "page": 143,
+      "kind": "text",
+      "label": null,
+      "score": 0.8040047404763272
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0142:t02",
+      "page": 142,
+      "kind": "text",
+      "label": null,
+      "score": 0.717267785398032
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0142:t01",
+      "page": 142,
+      "kind": "text",
+      "label": null,
+      "score": 0.7055952128413205
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0446:t00",
+      "page": 446,
+      "kind": "text",
+      "label": null,
+      "score": 0.6948715812120937
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0142:t03",
+     "ADV:p0143:t00",
+     "ADV:p0142:t02",
+     "ADV:p0142:t01",
+     "ADV:p0446:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "The probability that 9 vehicles enter the parking garage in a 10-minute interval, given the mean number of vehicles is 7 per 10-minute interval, is about 10%.\n\nThis is from the Poisson distribution example where the mean (λ) is 7 and the random variable x is 9. The probability is calculated using the Poisson probability formula and results in approximately 10%.\n\nCitation: [\"ADV:p0142:t03\", \"ADV:p0143:t00\"] (pages 142-143, example 3.26)"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0142:t03",
+   "ADV:p0143:t00",
+   "ADV:p0142:t02",
+   "ADV:p0142:t01",
+   "ADV:p0446:t00"
+  ],
+  "context_chars": 4692,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1926,
+   "completion_tokens": 142,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.3,
+  "cost_usd": 0.000998,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng để trả lời.",
+  "citations": [],
+  "abstain_reason": "unparseable_final",
+  "gold_pages": [
+   143
+  ],
+  "gold_pages_in_context": [
+   143
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 2
+ },
+ {
+  "id": "ATU1",
+  "group": "unanswerable",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "What was Coca-Cola's share of volume in the global soft drinks industry in 2023 according to the book?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Coca-Cola share of volume global soft drinks 2023",
+    "filter": null,
+    "latency_ms": 87.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0408:t01",
+      "page": 408,
+      "kind": "text",
+      "label": null,
+      "score": 0.7359782457351893
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0533:t00",
+      "page": 533,
+      "kind": "text",
+      "label": null,
+      "score": 0.6454103166354126
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0532:t01",
+      "page": 532,
+      "kind": "text",
+      "label": null,
+      "score": 0.6429180843634806
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0408:t00",
+      "page": 408,
+      "kind": "text",
+      "label": null,
+      "score": 0.6272832903007659
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0535:t00",
+      "page": 535,
+      "kind": "text",
+      "label": null,
+      "score": 0.5947253462508623
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0408:t01",
+     "ADV:p0533:t00",
+     "ADV:p0532:t01",
+     "ADV:p0408:t00",
+     "ADV:p0535:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"Coca-Cola's share of volume in the global soft drinks industry in 2019 was 18.6%. The document does not provide the share specifically for 2023.\",\"citations\":[\"ADV:p0408:t00\"],\"abstain\":true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0408:t01",
+   "ADV:p0533:t00",
+   "ADV:p0532:t01",
+   "ADV:p0408:t00",
+   "ADV:p0535:t00"
+  ],
+  "context_chars": 3990,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1896,
+   "completion_tokens": 82,
+   "llm_calls": 2
+  },
+  "elapsed_s": 1.95,
+  "cost_usd": 0.00089,
+  "status": "abstain",
+  "answer": "Coca-Cola's share of volume in the global soft drinks industry in 2019 was 18.6%. The document does not provide the share specifically for 2023.",
+  "citations": [],
+  "abstain_reason": "model_abstained"
+ },
+ {
+  "id": "ATU2",
+  "group": "unanswerable",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "What is the value of z_c for a 97% confidence level in the table of typical z_c values?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "table of typical z_c values",
+    "filter": null,
+    "latency_ms": 65.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0160:t01",
+      "page": 160,
+      "kind": "text",
+      "label": null,
+      "score": 0.7103762375859981
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0526:t01",
+      "page": 526,
+      "kind": "text",
+      "label": null,
+      "score": 0.6995136262145933
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0160:t00",
+      "page": 160,
+      "kind": "text",
+      "label": null,
+      "score": 0.6944663706740031
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0550:t01",
+      "page": 550,
+      "kind": "text",
+      "label": null,
+      "score": 0.6859779136207256
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0012:t01",
+      "page": 12,
+      "kind": "text",
+      "label": null,
+      "score": 0.6854889171732812
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0160:t01",
+     "ADV:p0526:t01",
+     "ADV:p0160:t00",
+     "ADV:p0550:t01",
+     "ADV:p0012:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "z_c 97% confidence level",
+    "filter": null,
+    "latency_ms": 49.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0160:t00",
+      "page": 160,
+      "kind": "text",
+      "label": null,
+      "score": 0.7120775408791042
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0160:t01",
+      "page": 160,
+      "kind": "text",
+      "label": null,
+      "score": 0.7071138620376587
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0217:t01",
+      "page": 217,
+      "kind": "text",
+      "label": null,
+      "score": 0.6798654007831467
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0157:t03",
+      "page": 157,
+      "kind": "text",
+      "label": null,
+      "score": 0.6584240605325673
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0219:t02",
+      "page": 219,
+      "kind": "text",
+      "label": null,
+      "score": 0.6583441495895386
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0217:t01",
+     "ADV:p0157:t03",
+     "ADV:p0219:t02"
+    ],
+    "duplicate_ids": [
+     "ADV:p0160:t00",
+     "ADV:p0160:t01"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Table 4.2 Typical Values of z_c for Various Confidence Levels",
+    "filter": null,
+    "latency_ms": 76.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0160:t00",
+      "page": 160,
+      "kind": "text",
+      "label": null,
+      "score": 0.7901971936225948
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0160:t01",
+      "page": 160,
+      "kind": "text",
+      "label": null,
+      "score": 0.763066007908226
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0172:t02",
+      "page": 172,
+      "kind": "text",
+      "label": null,
+      "score": 0.7487868370071844
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0163:t00",
+      "page": 163,
+      "kind": "text",
+      "label": null,
+      "score": 0.712573085716595
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0219:t02",
+      "page": 219,
+      "kind": "text",
+      "label": null,
+      "score": 0.7110940390173186
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0172:t02",
+     "ADV:p0163:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0160:t00",
+     "ADV:p0160:t01",
+     "ADV:p0219:t02"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "z_c 97% confidence level",
+    "filter": null,
+    "latency_ms": 69.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0160:t00",
+      "page": 160,
+      "kind": "text",
+      "label": null,
+      "score": 0.7120775408791042
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0160:t01",
+      "page": 160,
+      "kind": "text",
+      "label": null,
+      "score": 0.7071138620376587
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0217:t01",
+      "page": 217,
+      "kind": "text",
+      "label": null,
+      "score": 0.6798654007831467
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0157:t03",
+      "page": 157,
+      "kind": "text",
+      "label": null,
+      "score": 0.6584240605325673
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0219:t02",
+      "page": 219,
+      "kind": "text",
+      "label": null,
+      "score": 0.6583441495895386
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0160:t00",
+     "ADV:p0160:t01",
+     "ADV:p0217:t01",
+     "ADV:p0157:t03",
+     "ADV:p0219:t02"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The document does not provide the value of z_c for a 97% confidence level in the table of typical z_c values. The table shown (Table 4.2) includes values for 80%, 90%, 95%, and 99% confidence levels, but 97% is not listed.\",\"citations\":[\"ADV:p0160:t00\",\"ADV:p0160:t01\"],\"abstain\":true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0160:t01",
+   "ADV:p0526:t01",
+   "ADV:p0160:t00",
+   "ADV:p0550:t01",
+   "ADV:p0012:t01",
+   "ADV:p0217:t01",
+   "ADV:p0157:t03",
+   "ADV:p0219:t02",
+   "ADV:p0172:t02",
+   "ADV:p0163:t00"
+  ],
+  "context_chars": 7229,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 8006,
+   "completion_tokens": 176,
+   "llm_calls": 5
+  },
+  "elapsed_s": 4.64,
+  "cost_usd": 0.003484,
+  "status": "abstain",
+  "answer": "The document does not provide the value of z_c for a 97% confidence level in the table of typical z_c values. The table shown (Table 4.2) includes values for 80%, 90%, 95%, and 99% confidence levels, but 97% is not listed.",
+  "citations": [],
+  "abstain_reason": "model_abstained"
+ },
+ {
+  "id": "ATU3",
+  "group": "unanswerable",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "What was the kayak and canoe rental revenue in Spring 2024?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "kayak and canoe rental revenue Spring 2024",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 75.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0250:t02",
+      "page": 250,
+      "kind": "text",
+      "label": null,
+      "score": 0.7732802168560022
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0235:t02",
+      "page": 235,
+      "kind": "text",
+      "label": null,
+      "score": 0.7493857145309502
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0251:t00",
+      "page": 251,
+      "kind": "text",
+      "label": null,
+      "score": 0.7489203661036723
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0521:t00",
+      "page": 521,
+      "kind": "text",
+      "label": null,
+      "score": 0.5971980450867452
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0204:t02",
+      "page": 204,
+      "kind": "text",
+      "label": null,
+      "score": 0.5878467314151972
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0250:t02",
+     "ADV:p0235:t02",
+     "ADV:p0251:t00",
+     "ADV:p0521:t00",
+     "ADV:p0204:t02"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "The kayak and canoe rental revenue in Spring 2024 is not explicitly listed in the document. The latest available data for Spring is from 2023, which is $2704. The document provides quarterly revenues for three consecutive years up to 2023 but does not include data for 2024.\n\nCitations:\n- Table 5.2 Quarterly Revenues for Kayak and Canoe Rentals (page 235)\n- Table 5.4 Quarterly Revenues for Kayak and Canoe Rentals (page 250-251)\n\nSince the document does not contain the revenue for Spring 2024, I must abstain.\n{\"answer\":\"The document does not provide kayak and canoe rental revenue data for Spring 2024. The latest available data is for Spring 2023, which is $2704.\",\"citations\":[\"ADV:p0235:t02\",\"ADV:p0250:t02\",\"ADV:p0251:t00\"],\"abstain\":true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0250:t02",
+   "ADV:p0235:t02",
+   "ADV:p0251:t00",
+   "ADV:p0521:t00",
+   "ADV:p0204:t02"
+  ],
+  "context_chars": 3928,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1969,
+   "completion_tokens": 224,
+   "llm_calls": 2
+  },
+  "elapsed_s": 3.42,
+  "cost_usd": 0.001146,
+  "status": "abstain",
+  "answer": "The document does not provide kayak and canoe rental revenue data for Spring 2024. The latest available data is for Spring 2023, which is $2704.",
+  "citations": [],
+  "abstain_reason": "model_abstained"
+ },
+ {
+  "id": "ATU4",
+  "group": "unanswerable",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "What learning rate was used to train the four-layer neural network shown in Figure 7.3?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 7.3 learning rate",
+    "filter": null,
+    "latency_ms": 49.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0383:t04",
+      "page": 383,
+      "kind": "text",
+      "label": null,
+      "score": 0.6875239200875819
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0280:t01",
+      "page": 280,
+      "kind": "text",
+      "label": null,
+      "score": 0.6800155615778766
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0500:t03",
+      "page": 500,
+      "kind": "text",
+      "label": null,
+      "score": 0.6763645796341206
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0364:t03",
+      "page": 364,
+      "kind": "text",
+      "label": null,
+      "score": 0.6735220746086803
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0139:t05",
+      "page": 139,
+      "kind": "text",
+      "label": null,
+      "score": 0.6691520608482289
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0383:t04",
+     "ADV:p0280:t01",
+     "ADV:p0500:t03",
+     "ADV:p0364:t03",
+     "ADV:p0139:t05"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 7.3 four-layer neural network learning rate",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 55.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0380:t02",
+      "page": 380,
+      "kind": "text",
+      "label": null,
+      "score": 0.7463020833550655
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0381:t02",
+      "page": 381,
+      "kind": "text",
+      "label": null,
+      "score": 0.7451841609125119
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0365:t04",
+      "page": 365,
+      "kind": "text",
+      "label": null,
+      "score": 0.7438975725235015
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0356:t01",
+      "page": 356,
+      "kind": "text",
+      "label": null,
+      "score": 0.7424021516798658
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0384:t02",
+      "page": 384,
+      "kind": "text",
+      "label": null,
+      "score": 0.7422085558051745
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0380:t02",
+     "ADV:p0381:t02",
+     "ADV:p0365:t04",
+     "ADV:p0356:t01",
+     "ADV:p0384:t02"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 7.3 learning rate four-layer neural network",
+    "filter": null,
+    "latency_ms": 67.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0343:t01",
+      "page": 343,
+      "kind": "text",
+      "label": null,
+      "score": 0.755800380957116
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0380:t02",
+      "page": 380,
+      "kind": "text",
+      "label": null,
+      "score": 0.7557530853601162
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0356:t01",
+      "page": 356,
+      "kind": "text",
+      "label": null,
+      "score": 0.7551414820636215
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0381:t01",
+      "page": 381,
+      "kind": "text",
+      "label": null,
+      "score": 0.7541614477826891
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0013:t01",
+      "page": 13,
+      "kind": "text",
+      "label": null,
+      "score": 0.7535192223500755
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0343:t01",
+     "ADV:p0381:t01",
+     "ADV:p0013:t01"
+    ],
+    "duplicate_ids": [
+     "ADV:p0380:t02",
+     "ADV:p0356:t01"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "learning rate four-layer neural network Figure 7.3",
+    "filter": null,
+    "latency_ms": 53.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0356:t01",
+      "page": 356,
+      "kind": "text",
+      "label": null,
+      "score": 0.7582662105560303
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0013:t01",
+      "page": 13,
+      "kind": "text",
+      "label": null,
+      "score": 0.7548531293869019
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0380:t02",
+      "page": 380,
+      "kind": "text",
+      "label": null,
+      "score": 0.7498947381973267
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0363:t02",
+      "page": 363,
+      "kind": "text",
+      "label": null,
+      "score": 0.7485657930374146
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0384:t02",
+      "page": 384,
+      "kind": "text",
+      "label": null,
+      "score": 0.748400866985321
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0363:t02"
+    ],
+    "duplicate_ids": [
+     "ADV:p0356:t01",
+     "ADV:p0013:t01",
+     "ADV:p0380:t02",
+     "ADV:p0384:t02"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "The document does not contain explicit information about the learning rate used to train the four-layer neural network shown in Figure 7.3.\n\n{\"answer\":\"The document does not specify the learning rate used to train the four-layer neural network shown in Figure 7.3.\",\"citations\":[\"ADV:p0343:t01\"],\"abstain\":true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0383:t04",
+   "ADV:p0280:t01",
+   "ADV:p0500:t03",
+   "ADV:p0364:t03",
+   "ADV:p0139:t05",
+   "ADV:p0380:t02",
+   "ADV:p0381:t02",
+   "ADV:p0365:t04",
+   "ADV:p0356:t01",
+   "ADV:p0384:t02",
+   "ADV:p0343:t01",
+   "ADV:p0381:t01",
+   "ADV:p0013:t01",
+   "ADV:p0363:t02"
+  ],
+  "context_chars": 10964,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 10030,
+   "completion_tokens": 167,
+   "llm_calls": 5
+  },
+  "elapsed_s": 4.64,
+  "cost_usd": 0.004279,
+  "status": "abstain",
+  "answer": "The document does not specify the learning rate used to train the four-layer neural network shown in Figure 7.3.",
+  "citations": [],
+  "abstain_reason": "model_abstained"
+ },
+ {
+  "id": "ATU5",
+  "group": "unanswerable",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In the Huffman tree diagram, what binary code is assigned to symbol E?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Huffman tree diagram symbol E binary code",
+    "filter": null,
+    "latency_ms": 69.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0098:t05",
+      "page": 98,
+      "kind": "text",
+      "label": null,
+      "score": 0.7427035723505394
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0104:t03",
+      "page": 104,
+      "kind": "text",
+      "label": null,
+      "score": 0.6654224992910847
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0099:t00",
+      "page": 99,
+      "kind": "text",
+      "label": null,
+      "score": 0.6542514378724815
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0323:t03",
+      "page": 323,
+      "kind": "text",
+      "label": null,
+      "score": 0.628325946034323
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0324:t00",
+      "page": 324,
+      "kind": "text",
+      "label": null,
+      "score": 0.6269217204591547
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0098:t05",
+     "ADV:p0104:t03",
+     "ADV:p0099:t00",
+     "ADV:p0323:t03",
+     "ADV:p0324:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 2.4 Huffman Tree Diagram",
+    "filter": null,
+    "latency_ms": 56.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0324:t00",
+      "page": 324,
+      "kind": "text",
+      "label": null,
+      "score": 0.7169970015290974
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0323:t03",
+      "page": 323,
+      "kind": "text",
+      "label": null,
+      "score": 0.687730587991406
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0098:t05",
+      "page": 98,
+      "kind": "text",
+      "label": null,
+      "score": 0.6770597696304369
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0321:t00",
+      "page": 321,
+      "kind": "text",
+      "label": null,
+      "score": 0.6701946252236453
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0322:t00",
+      "page": 322,
+      "kind": "text",
+      "label": null,
+      "score": 0.6632547779971626
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0321:t00",
+     "ADV:p0322:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0324:t00",
+     "ADV:p0323:t03",
+     "ADV:p0098:t05"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Huffman tree diagram symbol E code",
+    "filter": null,
+    "latency_ms": 93.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0098:t05",
+      "page": 98,
+      "kind": "text",
+      "label": null,
+      "score": 0.7094734907150319
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0104:t03",
+      "page": 104,
+      "kind": "text",
+      "label": null,
+      "score": 0.6518593236249913
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0099:t00",
+      "page": 99,
+      "kind": "text",
+      "label": null,
+      "score": 0.6221612321042291
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0323:t03",
+      "page": 323,
+      "kind": "text",
+      "label": null,
+      "score": 0.6125532254513233
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0322:t00",
+      "page": 322,
+      "kind": "text",
+      "label": null,
+      "score": 0.609431253739446
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0098:t05",
+     "ADV:p0104:t03",
+     "ADV:p0099:t00",
+     "ADV:p0323:t03",
+     "ADV:p0322:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The document does not contain the specific binary code assigned to symbol E in the Huffman tree diagram. The Huffman tree diagram and its codes are not explicitly detailed in the text or figures available.\",\"citations\":[\"ADV:p0098:t05\",\"ADV:p0099:t00\"],\"abstain\":true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0098:t05",
+   "ADV:p0104:t03",
+   "ADV:p0099:t00",
+   "ADV:p0323:t03",
+   "ADV:p0324:t00",
+   "ADV:p0321:t00",
+   "ADV:p0322:t00"
+  ],
+  "context_chars": 5843,
+  "viewed_pages": [],
+  "n_searches": 3,
+  "usage": {
+   "prompt_tokens": 5756,
+   "completion_tokens": 130,
+   "llm_calls": 4
+  },
+  "elapsed_s": 3.91,
+  "cost_usd": 0.00251,
+  "status": "abstain",
+  "answer": "The document does not contain the specific binary code assigned to symbol E in the Huffman tree diagram. The Huffman tree diagram and its codes are not explicitly detailed in the text or figures available.",
+  "citations": [],
+  "abstain_reason": "model_abstained"
+ },
+ {
+  "id": "ATU6",
+  "group": "unanswerable",
+  "split": "test",
+  "config": "V0_text_dense",
+  "question": "In the grid heatmap of crop harvest by local farmer, what is the carrot harvest for Farmer Joe?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "grid heatmap crop harvest Farmer Joe carrot",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 58.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0451:t00",
+      "page": 451,
+      "kind": "text",
+      "label": null,
+      "score": 0.7722484876665211
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0451:t01",
+      "page": 451,
+      "kind": "text",
+      "label": null,
+      "score": 0.7378536462783866
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0450:t03",
+      "page": 450,
+      "kind": "text",
+      "label": null,
+      "score": 0.6674511034815858
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0453:t00",
+      "page": 453,
+      "kind": "text",
+      "label": null,
+      "score": 0.6517281351413565
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0449:t01",
+      "page": 449,
+      "kind": "text",
+      "label": null,
+      "score": 0.6502460270680153
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0451:t00",
+     "ADV:p0451:t01",
+     "ADV:p0450:t03",
+     "ADV:p0453:t00",
+     "ADV:p0449:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 9.7 carrot harvest Farmer Joe",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 52.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0451:t00",
+      "page": 451,
+      "kind": "text",
+      "label": null,
+      "score": 0.6358676011799106
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0451:t01",
+      "page": 451,
+      "kind": "text",
+      "label": null,
+      "score": 0.5901250243186993
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0533:t01",
+      "page": 533,
+      "kind": "text",
+      "label": null,
+      "score": 0.5870112673030773
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0071:t01",
+      "page": 71,
+      "kind": "text",
+      "label": null,
+      "score": 0.5858337529996791
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0221:t00",
+      "page": 221,
+      "kind": "text",
+      "label": null,
+      "score": 0.5776323927860036
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0533:t01",
+     "ADV:p0071:t01",
+     "ADV:p0221:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0451:t00",
+     "ADV:p0451:t01"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 9.7 carrot harvest Farmer Joe",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 47.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0451:t00",
+      "page": 451,
+      "kind": "text",
+      "label": null,
+      "score": 0.6358676011799106
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0451:t01",
+      "page": 451,
+      "kind": "text",
+      "label": null,
+      "score": 0.5901250243186993
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0533:t01",
+      "page": 533,
+      "kind": "text",
+      "label": null,
+      "score": 0.5870112673030773
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0071:t01",
+      "page": 71,
+      "kind": "text",
+      "label": null,
+      "score": 0.5858337529996791
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0221:t00",
+      "page": 221,
+      "kind": "text",
+      "label": null,
+      "score": 0.5776323927860036
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0451:t00",
+     "ADV:p0451:t01",
+     "ADV:p0533:t01",
+     "ADV:p0071:t01",
+     "ADV:p0221:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The document does not provide the exact value of the carrot harvest for Farmer Joe in the grid heatmap of crop harvest by local farmer. The description of the heatmap and its color coding is given, but specific numeric values for carrot harvest by Farmer Joe are not included.\",\"citations\":[\"ADV:p0451:t00\",\"ADV:p0451:t01\"],\"abstain\":true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0451:t00",
+   "ADV:p0451:t01",
+   "ADV:p0450:t03",
+   "ADV:p0453:t00",
+   "ADV:p0449:t01",
+   "ADV:p0533:t01",
+   "ADV:p0071:t01",
+   "ADV:p0221:t00"
+  ],
+  "context_chars": 6516,
+  "viewed_pages": [],
+  "n_searches": 3,
+  "usage": {
+   "prompt_tokens": 5932,
+   "completion_tokens": 159,
+   "llm_calls": 4
+  },
+  "elapsed_s": 3.8,
+  "cost_usd": 0.002627,
+  "status": "abstain",
+  "answer": "The document does not provide the exact value of the carrot harvest for Farmer Joe in the grid heatmap of crop harvest by local farmer. The description of the heatmap and its color coding is given, but specific numeric values for carrot harvest by Farmer Joe are not included.",
+  "citations": [],
+  "abstain_reason": "model_abstained"
+ }
+]
