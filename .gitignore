@@ -9,3 +9,6 @@ __pycache__/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+
+# advanced challenge: page renders/crops (re-create with python -m advanced.extract)
+advanced/cache/
