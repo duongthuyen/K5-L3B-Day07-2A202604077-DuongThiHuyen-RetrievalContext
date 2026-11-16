@@ -1,0 +1,19 @@
+{
+ "page": 333,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": null,
+   "details": "Screenshot of Python code for training and evaluating a Gaussian naive Bayes classifier. Code includes: selecting feature columns and target labels, splitting dataset into training and testing sets (80% training, 20% testing), initializing and training the classifier, predicting labels for the test set, evaluating classifier performance with accuracy score, confusion matrix, and classification report. Also shows printed output example with accuracy 0.71 and confusion matrix [[10 14 2], [0 30 0], [0 0 0]].",
+   "summary": "This code snippet demonstrates how to train and evaluate a Gaussian naive Bayes classifier on a dataset with features Bilirubin, Cholesterol, Albumin, and Copper to predict Status. The example output shows an accuracy of 0.71 and a confusion matrix indicating prediction performance."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2795,
+  "completion_tokens": 189
+ },
+ "cost_usd": 0.00142,
+ "elapsed_s": 2.78
+}

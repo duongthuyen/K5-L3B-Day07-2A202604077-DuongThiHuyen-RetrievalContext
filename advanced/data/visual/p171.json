@@ -1,0 +1,19 @@
+{
+ "page": 171,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 4.4",
+   "kind": "table",
+   "title": "Bootstrap Samples and Corresponding Sample Means",
+   "details": "| Sample Number | Random Samples of Size 10                         | Sample Means | Sorted Sample Means |\n|---------------|-------------------------------------------------|--------------|---------------------|\n| 1             | 37 19 34 31 34 26 26 21 20 21                     | 26.9         | 21.9                |\n| 2             | 37 19 24 37 19 31 29 34 29 28                     | 28.7         | 22.2                |\n| 3             | 31 19 20 37 20 26 25 24 37 23                     | 26.2         | 22.7                |\n| 4             | 22 24 20 22 20 24 37 19 24 26                     | 23.8         | 22.9                |\n| 5             | 23 24 19 34 20 31 22 23 28 22                     | 24.6         | 23.8                |\n| 6             | 34 19 31 37 21 21 25 28 19 21                     | 25.6         | 24.4                |\n| 7             | 25 24 21 29 21 23 21 34 24 37                     | 25.9         | 24.6                |\n| 8             | 22 26 37 20 22 21 22 29 37 25                     | 26.1         | 24.6                |\n| 9             | 23 22 31 21 22 24 37 29 21 20                     | 25.1         | 25.1                |\n| 10            | 23 31 19 34 37 22 25 20 37 37                     | 28.5         | 25.5                |\n| 11            | 29 31 31 22 37 23 23 28 20 21                     | 26.5         | 25.6                |\n| 12            | 31 22 19 22 28 28 22 21 23 37                     | 26.2         | 25.9                |\n| 13            | 21 20 24 28 21 20 22 22 21 23                     | 22.2         | 25.9                |\n| 14            | 22 37 21 31 19 26 19 23 23 34                     | 25.5         | 26.1                |\n| 15            | 29 31 22 25 26 19 22 26 25 21                     | 24.6         | 26.2                |\n| 16            | 26 20 23 19 23 26 19 29 19 23                     | 22.7         | 26.2                |\n| 17            | 24 31 19 21 19 22 19 19 21 24                     | 21.9         | 26.5                |\n| 18            | 21 20 20 34 34 21 25 23 22 24                     | 24.4         | 26.9                |\n| 19            | 20 26 22 24 21 24 21 26 26 19                     | 22.9         | 28.5                |\n| 20            | 21 31 19 21 34 24 25 28 28 28                     | 25.9         | 28.7                |",
+   "summary": "This table shows 20 bootstrap samples of size 10 drawn from a dataset, their corresponding sample means, and the sample means sorted from smallest to largest. It is used to illustrate the calculation of a 90% confidence interval using the bootstrap method."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2634,
+  "completion_tokens": 921
+ },
+ "cost_usd": 0.002527,
+ "elapsed_s": 6.99
+}

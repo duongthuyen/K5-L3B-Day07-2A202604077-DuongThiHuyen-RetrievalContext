@@ -1,0 +1,19 @@
+{
+ "page": 127,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 3.12",
+   "kind": "table",
+   "title": "Calculate the IQR for the following 13 home prices and determine if any of the home prices values are potential outliers. Data values are in US dollars.",
+   "details": "| Home Prices (USD) |\n|------------------|\n| 389,950          |\n| 230,500          |\n| 158,000          |\n| 479,000          |\n| 639,000          |\n| 114,950          |\n| 5,500,000        |\n| 387,000          |\n| 659,000          |\n| 529,000          |\n| 575,000          |\n| 488,800          |\n| 1,095,000        |",
+   "summary": "This example lists 13 home prices in US dollars and orders them from smallest to largest to calculate the median, first quartile, and third quartile for determining the interquartile range (IQR) and identifying potential outliers."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2806,
+  "completion_tokens": 233
+ },
+ "cost_usd": 0.001495,
+ "elapsed_s": 2.47
+}

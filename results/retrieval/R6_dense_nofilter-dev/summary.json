@@ -13,7 +13,7 @@
   "context_hit": 19,
   "errors": 0,
   "avg_context_chars": 2054,
-  "median_latency_ms": 54.8,
+  "median_latency_ms": 67.9,
   "cost_usd": 0.0,
   "hit1_rate": 0.636,
   "hit3_rate": 0.864,

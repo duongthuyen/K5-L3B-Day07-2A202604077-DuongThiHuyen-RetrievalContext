@@ -1,0 +1,19 @@
+{
+ "page": 32,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 1.4",
+   "kind": "image",
+   "title": "ch1-courseEvaluations.csv Opened with Visual Studio Code",
+   "details": "Screenshot of a CSV file opened in Visual Studio Code showing text lines with comma-separated values. The content is:\n1 Semester,Instructor,Class Size,Rating\n2 Fall 2020,A,100,Not recommended at all\n3 Spring 2021,A,50,Highly recommended\n4 Fall 2021,B,120,Not quite recommended\n5 Spring 2022,B,40,Highly recommended\n6 Fall 2022,A,110,Recommended\n7 Spring 2023,B,50,Highly recommended",
+   "summary": "This screenshot illustrates how a CSV file looks when opened in a code editor, showing comma-separated values in plain text format."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2638,
+  "completion_tokens": 177
+ },
+ "cost_usd": 0.001338,
+ "elapsed_s": 2.06
+}

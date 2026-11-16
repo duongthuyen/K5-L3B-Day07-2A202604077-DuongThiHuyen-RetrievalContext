@@ -1,0 +1,51 @@
+{
+ "page": 252,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "ACF",
+   "details": {
+    "chart type": "autocorrelation function (ACF) plot",
+    "x-axis label": "Lag",
+    "x-axis range": "0 to 20",
+    "y-axis label": "Autocorrelation",
+    "y-axis units": "correlation coefficient",
+    "y-axis range": "-1.00 to 1.00",
+    "legend/series": null,
+    "values": {
+     "lag 0": 1.0,
+     "lag 1": 0.75,
+     "lag 2": 0.35,
+     "lag 3": 0.12,
+     "lag 4": 0.18,
+     "lag 5": 0.4,
+     "lag 6": 0.5,
+     "lag 7": 0.35,
+     "lag 8": 0.12,
+     "lag 9": 0.02,
+     "lag 10": 0.18,
+     "lag 11": 0.48,
+     "lag 12": 0.62,
+     "lag 13": 0.42,
+     "lag 14": 0.15,
+     "lag 15": -0.05,
+     "lag 16": -0.1,
+     "lag 17": 0.15,
+     "lag 18": 0.22,
+     "lag 19": 0.15,
+     "lag 20": -0.05
+    },
+    "trend": "High autocorrelation at lag 0 (always 1), significant peaks at lags 1, 6, and 12 indicating possible seasonality."
+   },
+   "summary": "This ACF plot shows the autocorrelation of monthly coal consumption values at different lags up to 20. Significant autocorrelations at lags 0, 1, 6, and 12 suggest seasonality in the data, with lag 12 indicating a yearly seasonal period."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2410,
+  "completion_tokens": 413
+ },
+ "cost_usd": 0.001625,
+ "elapsed_s": 4.04
+}

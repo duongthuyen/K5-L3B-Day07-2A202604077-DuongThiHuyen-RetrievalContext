@@ -1,0 +1,19 @@
+{
+ "page": 540,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table C1",
+   "kind": "table",
+   "title": null,
+   "details": "| Chapter Title | Topic | Description of Algorithm | First Reference |\n|---------------|-------|--------------------------|-----------------|\n|               | Confidence interval for the mean | Using Python to calculate a confidence interval for the mean using the normal and t-distributions (two examples) | Statistical Inference and Confidence Intervals |\n|               | Hypothesis test for the mean (one sample) | Using Python to calculate a p-value associated with a hypothesis test for the mean | Hypothesis Testing |\n|               | Hypothesis test for a proportion | Using Python to calculate a p-value associated with a hypothesis test for a proportion | Hypothesis Testing |\n|               | Hypothesis test for the mean (one sample) | Using Python to calculate a test statistic and p-value associated with a hypothesis test for the mean | Hypothesis Testing |\n|               | Hypothesis test for the mean (two samples) | Using Python to calculate a test statistic and p-value associated with a hypothesis test for the difference between two means | Hypothesis Testing |\n|               | Correlation coefficient | Using Python to calculate the Pearson correlation coefficient for two numeric variables | Correlation and Linear Regression Analysis |\n|               | Creating a scatterplot | Using Python to create a scatterplot for two numeric quantities | Correlation and Linear Regression Analysis |\n|               | Creating a linear regression model | Using Python to calculate the slope and intercept for a linear regression model | Correlation and Linear Regression Analysis |\n|               | One-way analysis of variance (ANOVA) | Using Python to conduct a one-way analysis of variance hypothesis test | Analysis of Variance (ANOVA) |\n|               | Visualizing time series data | Using basic Python plot routine and matplotlib.pyplot to generate a time series graph based on a pandas DataFrame (two examples) | Analysis of Variance (ANOVA) |\n| Time Series and Forecasting | Plotting a simple moving average (SMA) and differencing | Using Python to generate a simple moving average and first-order difference for time series data | Time Series Forecasting Methods |",
+   "summary": "This table lists various Python algorithms related to statistical inference, hypothesis testing, correlation, regression, analysis of variance, and time series forecasting. Each row describes the topic, a brief description of the algorithm, and a reference to the relevant chapter or section in the textbook."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2614,
+  "completion_tokens": 507
+ },
+ "cost_usd": 0.001857,
+ "elapsed_s": 5.76
+}

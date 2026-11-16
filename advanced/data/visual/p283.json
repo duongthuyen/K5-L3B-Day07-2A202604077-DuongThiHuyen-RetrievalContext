@@ -1,0 +1,67 @@
+{
+ "page": 283,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 6.4",
+   "kind": "table",
+   "title": "Homework Set Completion Times",
+   "details": "| HW Set | 1 | 2 | 3 | 4 | 5 | 6 |\n|--------|---|---|---|---|---|---|\n| Time (hr) | 9.8 | 5.3 | 3.4 | 2.6 | 1.9 | 1.7 |",
+   "summary": "This table shows the time in hours a student spent on each homework set, from set 1 to set 6, indicating a decreasing trend in time spent."
+  },
+  {
+   "label": "Figure 6.4",
+   "kind": "chart",
+   "title": "Linear Model That Best Fits the Data in Example 6.3",
+   "details": {
+    "chart type": "scatterplot with linear regression line",
+    "x-axis label": "Problem Set",
+    "x-axis range": "0 to 8",
+    "y-axis label": "Time Spent (Hours)",
+    "y-axis range": "-2 to 12",
+    "legend/series": [
+     "Data points",
+     "Linear model line"
+    ],
+    "values": [
+     {
+      "Problem Set": 1,
+      "Time Spent": 9.8
+     },
+     {
+      "Problem Set": 2,
+      "Time Spent": 5.3
+     },
+     {
+      "Problem Set": 3,
+      "Time Spent": 3.4
+     },
+     {
+      "Problem Set": 4,
+      "Time Spent": 2.6
+     },
+     {
+      "Problem Set": 5,
+      "Time Spent": 1.9
+     },
+     {
+      "Problem Set": 6,
+      "Time Spent": 1.7
+     },
+     {
+      "Problem Set": 7,
+      "Time Spent": -1
+     }
+    ],
+    "trend": "Downward trend with linear regression line underfitting the data; predicted negative time for 7th set."
+   },
+   "summary": "This scatterplot with a linear regression line shows the time spent on homework sets 1 through 6, illustrating a downward trend but poor fit of the linear model, which predicts an unrealistic negative time for the 7th set."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2522,
+  "completion_tokens": 449
+ },
+ "cost_usd": 0.001727,
+ "elapsed_s": 4.11
+}

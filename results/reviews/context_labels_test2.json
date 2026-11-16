@@ -1,0 +1,15 @@
+{
+ "scale": "0 = no evidence in final context; 1 = evidence present but missing condition/source; 2 = full evidence with source+page",
+ "R0_dense": {
+  "m01": [2, "p0090:c02 rank 1"], "m02": [2, "p0090:c01 rank 1 (Table 2.4 Validation row)"],
+  "m03": [2, "p0094:c06 rank 1"],
+  "m04": [0, "top-3 all p0087 (handling outliers in analysis); sentence 'identify and remove outliers before validating' (p0094:c02) not retrieved"],
+  "m05": [2, "p0096:c00 rank 1"], "m06": [2, "p0248:c00 rank 2"], "m07": [2, "p0240:c00 rank 2"], "m08": [2, "p0246:c00 rank 1"]
+ },
+ "R8_hybrid_neighbours": {
+  "m01": [2, "rank 1"], "m02": [2, "rank 1"], "m03": [2, "rank 1"], "m04": [2, "p0094:c02 rank 1 via BM25 'validating'"],
+  "m05": [2, "rank 1"], "m06": [2, "rank 1"], "m07": [2, "rank 1"], "m08": [2, "rank 1"]
+ },
+ "summary": {"R0_dense": {"0": 1, "1": 0, "2": 7}, "R8_hybrid_neighbours": {"0": 0, "1": 0, "2": 8}},
+ "labeller": "AI coding assistant draft, to be verified by the student"
+}

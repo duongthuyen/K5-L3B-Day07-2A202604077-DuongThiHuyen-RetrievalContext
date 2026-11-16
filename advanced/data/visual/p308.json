@@ -1,0 +1,19 @@
+{
+ "page": 308,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "PYTHON CODE",
+   "details": "Python code snippet showing how to calculate 95% confidence intervals for intercept and slope using scipy.stats.t.interval with sample data arrays intercepts and slopes. The code imports scipy.stats as st and numpy as np, calculates intervals a_min, a_max for intercepts and b_min, b_max for slopes, then prints the intervals.",
+   "summary": "This code demonstrates how to compute 95% confidence intervals for regression intercept and slope parameters using Python's scipy.stats package."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2787,
+  "completion_tokens": 122
+ },
+ "cost_usd": 0.00131,
+ "elapsed_s": 1.73
+}

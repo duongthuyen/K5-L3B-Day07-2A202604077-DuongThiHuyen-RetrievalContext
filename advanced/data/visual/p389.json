@@ -1,0 +1,106 @@
+{
+ "page": 389,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 8.2",
+   "kind": "diagram",
+   "title": "GDPR Principles",
+   "details": {
+    "nodes": [
+     "GDPR",
+     "Lawfulness, Fairness, and Transparency",
+     "Purpose Limitation",
+     "Data Minimization",
+     "Accuracy",
+     "Storage Limitation",
+     "Integrity and Confidentiality",
+     "Accountability"
+    ],
+    "connections": [
+     {
+      "from": "GDPR",
+      "to": "Lawfulness, Fairness, and Transparency"
+     },
+     {
+      "from": "GDPR",
+      "to": "Purpose Limitation"
+     },
+     {
+      "from": "GDPR",
+      "to": "Data Minimization"
+     },
+     {
+      "from": "GDPR",
+      "to": "Accuracy"
+     },
+     {
+      "from": "GDPR",
+      "to": "Storage Limitation"
+     },
+     {
+      "from": "GDPR",
+      "to": "Integrity and Confidentiality"
+     },
+     {
+      "from": "GDPR",
+      "to": "Accountability"
+     }
+    ]
+   }
+  },
+  "summary': ",
+  "Figure 8.2 shows the key principles of the GDPR, outlining the main requirements for data protection including lawfulness, purpose limitation, data minimization, accuracy, storage limitation, integrity, confidentiality, and accountability.",
+  {
+   "label": "Figure 8.3",
+   "kind": "diagram",
+   "title": "CCPA/CPRA Principles",
+   "details": {
+    "nodes": [
+     "CCPA",
+     "CPRA",
+     "The right to know about the personal information a business collects about them and how it is used and shared",
+     "The right to delete personal information collected from them (with some exceptions)",
+     "The right to opt out of the sale or sharing of their personal information",
+     "The right to nondiscrimination for exercising their CCPA rights",
+     "The right to correct inaccurate personal information that a business has about them",
+     "The right to limit the use and disclosure of sensitive personal information collected about them"
+    ],
+    "connections": [
+     {
+      "from": "CCPA",
+      "to": "The right to know about the personal information a business collects about them and how it is used and shared"
+     },
+     {
+      "from": "CCPA",
+      "to": "The right to delete personal information collected from them (with some exceptions)"
+     },
+     {
+      "from": "CCPA",
+      "to": "The right to opt out of the sale or sharing of their personal information"
+     },
+     {
+      "from": "CCPA",
+      "to": "The right to nondiscrimination for exercising their CCPA rights"
+     },
+     {
+      "from": "CPRA",
+      "to": "The right to correct inaccurate personal information that a business has about them"
+     },
+     {
+      "from": "CPRA",
+      "to": "The right to limit the use and disclosure of sensitive personal information collected about them"
+     }
+    ]
+   }
+  },
+  "summary': ",
+  "Figure 8.3 presents the principles of the CCPA and CPRA, highlighting consumer rights such as the right to know, delete, opt out, nondiscrimination, correct inaccurate information, and limit use of sensitive personal data."
+ ],
+ "usage": {
+  "prompt_tokens": 2516,
+  "completion_tokens": 613
+ },
+ "cost_usd": 0.001987,
+ "elapsed_s": 5.44
+}

@@ -1,0 +1,19 @@
+{
+ "page": 424,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "table",
+   "title": "Five-number summary for salaries at a company",
+   "details": "| Statistic             | Salary (USD) |\n|-----------------------|--------------|\n| Minimum Salary        | 42000        |\n| First Quartile Salary | 54000        |\n| Median Salary         | 65000        |\n| Third Quartile Salary | 92000        |\n| Maximum Salary        | 140000       |",
+   "summary": "This table shows the five-number summary statistics for a dataset of employee salaries at a company, including minimum, first quartile, median, third quartile, and maximum salaries."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2622,
+  "completion_tokens": 145
+ },
+ "cost_usd": 0.001281,
+ "elapsed_s": 2.05
+}

@@ -1,0 +1,19 @@
+{
+ "page": 214,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.17",
+   "kind": "table",
+   "title": "ANOVA Summary Table",
+   "details": "| Variation | Sum of Squares | Degrees of Freedom | Mean Squares | F Test Statistic | p-value |\n|-----------|----------------|--------------------|--------------|------------------|---------|\n| Between  | SSB            | dfn                | MSB          | MSB / MSW        | Area to the right of the F test statistic |\n| Within   | SSW            | dfd                | MSW          | N/A              | N/A     |",
+   "summary": "This table summarizes the components of an ANOVA test, showing variation sources (Between and Within), their sum of squares, degrees of freedom, mean squares, the F test statistic, and the p-value interpretation."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2716,
+  "completion_tokens": 176
+ },
+ "cost_usd": 0.001368,
+ "elapsed_s": 2.27
+}

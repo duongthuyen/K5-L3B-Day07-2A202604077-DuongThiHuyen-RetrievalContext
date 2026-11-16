@@ -1,0 +1,19 @@
+{
+ "page": 556,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table D1",
+   "kind": "table",
+   "title": null,
+   "details": "| Python Function | Description | Syntax | First Reference |\n|-----------------|-------------|--------|-----------------|\n| hist() | Creates a histogram | plt.hist (array) | Encoding Univariate Data |\n| plot() | Creates 2D line plots such as a time series graph | plt.plot (x_data, y_data) | Graphing Probability Distributions |\n| bar() | Creates a bar chart | plt.bar (x_array, heights) | Graphing Probability Distributions |\n| imshow() | Displays an image on a 2D regular raster, such as a heatmap | plt.imshow(array) | Geospatial and Heatmap Data Visualization Using Python |\n| heatmap() | Creates a heatmap visualization | sns.heatmap(array) | Geospatial and Heatmap Data Visualization Using Python |\n| colorbar() | Adds a colormap to a figure | plt.colorbar() | Multivariate and Network Data Visualization Using Python |\n| corr() | Calculates the pairwise correlations of columns in a DataFrame | dataframe.corr() | Multivariate and Network Data Visualization Using Python |\n| add.subplot() | Adds a subplot to a figure stored in fig | fig.add.subplot (position) | Multivariate and Network Data Visualization Using Python |\n| ax.scatter() | Creates a scatterplot | ax.scatter (x_data, y_data) | Multivariate and Network Data Visualization Using Python |",
+   "summary": "This table lists various Python functions used for data visualization and analysis, providing their descriptions, syntax, and references to where they are first discussed in the textbook."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2486,
+  "completion_tokens": 352
+ },
+ "cost_usd": 0.001558,
+ "elapsed_s": 3.41
+}

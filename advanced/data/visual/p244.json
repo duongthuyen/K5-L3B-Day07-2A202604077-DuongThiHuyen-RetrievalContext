@@ -1,0 +1,26 @@
+{
+ "page": 244,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 5.12",
+   "kind": "image",
+   "title": "Screenshot of a 13-term Excel Window SMA (Used with permission from Microsoft)",
+   "details": "Excel spreadsheet screenshot showing columns Month (A) and Value (B) with dates from 1/1/2016 to 1/1/2017 and corresponding numeric values. Cell C8 contains the formula =AVERAGE(B2:B14). The range B2:B14 is highlighted.",
+   "summary": "This screenshot illustrates how to calculate a 13-term Simple Moving Average (SMA) in Excel by using the AVERAGE function over a selected range of values."
+  },
+  {
+   "label": "Figure 5.13",
+   "kind": "image",
+   "title": "Screenshot Showing the SMA Time Series in Column C (Used with permission from Microsoft)",
+   "details": "Excel spreadsheet screenshot showing columns Month (A), Value (B), and SMA (C). Dates range from 1/1/2016 to 6/1/2017. Column C contains SMA values starting from row 8, e.g., 56987 at 7/1/2016, 55910.2 at 8/1/2016, 55781.29 at 9/1/2016, continuing downward.",
+   "summary": "This screenshot shows the result of dragging the SMA formula down column C to create a time series of 13-term SMA values corresponding to the original data in column B."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2288,
+  "completion_tokens": 331
+ },
+ "cost_usd": 0.001445,
+ "elapsed_s": 3.15
+}

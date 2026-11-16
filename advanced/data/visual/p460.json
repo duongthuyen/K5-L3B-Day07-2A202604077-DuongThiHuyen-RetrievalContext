@@ -1,0 +1,81 @@
+{
+ "page": 460,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Home Price versus Square Footage (Color = Miles from Center City)",
+   "details": {
+    "chart type": "scatter plot with color bar",
+    "x-axis": {
+     "label": "Square Footage",
+     "range": "1250 to 3000"
+    },
+    "y-axis": {
+     "label": "Home Price $000",
+     "range": "250 to 520"
+    },
+    "color scale": {
+     "label": "Miles from Center City",
+     "range": "0.1 to 4.5",
+     "colors": "black to yellow via red"
+    },
+    "data points": [
+     {
+      "Square Footage": 1250,
+      "Home Price $000": 250,
+      "Color (Miles)": 4.5
+     },
+     {
+      "Square Footage": 1500,
+      "Home Price $000": 290,
+      "Color (Miles)": 2
+     },
+     {
+      "Square Footage": 1750,
+      "Home Price $000": 280,
+      "Color (Miles)": 1
+     },
+     {
+      "Square Footage": 1750,
+      "Home Price $000": 300,
+      "Color (Miles)": 0.1
+     },
+     {
+      "Square Footage": 2000,
+      "Home Price $000": 350,
+      "Color (Miles)": 1
+     },
+     {
+      "Square Footage": 2000,
+      "Home Price $000": 300,
+      "Color (Miles)": 4
+     },
+     {
+      "Square Footage": 2250,
+      "Home Price $000": 430,
+      "Color (Miles)": 0.5
+     },
+     {
+      "Square Footage": 2750,
+      "Home Price $000": 490,
+      "Color (Miles)": 1
+     },
+     {
+      "Square Footage": 3000,
+      "Home Price $000": 515,
+      "Color (Miles)": 4.5
+     }
+    ]
+   },
+   "summary": "This scatter plot shows the relationship between home price (in thousands of dollars) and square footage, with the color of each point representing the distance in miles from the city center. It illustrates that larger homes tend to have higher prices, and the color gradient provides additional context about location relative to the city center."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2476,
+  "completion_tokens": 441
+ },
+ "cost_usd": 0.001696,
+ "elapsed_s": 4.57
+}

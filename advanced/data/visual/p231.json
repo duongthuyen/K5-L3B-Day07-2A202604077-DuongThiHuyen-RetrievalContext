@@ -1,0 +1,29 @@
+{
+ "page": 231,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "S&P 500 Time Series",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Date",
+    "x-axis range": "2014 to 2024",
+    "y-axis label": "S&P 500 Value",
+    "y-axis units": "index points",
+    "y-axis range": "approximately 1800 to 5300",
+    "legend/series": "S&P 500",
+    "values": "Starts near 1800 in 2014, rises steadily with fluctuations, dips around 2020, then rises sharply to above 5200 by 2024",
+    "trend": "Overall upward trend with a notable dip around 2020 followed by a strong recovery and growth"
+   }
+  },
+  "summary\": "
+ ],
+ "usage": {
+  "prompt_tokens": 2333,
+  "completion_tokens": 173
+ },
+ "cost_usd": 0.00121,
+ "elapsed_s": 1.82
+}

@@ -1,0 +1,26 @@
+{
+ "page": 182,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.8",
+   "kind": "table",
+   "title": "Table 4.8",
+   "details": "The table is referenced but not visible on this page; no data or structure is shown here.",
+   "summary": "Table 4.8 is referenced as containing scenarios for hypothesis testing decisions, specifically Row 1 which indicates enough evidence to reject the claim."
+  },
+  {
+   "label": "Table 4.6",
+   "kind": "table",
+   "title": "Table 4.6",
+   "details": "The table is referenced but not visible on this page; no data or structure is shown here.",
+   "summary": "Table 4.6 is referenced as containing setups for null and alternative hypotheses, specifically Setup A used in the example."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2792,
+  "completion_tokens": 164
+ },
+ "cost_usd": 0.001379,
+ "elapsed_s": 1.92
+}

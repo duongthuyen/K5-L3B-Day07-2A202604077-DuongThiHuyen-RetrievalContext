@@ -1,0 +1,19 @@
+{
+ "page": 201,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "Python code and output for correlation coefficient calculation",
+   "details": "Code snippet: r, p = pearsonr(SP500, Nike)\nprint(\"Correlation coefficient: \", round(r, 3))\nOutput shown: Correlation coefficient: 0.923",
+   "summary": "This code snippet shows how to calculate the Pearson correlation coefficient between the S&P 500 and Nike stock using Python, with the output indicating a strong positive correlation of 0.923."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2748,
+  "completion_tokens": 118
+ },
+ "cost_usd": 0.001288,
+ "elapsed_s": 1.94
+}

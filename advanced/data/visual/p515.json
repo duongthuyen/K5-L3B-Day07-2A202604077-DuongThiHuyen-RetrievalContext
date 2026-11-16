@@ -1,0 +1,84 @@
+{
+ "page": 515,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure A18",
+   "kind": "image",
+   "title": "Select Data for Drawing a Scatterplot (Used with permission from Microsoft)",
+   "details": "Screenshot of Excel's 'Select Data Source' dialog box showing 'Range Details' with Chart data range = Sheet1!$D$1:$E$13. Legend entries (Series) shows 'Weight(pounds)'. Name = Sheet1!$E$1, X values = Sheet1!$D$2:$D$13, Y values = Sheet1!$E$2:$E$13. Behind the dialog, a partial spreadsheet is visible with columns labeled Height(inches), Weight(pounds), Age.",
+   "summary": "This screenshot shows how to select data for drawing a scatterplot in Excel, specifying the data range and series for height and weight."
+  },
+  {
+   "label": "Figure A19",
+   "kind": "chart",
+   "title": "The Initial Scatterplot",
+   "details": {
+    "chart type": "scatterplot",
+    "x-axis label": "Height (inches)",
+    "x-axis range": "68 to 84",
+    "y-axis label": "Weight (pounds)",
+    "y-axis range": "0 to 300",
+    "legend/series": "Weight (pounds)",
+    "values": [
+     {
+      "x": 70,
+      "y": 205
+     },
+     {
+      "x": 72,
+      "y": 185
+     },
+     {
+      "x": 73,
+      "y": 231
+     },
+     {
+      "x": 72,
+      "y": 210
+     },
+     {
+      "x": 75,
+      "y": 195
+     },
+     {
+      "x": 74,
+      "y": 200
+     },
+     {
+      "x": 70,
+      "y": 205
+     },
+     {
+      "x": 76,
+      "y": 201
+     },
+     {
+      "x": 71,
+      "y": 190
+     },
+     {
+      "x": 82,
+      "y": 250
+     },
+     {
+      "x": 72,
+      "y": 185
+     },
+     {
+      "x": 73,
+      "y": 180
+     }
+    ],
+    "trend": "Weights mostly range between 180 and 250 pounds for heights between 70 and 82 inches, with one outlier at height 82 and weight 250."
+   }
+  },
+  "summary"
+ ],
+ "usage": {
+  "prompt_tokens": 2319,
+  "completion_tokens": 433
+ },
+ "cost_usd": 0.00162,
+ "elapsed_s": 4.6
+}

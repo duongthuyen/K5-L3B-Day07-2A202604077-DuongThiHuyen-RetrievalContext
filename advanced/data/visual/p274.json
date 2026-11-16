@@ -1,0 +1,19 @@
+{
+ "page": 274,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 5.12",
+   "kind": "table",
+   "title": "Time Series",
+   "details": "| $x_n$ | $\\hat{x}_n$ |\n|-------|--------------|\n| 122   | 117          |\n| 108   | 135          |\n| 172   | 152          |\n| 190   | 169          |\n| 167   | 186          |",
+   "summary": "This table shows a very small time series with observed values $x_n$ and corresponding model values $\\hat{x}_n$. It is used to calculate error measures such as MAE, RMSE, MAPE, and sMAPE for the model."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2413,
+  "completion_tokens": 158
+ },
+ "cost_usd": 0.001218,
+ "elapsed_s": 1.84
+}

@@ -1,0 +1,19 @@
+{
+ "page": 539,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table C1",
+   "kind": "table",
+   "title": "Review of Python Algorithms",
+   "details": "| Chapter Title | Topic | Description of Algorithm | First Reference |\n|---------------|-------------------------------|--------------------------------------------------------------------------|---------------------------------------------|\n| What Are Data and Data Science? | Loading and viewing data | Using Python pandas library to load a CSV file, describe its features, and explore its contents | Python Basics for Data Science |\n|  | Visualizing data using Python | Using Python to create a scatterplot for two numeric quantities | Python Basics for Data Science |\n| Collecting and Preparing Data | Scraping data from a website | Using Python to extract a data table from a website | Web Scraping and Social Media Data Collection |\n|  | Using regular expressions in Python | Using Python to search for a selected word in a given string and output the number of times it appears | Web Scraping and Social Media Data Collection |\n|  | Processing and storing data | Using Python to process data and output to a CSV file | Web Scraping and Social Media Data Collection |\n|  | Parsing and extracting data | Using Python to parse and extract specific data from a given dataset | Web Scraping and Social Media Data Collection |\n| Descriptive Statistics: Statistical Measurements and Probability Distributions | Calculate binomial probabilities | Using Python to calculate probabilities associated with the binomial distribution | Discrete and Continuous Probability Distributions |\n|  | Calculate probabilities from a normal distribution | Using Python to calculate probabilities associated with the normal distribution | Discrete and Continuous Probability Distributions |\n| Inferential Statistics and Regression Analysis | Computing margin of error | Using Python library scipy.stats to compute a margin of error using the t-distribution | Statistical Inference and Confidence Intervals |\n|  | Confidence interval using bootstrapping | Using Python to calculate a confidence interval using a bootstrapping approach | Statistical Inference and Confidence Intervals |",
+   "summary": "This table summarizes various Python algorithms referenced in the textbook, listing chapter titles, topics, descriptions of the algorithms, and where they are first referenced in the text."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2674,
+  "completion_tokens": 438
+ },
+ "cost_usd": 0.00177,
+ "elapsed_s": 4.41
+}

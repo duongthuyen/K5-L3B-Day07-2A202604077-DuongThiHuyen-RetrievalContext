@@ -1,0 +1,57 @@
+{
+ "page": 410,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 8.2",
+   "kind": "table",
+   "title": "Statistical Data about Clinical Trials Participants",
+   "details": "| Age  | Participants |\n|-------|--------------|\n| 18–26 | 100          |\n| 27–36 | 120          |\n| 37–46 | 107          |\n| 47–56 | 71           |\n| 57–66 | 89           |\n| 67+   | 113          |",
+   "summary": "This table lists the number of participants in clinical trials grouped by age intervals."
+  },
+  {
+   "label": "Figure 8.9",
+   "kind": "chart",
+   "title": "Insufficient Information on Participants in Clinical Trials",
+   "details": {
+    "chart type": "bar chart",
+    "x-axis label": "Participants (age groups)",
+    "x-axis categories": [
+     "18–26",
+     "27–36",
+     "37–46",
+     "47–56",
+     "57–66",
+     "67+"
+    ],
+    "y-axis label": "Number of Participants",
+    "y-axis units": "count",
+    "y-axis range": "0 to 150",
+    "legend/series": [
+     "18–26",
+     "27–36",
+     "37–46",
+     "47–56",
+     "57–66",
+     "67+"
+    ],
+    "values": {
+     "18–26": 100,
+     "27–36": 120,
+     "37–46": 107,
+     "47–56": 71,
+     "57–66": 89,
+     "67+": 113
+    },
+    "trend": "The number of participants varies across age groups, with the 27–36 group having the highest count and 47–56 the lowest."
+   }
+  },
+  "summary"
+ ],
+ "usage": {
+  "prompt_tokens": 2544,
+  "completion_tokens": 369
+ },
+ "cost_usd": 0.001608,
+ "elapsed_s": 4.31
+}

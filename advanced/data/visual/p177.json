@@ -1,0 +1,26 @@
+{
+ "page": 177,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.6",
+   "kind": "table",
+   "title": "Possible Setups for the Null and Alternative Hypotheses for a Population Mean (One Sample)",
+   "details": "| Setup A | Setup B | Setup C |\n|---------|---------|---------|\n| H₀ : μ = k | H₀ : μ ≤ k | H₀ : μ ≥ k |\n| Hₐ : μ ≠ k | Hₐ : μ > k | Hₐ : μ < k |",
+   "summary": "This table shows three possible setups for null and alternative hypotheses when conducting a one-sample hypothesis test for a population mean, with different inequality relations."
+  },
+  {
+   "label": "Table 4.7",
+   "kind": "table",
+   "title": "Possible Setups for the Null and Alternative Hypotheses for a Population Proportion (One Sample)",
+   "details": "| Setup D | Setup E | Setup F |\n|---------|---------|---------|\n| H₀ : p = k | H₀ : p ≤ k | H₀ : p ≥ k |\n| Hₐ : p ≠ k | Hₐ : p > k | Hₐ : p < k |",
+   "summary": "This table shows three possible setups for null and alternative hypotheses when conducting a one-sample hypothesis test for a population proportion, with different inequality relations."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2690,
+  "completion_tokens": 301
+ },
+ "cost_usd": 0.001558,
+ "elapsed_s": 3.23
+}

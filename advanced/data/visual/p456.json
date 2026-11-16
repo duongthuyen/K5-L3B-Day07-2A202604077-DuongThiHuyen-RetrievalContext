@@ -1,0 +1,63 @@
+{
+ "page": 456,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Revenue versus Advertising for a Company",
+   "details": {
+    "chart type": "scatterplot",
+    "x-axis": {
+     "label": "Advertising $000",
+     "range": [
+      49,
+      153
+     ],
+     "values": [
+      49,
+      145,
+      57,
+      153,
+      92,
+      83,
+      117,
+      142,
+      69,
+      106,
+      109,
+      121
+     ]
+    },
+    "y-axis": {
+     "label": "Revenue $000",
+     "range": [
+      12210,
+      19200
+     ],
+     "values": [
+      12210,
+      17590,
+      13215,
+      19200,
+      14600,
+      14100,
+      17100,
+      18400,
+      14100,
+      15500,
+      16300,
+      17020
+     ]
+    }
+   },
+   "summary": "This scatterplot shows the relationship between advertising spending (in thousands of dollars) and revenue (in thousands of dollars) for a company, illustrating how revenue varies with advertising expenditure."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2600,
+  "completion_tokens": 212
+ },
+ "cost_usd": 0.001379,
+ "elapsed_s": 2.56
+}

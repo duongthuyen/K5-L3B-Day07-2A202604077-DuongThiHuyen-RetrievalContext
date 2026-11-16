@@ -1,0 +1,19 @@
+{
+ "page": 8,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": "This page is a table of contents listing chapters and sections of the textbook Principles of Data Science (OpenStax). It includes chapter titles, section titles, and page numbers.",
+   "summary": "This page serves as a navigational index for chapters 4 through 7, outlining topics such as Inferential Statistics, Time Series, Machine Learning, and Deep Learning."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2508,
+  "completion_tokens": 99
+ },
+ "cost_usd": 0.001162,
+ "elapsed_s": 2.55
+}

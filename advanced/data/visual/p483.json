@@ -1,0 +1,19 @@
+{
+ "page": 483,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": null,
+   "summary": "This page contains example text and Python code snippets related to validating a model using a diabetes dataset, but no informative visual elements such as charts, diagrams, or tables are present."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2508,
+  "completion_tokens": 66
+ },
+ "cost_usd": 0.001109,
+ "elapsed_s": 1.48
+}

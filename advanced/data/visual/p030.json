@@ -1,0 +1,19 @@
+{
+ "page": 30,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 1.2",
+   "kind": "table",
+   "title": "Jacket Dataset",
+   "details": "| Date    | Temperature | Needed a Jacket? |\n|---------|-------------|------------------|\n| Oct. 10 | 80°F        | No               |\n| Oct. 11 | 60°F        | Yes              |\n| Oct. 12 | 65°F        | Yes              |\n| Oct. 13 | 75°F        | No               |",
+   "summary": "This table shows a small structured dataset with four entries, each having three attributes: Date, Temperature, and whether a jacket was needed."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2581,
+  "completion_tokens": 144
+ },
+ "cost_usd": 0.001263,
+ "elapsed_s": 1.94
+}

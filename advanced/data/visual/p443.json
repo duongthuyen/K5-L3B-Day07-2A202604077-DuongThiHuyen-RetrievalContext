@@ -1,0 +1,41 @@
+{
+ "page": 443,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Binomial Distribution ($n = 20$, $p = 0.1$)",
+   "details": {
+    "chart type": "bar chart",
+    "x-axis label": "Number of Successes",
+    "x-axis range": "0 to 20",
+    "y-axis label": "Probability",
+    "y-axis units": "probability (0 to 1)",
+    "legend/series": null,
+    "values": {
+     "0": 0.1216,
+     "1": 0.2702,
+     "2": 0.2852,
+     "3": 0.1901,
+     "4": 0.0948,
+     "5": 0.038,
+     "6": 0.0127,
+     "7": 0.0036,
+     "8": 0.0009,
+     "9": 0.0002,
+     "10": 4e-05,
+     "11 to 20": "near zero"
+    }
+   },
+   "summary": "This bar chart shows the probability mass function of a binomial distribution with 20 trials and a success probability of 0.1. It illustrates the probabilities of obtaining different numbers of successes, peaking around 2 successes and decreasing for higher counts."
+  }
+ ],
+ "attempts": 1,
+ "usage": {
+  "prompt_tokens": 2391,
+  "completion_tokens": 267
+ },
+ "cost_usd": 0.001384,
+ "elapsed_s": 3.82
+}

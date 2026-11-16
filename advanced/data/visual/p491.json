@@ -1,0 +1,19 @@
+{
+ "page": 491,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 10.4",
+   "kind": "decorative",
+   "title": "EXAMPLE 10.4",
+   "details": "A boxed example with a problem statement and partial solution code snippet.",
+   "summary": "This example introduces a Monte Carlo simulation to assess the sensitivity of diabetes model outcomes, asking for the average accuracy over 1,000 simulations. The solution begins with importing the random module in Python."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2692,
+  "completion_tokens": 94
+ },
+ "cost_usd": 0.001227,
+ "elapsed_s": 2.17
+}

@@ -1,0 +1,19 @@
+{
+ "page": 266,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": null,
+   "summary": "This page contains Python code for forecasting and plotting time series data, but no informative visual elements such as charts, diagrams, or tables are present."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2496,
+  "completion_tokens": 60
+ },
+ "cost_usd": 0.001094,
+ "elapsed_s": 1.37
+}

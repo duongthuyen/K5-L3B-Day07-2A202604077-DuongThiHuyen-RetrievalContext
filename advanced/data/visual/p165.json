@@ -1,0 +1,19 @@
+{
+ "page": 165,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 4.5",
+   "kind": "decorative",
+   "title": "Example 4.5 Problem and Solution",
+   "details": "Text box containing a problem statement and solution related to calculating a 95% confidence interval for the proportion of adult smokers in the U.S. and determining if there has been a statistically significant change compared to five years ago.",
+   "summary": "This example illustrates how to calculate a confidence interval for a population proportion and interpret the results in a real-world context."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2629,
+  "completion_tokens": 111
+ },
+ "cost_usd": 0.001229,
+ "elapsed_s": 1.52
+}

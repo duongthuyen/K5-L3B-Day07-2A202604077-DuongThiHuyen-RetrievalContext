@@ -1,0 +1,28 @@
+{
+ "page": 60,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Domestic vs. Worldwide Gross",
+   "details": {
+    "chart type": "scatterplot",
+    "x-axis label": "Domestic",
+    "x-axis range": "100 to 300",
+    "y-axis label": "Worldwide",
+    "y-axis range": "100 to 1000",
+    "units": "unreadable",
+    "legend/series": null,
+    "values": "Points scattered showing a positive correlation trend between Domestic and Worldwide gross values, with Domestic values mostly between 100 and 300 and Worldwide values mostly between 100 and 1000."
+   },
+   "summary": "This scatterplot shows the relationship between domestic and worldwide gross revenues, indicating a positive correlation where higher domestic gross tends to correspond with higher worldwide gross."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2335,
+  "completion_tokens": 165
+ },
+ "cost_usd": 0.001198,
+ "elapsed_s": 2.06
+}

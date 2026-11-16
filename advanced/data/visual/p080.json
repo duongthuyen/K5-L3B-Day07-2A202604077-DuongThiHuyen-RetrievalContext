@@ -1,0 +1,19 @@
+{
+ "page": 80,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "table",
+   "title": null,
+   "details": "| Index | May 2024 (Thousands of Persons) | Apr 2024 (Thousands of Persons) |\n|-------|-------------------------------|-------------------------------|\n| 1     | 161,341                       | 161,590                       |\n| 2     | 70,897                        | 70,548                        |\n| 3     | 30,910                        | 30,172                        |\n| 4     | 39,987                        | 40,376                        |\n\n| Index | May 2023 (Thousands of Persons) | Units               |\n|-------|---------------------------------|---------------------|\n| 1     | 161,002                         | Thousands of Persons |\n| 2     | 70,388                          | Thousands of Persons |\n| 3     | 30,830                          | Thousands of Persons |\n| 4     | 39,557                          | Thousands of Persons |",
+   "summary": "This table shows employment data in thousands of persons for different categories for May 2024, April 2024, and May 2023. It includes total employed persons aged 16 years and over, and subcategories such as management and professional occupations."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2639,
+  "completion_tokens": 276
+ },
+ "cost_usd": 0.001497,
+ "elapsed_s": 2.86
+}

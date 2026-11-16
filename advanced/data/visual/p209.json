@@ -1,0 +1,83 @@
+{
+ "page": 209,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Revenue versus Advertising for a Company",
+   "details": {
+    "chart type": "scatter plot",
+    "x-axis label": "Advertising $000",
+    "x-axis range": [
+     50,
+     150
+    ],
+    "y-axis label": "Revenue $000",
+    "y-axis range": [
+     12000,
+     19000
+    ],
+    "legend/series": null,
+    "values": [
+     {
+      "Advertising": 49,
+      "Revenue": 12210
+     },
+     {
+      "Advertising": 57,
+      "Revenue": 13215
+     },
+     {
+      "Advertising": 69,
+      "Revenue": 14100
+     },
+     {
+      "Advertising": 83,
+      "Revenue": 14100
+     },
+     {
+      "Advertising": 92,
+      "Revenue": 14600
+     },
+     {
+      "Advertising": 106,
+      "Revenue": 15500
+     },
+     {
+      "Advertising": 109,
+      "Revenue": 16300
+     },
+     {
+      "Advertising": 117,
+      "Revenue": 17100
+     },
+     {
+      "Advertising": 121,
+      "Revenue": 17020
+     },
+     {
+      "Advertising": 142,
+      "Revenue": 18400
+     },
+     {
+      "Advertising": 145,
+      "Revenue": 17590
+     },
+     {
+      "Advertising": 153,
+      "Revenue": 19200
+     }
+    ],
+    "trend": "positive correlation, revenue increases as advertising increases"
+   }
+  },
+  "summary': "
+ ],
+ "usage": {
+  "prompt_tokens": 2381,
+  "completion_tokens": 270
+ },
+ "cost_usd": 0.001384,
+ "elapsed_s": 2.66
+}

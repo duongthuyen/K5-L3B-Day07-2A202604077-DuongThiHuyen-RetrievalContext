@@ -1,0 +1,19 @@
+{
+ "page": 133,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 3.2",
+   "kind": "table",
+   "title": "Number of nursing degrees and non-nursing degrees at a university for a specific year, broken out by age groups",
+   "details": "| Age Group | Nursing Degrees | Non-Nursing Degrees |\n|-----------|-----------------|--------------------|\n| unreadable | unreadable | unreadable |\n| unreadable | unreadable | unreadable |\n| unreadable | unreadable | unreadable |",
+   "summary": "This table shows the distribution of nursing and non-nursing degrees awarded at a university, categorized by different age groups. It is used to calculate conditional probabilities related to degree types and age groups."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2662,
+  "completion_tokens": 148
+ },
+ "cost_usd": 0.001302,
+ "elapsed_s": 1.94
+}

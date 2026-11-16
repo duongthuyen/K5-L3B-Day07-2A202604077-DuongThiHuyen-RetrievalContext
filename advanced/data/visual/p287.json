@@ -1,0 +1,19 @@
+{
+ "page": 287,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 6.5",
+   "kind": "table",
+   "title": "GPA vs. College Completion",
+   "details": "| GPA | Completed College? |\n|-----|--------------------|\n| 1.5 | N                  |\n| 2.4 | Y                  |",
+   "summary": "This table shows a small sample of data from a university study on the effect of first-year GPA on completion of a college degree, listing GPA values alongside whether the student completed college (Y/N)."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2651,
+  "completion_tokens": 113
+ },
+ "cost_usd": 0.001241,
+ "elapsed_s": 1.64
+}

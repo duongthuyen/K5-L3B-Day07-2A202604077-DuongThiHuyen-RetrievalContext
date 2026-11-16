@@ -1,0 +1,19 @@
+{
+ "page": 221,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.20",
+   "kind": "table",
+   "title": null,
+   "details": "| Treatment A | Treatment B | Treatment C |\n|-------------|-------------|-------------|\n| 4.3         | 3.9         | 2.8         |\n| 3.7         | 4.1         | 2.9         |\n| 3.1         | 3.6         | 3.5         |\n| 3.4         | 3.5         | 3.9         |\n| 4.1         | 4.3         | 4.4         |\n| 4.0         | 4.4         | 4.3         |\n| N/A         | n/a         | 4.1         |",
+   "summary": "This table summarizes sample data on plant growth (in centimeters) for three treatments of light intensity (A, B, and C). It is used to perform an ANOVA hypothesis test to determine if average plant growth differs among the treatments."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2384,
+  "completion_tokens": 235
+ },
+ "cost_usd": 0.00133,
+ "elapsed_s": 2.61
+}

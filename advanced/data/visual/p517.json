@@ -1,0 +1,26 @@
+{
+ "page": 517,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure A24",
+   "kind": "image",
+   "title": "Calculate the Average Height Using AVERAGE in MS Excel (Used with permission from Microsoft)",
+   "details": "Screenshot of an Excel worksheet showing MLB players data with columns: Name, Team, Position, Height(inches), Weight(pounds), Age. The Height column cells D2 to D13 are highlighted, and the formula =AVERAGE(D2:D13) is entered in cell D14. Heights range from 70 to 82 inches.",
+   "summary": "This screenshot demonstrates how to calculate the average height of MLB players using the AVERAGE formula in Excel."
+  },
+  {
+   "label": "Table A1",
+   "kind": "table",
+   "title": "Example MS Excel Formulas",
+   "details": "| Formula       | Description                                                                                 |\n|---------------|---------------------------------------------------------------------------------------------|\n| =MEDIAN(D2:D13) | Compute median of D2, D3, ..., and D13. Returns 72.5 as a result.                            |\n| =STDEV(D2:D13)  | Compute standard deviation of D2, D3, ..., and D13. Returns 3.28 as a result.               |",
+   "summary": "This table lists example Excel formulas for summarizing data, including median and standard deviation calculations with their descriptions and results."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2543,
+  "completion_tokens": 283
+ },
+ "cost_usd": 0.00147,
+ "elapsed_s": 3.33
+}

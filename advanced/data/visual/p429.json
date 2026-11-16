@@ -1,0 +1,50 @@
+{
+ "page": 429,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Side-by-Side Boxplots Comparing Housing Prices for San Francisco and San Jose",
+   "details": {
+    "chart type": "boxplot",
+    "x-axis": {
+     "categories": [
+      "San Francisco Home Prices",
+      "San Jose Home Prices"
+     ]
+    },
+    "y-axis": {
+     "label": "Home Prices (in Thousands)",
+     "units": "Thousands",
+     "range": "$600 to $1,600"
+    },
+    "series": null,
+    "values": {
+     "San Francisco": {
+      "median": 1250,
+      "range": [
+       980,
+       1550
+      ]
+     },
+     "San Jose": {
+      "median": 1200,
+      "range": [
+       620,
+       1600
+      ]
+     }
+    },
+    "trend": "San Francisco boxplot distribution appears symmetric; San Jose boxplot shows more dispersion."
+   },
+   "summary": "This boxplot compares housing prices between San Francisco and San Jose, showing median prices around $1,250 and $1,200 respectively, with San Jose prices exhibiting greater variability."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2432,
+  "completion_tokens": 210
+ },
+ "cost_usd": 0.001309,
+ "elapsed_s": 3.07
+}

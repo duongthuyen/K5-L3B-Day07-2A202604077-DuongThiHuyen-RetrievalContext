@@ -1,0 +1,19 @@
+{
+ "page": 6,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": "Image shows a laptop screen with an open textbook page about 'Resilience and Grit' with highlighted text and note-taking features visible.",
+   "summary": "This image illustrates the online reading and note-taking features available when accessing the textbook on the web, emphasizing flexibility and interactivity for learners."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2249,
+  "completion_tokens": 84
+ },
+ "cost_usd": 0.001034,
+ "elapsed_s": 2.47
+}

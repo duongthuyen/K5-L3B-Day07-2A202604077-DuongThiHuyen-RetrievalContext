@@ -40,6 +40,23 @@ $env:PYTHONUTF8=1                  # Windows: test starter đọc file không ch
 
 Corpus: OpenStax, CC BY-NC-SA 4.0 (Rice University); văn bản trích từ các trang đã chọn, xem manifest của Day 6.
 
+Phần cơ bản có hai vòng: **v1** ([results/agent_v1/](results/agent_v1/)) và **v2** ([results/agent/](results/agent/)). v2 là v1 + sửa lỗi định dạng citation ID, đánh giá trên **test2** mới ([benchmark/test2.json](benchmark/test2.json)): `python -m src.run_agent --split test2 --config A1_hybrid_neighbours`, `python -m src.metrics --run A1_hybrid_neighbours-test2`.
+
+### Thử thách nâng cao (tài liệu 569 trang, đa phương thức)
+
+Tài liệu: *Principles of Data Science* (OpenStax, 2024 web edition, CC BY-NC-SA 4.0), 569 trang PDF, SHA-256 `6b47205459a2f4e25a2b2a86369e674a26a5ae566a4cc428dd31047670692398`. Tải từ https://assets.openstax.org/oscms-prodcms/media/documents/Principles-of-Data-Science-WEB.pdf (script `scripts/download_corpus.py` của Day 6 tải đúng file này và kiểm tra hash). File PDF không được commit.
+
+```powershell
+.venv\Scripts\python -m advanced.extract          # text layer + bảng (find_tables) + vùng hình + caption + render trang -> advanced/data/pages.jsonl
+.venv\Scripts\python -m advanced.describe         # gpt-4.1-mini vision mô tả bảng/biểu đồ/sơ đồ từng trang -> advanced/data/visual/ (~$1)
+.venv\Scripts\python -m advanced.index            # chunk text/table/visual -> bge-small 384-d -> pgvector bảng adv_chunks
+.venv\Scripts\python -m advanced.eval_retrieval --split dev
+.venv\Scripts\python -m advanced.run --split dev  --config V2_mm_hybrid_view
+.venv\Scripts\python -m advanced.run --split test --config V2_mm_hybrid_view
+```
+
+Benchmark: [advanced/data/benchmark.json](advanced/data/benchmark.json) (dev 17 + 4, test 24 + 6, đã commit trước khi chạy pipeline). Trace: `results/advanced/<config>-<split>/`; nhãn đạt/không đạt: `results/advanced/reviews/`. Ảnh render và crop (`advanced/cache/`) không được commit; tạo lại bằng `advanced.extract`.
+
 ---
 
 **Bài cá nhân · Python 3.11+ · tiếp nối Day 6**

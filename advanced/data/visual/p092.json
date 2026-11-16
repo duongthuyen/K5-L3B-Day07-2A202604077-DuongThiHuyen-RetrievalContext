@@ -1,0 +1,19 @@
+{
+ "page": 92,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 2.6",
+   "kind": "table",
+   "title": "Data of Retail Company Sales on Normalization Scale",
+   "details": "| Branch   | Product                      | Sales ($) | Profits ($) | Normalization Scale |\n|----------|------------------------------|-----------|-------------|---------------------|\n| Branch 1 | Jewelry                      | 50000     | 20000       | 0.88                |\n| Branch 2 | TV Accessories               | 25000     | 12500       | 0.25                |\n| Branch 3 | Beauty Products              | 30000     | 15000       | 0.38                |\n| Branch 4 | DVDs                         | 15000     | 7500        | 0.00                |\n| Branch 5 | Kids’ Toys                   | 45000     | 22500       | 0.75                |\n| Branch 6 | Video Games                  | 35000     | 17500       | 0.50                |\n| Branch 7 | Women’s Boutique Apparel     | 40000     | 20000       | 0.63                |\n| Branch 8 | Designer & Fashion Sunglasses| 55000     | 27500       | 1.00                |",
+   "summary": "This table shows sales, profits, and normalization scale values for various product branches of a retail company. It highlights that Designer & Fashion Sunglasses have the highest sales and profits, reflected in the highest normalization scale value of 1.00."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2874,
+  "completion_tokens": 336
+ },
+ "cost_usd": 0.001687,
+ "elapsed_s": 3.84
+}

@@ -1,0 +1,26 @@
+{
+ "page": 118,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 3.4",
+   "kind": "diagram",
+   "title": "Example 3.4: Calculate the median pulse rate for this sample",
+   "details": {
+    "steps": [
+     "Given dataset: 68, 92, 76, 51, 65, 83, 94, 72, 88, 59",
+     "Order data from smallest to largest: 51, 59, 65, 68, 72, 76, 83, 88, 92, 94",
+     "Since number of data values is even (10), add the two middle values (72 and 76) and divide by 2",
+     "Median = (72 + 76) / 2 = 74"
+    ]
+   },
+   "summary": "This example demonstrates how to calculate the median of a dataset with an even number of values by ordering the data and averaging the two middle values."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2899,
+  "completion_tokens": 196
+ },
+ "cost_usd": 0.001473,
+ "elapsed_s": 2.4
+}

@@ -1,0 +1,30 @@
+{
+ "page": 450,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 9.6",
+   "kind": "chart",
+   "title": "Example of Heatmap Showing Differences from Average Temperature for January 2024 by Colors",
+   "details": {
+    "chart type": "spatial heatmap",
+    "x-axis": "Geographic location (map of United States)",
+    "x-axis range": "Geographic area of the US",
+    "y-axis": null,
+    "y-axis range": null,
+    "units": "Difference from Average Temperature (°F)",
+    "units range": "-11 to 11",
+    "legend/series": "Color gradient from blue to red",
+    "color meaning": "Blue represents a reduction in temperature, red represents an increase in temperature",
+    "values": "Temperature differences shown spatially across the US map with blue areas mainly in central and western US indicating temperature reductions, and red areas mainly in northeastern US indicating temperature increases"
+   },
+   "summary": "This spatial heatmap visualizes the differences in average temperature for January 2024 compared to the 1991–2020 average, using a color gradient where blue indicates cooler than average and red indicates warmer than average temperatures across the United States."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2736,
+  "completion_tokens": 239
+ },
+ "cost_usd": 0.001477,
+ "elapsed_s": 2.6
+}

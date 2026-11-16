@@ -1,0 +1,30 @@
+{
+ "page": 164,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 4.4",
+   "kind": "diagram",
+   "title": "Example 4.4: Confidence Interval Calculation for Average Commuting Distance",
+   "details": {
+    "steps": [
+     "Problem statement: Estimate average commuting distance for 5,000 employees by sampling 16 employees.",
+     "Sample mean = 15.8 miles, standard deviation = 3.2 miles.",
+     "Degrees of freedom df = 15 (sample size - 1).",
+     "Critical value for 99% confidence interval t_c = 2.947.",
+     "Margin of error E = t_c * (s / sqrt(n)) = 2.947 * (3.2 / 4) = 2.36.",
+     "Confidence interval lower bound = 15.8 - 2.36 = 13.44.",
+     "Confidence interval upper bound = 15.8 + 2.36 = 18.16.",
+     "Conclusion: 99% confident true mean commuting distance is between 13.44 and 18.16 miles."
+    ]
+   },
+   "summary": "This example demonstrates how to calculate a 99% confidence interval for the average commuting distance using sample data, including the margin of error and concluding statement."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2575,
+  "completion_tokens": 257
+ },
+ "cost_usd": 0.001441,
+ "elapsed_s": 2.56
+}

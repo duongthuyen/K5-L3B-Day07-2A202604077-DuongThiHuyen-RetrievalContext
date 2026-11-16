@@ -1,0 +1,55 @@
+{
+ "page": 497,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 10.3",
+   "kind": "diagram",
+   "title": "Classification Decision Tree Model for Diabetes Detection",
+   "details": {
+    "nodes": [
+     "Glucose Level",
+     "BMI",
+     "Waist Circumference",
+     "Sex",
+     "Age",
+     "Diabetes Prediction"
+    ],
+    "connections": [
+     {
+      "from": "Glucose Level",
+      "to": "BMI",
+      "type": "decision branch"
+     },
+     {
+      "from": "BMI",
+      "to": "Waist Circumference",
+      "type": "decision branch"
+     },
+     {
+      "from": "Waist Circumference",
+      "to": "Diabetes Prediction",
+      "type": "final classification"
+     },
+     {
+      "from": "Sex",
+      "to": "Diabetes Prediction",
+      "type": "less impact"
+     },
+     {
+      "from": "Age",
+      "to": "Diabetes Prediction",
+      "type": "less impact"
+     }
+    ]
+   },
+   "summary": "This classification decision tree model identifies glucose level, BMI, and waist circumference as the most significant predictors of diabetes, with sex and age having less impact. It demonstrates the model's structure used for early detection and diagnosis of diabetes."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2579,
+  "completion_tokens": 229
+ },
+ "cost_usd": 0.001398,
+ "elapsed_s": 2.63
+}

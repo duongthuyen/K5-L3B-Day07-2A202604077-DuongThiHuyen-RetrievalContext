@@ -1,0 +1,636 @@
+[
+  {
+    "query_id": "m01",
+    "split": "test2",
+    "type": "direct",
+    "question": "What are the most commonly used normal forms in database design?",
+    "query_sent": "What are the most commonly used normal forms in database design?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0090:c02",
+        "source": "data-science.pdf#page=90",
+        "page": 90,
+        "score": 0.03278688524590164,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 1,
+            "score": 0.8346121212608901
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 31.136530869722897
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0090:c00",
+        "source": "data-science.pdf#page=90",
+        "page": 90,
+        "score": 0.031054405392392875,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 2,
+            "score": 0.744469404220581
+          },
+          "bm25": {
+            "rank": 7,
+            "score": 7.787148905657425
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0099:c01",
+        "source": "data-science.pdf#page=99",
+        "page": 99,
+        "score": 0.030776515151515152,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 4,
+            "score": 0.6833926642952166
+          },
+          "bm25": {
+            "rank": 6,
+            "score": 7.874442752741939
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0090:c02",
+      "B:openstax-data-science:p0090:c00",
+      "B:openstax-data-science:p0099:c01",
+      "B:openstax-data-science:p0090:c01",
+      "B:openstax-data-science:p0090:c03",
+      "B:openstax-data-science:p0099:c00"
+    ],
+    "context_chars": 5464,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 50.0
+  },
+  {
+    "query_id": "m02",
+    "split": "test2",
+    "type": "table",
+    "question": "In a survey, a respondent's age is recorded as 150 years. Which data processing step identifies this value as erroneous?",
+    "query_sent": "In a survey, a respondent's age is recorded as 150 years. Which data processing step identifies this value as erroneous?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0090:c01",
+        "source": "data-science.pdf#page=90",
+        "page": 90,
+        "score": 0.03278688524590164,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 1,
+            "score": 0.7612141655428266
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 39.64690304444704
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0093:c02",
+        "source": "data-science.pdf#page=93",
+        "page": 93,
+        "score": 0.03200204813108039,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 3,
+            "score": 0.6616457705218475
+          },
+          "bm25": {
+            "rank": 2,
+            "score": 16.957443166535896
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0094:c04",
+        "source": "data-science.pdf#page=94",
+        "page": 94,
+        "score": 0.031754032258064516,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 2,
+            "score": 0.6989699960982854
+          },
+          "bm25": {
+            "rank": 4,
+            "score": 13.627617986525014
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0090:c01",
+      "B:openstax-data-science:p0093:c02",
+      "B:openstax-data-science:p0094:c04",
+      "B:openstax-data-science:p0090:c00",
+      "B:openstax-data-science:p0090:c02",
+      "B:openstax-data-science:p0093:c01",
+      "B:openstax-data-science:p0094:c03"
+    ],
+    "context_chars": 5683,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 56.6
+  },
+  {
+    "query_id": "m03",
+    "split": "test2",
+    "type": "direct",
+    "question": "What is data aggregation?",
+    "query_sent": "What is data aggregation?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0094:c06",
+        "source": "data-science.pdf#page=94",
+        "page": 94,
+        "score": 0.03278688524590164,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 1,
+            "score": 0.9235065625008025
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 9.86233678406333
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0086:c00",
+        "source": "data-science.pdf#page=86",
+        "page": 86,
+        "score": 0.031009615384615385,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 5,
+            "score": 0.6816821884106298
+          },
+          "bm25": {
+            "rank": 4,
+            "score": 5.072840163241679
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0090:c01",
+        "source": "data-science.pdf#page=90",
+        "page": 90,
+        "score": 0.016129032258064516,
+        "hit": false,
+        "components": {
+          "bm25": {
+            "rank": 2,
+            "score": 5.71758003558813
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0094:c06",
+      "B:openstax-data-science:p0086:c00",
+      "B:openstax-data-science:p0090:c01",
+      "B:openstax-data-science:p0094:c05",
+      "B:openstax-data-science:p0094:c07",
+      "B:openstax-data-science:p0086:c01",
+      "B:openstax-data-science:p0090:c02"
+    ],
+    "context_chars": 5522,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 51.5
+  },
+  {
+    "query_id": "m04",
+    "split": "test2",
+    "type": "condition",
+    "question": "What should be done with outliers before validating data?",
+    "query_sent": "What should be done with outliers before validating data?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0094:c02",
+        "source": "data-science.pdf#page=94",
+        "page": 94,
+        "score": 0.032018442622950824,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 4,
+            "score": 0.8027411338399546
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 12.090708953990298
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0087:c05",
+        "source": "data-science.pdf#page=87",
+        "page": 87,
+        "score": 0.031754032258064516,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 2,
+            "score": 0.8241062478829194
+          },
+          "bm25": {
+            "rank": 4,
+            "score": 8.875296751977965
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0087:c00",
+        "source": "data-science.pdf#page=87",
+        "page": 87,
+        "score": 0.031054405392392875,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 7,
+            "score": 0.7710308382437615
+          },
+          "bm25": {
+            "rank": 2,
+            "score": 10.671162625261307
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0094:c02",
+      "B:openstax-data-science:p0087:c05",
+      "B:openstax-data-science:p0087:c00",
+      "B:openstax-data-science:p0094:c01",
+      "B:openstax-data-science:p0094:c03",
+      "B:openstax-data-science:p0087:c04",
+      "B:openstax-data-science:p0087:c06",
+      "B:openstax-data-science:p0087:c01"
+    ],
+    "context_chars": 5155,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 58.0
+  },
+  {
+    "query_id": "m05",
+    "split": "test2",
+    "type": "table",
+    "question": "Which text preprocessing technique assigns each word a tag such as noun, verb, or adjective?",
+    "query_sent": "Which text preprocessing technique assigns each word a tag such as noun, verb, or adjective?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-data-science:p0096:c00",
+        "source": "data-science.pdf#page=96",
+        "page": 96,
+        "score": 0.03278688524590164,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 1,
+            "score": 0.7945856345687784
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 37.740099120953374
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-data-science:p0095:c00",
+        "source": "data-science.pdf#page=95",
+        "page": 95,
+        "score": 0.03200204813108039,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 2,
+            "score": 0.7472122016892245
+          },
+          "bm25": {
+            "rank": 3,
+            "score": 15.98509378184754
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-data-science:p0097:c02",
+        "source": "data-science.pdf#page=97",
+        "page": 97,
+        "score": 0.03149801587301587,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 3,
+            "score": 0.7344112871149874
+          },
+          "bm25": {
+            "rank": 4,
+            "score": 14.212058690096523
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-data-science:p0096:c00",
+      "B:openstax-data-science:p0095:c00",
+      "B:openstax-data-science:p0097:c02",
+      "B:openstax-data-science:p0096:c01",
+      "B:openstax-data-science:p0095:c01",
+      "B:openstax-data-science:p0097:c03"
+    ],
+    "context_chars": 5602,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 60.6
+  },
+  {
+    "query_id": "m06",
+    "split": "test2",
+    "type": "paraphrase",
+    "question": "When looping over a dictionary with items(), what is passed to the loop variables on each iteration?",
+    "query_sent": "When looping over a dictionary with items(), what is passed to the loop variables on each iteration?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0248:c00",
+        "source": "intro-python.pdf#page=248",
+        "page": 248,
+        "score": 0.03252247488101534,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 2,
+            "score": 0.8305564128689332
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 35.70585983272149
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0249:c01",
+        "source": "intro-python.pdf#page=249",
+        "page": 249,
+        "score": 0.03252247488101534,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 1,
+            "score": 0.8397990155579435
+          },
+          "bm25": {
+            "rank": 2,
+            "score": 18.83920610986602
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0255:c02",
+        "source": "intro-python.pdf#page=255",
+        "page": 255,
+        "score": 0.03076923076923077,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 5,
+            "score": 0.7604709553157198
+          },
+          "bm25": {
+            "rank": 5,
+            "score": 14.726489534736425
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0248:c00",
+      "B:openstax-intro-python:p0249:c01",
+      "B:openstax-intro-python:p0255:c02",
+      "B:openstax-intro-python:p0248:c01",
+      "B:openstax-intro-python:p0249:c00",
+      "B:openstax-intro-python:p0255:c01"
+    ],
+    "context_chars": 3702,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 52.7
+  },
+  {
+    "query_id": "m07",
+    "split": "test2",
+    "type": "direct",
+    "question": "How can a dictionary be created from a list of tuples?",
+    "query_sent": "How can a dictionary be created from a list of tuples?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0240:c00",
+        "source": "intro-python.pdf#page=240",
+        "page": 240,
+        "score": 0.03252247488101534,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 2,
+            "score": 0.7608321283263855
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 17.58479315938625
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0239:c02",
+        "source": "intro-python.pdf#page=239",
+        "page": 239,
+        "score": 0.03125763125763126,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 3,
+            "score": 0.7534554298573274
+          },
+          "bm25": {
+            "rank": 5,
+            "score": 8.904867378498864
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0255:c01",
+        "source": "intro-python.pdf#page=255",
+        "page": 255,
+        "score": 0.03125763125763126,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 5,
+            "score": 0.7417177577691656
+          },
+          "bm25": {
+            "rank": 3,
+            "score": 11.25561365068891
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0240:c00",
+      "B:openstax-intro-python:p0239:c02",
+      "B:openstax-intro-python:p0255:c01",
+      "B:openstax-intro-python:p0240:c01",
+      "B:openstax-intro-python:p0239:c01",
+      "B:openstax-intro-python:p0239:c03",
+      "B:openstax-intro-python:p0255:c00",
+      "B:openstax-intro-python:p0255:c02"
+    ],
+    "context_chars": 4628,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 57.9
+  },
+  {
+    "query_id": "m08",
+    "split": "test2",
+    "type": "condition",
+    "question": "What kinds of things can conditional statements check in a dictionary?",
+    "query_sent": "What kinds of things can conditional statements check in a dictionary?",
+    "filter": null,
+    "config": "R8_hybrid_neighbours",
+    "error": null,
+    "results": [
+      {
+        "rank": 1,
+        "id": "B:openstax-intro-python:p0246:c00",
+        "source": "intro-python.pdf#page=246",
+        "page": 246,
+        "score": 0.03278688524590164,
+        "hit": true,
+        "components": {
+          "dense": {
+            "rank": 1,
+            "score": 0.8492097168689813
+          },
+          "bm25": {
+            "rank": 1,
+            "score": 19.75040536727063
+          }
+        }
+      },
+      {
+        "rank": 2,
+        "id": "B:openstax-intro-python:p0247:c01",
+        "source": "intro-python.pdf#page=247",
+        "page": 247,
+        "score": 0.031754032258064516,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 2,
+            "score": 0.8112585544586182
+          },
+          "bm25": {
+            "rank": 4,
+            "score": 9.753701732101904
+          }
+        }
+      },
+      {
+        "rank": 3,
+        "id": "B:openstax-intro-python:p0255:c02",
+        "source": "intro-python.pdf#page=255",
+        "page": 255,
+        "score": 0.031754032258064516,
+        "hit": false,
+        "components": {
+          "dense": {
+            "rank": 4,
+            "score": 0.7941874265670776
+          },
+          "bm25": {
+            "rank": 2,
+            "score": 15.630449027633427
+          }
+        }
+      }
+    ],
+    "context_ids": [
+      "B:openstax-intro-python:p0246:c00",
+      "B:openstax-intro-python:p0247:c01",
+      "B:openstax-intro-python:p0255:c02",
+      "B:openstax-intro-python:p0246:c01",
+      "B:openstax-intro-python:p0247:c00",
+      "B:openstax-intro-python:p0255:c01"
+    ],
+    "context_chars": 3797,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true,
+    "latency_ms": 54.5
+  }
+]

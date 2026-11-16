@@ -1,0 +1,19 @@
+{
+ "page": 426,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 9.1",
+   "kind": "table",
+   "title": "Baseball Player Dataset (SOCR-small.csv)",
+   "details": "| Name           | Team | Position  | Height (Inches) | Weight (Pounds) | Age (Years) |\n|----------------|------|-----------|-----------------|-----------------|-------------|\n| Paul_McAnulty  | SD   | Outfielder| 70              | 220             | 26.01       |\n| Terrmel_Sledge | SD   | Outfielder| 72              | 185             | 29.95       |\n| Jack_Cust      | SD   | Outfielder| 73              | 231             | 28.12       |\n| Jose_Cruz_Jr.  | SD   | Outfielder| 72              | 210             | 32.87       |\n| Russell_Branyan| SD   | Outfielder| 75              | 195             | 31.2        |\n| Mike_Cameron   | SD   | Outfielder| 74              | 200             | 34.14       |\n| Brian_Giles    | SD   | Outfielder| 70              | 205             | 36.11       |\n| Mike_Thompson  | SD   | Pitcher   | 76              | 200             | 26.31       |\n| Clay_Hensley   | SD   | Pitcher   | 71              | 190             | 27.50       |\n| Chris_Young    | SD   | Pitcher   | 82              | 250             | 27.77       |\n| Greg_Maddux    | SD   | Pitcher   | 72              | 185             | 40.88       |\n| Jake_Peavy     | SD   | Pitcher   | 73              | 180             | 25.75       |",
+   "summary": "This table lists a dataset of Major League baseball players with their team, position, height, weight, and age, used as the basis for generating a vertical boxplot of ages."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2879,
+  "completion_tokens": 459
+ },
+ "cost_usd": 0.001886,
+ "elapsed_s": 5.09
+}

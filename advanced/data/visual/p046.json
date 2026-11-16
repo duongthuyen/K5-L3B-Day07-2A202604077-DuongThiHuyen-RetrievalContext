@@ -1,0 +1,33 @@
+{
+ "page": 46,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 1.18",
+   "kind": "image",
+   "title": "Side Tab of Colab",
+   "details": "Screenshot showing the side tab of Google Colaboratory interface with icons including Files (highlighted), Search, Snippets, and a folder icon labeled 'Files'.",
+   "summary": "This image shows the location of the Files icon on the side tab of Google Colaboratory, which is the first step to accessing files in Google Drive."
+  },
+  {
+   "label": "Figure 1.19",
+   "kind": "image",
+   "title": "Features under Files on Colab",
+   "details": "Screenshot showing the Files pane in Google Colaboratory with folders bin, boot, content, datalab, and an icon labeled 'Mount Drive' highlighted.",
+   "summary": "This image illustrates the Files pane in Colab and highlights the Mount Drive icon used to connect Google Drive to the notebook."
+  },
+  {
+   "label": "Figure 1.20",
+   "kind": "image",
+   "title": "An Inserted Cell to Mount Your Google Drive",
+   "details": "Screenshot of a code cell in a Colab notebook containing the code: 'from google.colab import drive\ndrive.mount('/content/drive')' with a blue pop-up box overlay saying 'Run this cell to mount your Google Drive. Learn more Dismiss'.",
+   "summary": "This image shows the inserted code cell that mounts Google Drive in the Colab notebook, enabling access to files stored in Drive."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2430,
+  "completion_tokens": 339
+ },
+ "cost_usd": 0.001514,
+ "elapsed_s": 4.02
+}

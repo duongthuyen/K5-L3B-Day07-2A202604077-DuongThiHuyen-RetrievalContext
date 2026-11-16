@@ -1,0 +1,19 @@
+{
+ "page": 256,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 5.5",
+   "kind": "table",
+   "title": "EMA Models (source: adapted from https://www.nasdaq.com/market-activity/index/spx/historical)",
+   "details": "| Year | S&P Index at Year-End | Exponentially Weighted α = 1/2 | Exponentially Weighted α = 0.7 |\n|-------|-----------------------|--------------------------------|-----------------------------|\n| 2013  | 1848.36               | ≈ 0                           | ≈ 0                        |\n| 2014  | 2058.9                | ≈ 0                           | ≈ 0                        |\n| 2015  | 2043.94               | (1/512) · 2043.94 = 3.99      | ≈ 0                        |\n| 2016  | 2238.83               | (1/256) · 2238.83 = 8.75      | ≈ 0                        |\n| 2017  | 2673.61               | (1/128) · 2673.61 = 20.89     | ≈ 0                        |\n| 2018  | 2506.85               | (1/64) · 2506.85 = 39.17      | 0.00567 · 2506.9 = 4.26     |\n| 2019  | 3230.78               | (1/32) · 3230.78 = 100.96     | 0.00567 · 3230.78 = 18.32   |\n| 2020  | 3756.07               | (1/16) · 3756.07 = 234.75     | 0.0189 · 3756.07 = 70.99    |\n| 2021  | 4766.18               | (1/8) · 4766.18 = 595.77      | 0.063 · 4766.18 = 300.27    |\n| 2022  | 3839.5                | (1/4) · 3839.5 = 959.88       | 0.21 · 3839.5 = 806.30      |\n| 2023  | 4769.83               | (1/2) · 4769.83 = 2384.92     | 0.7 · 4769.83 = 3338.88     |\n| 2024  |                       | SUM = 4349                   | SUM = 4541                 |",
+   "summary": "This table compares the S&P Index year-end values from 2013 to 2023 with exponentially weighted moving averages calculated using two different alpha values (0.5 and 0.7). It shows the weighted contributions for each year and sums for 2024 estimates, illustrating how different alpha values emphasize recent data differently."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2647,
+  "completion_tokens": 654
+ },
+ "cost_usd": 0.002105,
+ "elapsed_s": 5.26
+}

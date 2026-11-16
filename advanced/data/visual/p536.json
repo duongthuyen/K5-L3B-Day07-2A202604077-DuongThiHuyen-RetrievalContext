@@ -1,0 +1,19 @@
+{
+ "page": 536,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table B6",
+   "kind": "table",
+   "title": "Home Prices Based on Square Footage and Number of Bedrooms",
+   "details": "| Price of Home (y) | Square Footage x₁ | Number of Bedrooms x₂ |\n|-------------------|-------------------|----------------------|\n| 466000            | 4668              | 6                    |\n| 355000            | 3196              | 5                    |\n| 405900            | 3998              | 5                    |\n| 415000            | 4022              | 5                    |\n| 206000            | 1834              | 2                    |\n| 462000            | 4668              | 6                    |\n| 290000            | 2650              | 3                    |",
+   "summary": "This table lists seven homes with their prices, square footage, and number of bedrooms, serving as data for a multiple regression analysis."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2739,
+  "completion_tokens": 213
+ },
+ "cost_usd": 0.001436,
+ "elapsed_s": 2.94
+}

@@ -1,0 +1,19 @@
+{
+ "page": 229,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 5.4",
+   "kind": "image",
+   "title": "Using Excel to Create a Line Chart. Instead of using “Recommended Charts,” you could also choose line chart from the panel of choices located on the same tab. (Used with permission from Microsoft)",
+   "details": "Screenshot of Excel interface showing a small data table with years 2013 to 2023 and corresponding S&P index values at the end of each year. The Excel ribbon is visible with the 'Recommended Charts' button highlighted. On the right, the 'Insert Chart' dialog is open with the 'Recommended Charts' tab selected, showing a line chart preview titled 'S&P Index at End of Year' with years 2013 to 2023 on the x-axis and index values from 1000 to 6000 on the y-axis.",
+   "summary": "This figure demonstrates how to create a line chart in Excel using the 'Recommended Charts' feature or by selecting the line chart option directly from the chart panel, using S&P 500 index data as an example."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2432,
+  "completion_tokens": 224
+ },
+ "cost_usd": 0.001331,
+ "elapsed_s": 3.02
+}

@@ -1,0 +1,19 @@
+{
+ "page": 387,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 8.1",
+   "kind": "image",
+   "title": "Balancing the ethical aspects of the evolving practice of data science requires a careful approach throughout the data science cycle (i.e., during collection, analysis, and use of data, as well as its dissemination).",
+   "details": "Image shows a digital background of numbers in blue and green with a large red unlocked padlock icon overlayed in the center, symbolizing data security and privacy concerns.",
+   "summary": "This image visually represents the concept of balancing ethical considerations in data science, emphasizing the importance of security and privacy throughout the data science cycle."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2579,
+  "completion_tokens": 135
+ },
+ "cost_usd": 0.001248,
+ "elapsed_s": 6.0
+}

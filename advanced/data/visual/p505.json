@@ -1,0 +1,33 @@
+{
+ "page": 505,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure A1",
+   "kind": "image",
+   "title": "MS Excel Menu (Used with permission from Microsoft)",
+   "details": "Screenshot of the main Excel menu bar showing menu items: File, Home, Insert, Draw, Page Layout, Formulas, Data, Review, View.",
+   "summary": "This image shows the main menu bar of Microsoft Excel, illustrating the various submenu categories available for data manipulation and analysis."
+  },
+  {
+   "label": "Figure A2",
+   "kind": "image",
+   "title": "Formulas Menu in MS Excel (Used with permission from Microsoft)",
+   "details": "Screenshot of the Formulas submenu in Excel showing icons and labels for: Insert Function, AutoSum, Recently Used, Financial, Logical, Text, Date & Time, Lookup & Reference, Math & Trig, More Functions.",
+   "summary": "This image displays the Formulas submenu in Excel, highlighting the various formula-related functions available to users for data analysis."
+  },
+  {
+   "label": "Figure A3",
+   "kind": "image",
+   "title": "MS Excel Showing Rows and Columns (Used with permission from Microsoft)",
+   "details": "Screenshot of an Excel worksheet showing rows numbered 1 to 4 and columns labeled A to F. The cell A1 is selected, indicated by a green border. Above the worksheet, the Namebox shows 'A1' and the Formula Bar is empty.",
+   "summary": "This image illustrates the basic layout of an Excel worksheet with rows and columns, highlighting the concept of cells identified by column letter and row number, and showing the Namebox and Formula Bar."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2550,
+  "completion_tokens": 357
+ },
+ "cost_usd": 0.001591,
+ "elapsed_s": 4.12
+}

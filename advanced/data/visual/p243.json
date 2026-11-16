@@ -1,0 +1,19 @@
+{
+ "page": 243,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 5.5",
+   "kind": "table",
+   "title": "Determine the order of the sequence (10, 9, 6, 7, 18, 45, 94, 171) using differencing.",
+   "details": "| Difference order | Values                      |\n|------------------|-----------------------------|\n| Original         | 10, 9, 6, 7, 18, 45, 94, 171|\n| First-order      | -1, -3, 1, 11, 27, 49, 77   |\n| Second-order     | -2, 4, 10, 16, 22, 28       |\n| Third-order      | 6, 6, 6, 6, 6               |\n| Fourth-order     | 0, 0, 0, 0                  |",
+   "summary": "This example shows the step-by-step differencing of a sequence to determine its order, concluding that the sequence has order 3 because the fourth-order difference is all zeros."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2825,
+  "completion_tokens": 240
+ },
+ "cost_usd": 0.001514,
+ "elapsed_s": 2.49
+}

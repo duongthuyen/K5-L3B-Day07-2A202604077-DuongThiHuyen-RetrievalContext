@@ -1,0 +1,13 @@
+{
+  "chunks": 2335,
+  "by_kind": {
+    "text": 1748,
+    "table": 118,
+    "visual": 469
+  },
+  "pages": 556,
+  "embed_seconds": 365.0,
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "dim": 384,
+  "store": "pgvector table adv_chunks"
+}

@@ -1,0 +1,19 @@
+{
+ "page": 368,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 7.11",
+   "kind": "image",
+   "title": "Semantic Segmentation of an Image",
+   "details": "The image shows a street scene with various objects color-coded by semantic segmentation: small cars in blue, large vans/trucks in yellow, traffic signs in red, and buildings and other barriers in brown.",
+   "summary": "This figure illustrates semantic segmentation where different objects in an image are identified and color-coded to show how a CNN can classify parts of an image into meaningful categories."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2764,
+  "completion_tokens": 111
+ },
+ "cost_usd": 0.001283,
+ "elapsed_s": 2.3
+}

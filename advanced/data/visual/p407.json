@@ -1,0 +1,27 @@
+{
+ "page": 407,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 8.6",
+   "kind": "chart",
+   "title": "Second Data Scientist’s Presentation",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Time, Months",
+    "x-axis range": "01-01-2000 to 01-10-2022",
+    "y-axis label": "Units Sale × 10,000",
+    "y-axis range": "0 to 250",
+    "legend/series": "Single series",
+    "values": "Fluctuating sales units generally increasing over time, with values mostly between 100 and 220 units × 10,000, showing some variability and no clear outliers removed"
+   },
+   "summary": "This line chart shows the sales units over time from 2000 to 2022, including all data points without removing low sales outliers. It illustrates the overall trend and variability in sales, emphasizing the importance of including all data for accurate representation."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2679,
+  "completion_tokens": 201
+ },
+ "cost_usd": 0.001393,
+ "elapsed_s": 2.87
+}

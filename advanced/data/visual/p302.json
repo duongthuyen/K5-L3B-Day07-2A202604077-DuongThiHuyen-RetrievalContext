@@ -1,0 +1,47 @@
+{
+ "page": 302,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Confusion Matrix",
+   "details": {
+    "chart type": "heatmap",
+    "x-axis label": "Predicted",
+    "x-axis categories": [
+     "0",
+     "1"
+    ],
+    "y-axis label": "True",
+    "y-axis categories": [
+     "0",
+     "1"
+    ],
+    "units": "count",
+    "values": [
+     [
+      50,
+      9
+     ],
+     [
+      12,
+      41
+     ]
+    ],
+    "color shading": "darker shades off the main diagonal indicate higher misclassification rates",
+    "notable values": {
+     "lower left": 12,
+     "upper right": 9
+    }
+   },
+   "summary": "This heatmap visualizes the confusion matrix of a logistic regression model predicting college completion. It shows the counts of true vs predicted classifications, highlighting more misclassifications between flowers and grasses than trees."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2601,
+  "completion_tokens": 175
+ },
+ "cost_usd": 0.00132,
+ "elapsed_s": 2.03
+}

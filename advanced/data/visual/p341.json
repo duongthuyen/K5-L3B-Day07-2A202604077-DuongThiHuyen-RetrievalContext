@@ -1,0 +1,19 @@
+{
+ "page": 341,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 7.1",
+   "kind": "decorative",
+   "title": "Neural networks are central to modern AI, especially in the fields of deep learning and machine learning.",
+   "details": "Image shows a stylized digital illustration of a microchip with circuit lines branching out symmetrically, resembling a neural network or brain structure.",
+   "summary": "This decorative figure visually represents the concept of neural networks as central to AI, inspired by the human brain's structure and functioning."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2628,
+  "completion_tokens": 107
+ },
+ "cost_usd": 0.001222,
+ "elapsed_s": 2.19
+}

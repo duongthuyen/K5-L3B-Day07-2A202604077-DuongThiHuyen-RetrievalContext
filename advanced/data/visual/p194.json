@@ -1,0 +1,26 @@
+{
+ "page": 194,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.12",
+   "kind": "table",
+   "title": "Possible Setups for Null and Alternative Hypothesis for Paired Data Hypothesis Testing",
+   "details": "| Setup A | Setup B | Setup C |\n|---------|---------|---------|\n| H_0 : μ_d = k | H_0 : μ_d ≤ k | H_0 : μ_d ≥ k |\n| H_a : μ_d ≠ k | H_a : μ_d > k | H_a : μ_d < k |",
+   "summary": "This table shows three possible setups (A, B, and C) for null and alternative hypotheses in paired data hypothesis testing, specifying the form of the null hypothesis (H0) and alternative hypothesis (Ha) with respect to a parameter k."
+  },
+  {
+   "label": "Table 4.13",
+   "kind": "table",
+   "title": "Sample Data for Paired Data Example",
+   "details": "| Patient | Cholesterol Level Before Taking the Medication | Cholesterol Level After Taking the Medication | Difference (Before Reading - After Reading) |\n|---------|-----------------------------------------------|----------------------------------------------|---------------------------------------------|\n| 1       | 218                                           | 210                                          | 8                                           |\n| 2       | 232                                           | 241                                          | -9                                          |\n| 3       | 259                                           | 223                                          | 36                                          |\n| 4       | 265                                           | 244                                          | 21                                          |\n| 5       | 248                                           | 227                                          | 21                                          |\n| 6       | 298                                           | 273                                          | 25                                          |\n| 7       | 263                                           | 252                                          | 11                                          |\n| 8       | 281                                           | 276                                          | 5                                           |\n| 9       | 290                                           | 281                                          | 9                                           |\n| 10      | 271                                           | 259                                          | 12                                          |\n|         |                                               |                                              | \\bar{d} = 13.9                              |\n|         |                                               |                                              | s_d = 12.414                                |",
+   "summary": "This table presents cholesterol level measurements before and after taking medication for 10 patients, along with the difference (before - after). It also shows the mean difference (13.9) and standard deviation (12.414) of the differences."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2637,
+  "completion_tokens": 516
+ },
+ "cost_usd": 0.00188,
+ "elapsed_s": 4.17
+}

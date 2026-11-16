@@ -1,0 +1,48 @@
+{
+ "page": 277,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 6.2",
+   "kind": "diagram",
+   "title": "The Supervised Learning Cycle",
+   "details": {
+    "nodes": [
+     "Gather Data",
+     "Train",
+     "Test",
+     "Deploy Model"
+    ],
+    "connections": [
+     {
+      "from": "Gather Data",
+      "to": "Train",
+      "label": null
+     },
+     {
+      "from": "Train",
+      "to": "Test",
+      "label": "Repeat Train/Test until desired accuracy is achieved."
+     },
+     {
+      "from": "Test",
+      "to": "Deploy Model",
+      "label": null
+     },
+     {
+      "from": "Deploy Model",
+      "to": "Gather Data",
+      "label": "Model may need adjustment based on its performance on new data."
+     }
+    ]
+   },
+   "summary": "This diagram illustrates the supervised learning cycle, showing the iterative process of gathering data, training a model, testing it, and deploying it, with feedback loops for model adjustment based on new data performance."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2905,
+  "completion_tokens": 191
+ },
+ "cost_usd": 0.001468,
+ "elapsed_s": 2.47
+}

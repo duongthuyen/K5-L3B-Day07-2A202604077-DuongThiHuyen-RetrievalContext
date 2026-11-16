@@ -1,0 +1,73 @@
+{
+ "page": 444,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Binomial Distribution (n = 20, p = 0.1)",
+   "details": {
+    "chart type": "bar chart",
+    "x-axis": {
+     "label": "Number of Successes",
+     "range": "0 to 20"
+    },
+    "y-axis": {
+     "label": "Probability",
+     "units": null,
+     "range": "0.00 to 0.30"
+    },
+    "legend/series": null,
+    "values": {
+     "0": 0.12,
+     "1": 0.27,
+     "2": 0.29,
+     "3": 0.19,
+     "4": 0.09,
+     "5": 0.03,
+     "6": 0.01,
+     "7+": "near 0"
+    }
+   }
+  },
+  "summary': ",
+  "This bar chart shows the binomial distribution for n=20 trials with a success probability p=0.1. The distribution is skewed right with the highest probability at 2 successes.",
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Binomial Distribution (n = 20, p = 0.5)",
+   "details": {
+    "chart type": "bar chart",
+    "x-axis": {
+     "label": "Number of Successes",
+     "range": "0 to 20"
+    },
+    "y-axis": {
+     "label": "Probability",
+     "units": null,
+     "range": "0.00 to 0.18"
+    },
+    "legend/series": null,
+    "values": {
+     "0": 0.0001,
+     "5": 0.03,
+     "7": 0.075,
+     "9": 0.12,
+     "10": 0.175,
+     "11": 0.16,
+     "13": 0.075,
+     "15": 0.015,
+     "20": 0.0001
+    }
+   }
+  },
+  "summary': ",
+  "This bar chart shows the binomial distribution for n=20 trials with a success probability p=0.5. The distribution is symmetric and centered around 10 successes, with the highest probability at 10."
+ ],
+ "usage": {
+  "prompt_tokens": 2202,
+  "completion_tokens": 450
+ },
+ "cost_usd": 0.001601,
+ "elapsed_s": 5.33
+}

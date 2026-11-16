@@ -1,0 +1,19 @@
+{
+ "page": 191,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.11",
+   "kind": "table",
+   "title": "Sample Data for Women and Men Engineers",
+   "details": "| Statistic               | Women Engineers | Men Engineers |\n|-------------------------|-----------------|---------------|\n| Sample Mean             | 72700           | 76900         |\n| Sample Standard Deviation | 9800            | 10700         |\n| Sample Size             | 45              | 50            |",
+   "summary": "This table presents sample statistics including mean salary, standard deviation, and sample size for women and men engineers, used for hypothesis testing on salary differences."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2759,
+  "completion_tokens": 136
+ },
+ "cost_usd": 0.001321,
+ "elapsed_s": 1.84
+}

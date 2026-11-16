@@ -1,0 +1,19 @@
+{
+ "page": 239,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": null,
+   "summary": "No informative visual elements such as charts, diagrams, or tables are present on this page; it contains only text and formulas."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2558,
+  "completion_tokens": 56
+ },
+ "cost_usd": 0.001113,
+ "elapsed_s": 1.67
+}

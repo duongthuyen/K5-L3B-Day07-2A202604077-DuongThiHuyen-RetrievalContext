@@ -1,0 +1,19 @@
+{
+ "page": 176,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.6",
+   "kind": "table",
+   "title": "Three possible setups for the null and alternative hypotheses for a population mean",
+   "details": "| Null Hypothesis (H0) | Alternative Hypothesis (Ha) |\n|---------------------|-----------------------------|\n| μ = k               | μ ≠ k                       |\n| μ ≤ k               | μ > k                       |\n| μ ≥ k               | μ < k                       |",
+   "summary": "This table shows the three complementary setups for null and alternative hypotheses in a one-sample hypothesis test for a population mean, where k is a numerical constant from the claim."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2829,
+  "completion_tokens": 142
+ },
+ "cost_usd": 0.001359,
+ "elapsed_s": 4.3
+}

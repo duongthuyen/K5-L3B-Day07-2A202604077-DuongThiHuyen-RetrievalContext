@@ -1,0 +1,19 @@
+{
+ "page": 184,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 4.15",
+   "kind": "decorative",
+   "title": null,
+   "details": null,
+   "summary": "This is a boxed example illustrating a hypothesis testing problem about the proportion of students using AI tools. It is a text example, not an informative visual element."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2672,
+  "completion_tokens": 68
+ },
+ "cost_usd": 0.001178,
+ "elapsed_s": 1.47
+}

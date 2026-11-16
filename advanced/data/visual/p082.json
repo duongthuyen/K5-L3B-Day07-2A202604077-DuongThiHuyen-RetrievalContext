@@ -1,0 +1,29 @@
+{
+ "page": 82,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "diagram",
+   "title": "Python code example using re.findall to search for matching patterns",
+   "details": {
+    "code_lines": [
+     "words = re.findall(pattern, story)",
+     "print (\"The word 'python' is repeated\", len(words), \"times in the story.\")",
+     "print(words) # output: ['Python']"
+    ],
+    "output": [
+     "The word 'python' is repeated 2 times in the story.",
+     "['Python', 'Python']"
+    ]
+   },
+   "summary": "This code snippet demonstrates using Python's re.findall function to find all occurrences of a pattern in a string, count them using len(), and print the matched patterns."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2814,
+  "completion_tokens": 145
+ },
+ "cost_usd": 0.001358,
+ "elapsed_s": 1.83
+}

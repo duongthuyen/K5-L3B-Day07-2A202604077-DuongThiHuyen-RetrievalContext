@@ -1,0 +1,19 @@
+{
+ "page": 518,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table A1",
+   "kind": "table",
+   "title": "Example MS Excel Formulas",
+   "details": "| Formula           | Description                                                                                         |\n|-------------------|-----------------------------------------------------------------------------------------------------|\n| =MIN(D2:D13)      | Find the minimum value among D2, D3, ..., and D13. Returns 70 as a result.                            |\n| =MAX(D2:D13)      | Find the maximum value among D2, D3, ..., and D13. Returns 82 as a result.                            |\n| =SUM(D2:D13)      | Sum the values of D2, D3, ..., through D13. Returns 880 as a result.                                 |\n| =COUNTIF(D2:D13, 72) | Count the number of occurrences of “72” within the range of D2, D3, ..., through D13. Returns 3 as a result (i.e., there are three 72s in D2:D13). |",
+   "summary": "This table lists example MS Excel formulas with their descriptions and example results, demonstrating basic statistical and counting functions."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2620,
+  "completion_tokens": 242
+ },
+ "cost_usd": 0.001435,
+ "elapsed_s": 2.96
+}

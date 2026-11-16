@@ -1,0 +1,33 @@
+{
+ "page": 391,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 8.1",
+   "kind": "diagram",
+   "title": "Problem and Solution for Regulatory Compliance in Data Collection",
+   "details": {
+    "nodes": [
+     "Problem: Gadget Galaxy's data collection violates regulatory compliance",
+     "Option a: Outsource data collection to third-party specializing in compliance",
+     "Option b: Continue project without policies due to small business status",
+     "Option c: Conduct simple training and create own policies",
+     "Option d: Halt project and seek expert guidance",
+     "Solution: Correct choice is d, halt project and seek expert guidance, conduct training, and perform external review"
+    ],
+    "connections": [
+     "Problem leads to options a, b, c, d",
+     "Solution selects option d as correct",
+     "Solution includes training and external review after halting project"
+    ]
+   },
+   "summary": "This example presents a problem scenario where a company violates data collection compliance and lists four possible action plans. The solution identifies the correct action as halting the project and seeking expert guidance to develop proper policies."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2829,
+  "completion_tokens": 210
+ },
+ "cost_usd": 0.001468,
+ "elapsed_s": 2.31
+}

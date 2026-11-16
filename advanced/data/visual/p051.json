@@ -1,0 +1,19 @@
+{
+ "page": 51,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": null,
+   "details": "Screenshot of Python code and output demonstrating the use of DataFrame.iloc[] for selection by row and column indices. The first code snippet selects all values in the second column (data.iloc[:, 2]) and shows output with indices and years (e.g., 0 2009, 1 2019, ..., 965 2017). The second code snippet selects all values in the third row (data.iloc[2, :]) and shows output with column labels and values (e.g., Title Titanic, Year 1997, Genre Drama, Rating 7.9, Duration 194).",
+   "summary": "This visual element shows Python code examples and their outputs to illustrate how to use DataFrame.iloc[] for selecting data by row and column indices in a DataFrame."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2453,
+  "completion_tokens": 184
+ },
+ "cost_usd": 0.001276,
+ "elapsed_s": 2.56
+}

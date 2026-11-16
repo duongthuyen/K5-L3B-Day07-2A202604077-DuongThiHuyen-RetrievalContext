@@ -1,0 +1,26 @@
+{
+ "page": 189,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.9",
+   "kind": "table",
+   "title": "Three Possible Setups for the Null and Alternative Hypotheses for a Population Mean (Two Samples)",
+   "details": "| Setup A | Setup B | Setup C |\n|---------|---------|---------|\n| H₀ : μ₁ = μ₂ | H₀ : μ₁ ≤ μ₂ | H₀ : μ₁ ≥ μ₂ |\n| Hₐ : μ₁ ≠ μ₂ | Hₐ : μ₁ > μ₂ | Hₐ : μ₁ < μ₂ |",
+   "summary": "This table shows three possible setups for null and alternative hypotheses when comparing population means from two samples."
+  },
+  {
+   "label": "Table 4.10",
+   "kind": "table",
+   "title": "Three Possible Setups for the Null and Alternative Hypotheses for a Population Proportion (Two Samples)",
+   "details": "| Setup D | Setup E | Setup F |\n|---------|---------|---------|\n| H₀ : p₁ = p₂ | H₀ : p₁ ≤ p₂ | H₀ : p₁ ≥ p₂ |\n| Hₐ : p₁ ≠ p₂ | Hₐ : p₁ > p₂ | Hₐ : p₁ < p₂ |",
+   "summary": "This table shows three possible setups for null and alternative hypotheses when comparing population proportions from two samples."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2641,
+  "completion_tokens": 319
+ },
+ "cost_usd": 0.001567,
+ "elapsed_s": 2.87
+}

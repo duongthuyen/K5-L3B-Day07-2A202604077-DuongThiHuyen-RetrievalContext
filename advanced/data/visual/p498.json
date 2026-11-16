@@ -1,0 +1,26 @@
+{
+ "page": 498,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "Executive Summary",
+   "details": "Text block titled 'Executive Summary' with sections: Purpose of the Study, Findings, Recommendation. It describes a research study analyzing patient health data to detect diabetes using a classification decision tree model, highlighting key predictors like glucose levels, BMI, and waist circumference, and recommending integration of the model into clinical practice.",
+   "summary": "This text summarizes a study applying data science techniques to detect diabetes, outlining the study's purpose, key findings, and recommendations for clinical and public health use."
+  },
+  {
+   "label": null,
+   "kind": "table",
+   "title": "Additional Resources",
+   "details": "| Author(s) | Year | Title | Source/Link |\n|---|---|---|---|\n| Bettes, S. | 2019 | Audience. In M. Beilfus, S. Bettes, & K. Peterson (Eds.), Technical and professional writing genres: A study in theory and practice. | https://open.library.okstate.edu/technicalandprofessionalwriting/chapter/chapter-2/ |\n| Brownlee, J. | 2021, February 1 | Sensitivity analysis of dataset size vs. model performance. | https://machinelearningmastery.com/sensitivity-analysis-of-dataset-size-vs-model-performance/ |\n| Hotz, N. | 2024, April 5 | 15 data science documentation best practices. | https://www.datascience-pm.com/documentation-best-practices |\n| Intelligent Editing | 2021, June 9 | How to understand your audience in technical writing. | https://intelligentediting.com/blog/how-to-understand-your-audience-in-technical-writing |\n| Kazakoff, M. | 2023, May | Delivering the facts. | https://www.theactuary.com/2023/05/04/delivering-facts |\n| Marino, V., & Dragan, D. | 2018, July | Science communication with diverse audiences. | Adult Development & (unreadable continuation) |",
+   "summary": "This table lists additional resources including articles and books on technical writing and communicating data science findings, providing titles, authors, dates, and URLs for further learning."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2575,
+  "completion_tokens": 479
+ },
+ "cost_usd": 0.001796,
+ "elapsed_s": 4.75
+}

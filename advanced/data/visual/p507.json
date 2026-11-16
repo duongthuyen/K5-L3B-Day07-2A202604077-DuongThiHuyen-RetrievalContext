@@ -1,0 +1,19 @@
+{
+ "page": 507,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure A5",
+   "kind": "table",
+   "title": "ch1-SOCR-small.csv Opened with MS Excel",
+   "details": "| Name           | Team | Position   | Height (inches) | Weight (pounds) | Age   |\n|----------------|------|------------|-----------------|-----------------|-------|\n| Paul_McAnulty  | SD   | Outfielder | 70              | 220             | 26.01 |\n| Terrmel_Sledge | SD   | Outfielder | 72              | 185             | 29.95 |\n| Jack_Cust      | SD   | Outfielder | 73              | 231             | 28.12 |\n| Jose_Cruz_Jr.  | SD   | Outfielder | 72              | 210             | 32.87 |\n| Russell_Branyan| SD   | Outfielder | 75              | 195             | 31.2  |\n| Mike_Cameron   | SD   | Outfielder | 74              | 200             | 34.14 |\n| Brian_Giles    | SD   | Outfielder | 70              | 205             | 36.11 |\n| Mike_Thompson  | SD   | Pitcher    | 76              | 200             | 26.31 |\n| Clay_Hensley   | SD   | Pitcher    | 71              | 190             | 27.5  |\n| Chris_Young    | SD   | Pitcher    | 82              | 250             | 27.77 |\n| Greg_Maddux    | SD   | Pitcher    | 72              | 185             | 40.88 |\n| Jake_Peavy     | SD   | Pitcher    | 73              | 180             | 25.75 |",
+   "summary": "This table shows player data from the file ch1-SOCR-small.csv opened in MS Excel, listing names, teams, positions, heights, weights, and ages for 12 players, divided into Outfielders and Pitchers."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2408,
+  "completion_tokens": 458
+ },
+ "cost_usd": 0.001696,
+ "elapsed_s": 4.31
+}

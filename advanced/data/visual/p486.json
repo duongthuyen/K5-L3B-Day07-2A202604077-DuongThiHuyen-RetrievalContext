@@ -1,0 +1,19 @@
+{
+ "page": 486,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "diagram",
+   "title": "Decision tree with max depth of 2",
+   "details": "The diagram is a decision tree with nodes labeled by feature names and split conditions (unreadable). The tree has a root node branching into two child nodes, each further branching into leaf nodes. Leaf nodes show the number of samples and class distribution (unreadable). The tree is colored (filled=True) to indicate class or purity. The tree depth is limited to 2 levels.",
+   "summary": "This decision tree diagram illustrates a model limited to a maximum depth of 2 to reduce overfitting, showing how the data is split at each node and the distribution of samples in leaf nodes."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2446,
+  "completion_tokens": 154
+ },
+ "cost_usd": 0.001225,
+ "elapsed_s": 2.17
+}

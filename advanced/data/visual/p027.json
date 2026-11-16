@@ -1,0 +1,19 @@
+{
+ "page": 27,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 1.1",
+   "kind": "table",
+   "title": "Course Evaluation Records",
+   "details": "| Semester    | Instructor | Class Size | Rating               |\n|-------------|------------|------------|----------------------|\n| Fall 2020   | A          | 100        | Not recommended at all|\n| Spring 2021 | A          | 50         | Highly recommended   |\n| Fall 2021   | B          | 120        | Not quite recommended |\n| Spring 2022 | B          | 40         | Highly recommended   |\n| Fall 2022   | A          | 110        | Recommended          |\n| Spring 2023 | B          | 50         | Highly recommended   |",
+   "summary": "This table shows course evaluation records over six semesters, listing the semester, instructor, class size, and rating. It illustrates different types of data (text and numeric) and highlights how ratings encode recommendations for the course."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2767,
+  "completion_tokens": 214
+ },
+ "cost_usd": 0.001449,
+ "elapsed_s": 2.27
+}

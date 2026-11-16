@@ -1,0 +1,19 @@
+{
+ "page": 550,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table D1",
+   "kind": "table",
+   "title": null,
+   "details": "| Python Function           | Description                                                                 | Syntax                                                                                                   | First Reference                          |\n|---------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-----------------------------------------|\n| proportion_confint()       | Calculates confidence interval for a proportion (uses normal distribution) | proportion_confint(success, sample_size, alpha)                                                           | Statistical Inference and Confidence Intervals |\n| ttest_1samp()             | Returns the value of the test statistic and the two-tailed p-value for a one-sample hypothesis test using the t-distribution | ttest_1samp(data_array, null_hypothesis_mean)                                                           | Hypothesis Testing                      |\n| ttest_ind_from_stats()    | Returns the value of the test statistic and the two-tailed p-value for a two-sample hypothesis test using the t-distribution | ttest_ind_from_stats(sample_mean1, sample_standard_deviation1, sample_size1, sample_mean2, sample_standard_deviation2, sample_size2) | Hypothesis Testing                      |\n| np.array()                | Creates a numerical array from a list-like object                           | np.array(object)                                                                                         | Correlation and Linear Regression Analysis |\n| pearsonr()                | Calculates the value of the Pearson correlation coefficient r               | pearsonr(x_data, y_data)                                                                             | Correlation and Linear Regression Analysis |",
+   "summary": "This table lists several Python functions relevant to statistical inference and data analysis, providing their descriptions, syntax, and references for further reading."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2464,
+  "completion_tokens": 332
+ },
+ "cost_usd": 0.001517,
+ "elapsed_s": 3.58
+}

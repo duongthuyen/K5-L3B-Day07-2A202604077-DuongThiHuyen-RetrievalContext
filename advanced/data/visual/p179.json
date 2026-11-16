@@ -1,0 +1,19 @@
+{
+ "page": 179,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.8",
+   "kind": "table",
+   "title": "How to Establish a Conclusion from a Hypothesis Test",
+   "details": "| Select the decision from the hypothesis test: | Is the claim in the null or the alternative hypothesis? | Then, use this concluding statement: |\n|-----------------------------------------------|-------------------------------------------------|---------------------------------------------|\n| **Row 1** Reject the null hypothesis           | Claim is the null hypothesis                      | *There is enough evidence to reject the claim.* |\n| **Row 2** Reject the null hypothesis           | Claim is the alternative hypothesis                | *There is enough evidence to support the claim.* |\n| **Row 3** Fail to reject the null hypothesis   | Claim is the null hypothesis                        | *There is not enough evidence to reject the claim.* |\n| **Row 4** Fail to reject the null hypothesis   | Claim is the alternative hypothesis                | *There is not enough evidence to support the claim.* |",
+   "summary": "This table provides a clear guide for interpreting the results of hypothesis tests by linking the decision (reject or fail to reject the null hypothesis) and the claim's status (null or alternative hypothesis) to an easy-to-understand concluding statement."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2895,
+  "completion_tokens": 261
+ },
+ "cost_usd": 0.001576,
+ "elapsed_s": 2.59
+}

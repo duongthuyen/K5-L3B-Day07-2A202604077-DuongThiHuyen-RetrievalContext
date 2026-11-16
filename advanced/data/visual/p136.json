@@ -1,0 +1,19 @@
+{
+ "page": 136,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 3.21",
+   "kind": "decorative",
+   "title": "Example 3.21 Problem",
+   "details": "Text describing a probability problem involving Bayes' Theorem and cancer screening test probabilities.",
+   "summary": "This example introduces a problem to calculate the conditional probability that a patient has cancer given a positive screening test result using Bayes' Theorem."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2642,
+  "completion_tokens": 87
+ },
+ "cost_usd": 0.001196,
+ "elapsed_s": 1.34
+}

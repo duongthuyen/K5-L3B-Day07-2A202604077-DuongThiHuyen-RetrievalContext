@@ -1,0 +1,19 @@
+{
+ "page": 477,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": "This is a page of text with an example problem and solution about writing an informative report; no informative visual elements such as charts, diagrams, tables, or images are present.",
+   "summary": "The page contains only text and an example related to writing an informative report; no informative visual elements are present to index."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2688,
+  "completion_tokens": 89
+ },
+ "cost_usd": 0.001218,
+ "elapsed_s": 1.64
+}

@@ -1,0 +1,26 @@
+{
+ "page": 371,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 7.13",
+   "kind": "image",
+   "title": "A Screenshot of Eliza",
+   "details": "Screenshot of a terminal-like interface showing a conversation with Eliza (1966). The text shows a dialogue where Eliza mostly restates user input to elicit further information. Example lines include: '> Hello, I am Eliza.', '* Hey!', '> Don’t you ever say Hello?', '* Hello!', '> How are you today.. What would you like to discuss?', '* I’m depressed.', '> Do you enjoy being depressed?', '* No, I don’t.', '> Why no?', '* Because I want to be happy.', '> Why do you want to be happy?', '* Because I’m tired od being depressed.', '> That is quite interesting.', '* I’m not sure'.",
+   "summary": "This screenshot illustrates how Eliza, an early natural language processing program, interacts with users by restating their input to encourage further conversation."
+  },
+  {
+   "label": "Table 7.3",
+   "kind": "table",
+   "title": "Brief History of NLP",
+   "details": "| Year | Development |\n|-------|-------------|\n| Mid-1960s | *ELIZA*, a computer program capable of simulating conversation, was created by Joseph Weizenbaum at MIT. |\n| Late 1980s to 1990s | Statistical language models such as *hidden Markov Models (HMMs)* (a type of statistical model useful for predicting sequential data, such as speech and handwriting) and *n-gram* models (models based on predicting the next, or *n*th, term of a sequence based on the previous *n - 1* terms), gained popularity for tasks like speech recognition and machine translation. |\n| 2001 | The introduction of the *BLEU* metric for evaluating machine translation systems by Kishore Papineni and colleagues. |\n| 2003 | *Moses*, an open-source statistical machine translation system, was introduced by Philipp Koehn and colleagues. |\n| 2013 | *Word2vec*, a word embedding technique, was introduced by Tomas Mikolov and colleagues at Google. *Word embedding* refers to translating words into vector representations in high-dimensional vector spaces in such a way that preserves certain relationships among the words. |\n| 2017 | The *Transformer* architecture, introduced in the paper “Attention Is All You Need” by Ashish Vaswani et al., revolutionized the world of NLPs. Instead of considering words one by one, a transformer model looks at sentences, paragraphs, and larger groups of words using a paradigm called *self-attention*, which allows the model to evaluate the importance of different words or phrases within a larger context. |\n| 2018 | OpenAI introduced the first *GPT* (Generative Pretrained Transformer), a large-scale unsupervised language model. |\n| 2018 | *BERT* (Bidirectional Encoder Representations from Transformers), a transformer-based language model, was introduced by researchers at Google. |",
+   "summary": "This table summarizes key milestones in the development of natural language processing, highlighting important models, techniques, and metrics from the mid-1960s through 2018."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2670,
+  "completion_tokens": 675
+ },
+ "cost_usd": 0.002148,
+ "elapsed_s": 5.43
+}

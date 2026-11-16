@@ -1,0 +1,52 @@
+{
+ "page": 344,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 7.4",
+   "kind": "diagram",
+   "title": "Output Neurons. In this figure, there are four output neurons, labeled A, B, C, and D. Since B has the highest activation level, the output of the neural network is B.",
+   "details": {
+    "nodes": [
+     "A",
+     "B",
+     "C",
+     "D",
+     "Output"
+    ],
+    "node_values": {
+     "A": 0.63,
+     "B": 0.81,
+     "C": 0.32,
+     "D": 0.09
+    },
+    "connections": [
+     {
+      "from": "A",
+      "to": "Output"
+     },
+     {
+      "from": "B",
+      "to": "Output"
+     },
+     {
+      "from": "C",
+      "to": "Output"
+     },
+     {
+      "from": "D",
+      "to": "Output"
+     }
+    ],
+    "highlight": "B has the highest activation level (0.81) and determines the output."
+   },
+   "summary": "This diagram shows four output neurons labeled A, B, C, and D with their activation levels. The neuron B has the highest activation, indicating that the neural network's output corresponds to B."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2858,
+  "completion_tokens": 239
+ },
+ "cost_usd": 0.001526,
+ "elapsed_s": 2.7
+}

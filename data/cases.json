@@ -225,6 +225,62 @@
     "expected_behavior": "search_and_answer"
   },
   {
+    "id": "m01",
+    "split": "test2",
+    "question": "What are the most commonly used normal forms in database design?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "m02",
+    "split": "test2",
+    "question": "In a survey, a respondent's age is recorded as 150 years. Which data processing step identifies this value as erroneous?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "m03",
+    "split": "test2",
+    "question": "What is data aggregation?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "m04",
+    "split": "test2",
+    "question": "What should be done with outliers before validating data?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "m05",
+    "split": "test2",
+    "question": "Which text preprocessing technique assigns each word a tag such as noun, verb, or adjective?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "m06",
+    "split": "test2",
+    "question": "When looping over a dictionary with items(), what is passed to the loop variables on each iteration?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "m07",
+    "split": "test2",
+    "question": "How can a dictionary be created from a list of tuples?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "m08",
+    "split": "test2",
+    "question": "What kinds of things can conditional statements check in a dictionary?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
     "id": "u01",
     "split": "dev",
     "question": "How do you sort a list in descending order with the reverse=True argument of sort()?",
@@ -271,5 +327,29 @@
     "answerable": false,
     "expected_behavior": "search_and_abstain",
     "absence_reason": "Only list.copy() is described (p.228-229, 236); grep 'deepcopy', 'deep copy', 'copy module' = 0 hits."
+  },
+  {
+    "id": "v01",
+    "split": "test2",
+    "question": "Which SQL command is used to enforce third normal form in a database?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Normal forms are only named on p.90 (1NF, 2NF, 3NF, BCNF); SQL is mentioned only on p.99 as the query language of relational databases; no command for normal forms (grep ALTER/CREATE TABLE = no relevant hit)."
+  },
+  {
+    "id": "v02",
+    "split": "test2",
+    "question": "Which Python library is recommended for named entity recognition?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Named entity recognition is described on p.96 without any library; grep 'spaCy', 'NLTK', 'library' for NER = 0 hits."
+  },
+  {
+    "id": "v03",
+    "split": "test2",
+    "question": "How do you sort a dictionary by its values?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Dictionary chapter (p.238-258) has no sorting of dictionaries; grep 'sorted(' = 0 hits; sort() only appears for lists (p.224-226)."
   }
 ]

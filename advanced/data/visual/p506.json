@@ -1,0 +1,19 @@
+{
+ "page": 506,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure A4",
+   "kind": "image",
+   "title": "SOCR-small Dataset Opened with MS Excel (Used with permission from Microsoft)",
+   "details": "Screenshot of an Excel worksheet window showing a dataset with columns: Name, Team, Position, Height(inches), Weight(pounds), Age. The dataset includes 12 rows of data for MLB players, with names like Paul McAnu, Terrmel Sle, Jack Cust, etc. Heights range from 70 to 82 inches, weights from 180 to 250 pounds, ages from 25.75 to 40.88 years. The Excel ribbon is visible with tabs Home, Insert, Draw, Tell me, and buttons for Clipboard, Font, Alignment, Number, Conditional Formatting, Format as Table, Cell Styles, Comments, Share.",
+   "summary": "This screenshot shows the SOCR-small dataset loaded into Excel, illustrating how the dataset appears in the worksheet window after loading a CSV file."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2380,
+  "completion_tokens": 204
+ },
+ "cost_usd": 0.001278,
+ "elapsed_s": 2.55
+}

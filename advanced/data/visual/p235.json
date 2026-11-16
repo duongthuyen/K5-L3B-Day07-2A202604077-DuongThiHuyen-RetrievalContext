@@ -1,0 +1,19 @@
+{
+ "page": 235,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 5.2",
+   "kind": "table",
+   "title": "Quarterly Revenues for Kayak and Canoe Rentals",
+   "details": "| Quarter     | Revenues ($) |\n|-------------|--------------|\n| 2021 Spring | 1799         |\n| 2021 Summer | 3304         |\n| 2021 Fall   | 1279         |\n| 2021 Winter | 999          |\n| 2022 Spring | 2284         |\n| 2022 Summer | 3459         |\n| 2022 Fall   | 1964         |\n| 2022 Winter | 1594         |\n| 2023 Spring | 2704         |\n| 2023 Summer | 3849         |\n| 2023 Fall   | 2131         |\n| 2023 Winter | 1939         |",
+   "summary": "This table shows quarterly revenues for kayak and canoe rentals over three years (2021-2023). It is used to identify seasonal variation patterns in revenue, with higher revenues in summer and lower in winter."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2685,
+  "completion_tokens": 247
+ },
+ "cost_usd": 0.001469,
+ "elapsed_s": 3.66
+}

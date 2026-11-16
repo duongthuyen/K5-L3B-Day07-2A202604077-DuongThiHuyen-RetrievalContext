@@ -1,0 +1,19 @@
+{
+ "page": 101,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 2.9",
+   "kind": "table",
+   "title": "Functions of Database Management Systems (DBMS)",
+   "details": "| DBMS Function    | Description                                      | Benefit                                                                                   |\n|-----------------|-------------------------------------------------|-------------------------------------------------------------------------------------------|\n| Data organization | Helps to manage data in a structured format      | Makes data more manageable for performing analysis and identifying patterns or relationships between different data points |\n| Data security    | Provides strong security measures to protect sensitive data from unauthorized access | Protects sensitive data such as personal information or financial data from unauthorized access |\n| Data integration | Permits the integration of data from multiple sources | Makes it possible to combine and analyze data from different datasets                      |",
+   "summary": "This table lists three key functions of DBMS: data organization, data security, and data integration, describing their roles and benefits in managing and protecting data."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2782,
+  "completion_tokens": 188
+ },
+ "cost_usd": 0.001414,
+ "elapsed_s": 2.61
+}

@@ -1,0 +1,19 @@
+{
+ "page": 273,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 5.10",
+   "kind": "table",
+   "title": "Sample of COVID-19 Data Cases within 23 Days (source: https://data.cdc.gov/Case-Surveillance)",
+   "details": "| Date       | Day       | Cases |\n|------------|-----------|-------|\n| 10/20/2021 | Wednesday | 3940  |\n| 10/21/2021 | Thursday  | 4821  |\n| 10/22/2021 | Friday    | 4357  |\n| 10/23/2021 | Saturday  | 0     |\n| 10/24/2021 | Sunday    | 0     |\n| 10/25/2021 | Monday    | 8572  |\n| 10/26/2021 | Tuesday   | 4463  |\n| 10/27/2021 | Wednesday | 5323  |\n| 10/28/2021 | Thursday  | 5012  |\n| 10/29/2021 | Friday    | 4710  |\n| 10/30/2021 | Saturday  | 0     |\n| 10/31/2021 | Sunday    | 0     |\n| 11/1/2021  | Monday    | 10415 |\n| 11/2/2021  | Tuesday   | 5096  |\n| 11/3/2021  | Wednesday | 6882  |\n| 11/4/2021  | Thursday  | 5400  |\n| 11/5/2021  | Friday    | 6759  |\n| 11/6/2021  | Saturday  | 0     |\n| 11/7/2021  | Sunday    | 0     |\n| 11/8/2021  | Monday    | 10069 |\n| 11/9/2021  | Tuesday   | 5297  |",
+   "summary": "This table shows daily COVID-19 case counts over a 23-day period, including several days with zero reported cases, likely weekends."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2500,
+  "completion_tokens": 479
+ },
+ "cost_usd": 0.001766,
+ "elapsed_s": 4.24
+}

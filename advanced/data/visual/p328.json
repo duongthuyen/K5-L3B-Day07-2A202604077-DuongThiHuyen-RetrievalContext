@@ -1,0 +1,19 @@
+{
+ "page": 328,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "The resulting output will look like this:",
+   "details": "Screenshot of a Python interactive output showing the RandomForestRegressor object with parameter n_estimators=1000.",
+   "summary": "This screenshot shows the output of creating a random forest regressor model in Python with 1000 trees, confirming the model instantiation."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2706,
+  "completion_tokens": 85
+ },
+ "cost_usd": 0.001218,
+ "elapsed_s": 1.51
+}

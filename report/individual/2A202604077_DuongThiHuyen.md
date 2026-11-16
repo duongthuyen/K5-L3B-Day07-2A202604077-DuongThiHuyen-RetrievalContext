@@ -49,18 +49,27 @@ Context trung bình trên dev: R0 2047 ký tự, R8 3927 ký tự (≈ 1000 toke
   - Citation: phải là ID của chunk đã thực sự gửi cho model. Nếu không phải, hoặc không có citation, kết quả là abstain và lý do được ghi vào `abstain_reason`.
   - Xử lý lỗi: lỗi của tool được trả về cho model như một message và ghi vào trace. Lỗi provider ghi `status: error`, không thay bằng kết quả giả. Nội dung tài liệu được coi là dữ liệu: system prompt dặn model bỏ qua chỉ dẫn nằm trong passage.
 
-Số liệu tổng hợp bằng [starter/agent_metrics.py](../../starter/agent_metrics.py) từ trace và nhãn thủ công ở `results/reviews/*.json`:
+Số liệu tổng hợp bằng [starter/agent_metrics.py](../../starter/agent_metrics.py) (qua `python -m src.metrics`) từ trace và nhãn thủ công ở `results/reviews/`. Có hai vòng chạy:
+
+- **v1** ([results/agent_v1/](../../results/agent_v1/), nhãn ở [results/reviews/v1/](../../results/reviews/v1/)): bản đầu tiên, đã chạy cả dev và test.
+- **v2** ([results/agent/](../../results/agent/)): v1 + **sửa lỗi định dạng citation ID** (chuẩn hóa `p239` → `p0239`, chỉ chấp nhận khi chunk thực sự có trong context). Vì lỗi này được phát hiện khi chấm test, test cũ coi như đã bị xem, nên mình viết **test2 mới** ([benchmark/test2.json](../../benchmark/test2.json): 8 câu có đáp án từ các trang chưa từng là gold + 3 câu thiếu evidence). v2 chạy lại dev rồi chạy test2 một lần.
 
 | Cấu hình / split | Tool use | Số lượt gọi (search: số câu) | Grounded answer 0/1/2 và trung bình | Citation hợp lệ | Câu có citation | Abstention đúng | Từ chối nhầm |
 |---|---|---|---|---|---|---|---|
-| A0_dense / dev | 25/25 | 1: 16, 2: 1, 3: 8 · 67 lượt LLM | 2 / 0 / 20 · 1.82 | 22/22 | 20/20 | 3/3 | 2/22 (q11, t01) |
-| A1_hybrid_neighbours / dev | 25/25 | 1: 20, 3: 5 · 59 lượt LLM | 0 / 2 / 20 · **1.91** | 25/27 | 22/22 | 3/3 | **0/22** |
-| A0_dense / test | 11/11 | 1: 7, 3: 4 · 30 lượt LLM | 1 / 0 / 7 · 1.75 | 7/7 | 7/7 | 3/3 | 1/8 (n02) |
-| A1_hybrid_neighbours / test | 11/11 | 1: 8, 3: 3 · 28 lượt LLM | 1 / 0 / 7 · 1.75 | 8/8 | 7/7 | 3/3 | 1/8 (n01) |
+| v1 A0_dense / dev | 25/25 | 1: 16, 2: 1, 3: 8 · 67 lượt LLM | 2 / 0 / 20 · 1.82 | 22/22 | 20/20 | 3/3 | 2/22 (q11, t01) |
+| v1 A1_hybrid_neighbours / dev | 25/25 | 1: 20, 3: 5 · 59 lượt LLM | 0 / 2 / 20 · 1.91 | 25/27 | 22/22 | 3/3 | 0/22 |
+| v1 A0_dense / test | 11/11 | 1: 7, 3: 4 · 30 lượt LLM | 1 / 0 / 7 · 1.75 | 7/7 | 7/7 | 3/3 | 1/8 (n02) |
+| v1 A1_hybrid_neighbours / test | 11/11 | 1: 8, 3: 3 · 28 lượt LLM | 1 / 0 / 7 · 1.75 | 8/8 | 7/7 | 3/3 | 1/8 (n01) |
+| **v2** A0_dense / dev | 25/25 | 1: 15, 2: 1, 3: 9 · 68 lượt LLM | 1 / 0 / 21 · 1.91 | 23/24 | 21/21 | 3/3 | 1/22 (t01) |
+| **v2** A1_hybrid_neighbours / dev | 25/25 | 1: 21, 3: 4 · 58 lượt LLM | 0 / 2 / 20 · 1.91 | 23/25 | 22/22 | 3/3 | 0/22 |
+| **v2** A0_dense / **test2** | 11/11 | 1: 5, 3: 6 · 34 lượt LLM | 1 / 1 / 6 · 1.62 | 7/8 | 8/8 | 3/3 | 0/8 |
+| **v2** A1_hybrid_neighbours / **test2** | 11/11 | 1: 7, 3: 4 · 30 lượt LLM | 1 / 1 / 6 · 1.62 | 9/11 | 8/8 | 3/3 | 0/8 |
 
-Context Evidence của agent (gom qua mọi lượt search): A0 dev 20/22, A1 dev 22/22, A0 test 8/8, A1 test 8/8. Chi phí và thời gian: A0 dev 49k token vào + 2.8k token ra = **$0.0090**, tổng 75.6 s (median 2.8 s/câu); A1 dev 56k + 2.8k = **$0.0101**, 66.8 s (median 2.5 s); A0 test $0.0040, 33.0 s; A1 test $0.0049, 30.9 s. Giá tính theo bảng giá gpt-4o-mini $0.15 / $0.60 cho 1M token. Không có lỗi provider hay lỗi vector store nào.
+Retrieval-only trên test2 (câu hỏi gốc làm query): R0_dense Hit@1 5/8, Hit@3 7/8, Context Evidence 7/8; **R8_hybrid_neighbours 8/8, 8/8, 8/8**. Chấm context thủ công ([context_labels_test2.json](../../results/reviews/context_labels_test2.json)): R0 có 7 câu mức 2 và 1 câu mức 0 (m04: câu "identify and remove outliers before validating" không được lấy); R8 có 8 câu mức 2.
 
-Đọc từng câu trên test (8 câu có đáp án và 3 câu thiếu evidence, cả hai cấu hình); một số ví dụ:
+Context Evidence của agent (gom qua mọi lượt search): v1 A0 dev 20/22, A1 dev 22/22, A0 test 8/8, A1 test 8/8; v2 A0 dev 20/22, A1 dev 22/22, **A0 test2 6/8, A1 test2 7/8**. Chi phí và thời gian (gpt-4o-mini, $0.15 / $0.60 cho 1M token): v1 A0 dev $0.0090, 75.6 s (median 2.8 s/câu); v1 A1 dev $0.0101, 66.8 s (median 2.5 s); v1 test $0.0040 và $0.0049; v2 A0 dev $0.0093, 81.6 s; v2 A1 dev $0.0098, 71.3 s; test2 A0 $0.0044, 35.6 s; test2 A1 $0.0059, 34.0 s. Không có lỗi provider hay lỗi vector store nào.
+
+Đọc từng câu trên test và test2 (mỗi bộ 8 câu có đáp án và 3 câu thiếu evidence, cả hai cấu hình); một số ví dụ:
 
 | Query ID | Loại câu | Tool call và kết quả | Câu trả lời và citation | Nhãn, lý do |
 |---|---|---|---|---|
@@ -71,6 +80,10 @@ Context Evidence của agent (gom qua mọi lượt search): A0 dev 20/22, A1 de
 | **n02 (A0), lỗi** | Có đáp án | 3 search, p0230:c01 trong context | Trả lời đúng, nhưng cite `p230:c01`, `p231:c01` | 0, cùng lỗi định dạng ID |
 | u05 (A0 và A1) | Thiếu evidence | 3 search "Python version dictionaries preserve insertion order…" → không có passage liên quan | "Không đủ bằng chứng để trả lời." | Từ chối đúng, không thêm khẳng định nào |
 | u06 (A0 và A1) | Thiếu evidence (sát chủ đề `copy()`) | 3 search "deep copy nested list copy module" | Từ chối | Đúng: corpus chỉ có `list.copy()` |
+| **m02 (test2, A0 và A1), lỗi** | Có đáp án, ô bảng | Agent viết lại query thành "data cleaning erroneous values" / "identify outliers data cleaning" → không lấy được hàng *Validation* của Bảng 2.4 (p0090:c01) | "…handling of outliers during data cleaning" / "The data cleaning step identifies erroneous values…" | 0: sai, sách nói *data validation*. Retrieval-only với câu hỏi gốc thì lấy được p0090:c01 ở hạng 1 (cả R0 và R8) |
+| m04 (test2, A1) | Có đáp án, điều kiện | 1 search "outliers before validating data" → p0094:c02 (gold) ở hạng 1 | "Outliers should be identified and handled properly before validating the data…" | 1: thiếu ý "remove" dù chunk được trích có câu đó |
+| m07 (test2, A1) | Có đáp án | 1 search → p0240:c00 | "…my_dict = dict(my_list) [p0240:c00]" | 2 |
+| v03 (test2) | Thiếu evidence | 3 search "sort dictionary by values…" | Từ chối | Đúng |
 
 - **Đường dẫn trace, nhãn, lệnh chạy, thời gian và chi phí:**
   - Trace agent: `results/agent/<config>-<split>/traces.json`. Mỗi câu lưu model, tham số, từng tool call (query, filter, kết quả, score, latency, chunk mới / chunk trùng / chunk bị bỏ), context cuối, câu trả lời, citation, token, thời gian và chi phí.
@@ -78,11 +91,12 @@ Context Evidence của agent (gom qua mọi lượt search): A0 dev 20/22, A1 de
   - Nhãn thủ công: `results/reviews/<config>-<split>.json` (điểm, đúng/sai cho từng citation, lý do).
   - Lệnh chạy: xem README.
 - **Kết quả trước/sau, ví dụ lỗi, đánh đổi và giới hạn:**
-  - Trên dev, A1 tốt hơn A0: grounded 1.82 → 1.91, từ chối nhầm 2 → 0, ít lượt LLM hơn (67 → 59) và nhanh hơn, đổi lại chi phí cao hơn 12% do context dài hơn.
-  - Trên test, hai cấu hình **hòa** về câu trả lời (1.75). Lợi thế retrieval của R8 (Hit@3 7/8 → 8/8) không chuyển thành câu trả lời tốt hơn, vì agent tự viết lại query nên bù được lỗi retrieval của dense (n05). Mỗi cấu hình mất đúng một câu, cùng một lỗi.
-  - **Lỗi chính còn lại: định dạng citation ID.** gpt-4o-mini đôi khi bỏ số 0 đệm trong ID (`p0239` → `p239`). Lỗi này xuất hiện cả ở dev (A0 q11), nhưng mình chỉ nhận ra khi chấm sau lượt test, nên chưa sửa. Cách sửa đề xuất: chuẩn hóa ID trước khi kiểm tra (`p(\d+)` → `p%04d`) hoặc đổi sang ID ngắn như `[1]`, `[2]` rồi ánh xạ lại. Nếu sửa thì cần chọn lại trên dev và tạo test mới, vì test hiện tại đã được xem.
-  - Lỗi thứ hai: model có lúc trích sai chunk (A1 t03 trích một chunk chỉ có link video) hoặc tự thêm lý do không có trong sách (A1 t01, chấm 1). Một số câu trả lời có danh sách citation nhưng không ghi `[id]` ngay trong câu.
-  - Giới hạn: benchmark nhỏ (test chỉ có 8 + 3 câu, nên mỗi câu bằng 12,5%), mọi câu đều chỉ cần một evidence, không có câu multi-hop. Nhãn nháp được soạn với sự hỗ trợ của trợ lý AI bằng cách đọc đối chiếu từng citation với chunk; học viên chịu trách nhiệm kiểm tra lại. Chưa có người chấm thứ hai. Kết quả LLM có thể dao động giữa các lần chạy dù temperature = 0. Tách từ BM25 chỉ dùng regex đơn giản, không stemming.
+  - Dev v1: A1 tốt hơn A0 (grounded 1.82 → 1.91, từ chối nhầm 2 → 0, ít lượt LLM hơn: 67 → 59), đổi lại chi phí cao hơn khoảng 12% do context dài hơn.
+  - **Lỗi citation ID (v1 → v2).** gpt-4o-mini đôi khi bỏ số 0 đệm trong ID (`p0239` → `p239`), khiến validator từ chối câu trả lời đúng. Ở v1 lỗi này gây 3 lần từ chối nhầm: dev A0 q11, test A0 n02, test A1 n01. Sửa: `canon_id()` trong [src/agent.py](../../src/agent.py) chỉ chuẩn hóa số, mỗi lần chuẩn hóa ghi một event `citation_ids_canonicalized`, có unit test. Sau khi sửa, dev A0 q11 được chấp nhận (từ chối nhầm 2 → 1, grounded 1.82 → 1.91), và test2 không còn lỗi định dạng nào.
+  - **test2 (đánh giá độc lập sau khi sửa):** hai cấu hình **hòa** (1.62). Về retrieval, R8 hơn R0 rõ (Hit@1 5/8 → 8/8, context 7/8 → 8/8), nhưng agent mất câu m02 ở cả hai cấu hình. Nguyên nhân: model **viết lại query** theo giả định sai ("data cleaning"), bỏ mất từ "validation" có trong câu hỏi gốc. Hướng sửa cho vòng sau (chưa làm vì test2 đã được xem): luôn search câu hỏi gốc ở lượt đầu, rồi mới cho model viết lại.
+  - Trên test v1, hai cấu hình cũng hòa (1.75): lợi thế retrieval của R8 không chuyển thành câu trả lời tốt hơn, vì agent tự viết lại query nên bù được lỗi retrieval của dense (n05).
+  - Lỗi khác: model có lúc trích sai chunk (A1 t03 trích một chunk chỉ có link video), tự thêm lý do không có trong sách (A1 t01), hoặc diễn đạt mất điều kiện (m04: "handled" thay vì "removed"). Một số câu trả lời có danh sách citation nhưng không ghi `[id]` ngay trong câu.
+  - Giới hạn: benchmark nhỏ (mỗi test có 8 + 3 câu, nên mỗi câu bằng 12,5%), phần cơ bản chỉ có câu single-evidence. Câu multi-hop nằm ở phần nâng cao. Nhãn nháp được soạn với sự hỗ trợ của trợ lý AI bằng cách đọc đối chiếu từng citation với chunk; học viên chịu trách nhiệm kiểm tra lại. Chưa có người chấm thứ hai. Kết quả LLM có thể dao động giữa các lần chạy dù temperature = 0. Tách từ BM25 chỉ dùng regex đơn giản, không stemming.
 
 ## Thử thách nâng cao (nếu thực hiện)
 

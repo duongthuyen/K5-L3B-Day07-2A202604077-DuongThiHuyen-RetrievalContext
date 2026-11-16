@@ -1,0 +1,153 @@
+{
+ "page": 324,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 6.22",
+   "kind": "diagram",
+   "title": "Flowchart for Pruned Decision Tree from Example 6.10",
+   "details": {
+    "nodes": [
+     "y ≤ 13.75",
+     "x ≤ 14.55",
+     "y ≤ 8.45",
+     "Blue",
+     "Red",
+     "Red",
+     "Blue"
+    ],
+    "connections": [
+     {
+      "from": "y ≤ 13.75",
+      "to": "x ≤ 14.55",
+      "direction": "left"
+     },
+     {
+      "from": "y ≤ 13.75",
+      "to": "Blue",
+      "direction": "right"
+     },
+     {
+      "from": "x ≤ 14.55",
+      "to": "y ≤ 8.45",
+      "direction": "left"
+     },
+     {
+      "from": "x ≤ 14.55",
+      "to": "Red",
+      "direction": "right"
+     },
+     {
+      "from": "y ≤ 8.45",
+      "to": "Blue",
+      "direction": "left"
+     },
+     {
+      "from": "y ≤ 8.45",
+      "to": "Red",
+      "direction": "right"
+     }
+    ]
+   },
+   "summary": "This flowchart shows the structure of the pruned decision tree with depth 4, illustrating the decision rules at each node and the classification outcomes (Blue or Red) at the leaves."
+  },
+  {
+   "label": "Figure 6.23",
+   "kind": "chart",
+   "title": "Regions of the Plane Corresponding to Pure Nodes for the Pruned Tree",
+   "details": {
+    "chart_type": "scatter plot with decision boundaries",
+    "x_axis": {
+     "label": "x",
+     "range": [
+      0,
+      20
+     ]
+    },
+    "y_axis": {
+     "label": "y",
+     "range": [
+      0,
+      20
+     ]
+    },
+    "series": [
+     "Blue points",
+     "Red points"
+    ],
+    "values": {
+     "Blue points": [
+      [
+       7,
+       2.5
+      ],
+      [
+       10,
+       15
+      ],
+      [
+       13,
+       18
+      ],
+      [
+       15,
+       14
+      ],
+      [
+       5,
+       11
+      ],
+      [
+       7,
+       6
+      ],
+      [
+       13,
+       2
+      ]
+     ],
+     "Red points": [
+      [
+       10,
+       12.7
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       17,
+       6
+      ],
+      [
+       18,
+       5
+      ],
+      [
+       16,
+       7
+      ]
+     ]
+    },
+    "decision_boundaries": [
+     "y = 13.75 (horizontal line)",
+     "x = 14.55 (vertical line)",
+     "y = 8.45 (horizontal line)"
+    ],
+    "regions": {
+     "top right": "Blue",
+     "middle right": "Red",
+     "bottom left": "Blue",
+     "middle left": "Red"
+    }
+   },
+   "summary": "This scatter plot shows the classification regions of the pruned decision tree on the plane, with decision boundaries dividing the plane into fewer regions than the original tree, likely reducing overfitting."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2428,
+  "completion_tokens": 573
+ },
+ "cost_usd": 0.001888,
+ "elapsed_s": 4.57
+}

@@ -1,0 +1,63 @@
+{
+ "page": 301,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 6.7",
+   "kind": "table",
+   "title": "Terminology Summarizing the Four Possibilities from a Confusion Matrix",
+   "details": "|                      | Predicted Positive                  | Predicted Negative                      |\n|----------------------|-----------------------------------|---------------------------------------|\n| Actual Positive      | True Positive (TP) – hit           | False Negative (FN) – miss             |\n| Actual Negative      | False Positive (FP) – false alarm  | True Negative (TN) – correctly rejected |",
+   "summary": "This table summarizes the four possible outcomes in a binary classification confusion matrix: true positive, false negative, false positive, and true negative, with their common interpretations."
+  },
+  {
+   "label": "Figure 6.17",
+   "kind": "chart",
+   "title": "Heatmap for Flower/Tree/Grass Example",
+   "details": {
+    "chart type": "heatmap",
+    "x-axis": {
+     "label": "Predicted Class",
+     "categories": [
+      "Flower",
+      "Tree",
+      "Grass"
+     ]
+    },
+    "y-axis": {
+     "label": "Actual Class",
+     "categories": [
+      "Flower",
+      "Tree",
+      "Grass"
+     ]
+    },
+    "values": [
+     [
+      23,
+      3,
+      9
+     ],
+     [
+      2,
+      32,
+      0
+     ],
+     [
+      12,
+      1,
+      18
+     ]
+    ],
+    "color shading": "darker cells indicate higher values",
+    "notable": "Main diagonal cells (23, 32, 18) are darkest indicating higher correct classification counts; off-diagonal cells show misclassifications, e.g., 12 grasses predicted as flowers."
+   },
+   "summary": "This heatmap visualizes the confusion matrix for a model classifying images into flower, tree, or grass categories. Darker cells on the main diagonal indicate higher correct classification counts, while off-diagonal cells reveal misclassification rates, highlighting that grasses are often mistaken for flowers."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2945,
+  "completion_tokens": 390
+ },
+ "cost_usd": 0.001802,
+ "elapsed_s": 4.2
+}

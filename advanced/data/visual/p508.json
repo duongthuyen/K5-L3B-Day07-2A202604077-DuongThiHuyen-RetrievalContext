@@ -1,0 +1,33 @@
+{
+ "page": 508,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure A6",
+   "kind": "image",
+   "title": "Find Feature in MS Excel (Used with permission from Microsoft)",
+   "details": "Screenshot showing the MS Excel Find feature dropdown menu with options 'Find...' and 'Replace...'.",
+   "summary": "This image shows the Find feature in MS Excel, illustrating how users can search for specific content within a spreadsheet."
+  },
+  {
+   "label": "Figure A7",
+   "kind": "image",
+   "title": "Filter Feature in MS Excel (Used with permission from Microsoft)",
+   "details": "Screenshot showing the MS Excel Filter dropdown menu with options: Sort A to Z, Sort Z to A, Custom Sort..., and Filter.",
+   "summary": "This image demonstrates the Filter feature in MS Excel, which allows users to sort and filter data in a table by selecting specific criteria."
+  },
+  {
+   "label": "Figure A8",
+   "kind": "image",
+   "title": "Filter by Position on MS Excel (Used with permission from Microsoft)",
+   "details": "Screenshot showing an Excel table with columns: Name, Team, Position, Height(inches), Weight(pounds), Age. A filter window overlays the table with options to sort ascending or descending, filter by color, and a checklist with (Select All), Outfielder, Pitcher, and (Blanks) checked.",
+   "summary": "This image shows the result of filtering the Position column in an Excel table to display only rows where the Position is 'Outfielder'."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2465,
+  "completion_tokens": 307
+ },
+ "cost_usd": 0.001477,
+ "elapsed_s": 3.37
+}

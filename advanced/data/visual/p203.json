@@ -1,0 +1,35 @@
+{
+ "page": 203,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 4.6",
+   "kind": "chart",
+   "title": "Three examples of graphs of ŷ = a + bx.",
+   "details": {
+    "chart type": "line graphs",
+    "series": [
+     {
+      "label": "(a)",
+      "description": "line slopes upward to the right, b > 0"
+     },
+     {
+      "label": "(b)",
+      "description": "line is horizontal, b = 0"
+     },
+     {
+      "label": "(c)",
+      "description": "line slopes downward to the right, b < 0"
+     }
+    ]
+   },
+   "summary": "This figure shows three example line graphs illustrating the effect of the slope b on the linear regression line ŷ = a + bx: positive slope (uphill), zero slope (horizontal), and negative slope (downhill)."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2753,
+  "completion_tokens": 163
+ },
+ "cost_usd": 0.001362,
+ "elapsed_s": 1.85
+}

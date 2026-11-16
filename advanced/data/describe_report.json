@@ -1,0 +1,16 @@
+{
+  "model": "gpt-4.1-mini",
+  "pages_described": 440,
+  "elements": 523,
+  "by_kind": {
+    "chart": 116,
+    "diagram": 47,
+    "image": 141,
+    "table": 165,
+    "decorative": 54
+  },
+  "prompt_tokens": 1151701,
+  "completion_tokens": 107398,
+  "cost_usd": 0.6325,
+  "errors": []
+}

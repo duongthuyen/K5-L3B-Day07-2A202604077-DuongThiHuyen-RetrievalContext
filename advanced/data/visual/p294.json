@@ -1,0 +1,120 @@
+{
+ "page": 294,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 6.12",
+   "kind": "chart",
+   "title": "Graph with Different Initial Centroids. Using initial centroids of (110, 70), (60, 80), and (40, 40), the k-means algorithm produces a different clustering. The final position of the centroids are (110.2, 60.5), (67.0, 77.2), and (32.4, 46.0).",
+   "details": {
+    "chart type": "scatter plot with clusters",
+    "x-axis label": "East",
+    "x-axis range": "20 to 160",
+    "y-axis label": "North",
+    "y-axis range": "20 to 90",
+    "legend/series": [
+     "Red cluster",
+     "Green cluster",
+     "Blue cluster"
+    ],
+    "values": {
+     "red cluster points": [
+      {
+       "approx_x": 100,
+       "approx_y": 60
+      },
+      {
+       "approx_x": 110,
+       "approx_y": 70
+      },
+      {
+       "approx_x": 120,
+       "approx_y": 42
+      },
+      {
+       "approx_x": 115,
+       "approx_y": 69
+      },
+      {
+       "approx_x": 110,
+       "approx_y": 71
+      }
+     ],
+     "green cluster points": [
+      {
+       "approx_x": 60,
+       "approx_y": 80
+      },
+      {
+       "approx_x": 70,
+       "approx_y": 78
+      },
+      {
+       "approx_x": 75,
+       "approx_y": 82
+      },
+      {
+       "approx_x": 65,
+       "approx_y": 83
+      },
+      {
+       "approx_x": 60,
+       "approx_y": 72
+      },
+      {
+       "approx_x": 70,
+       "approx_y": 70
+      }
+     ],
+     "blue cluster points": [
+      {
+       "approx_x": 30,
+       "approx_y": 50
+      },
+      {
+       "approx_x": 40,
+       "approx_y": 45
+      },
+      {
+       "approx_x": 35,
+       "approx_y": 48
+      },
+      {
+       "approx_x": 30,
+       "approx_y": 33
+      },
+      {
+       "approx_x": 25,
+       "approx_y": 50
+      },
+      {
+       "approx_x": 30,
+       "approx_y": 53
+      }
+     ]
+    },
+    "final centroids": {
+     "red": [
+      110.2,
+      60.5
+     ],
+     "green": [
+      67.0,
+      77.2
+     ],
+     "blue": [
+      32.4,
+      46.0
+     ]
+    }
+   },
+   "summary": "This scatter plot shows the clustering of data points using k-means with different initial centroids. The final centroid positions are indicated, demonstrating how initial centroid choice affects clustering results."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2527,
+  "completion_tokens": 515
+ },
+ "cost_usd": 0.001835,
+ "elapsed_s": 4.53
+}

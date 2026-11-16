@@ -1,0 +1,19 @@
+{
+ "page": 215,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.18",
+   "kind": "table",
+   "title": "Arrival Delay Data (in Minutes) for Three Airlines",
+   "details": "| Airline A | Airline B | Airline C |\n|-----------|-----------|-----------|\n| 8         | 13        | 11        |\n| 12        | 0         | 15        |\n| 7         | 2         | 9         |\n| 9         | 7         | 11        |\n| 11        | 6         | 12        |\n| 4         | 5         | N/A       |",
+   "summary": "This table shows the arrival delay data in minutes for three airlines (A, B, and C) based on samples of flights from Boston to Dallas. It is used to test the claim that the average arrival delays are the same for the three airlines."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2551,
+  "completion_tokens": 196
+ },
+ "cost_usd": 0.001334,
+ "elapsed_s": 2.3
+}

@@ -1,0 +1,67 @@
+{
+ "page": 436,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Pareto Chart of Smartphone Manufacturing Defects",
+   "details": {
+    "chart type": "Pareto chart (bar + line)",
+    "x-axis label": "Defect Categories",
+    "x-axis categories": [
+     "Scratches",
+     "Does Not Charge",
+     "Cracked Screen",
+     "Power Button",
+     "Volume Controls"
+    ],
+    "y-axis left label": "Frequency",
+    "y-axis left units": "count",
+    "y-axis left range": [
+     0,
+     1600
+    ],
+    "y-axis right label": "Cumulative Percentage (%)",
+    "y-axis right units": "%",
+    "y-axis right range": [
+     0,
+     100
+    ],
+    "legend/series": [
+     "Frequency (bars)",
+     "Cumulative Percentage (line)"
+    ],
+    "values": {
+     "Scratches": {
+      "frequency": 1550,
+      "cumulative %": 28
+     },
+     "Does Not Charge": {
+      "frequency": 1410,
+      "cumulative %": 53
+     },
+     "Cracked Screen": {
+      "frequency": 1350,
+      "cumulative %": 75
+     },
+     "Power Button": {
+      "frequency": 750,
+      "cumulative %": 90
+     },
+     "Volume Controls": {
+      "frequency": 600,
+      "cumulative %": 100
+     }
+    }
+   },
+   "summary": "This Pareto chart shows the frequency of different smartphone manufacturing defects and their cumulative percentage contribution. The three defect categories 'Scratches,' 'Does Not Charge,' and 'Cracked Screen' together account for approximately 75% of defects, indicating they should be prioritized for quality improvement."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2541,
+  "completion_tokens": 322
+ },
+ "cost_usd": 0.001532,
+ "elapsed_s": 3.59
+}

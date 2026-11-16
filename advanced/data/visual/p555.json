@@ -1,0 +1,19 @@
+{
+ "page": 555,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table D1",
+   "kind": "table",
+   "title": "Review of Python Functions",
+   "details": "| Python Function       | Description                                                                 | Syntax                                   | First Reference               |\n|----------------------|-----------------------------------------------------------------------------|------------------------------------------|------------------------------|\n| accuracy_score()      | Calculates the accuracy of a classification model as the ratio of the number of correct predictions to the total number of predictions | accuracy_score(_y_true, y_predicted_)    | Introduction to Neural Networks |\n| scaler.fit_transform()| Fits a scaler to the data and then transforms the data according to the fitted scaler | scaler.fit_transform(_array_)             | Introduction to Neural Networks |\n| scaler.transform()    | Applies a previously fitted scaler to new data                              | scaler.transform(_array_)                 | Introduction to Neural Networks |\n| tf.keras.Sequential() | Creates a linear stack of layers for building a neural network model        | tf.keras.Sequential(_layers, additional options_) | Backpropagation               |\n| model.compile()       | Used to configure the learning process of a neural network model before training | model.compile(_optimizer, loss, metrics_) | Backpropagation               |\n| boxplot()             | Creates a box-and-whisker plot                                              | plt.boxplot(_array_)                      | Encoding Univariate Data      |",
+   "summary": "This table summarizes key Python functions used in data science, including their descriptions, syntax, and first reference in the textbook."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2430,
+  "completion_tokens": 304
+ },
+ "cost_usd": 0.001458,
+ "elapsed_s": 3.24
+}

@@ -1,0 +1,19 @@
+{
+ "page": 187,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "Python code for one-sample t-test example",
+   "details": "Screenshot of Python code showing import of scipy.stats and numpy, definition of oxygen_level data array with values [76, 75, 74, 81, 76, 77, 71, 74, 73, 79], null hypothesis mean = 75, performing one-sample t-test using stats.ttest_1samp, calculation of one-tailed p-value by dividing two-tailed p-value by 2, and printing test statistic and p-value. The resulting output is shown: Test Statistic = 0.6512171447631733, p-value = 0.2655900985964262.",
+   "summary": "This screenshot shows the Python code used to perform a one-sample t-test on oxygen level data, including calculation of the test statistic and one-tailed p-value, with the output displayed."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2581,
+  "completion_tokens": 206
+ },
+ "cost_usd": 0.001362,
+ "elapsed_s": 2.41
+}

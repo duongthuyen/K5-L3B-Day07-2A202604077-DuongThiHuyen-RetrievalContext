@@ -1,0 +1,19 @@
+{
+ "page": 77,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 2.2",
+   "kind": "table",
+   "title": "Techniques and Approaches for Scraping Data from Websites",
+   "details": "| Web Scraping Technique | Details |\n|-----------------------|---------|\n| Web Crawling | • Follows links on a web page to navigate to other pages and collect data from them  \n• Useful for scraping data from multiple pages of a website |\n| XPath | • Powerful query language  \n• Navigates through the elements in an HTML document  \n• Often used in combination with HTML parsing to select specific elements to scrape |\n| Regular Expressions | • Search for and extract specific patterns of text from a web page  \n• Useful for scraping data that follows a particular format, such as dates, phone numbers, or email addresses |\n| HTML Parsing | • Analyzes the HTML (HyperText Markup Language) structure of a web page and identifies the specific tags and elements that contain the desired data  \n• Often used for simple scraping tasks |\n| Application Programming Interfaces (APIs) | • Authorize developers to access and retrieve data instantly without the need for web scraping  \n• Often a more efficient and reliable method for data collection |\n| (XML) API Subset | • XML (Extensible Markup Language) is another markup language used exchanging data  \n• This method works similarly to using the HTML API subset by making HTTP requests to the website's API endpoints and then parsing the data received in XML format |\n| (JSON) API Subset | • JSON (JavaScript Object Notation) is a lightweight data interchange format that is commonly used for sending and receiving data between servers and web applications  \n• Many websites provide APIs in the form of JSON, making it another efficient method for scraping data |",
+   "summary": "This table lists various web scraping techniques and their details, explaining how each method works and its typical use cases for collecting data from websites."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2722,
+  "completion_tokens": 415
+ },
+ "cost_usd": 0.001753,
+ "elapsed_s": 3.86
+}

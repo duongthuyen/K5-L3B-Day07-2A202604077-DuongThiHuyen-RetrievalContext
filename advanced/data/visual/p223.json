@@ -1,0 +1,19 @@
+{
+ "page": 223,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 5.1",
+   "kind": "decorative",
+   "title": "Time series analysis involves the examination of data points collected at specific time intervals; it is crucial for identifying trends and patterns that inform predictions and strategic decisions.",
+   "details": "Image shows a stylized digital illustration with stacks of gold coins and a green upward trending arrow overlaid on a background of financial data and a world map. The image is decorative and symbolic of financial growth and time series trends.",
+   "summary": "This decorative image visually represents the concept of time series analysis and forecasting, emphasizing growth and trends in financial data."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2571,
+  "completion_tokens": 131
+ },
+ "cost_usd": 0.001238,
+ "elapsed_s": 2.09
+}

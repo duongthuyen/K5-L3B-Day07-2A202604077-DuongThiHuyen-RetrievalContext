@@ -1,0 +1,30 @@
+{
+ "page": 320,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 6.20",
+   "kind": "diagram",
+   "title": "Flowchart version of the completed decision tree",
+   "details": {
+    "nodes": [
+     "Root: split on Y ≤ 13.75",
+     "Left child: L = {9 Red, 6 Blue}",
+     "Right child: R = {0 Red, 4 Blue} (pure node)"
+    ],
+    "connections": [
+     "Root splits into Left and Right based on Y ≤ 13.75",
+     "Left node may further split (not detailed here)",
+     "Right node is a leaf (pure node) with entropy 0, no further branching"
+    ]
+   },
+   "summary": "This flowchart shows the completed decision tree that classifies all data points so that all leaf nodes are pure, illustrating the splits based on inequalities that maximize information gain."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2869,
+  "completion_tokens": 172
+ },
+ "cost_usd": 0.001423,
+ "elapsed_s": 2.06
+}

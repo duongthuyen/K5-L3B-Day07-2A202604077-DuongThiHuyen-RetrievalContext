@@ -1,0 +1,19 @@
+{
+ "page": 366,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": null,
+   "summary": "This page contains a Python code example demonstrating how to build, train, and evaluate a neural network model using TensorFlow and scikit-learn on the MNIST dataset. There are no informative visual elements such as charts, diagrams, or tables on this page."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2541,
+  "completion_tokens": 83
+ },
+ "cost_usd": 0.001149,
+ "elapsed_s": 1.28
+}

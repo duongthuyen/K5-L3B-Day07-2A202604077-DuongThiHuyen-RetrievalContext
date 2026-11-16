@@ -1,0 +1,65 @@
+{
+ "page": 145,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 3.8",
+   "kind": "chart",
+   "title": "Bell-Shaped Distribution for Example 3.27",
+   "details": {
+    "chart type": "normal distribution curve",
+    "x-axis label": "x (salary in dollars)",
+    "x-axis range": "40,000 to 80,000",
+    "y-axis label": "probability density",
+    "y-axis range": "unreadable",
+    "legend/series": "shaded region represents probability that employee earns more than $68,000",
+    "values": {
+     "peak at mean": 60000,
+     "shaded region start": 68000,
+     "shaded region end": 80000
+    }
+   },
+   "summary": "This figure shows a normal distribution curve with mean salary $60,000 and the area to the right of $68,000 shaded, representing the probability that a random employee earns more than $68,000."
+  },
+  {
+   "label": "Figure 3.9",
+   "kind": "chart",
+   "title": "Normal Distribution Showing Mean and Increments of Standard Deviation",
+   "details": {
+    "chart type": "normal distribution curve",
+    "x-axis label": "x",
+    "x-axis categories": [
+     "μ - 3σ",
+     "μ - 2σ",
+     "μ - 1σ",
+     "μ",
+     "μ + 1σ",
+     "μ + 2σ",
+     "μ + 3σ"
+    ],
+    "y-axis label": "probability density",
+    "y-axis range": "unreadable",
+    "legend/series": "normal distribution with mean μ and standard deviation σ",
+    "values": {
+     "peak at mean": "μ",
+     "marked points": [
+      "μ - 3σ",
+      "μ - 2σ",
+      "μ - 1σ",
+      "μ",
+      "μ + 1σ",
+      "μ + 2σ",
+      "μ + 3σ"
+     ]
+    }
+   },
+   "summary": "This figure illustrates the normal distribution curve with the mean and increments of one, two, and three standard deviations marked, used to explain the empirical rule for probabilities within these ranges."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2555,
+  "completion_tokens": 433
+ },
+ "cost_usd": 0.001715,
+ "elapsed_s": 3.96
+}

@@ -1,0 +1,19 @@
+{
+ "page": 163,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.3",
+   "kind": "table",
+   "title": "Typical Values of t_c for Various Confidence Levels and Degrees of Freedom",
+   "details": "| Degrees of Freedom (df) | 90% Confidence | 95% Confidence | 99% Confidence |\n|-------------------------|----------------|----------------|----------------|\n| 1                       | 6.314          | 12.706         | 63.657         |\n| 2                       | 2.920          | 4.203          | 9.925          |\n| 3                       | 2.353          | 3.182          | 5.841          |\n| 4                       | 2.132          | 2.776          | 4.604          |\n| 5                       | 2.015          | 2.571          | 4.032          |\n| 10                      | 1.812          | 2.228          | 3.169          |\n| 15                      | 1.753          | 2.131          | 2.947          |\n| 20                      | 1.725          | 2.086          | 2.845          |\n| 25                      | 1.708          | 2.060          | 2.787          |\n| 30                      | 1.697          | 2.042          | 2.750          |",
+   "summary": "This table lists typical critical values of the t-distribution (t_c) for different degrees of freedom and confidence levels (90%, 95%, 99%). It is used to determine critical values for confidence intervals in statistical inference."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2668,
+  "completion_tokens": 367
+ },
+ "cost_usd": 0.001654,
+ "elapsed_s": 3.33
+}

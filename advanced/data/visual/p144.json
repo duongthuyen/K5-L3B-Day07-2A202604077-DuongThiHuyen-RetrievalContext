@@ -1,0 +1,30 @@
+{
+ "page": 144,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 3.7",
+   "kind": "chart",
+   "title": "Graph of the Normal (Bell-Shaped) Distribution",
+   "details": {
+    "chart type": "line chart (probability density function)",
+    "x-axis label": "x",
+    "x-axis range": "unreadable exact range, symmetric around mean μ",
+    "y-axis label": "Probability density",
+    "y-axis units": "unreadable exact units, area under curve equals 1",
+    "y-axis range": "0 to peak value (unreadable)",
+    "legend/series": [
+     "Normal: X~N(μ, σ)"
+    ],
+    "values": "Curve is symmetric about vertical line at mean μ; peak at μ; tails approach zero as x moves away from μ"
+   },
+   "summary": "This figure shows the bell-shaped, symmetric curve of the normal distribution centered at the mean μ. It illustrates how the shape depends on the mean and standard deviation, with the area under the curve equal to 1."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2810,
+  "completion_tokens": 212
+ },
+ "cost_usd": 0.001463,
+ "elapsed_s": 2.76
+}

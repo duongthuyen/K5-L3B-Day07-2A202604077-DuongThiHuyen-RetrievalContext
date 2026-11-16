@@ -1,0 +1,19 @@
+{
+ "page": 532,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table B5",
+   "kind": "table",
+   "title": "Monthly Returns of Coca-Cola Stock versus Monthly Returns for the S&P 500",
+   "details": "| Month | S&P 500 Monthly Return (%) | Coca-Cola Monthly Return (%) |\n|-------|----------------------------|------------------------------|\n| Jan   | 8                          | 6                            |\n| Feb   | 1                          | 0                            |\n| Mar   | 0                          | -2                           |\n| Apr   | 2                          | 1                            |\n| May   | -3                         | -1                           |\n| Jun   | 7                          | 8                            |\n| Jul   | 4                          | 2                            |",
+   "summary": "This table shows the monthly returns (in percentages) for the S&P 500 and Coca-Cola stock over a seven-month period, used as example data for calculating correlation coefficients in R."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2543,
+  "completion_tokens": 202
+ },
+ "cost_usd": 0.00134,
+ "elapsed_s": 2.8
+}

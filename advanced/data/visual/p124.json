@@ -1,0 +1,19 @@
+{
+ "page": 124,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Example 3.9",
+   "kind": "table",
+   "title": "Compare the relative variability for Company A versus Company B using the coefficient of variation, based on the following sample data:",
+   "details": "| Company | Sample Mean | Sample Standard Deviation |\n|---------|-------------|---------------------------|\n| A       | $68,000     | $9,200                    |\n| B       | $71,000     | $6,400                    |",
+   "summary": "This table shows the sample mean and sample standard deviation for Company A and Company B, which are used to calculate the coefficient of variation for each company."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2501,
+  "completion_tokens": 140
+ },
+ "cost_usd": 0.001224,
+ "elapsed_s": 2.3
+}

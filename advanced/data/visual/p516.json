@@ -1,0 +1,33 @@
+{
+ "page": 516,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure A21",
+   "kind": "image",
+   "title": "Changing the Axis Title of the Scatterplot (Used with permission from Microsoft)",
+   "details": "Screenshot of an Excel interface showing a scatterplot chart with a dropdown menu open for 'Axes' options. The submenu 'Axis Titles' is highlighted, showing options for 'Primary Horizontal' and 'Primary Vertical'. The scatterplot shows data points with x-axis values approximately from 68 to 84 and y-axis values from 0 to 100, but axis titles are not yet set.",
+   "summary": "This screenshot demonstrates how to access and change axis titles in an Excel scatterplot chart."
+  },
+  {
+   "label": "Figure A22",
+   "kind": "image",
+   "title": "Use of AVERAGE in MS Excel (Used with permission from Microsoft)",
+   "details": "Screenshot of an Excel worksheet showing cells A1, A2, A3 containing values 10, 20, and 30 respectively. Cell B1 contains the formula '=AVERAGE(A1, A2, A3)' with the formula bar visible. The cells A1, A2, and A3 are highlighted with different colors corresponding to the formula.",
+   "summary": "This image shows how to use the AVERAGE function in Excel to calculate the average of three numbers in cells A1, A2, and A3."
+  },
+  {
+   "label": "Figure A23",
+   "kind": "image",
+   "title": "The Result of Using AVERAGE in MS Excel (Used with permission from Microsoft)",
+   "details": "Screenshot of an Excel worksheet showing cells A1, A2, A3 with values 10, 20, and 30 respectively. Cell B1 now shows the calculated result '20' instead of the formula, indicating the average of the three numbers.",
+   "summary": "This image shows the result after pressing enter on the formula in B1, displaying the average value 20 calculated from cells A1, A2, and A3."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2452,
+  "completion_tokens": 418
+ },
+ "cost_usd": 0.00165,
+ "elapsed_s": 4.58
+}

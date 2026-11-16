@@ -1,0 +1,19 @@
+{
+ "page": 43,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 1.17",
+   "kind": "image",
+   "title": "Multiple Ways of Running Cells on Colab",
+   "details": "Screenshot of the Runtime menu in Colab showing options: Run all (⌘/Ctrl+F9), Run before (⌘/Ctrl+F8), Run the focused cell (⌘/Ctrl+Enter), Run selection (⌘/Ctrl+Shift+Enter), Run after (⌘/Ctrl+F10).",
+   "summary": "This screenshot illustrates the different menu options available in Google Colab for running multiple cells in bulk or selectively, highlighting common commands like 'Run all' and 'Run before'."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2470,
+  "completion_tokens": 146
+ },
+ "cost_usd": 0.001222,
+ "elapsed_s": 2.04
+}

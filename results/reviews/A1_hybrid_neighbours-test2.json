@@ -1,0 +1,87 @@
+[
+  {
+    "query_id": "m01",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "m02",
+    "citation_support": [
+      false,
+      false
+    ],
+    "reason": "Sai: trả lời 'data cleaning'; đúng là data validation (Bảng 2.4 p90). Query viết lại không lấy được hàng Validation, dù retrieval với câu hỏi gốc (R8) lấy được ở hạng 1.",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "m03",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "m04",
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Một phần: 'identified and handled properly' thay vì 'identified and removed'; p0094:c02 trong citation có câu đúng nhưng câu trả lời không nêu 'remove'.",
+    "answer_grade": 1
+  },
+  {
+    "query_id": "m05",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "m06",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "m07",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "m08",
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng; p0255:c02 (tóm tắt) cũng hỗ trợ.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "v01",
+    "citation_support": [],
+    "reason": "Search 3 lần rồi từ chối, không khẳng định thêm; corpus không có (absence_reason).",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "v02",
+    "citation_support": [],
+    "reason": "Search 3 lần rồi từ chối, không khẳng định thêm; corpus không có (absence_reason).",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "v03",
+    "citation_support": [],
+    "reason": "Search 3 lần rồi từ chối, không khẳng định thêm; corpus không có (absence_reason).",
+    "abstention_correct": true
+  }
+]

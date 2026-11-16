@@ -1,0 +1,199 @@
+[
+  {
+    "query_id": "q01",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q02",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q03",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q04",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q05",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q06",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q07",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q08",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q09",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng; p0255:c01 'A dictionary is a mutable object'.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q10",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q11",
+    "citation_support": [
+      true,
+      false
+    ],
+    "reason": "Đúng; p0222:c02 chỉ là câu hỏi trắc nghiệm, không hỗ trợ.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q12",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q13",
+    "citation_support": [
+      true
+    ],
+    "reason": "Ý chính đúng; bảng 2.7 p0093:c00 hỗ trợ.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q14",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q15",
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "q16",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "t01",
+    "citation_support": [
+      true
+    ],
+    "reason": "Một phần: lý do 'ambiguity' là suy diễn của model, sách nói do tra cứu bằng key.",
+    "answer_grade": 1
+  },
+  {
+    "query_id": "t02",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "t03",
+    "citation_support": [
+      false,
+      true
+    ],
+    "reason": "Đáp án đúng nhưng citation chính p0253:c01 chỉ là link video; chunk evidence không được trích.",
+    "answer_grade": 1
+  },
+  {
+    "query_id": "t04",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "t05",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "t06",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "u01",
+    "citation_support": [],
+    "reason": "Search 3 lần rồi từ chối, không khẳng định thêm; corpus không có (absence_reason).",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "u02",
+    "citation_support": [],
+    "reason": "Search 3 lần rồi từ chối, không khẳng định thêm; corpus không có (absence_reason).",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "u03",
+    "citation_support": [],
+    "reason": "Search 3 lần rồi từ chối, không khẳng định thêm; corpus không có (absence_reason).",
+    "abstention_correct": true
+  }
+]

@@ -1,0 +1,26 @@
+{
+ "page": 512,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure A11",
+   "kind": "image",
+   "title": "Select Data Menu on MS Excel (Used with permission from Microsoft)",
+   "details": "Screenshot of the MS Excel interface showing the Chart Design tab selected, with the Select Data button highlighted on the ribbon.",
+   "summary": "This image shows the Select Data menu option in MS Excel, which is used to define the data range for charts."
+  },
+  {
+   "label": "Figure A12",
+   "kind": "image",
+   "title": "Select Data Pop-Up Window on MS Excel (Used with permission from Microsoft)",
+   "details": "Screenshot of the Select Data pop-up window in MS Excel. It shows the Chart data range set to =Sheet1!$A$1:$F$13. The Legend entries (Series) list three entries: Height (inches), Weight (pounds), and Age. The Name field is set to =Sheet1!$D$1 and Y values to =Sheet1!$D$2:$D$13. The Horizontal (Category) axis labels are set to =Sheet1!$A$2:$C$13.",
+   "summary": "This pop-up window allows users to define the data range and series for a chart in Excel, showing three series (Height, Weight, Age) and the corresponding axis labels."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2379,
+  "completion_tokens": 277
+ },
+ "cost_usd": 0.001395,
+ "elapsed_s": 3.43
+}

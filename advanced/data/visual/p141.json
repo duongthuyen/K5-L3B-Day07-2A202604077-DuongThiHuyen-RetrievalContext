@@ -1,0 +1,59 @@
+{
+ "page": 141,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 3.5",
+   "kind": "chart",
+   "title": "Graph of the Binomial Distribution for n = 20 and p = 0.92",
+   "details": {
+    "chart type": "bar chart",
+    "x-axis label": "x (values of the random variable)",
+    "x-axis range": "14 to 20",
+    "y-axis label": "P(x) (binomial probability)",
+    "y-axis units": "probability",
+    "y-axis range": "0 to 0.35",
+    "bars": [
+     {
+      "x": 14,
+      "P(x)": 0
+     },
+     {
+      "x": 15,
+      "P(x)": 0.02
+     },
+     {
+      "x": 16,
+      "P(x)": 0.05
+     },
+     {
+      "x": 17,
+      "P(x)": 0.14
+     },
+     {
+      "x": 18,
+      "P(x)": 0.27
+     },
+     {
+      "x": 19,
+      "P(x)": 0.32
+     },
+     {
+      "x": 20,
+      "P(x)": 0.19
+     }
+    ],
+    "trend": "Probability increases from 14 to peak at 19, then decreases at 20."
+   }
+  },
+  "summary",
+  "This bar chart shows the binomial probability distribution for the number of successes x in 20 trials with success probability 0.92. It highlights that the most likely outcomes are 18 and 19 successes, with probabilities around 27% and 32%, respectively."
+ ],
+ "attempts": 3,
+ "usage": {
+  "prompt_tokens": 2493,
+  "completion_tokens": 305
+ },
+ "cost_usd": 0.001485,
+ "elapsed_s": 63.46
+}

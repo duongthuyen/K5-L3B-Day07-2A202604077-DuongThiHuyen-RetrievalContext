@@ -1,0 +1,19 @@
+{
+ "page": 69,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 2.1",
+   "kind": "table",
+   "title": "Fields Where Observation Methods Are Used",
+   "details": "| Field                 | Data Collected By           | Purpose                                                                                      |\n|-----------------------|----------------------------|----------------------------------------------------------------------------------------------|\n| Health care           | Medical professionals      | To diagnose and monitor patients' conditions and progress                                   |\n| Market research       | Businesses                 | To gather information about consumer behavior and preferences to improve their products, services, and marketing strategies |\n| Environmental science | Scientists                 | To gather data about the natural environment and track changes over time                     |\n| Criminal investigations | Law enforcement officers  | To gather evidence and information about criminal activity                                  |\n| Animal behavior       | Zoologists                 | To study and understand the behavior of various animal species                              |\n| Transportation planning | Urban planners and engineers | To collect data on traffic patterns and transportation usage to make informed decisions about infrastructure and transit systems |",
+   "summary": "This table lists various fields where observation methods are used, specifying who collects the data and the purpose of data collection in each field."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2722,
+  "completion_tokens": 234
+ },
+ "cost_usd": 0.001463,
+ "elapsed_s": 2.82
+}

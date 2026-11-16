@@ -1,0 +1,39 @@
+{
+ "page": 158,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 4.1",
+   "kind": "diagram",
+   "title": "Confidence Interval Calculation for Mean Age of Arthritis Patients",
+   "details": {
+    "nodes": [
+     "Problem: Estimate population mean age for arthritis patients",
+     "Sample size = 100",
+     "Sample mean = 64 years",
+     "Margin of error = 4 years",
+     "Calculate confidence interval",
+     "Lower Bound = 64 - 4 = 60",
+     "Upper Bound = 64 + 4 = 68",
+     "Conclusion: 95% confidence interval is 60 to 68 years"
+    ],
+    "connections": [
+     "Problem -> Sample size = 100",
+     "Sample size = 100 -> Sample mean = 64 years",
+     "Sample mean = 64 years -> Margin of error = 4 years",
+     "Margin of error = 4 years -> Calculate confidence interval",
+     "Calculate confidence interval -> Lower Bound = 60",
+     "Calculate confidence interval -> Upper Bound = 68",
+     "Lower Bound = 60 & Upper Bound = 68 -> Conclusion"
+    ]
+   },
+   "summary": "This example shows the step-by-step calculation of a 95% confidence interval for the mean age of arthritis patients based on a sample mean and margin of error."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2627,
+  "completion_tokens": 253
+ },
+ "cost_usd": 0.001456,
+ "elapsed_s": 2.58
+}

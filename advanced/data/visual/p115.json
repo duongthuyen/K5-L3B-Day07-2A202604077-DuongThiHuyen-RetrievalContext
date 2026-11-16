@@ -1,0 +1,19 @@
+{
+ "page": 115,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 3.1",
+   "kind": "table",
+   "title": "Example 3.1: Calculate the mean pulse rate for a sample of 10 patients",
+   "details": "| Patient Index | Pulse Rate (beats per minute) |\n|--------------|------------------------------|\n| 1            | 68                           |\n| 2            | 92                           |\n| 3            | 76                           |\n| 4            | 51                           |\n| 5            | 65                           |\n| 6            | 83                           |\n| 7            | 94                           |\n| 8            | 72                           |\n| 9            | 88                           |\n| 10           | 59                           |\n\nSum of pulse rates = 748\nNumber of patients = 10\nMean pulse rate = 748 / 10 = 74.8",
+   "summary": "This example shows how to calculate the mean pulse rate from a sample of 10 patients by summing their pulse rates and dividing by the sample size."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2749,
+  "completion_tokens": 233
+ },
+ "cost_usd": 0.001472,
+ "elapsed_s": 2.66
+}

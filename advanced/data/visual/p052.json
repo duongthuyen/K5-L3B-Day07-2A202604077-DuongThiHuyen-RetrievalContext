@@ -1,0 +1,19 @@
+{
+ "page": 52,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "Python code and output examples for indexing and selecting data in a DataFrame",
+   "details": "Two code blocks shown. First code block: print(data[\"US_Gross_Million\"][0]) and print(data[\"US_Gross_Million\"][2]) with output 760.51 and 659.33. Second code block: data.iloc[:, 1] with output showing index and movie titles from 0 to 965, including 'Avatar', 'Avengers: Endgame', 'Titanic', 'Star Wars: Episode VII - The Force Awakens', 'Avengers: Infinity War', 'The A-Team', 'Tootsie', 'In the Line of Fire', 'Analyze This', 'The Hitman's Bodyguard'.",
+   "summary": "This element shows Python code examples demonstrating how to access specific values in a DataFrame column using index numbers and iloc[], along with the resulting outputs."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2530,
+  "completion_tokens": 208
+ },
+ "cost_usd": 0.001345,
+ "elapsed_s": 2.46
+}

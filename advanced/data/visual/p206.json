@@ -1,0 +1,44 @@
+{
+ "page": 206,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 4.8",
+   "kind": "chart",
+   "title": "Best-Fit Line",
+   "details": {
+    "chart type": "scatterplot with regression line and normal distribution curves",
+    "x-axis label": "x",
+    "x-axis range/categories": "discrete values (not explicitly labeled)",
+    "y-axis label": "y",
+    "y-axis range": "0 to 1",
+    "series": [
+     "scatter points",
+     "regression line",
+     "normal distribution curves for y-values at each x"
+    ],
+    "values": {
+     "scatter points": {
+      "x=1": 7,
+      "x=2": 7,
+      "x=3": 7
+     },
+     "regression line": "downward slope from left to right",
+     "normal distributions": {
+      "x=1": "blue curve centered on regression line",
+      "x=2": "green curve centered on regression line",
+      "x=3": "orange curve centered on regression line"
+     }
+    },
+    "trend": "y-values are normally distributed about the regression line with equal standard deviation; more y-values lie near the line than are scattered farther away."
+   }
+  },
+  "summary"
+ ],
+ "usage": {
+  "prompt_tokens": 2784,
+  "completion_tokens": 292
+ },
+ "cost_usd": 0.001581,
+ "elapsed_s": 2.9
+}

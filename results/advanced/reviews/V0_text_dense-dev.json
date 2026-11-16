@@ -1,0 +1,128 @@
+[
+ {
+  "id": "AD01",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử, đối chiếu bản gốc."
+ },
+ {
+  "id": "AD02",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử, đối chiếu bản gốc."
+ },
+ {
+  "id": "AD03",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử, đối chiếu bản gốc."
+ },
+ {
+  "id": "AD04",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử, đối chiếu bản gốc."
+ },
+ {
+  "id": "AD05",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử, đối chiếu bản gốc."
+ },
+ {
+  "id": "AD06",
+  "group": "image",
+  "pass": false,
+  "reason": "Từ chối dù Figure 2.5 có trong sách: index chỉ có text, không thấy giá trị node."
+ },
+ {
+  "id": "AD07",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử, đối chiếu bản gốc."
+ },
+ {
+  "id": "AD08",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử, đối chiếu bản gốc. Năm 1990 đúng; ngày 'March 28, 1990' lấy từ lời giải của sách (sách tự mâu thuẫn với bảng 6/1/1990), không tính lỗi vì câu hỏi hỏi năm."
+ },
+ {
+  "id": "AD09",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử, đối chiếu bản gốc."
+ },
+ {
+  "id": "AD10",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử, đối chiếu bản gốc."
+ },
+ {
+  "id": "AD11",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử, đối chiếu bản gốc."
+ },
+ {
+  "id": "AD12",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử, đối chiếu bản gốc."
+ },
+ {
+  "id": "AD13",
+  "group": "multihop",
+  "pass": false,
+  "reason": "Bịa số: Huffman root 100, B-tree root 50 (đúng: 15 và 4); không có chunk hình."
+ },
+ {
+  "id": "AD14",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử, đối chiếu bản gốc."
+ },
+ {
+  "id": "AD15",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử, đối chiếu bản gốc."
+ },
+ {
+  "id": "AD16",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử, đối chiếu bản gốc."
+ },
+ {
+  "id": "AD17",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử, đối chiếu bản gốc. Nếu dùng định nghĩa p281 ('not robust enough to capture essential features') + p282 thì đều là định nghĩa trong sách; citation p281/p282 hỗ trợ."
+ },
+ {
+  "id": "AU01",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối/nói rõ không có dữ liệu, không khẳng định thiếu căn cứ."
+ },
+ {
+  "id": "AU02",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối/nói rõ không có dữ liệu, không khẳng định thiếu căn cứ."
+ },
+ {
+  "id": "AU03",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối/nói rõ không có dữ liệu, không khẳng định thiếu căn cứ."
+ },
+ {
+  "id": "AU04",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối/nói rõ không có dữ liệu, không khẳng định thiếu căn cứ."
+ }
+]

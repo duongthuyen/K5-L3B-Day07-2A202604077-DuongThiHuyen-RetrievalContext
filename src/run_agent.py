@@ -29,7 +29,7 @@ AGENT_CONFIGS = {
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--split", required=True, choices=("dev", "test"))
+    ap.add_argument("--split", required=True, choices=("dev", "test", "test2"))
     ap.add_argument("--config", required=True, choices=list(AGENT_CONFIGS))
     ap.add_argument("--only", nargs="*", help="subset of case ids (debug)")
     args = ap.parse_args()

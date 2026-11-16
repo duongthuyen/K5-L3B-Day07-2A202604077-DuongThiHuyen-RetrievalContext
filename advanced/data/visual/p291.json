@@ -1,0 +1,105 @@
+{
+ "page": 291,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 6.9",
+   "kind": "chart",
+   "title": "The Locations of Mushrooms in a Garden. There are three apparent clusters.",
+   "details": {
+    "chart type": "scatter plot",
+    "x-axis label": "East",
+    "x-axis range": "20 to 160",
+    "y-axis label": "North",
+    "y-axis range": "20 to 90",
+    "units": "feet",
+    "points": [
+     {
+      "East": 101.7,
+      "North": 51.1
+     },
+     {
+      "East": 109.2,
+      "North": 66.7
+     },
+     {
+      "East": 33.2,
+      "North": 54.1
+     },
+     {
+      "East": 39.6,
+      "North": 53.6
+     },
+     {
+      "East": 66.8,
+      "North": 70.5
+     },
+     {
+      "East": 119.9,
+      "North": 42.4
+     },
+     {
+      "East": 26.9,
+      "North": 33.1
+     },
+     {
+      "East": 55.5,
+      "North": 71.7
+     },
+     {
+      "East": 75,
+      "North": 82.4
+     },
+     {
+      "East": 108.6,
+      "North": 71.4
+     },
+     {
+      "East": 62.1,
+      "North": 83.5
+     },
+     {
+      "East": 119.8,
+      "North": 69.1
+     },
+     {
+      "East": 25.9,
+      "North": 30.2
+     },
+     {
+      "East": 37.5,
+      "North": 46.4
+     },
+     {
+      "East": 24,
+      "North": 49.1
+     },
+     {
+      "East": 75.5,
+      "North": 77.8
+     },
+     {
+      "East": 101.5,
+      "North": 51
+     },
+     {
+      "East": 110.5,
+      "North": 72
+     },
+     {
+      "East": 39.5,
+      "North": 55.8
+     }
+    ]
+   },
+   "summary": "This scatter plot shows the spatial distribution of 19 mushrooms in a garden, plotted by their east and north coordinates in feet. The plot reveals three apparent clusters of mushroom locations."
+  }
+ ],
+ "attempts": 1,
+ "usage": {
+  "prompt_tokens": 2514,
+  "completion_tokens": 434
+ },
+ "cost_usd": 0.0017,
+ "elapsed_s": 5.25
+}

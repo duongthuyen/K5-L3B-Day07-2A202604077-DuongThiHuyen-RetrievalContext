@@ -1,0 +1,19 @@
+{
+ "page": 83,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "PYTHON CODE",
+   "details": "Screenshot of Python code demonstrating regex extraction from a text string. The code imports the 're' library, defines a data string describing a phone purchase, uses regex patterns to extract 'product', 'model', and 'price' from the string, and prints these extracted values. The output shown is: product: iPhone 12 model: A2172 price: $799.",
+   "summary": "This code example illustrates how to use Python's regex library to parse and extract specific information (product name, model, price) from a text string for data retrieval purposes."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2803,
+  "completion_tokens": 142
+ },
+ "cost_usd": 0.001348,
+ "elapsed_s": 2.32
+}

@@ -1,0 +1,56 @@
+{
+ "page": 358,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 7.9",
+   "kind": "diagram",
+   "title": "RNN Model, Simplified. The feedback loop gives the model a rudimentary memory of prior training.",
+   "details": {
+    "nodes": [
+     "Input",
+     "w",
+     "b",
+     "Activation Function",
+     "Output",
+     "w_c"
+    ],
+    "connections": [
+     {
+      "from": "Input",
+      "to": "w"
+     },
+     {
+      "from": "w",
+      "to": "b"
+     },
+     {
+      "from": "b",
+      "to": "Activation Function"
+     },
+     {
+      "from": "Activation Function",
+      "to": "Output"
+     },
+     {
+      "from": "Activation Function",
+      "to": "w_c",
+      "label": "z"
+     },
+     {
+      "from": "w_c",
+      "to": "b",
+      "label": "z"
+     }
+    ]
+   },
+   "summary": "This diagram illustrates a simplified Recurrent Neural Network (RNN) model showing the feedback loop from the activation function output back to the bias input, representing the model's rudimentary memory of prior training."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2793,
+  "completion_tokens": 209
+ },
+ "cost_usd": 0.001452,
+ "elapsed_s": 2.35
+}

@@ -1,0 +1,19 @@
+{
+ "page": 435,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": null,
+   "summary": "This page contains code for creating a Pareto chart but no informative visual element such as a chart, diagram, or table is shown on this page."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2468,
+  "completion_tokens": 61
+ },
+ "cost_usd": 0.001085,
+ "elapsed_s": 1.82
+}

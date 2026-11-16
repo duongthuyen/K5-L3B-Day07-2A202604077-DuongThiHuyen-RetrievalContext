@@ -1,0 +1,19 @@
+{
+ "page": 9,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": "This is a table of contents page listing chapters, sections, and page numbers for the textbook 'Principles of Data Science' (OpenStax). It includes units on ethics, visualization, reporting, and appendices on Excel and R Studio.",
+   "summary": "This page serves as an index or table of contents for the textbook, showing the structure and page locations of chapters and sections."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2470,
+  "completion_tokens": 104
+ },
+ "cost_usd": 0.001154,
+ "elapsed_s": 2.74
+}

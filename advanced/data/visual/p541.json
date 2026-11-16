@@ -1,0 +1,19 @@
+{
+ "page": 541,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table C1",
+   "kind": "table",
+   "title": null,
+   "details": "| Chapter Title | Topic | Description of Algorithm | First Reference |\n|---------------|-------|--------------------------|-----------------|\n| (empty) | Decomposing a time series into components | Using Python autocorrelation function and STL (seasonal and trend decomposition using LOESS) model to decompose time series data into its components | Time Series Forecasting Methods |\n| (empty) | Exponential moving average (EMA) | Using Python to calculate exponential moving average for time series data | Time Series Forecasting Methods |\n| (empty) | Autoregressive integrated moving average (ARIMA) | Using Python to calculate autoregressive integrated moving average model for time series data | Time Series Forecasting Methods |\n| (empty) | Autoregressive integrated moving average (ARIMA) | Using Python to fit and plot an autoregressive integrated moving average and use it to make forecasts for time series data | Time Series Forecasting Methods |\n| (empty) | Forecasting methods | Using Python to create and plot a forecasting model with confidence intervals for time series data | Forecast Evaluation Methods |\n| **Decision-Making Using Machine Learning Basics** | Logistic regression | Using Python to fit a logistic regression model and assess the accuracy of the model | Classification Using Machine Learning |\n| (empty) | K-means clustering | Using Python to produce a k-means clustering model from a dataset | Classification Using Machine Learning |\n| (empty) | DBscan clustering | Using Python to generate a density-based spatial clustering of applications with noise (DBScan) model | Classification Using Machine Learning |\n| (empty) | Confusion matrix | Using Python to generate a confusion matrix | Classification Using Machine Learning |\n| (empty) | Linear regression with bootstrapping | Using Python to generate a linear regression model using a bootstrapping method | Machine Learning in Regression Analysis |\n| (empty) | Multiple regression | Using Python to perform multiple regression analysis | Machine Learning in Regression Analysis |",
+   "summary": "This table lists various Python algorithms reviewed in the appendix, including their chapter titles, topics, descriptions, and first reference links for further study."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2569,
+  "completion_tokens": 461
+ },
+ "cost_usd": 0.001765,
+ "elapsed_s": 5.11
+}

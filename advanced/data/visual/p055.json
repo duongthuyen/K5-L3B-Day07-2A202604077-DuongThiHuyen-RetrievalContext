@@ -1,0 +1,19 @@
+{
+ "page": 55,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "table",
+   "title": null,
+   "details": "| Unnamed: 0 | Title                  | Year | Genre | Rating | Duration | US_Gross_Million | Worldwide_Gross_Million | Votes  |\n|------------|------------------------|------|-------|--------|----------|------------------|------------------------|--------|\n| 161        | Mamma Mia!             | 2008 | Comedy| 6.5    | 108      | 144.13           | 611.26                 | 245,380|\n| 170        | The Hangover Part II   | 2011 | Comedy| 6.4    | 102      | 254.46           | 586.76                 | 499,126|\n| 183        | Mei ren yu             | 2016 | Comedy| 6.2    | 94       | 3.23             | 553.81                 | 9,374  |\n| 186        | Ted                    | 2012 | Comedy| 6.9    | 106      | 218.82           | 549.37                 | 612,897|\n| 208        | Meet the Fockers       | 2004 | Comedy| 6.3    | 115      | 279.26           | 522.66                 | 271,402|\n| ...        | ...                    | ...  | ...   | ...    | ...      | ...              | ...                    | ...    |\n| 954        | How to Lose a Guy in 10 Days | 2003 | Comedy| 6.4    | 116      | 105.81           | 177.50                 | 238,604|\n| 957        | The 40 Year Old Virgin | 2005 | Comedy| 7.1    | 116      | 109.45           | 177.38                 | 436,221|\n| 960        | The Descendants        | 2011 | Comedy| 7.3    | 115      | 82.58            | 177.24                 | 242,388|\n| 962        | Tootsie                | 1982 | Comedy| 7.4    | 116      | 177.20           | 177.20                 | 107,311|\n| 964        | Analyze This            | 1999 | Comedy| 6.7    | 103      | 106.89           | 176.89                 | 154,726|",
+   "summary": "A table showing selected rows from a movie dataset including columns for title, year, genre, rating, duration, US gross million, worldwide gross million, and votes. It illustrates the structure of a DataFrame used in the example."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2281,
+  "completion_tokens": 610
+ },
+ "cost_usd": 0.001888,
+ "elapsed_s": 4.96
+}

@@ -1,0 +1,19 @@
+{
+ "page": 180,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 4.13",
+   "kind": "decorative",
+   "title": "Example 4.13",
+   "details": "Text example illustrating hypothesis testing for the mean when population standard deviation is known.",
+   "summary": "This example demonstrates the hypothesis testing procedure using a sample of college students' social media usage to test a claim about the population mean."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2701,
+  "completion_tokens": 82
+ },
+ "cost_usd": 0.001212,
+ "elapsed_s": 1.44
+}

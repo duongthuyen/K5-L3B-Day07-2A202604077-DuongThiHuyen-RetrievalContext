@@ -1,0 +1,28 @@
+{
+ "page": 233,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 5.5",
+   "kind": "chart",
+   "title": "Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Date (monthly from January 2016 to May 2022)",
+    "x-axis range": "January 2016 to May 2022",
+    "y-axis label": "Coal Consumption",
+    "units": "1000s of Tons",
+    "y-axis range": "0 to 80,000",
+    "legend/series": null,
+    "values": "Peaks around 70,000 in early 2016 and early 2017; general downward trend with fluctuations; minimum near 20,000 around early 2020; values mostly between 30,000 and 60,000 after 2019; multiple ups and downs visible throughout the timeline."
+   },
+   "summary": "This line chart shows the monthly coal consumption for electricity generation in the US from 2016 to 2022, illustrating fluctuations with an overall downward trend over the period."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2687,
+  "completion_tokens": 236
+ },
+ "cost_usd": 0.001452,
+ "elapsed_s": 2.48
+}

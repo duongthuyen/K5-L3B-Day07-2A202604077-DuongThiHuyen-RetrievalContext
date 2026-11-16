@@ -1,0 +1,25 @@
+{
+  "config": "V1_mm_hybrid",
+  "method": "hybrid",
+  "text_only": false,
+  "view": false,
+  "top_k": 5,
+  "model": "gpt-4.1-mini",
+  "split": "dev",
+  "N": 21,
+  "errors": 0,
+  "status": {
+    "answered": 18,
+    "abstain": 3,
+    "error": 0
+  },
+  "context_all_gold_pages": "16/17",
+  "first_search_gold_page_at1": "15/17",
+  "first_search_gold_page_at3": "16/17",
+  "searches_mean": 1.19,
+  "page_views_mean": 0,
+  "prompt_tokens": 41538,
+  "completion_tokens": 1953,
+  "cost_usd": 0.0197,
+  "median_elapsed_s": 2.23
+}

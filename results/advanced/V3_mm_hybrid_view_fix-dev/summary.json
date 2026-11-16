@@ -1,0 +1,27 @@
+{
+  "config": "V3_mm_hybrid_view_fix",
+  "method": "hybrid+samepage",
+  "text_only": false,
+  "view": true,
+  "top_k": 5,
+  "adjacent_view": true,
+  "json_repair": true,
+  "model": "gpt-4.1-mini",
+  "split": "dev",
+  "N": 21,
+  "errors": 0,
+  "status": {
+    "answered": 18,
+    "abstain": 3,
+    "error": 0
+  },
+  "context_all_gold_pages": "17/17",
+  "first_search_gold_page_at1": "15/17",
+  "first_search_gold_page_at3": "17/17",
+  "searches_mean": 1.19,
+  "page_views_mean": 0,
+  "prompt_tokens": 58342,
+  "completion_tokens": 2127,
+  "cost_usd": 0.0267,
+  "median_elapsed_s": 2.23
+}

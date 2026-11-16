@@ -1,0 +1,11 @@
+{
+ "page": 174,
+ "model": "gpt-4.1-mini",
+ "elements": [],
+ "usage": {
+  "prompt_tokens": 2455,
+  "completion_tokens": 5
+ },
+ "cost_usd": 0.00099,
+ "elapsed_s": 0.96
+}

@@ -1,0 +1,29 @@
+{
+ "page": 342,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 7.2",
+   "kind": "diagram",
+   "title": "A neuron in a neural network",
+   "details": {
+    "nodes": [
+     "inputs x1, x2, ..., xn",
+     "neuron",
+     "output y"
+    ],
+    "connections": [
+     "inputs x1, x2, ..., xn -> neuron",
+     "neuron -> output y"
+    ]
+   },
+   "summary": "This diagram illustrates a single neuron in a neural network, showing how multiple inputs are processed by the neuron to produce an output."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2802,
+  "completion_tokens": 110
+ },
+ "cost_usd": 0.001297,
+ "elapsed_s": 1.81
+}

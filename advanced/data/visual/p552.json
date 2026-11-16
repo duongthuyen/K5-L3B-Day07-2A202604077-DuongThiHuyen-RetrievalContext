@@ -1,0 +1,19 @@
+{
+ "page": 552,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table D1",
+   "kind": "table",
+   "title": "Table D1",
+   "details": "| Python Function       | Description                                                                 | Syntax                                      | First Reference                     |\n|----------------------|-----------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|\n| STL()                | Decomposes a time series with known period P into its components             | STL(time_series_data, period=P)              | Time Series Forecasting Methods    |\n| ewm()                | Performs exponential moving average (EMA) smoothing                         | ewm(dataframe)                              | Time Series Forecasting Methods    |\n| adfuller()           | Performs the Augmented Dickey-Fuller (ADF) test, which is a statistical test for checking the stationarity of a time series | adfuller(time_series_data)                   | Time Series Forecasting Methods    |\n| ARIMA()              | Fits an ARIMA(p, d, q) (AutoRegressive Integrated Moving Average) model to time series data | ARIMA(time_series_data, order=(p, d, q))    | Time Series Forecasting Methods    |\n| LogisticRegression() | Creates a logistic regression model                                         | LogisticRegression()                        | Classification Using Machine Learning |\n| model.fit()          | Trains a machine learning model on a given dataset                         | model.fit(feature_matrix, target_vector) | Classification Using Machine Learning |",
+   "summary": "This table summarizes various Python functions used in time series forecasting and machine learning, providing their descriptions, syntax, and first reference locations in the textbook."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2455,
+  "completion_tokens": 323
+ },
+ "cost_usd": 0.001499,
+ "elapsed_s": 3.39
+}

@@ -1,0 +1,19 @@
+{
+ "page": 91,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 2.5",
+   "kind": "table",
+   "title": "Retail Company Sales and Profits",
+   "details": "| Branch   | Product                     | Sales ($) | Profits ($) |\n|----------|-----------------------------|-----------|-------------|\n| Branch 1 | Jewelry                     | 50000     | 20000       |\n| Branch 2 | TV Accessories              | 25000     | 12500       |\n| Branch 3 | Beauty Products             | 30000     | 15000       |\n| Branch 4 | DVDs                        | 15000     | 7500        |\n| Branch 5 | Kids’ Toys                  | 45000     | 22500       |\n| Branch 6 | Video Games                 | 35000     | 17500       |\n| Branch 7 | Women’s Boutique Apparel    | 40000     | 20000       |\n| Branch 8 | Designer & Fashion Sunglasses | 55000  | 27500       |",
+   "summary": "This table lists sales and profits for eight products across different branches of a retail company. It is used as the dataset for normalization to identify the top-selling product based on sales and profits."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2788,
+  "completion_tokens": 267
+ },
+ "cost_usd": 0.001542,
+ "elapsed_s": 3.51
+}

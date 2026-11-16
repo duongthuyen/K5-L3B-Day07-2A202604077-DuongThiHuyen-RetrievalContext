@@ -1,0 +1,32 @@
+{
+ "page": 247,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022",
+   "details": {
+    "chart type": "line plot",
+    "x-axis label": "Month",
+    "x-axis range": "01/01/2016 to max date in data (2022)",
+    "y-axis label": "Value / SMA / Diff",
+    "y-axis units": "unreadable (likely coal consumption units)",
+    "y-axis range": "unreadable",
+    "legend/series": [
+     "Value (blue solid line)",
+     "SMA (red dashed line)",
+     "Diff (green dashed line)"
+    ],
+    "values": "Exact values unreadable; plot shows time series data with Value fluctuating monthly, SMA smoothing over 12 months, Diff showing first-order difference"
+   },
+   "summary": "This line chart displays the monthly coal consumption values for electricity generation in the US from 2016 to 2022, along with a 12-month simple moving average and the first-order difference of the values, illustrating trends and changes over time."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2617,
+  "completion_tokens": 231
+ },
+ "cost_usd": 0.001416,
+ "elapsed_s": 2.75
+}

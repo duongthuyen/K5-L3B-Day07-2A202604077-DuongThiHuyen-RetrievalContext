@@ -1,0 +1,19 @@
+{
+ "page": 510,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure A9",
+   "kind": "image",
+   "title": "Excel graphing menu options",
+   "details": "Screenshot of Excel's graphing menu showing various chart types including Column, Line, Pie, Bar, Area, Scatter, and others. The menu is a dropdown from the Insert tab with icons and labels for each chart type.",
+   "summary": "This screenshot shows the menu in Excel where users can select different types of graphs and visualizations to create, illustrating the variety of options available for data visualization in Excel."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2650,
+  "completion_tokens": 115
+ },
+ "cost_usd": 0.001244,
+ "elapsed_s": 2.08
+}

@@ -1,0 +1,89 @@
+{
+ "page": 459,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Revenue versus Advertising for a Company",
+   "details": {
+    "chart type": "scatterplot with color gradient",
+    "x-axis label": "Advertising $000",
+    "x-axis range": "50 to 150",
+    "y-axis label": "Revenue $000",
+    "y-axis range": "12,000 to 19,000",
+    "legend/series": "Color bar representing values from 12,000 to 19,000",
+    "values": [
+     {
+      "x": 50,
+      "y": 12,
+      "color": 12,
+      "units": "thousands"
+     },
+     {
+      "x": 60,
+      "y": 13,
+      "color": 13,
+      "units": "thousands"
+     },
+     {
+      "x": 80,
+      "y": 14,
+      "color": 14,
+      "units": "thousands"
+     },
+     {
+      "x": 90,
+      "y": 14.5,
+      "color": 14.5,
+      "units": "thousands"
+     },
+     {
+      "x": 100,
+      "y": 15.5,
+      "color": 15.5,
+      "units": "thousands"
+     },
+     {
+      "x": 110,
+      "y": 16.5,
+      "color": 16.5,
+      "units": "thousands"
+     },
+     {
+      "x": 120,
+      "y": 17,
+      "color": 17,
+      "units": "thousands"
+     },
+     {
+      "x": 130,
+      "y": 17,
+      "color": 17,
+      "units": "thousands"
+     },
+     {
+      "x": 140,
+      "y": 18.5,
+      "color": 18.5,
+      "units": "thousands"
+     },
+     {
+      "x": 150,
+      "y": 19,
+      "color": 19,
+      "units": "thousands"
+     }
+    ],
+    "trend": "Positive correlation between advertising spending and revenue, with color indicating increasing values."
+   }
+  },
+  "summary"
+ ],
+ "usage": {
+  "prompt_tokens": 2562,
+  "completion_tokens": 399
+ },
+ "cost_usd": 0.001663,
+ "elapsed_s": 4.27
+}

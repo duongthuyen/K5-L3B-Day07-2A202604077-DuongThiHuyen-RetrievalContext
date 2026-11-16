@@ -1,0 +1,19 @@
+{
+ "page": 93,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 2.7",
+   "kind": "table",
+   "title": "Strategies to Reduce Noisy Data",
+   "details": "| Strategy           | Example |\n|--------------------|---------|\n| Data cleaning      | Removing duplicate or irrelevant data from a dataset, such as deleting repeated rows in a spreadsheet or filtering out incomplete or error-prone data entries. |\n| Data smoothing     | A technique used in data analysis to remove outliers or noise from a dataset in order to reveal underlying patterns or trends. One example is smoothing a dataset of daily stock market index values over the course of a month. The values may fluctuate greatly on a day-to-day basis, making it difficult to see any overall trend. By calculating a seven-day average, we can smooth out these fluctuations and see the overall trend of the index over the course of the month. |\n| Imputation         | An example of imputation is in a hospital setting where a patient's medical history is incomplete due to missing information. The hospital staff can use imputation to estimate the missing data based on the patient's known medical conditions and past treatments. |\n| Binning            | A researcher is studying the age demographics of a population in a city. Instead of looking at individual ages, the researcher decides to bin the data into age groups of 10 years (e.g., 0–10, 10–20, 20–30, etc.). This allows for a more comprehensive and easier analysis of the data. |\n| Data transformation| Consider the following dataset that shows the number of COVID-19 cases recorded in a country at different points in time—01/01/2020, 02/02/2020, 03/01/2020—are 1000, 10000, 100000, respectively. To transform this data using log, we can take the log base 10 of the number of cases column. This would result in a transformed data as follows: 01/01/2020, 02/02/2020, 03/01/2020 are 3, 4, 5, respectively. |\n| Dimensionality reduction | The original dataset would have high dimensionality due to the large number of variables (100 companies) and time points (5 years). By applying principal component analysis, we can reduce the dimensionality of the dataset to a few principal components that represent the overall trends and patterns in the stock market. |\n| Ensemble methods    | An example of an ensemble method is the random forest algorithm. It combines multiple decision trees, each trained on a random subset of the data, to make a more accurate prediction. This helps reduce overfitting and increase the overall performance of the model. The final prediction is made by aggregating the predictions of each individual tree. |",
+   "summary": "This table summarizes various strategies to reduce noisy data, providing examples for each method such as data cleaning, smoothing, imputation, binning, data transformation, dimensionality reduction, and ensemble methods."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2915,
+  "completion_tokens": 626
+ },
+ "cost_usd": 0.002168,
+ "elapsed_s": 5.7
+}

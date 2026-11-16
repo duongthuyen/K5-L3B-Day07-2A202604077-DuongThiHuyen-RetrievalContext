@@ -1,0 +1,19 @@
+{
+ "page": 286,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 6.4",
+   "kind": "table",
+   "title": "Discrete Logistic Regression Model Example for Graduation Probability",
+   "details": "| Variable | Description | Probability |\n|----------|-------------|-------------|\n| p1       | Probability of graduating if \"in-state\" is false (0) | 0.3 |\n| p2       | Probability of graduating if \"in-state\" is true (1)  | 0.75 |\n\nAdditional calculations:\n- logit(p1) = ln(0.3 / (1 - 0.3)) = ln(0.4286) = -0.847\n- logit(p2) = ln(0.75 / (1 - 0.75)) = ln(3.000) = 1.099\n- a = logit(p1) = -0.847\n- b = logit(p2) - logit(p1) = 1.099 - (-0.847) = 1.946\n\nFinal logistic regression model:\n\nf(x) = 1 / (1 + e^(-(-0.847 + 1.946x))) = 1 / (1 + e^(0.847 - 1.946x))",
+   "summary": "This example shows how to build a discrete logistic regression model to predict graduation likelihood based on whether a student is in-state or out-of-state, using given probabilities and the logit function."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2705,
+  "completion_tokens": 317
+ },
+ "cost_usd": 0.001589,
+ "elapsed_s": 3.23
+}

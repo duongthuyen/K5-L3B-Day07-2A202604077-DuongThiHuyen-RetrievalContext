@@ -1,0 +1,19 @@
+{
+ "page": 421,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 9.1",
+   "kind": "image",
+   "title": "Data visualization techniques can involve collecting and analyzing geospatial data, such as measurements collected by the National Park Service during the High-Efficiency Trail Assessment Process (HETAP).",
+   "details": "Photo showing people in a forest setting with specialized bicycles and a device on the ground, presumably for collecting geospatial data. The image credit notes modification of work 'Trail Accessibility Assessments' by GlacierNPS/Flickr, Public Domain.",
+   "summary": "This image illustrates the practical application of data visualization techniques in collecting and analyzing geospatial data in natural environments, highlighting the use of specialized equipment during the High-Efficiency Trail Assessment Process."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2588,
+  "completion_tokens": 153
+ },
+ "cost_usd": 0.00128,
+ "elapsed_s": 2.88
+}

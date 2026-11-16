@@ -1,0 +1,33 @@
+{
+  "run": "A0_dense-test2",
+  "split": "test2",
+  "cases": 11,
+  "provider_errors": 0,
+  "tool_use": {
+    "n": 11,
+    "N": 11
+  },
+  "grounded_answer": {
+    "0": 1,
+    "1": 1,
+    "2": 6,
+    "N": 8,
+    "mean": 1.625
+  },
+  "citation_validity": {
+    "n": 7,
+    "N": 8
+  },
+  "answer_citation_coverage": {
+    "n": 8,
+    "N": 8
+  },
+  "abstention": {
+    "n": 3,
+    "N": 3
+  },
+  "false_abstention": {
+    "n": 0,
+    "N": 8
+  }
+}

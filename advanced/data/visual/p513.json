@@ -1,0 +1,114 @@
+{
+ "page": 513,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure A13",
+   "kind": "chart",
+   "title": "The First Bar Chart with Three Kinds of x-Axis Labels (Position, Team, and Name)",
+   "details": {
+    "chart_type": "bar chart",
+    "x_axis_label": "Player (Position, Team, Name)",
+    "x_axis_categories": [
+     "Outfielder, SD, Paul_McAnulty",
+     "Outfielder, SD, Termel_Sledge",
+     "Outfielder, SD, Jack_Cust",
+     "Outfielder, SD, Jose_Cruz_Jr.",
+     "Outfielder, SD, Russell_Branyan",
+     "Outfielder, SD, Mike_Cameron",
+     "Outfielder, SD, Brian_Giles",
+     "Pitcher, SD, Mike_Thompson",
+     "Pitcher, SD, Clay_Hensley",
+     "Pitcher, SD, Chris_Young",
+     "Pitcher, SD, Greg_Maddux",
+     "Pitcher, SD, Jake_Peavy"
+    ],
+    "y_axis_label": "Height (inches)",
+    "y_axis_range": [
+     64,
+     84
+    ],
+    "values": {
+     "Paul_McAnulty": 70,
+     "Termel_Sledge": 72,
+     "Jack_Cust": 73,
+     "Jose_Cruz_Jr.": 72,
+     "Russell_Branyan": 75,
+     "Mike_Cameron": 74,
+     "Brian_Giles": 70,
+     "Mike_Thompson": 76,
+     "Clay_Hensley": 71,
+     "Chris_Young": 82,
+     "Greg_Maddux": 72,
+     "Jake_Peavy": 73
+    },
+    "trend": "Heights vary between 70 and 82 inches, with Chris Young being the tallest."
+   }
+  },
+  {
+   "label": "Figure A14",
+   "kind": "image",
+   "title": "Keeping Only Name on the x-Axis Label (Used with permission from Microsoft)",
+   "details": {
+    "shown": "Screenshot of Excel Select Data window showing Horizontal (Category) axis labels set to =Sheet1!$A$2:$A$13"
+   },
+   "summary": "This screenshot shows how to update the horizontal axis labels in Excel to display only player names."
+  },
+  {
+   "label": "Figure A15",
+   "kind": "chart",
+   "title": "The Second Bar Chart with Only Name Displayed on the x-Axis",
+   "details": {
+    "chart_type": "bar chart",
+    "x_axis_label": "Player Name",
+    "x_axis_categories": [
+     "Paul_McAnulty",
+     "Termel_Sledge",
+     "Jack_Cust",
+     "Jose_Cruz_Jr.",
+     "Russell_Branyan",
+     "Mike_Cameron",
+     "Brian_Giles",
+     "Mike_Thompson",
+     "Clay_Hensley",
+     "Chris_Young",
+     "Greg_Maddux",
+     "Jake_Peavy"
+    ],
+    "y_axis_label": "Height (inches)",
+    "y_axis_range": [
+     64,
+     84
+    ],
+    "values": {
+     "Paul_McAnulty": 70,
+     "Termel_Sledge": 72,
+     "Jack_Cust": 73,
+     "Jose_Cruz_Jr.": 72,
+     "Russell_Branyan": 75,
+     "Mike_Cameron": 74,
+     "Brian_Giles": 70,
+     "Mike_Thompson": 76,
+     "Clay_Hensley": 71,
+     "Chris_Young": 82,
+     "Greg_Maddux": 72,
+     "Jake_Peavy": 73
+    },
+    "trend": "Heights vary between 70 and 82 inches, with Chris Young being the tallest."
+   }
+  },
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": {},
+   "summary": "The page contains no other informative visual elements besides the figures described."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2295,
+  "completion_tokens": 787
+ },
+ "cost_usd": 0.002177,
+ "elapsed_s": 7.0
+}

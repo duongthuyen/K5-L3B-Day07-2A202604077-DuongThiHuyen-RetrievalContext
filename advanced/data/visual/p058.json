@@ -1,0 +1,29 @@
+{
+ "page": 58,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "The resulting output will look like this:",
+   "details": {
+    "chart type": "scatterplot",
+    "x-axis label": null,
+    "x-axis range": "0 to about 900",
+    "y-axis label": null,
+    "y-axis range": "0 to about 2700",
+    "units": "Million dollars",
+    "legend/series": null,
+    "values": "Points scattered showing positive correlation; densest cluster between 0-200 (x) and 0-1000 (y); maximum y-value around 2700 at x ~ 800; maximum x-value around 900 at y ~ 2100",
+    "trend": "Positive correlation between x and y values"
+   },
+   "summary": "This scatterplot shows a set of points representing US Gross (x-axis) versus Worldwide Gross (y-axis) in millions, illustrating a positive correlation between domestic and worldwide gross revenue."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2376,
+  "completion_tokens": 200
+ },
+ "cost_usd": 0.00127,
+ "elapsed_s": 2.19
+}

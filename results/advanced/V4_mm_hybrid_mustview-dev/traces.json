@@ -1,0 +1,3453 @@
+[
+ {
+  "id": "AD01",
+  "group": "table",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "In Table 2.3 (Monthly Employment over 1990), how many employers (×1000) were recorded on 9/1/1990?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "Table 2.3 Monthly Employment 1990",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 48.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0089:v0",
+      "page": 89,
+      "kind": "visual",
+      "label": "Table 2.3",
+      "score": 0.03278688524590164
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0088:v3",
+      "page": 88,
+      "kind": "visual",
+      "label": "Table 2.3",
+      "score": 0.03200204813108039
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0088:tab0",
+      "page": 88,
+      "kind": "table",
+      "label": null,
+      "score": 0.03149801587301587
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0088:v0",
+      "page": 88,
+      "kind": "visual",
+      "label": "Figure 2.2",
+      "score": 0.031009615384615385
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0088:v2",
+      "page": 88,
+      "kind": "visual",
+      "label": null,
+      "score": 0.030834914611005692
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0089:v1",
+      "page": 89,
+      "kind": "visual",
+      "label": "Figure 2.3",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0088:v1",
+      "page": 88,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0089:v0",
+     "ADV:p0088:v3",
+     "ADV:p0088:tab0",
+     "ADV:p0088:v0",
+     "ADV:p0088:v2",
+     "ADV:p0089:v1",
+     "ADV:p0088:v1"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 89,
+    "result": "Image of page 89 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The number of employers recorded on 9/1/1990 was 5487 (×1000).\",\"citations\":[\"ADV:p0089:v0\"] ,\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0089:v0",
+   "ADV:p0088:v3",
+   "ADV:p0088:tab0",
+   "ADV:p0088:v0",
+   "ADV:p0088:v2",
+   "ADV:p0089:v1",
+   "ADV:p0088:v1"
+  ],
+  "context_chars": 4005,
+  "viewed_pages": [
+   89
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 5977,
+   "completion_tokens": 85,
+   "llm_calls": 3
+  },
+  "elapsed_s": 4.35,
+  "cost_usd": 0.002527,
+  "status": "answered",
+  "answer": "The number of employers recorded on 9/1/1990 was 5487 (×1000).",
+  "citations": [
+   "ADV:p0089:v0"
+  ],
+  "cited_pages": [
+   89
+  ],
+  "gold_pages": [
+   89
+  ],
+  "gold_pages_in_context": [
+   89
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AD02",
+  "group": "table",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "According to the comparison table of data standardization, transformation and validation processes, which techniques does data transformation include?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "comparison table data standardization transformation validation",
+    "filter": null,
+    "latency_ms": 92.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0090:v0",
+      "page": 90,
+      "kind": "visual",
+      "label": "Table 2.4",
+      "score": 0.03278688524590164
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0090:tab0",
+      "page": 90,
+      "kind": "table",
+      "label": "Table 2.4",
+      "score": 0.031754032258064516
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0089:t01",
+      "page": 89,
+      "kind": "text",
+      "label": null,
+      "score": 0.031746031746031744
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0090:t01",
+      "page": 90,
+      "kind": "text",
+      "label": null,
+      "score": 0.0315136476426799
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0090:t00",
+      "page": 90,
+      "kind": "text",
+      "label": null,
+      "score": 0.029910714285714284
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0089:v0",
+      "page": 89,
+      "kind": "visual",
+      "label": "Table 2.3",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0089:v1",
+      "page": 89,
+      "kind": "visual",
+      "label": "Figure 2.3",
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0090:v0",
+     "ADV:p0090:tab0",
+     "ADV:p0089:t01",
+     "ADV:p0090:t01",
+     "ADV:p0090:t00",
+     "ADV:p0089:v0",
+     "ADV:p0089:v1"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 90,
+    "result": "Image of page 90 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"Data transformation techniques include data cleaning, data merging, data splitting, data conversion, and data aggregation.\",\"citations\":[\"ADV:p0090:tab0\",\"ADV:p0090:v0\"] ,\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0090:v0",
+   "ADV:p0090:tab0",
+   "ADV:p0089:t01",
+   "ADV:p0090:t01",
+   "ADV:p0090:t00",
+   "ADV:p0089:v0",
+   "ADV:p0089:v1"
+  ],
+  "context_chars": 7035,
+  "viewed_pages": [
+   90
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 6836,
+   "completion_tokens": 83,
+   "llm_calls": 3
+  },
+  "elapsed_s": 3.76,
+  "cost_usd": 0.002867,
+  "status": "answered",
+  "answer": "Data transformation techniques include data cleaning, data merging, data splitting, data conversion, and data aggregation.",
+  "citations": [
+   "ADV:p0090:tab0",
+   "ADV:p0090:v0"
+  ],
+  "cited_pages": [
+   90
+  ],
+  "gold_pages": [
+   90
+  ],
+  "gold_pages_in_context": [
+   90
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AD03",
+  "group": "table",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "In the confusion matrix for flowers, trees and grasses, how many trees were identified as grass?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "confusion matrix flowers trees grasses",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 53.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0300:tab0",
+      "page": 300,
+      "kind": "table",
+      "label": "Table 6.6",
+      "score": 0.03252247488101534
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0300:v1",
+      "page": 300,
+      "kind": "visual",
+      "label": "Table 6.6",
+      "score": 0.03252247488101534
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0301:v1",
+      "page": 301,
+      "kind": "visual",
+      "label": "Figure 6.17",
+      "score": 0.03149801587301587
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0302:v0",
+      "page": 302,
+      "kind": "visual",
+      "label": null,
+      "score": 0.03149801587301587
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0316:v0",
+      "page": 316,
+      "kind": "visual",
+      "label": null,
+      "score": 0.03076923076923077
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0300:v0",
+      "page": 300,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0301:tab0",
+      "page": 301,
+      "kind": "table",
+      "label": "Table 6.7",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0301:v0",
+      "page": 301,
+      "kind": "visual",
+      "label": "Table 6.7",
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0300:tab0",
+     "ADV:p0300:v1",
+     "ADV:p0301:v1",
+     "ADV:p0302:v0",
+     "ADV:p0316:v0",
+     "ADV:p0300:v0",
+     "ADV:p0301:tab0",
+     "ADV:p0301:v0"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 300,
+    "result": "Image of page 300 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"According to the confusion matrix for flowers, trees, and grasses, 0 trees were identified as grass.\",\"citations\":[\"ADV:p0300:tab0\",\"ADV:p0300:v1\"]}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0300:tab0",
+   "ADV:p0300:v1",
+   "ADV:p0301:v1",
+   "ADV:p0302:v0",
+   "ADV:p0316:v0",
+   "ADV:p0300:v0",
+   "ADV:p0301:tab0",
+   "ADV:p0301:v0"
+  ],
+  "context_chars": 5512,
+  "viewed_pages": [
+   300
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 6251,
+   "completion_tokens": 81,
+   "llm_calls": 3
+  },
+  "elapsed_s": 3.13,
+  "cost_usd": 0.00263,
+  "status": "answered",
+  "answer": "According to the confusion matrix for flowers, trees, and grasses, 0 trees were identified as grass.",
+  "citations": [
+   "ADV:p0300:tab0",
+   "ADV:p0300:v1"
+  ],
+  "cited_pages": [
+   300
+  ],
+  "gold_pages": [
+   300
+  ],
+  "gold_pages_in_context": [
+   300
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AD04",
+  "group": "table",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "What was the kayak and canoe rental revenue in 2022 Fall?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "kayak and canoe rental revenue 2022 Fall",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 50.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0235:tab0",
+      "page": 235,
+      "kind": "table",
+      "label": "Table 5.2",
+      "score": 0.03252247488101534
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0235:v0",
+      "page": 235,
+      "kind": "visual",
+      "label": "Table 5.2",
+      "score": 0.03252247488101534
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0236:v0",
+      "page": 236,
+      "kind": "visual",
+      "label": "Figure 5.8",
+      "score": 0.03149801587301587
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0251:v0",
+      "page": 251,
+      "kind": "visual",
+      "label": "Table 5.4",
+      "score": 0.03125763125763126
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0251:v1",
+      "page": 251,
+      "kind": "visual",
+      "label": "Figure 5.18",
+      "score": 0.031009615384615385
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0236:v1",
+      "page": 236,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0251:tab0",
+      "page": 251,
+      "kind": "table",
+      "label": "Table 5.4",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0251:v2",
+      "page": 251,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0235:tab0",
+     "ADV:p0235:v0",
+     "ADV:p0236:v0",
+     "ADV:p0251:v0",
+     "ADV:p0251:v1",
+     "ADV:p0236:v1",
+     "ADV:p0251:tab0",
+     "ADV:p0251:v2"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 235,
+    "result": "Image of page 235 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The kayak and canoe rental revenue in 2022 Fall was $1964.\",\"citations\":[\"ADV:p0235:tab0\",\"ADV:p0235:v0\",\"ADV:p0236:v0\"]}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0235:tab0",
+   "ADV:p0235:v0",
+   "ADV:p0236:v0",
+   "ADV:p0251:v0",
+   "ADV:p0251:v1",
+   "ADV:p0236:v1",
+   "ADV:p0251:tab0",
+   "ADV:p0251:v2"
+  ],
+  "context_chars": 5883,
+  "viewed_pages": [
+   235
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 7286,
+   "completion_tokens": 87,
+   "llm_calls": 3
+  },
+  "elapsed_s": 3.19,
+  "cost_usd": 0.003054,
+  "status": "answered",
+  "answer": "The kayak and canoe rental revenue in 2022 Fall was $1964.",
+  "citations": [
+   "ADV:p0235:tab0",
+   "ADV:p0235:v0",
+   "ADV:p0236:v0"
+  ],
+  "cited_pages": [
+   235,
+   236
+  ],
+  "gold_pages": [
+   235
+  ],
+  "gold_pages_in_context": [
+   235
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AD05",
+  "group": "image",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "In the data science cycle diagram, which stage comes immediately after Data Preparation?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "data science cycle diagram",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 47.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0021:v0",
+      "page": 21,
+      "kind": "visual",
+      "label": "Figure 1.3",
+      "score": 0.03278688524590164
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0020:v0",
+      "page": 20,
+      "kind": "visual",
+      "label": "Figure 1.2",
+      "score": 0.03225806451612903
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0277:v0",
+      "page": 277,
+      "kind": "visual",
+      "label": "Figure 6.2",
+      "score": 0.031746031746031744
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0387:v0",
+      "page": 387,
+      "kind": "visual",
+      "label": "Figure 8.1",
+      "score": 0.029513888888888888
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0404:v0",
+      "page": 404,
+      "kind": "visual",
+      "label": "Figure 8.4",
+      "score": 0.02871794871794872
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0021:v0",
+     "ADV:p0020:v0",
+     "ADV:p0277:v0",
+     "ADV:p0387:v0",
+     "ADV:p0404:v0"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 21,
+    "result": "Image of page 21 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"In the data science cycle diagram, the stage that comes immediately after Data Preparation is Data Analysis.\",\"citations\":[\"ADV:p0021:v0\"] ,\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0021:v0",
+   "ADV:p0020:v0",
+   "ADV:p0277:v0",
+   "ADV:p0387:v0",
+   "ADV:p0404:v0"
+  ],
+  "context_chars": 4054,
+  "viewed_pages": [
+   21
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 5331,
+   "completion_tokens": 75,
+   "llm_calls": 3
+  },
+  "elapsed_s": 2.99,
+  "cost_usd": 0.002252,
+  "status": "answered",
+  "answer": "In the data science cycle diagram, the stage that comes immediately after Data Preparation is Data Analysis.",
+  "citations": [
+   "ADV:p0021:v0"
+  ],
+  "cited_pages": [
+   21
+  ],
+  "gold_pages": [
+   21
+  ],
+  "gold_pages_in_context": [
+   21
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AD06",
+  "group": "image",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "In the B-tree indexing figure, which value is at the root and which values are its two child nodes?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "B-tree indexing figure",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 59.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0100:v0",
+      "page": 100,
+      "kind": "visual",
+      "label": "Figure 2.5",
+      "score": 0.03278688524590164
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0317:v0",
+      "page": 317,
+      "kind": "visual",
+      "label": "Figure 6.18",
+      "score": 0.03225806451612903
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0324:v1",
+      "page": 324,
+      "kind": "visual",
+      "label": "Figure 6.23",
+      "score": 0.03007688828584351
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0099:v0",
+      "page": 99,
+      "kind": "visual",
+      "label": "Figure 2.4",
+      "score": 0.029877369007803793
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0301:v1",
+      "page": 301,
+      "kind": "visual",
+      "label": "Figure 6.17",
+      "score": 0.029386529386529386
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0100:tab0",
+      "page": 100,
+      "kind": "table",
+      "label": "Table 2.9",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0100:v1",
+      "page": 100,
+      "kind": "visual",
+      "label": "Table 2.9",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0324:v0",
+      "page": 324,
+      "kind": "visual",
+      "label": "Figure 6.22",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0301:tab0",
+      "page": 301,
+      "kind": "table",
+      "label": "Table 6.7",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0301:v0",
+      "page": 301,
+      "kind": "visual",
+      "label": "Table 6.7",
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0100:v0",
+     "ADV:p0317:v0",
+     "ADV:p0324:v1",
+     "ADV:p0099:v0",
+     "ADV:p0301:v1",
+     "ADV:p0100:tab0",
+     "ADV:p0100:v1",
+     "ADV:p0324:v0",
+     "ADV:p0301:tab0",
+     "ADV:p0301:v0"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 100,
+    "result": "Image of page 100 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"In the B-tree indexing figure (Figure 2.5 on page 100), the value at the root is 4. The two child nodes of the root are 2 and 6.\",\"citations\":[\"ADV:p0100:v0\",\"ADV:p0100:v0\"]}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0100:v0",
+   "ADV:p0317:v0",
+   "ADV:p0324:v1",
+   "ADV:p0099:v0",
+   "ADV:p0301:v1",
+   "ADV:p0100:tab0",
+   "ADV:p0100:v1",
+   "ADV:p0324:v0",
+   "ADV:p0301:tab0",
+   "ADV:p0301:v0"
+  ],
+  "context_chars": 8181,
+  "viewed_pages": [
+   100
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 8192,
+   "completion_tokens": 97,
+   "llm_calls": 3
+  },
+  "elapsed_s": 3.45,
+  "cost_usd": 0.003432,
+  "status": "answered",
+  "answer": "In the B-tree indexing figure (Figure 2.5 on page 100), the value at the root is 4. The two child nodes of the root are 2 and 6.",
+  "citations": [
+   "ADV:p0100:v0"
+  ],
+  "cited_pages": [
+   100
+  ],
+  "gold_pages": [
+   100
+  ],
+  "gold_pages_in_context": [
+   100
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AD07",
+  "group": "image",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "In the supervised learning cycle figure, which two steps are repeated, and until when?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "supervised learning cycle",
+    "filter": null,
+    "latency_ms": 54.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0277:v0",
+      "page": 277,
+      "kind": "visual",
+      "label": "Figure 6.2",
+      "score": 0.03278688524590164
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0277:t04",
+      "page": 277,
+      "kind": "text",
+      "label": null,
+      "score": 0.03225806451612903
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0278:t03",
+      "page": 278,
+      "kind": "text",
+      "label": null,
+      "score": 0.031024531024531024
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0277:t02",
+      "page": 277,
+      "kind": "text",
+      "label": null,
+      "score": 0.030776515151515152
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0278:t05",
+      "page": 278,
+      "kind": "text",
+      "label": null,
+      "score": 0.03055037313432836
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0277:v0",
+     "ADV:p0277:t04",
+     "ADV:p0278:t03",
+     "ADV:p0277:t02",
+     "ADV:p0278:t05"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 277,
+    "result": "Image of page 277 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The two steps that are repeated in the supervised learning cycle are \\\"Train\\\" and \\\"Test.\\\" These steps are repeated until the desired accuracy is achieved.\",\"citations\":[\"ADV:p0277:v0\",\"ADV:p0277:t04\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0277:v0",
+   "ADV:p0277:t04",
+   "ADV:p0278:t03",
+   "ADV:p0277:t02",
+   "ADV:p0278:t05"
+  ],
+  "context_chars": 4029,
+  "viewed_pages": [
+   277
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 5255,
+   "completion_tokens": 89,
+   "llm_calls": 3
+  },
+  "elapsed_s": 3.19,
+  "cost_usd": 0.002244,
+  "status": "answered",
+  "answer": "The two steps that are repeated in the supervised learning cycle are \"Train\" and \"Test.\" These steps are repeated until the desired accuracy is achieved.",
+  "citations": [
+   "ADV:p0277:v0",
+   "ADV:p0277:t04"
+  ],
+  "cited_pages": [
+   277
+  ],
+  "gold_pages": [
+   277
+  ],
+  "gold_pages_in_context": [
+   277
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AD08",
+  "group": "chart",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "In the 'US Retail Employment with Outliers' chart, what does the y-axis measure and in which year does the obvious spike occur?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "US Retail Employment with Outliers chart y-axis year spike",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 56.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0088:v0",
+      "page": 88,
+      "kind": "visual",
+      "label": "Figure 2.2",
+      "score": 0.03252247488101534
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0089:v1",
+      "page": 89,
+      "kind": "visual",
+      "label": "Figure 2.3",
+      "score": 0.03252247488101534
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0088:v2",
+      "page": 88,
+      "kind": "visual",
+      "label": null,
+      "score": 0.031746031746031744
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0406:v0",
+      "page": 406,
+      "kind": "visual",
+      "label": "Figure 8.5",
+      "score": 0.030330882352941176
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0227:v0",
+      "page": 227,
+      "kind": "visual",
+      "label": "Figure 5.3",
+      "score": 0.03007688828584351
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0088:tab0",
+      "page": 88,
+      "kind": "table",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0088:v1",
+      "page": 88,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0089:v0",
+      "page": 89,
+      "kind": "visual",
+      "label": "Table 2.3",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0088:v3",
+      "page": 88,
+      "kind": "visual",
+      "label": "Table 2.3",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0227:v1",
+      "page": 227,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0227:v2",
+      "page": 227,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0088:v0",
+     "ADV:p0089:v1",
+     "ADV:p0088:v2",
+     "ADV:p0406:v0",
+     "ADV:p0227:v0",
+     "ADV:p0088:tab0",
+     "ADV:p0088:v1",
+     "ADV:p0089:v0",
+     "ADV:p0088:v3",
+     "ADV:p0227:v1",
+     "ADV:p0227:v2"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 88,
+    "result": "Image of page 88 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The y-axis in the 'US Retail Employment with Outliers' chart measures the 'Number of Employers × 1,000' (in thousands). The obvious spike occurs in the year 1990, specifically on March 28, 1990, where the employment level jumps significantly from approximately 5,400 to 9,500 employers (× 1,000).\",\"citations\":[\"ADV:p0088:v0\",\"ADV:p0088:v2\",\"ADV:p0088:tab0\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0088:v0",
+   "ADV:p0089:v1",
+   "ADV:p0088:v2",
+   "ADV:p0406:v0",
+   "ADV:p0227:v0",
+   "ADV:p0088:tab0",
+   "ADV:p0088:v1",
+   "ADV:p0089:v0",
+   "ADV:p0088:v3",
+   "ADV:p0227:v1",
+   "ADV:p0227:v2"
+  ],
+  "context_chars": 6330,
+  "viewed_pages": [
+   88
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 7344,
+   "completion_tokens": 155,
+   "llm_calls": 3
+  },
+  "elapsed_s": 3.48,
+  "cost_usd": 0.003186,
+  "status": "answered",
+  "answer": "The y-axis in the 'US Retail Employment with Outliers' chart measures the 'Number of Employers × 1,000' (in thousands). The obvious spike occurs in the year 1990, specifically on March 28, 1990, where the employment level jumps significantly from approximately 5,400 to 9,500 employers (× 1,000).",
+  "citations": [
+   "ADV:p0088:v0",
+   "ADV:p0088:v2",
+   "ADV:p0088:tab0"
+  ],
+  "cited_pages": [
+   88
+  ],
+  "gold_pages": [
+   88
+  ],
+  "gold_pages_in_context": [
+   88
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AD09",
+  "group": "chart",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "In the heatmap of the flower/tree/grass confusion matrix, which cell has the highest value?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "flower tree grass confusion matrix heatmap",
+    "filter": null,
+    "latency_ms": 58.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0301:v1",
+      "page": 301,
+      "kind": "visual",
+      "label": "Figure 6.17",
+      "score": 0.03278688524590164
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0300:v1",
+      "page": 300,
+      "kind": "visual",
+      "label": "Table 6.6",
+      "score": 0.031754032258064516
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0301:t05",
+      "page": 301,
+      "kind": "text",
+      "label": null,
+      "score": 0.031754032258064516
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0300:tab0",
+      "page": 300,
+      "kind": "table",
+      "label": "Table 6.6",
+      "score": 0.031746031746031744
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0300:t01",
+      "page": 300,
+      "kind": "text",
+      "label": null,
+      "score": 0.03076923076923077
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0301:tab0",
+      "page": 301,
+      "kind": "table",
+      "label": "Table 6.7",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0301:v0",
+      "page": 301,
+      "kind": "visual",
+      "label": "Table 6.7",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0300:v0",
+      "page": 300,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0301:v1",
+     "ADV:p0300:v1",
+     "ADV:p0301:t05",
+     "ADV:p0300:tab0",
+     "ADV:p0300:t01",
+     "ADV:p0301:tab0",
+     "ADV:p0301:v0",
+     "ADV:p0300:v0"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 301,
+    "result": "Image of page 301 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The cell with the highest value in the heatmap of the flower/tree/grass confusion matrix is the one where the actual class is 'Tree' and the predicted class is also 'Tree', with a value of 32. This cell is the darkest on the heatmap, indicating the highest correct classification count.\",\"citations\":[\"ADV:p0301:v1\",\"ADV:p0301:v0\"] ,\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0301:v1",
+   "ADV:p0300:v1",
+   "ADV:p0301:t05",
+   "ADV:p0300:tab0",
+   "ADV:p0300:t01",
+   "ADV:p0301:tab0",
+   "ADV:p0301:v0",
+   "ADV:p0300:v0"
+  ],
+  "context_chars": 5089,
+  "viewed_pages": [
+   301
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 6026,
+   "completion_tokens": 124,
+   "llm_calls": 3
+  },
+  "elapsed_s": 3.86,
+  "cost_usd": 0.002609,
+  "status": "answered",
+  "answer": "The cell with the highest value in the heatmap of the flower/tree/grass confusion matrix is the one where the actual class is 'Tree' and the predicted class is also 'Tree', with a value of 32. This cell is the darkest on the heatmap, indicating the highest correct classification count.",
+  "citations": [
+   "ADV:p0301:v1",
+   "ADV:p0301:v0"
+  ],
+  "cited_pages": [
+   301
+  ],
+  "gold_pages": [
+   301
+  ],
+  "gold_pages_in_context": [
+   301
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AD10",
+  "group": "chart",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "In the chart of cubic and linear models for a set of points (Figure 6.3), which labeled data point has x = 10?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "Figure 6.3 cubic and linear models",
+    "filter": null,
+    "latency_ms": 55.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0282:t00",
+      "page": 282,
+      "kind": "text",
+      "label": null,
+      "score": 0.03252247488101534
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0282:v0",
+      "page": 282,
+      "kind": "visual",
+      "label": "Figure 6.3",
+      "score": 0.03252247488101534
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0281:t02",
+      "page": 281,
+      "kind": "text",
+      "label": null,
+      "score": 0.03125763125763126
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0281:v0",
+      "page": 281,
+      "kind": "visual",
+      "label": "Table 6.2",
+      "score": 0.03055037313432836
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0282:v1",
+      "page": 282,
+      "kind": "visual",
+      "label": "Table 6.3",
+      "score": 0.03055037313432836
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0282:tab0",
+      "page": 282,
+      "kind": "table",
+      "label": "Table 6.3",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0282:v2",
+      "page": 282,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0282:v3",
+      "page": 282,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0281:tab0",
+      "page": 281,
+      "kind": "table",
+      "label": "Table 6.2",
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0282:t00",
+     "ADV:p0282:v0",
+     "ADV:p0281:t02",
+     "ADV:p0281:v0",
+     "ADV:p0282:v1",
+     "ADV:p0282:tab0",
+     "ADV:p0282:v2",
+     "ADV:p0282:v3",
+     "ADV:p0281:tab0"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 282,
+    "result": "Image of page 282 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The labeled data point with x = 10 in Figure 6.3 is (10, 4).\",\"citations\":[\"ADV:p0282:v0\",\"ADV:p0282:tab0\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0282:t00",
+   "ADV:p0282:v0",
+   "ADV:p0281:t02",
+   "ADV:p0281:v0",
+   "ADV:p0282:v1",
+   "ADV:p0282:tab0",
+   "ADV:p0282:v2",
+   "ADV:p0282:v3",
+   "ADV:p0281:tab0"
+  ],
+  "context_chars": 6049,
+  "viewed_pages": [
+   282
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 7012,
+   "completion_tokens": 88,
+   "llm_calls": 3
+  },
+  "elapsed_s": 2.87,
+  "cost_usd": 0.002946,
+  "status": "answered",
+  "answer": "The labeled data point with x = 10 in Figure 6.3 is (10, 4).",
+  "citations": [
+   "ADV:p0282:v0",
+   "ADV:p0282:tab0"
+  ],
+  "cited_pages": [
+   282
+  ],
+  "gold_pages": [
+   282
+  ],
+  "gold_pages_in_context": [
+   282
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AD11",
+  "group": "multihop",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "In the normalization example for the retail company, which product has the highest sales in Table 2.5 and what normalization-scale value does it receive in Table 2.6?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "Table 2.5 sales retail company",
+    "filter": null,
+    "latency_ms": 54.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0091:v0",
+      "page": 91,
+      "kind": "visual",
+      "label": "Table 2.5",
+      "score": 0.03225806451612903
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0091:tab0",
+      "page": 91,
+      "kind": "table",
+      "label": "Table 2.5",
+      "score": 0.032018442622950824
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0091:t04",
+      "page": 91,
+      "kind": "text",
+      "label": null,
+      "score": 0.031544957774465976
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0092:v0",
+      "page": 92,
+      "kind": "visual",
+      "label": "Table 2.6",
+      "score": 0.03149801587301587
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0092:tab0",
+      "page": 92,
+      "kind": "table",
+      "label": "Table 2.6",
+      "score": 0.030798389007344232
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0091:v0",
+     "ADV:p0091:tab0",
+     "ADV:p0091:t04",
+     "ADV:p0092:v0",
+     "ADV:p0092:tab0"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 91,
+    "result": "Image of page 91 attached in the next message."
+   },
+   {
+    "event": "view_page",
+    "page": 92,
+    "result": "Image of page 92 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The product with the highest sales in Table 2.5 is \\\"Designer & Fashion Sunglasses\\\" with sales of $55,000. In Table 2.6, this product receives the highest normalization-scale value of 1.00.\",\"citations\":[\"ADV:p0091:tab0\",\"ADV:p0092:tab0\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0091:v0",
+   "ADV:p0091:tab0",
+   "ADV:p0091:t04",
+   "ADV:p0092:v0",
+   "ADV:p0092:tab0"
+  ],
+  "context_chars": 3810,
+  "viewed_pages": [
+   91,
+   92
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 11183,
+   "completion_tokens": 128,
+   "llm_calls": 4
+  },
+  "elapsed_s": 4.52,
+  "cost_usd": 0.004678,
+  "status": "answered",
+  "answer": "The product with the highest sales in Table 2.5 is \"Designer & Fashion Sunglasses\" with sales of $55,000. In Table 2.6, this product receives the highest normalization-scale value of 1.00.",
+  "citations": [
+   "ADV:p0091:tab0",
+   "ADV:p0092:tab0"
+  ],
+  "cited_pages": [
+   91,
+   92
+  ],
+  "gold_pages": [
+   91,
+   92
+  ],
+  "gold_pages_in_context": [
+   91,
+   92
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AD12",
+  "group": "multihop",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "Example 2.6 finds an outlier in US employment data. What value does Table 2.3 show for the outlier month and what replacement value is used?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "Example 2.6 outlier US employment Table 2.3",
+    "filter": null,
+    "latency_ms": 55.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0088:t00",
+      "page": 88,
+      "kind": "text",
+      "label": null,
+      "score": 0.032018442622950824
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0089:v0",
+      "page": 89,
+      "kind": "visual",
+      "label": "Table 2.3",
+      "score": 0.032018442622950824
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0089:t00",
+      "page": 89,
+      "kind": "text",
+      "label": null,
+      "score": 0.03128054740957967
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0088:t01",
+      "page": 88,
+      "kind": "text",
+      "label": null,
+      "score": 0.030798389007344232
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0089:v1",
+      "page": 89,
+      "kind": "visual",
+      "label": "Figure 2.3",
+      "score": 0.030798389007344232
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0088:tab0",
+      "page": 88,
+      "kind": "table",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0088:v0",
+      "page": 88,
+      "kind": "visual",
+      "label": "Figure 2.2",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0088:v1",
+      "page": 88,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0088:v2",
+      "page": 88,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0088:t00",
+     "ADV:p0089:v0",
+     "ADV:p0089:t00",
+     "ADV:p0088:t01",
+     "ADV:p0089:v1",
+     "ADV:p0088:tab0",
+     "ADV:p0088:v0",
+     "ADV:p0088:v1",
+     "ADV:p0088:v2"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 89,
+    "result": "Image of page 89 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"Table 2.3 shows the outlier month as June 1, 1990, with a value of 9,523 (thousands of employers). The replacement value used for the outlier on May 28, 1990, is the median employment level from May 1, 1990, to July 1, 1990, which is 5,289 (thousands of employers).\",\"citations\":[\"ADV:p0089:v0\",\"ADV:p0089:t00\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0088:t00",
+   "ADV:p0089:v0",
+   "ADV:p0089:t00",
+   "ADV:p0088:t01",
+   "ADV:p0089:v1",
+   "ADV:p0088:tab0",
+   "ADV:p0088:v0",
+   "ADV:p0088:v1",
+   "ADV:p0088:v2"
+  ],
+  "context_chars": 6001,
+  "viewed_pages": [
+   89
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 7165,
+   "completion_tokens": 155,
+   "llm_calls": 3
+  },
+  "elapsed_s": 3.94,
+  "cost_usd": 0.003114,
+  "status": "answered",
+  "answer": "Table 2.3 shows the outlier month as June 1, 1990, with a value of 9,523 (thousands of employers). The replacement value used for the outlier on May 28, 1990, is the median employment level from May 1, 1990, to July 1, 1990, which is 5,289 (thousands of employers).",
+  "citations": [
+   "ADV:p0089:v0",
+   "ADV:p0089:t00"
+  ],
+  "cited_pages": [
+   89
+  ],
+  "gold_pages": [
+   88,
+   89
+  ],
+  "gold_pages_in_context": [
+   88,
+   89
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AD13",
+  "group": "multihop",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "Section 2.5 shows two tree diagrams (Huffman tree and B-tree). What number is at the root of each?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "Huffman tree root number",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 49.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0099:v0",
+      "page": 99,
+      "kind": "visual",
+      "label": "Figure 2.4",
+      "score": 0.03278688524590164
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0100:v0",
+      "page": 100,
+      "kind": "visual",
+      "label": "Figure 2.5",
+      "score": 0.031754032258064516
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0486:v0",
+      "page": 486,
+      "kind": "visual",
+      "label": null,
+      "score": 0.0315136476426799
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0320:v0",
+      "page": 320,
+      "kind": "visual",
+      "label": "Figure 6.20",
+      "score": 0.031024531024531024
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0322:v1",
+      "page": 322,
+      "kind": "visual",
+      "label": "Figure 6.20",
+      "score": 0.031009615384615385
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0100:tab0",
+      "page": 100,
+      "kind": "table",
+      "label": "Table 2.9",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0100:v1",
+      "page": 100,
+      "kind": "visual",
+      "label": "Table 2.9",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0322:v0",
+      "page": 322,
+      "kind": "visual",
+      "label": "Table 6.8",
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0099:v0",
+     "ADV:p0100:v0",
+     "ADV:p0486:v0",
+     "ADV:p0320:v0",
+     "ADV:p0322:v1",
+     "ADV:p0100:tab0",
+     "ADV:p0100:v1",
+     "ADV:p0322:v0"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "B-tree root number",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 71.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0100:v0",
+      "page": 100,
+      "kind": "visual",
+      "label": "Figure 2.5",
+      "score": 0.03278688524590164
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0322:v1",
+      "page": 322,
+      "kind": "visual",
+      "label": "Figure 6.20",
+      "score": 0.031754032258064516
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0300:tab0",
+      "page": 300,
+      "kind": "table",
+      "label": "Table 6.6",
+      "score": 0.031024531024531024
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0320:v0",
+      "page": 320,
+      "kind": "visual",
+      "label": "Figure 6.20",
+      "score": 0.031024531024531024
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0486:v0",
+      "page": 486,
+      "kind": "visual",
+      "label": null,
+      "score": 0.030834914611005692
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0100:tab0",
+      "page": 100,
+      "kind": "table",
+      "label": "Table 2.9",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0100:v1",
+      "page": 100,
+      "kind": "visual",
+      "label": "Table 2.9",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0322:v0",
+      "page": 322,
+      "kind": "visual",
+      "label": "Table 6.8",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0300:v0",
+      "page": 300,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0300:v1",
+      "page": 300,
+      "kind": "visual",
+      "label": "Table 6.6",
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0300:tab0",
+     "ADV:p0300:v0",
+     "ADV:p0300:v1"
+    ],
+    "duplicate_ids": [
+     "ADV:p0100:v0",
+     "ADV:p0322:v1",
+     "ADV:p0320:v0",
+     "ADV:p0486:v0",
+     "ADV:p0100:tab0",
+     "ADV:p0100:v1",
+     "ADV:p0322:v0"
+    ]
+   },
+   {
+    "event": "view_page",
+    "page": 99,
+    "result": "Image of page 99 attached in the next message."
+   },
+   {
+    "event": "view_page",
+    "page": 100,
+    "result": "Image of page 100 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The number at the root of the Huffman tree is 15. The number at the root of the B-tree is 4.\",\"citations\":[\"ADV:p0099:v0\",\"ADV:p0100:v0\"]}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0099:v0",
+   "ADV:p0100:v0",
+   "ADV:p0486:v0",
+   "ADV:p0320:v0",
+   "ADV:p0322:v1",
+   "ADV:p0100:tab0",
+   "ADV:p0100:v1",
+   "ADV:p0322:v0",
+   "ADV:p0300:tab0",
+   "ADV:p0300:v0",
+   "ADV:p0300:v1"
+  ],
+  "context_chars": 7911,
+  "viewed_pages": [
+   99,
+   100
+  ],
+  "n_searches": 2,
+  "usage": {
+   "prompt_tokens": 15025,
+   "completion_tokens": 136,
+   "llm_calls": 4
+  },
+  "elapsed_s": 4.85,
+  "cost_usd": 0.006228,
+  "status": "answered",
+  "answer": "The number at the root of the Huffman tree is 15. The number at the root of the B-tree is 4.",
+  "citations": [
+   "ADV:p0099:v0",
+   "ADV:p0100:v0"
+  ],
+  "cited_pages": [
+   99,
+   100
+  ],
+  "gold_pages": [
+   99,
+   100
+  ],
+  "gold_pages_in_context": [
+   99,
+   100
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AD14",
+  "group": "text",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "Which big-data storage solution is designed for unstructured data such as social media content or sensor data?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "big-data storage solution unstructured data social media sensor data",
+    "filter": null,
+    "latency_ms": 85.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0334:t00",
+      "page": 334,
+      "kind": "text",
+      "label": null,
+      "score": 0.03278688524590164
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0099:t01",
+      "page": 99,
+      "kind": "text",
+      "label": null,
+      "score": 0.031754032258064516
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0455:t04",
+      "page": 455,
+      "kind": "text",
+      "label": null,
+      "score": 0.03149801587301587
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0105:t01",
+      "page": 105,
+      "kind": "text",
+      "label": null,
+      "score": 0.030536130536130537
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0098:t01",
+      "page": 98,
+      "kind": "text",
+      "label": null,
+      "score": 0.030309988518943745
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0099:v0",
+      "page": 99,
+      "kind": "visual",
+      "label": "Figure 2.4",
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0334:t00",
+     "ADV:p0099:t01",
+     "ADV:p0455:t04",
+     "ADV:p0105:t01",
+     "ADV:p0098:t01",
+     "ADV:p0099:v0"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 99,
+    "result": "Image of page 99 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"NoSQL databases are designed to handle unstructured data such as social media content or data from sensors, using non-relational data models.\",\"citations\":[\"ADV:p0099:t01\",\"ADV:p0099:v0\"] ,\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0334:t00",
+   "ADV:p0099:t01",
+   "ADV:p0455:t04",
+   "ADV:p0105:t01",
+   "ADV:p0098:t01",
+   "ADV:p0099:v0"
+  ],
+  "context_chars": 5332,
+  "viewed_pages": [
+   99
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 5850,
+   "completion_tokens": 93,
+   "llm_calls": 3
+  },
+  "elapsed_s": 3.66,
+  "cost_usd": 0.002489,
+  "status": "answered",
+  "answer": "NoSQL databases are designed to handle unstructured data such as social media content or data from sensors, using non-relational data models.",
+  "citations": [
+   "ADV:p0099:t01",
+   "ADV:p0099:v0"
+  ],
+  "cited_pages": [
+   99
+  ],
+  "gold_pages": [
+   99
+  ],
+  "gold_pages_in_context": [
+   99
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 2
+ },
+ {
+  "id": "AD15",
+  "group": "text",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "Which U.S. law requires safeguarding sensitive information related to patient health?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "law safeguarding sensitive patient health information",
+    "filter": null,
+    "latency_ms": 137.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0389:t02",
+      "page": 389,
+      "kind": "text",
+      "label": null,
+      "score": 0.03252247488101534
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0401:t01",
+      "page": 401,
+      "kind": "text",
+      "label": null,
+      "score": 0.032266458495966696
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0414:t03",
+      "page": 414,
+      "kind": "text",
+      "label": null,
+      "score": 0.0315136476426799
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0390:t03",
+      "page": 390,
+      "kind": "text",
+      "label": null,
+      "score": 0.03057889822595705
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0414:t00",
+      "page": 414,
+      "kind": "text",
+      "label": null,
+      "score": 0.028612012987012988
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v0",
+      "page": 389,
+      "kind": "visual",
+      "label": "Figure 8.2",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v1",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0389:t02",
+     "ADV:p0401:t01",
+     "ADV:p0414:t03",
+     "ADV:p0390:t03",
+     "ADV:p0414:t00",
+     "ADV:p0389:v0",
+     "ADV:p0389:v1"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The U.S. law that requires safeguarding sensitive information related to patient health is the Health Insurance Portability and Accountability Act (HIPAA).\",\"citations\":[\"ADV:p0389:t02\",\"ADV:p0414:t03\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0389:t02",
+   "ADV:p0401:t01",
+   "ADV:p0414:t03",
+   "ADV:p0390:t03",
+   "ADV:p0414:t00",
+   "ADV:p0389:v0",
+   "ADV:p0389:v1"
+  ],
+  "context_chars": 5490,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 2138,
+   "completion_tokens": 75,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.06,
+  "cost_usd": 0.000975,
+  "status": "answered",
+  "answer": "The U.S. law that requires safeguarding sensitive information related to patient health is the Health Insurance Portability and Accountability Act (HIPAA).",
+  "citations": [
+   "ADV:p0389:t02",
+   "ADV:p0414:t03"
+  ],
+  "cited_pages": [
+   389,
+   414
+  ],
+  "gold_pages": [
+   389
+  ],
+  "gold_pages_in_context": [
+   389
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AD16",
+  "group": "text",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "In a 95% confidence interval, what area does the critical value z_c cut off in the upper tail of the standard normal curve?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "critical value z_c upper tail 95% confidence interval",
+    "filter": null,
+    "latency_ms": 59.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0160:v1",
+      "page": 160,
+      "kind": "visual",
+      "label": "Figure 4.2",
+      "score": 0.03278688524590164
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0160:t01",
+      "page": 160,
+      "kind": "text",
+      "label": null,
+      "score": 0.031754032258064516
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0161:v0",
+      "page": 161,
+      "kind": "visual",
+      "label": null,
+      "score": 0.0315136476426799
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0163:t01",
+      "page": 163,
+      "kind": "text",
+      "label": null,
+      "score": 0.03149801587301587
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0160:v0",
+      "page": 160,
+      "kind": "visual",
+      "label": "Table 4.2",
+      "score": 0.03125763125763126
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0160:tab0",
+      "page": 160,
+      "kind": "table",
+      "label": "Table 4.2",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0163:tab0",
+      "page": 163,
+      "kind": "table",
+      "label": "Table 4.3",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0163:v0",
+      "page": 163,
+      "kind": "visual",
+      "label": "Table 4.3",
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0160:v1",
+     "ADV:p0160:t01",
+     "ADV:p0161:v0",
+     "ADV:p0163:t01",
+     "ADV:p0160:v0",
+     "ADV:p0160:tab0",
+     "ADV:p0163:tab0",
+     "ADV:p0163:v0"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 160,
+    "result": "Image of page 160 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"In a 95% confidence interval, the critical value z_c cuts off an area of 0.025 in the upper tail of the standard normal curve. This is because the total area under the curve is 1, and the central 95% area is between -z_c and +z_c, leaving 0.05 total in the two tails, or 0.025 in each tail.\",\"citations\":[\"ADV:p0160:v1\",\"ADV:p0160:t01\",\"ADV:p0160:tab0\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0160:v1",
+   "ADV:p0160:t01",
+   "ADV:p0161:v0",
+   "ADV:p0163:t01",
+   "ADV:p0160:v0",
+   "ADV:p0160:tab0",
+   "ADV:p0163:tab0",
+   "ADV:p0163:v0"
+  ],
+  "context_chars": 6449,
+  "viewed_pages": [
+   160
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 7122,
+   "completion_tokens": 156,
+   "llm_calls": 3
+  },
+  "elapsed_s": 3.59,
+  "cost_usd": 0.003098,
+  "status": "answered",
+  "answer": "In a 95% confidence interval, the critical value z_c cuts off an area of 0.025 in the upper tail of the standard normal curve. This is because the total area under the curve is 1, and the central 95% area is between -z_c and +z_c, leaving 0.05 total in the two tails, or 0.025 in each tail.",
+  "citations": [
+   "ADV:p0160:v1",
+   "ADV:p0160:t01",
+   "ADV:p0160:tab0"
+  ],
+  "cited_pages": [
+   160
+  ],
+  "gold_pages": [
+   160
+  ],
+  "gold_pages_in_context": [
+   160
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AD17",
+  "group": "text",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "How does the book define an underfit model?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "underfit model definition",
+    "filter": null,
+    "latency_ms": 53.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0282:t01",
+      "page": 282,
+      "kind": "text",
+      "label": null,
+      "score": 0.03278688524590164
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0276:t01",
+      "page": 276,
+      "kind": "text",
+      "label": null,
+      "score": 0.025987006496751626
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0366:t01",
+      "page": 366,
+      "kind": "text",
+      "label": null,
+      "score": 0.02353266888150609
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0021:v0",
+      "page": 21,
+      "kind": "visual",
+      "label": "Figure 1.3",
+      "score": 0.016129032258064516
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0283:t01",
+      "page": 283,
+      "kind": "text",
+      "label": null,
+      "score": 0.016129032258064516
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0282:tab0",
+      "page": 282,
+      "kind": "table",
+      "label": "Table 6.3",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0282:v0",
+      "page": 282,
+      "kind": "visual",
+      "label": "Figure 6.3",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0283:tab0",
+      "page": 283,
+      "kind": "table",
+      "label": "Table 6.4",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0283:v0",
+      "page": 283,
+      "kind": "visual",
+      "label": "Table 6.4",
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0282:t01",
+     "ADV:p0276:t01",
+     "ADV:p0366:t01",
+     "ADV:p0021:v0",
+     "ADV:p0283:t01",
+     "ADV:p0282:tab0",
+     "ADV:p0282:v0",
+     "ADV:p0283:tab0",
+     "ADV:p0283:v0"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 282,
+    "result": "Image of page 282 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The book defines an underfit model as one that may perform well on some input data and poorly on other data. This happens because an underfit model fails to detect some important feature(s) of the dataset.\",\"citations\":[\"ADV:p0282:t01\",\"ADV:p0282:v0\"] ,\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0282:t01",
+   "ADV:p0276:t01",
+   "ADV:p0366:t01",
+   "ADV:p0021:v0",
+   "ADV:p0283:t01",
+   "ADV:p0282:tab0",
+   "ADV:p0282:v0",
+   "ADV:p0283:tab0",
+   "ADV:p0283:v0"
+  ],
+  "context_chars": 5313,
+  "viewed_pages": [
+   282
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 6584,
+   "completion_tokens": 101,
+   "llm_calls": 3
+  },
+  "elapsed_s": 3.27,
+  "cost_usd": 0.002795,
+  "status": "answered",
+  "answer": "The book defines an underfit model as one that may perform well on some input data and poorly on other data. This happens because an underfit model fails to detect some important feature(s) of the dataset.",
+  "citations": [
+   "ADV:p0282:t01",
+   "ADV:p0282:v0"
+  ],
+  "cited_pages": [
+   282
+  ],
+  "gold_pages": [
+   282
+  ],
+  "gold_pages_in_context": [
+   282
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "AU01",
+  "group": "unanswerable",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "What was the number of employers (×1000) in January 1991 in Table 2.3?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "Table 2.3 number of employers January 1991",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 76.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0088:v3",
+      "page": 88,
+      "kind": "visual",
+      "label": "Table 2.3",
+      "score": 0.03278688524590164
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0089:v0",
+      "page": 89,
+      "kind": "visual",
+      "label": "Table 2.3",
+      "score": 0.031754032258064516
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0088:tab0",
+      "page": 88,
+      "kind": "table",
+      "label": null,
+      "score": 0.031024531024531024
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0088:v2",
+      "page": 88,
+      "kind": "visual",
+      "label": null,
+      "score": 0.030117753623188408
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0088:v0",
+      "page": 88,
+      "kind": "visual",
+      "label": "Figure 2.2",
+      "score": 0.029857397504456328
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0088:v1",
+      "page": 88,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0089:v1",
+      "page": 89,
+      "kind": "visual",
+      "label": "Figure 2.3",
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0088:v3",
+     "ADV:p0089:v0",
+     "ADV:p0088:tab0",
+     "ADV:p0088:v2",
+     "ADV:p0088:v0",
+     "ADV:p0088:v1",
+     "ADV:p0089:v1"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 89,
+    "result": "Image of page 89 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The number of employers (×1000) in January 1991 is not listed in Table 2.3, which only contains data for the year 1990. The table shows monthly employment numbers for 1990, with the last entry being December 1, 1990, at 4963 (×1000). Data for January 1991 is not present in Table 2.3.\",\"citations\":[\"ADV:p0089:v0\",\"ADV:p0089:v0\"] ,\"abstain\":true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0088:v3",
+   "ADV:p0089:v0",
+   "ADV:p0088:tab0",
+   "ADV:p0088:v2",
+   "ADV:p0088:v0",
+   "ADV:p0088:v1",
+   "ADV:p0089:v1"
+  ],
+  "context_chars": 4005,
+  "viewed_pages": [
+   89
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 5951,
+   "completion_tokens": 155,
+   "llm_calls": 3
+  },
+  "elapsed_s": 3.72,
+  "cost_usd": 0.002628,
+  "status": "abstain",
+  "answer": "The number of employers (×1000) in January 1991 is not listed in Table 2.3, which only contains data for the year 1990. The table shows monthly employment numbers for 1990, with the last entry being December 1, 1990, at 4963 (×1000). Data for January 1991 is not present in Table 2.3.",
+  "citations": [],
+  "abstain_reason": "model_abstained"
+ },
+ {
+  "id": "AU02",
+  "group": "unanswerable",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "How much profit did Branch 9 make in the retail company sales table?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "retail company sales table Branch 9 profit",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 79.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0091:v0",
+      "page": 91,
+      "kind": "visual",
+      "label": "Table 2.5",
+      "score": 0.03252247488101534
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0091:tab0",
+      "page": 91,
+      "kind": "table",
+      "label": "Table 2.5",
+      "score": 0.032266458495966696
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0092:v0",
+      "page": 92,
+      "kind": "visual",
+      "label": "Table 2.6",
+      "score": 0.03200204813108039
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0092:tab0",
+      "page": 92,
+      "kind": "table",
+      "label": "Table 2.6",
+      "score": 0.03125
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0089:v1",
+      "page": 89,
+      "kind": "visual",
+      "label": "Figure 2.3",
+      "score": 0.028850145288501453
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0089:v0",
+      "page": 89,
+      "kind": "visual",
+      "label": "Table 2.3",
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0091:v0",
+     "ADV:p0091:tab0",
+     "ADV:p0092:v0",
+     "ADV:p0092:tab0",
+     "ADV:p0089:v1",
+     "ADV:p0089:v0"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The retail company sales table does not include data for Branch 9. The table lists profits for Branches 1 through 8 only, with no entry for Branch 9.\",\"citations\":[\"ADV:p0091:tab0\"],\"abstain\":true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0091:v0",
+   "ADV:p0091:tab0",
+   "ADV:p0092:v0",
+   "ADV:p0092:tab0",
+   "ADV:p0089:v1",
+   "ADV:p0089:v0"
+  ],
+  "context_chars": 5265,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 2531,
+   "completion_tokens": 84,
+   "llm_calls": 2
+  },
+  "elapsed_s": 1.99,
+  "cost_usd": 0.001147,
+  "status": "abstain",
+  "answer": "The retail company sales table does not include data for Branch 9. The table lists profits for Branches 1 through 8 only, with no entry for Branch 9.",
+  "citations": [],
+  "abstain_reason": "model_abstained"
+ },
+ {
+  "id": "AU03",
+  "group": "unanswerable",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "What maximum fine (in euros) does the GDPR impose for a data breach according to the book?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "GDPR maximum fine euros",
+    "filter": null,
+    "latency_ms": 48.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0389:v0",
+      "page": 389,
+      "kind": "visual",
+      "label": "Figure 8.2",
+      "score": 0.03278688524590164
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0389:v2",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": 0.03200204813108039
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0389:t00",
+      "page": 389,
+      "kind": "text",
+      "label": null,
+      "score": 0.0315136476426799
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0388:t05",
+      "page": 388,
+      "kind": "text",
+      "label": null,
+      "score": 0.03149801587301587
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0121:t01",
+      "page": 121,
+      "kind": "text",
+      "label": null,
+      "score": 0.02594183740912095
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v1",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v3",
+      "page": 389,
+      "kind": "visual",
+      "label": "Figure 8.3",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v4",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v5",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0121:v0",
+      "page": 121,
+      "kind": "visual",
+      "label": "EXAMPLE 3.6",
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0389:v0",
+     "ADV:p0389:v2",
+     "ADV:p0389:t00",
+     "ADV:p0388:t05",
+     "ADV:p0121:t01",
+     "ADV:p0389:v1",
+     "ADV:p0389:v3",
+     "ADV:p0389:v4",
+     "ADV:p0389:v5",
+     "ADV:p0121:v0"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "GDPR maximum fine",
+    "filter": null,
+    "latency_ms": 68.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0389:v0",
+      "page": 389,
+      "kind": "visual",
+      "label": "Figure 8.2",
+      "score": 0.03252247488101534
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0389:v2",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": 0.032266458495966696
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0388:t05",
+      "page": 388,
+      "kind": "text",
+      "label": null,
+      "score": 0.03149801587301587
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0389:t00",
+      "page": 389,
+      "kind": "text",
+      "label": null,
+      "score": 0.0304147465437788
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0121:t01",
+      "page": 121,
+      "kind": "text",
+      "label": null,
+      "score": 0.026200135226504394
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v1",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v3",
+      "page": 389,
+      "kind": "visual",
+      "label": "Figure 8.3",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v4",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v5",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0121:v0",
+      "page": 121,
+      "kind": "visual",
+      "label": "EXAMPLE 3.6",
+      "score": null
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0389:v0",
+     "ADV:p0389:v2",
+     "ADV:p0388:t05",
+     "ADV:p0389:t00",
+     "ADV:p0121:t01",
+     "ADV:p0389:v1",
+     "ADV:p0389:v3",
+     "ADV:p0389:v4",
+     "ADV:p0389:v5",
+     "ADV:p0121:v0"
+    ]
+   },
+   {
+    "event": "view_page",
+    "page": 389,
+    "result": "Image of page 389 attached in the next message."
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "GDPR maximum fine data breach euros",
+    "filter": null,
+    "latency_ms": 54.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0389:v0",
+      "page": 389,
+      "kind": "visual",
+      "label": "Figure 8.2",
+      "score": 0.03252247488101534
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0393:t02",
+      "page": 393,
+      "kind": "text",
+      "label": null,
+      "score": 0.031099324975891997
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0389:v2",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": 0.030776515151515152
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0388:t05",
+      "page": 388,
+      "kind": "text",
+      "label": null,
+      "score": 0.029850746268656716
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0393:t03",
+      "page": 393,
+      "kind": "text",
+      "label": null,
+      "score": 0.02946912242686891
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v1",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v3",
+      "page": 389,
+      "kind": "visual",
+      "label": "Figure 8.3",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v4",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v5",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0393:t02",
+     "ADV:p0393:t03"
+    ],
+    "duplicate_ids": [
+     "ADV:p0389:v0",
+     "ADV:p0389:v2",
+     "ADV:p0388:t05",
+     "ADV:p0389:v1",
+     "ADV:p0389:v3",
+     "ADV:p0389:v4",
+     "ADV:p0389:v5"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "GDPR fine maximum euros",
+    "filter": null,
+    "latency_ms": 86.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0389:v0",
+      "page": 389,
+      "kind": "visual",
+      "label": "Figure 8.2",
+      "score": 0.03278688524590164
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0389:v2",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": 0.03200204813108039
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0389:t00",
+      "page": 389,
+      "kind": "text",
+      "label": null,
+      "score": 0.0315136476426799
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0388:t05",
+      "page": 388,
+      "kind": "text",
+      "label": null,
+      "score": 0.03149801587301587
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0121:t01",
+      "page": 121,
+      "kind": "text",
+      "label": null,
+      "score": 0.02606951871657754
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v1",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v3",
+      "page": 389,
+      "kind": "visual",
+      "label": "Figure 8.3",
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v4",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0389:v5",
+      "page": 389,
+      "kind": "visual",
+      "label": null,
+      "score": null
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0121:v0",
+      "page": 121,
+      "kind": "visual",
+      "label": "EXAMPLE 3.6",
+      "score": null
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0389:v0",
+     "ADV:p0389:v2",
+     "ADV:p0389:t00",
+     "ADV:p0388:t05",
+     "ADV:p0121:t01",
+     "ADV:p0389:v1",
+     "ADV:p0389:v3",
+     "ADV:p0389:v4",
+     "ADV:p0389:v5",
+     "ADV:p0121:v0"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The book does not explicitly state the maximum fine in euros that the GDPR imposes for a data breach.\",\"citations\":[\"ADV:p0389:v0\",\"ADV:p0388:t05\",\"ADV:p0393:t02\"],\"abstain\":true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0389:v0",
+   "ADV:p0389:v2",
+   "ADV:p0389:t00",
+   "ADV:p0388:t05",
+   "ADV:p0121:t01",
+   "ADV:p0389:v1",
+   "ADV:p0389:v3",
+   "ADV:p0389:v4",
+   "ADV:p0389:v5",
+   "ADV:p0121:v0",
+   "ADV:p0393:t02",
+   "ADV:p0393:t03"
+  ],
+  "context_chars": 7895,
+  "viewed_pages": [
+   389
+  ],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 18249,
+   "completion_tokens": 143,
+   "llm_calls": 6
+  },
+  "elapsed_s": 5.96,
+  "cost_usd": 0.007528,
+  "status": "abstain",
+  "answer": "The book does not explicitly state the maximum fine in euros that the GDPR imposes for a data breach.",
+  "citations": [],
+  "abstain_reason": "model_abstained"
+ },
+ {
+  "id": "AU04",
+  "group": "unanswerable",
+  "split": "dev",
+  "config": "V4_mm_hybrid_mustview",
+  "question": "In which year was GPT-5 released according to the Brief History of NLP table?",
+  "model": "gpt-4.1-mini",
+  "retriever": "hybrid_rrf+samepage",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 3,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "hybrid_rrf+samepage",
+    "query": "Brief History of NLP table",
+    "filter": null,
+    "latency_ms": 61.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0372:v0",
+      "page": 372,
+      "kind": "visual",
+      "label": "Table 7.3",
+      "score": 0.03252247488101534
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0372:tab0",
+      "page": 372,
+      "kind": "table",
+      "label": "Table 7.3",
+      "score": 0.0315136476426799
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0371:v1",
+      "page": 371,
+      "kind": "visual",
+      "label": "Table 7.3",
+      "score": 0.031099324975891997
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0371:t02",
+      "page": 371,
+      "kind": "text",
+      "label": null,
+      "score": 0.030776515151515152
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0371:tab0",
+      "page": 371,
+      "kind": "table",
+      "label": "Table 7.3",
+      "score": 0.030158730158730156
+     },
+     {
+      "rank": null,
+      "id": "ADV:p0371:v0",
+      "page": 371,
+      "kind": "visual",
+      "label": "Figure 7.13",
+      "score": null
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0372:v0",
+     "ADV:p0372:tab0",
+     "ADV:p0371:v1",
+     "ADV:p0371:t02",
+     "ADV:p0371:tab0",
+     "ADV:p0371:v0"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "view_page",
+    "page": 372,
+    "result": "Image of page 372 attached in the next message."
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"According to the Brief History of NLP table, GPT-5 is not mentioned or listed as released in any year. The latest GPT version mentioned is GPT-4, released in 2023.\",\"citations\":[\"ADV:p0372:tab0\",\"ADV:p0372:v0\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0372:v0",
+   "ADV:p0372:tab0",
+   "ADV:p0371:v1",
+   "ADV:p0371:t02",
+   "ADV:p0371:tab0",
+   "ADV:p0371:v0"
+  ],
+  "context_chars": 7565,
+  "viewed_pages": [
+   372
+  ],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 6993,
+   "completion_tokens": 100,
+   "llm_calls": 3
+  },
+  "elapsed_s": 2.89,
+  "cost_usd": 0.002957,
+  "status": "answered",
+  "answer": "According to the Brief History of NLP table, GPT-5 is not mentioned or listed as released in any year. The latest GPT version mentioned is GPT-4, released in 2023.",
+  "citations": [
+   "ADV:p0372:tab0",
+   "ADV:p0372:v0"
+  ],
+  "cited_pages": [
+   372
+  ]
+ }
+]

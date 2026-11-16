@@ -1,0 +1,54 @@
+{
+ "page": 16,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "diagram",
+   "title": null,
+   "details": {
+    "nodes": [
+     "Approved",
+     "Ask Instructor",
+     "Not Approved"
+    ],
+    "connections": [
+     {
+      "from": "Approved",
+      "to": "Ask Instructor",
+      "steps": [
+       "Your Original Work",
+       "Quoting & Crediting Another's Work",
+       "Checking Your Answers Online"
+      ]
+     },
+     {
+      "from": "Ask Instructor",
+      "to": "Not Approved",
+      "steps": [
+       "Group Work",
+       "Reusing Past Original Work",
+       "Sharing Answers",
+       "Artificial Intelligence, Chatbot Apps"
+      ]
+     },
+     {
+      "from": "Not Approved",
+      "steps": [
+       "Posting Questions & Answers",
+       "Plagiarizing Work",
+       "Getting Others To Do Your Work"
+      ]
+     }
+    ]
+   },
+   "summary": "This diagram is a continuum illustrating academic integrity practices categorized into three zones: Approved, Ask Instructor, and Not Approved. It lists specific actions under each category to guide students and instructors on acceptable and unacceptable academic behaviors."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2680,
+  "completion_tokens": 199
+ },
+ "cost_usd": 0.00139,
+ "elapsed_s": 3.12
+}

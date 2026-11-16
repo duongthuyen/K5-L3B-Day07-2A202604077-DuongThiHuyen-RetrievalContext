@@ -1,0 +1,19 @@
+{
+ "page": 468,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 9.8",
+   "kind": "table",
+   "title": "Used Car Dataset Template",
+   "details": "| Brand | Model      | Type_of_Vehicle | Age | Value  |\n|-------|------------|-----------------|-----|--------|\n| Toyota| Camry LE   | Sedan           | 5   | $22750 |\n| Ford  | Expedition | SUV             | 7   | $37640 |",
+   "summary": "This table shows a sample dataset template for recording used car information including brand, model, type of vehicle, age, and value."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2672,
+  "completion_tokens": 130
+ },
+ "cost_usd": 0.001277,
+ "elapsed_s": 2.07
+}

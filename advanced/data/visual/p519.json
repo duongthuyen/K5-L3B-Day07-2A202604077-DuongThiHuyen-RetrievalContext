@@ -1,0 +1,26 @@
+{
+ "page": 519,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure A25",
+   "kind": "image",
+   "title": "Mean and Standard Deviation in MS Excel (Used with permission from Microsoft)",
+   "details": "Screenshot of an Excel spreadsheet showing a column labeled 'Ages' with values 40, 36, 44, 51, 54, 55, 39, 47, 44, 50 in cells A2 to A11. Next to it, text shows Excel commands and results: '=AVERAGE(A2:A11)' with result 46, and '=STDEV.S(A2:A11)' with result 6.50.",
+   "summary": "This screenshot demonstrates how to calculate the sample mean and sample standard deviation in Excel using the AVERAGE and STDEV.S functions, respectively."
+  },
+  {
+   "label": "Table A2",
+   "kind": "table",
+   "title": "Statistical Functions Available within MS Excel",
+   "details": "| Function | Purpose |\n|---|---|\n| =AVERAGE(A1:A10) | Find the mean of a set of numbers. |\n| =MEDIAN(A1:A10) | Find the median of a set of numbers. |\n| =STDEV.S(A1:A10) | Find the standard deviation for a set of numbers representing a sample. |\n| =STDEV.P(A1:A10) | Find the standard deviation for a set of numbers representing a population. |\n| =VAR.S(A1:A10) | Find the variance for a set of numbers representing a sample. |\n| =VAR.P(A1:A10) | Find the variance for a set of numbers representing a population. |\n| =MIN(A1:A10) | Find the minimum of a set of numbers. |\n| =MAX(A1:A10) | Find the maximum of a set of numbers. |\n| =MAX(A1:A10) – MIN(A1:A10) | Find the range of a set of numbers. |\n| =CORREL(A1:A10, B1:B10) | Find the correlation coefficient “r” for (x, y) data. x-data is in cells A1 to A10; y-data is in cells B1 to B10. |\n| =QUARTILE(A1:A10, 1) | Find the first quartile for a set of numbers. |\n| =QUARTILE(A1:A10, 2) | Find the second quartile for a set of numbers (note that the second quartile is the same as the median). |\n| =QUARTILE(A1:A10, 3) | Find the third quartile for a set of numbers. |",
+   "summary": "This table lists various statistical functions available in Excel, showing the function syntax and its purpose for calculating descriptive statistics such as mean, median, standard deviation, variance, min, max, range, correlation, and quartiles."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2643,
+  "completion_tokens": 614
+ },
+ "cost_usd": 0.00204,
+ "elapsed_s": 6.12
+}

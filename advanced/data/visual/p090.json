@@ -1,0 +1,19 @@
+{
+ "page": 90,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 2.4",
+   "kind": "table",
+   "title": "Comparison of Data Standardization, Transformation, and Validation Processes",
+   "details": "| Purpose | Techniques | Example |\n|---------|------------|---------|\n| Normalization | To eliminate redundant data and ensure data dependencies make sense | Involve breaking down a larger database into smaller, more manageable tables and establishing relationships between them. | A customer database table with redundant data can be normalized by splitting it into two tables for customer information and orders and establishing the relationship between them. |\n| Transformation | To make the data more consistent, coherent, and meaningful for analysis. | Include data cleaning, data merging, data splitting, data conversion, and data aggregation. | A dataset with different date formats, such as “MM/DD/YYYY” and “YYYY/MM/DD.” Data transformation can be used to convert all dates to a single format |\n| Validation | To improve the quality of data used in analysis. It ensures that the data is accurate, relevant, and consistent. | Include data profiling, data audits, and data cleansing. | In a survey, the respondent’s age is recorded as 150 years. Through data validation, this value can be identified as erroneous. |",
+   "summary": "This table summarizes and compares the purposes, techniques, and examples of three key data processes: normalization, transformation, and validation, highlighting their roles in data standardization and quality assurance."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2867,
+  "completion_tokens": 300
+ },
+ "cost_usd": 0.001627,
+ "elapsed_s": 5.18
+}

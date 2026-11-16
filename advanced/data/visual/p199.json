@@ -1,0 +1,64 @@
+{
+ "page": 199,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.14",
+   "kind": "table",
+   "title": "Nike Stock Price ($) and Value of S&P 500 over a One-Year Time Period (source: Yahoo! Finance)",
+   "details": "| Date    | S&P 500 (x) | Nike Stock Price (y) |\n|---------|-------------|---------------------|\n| Month 11| 3811.15     | 134.78              |\n| Month 12| 3943.34     | 140.45              |",
+   "summary": "This table shows the S&P 500 index values and corresponding Nike stock prices for two months, Month 11 and Month 12, over a one-year period."
+  },
+  {
+   "label": "Figure 4.5",
+   "kind": "chart",
+   "title": "Scatterplot of Nike Stock Price ($) and Value of S&P 500 (source: Yahoo! Finance)",
+   "details": {
+    "chart type": "scatterplot",
+    "x-axis label": "S&P 500",
+    "x-axis range": "2900 to 4100",
+    "y-axis label": "Nike Stock Price",
+    "y-axis range": "80 to 160",
+    "units": "dollars for Nike Stock Price, index points for S&P 500",
+    "legend/series": null,
+    "values": [
+     {
+      "S&P 500": 2900,
+      "Nike Stock Price": 85
+     },
+     {
+      "S&P 500": 3100,
+      "Nike Stock Price": 99
+     },
+     {
+      "S&P 500": 3300,
+      "Nike Stock Price": 98
+     },
+     {
+      "S&P 500": 3500,
+      "Nike Stock Price": 112
+     },
+     {
+      "S&P 500": 3700,
+      "Nike Stock Price": 135
+     },
+     {
+      "S&P 500": 3900,
+      "Nike Stock Price": 141
+     },
+     {
+      "S&P 500": 4100,
+      "Nike Stock Price": 141
+     }
+    ]
+   },
+   "summary": "The scatterplot displays data points of Nike stock prices against the S&P 500 index values, showing a positive correlation where Nike stock price tends to increase as the S&P 500 value increases."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2661,
+  "completion_tokens": 455
+ },
+ "cost_usd": 0.001792,
+ "elapsed_s": 4.43
+}

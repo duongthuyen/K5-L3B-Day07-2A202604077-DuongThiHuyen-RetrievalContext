@@ -1,0 +1,19 @@
+{
+ "page": 546,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table D1",
+   "kind": "table",
+   "title": null,
+   "details": "| Python Function     | Description                                               | Syntax                          | First Reference                              |\n|---------------------|-----------------------------------------------------------|--------------------------------|----------------------------------------------|\n| DataFrame.loc[]      | Used to access a group of rows and columns by labels or a Boolean array | DataFrame.loc[criteria]         | Python Basics for Data Science                |\n|                     |                                                           | Where: DataFrame is the name of the DataFrame. |                                              |\n| Plt.scatter()        | Generates a scatterplot for (x, y) data                   | plt.scatter(x_data, y_data)     | Python Basics for Data Science                |\n| Plt.title()          | Specifies a title for a chart                              | plt.title(\"Title\")            | Python Basics for Data Science                |\n| Plt.xlabel()         | Specifies a label for the x-axis                           | plt.xlabel(\"x-axis label\")    | Python Basics for Data Science                |\n| Plt.ylabel()         | Specifies a label for the y-axis                           | plt.ylabel(\"y-axis label\")    | Python Basics for Data Science                |\n| Plt.xlim()           | Specifies limits to use for x-axis numbering               | plt.xlim(lower, upper)          | Python Basics for Data Science                |\n| Plt.ylim()           | Specifies limits to use for y-axis numbering               | plt.ylim(lower, upper)          | Python Basics for Data Science                |\n| pd.read_html()       | Read HTML table from a web page and convert into a DataFrame | pd.read_html(URL)               | Web Scraping and Social Media Data Collection |\n| pd.to_numeric()      | Converts strings or other data types to numeric values    | pd.to_numeric(column_name)      | Web Scraping and Social Media Data Collection |\n| len()                | Returns the length of an object                            | len(object)                    | Web Scraping and Social Media Data Collection |",
+   "summary": "This table lists various Python functions relevant to data science, providing their descriptions, syntax, and references to where they are first introduced in the textbook."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2547,
+  "completion_tokens": 455
+ },
+ "cost_usd": 0.001747,
+ "elapsed_s": 4.24
+}

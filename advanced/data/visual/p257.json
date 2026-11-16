@@ -1,0 +1,71 @@
+{
+ "page": 257,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 5.6",
+   "kind": "table",
+   "title": "EMA Smoothing for the S&P Index Time Series (source: adapted from https://www.nasdaq.com/market-activity/index/spx/historical)",
+   "details": "| Year | S&P Index at Year-End | EMA Estimate |\n|-------|-----------------------|--------------|\n| 2013  | 1848.36               | 1848.36      |\n| 2014  | 2058.9                | 1848.36      |\n| 2015  | 2043.94               | 2006.27      |\n| 2016  | 2238.83               | 2034.52      |\n| 2017  | 2673.61               | 2187.75      |\n| 2018  | 2506.85               | 2552.15      |\n| 2019  | 3230.78               | 2518.17      |\n| 2020  | 3756.07               | 3052.63      |\n| 2021  | 4766.18               | 3580.21      |\n| 2022  | 3839.5                | 4469.69      |\n| 2023  | 4769.83               | 3997.05      |\n| 2024  | N/A                   | 4576.63      |",
+   "summary": "This table shows the year-end values of the S&P Index from 2013 to 2023 and the corresponding EMA estimates computed recursively with α=0.75, including the forecasted EMA value for 2024."
+  },
+  {
+   "label": "Figure 5.19",
+   "kind": "chart",
+   "title": "Exponential Smoothing Model for the S&P Index (data source: adapted from S&P 500 [SPX] Historical Data)",
+   "details": {
+    "chart type": "line chart",
+    "x-axis": {
+     "label": "Year",
+     "range": "2013 to 2024"
+    },
+    "y-axis": {
+     "label": "S&P Index",
+     "units": "Index value",
+     "range": "0 to 6000"
+    },
+    "legend": [
+     "SP 500",
+     "EMA"
+    ],
+    "values": {
+     "SP 500": {
+      "2013": 1848,
+      "2014": 2059,
+      "2015": 2044,
+      "2016": 2239,
+      "2017": 2674,
+      "2018": 2507,
+      "2019": 3231,
+      "2020": 3756,
+      "2021": 4766,
+      "2022": 3840,
+      "2023": 4770
+     },
+     "EMA": {
+      "2013": 1848,
+      "2014": 1848,
+      "2015": 2006,
+      "2016": 2035,
+      "2017": 2188,
+      "2018": 2552,
+      "2019": 2518,
+      "2020": 3053,
+      "2021": 3580,
+      "2022": 4470,
+      "2023": 3997,
+      "2024": 4577
+     }
+    },
+    "trend": "Both series generally increase over time with EMA smoothing the SP 500 fluctuations."
+   }
+  },
+  "summary"
+ ],
+ "usage": {
+  "prompt_tokens": 2434,
+  "completion_tokens": 718
+ },
+ "cost_usd": 0.002122,
+ "elapsed_s": 6.02
+}

@@ -1,0 +1,19 @@
+{
+ "page": 471,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 10.1",
+   "kind": "decorative",
+   "title": "The report is key: When done well, data science reports provide evidence-based insights that promote transparency by documenting methods and assumptions used, help identify risks and opportunities, and support decision-making.",
+   "details": "Photo of a group of six people sitting around a conference table with laptops, engaged in discussion.",
+   "summary": "This image illustrates a collaborative meeting setting, emphasizing the importance of communication and reporting in data science projects."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2604,
+  "completion_tokens": 110
+ },
+ "cost_usd": 0.001218,
+ "elapsed_s": 3.8
+}

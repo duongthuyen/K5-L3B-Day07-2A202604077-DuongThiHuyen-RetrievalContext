@@ -1,0 +1,19 @@
+{
+ "page": 3,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": "Title page with book title, senior contributing authors, and OpenStax logo.",
+   "summary": "This page is the title page of the textbook 'Principles of Data Science' listing senior contributing authors and the publisher logo."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2230,
+  "completion_tokens": 64
+ },
+ "cost_usd": 0.000994,
+ "elapsed_s": 2.15
+}

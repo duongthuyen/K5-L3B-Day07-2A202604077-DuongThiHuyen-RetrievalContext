@@ -1,0 +1,19 @@
+{
+ "page": 554,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table D1",
+   "kind": "table",
+   "title": null,
+   "details": "| Python Function           | Description                                                                 | Syntax                                                                 | First Reference                  |\n|---------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------|---------------------------------|\n| DecisionTreeClassifier()   | Sets up a decision tree model (Use model.fit() to fit the model to a dataset.) | DecisionTreeClassifier(options)                                        | Decision Trees                  |\n| ens.RandomForestRegressor()| Sets up a random forest model (Use model.fit() to fit the model to a dataset.) | ens.RandomForestRegressor(options)                                    | Other Machine Learning Techniques |\n| GaussianNB()              | Set up a Naïve Bayes classification model (Use model.fit() to fit the model to a dataset.) | GaussianNB()                                                          | Other Machine Learning Techniques |\n| Perceptron()              | Sets up a perceptron model (Use model.fit() to fit the model to a dataset.)    | Perceptron()                                                          | Introduction to Neural Networks |\n| train_test_split()        | Splits dataset randomly into train and test subsets, using a proportion of P of the data for the test set | train_test_split(input_data_arrays, target_data, test_size=P)          | Introduction to Neural Networks |\n| StandardScaler()          | Used to standardize features by removing the mean and scaling to unit variance | StandardScaler()                                                      | Introduction to Neural Networks |",
+   "summary": "This table lists several Python functions used in machine learning, describing their purpose, syntax, and references for further reading."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2476,
+  "completion_tokens": 332
+ },
+ "cost_usd": 0.001522,
+ "elapsed_s": 3.41
+}

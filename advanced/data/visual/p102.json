@@ -1,0 +1,46 @@
+{
+ "page": 102,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 2.9",
+   "kind": "diagram",
+   "title": "Descending order of storage capacity at the same cost and security level",
+   "details": {
+    "nodes": [
+     "Cloud storage system",
+     "Data archiving strategy",
+     "Outsourcing data storage and management",
+     "Implementing a virtual desktop infrastructure"
+    ],
+    "order": [
+     "Cloud storage system",
+     "Data archiving strategy",
+     "Outsourcing data storage and management",
+     "Implementing a virtual desktop infrastructure"
+    ],
+    "connections": [
+     {
+      "from": "Cloud storage system",
+      "to": "Data archiving strategy"
+     },
+     {
+      "from": "Data archiving strategy",
+      "to": "Outsourcing data storage and management"
+     },
+     {
+      "from": "Outsourcing data storage and management",
+      "to": "Implementing a virtual desktop infrastructure"
+     }
+    ]
+   },
+   "summary": "This example ranks storage options from highest to lowest capacity while maintaining the same cost and security level, highlighting cloud storage as highest and virtual desktop infrastructure as lowest among the listed options."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2849,
+  "completion_tokens": 208
+ },
+ "cost_usd": 0.001472,
+ "elapsed_s": 2.61
+}

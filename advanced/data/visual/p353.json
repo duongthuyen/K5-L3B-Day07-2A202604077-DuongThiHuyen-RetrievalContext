@@ -1,0 +1,19 @@
+{
+ "page": 353,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 7.1",
+   "kind": "table",
+   "title": "Neural Network Output",
+   "details": "| Data Point | Predicted ŷ                  | Actual (Target) y   |\n|------------|------------------------------|--------------------|\n| 1          | (0.135, -0.252, 0.873, 1.297) | (1, 0, 1, 1)       |\n| 2          | (0.729, 0.458, 0.975, -0.025) | (1, 1, 1, 0)       |",
+   "summary": "This table shows the predicted outputs of a neural network and the actual target values for two data points, used for calculating average loss with different loss functions."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2348,
+  "completion_tokens": 177
+ },
+ "cost_usd": 0.001222,
+ "elapsed_s": 2.03
+}

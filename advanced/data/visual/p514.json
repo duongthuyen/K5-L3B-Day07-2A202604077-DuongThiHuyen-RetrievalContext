@@ -1,0 +1,57 @@
+{
+ "page": 514,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure A16",
+   "kind": "chart",
+   "title": "Changing the Formatting of the Bar Chart (Used with permission from Microsoft)",
+   "details": {
+    "chart type": "bar chart",
+    "x-axis label": "Names with roles (Outfielder, Pitcher) and SD",
+    "x-axis categories": [
+     "Paul_McAnly",
+     "Termel_Sledge",
+     "Jack_Cust",
+     "Jose_Cruz_Jr.",
+     "Russell_Branyan",
+     "Mike_Cameron",
+     "Brian_Giles",
+     "Mike_Thompson",
+     "Clay_Hensley",
+     "Chris"
+    ],
+    "y-axis label": "Height (inches)",
+    "y-axis range": "64 to 84",
+    "bars": {
+     "Paul_McAnly": 70,
+     "Termel_Sledge": 74,
+     "Jack_Cust": 72,
+     "Jose_Cruz_Jr.": 72,
+     "Russell_Branyan": 76,
+     "Mike_Cameron": 74,
+     "Brian_Giles": 70,
+     "Mike_Thompson": 78,
+     "Clay_Hensley": 72,
+     "Chris": 82
+    }
+   },
+   "summary": "This bar chart shows the heights in inches of various baseball players, categorized by their roles such as Outfielder and Pitcher. The figure illustrates how to change the formatting of chart elements in Excel, specifically the chart title formatting options."
+  },
+  {
+   "label": "Figure A17",
+   "kind": "image",
+   "title": "Scatterplot Icon (Used with permission from Microsoft)",
+   "details": {
+    "image description": "Screenshot of the scatterplot icon in Excel under the Insert menu, showing a small icon with dots representing a scatterplot."
+   },
+   "summary": "This image shows the scatterplot icon in Excel, which users can select to create scatterplots. It is part of the instructions for drawing a scatterplot between Weight and Height."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2424,
+  "completion_tokens": 399
+ },
+ "cost_usd": 0.001608,
+ "elapsed_s": 5.01
+}

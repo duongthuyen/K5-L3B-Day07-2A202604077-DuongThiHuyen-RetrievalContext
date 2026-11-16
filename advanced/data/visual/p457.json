@@ -1,0 +1,78 @@
+{
+ "page": 457,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Revenue versus Advertising for a Company",
+   "details": {
+    "chart type": "scatterplot",
+    "x-axis label": "Advertising $000",
+    "x-axis range": "50 to 155",
+    "y-axis label": "Revenue $000",
+    "y-axis range": "12000 to 19000",
+    "units": "thousands of dollars",
+    "legend/series": "single series with color representing revenue level",
+    "values": [
+     {
+      "Advertising": 49,
+      "Revenue": 12210
+     },
+     {
+      "Advertising": 57,
+      "Revenue": 13215
+     },
+     {
+      "Advertising": 69,
+      "Revenue": 14100
+     },
+     {
+      "Advertising": 83,
+      "Revenue": 14100
+     },
+     {
+      "Advertising": 92,
+      "Revenue": 14600
+     },
+     {
+      "Advertising": 106,
+      "Revenue": 15500
+     },
+     {
+      "Advertising": 109,
+      "Revenue": 16300
+     },
+     {
+      "Advertising": 117,
+      "Revenue": 17100
+     },
+     {
+      "Advertising": 121,
+      "Revenue": 17020
+     },
+     {
+      "Advertising": 142,
+      "Revenue": 18400
+     },
+     {
+      "Advertising": 145,
+      "Revenue": 17590
+     },
+     {
+      "Advertising": 153,
+      "Revenue": 19200
+     }
+    ],
+    "trend": "positive correlation between advertising spend and revenue"
+   },
+   "summary": "This scatterplot shows the relationship between advertising spending and revenue for a company, indicating a positive correlation where higher advertising budgets tend to correspond with higher revenue."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2482,
+  "completion_tokens": 310
+ },
+ "cost_usd": 0.001489,
+ "elapsed_s": 3.54
+}

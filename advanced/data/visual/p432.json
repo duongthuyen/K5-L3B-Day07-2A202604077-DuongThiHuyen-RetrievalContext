@@ -1,0 +1,19 @@
+{
+ "page": 432,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 9.3",
+   "kind": "image",
+   "title": "Python code to generate a histogram for monthly sales data",
+   "details": "Python code snippet importing matplotlib.pyplot as plt and matplotlib.ticker as ticker; defines a function format_ticks to format ticks with commas as thousands separators; defines a sales data list with 30 sales amounts in U.S. dollars.",
+   "summary": "This code example demonstrates how to use Python's Matplotlib library to create a histogram for a given dataset of monthly sales amounts."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2758,
+  "completion_tokens": 115
+ },
+ "cost_usd": 0.001287,
+ "elapsed_s": 1.88
+}

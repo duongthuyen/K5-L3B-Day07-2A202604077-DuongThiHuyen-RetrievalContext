@@ -1,0 +1,19 @@
+{
+ "page": 103,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": null,
+   "summary": "This page contains only text paragraphs and a note with a hyperlink; no informative visual elements such as charts, diagrams, tables, or images are present."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2424,
+  "completion_tokens": 61
+ },
+ "cost_usd": 0.001067,
+ "elapsed_s": 1.88
+}

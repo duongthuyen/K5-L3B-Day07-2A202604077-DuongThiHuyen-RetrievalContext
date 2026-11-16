@@ -1,0 +1,19 @@
+{
+ "page": 306,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "PYTHON CODE",
+   "details": "Screenshot of Python code showing how to use sklearn.utils resample to perform bootstrapping on data with columns 'BARTHAG' and 'W'. The code plots a scatter plot of 'BARTHAG' vs 'W', then resamples 100 points 50 times, fits a model, collects slopes and intercepts, and plots predicted lines in red.",
+   "summary": "This code snippet demonstrates bootstrapping by resampling data multiple times, fitting a model each time, and plotting the resulting regression lines to visualize variability in slopes and intercepts."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2371,
+  "completion_tokens": 140
+ },
+ "cost_usd": 0.001172,
+ "elapsed_s": 1.7
+}

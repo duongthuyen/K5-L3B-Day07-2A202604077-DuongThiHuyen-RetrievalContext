@@ -1,0 +1,84 @@
+[
+  {
+    "query_id": "m01",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "m02",
+    "citation_support": [
+      false
+    ],
+    "reason": "Sai: trả lời 'handling of outliers during data cleaning'; sách (Bảng 2.4 p90) nói data validation. Agent viết lại query thành 'data cleaning erroneous values' nên không lấy được hàng Validation.",
+    "answer_grade": 0
+  },
+  {
+    "query_id": "m03",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "m04",
+    "citation_support": [
+      true
+    ],
+    "reason": "Một phần: nói chung chung 'carefully consider/deleted/analyzed separately' trước analysis, không nêu 'identify and remove before validating'; citation p0087:c04 hỗ trợ điều nó nói.",
+    "answer_grade": 1
+  },
+  {
+    "query_id": "m05",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "m06",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng; p0248:c01 'for key, value in zip_codes.items()' hỗ trợ.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "m07",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng; bảng tham chiếu p0256:c00 có my_dict = dict(my_list).",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "m08",
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng và đủ; citation chứa evidence.",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "v01",
+    "citation_support": [],
+    "reason": "Search 3 lần rồi từ chối, không khẳng định thêm; corpus không có (absence_reason).",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "v02",
+    "citation_support": [],
+    "reason": "Search 3 lần rồi từ chối, không khẳng định thêm; corpus không có (absence_reason).",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "v03",
+    "citation_support": [],
+    "reason": "Search 3 lần rồi từ chối, không khẳng định thêm; corpus không có (absence_reason).",
+    "abstention_correct": true
+  }
+]

@@ -1,0 +1,60 @@
+{
+ "page": 254,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "The resulting output will look like this:",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Index (0 to 80)",
+    "x-axis range": [
+     0,
+     80
+    ],
+    "y-axis label": "Value",
+    "y-axis units": "unreadable units",
+    "y-axis range": "approximately -10,000 to 70,000",
+    "legend/series": [
+     "Original Data",
+     "Trend",
+     "Seasonal"
+    ],
+    "values": {
+     "Original Data": {
+      "peaks": [
+       {
+        "x": 7,
+        "y": 70000
+       },
+       {
+        "x": 22,
+        "y": 65000
+       }
+      ],
+      "troughs": [
+       {
+        "x": 50,
+        "y": 25000
+       }
+      ]
+     },
+     "Trend": {
+      "general trend": "slightly decreasing from about 55,000 at x=0 to about 40,000 at x=80"
+     },
+     "Seasonal": {
+      "pattern": "repeating oscillations between about -10,000 and 17,000 with roughly 10-12 cycles over the x-axis range"
+     }
+    }
+   },
+   "summary": "This line chart shows three series: the original data fluctuating with noise, a smoother trend line showing a general downward trend, and a seasonal component oscillating around zero, illustrating decomposition of a time series into trend and seasonal parts."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2427,
+  "completion_tokens": 290
+ },
+ "cost_usd": 0.001435,
+ "elapsed_s": 3.3
+}

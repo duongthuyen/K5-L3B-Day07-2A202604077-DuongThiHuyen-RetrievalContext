@@ -1,0 +1,34 @@
+{
+ "page": 237,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 5.9",
+   "kind": "chart",
+   "title": "White Noise. White noise is a type of random noise. The mean is constantly near zero. Variance is pretty constant everywhere in the series, close to a value of 1. There are no observable patterns that repeat.",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Index (0 to 250)",
+    "x-axis range": [
+     0,
+     250
+    ],
+    "y-axis label": "Value",
+    "y-axis units": "unitless",
+    "y-axis range": [
+     -3,
+     3
+    ],
+    "legend/series": null,
+    "values": "Values fluctuate randomly around zero, mostly between -3 and 3, with no visible pattern or trend."
+   },
+   "summary": "This line chart shows a time series of white noise, illustrating random fluctuations with a mean near zero and roughly constant variance around 1, with no repeating patterns."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2719,
+  "completion_tokens": 202
+ },
+ "cost_usd": 0.001411,
+ "elapsed_s": 2.18
+}

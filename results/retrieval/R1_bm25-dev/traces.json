@@ -43,7 +43,7 @@
     "hit1": false,
     "hit3": true,
     "context_hit": true,
-    "latency_ms": 0.6
+    "latency_ms": 0.7
   },
   {
     "query_id": "q02",
@@ -89,7 +89,7 @@
     "hit1": true,
     "hit3": true,
     "context_hit": true,
-    "latency_ms": 0.5
+    "latency_ms": 0.6
   },
   {
     "query_id": "q03",
@@ -135,7 +135,7 @@
     "hit1": true,
     "hit3": true,
     "context_hit": true,
-    "latency_ms": 0.7
+    "latency_ms": 0.8
   },
   {
     "query_id": "q04",
@@ -181,7 +181,7 @@
     "hit1": true,
     "hit3": true,
     "context_hit": true,
-    "latency_ms": 0.4
+    "latency_ms": 0.5
   },
   {
     "query_id": "q05",
@@ -273,7 +273,7 @@
     "hit1": true,
     "hit3": true,
     "context_hit": true,
-    "latency_ms": 0.7
+    "latency_ms": 0.6
   },
   {
     "query_id": "q07",
@@ -365,7 +365,7 @@
     "hit1": false,
     "hit3": true,
     "context_hit": true,
-    "latency_ms": 0.9
+    "latency_ms": 0.8
   },
   {
     "query_id": "q09",
@@ -411,7 +411,7 @@
     "hit1": true,
     "hit3": true,
     "context_hit": true,
-    "latency_ms": 0.8
+    "latency_ms": 0.7
   },
   {
     "query_id": "q10",
@@ -601,7 +601,7 @@
     "hit1": true,
     "hit3": true,
     "context_hit": true,
-    "latency_ms": 0.4
+    "latency_ms": 0.3
   },
   {
     "query_id": "q14",
@@ -647,7 +647,7 @@
     "hit1": true,
     "hit3": true,
     "context_hit": true,
-    "latency_ms": 0.4
+    "latency_ms": 0.3
   },
   {
     "query_id": "q15",
@@ -693,7 +693,7 @@
     "hit1": true,
     "hit3": true,
     "context_hit": true,
-    "latency_ms": 0.5
+    "latency_ms": 0.4
   },
   {
     "query_id": "q16",
@@ -927,7 +927,7 @@
     "hit1": true,
     "hit3": true,
     "context_hit": true,
-    "latency_ms": 0.5
+    "latency_ms": 0.4
   },
   {
     "query_id": "t05",
@@ -973,7 +973,7 @@
     "hit1": true,
     "hit3": true,
     "context_hit": true,
-    "latency_ms": 1.3
+    "latency_ms": 0.6
   },
   {
     "query_id": "t06",
@@ -1019,6 +1019,6 @@
     "hit1": true,
     "hit3": true,
     "context_hit": true,
-    "latency_ms": 0.2
+    "latency_ms": 0.1
   }
 ]

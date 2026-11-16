@@ -1,0 +1,41 @@
+{
+ "page": 234,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 5.6",
+   "kind": "chart",
+   "title": "Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022",
+   "details": {
+    "chart type": "line chart with trend curve",
+    "x-axis label": "Date (monthly from January 2016 to May 2022)",
+    "x-axis range": "January 2016 to May 2022",
+    "y-axis label": "Coal Consumption",
+    "units": "1000s of Tons",
+    "y-axis range": "0 to 80,000",
+    "legend/series": [
+     "Monthly Consumption",
+     "Trend Curve"
+    ],
+    "values": {
+     "monthly consumption": "varies roughly between 20,000 and 75,000 with seasonal peaks and troughs",
+     "trend curve": "generally downward from about 60,000 in 2016 to about 40,000 in 2022"
+    }
+   },
+   "summary": "This line chart shows the monthly coal consumption for electricity generation in the US from 2016 to 2022, with a trend curve indicating a general decline over time."
+  },
+  {
+   "label": "Figure 5.7",
+   "kind": "image",
+   "title": "Adding a Trendline to a Line Chart in Excel (Used with permission from Microsoft)",
+   "details": "Screenshot of an Excel interface showing a line chart of monthly coal consumption with a trendline added. The Chart Elements menu is open, highlighting the 'Trendline' option with sub-options including Linear, Exponential, Linear Forecast, Two Period Moving Average, and 'More Options...' highlighted in red.",
+   "summary": "This screenshot illustrates how to add a trendline to a line chart in Excel, highlighting the menu options to select and customize the trendline."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2492,
+  "completion_tokens": 369
+ },
+ "cost_usd": 0.001587,
+ "elapsed_s": 3.6
+}

@@ -1,0 +1,19 @@
+{
+ "page": 385,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 7.4",
+   "kind": "table",
+   "title": "The output of a neural network on data points are given in the table.",
+   "details": "| Data point | Predicted ŷ               | Actual(target) y |\n|------------|---------------------------|------------------|\n| 1          | (0.043, 1.169, 1.019)     | (0, 1, 1)        |\n| 2          | (-0.149, 0.927, -0.136)   | (0, 1, 0)        |\n| 3          | (0.96, 0.237, -0.109)     | (1, 0, 0)        |\n| 4          | (0.842, -0.148, -0.218)   | (1, 0, 0)        |\n| 5          | (0.942, 0.838, 1.011)     | (1, 1, 1)        |",
+   "summary": "This table shows the predicted output vectors and the actual target vectors for five data points from a neural network, used to compute average loss with different loss functions."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2452,
+  "completion_tokens": 274
+ },
+ "cost_usd": 0.001419,
+ "elapsed_s": 2.89
+}

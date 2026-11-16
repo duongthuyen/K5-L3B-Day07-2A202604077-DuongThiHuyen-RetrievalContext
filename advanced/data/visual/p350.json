@@ -1,0 +1,19 @@
+{
+ "page": 350,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "Python code example for training and testing a perceptron model on the Iris dataset",
+   "details": "Code snippet showing import statements from sklearn, loading Iris dataset (first 100 samples), splitting into train/test sets (25% test size), standardizing features, initializing and training a Perceptron model, making predictions, calculating accuracy, and printing the accuracy result (Accuracy: 1.0). Also includes a comment about using the trained perceptron to classify new data with an example input.",
+   "summary": "This code example demonstrates how to train a perceptron model on a subset of the Iris dataset for binary classification, evaluate its accuracy on a test set, and shows the resulting perfect accuracy output (1.0). It also introduces how to classify new data using the trained model."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2611,
+  "completion_tokens": 182
+ },
+ "cost_usd": 0.001336,
+ "elapsed_s": 2.34
+}

@@ -1,0 +1,35 @@
+{
+  "config": "A0_dense",
+  "method": "dense",
+  "top_k": 3,
+  "max_searches": 3,
+  "budget": 8000,
+  "note": "Baseline agent: dense pgvector tool (Day 6 config C)",
+  "model": "gpt-4o-mini",
+  "split": "dev",
+  "cases": 25,
+  "errors": 0,
+  "tool_use": {
+    "n": 25,
+    "N": 25
+  },
+  "searches_distribution": {
+    "1": 15,
+    "2": 1,
+    "3": 9
+  },
+  "context_evidence_rate": {
+    "n": 20,
+    "N": 22
+  },
+  "status": {
+    "answered": 21,
+    "abstain": 4
+  },
+  "llm_calls": 68,
+  "prompt_tokens": 50684,
+  "completion_tokens": 2793,
+  "cost_usd": 0.00928,
+  "median_elapsed_s": 2.87,
+  "total_elapsed_s": 81.6
+}

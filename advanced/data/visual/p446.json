@@ -1,0 +1,84 @@
+{
+ "page": 446,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Poisson Distribution ($\\mu$ = 3)",
+   "details": {
+    "chart type": "bar chart",
+    "x-axis label": "Number of Occurrences",
+    "x-axis range": [
+     0,
+     11
+    ],
+    "y-axis label": "Probability",
+    "y-axis units": "probability",
+    "y-axis range": [
+     0,
+     0.25
+    ],
+    "legend/series": null,
+    "values": [
+     {
+      "x": 0,
+      "probability": 0.0498
+     },
+     {
+      "x": 1,
+      "probability": 0.1494
+     },
+     {
+      "x": 2,
+      "probability": 0.224
+     },
+     {
+      "x": 3,
+      "probability": 0.224
+     },
+     {
+      "x": 4,
+      "probability": 0.168
+     },
+     {
+      "x": 5,
+      "probability": 0.1008
+     },
+     {
+      "x": 6,
+      "probability": 0.0504
+     },
+     {
+      "x": 7,
+      "probability": 0.0216
+     },
+     {
+      "x": 8,
+      "probability": 0.0081
+     },
+     {
+      "x": 9,
+      "probability": 0.0027
+     },
+     {
+      "x": 10,
+      "probability": 0.0008
+     },
+     {
+      "x": 11,
+      "probability": 0.0002
+     }
+    ],
+    "trend": "The probability peaks at 2 and 3 occurrences, then decreases as the number of occurrences increases beyond 3."
+   }
+  },
+  "summary"
+ ],
+ "usage": {
+  "prompt_tokens": 2556,
+  "completion_tokens": 328
+ },
+ "cost_usd": 0.001547,
+ "elapsed_s": 3.59
+}

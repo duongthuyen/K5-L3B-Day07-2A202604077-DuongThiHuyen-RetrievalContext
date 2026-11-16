@@ -1,0 +1,19 @@
+{
+ "page": 57,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "table",
+   "title": null,
+   "details": "| sepal_length | sepal_width | petal_length | petal_width | species       |\n|--------------|-------------|--------------|-------------|---------------|\n| 6.3          | 3.3         | 6.0          | 2.5         | Iris-virginica|\n| 7.2          | 3.6         | 6.1          | 2.5         | Iris-virginica|\n| 7.7          | 3.8         | 6.7          | 2.2         | Iris-virginica|\n| 6.7          | 3.3         | 5.7          | 2.1         | Iris-virginica|\n| 7.9          | 3.8         | 6.4          | 2.0         | Iris-virginica|\n| 6.3          | 3.4         | 5.6          | 2.4         | Iris-virginica|\n| 6.7          | 3.3         | 5.7          | 2.5         | Iris-virginica|\n| 6.2          | 3.4         | 5.4          | 2.3         | Iris-virginica|",
+   "summary": "This table shows sample rows of the Iris dataset with measurements of sepal length, sepal width, petal length, petal width, and species type (Iris-virginica). It is used as an example dataset for data visualization."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2486,
+  "completion_tokens": 367
+ },
+ "cost_usd": 0.001582,
+ "elapsed_s": 3.35
+}

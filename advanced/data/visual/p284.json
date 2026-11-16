@@ -1,0 +1,60 @@
+{
+ "page": 284,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 6.5",
+   "kind": "chart",
+   "title": "Time Spent on HW Problem Sets (Exponential Model)",
+   "details": {
+    "chart type": "scatterplot with fitted exponential curve",
+    "x-axis label": "Problem Set",
+    "x-axis range": "0 to 8",
+    "y-axis label": "Time Spent (Hours)",
+    "y-axis range": "-2 to 12",
+    "units": "hours",
+    "legend/series": [
+     "data points",
+     "exponential model curve"
+    ],
+    "values": [
+     {
+      "Problem Set": 1,
+      "Time Spent": 10
+     },
+     {
+      "Problem Set": 2,
+      "Time Spent": 5
+     },
+     {
+      "Problem Set": 3,
+      "Time Spent": 3.5
+     },
+     {
+      "Problem Set": 4,
+      "Time Spent": 2.5
+     },
+     {
+      "Problem Set": 5,
+      "Time Spent": 2
+     },
+     {
+      "Problem Set": 6,
+      "Time Spent": 1.7
+     },
+     {
+      "Problem Set": 7,
+      "Time Spent": 1
+     }
+    ]
+   },
+   "summary": "This figure shows a scatterplot of six data points representing time spent on homework problem sets, along with an exponential model curve that best fits the data. The model predicts that the time spent on problem set 7 is approximately 1 hour, which seems reasonable."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2757,
+  "completion_tokens": 287
+ },
+ "cost_usd": 0.001562,
+ "elapsed_s": 2.99
+}

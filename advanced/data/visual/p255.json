@@ -1,0 +1,19 @@
+{
+ "page": 255,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 5.7",
+   "kind": "decorative",
+   "title": "Example 5.7",
+   "details": "Text box with problem and solution description for using EMA models with alpha=0.5 and alpha=0.7 for S&P Index data to estimate value at end of 2023.",
+   "summary": "This example illustrates how to apply exponential moving average models with different alpha values to forecast the S&P Index."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2658,
+  "completion_tokens": 100
+ },
+ "cost_usd": 0.001223,
+ "elapsed_s": 1.49
+}

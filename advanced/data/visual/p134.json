@@ -1,0 +1,19 @@
+{
+ "page": 134,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 3.2",
+   "kind": "table",
+   "title": "Number of Nursing and Non-Nursing Degrees at a University by Age Group",
+   "details": "| Age Group    | Nursing Degrees | Non-Nursing Degrees | Total |\n|--------------|-----------------|---------------------|-------|\n| 22 and under | 1036            | 1287                | 2323  |\n| 23 and older | 986             | 932                 | 1918  |\n| **Total**    | **2022**        | **2219**            | **4241** |",
+   "summary": "This table shows the distribution of nursing and non-nursing degrees awarded at a university, broken down by two age groups: 22 and under, and 23 and older. It provides counts for each category and totals."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2584,
+  "completion_tokens": 184
+ },
+ "cost_usd": 0.001328,
+ "elapsed_s": 2.37
+}

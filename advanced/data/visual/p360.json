@@ -1,0 +1,19 @@
+{
+ "page": 360,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "PYTHON CODE",
+   "details": "Python code snippet showing how to set up a simple recurrent neural network (RNN) using TensorFlow, pandas, numpy, and sklearn. The code loads and preprocesses monthly coal consumption data, scales it, prepares input sequences and target values, splits data into training and testing sets, defines an RNN architecture with 32 units and tanh activation, compiles the model with Adam optimizer and mean squared error loss, and trains the model for 50 epochs with batch size 16.",
+   "summary": "This code example demonstrates the process of building and training a simple RNN model in Python for time series prediction using monthly coal consumption data."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2600,
+  "completion_tokens": 157
+ },
+ "cost_usd": 0.001291,
+ "elapsed_s": 1.84
+}

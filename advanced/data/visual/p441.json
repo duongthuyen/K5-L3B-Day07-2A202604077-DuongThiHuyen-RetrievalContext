@@ -1,0 +1,19 @@
+{
+ "page": 441,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 9.4",
+   "kind": "table",
+   "title": "Summary of Visualization Methods Based on Goals and Data",
+   "details": "| Goal of Visualization | Type of Data | Visualization Methods to Consider |\n|----------------------|--------------|----------------------------------|\n| Show a comparison of different groups or categories | Qualitative or Quantitative | • Bar charts are useful for comparing different groups of categories • Column chart |\n| Show correlations or relationships between quantitative variables | Quantitative | • Scatterplot • Time series graph • Heatmap |\n| Show how a whole is divided into parts | Quantitative | • Pie chart |\n| Show how data is distributed over some interval | Quantitative | • Histogram • Boxplot |",
+   "summary": "This table summarizes appropriate visualization methods based on the goal of visualization and the type of data, helping readers choose suitable graph types for different data analysis tasks."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2720,
+  "completion_tokens": 191
+ },
+ "cost_usd": 0.001394,
+ "elapsed_s": 2.67
+}

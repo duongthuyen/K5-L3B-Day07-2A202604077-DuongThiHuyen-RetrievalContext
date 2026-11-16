@@ -1,0 +1,19 @@
+{
+ "page": 76,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Example 2.3",
+   "kind": "decorative",
+   "title": "Example 2.3",
+   "details": "Text example describing a problem and solution about sampling technique used by Mark, a data scientist.",
+   "summary": "This example illustrates the use of stratified sampling to obtain a representative sample from different groups in a population for market research."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2812,
+  "completion_tokens": 82
+ },
+ "cost_usd": 0.001256,
+ "elapsed_s": 1.78
+}

@@ -1,0 +1,106 @@
+{
+ "page": 61,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Petal Length vs. Petal Width of Setosa Iris",
+   "details": {
+    "chart type": "scatter plot",
+    "x-axis label": "Petal Length",
+    "x-axis range": "1.0 to 1.9",
+    "y-axis label": "Petal Width",
+    "y-axis range": "0.1 to 0.6",
+    "units": null,
+    "legend/series": null,
+    "values": [
+     {
+      "Petal Length": 1.0,
+      "Petal Width": 0.2
+     },
+     {
+      "Petal Length": 1.1,
+      "Petal Width": 0.1
+     },
+     {
+      "Petal Length": 1.2,
+      "Petal Width": 0.2
+     },
+     {
+      "Petal Length": 1.3,
+      "Petal Width": 0.2
+     },
+     {
+      "Petal Length": 1.3,
+      "Petal Width": 0.3
+     },
+     {
+      "Petal Length": 1.3,
+      "Petal Width": 0.4
+     },
+     {
+      "Petal Length": 1.4,
+      "Petal Width": 0.1
+     },
+     {
+      "Petal Length": 1.4,
+      "Petal Width": 0.2
+     },
+     {
+      "Petal Length": 1.4,
+      "Petal Width": 0.3
+     },
+     {
+      "Petal Length": 1.5,
+      "Petal Width": 0.2
+     },
+     {
+      "Petal Length": 1.5,
+      "Petal Width": 0.3
+     },
+     {
+      "Petal Length": 1.6,
+      "Petal Width": 0.4
+     },
+     {
+      "Petal Length": 1.6,
+      "Petal Width": 0.6
+     },
+     {
+      "Petal Length": 1.7,
+      "Petal Width": 0.2
+     },
+     {
+      "Petal Length": 1.7,
+      "Petal Width": 0.3
+     },
+     {
+      "Petal Length": 1.7,
+      "Petal Width": 0.4
+     },
+     {
+      "Petal Length": 1.8,
+      "Petal Width": 0.5
+     },
+     {
+      "Petal Length": 1.9,
+      "Petal Width": 0.2
+     },
+     {
+      "Petal Length": 1.9,
+      "Petal Width": 0.4
+     }
+    ],
+    "trend": "Petal Width generally increases as Petal Length increases, with some variation."
+   }
+  },
+  "summary"
+ ],
+ "usage": {
+  "prompt_tokens": 2268,
+  "completion_tokens": 513
+ },
+ "cost_usd": 0.001728,
+ "elapsed_s": 4.33
+}

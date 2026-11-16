@@ -1,0 +1,19 @@
+{
+ "page": 129,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 3.4",
+   "kind": "table",
+   "title": "The Output of DataFrame.describe() with the Movie Profit Dataset",
+   "details": "| Unnamed: 0 | Rating | Duration | US_Gross_Million | Worldwide_Gross_Million |\n|------------|--------|----------|------------------|-------------------------|\n| count      | 966.00000 | 966.000000 | 966.000000 | 966.000000 |\n| mean       | 483.50000 | 6.814286 | 117.506211 | 156.158975 | 410.140600 |\n| std        | 279.00448 | 0.894383 | 21.615612 | 110.629617 | 294.758791 |\n| min        | 1.00000 | 3.300000 | 69.000000 | 0.010000 | 176.600000 |\n| 25%        | 242.25000 | 6.200000 | 101.250000 | 90.832500 | 223.277500 |\n| 50%        | 483.50000 | 6.800000 | 116.000000 | 129.245000 | 309.345000 |\n| 75%        | 724.75000 | 7.400000 | 130.000000 | 187.090000 | 472.645000 |\n| max        | 966.00000 | 9.200000 | 238.000000 | 936.660000 | 2847.400000 |",
+   "summary": "This table shows the descriptive statistics output from DataFrame.describe() for the Movie Profit Dataset, including count, mean, standard deviation, minimum, quartiles, and maximum values for columns such as Rating, Duration, US Gross Million, and Worldwide Gross Million."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2527,
+  "completion_tokens": 415
+ },
+ "cost_usd": 0.001675,
+ "elapsed_s": 3.69
+}

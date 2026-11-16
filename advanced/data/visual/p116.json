@@ -1,0 +1,19 @@
+{
+ "page": 116,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "table",
+   "title": "A college professor records the ages of 25 students in a data science class as shown:",
+   "details": "| Student Age | Number of Students (Frequency) |\n|-------------|-------------------------------|\n| 19          | 3                             |\n| 20          | 4                             |\n| 21          | 8                             |\n| 22          | 6                             |\n| 23          | 2                             |\n| 27          | 1                             |\n| 31          | 1                             |\n| **Total**   | **25**                        |",
+   "summary": "This table shows the frequency distribution of student ages in a data science class, listing the number of students for each age from 19 to 31, totaling 25 students."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2533,
+  "completion_tokens": 181
+ },
+ "cost_usd": 0.001303,
+ "elapsed_s": 1.96
+}

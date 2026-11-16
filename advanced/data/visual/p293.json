@@ -1,0 +1,126 @@
+{
+ "page": 293,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 6.11",
+   "kind": "chart",
+   "title": "Graph with New Centroids",
+   "details": {
+    "chart type": "scatter plot with centroid markers",
+    "x-axis label": "East",
+    "x-axis range": [
+     20,
+     160
+    ],
+    "y-axis label": "North",
+    "y-axis range": [
+     20,
+     90
+    ],
+    "legend/series": [
+     "Cluster 1 (blue)",
+     "Cluster 2 (green)",
+     "Cluster 3 (red)"
+    ],
+    "values": {
+     "Cluster 1 points": [
+      [
+       30,
+       33
+      ],
+      [
+       35,
+       53
+      ],
+      [
+       40,
+       54
+      ],
+      [
+       45,
+       55
+      ],
+      [
+       50,
+       71
+      ],
+      [
+       55,
+       83
+      ],
+      [
+       60,
+       70
+      ]
+     ],
+     "Cluster 2 points": [
+      [
+       70,
+       78
+      ],
+      [
+       75,
+       82
+      ],
+      [
+       80,
+       73
+      ],
+      [
+       85,
+       67
+      ],
+      [
+       90,
+       69
+      ],
+      [
+       95,
+       72
+      ],
+      [
+       100,
+       73
+      ]
+     ],
+     "Cluster 3 points": [
+      [
+       105,
+       50
+      ],
+      [
+       110,
+       42
+      ],
+      [
+       115,
+       48
+      ]
+     ]
+    },
+    "centroids": {
+     "Cluster 1 centroid": [
+      40,
+      55
+     ],
+     "Cluster 2 centroid": [
+      90,
+      70
+     ],
+     "Cluster 3 centroid": [
+      110,
+      50
+     ]
+    }
+   },
+   "summary": "This scatter plot shows the positions of data points clustered by the k-means algorithm after the second iteration, with centroids marked. The centroids have moved closer to the centers of the main clusters, and no points changed location, indicating algorithm stabilization at this step."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2310,
+  "completion_tokens": 332
+ },
+ "cost_usd": 0.001455,
+ "elapsed_s": 3.35
+}

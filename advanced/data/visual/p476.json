@@ -1,0 +1,19 @@
+{
+ "page": 476,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 10.1",
+   "kind": "table",
+   "title": "Summary of Visuals Used in Data Science Reports",
+   "details": "| Visual Aid          | Informational Purpose                                                                 |\n|--------------------|---------------------------------------------------------------------------------------|\n| Line graphs        | Illustrate time series data or variations across continuous data                       |\n| Bar graphs         | Compare the distributions of discrete or categorical data                            |\n| Pie charts         | Represent parts of a whole in percentages or proportions                             |\n| Scatterplots       | Demonstrate correlations between data from two continuous variables                  |\n| Histograms         | Show the distribution frequencies of data from a single continuous variable          |\n| Box plots          | Provide summary statistics and outliers for a continuous variable or across groups   |\n| Contingency tables | Display the joint frequency or counts for the data from a combination of two or more categorical variables |\n| Summary tables     | Present descriptive statistics or model outputs for data from one or more continuous variables or across different categories |",
+   "summary": "This table summarizes different types of visual aids used in data science reports and the specific informational purposes they serve, helping guide the choice of appropriate visuals for various data types and reporting goals."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2930,
+  "completion_tokens": 256
+ },
+ "cost_usd": 0.001582,
+ "elapsed_s": 3.4
+}

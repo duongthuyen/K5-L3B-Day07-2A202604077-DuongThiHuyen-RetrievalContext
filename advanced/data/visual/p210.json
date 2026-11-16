@@ -1,0 +1,19 @@
+{
+ "page": 210,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "PYTHON CODE",
+   "details": "Python code snippet showing import of numpy and linregress from scipy.stats, definition of x-data (amount spent on advertising) and y-data (revenue), and calculation of slope, intercept, r_value, p_value, std_err using linregress(x, y). The code prints slope and intercept values.",
+   "summary": "This code snippet demonstrates how to use Python's linregress function to compute the slope and intercept of a linear regression model based on advertising spend and revenue data."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2603,
+  "completion_tokens": 127
+ },
+ "cost_usd": 0.001244,
+ "elapsed_s": 1.5
+}

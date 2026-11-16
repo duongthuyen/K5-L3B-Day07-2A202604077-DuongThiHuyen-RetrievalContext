@@ -1,0 +1,19 @@
+{
+ "page": 362,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": null,
+   "summary": "This page contains Python code for plotting a time series chart but does not include any informative visual element such as a chart, diagram, or table itself."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2498,
+  "completion_tokens": 61
+ },
+ "cost_usd": 0.001097,
+ "elapsed_s": 1.3
+}

@@ -1,0 +1,19 @@
+{
+ "page": 31,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 1.3",
+   "kind": "table",
+   "title": "Summary of the CSV, JSON, and XML formats",
+   "details": "| Dataset Format | Pros | Cons | Typical Use |\n|----------------|------|------|-------------|\n| CSV            | • Simple | • Difficult to add metadata\n• Difficult to parse if there are special characters\n• Flat structure | • Tabular data |\n| JSON           | • Simple\n• Compatible with many languages\n• Easy to parse | • Difficult to add metadata\n• Cannot leave comments | • Data that needs to be exchanged between a user and a server |\n| XML            | • Structured (so more readable)\n• Possible to add metadata | • Verbose\n• Complex structure with tags | • Hierarchical data structures |",
+   "summary": "This table summarizes the advantages, disadvantages, and typical uses of three common dataset formats: CSV, JSON, and XML."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2630,
+  "completion_tokens": 201
+ },
+ "cost_usd": 0.001374,
+ "elapsed_s": 2.47
+}

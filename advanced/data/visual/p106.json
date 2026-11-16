@@ -1,0 +1,19 @@
+{
+ "page": 106,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 2.10",
+   "kind": "table",
+   "title": "Project A Required Data and Example",
+   "details": "| Common Name       | Scientific Name       | Date of Extinction | Continent     | Primary Reason for Extinction |\n|-------------------|-----------------------|--------------------|---------------|------------------------------|\n| Passenger pigeon  | *Ectopistes migratorius* | 1914               | North America | Overhunting                  |\n| Quagga            | *Equus quagga*        | 1883               | Africa        | Habitat loss                 |",
+   "summary": "This table provides an example format for organizing data on extinct animals, including columns for common name, scientific name, date of extinction, continent, and primary reason for extinction."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2850,
+  "completion_tokens": 169
+ },
+ "cost_usd": 0.00141,
+ "elapsed_s": 1.97
+}

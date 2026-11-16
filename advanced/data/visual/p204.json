@@ -1,0 +1,69 @@
+{
+ "page": 204,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 4.7",
+   "kind": "chart",
+   "title": "Scatterplot of Revenue versus Advertising for a Fortune 500 Company ($000s)",
+   "details": {
+    "chart type": "scatterplot",
+    "x-axis label": "Advertising Spend",
+    "x-axis range": "0 to 160",
+    "y-axis label": "Revenue",
+    "y-axis units": "$000s",
+    "y-axis range": "0 to 25000",
+    "legend/series": null,
+    "values": [
+     {
+      "x": 40,
+      "y": 12000
+     },
+     {
+      "x": 60,
+      "y": 13500
+     },
+     {
+      "x": 80,
+      "y": 14500
+     },
+     {
+      "x": 90,
+      "y": 14700
+     },
+     {
+      "x": 100,
+      "y": 15000
+     },
+     {
+      "x": 110,
+      "y": 15500
+     },
+     {
+      "x": 120,
+      "y": 16000
+     },
+     {
+      "x": 130,
+      "y": 17000
+     },
+     {
+      "x": 140,
+      "y": 17500
+     },
+     {
+      "x": 150,
+      "y": 19000
+     }
+    ]
+   },
+   "summary": "This scatterplot shows the relationship between monthly advertising spend (in thousands of dollars) and monthly revenue (in thousands of dollars) for a Fortune 500 company, illustrating a positive linear trend."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2716,
+  "completion_tokens": 284
+ },
+ "cost_usd": 0.001541,
+ "elapsed_s": 2.66
+}

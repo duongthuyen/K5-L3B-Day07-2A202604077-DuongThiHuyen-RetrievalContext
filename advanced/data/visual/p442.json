@@ -1,0 +1,19 @@
+{
+ "page": 442,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 9.7",
+   "kind": "decorative",
+   "title": "Example 9.7",
+   "details": "Text example describing how to use Python's binom function to graph binomial distributions for n=20 and p values 0.10, 0.50, and 0.85.",
+   "summary": "This example explains how to graph binomial distributions using Python's scipy.stats binom function for different probabilities of success, illustrating the effect of p on the distribution shape."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2710,
+  "completion_tokens": 113
+ },
+ "cost_usd": 0.001265,
+ "elapsed_s": 2.03
+}

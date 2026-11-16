@@ -1,0 +1,42 @@
+{
+ "page": 316,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Confusion Matrix",
+   "details": {
+    "chart type": "heatmap matrix",
+    "x-axis label": "Predicted",
+    "x-axis categories": [
+     "0",
+     "1"
+    ],
+    "y-axis label": "True",
+    "y-axis categories": [
+     "0",
+     "1"
+    ],
+    "color scale": "5 to 25",
+    "values": [
+     [
+      25,
+      5
+     ],
+     [
+      9,
+      23
+     ]
+    ]
+   },
+   "summary": "This confusion matrix shows the counts of true positives (25), true negatives (23), false negatives (9), and false positives (5) for a classification model, illustrating its accuracy and trade-offs between false negatives and false positives."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2561,
+  "completion_tokens": 151
+ },
+ "cost_usd": 0.001266,
+ "elapsed_s": 1.84
+}

@@ -1,0 +1,19 @@
+{
+ "page": 29,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 1.1",
+   "kind": "table",
+   "title": "Dataset example with six entities and four attributes",
+   "details": "| Semester  | Instructor | Class Size | Rating           |\n|-----------|------------|------------|------------------|\n| Fall 2020 | Smith      | 30         | Highly recommended|\n| Spring 2021 | Johnson  | 25         | Recommended      |\n| Fall 2021 | Lee        | 28         | Not recommended   |\n| Spring 2022 | Smith    | 32         | Highly recommended|\n| Fall 2022 | Johnson    | 27         | Recommended      |\n| Spring 2023 | Lee      | 29         | Not recommended   |",
+   "summary": "This table shows a structured dataset with six entities distinguished by semester. Each entity has four attributes: Semester, Instructor, Class Size, and Rating, illustrating how datasets are organized for analysis."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2930,
+  "completion_tokens": 206
+ },
+ "cost_usd": 0.001502,
+ "elapsed_s": 2.46
+}

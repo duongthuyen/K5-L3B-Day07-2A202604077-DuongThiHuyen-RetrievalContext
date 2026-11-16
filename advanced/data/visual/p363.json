@@ -1,0 +1,80 @@
+{
+ "page": 363,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Monthly Consumption of Coal from 2016 to 2022 and Predicted Values for 2023",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Month",
+    "x-axis range/categories": [
+     "2016-01",
+     "2016-07",
+     "2017-01",
+     "2017-07",
+     "2018-01",
+     "2018-07",
+     "2019-01",
+     "2019-07",
+     "2020-01",
+     "2020-07",
+     "2021-01",
+     "2021-07",
+     "2022-01",
+     "2022-07",
+     "2023-01",
+     "2023-07"
+    ],
+    "y-axis label": "Value",
+    "units": "unreadable",
+    "y-axis range": [
+     25000,
+     75000
+    ],
+    "legend/series": [
+     "Original Data",
+     "Predicted Values"
+    ],
+    "values": {
+     "Original Data": {
+      "peak": {
+       "value": 74000,
+       "month": "2016-07"
+      },
+      "minimum": {
+       "value": 26000,
+       "month": "2020-01"
+      },
+      "trend": "Overall decreasing trend from 2016 to 2022 with fluctuations and seasonal peaks roughly every 6 months."
+     },
+     "Predicted Values": {
+      "values": [
+       52000,
+       38000,
+       45000,
+       29000,
+       39000
+      ],
+      "months": [
+       "2022-07",
+       "2023-01",
+       "2023-03",
+       "2023-05",
+       "2023-07"
+      ],
+      "trend": "Predicted values show a fluctuating pattern with a dip around 2023-05 and partial recovery by 2023-07."
+     }
+    }
+   }
+  },
+  "summary\": "
+ ],
+ "usage": {
+  "prompt_tokens": 2609,
+  "completion_tokens": 377
+ },
+ "cost_usd": 0.001647,
+ "elapsed_s": 3.48
+}

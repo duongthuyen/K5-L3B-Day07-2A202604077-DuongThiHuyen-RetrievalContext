@@ -1,0 +1,19 @@
+{
+ "page": 148,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "PYTHON CODE",
+   "details": "Screenshot of Python code showing import of norm from scipy.stats, defining variables x=68000, mean=60000, standard_deviation=7500, and using round(1 - norm.cdf(x, mean, standard_deviation), 3) to calculate the probability that a random employee earns more than $68,000.",
+   "summary": "This code snippet demonstrates how to use the norm.cdf() function in Python to calculate the probability that a value exceeds a certain threshold in a normal distribution, specifically for employee salaries."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2653,
+  "completion_tokens": 135
+ },
+ "cost_usd": 0.001277,
+ "elapsed_s": 1.94
+}

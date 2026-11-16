@@ -1,0 +1,111 @@
+{
+ "page": 292,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 6.10",
+   "kind": "chart",
+   "title": "Graph with Large Dots Indicating the Initial Choices of Centroids. Data points are colored according to which centroid they are closest to.",
+   "details": {
+    "chart type": "scatter plot",
+    "x-axis label": "East",
+    "x-axis range": "20 to 160",
+    "y-axis label": "North",
+    "y-axis range": "20 to 90",
+    "units": null,
+    "legend/series": [
+     "Blue points",
+     "Green points",
+     "Red points",
+     "Large dots indicating initial centroids"
+    ],
+    "values": {
+     "Blue points": [
+      {
+       "x": 20,
+       "y": 49
+      },
+      {
+       "x": 30,
+       "y": 33
+      },
+      {
+       "x": 40,
+       "y": 55
+      },
+      {
+       "x": 60,
+       "y": 83
+      },
+      {
+       "x": 65,
+       "y": 71
+      }
+     ],
+     "Green points": [
+      {
+       "x": 75,
+       "y": 82.4
+      },
+      {
+       "x": 75.5,
+       "y": 77.8
+      },
+      {
+       "x": 108.6,
+       "y": 71.4
+      },
+      {
+       "x": 109.2,
+       "y": 66.7
+      },
+      {
+       "x": 110.5,
+       "y": 72
+      },
+      {
+       "x": 119.8,
+       "y": 69.1
+      }
+     ],
+     "Red points": [
+      {
+       "x": 100,
+       "y": 50
+      },
+      {
+       "x": 120,
+       "y": 42
+      }
+     ]
+    },
+    "large dots": {
+     "initial centroids": [
+      {
+       "color": "blue",
+       "x": 30,
+       "y": 55
+      },
+      {
+       "color": "green",
+       "x": 110,
+       "y": 70
+      },
+      {
+       "color": "red",
+       "x": 100,
+       "y": 50
+      }
+     ]
+    }
+   },
+   "summary": "This scatter plot shows data points colored by their closest centroid, with large dots indicating the initial centroid choices. It visually represents the clustering of points around these centroids before recalculating their positions."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2482,
+  "completion_tokens": 431
+ },
+ "cost_usd": 0.001682,
+ "elapsed_s": 3.95
+}

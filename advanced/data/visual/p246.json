@@ -1,0 +1,19 @@
+{
+ "page": 246,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 5.16",
+   "kind": "image",
+   "title": "Screenshot of Excel Showing Difference in Column D (Used with permission from Microsoft)",
+   "details": "Screenshot of an Excel spreadsheet with columns labeled Month, Value, SMA, and Difference. Rows show dates from 1/1/2016 to 7/1/2017 with corresponding numeric values. Column D (Difference) shows first-order differences of the Value column, with positive and negative values such as -11467.86, 5967.39, 18153.7, etc. Column C (SMA) shows simple moving averages with values like 56987, 55910.2, 55781.29, etc.",
+   "summary": "This screenshot illustrates how the first-order difference is computed in Excel for a time series dataset, showing the original values, their simple moving averages (SMA), and the differences in column D."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2451,
+  "completion_tokens": 199
+ },
+ "cost_usd": 0.001299,
+ "elapsed_s": 2.21
+}

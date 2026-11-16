@@ -1,0 +1,32 @@
+{
+ "page": 404,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 8.4",
+   "kind": "diagram",
+   "title": "Venn Diagram Illustrating the Relationship Between Ethical Rules, Cross-Validation, and Outlier Detection for Data Validation and Analysis",
+   "details": {
+    "type": "Venn diagram",
+    "circles": [
+     "Ethical Rules",
+     "Outlier Detection",
+     "Cross-Validation"
+    ],
+    "intersections": {
+     "Ethical Rules & Outlier Detection": "Unbiasedness & Fairness",
+     "Ethical Rules & Cross-Validation": "Confidentiality & Privacy",
+     "Outlier Detection & Cross-Validation": "Consistency",
+     "All three": "Reliability & Accuracy"
+    }
+   },
+   "summary": "This Venn diagram shows how ethical rules, cross-validation, and outlier detection overlap and interact in data validation and analysis, highlighting shared concerns such as fairness, privacy, consistency, and accuracy."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2572,
+  "completion_tokens": 183
+ },
+ "cost_usd": 0.001322,
+ "elapsed_s": 2.26
+}

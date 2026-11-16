@@ -92,7 +92,7 @@ def run(config_name: str, split: str, chunks, questions) -> dict:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--split", required=True, choices=("dev", "test"))
+    ap.add_argument("--split", required=True, choices=("dev", "test", "test2"))
     ap.add_argument("--configs", nargs="*", default=list(CONFIGS))
     args = ap.parse_args()
     chunks = load_chunks()

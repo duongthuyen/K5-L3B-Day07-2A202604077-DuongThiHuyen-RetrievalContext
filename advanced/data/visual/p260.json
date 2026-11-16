@@ -1,0 +1,19 @@
+{
+ "page": 260,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "PYTHON CODE",
+   "details": "Python code snippet showing import statements for pandas and adfuller, reading an Excel file 'MonthlyCoalConsumption.xlsx', and performing Augmented Dickey-Fuller (ADF) tests on the original data, first difference, and second difference of the 'Value' column. The code prints the ADF statistic and p-value for each differencing level (d=0, d=1, d=2).",
+   "summary": "This code demonstrates how to use Python to test the stationarity of a time series dataset by applying the ADF test at different levels of differencing, illustrating the process of identifying the order of differencing needed for ARIMA modeling."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2590,
+  "completion_tokens": 160
+ },
+ "cost_usd": 0.001292,
+ "elapsed_s": 2.04
+}

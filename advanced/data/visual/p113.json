@@ -1,0 +1,19 @@
+{
+ "page": 113,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 3.1",
+   "kind": "decorative",
+   "title": "Statistics and data science play significant roles in stock market analysis, offering insights into market trends and risk assessment for better financial decision-making.",
+   "details": "Photo showing people sitting in front of multiple large screens displaying stock market data with numbers and graphs in red, yellow, and green colors.",
+   "summary": "This decorative photo illustrates the context of stock market analysis related to statistics and data science, setting the theme for the chapter."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2566,
+  "completion_tokens": 111
+ },
+ "cost_usd": 0.001204,
+ "elapsed_s": 2.01
+}

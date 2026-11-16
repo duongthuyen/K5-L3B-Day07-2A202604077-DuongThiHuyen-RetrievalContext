@@ -1,0 +1,26 @@
+{
+ "page": 384,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "9-by-9 bitmap representing the Japanese hiragana character “a”",
+   "details": "A 9x9 grid of numbers representing pixel values, where 0 indicates white and 1 indicates black. The array is:\n0 0 0 1 0 0 0 0 0\n1 1 1 1 1 1 1 1 0\n0 0 0 1 0 0 0 0 0\n0 0 1 1 1 1 1 0 0\n0 1 0 1 0 1 0 1 0\n1 0 0 1 0 1 0 0 1\n0 0 0 0 1 0 0 0 1\n0 1 1 1 0 0 0 1 0\n0 0 0 0 0 1 1 0 0",
+   "summary": "This bitmap array visually encodes the Japanese hiragana character “a” using binary pixel values."
+  },
+  {
+   "label": null,
+   "kind": "image",
+   "title": "Rendered character from the bitmap",
+   "details": "A 9x9 grid showing the rendered character with black and white squares corresponding to the bitmap values above, visually representing the hiragana character “a”.",
+   "summary": "This image shows how the bitmap array translates into a visual character representation."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2629,
+  "completion_tokens": 328
+ },
+ "cost_usd": 0.001576,
+ "elapsed_s": 3.27
+}

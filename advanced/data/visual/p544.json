@@ -1,0 +1,19 @@
+{
+ "page": 544,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table C1",
+   "kind": "table",
+   "title": null,
+   "details": "| Chapter Title       | Topic                                   | Description of Algorithm                                         | First Reference               |\n|---------------------|-----------------------------------------|------------------------------------------------------------------|------------------------------|\n| Reporting Results    | Identify data characteristics           | Using Python to identify data characteristics of a dataset      | Validating Your Model         |\n|                     | Decision tree                           | Using Python to run a decision tree and generate a visualization of the result | Validating Your Model         |\n|                     | Model validation using Bayesian information criterion (BIC) | Using Python to perform cross validation with Bayesian information criterion | Validating Your Model         |\n|                     | Monte Carlo simulation                  | Using Python to perform Monte Carlo simulation                   | Validating Your Model         |\n|                     | Executive summary                      | Using Python to create an executive summary report               | Effective Executive Summaries |",
+   "summary": "This table lists Python algorithms related to reporting results, including identifying data characteristics, decision trees, model validation using BIC, Monte Carlo simulation, and creating executive summaries, along with their first reference sources."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2330,
+  "completion_tokens": 239
+ },
+ "cost_usd": 0.001314,
+ "elapsed_s": 2.73
+}

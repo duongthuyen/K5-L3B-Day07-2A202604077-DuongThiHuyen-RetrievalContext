@@ -1,0 +1,34 @@
+{
+ "page": 305,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Linear model: y = 4.820 + 14.682 x",
+   "details": {
+    "chart type": "scatterplot with regression line",
+    "x-axis label": "BARTHAG",
+    "x-axis range": "0.0 to 1.0",
+    "y-axis label": "W",
+    "y-axis range": "0 to 25+",
+    "units": "unreadable",
+    "legend/series": [
+     "scatter points",
+     "linear regression line (red)"
+    ],
+    "values": {
+     "scatter points": "various points roughly clustered along the regression line",
+     "regression line": "starts near y=5 at x=0, rises to about y=20 at x=1"
+    }
+   },
+   "summary": "This scatterplot shows data points of variables BARTHAG (x-axis) and W (y-axis) with a fitted linear regression line in red. The linear model equation y = 4.820 + 14.682 x is displayed, illustrating the positive linear relationship between the variables."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2380,
+  "completion_tokens": 227
+ },
+ "cost_usd": 0.001315,
+ "elapsed_s": 2.3
+}

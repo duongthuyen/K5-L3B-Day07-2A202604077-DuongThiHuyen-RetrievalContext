@@ -1,0 +1,60 @@
+{
+ "page": 240,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 5.10",
+   "kind": "chart",
+   "title": "Line Chart of the S&P 500 Index Together with the Simple Moving Average of Length 3 (data source: adapted from S&P 500 [SPX] Historical Data)",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Year",
+    "x-axis range": "2013 to 2023",
+    "y-axis label": "S&P Index",
+    "y-axis units": "Index value",
+    "y-axis range": "0 to 6000",
+    "legend/series": [
+     "SP 500",
+     "SMA (3)"
+    ],
+    "values": {
+     "SP 500": {
+      "2013": 2000,
+      "2014": 2050,
+      "2015": 2100,
+      "2016": 2600,
+      "2017": 2700,
+      "2018": 2500,
+      "2019": 3200,
+      "2020": 3800,
+      "2021": 4800,
+      "2022": 4300,
+      "2023": 4900
+     },
+     "SMA (3)": {
+      "2013": 2000,
+      "2014": 2025,
+      "2015": 2300,
+      "2016": 2500,
+      "2017": 2600,
+      "2018": 2800,
+      "2019": 3200,
+      "2020": 3600,
+      "2021": 4000,
+      "2022": 4200,
+      "2023": 4400
+     }
+    },
+    "trend": "Both series show an overall increasing trend from 2013 to 2023, with the SMA smoothing the fluctuations of the SP 500 index."
+   }
+  },
+  "summary\": ",
+  "The chart shows the S&P 500 index values at the end of each year from 2013 to 2023 alongside the 3-period simple moving average (SMA), illustrating how the SMA smooths the original time series to highlight the trend-cycle component."
+ ],
+ "usage": {
+  "prompt_tokens": 2540,
+  "completion_tokens": 424
+ },
+ "cost_usd": 0.001694,
+ "elapsed_s": 3.93
+}

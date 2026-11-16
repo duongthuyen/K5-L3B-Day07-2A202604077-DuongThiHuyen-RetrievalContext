@@ -1,0 +1,58 @@
+{
+ "page": 282,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 6.3",
+   "kind": "chart",
+   "title": "Cubic and Linear Models for a Set of Points",
+   "details": {
+    "chart type": "line plot with scatter points",
+    "x-axis label": "x",
+    "x-axis range": "0 to 14",
+    "y-axis label": "y",
+    "y-axis range": "0 to 20",
+    "legend/series": [
+     "Cubic Model (curve)",
+     "Linear Model (line)",
+     "Data Points (scatter)"
+    ],
+    "values": [
+     {
+      "point": "(2, 10)"
+     },
+     {
+      "point": "(4, 9)"
+     },
+     {
+      "point": "(6, 6)"
+     },
+     {
+      "point": "(8, 7)"
+     },
+     {
+      "point": "(10, 4)"
+     },
+     {
+      "point": "(12, 5)"
+     }
+    ],
+    "trend": "The cubic curve fits the first four points exactly (0% error) but diverges sharply after x=8, showing overfitting. The linear model does not fit the training data exactly but provides a smoother, better prediction for additional points."
+   }
+  },
+  {
+   "label": "Table 6.3",
+   "kind": "table",
+   "title": "MAPE and RMSE Calculated for Each Model",
+   "details": "| x_i | Actual Value, y_i | Prediction, ŷ_i, Cubic Model | |y_i - ŷ_i|, Cubic Model | Prediction, ŷ_i, Linear Model | |y_i - ŷ_i|, Linear Model |\n|-----|------------------|-----------------------------|-----------------------|----------------------------|-----------------------|\n| 2   | 10               | 10                          | 0                     | 9.8                        | 0.2                   |\n| 4   | 9                | 9                           | 0                     | 8.6                        | 0.4                   |\n| 6   | 6                | 6                           | 0                     | 7.4                        | 1.4                   |\n| 8   | 7                | 7                           | 0                     | 6.2                        | 0.8                   |\n| 10  | 4                | 18                          | 14                    | 5                          | 1                     |\n| 12  | 5                | 45                          | 40                    | 3.8                        | 1.2                   |"
+  },
+  "summary",
+  "This table compares the actual values with predictions from the cubic and linear models, showing the absolute errors for each. The cubic model fits the first four points perfectly but has large errors on later points, while the linear model has smaller errors overall."
+ ],
+ "usage": {
+  "prompt_tokens": 2570,
+  "completion_tokens": 649
+ },
+ "cost_usd": 0.002066,
+ "elapsed_s": 5.32
+}

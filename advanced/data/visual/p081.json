@@ -1,0 +1,26 @@
+{
+ "page": 81,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "diagram",
+   "title": "USING META-CHARACTERS IN REGULAR EXPRESSIONS",
+   "details": "Three bullet points explaining meta-characters in regex:\n- '*' matches zero or more occurrences of the preceding character or group. Example: 'a*' matches 'a', 'aa', 'aaa', etc.\n- '?' matches zero or one occurrence of the preceding character or group. Example: 'a?b' matches 'ab' or 'b'.\n- '+' matches one or more occurrences of the preceding character or group. Example: 'a+b' matches 'ab', 'aab', 'aaab', etc., but fails if no 'a's are present.",
+   "summary": "This diagram explains the use of three common meta-characters (*, ?, +) in regular expressions, illustrating their matching behavior with examples."
+  },
+  {
+   "label": "EXAMPLE 2.5",
+   "kind": "diagram",
+   "title": "Problem and Solution for Searching a Word Using Regular Expressions in Python",
+   "details": "Problem: Write Python code using regular expressions to search for the word 'Python' in a string and print the number of times it appears.\nSolution: Python code snippet shown:\nimport re\nstory = \"Samantha is a sixth-grade student who uses the popular coding language Python to collect and analyze weather data for science project. She creates a program that collects data from an online weather API and stores it in a CSV file for 10 days. With the help of her teacher, she uses Python to visualize the data and discovers patterns in temperature, humidity, and precipitation.\"\npattern = \"Python\"",
+   "summary": "This example demonstrates how to use Python's regular expression module to search for occurrences of the word 'Python' in a given text string."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2741,
+  "completion_tokens": 380
+ },
+ "cost_usd": 0.001704,
+ "elapsed_s": 3.5
+}

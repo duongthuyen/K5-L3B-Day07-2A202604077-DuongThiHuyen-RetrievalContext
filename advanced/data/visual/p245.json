@@ -1,0 +1,71 @@
+{
+ "page": 245,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 5.14",
+   "kind": "chart",
+   "title": "Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022. The SMA of window length 13 has been added to the graph in orange.",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Date (monthly from January 2016 to May 2022)",
+    "x-axis range": "January 2016 to May 2022",
+    "y-axis label": "Monthly Consumption of Coal",
+    "units": "thousands (presumably tons or similar, exact unit not specified)",
+    "y-axis range": "0 to 80,000",
+    "legend/series": [
+     "Monthly Consumption (blue line)",
+     "SMA window length 13 (orange line)"
+    ],
+    "values": {
+     "peak consumption": {
+      "value": "around 75,000",
+      "date": "early 2017"
+     },
+     "lowest consumption": {
+      "value": "around 20,000",
+      "date": "early 2020"
+     },
+     "trend": "Overall downward trend in coal consumption with seasonal fluctuations, smoothed by the orange SMA line showing a gradual decline"
+    }
+   },
+   "summary": "This line chart shows the monthly coal consumption for electricity generation in the US from 2016 to 2022, with a 13-month simple moving average (SMA) overlaid in orange to highlight the trend."
+  },
+  {
+   "label": "Figure 5.15",
+   "kind": "image",
+   "title": "Screenshot of Excel Showing Formula for Difference in Column D (Used with permission from Microsoft)",
+   "details": {
+    "shown": "Excel spreadsheet screenshot",
+    "visible columns": [
+     "Month",
+     "Value",
+     "SMA",
+     "Difference"
+    ],
+    "formula visible": "=B3-B2",
+    "cells visible": {
+     "A2": "1/1/2016",
+     "B2": "61983.5",
+     "A3": "2/1/2016",
+     "B3": "50515.64",
+     "A4": "3/1/2016",
+     "B4": "39863.96",
+     "A5": "4/1/2016",
+     "B5": "39064.74",
+     "A6": "5/1/2016",
+     "B6": "45032.13",
+     "A7": "6/1/2016",
+     "B7": "63185.82"
+    }
+   },
+   "summary": "This screenshot shows an Excel sheet with a formula in column D calculating the first-order difference between consecutive values in column B, illustrating how to compute differences in time series data."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2387,
+  "completion_tokens": 549
+ },
+ "cost_usd": 0.001833,
+ "elapsed_s": 4.8
+}

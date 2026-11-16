@@ -1,0 +1,19 @@
+{
+ "page": 315,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": "Python code snippet showing how to import libraries, read data, build a logistic regression model, generate predictions, compute a confusion matrix, and plot it using seaborn and matplotlib.",
+   "summary": "This code snippet demonstrates the process of building and evaluating a logistic regression model with a confusion matrix heatmap visualization."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2387,
+  "completion_tokens": 87
+ },
+ "cost_usd": 0.001094,
+ "elapsed_s": 2.11
+}

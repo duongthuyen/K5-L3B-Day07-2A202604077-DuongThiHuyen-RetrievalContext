@@ -1,0 +1,88 @@
+{
+ "page": 409,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 8.7",
+   "kind": "chart",
+   "title": "Graph A: Representation of First Data Scientist’s Analysis",
+   "details": {
+    "chart type": "bar chart",
+    "x-axis label": "Soft Drink",
+    "x-axis categories": [
+     "Coca-Cola",
+     "Pepsi",
+     "Diet Coke",
+     "Dr. Pepper",
+     "Sprite",
+     "Mountain Dew",
+     "Diet Pepsi",
+     "Coke Zero",
+     "Fanta",
+     "Diet Mountain Dew"
+    ],
+    "y-axis label": "Share of Volume in %",
+    "y-axis units": "%",
+    "y-axis range": "0 to 20",
+    "legend/series": null,
+    "values": {
+     "Coca-Cola": 18.5,
+     "Pepsi": 9,
+     "Diet Coke": 8,
+     "Dr. Pepper": 7.5,
+     "Sprite": 7.3,
+     "Mountain Dew": 7.1,
+     "Diet Pepsi": 3.5,
+     "Coke Zero": 2.8,
+     "Fanta": 2.5,
+     "Diet Mountain Dew": 2.3
+    }
+   },
+   "summary": "This bar chart shows the market share percentages of various soft drink brands with clear labeling and a y-axis scaled from 0 to 20%, facilitating easy comparison of the data."
+  },
+  {
+   "label": "Figure 8.8",
+   "kind": "chart",
+   "title": "Graph B: Representation of Second Data Scientist’s Analysis (Market Share in %)",
+   "details": {
+    "chart type": "bar chart",
+    "x-axis label": null,
+    "x-axis categories": [
+     "Coca-Cola",
+     "Pepsi",
+     "Diet Coke",
+     "Dr. Pepper",
+     "Sprite",
+     "Mountain Dew",
+     "Diet Pepsi",
+     "Coke Zero",
+     "Fanta",
+     "Diet Mountain Dew"
+    ],
+    "y-axis label": null,
+    "y-axis units": "%",
+    "y-axis range": "0 to 100",
+    "legend/series": null,
+    "values": {
+     "Coca-Cola": 18.5,
+     "Pepsi": 9,
+     "Diet Coke": 8,
+     "Dr. Pepper": 7.5,
+     "Sprite": 7.3,
+     "Mountain Dew": 7.1,
+     "Diet Pepsi": 3.5,
+     "Coke Zero": 2.8,
+     "Fanta": 2.5,
+     "Diet Mountain Dew": 2.3
+    }
+   },
+   "summary": "This bar chart shows the same market share data as Figure 8.7 but with a y-axis scaled from 0 to 100% and missing axis labels, making it harder to observe small differences and interpret the data accurately."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2327,
+  "completion_tokens": 549
+ },
+ "cost_usd": 0.001809,
+ "elapsed_s": 5.13
+}

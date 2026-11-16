@@ -1,0 +1,50 @@
+{
+ "page": 445,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Binomial Distribution (n = 20, p = 0.85)",
+   "details": {
+    "chart type": "bar chart",
+    "x-axis label": "Number of Successes",
+    "x-axis range": "0 to 20",
+    "y-axis label": "Probability",
+    "y-axis range": "0.00 to 0.25",
+    "legend/series": null,
+    "values": {
+     "0": 0.0,
+     "1": 0.0,
+     "2": 0.0,
+     "3": 0.0,
+     "4": 0.0,
+     "5": 0.0,
+     "6": 0.0,
+     "7": 0.0,
+     "8": 0.0,
+     "9": 0.0,
+     "10": 0.0,
+     "11": 0.0,
+     "12": 0.0,
+     "13": 0.0,
+     "14": 0.05,
+     "15": 0.1,
+     "16": 0.18,
+     "17": 0.24,
+     "18": 0.23,
+     "19": 0.14,
+     "20": 0.04
+    },
+    "trend": "The distribution is left skewed with the highest probability around 17 successes."
+   }
+  },
+  "summary\": "
+ ],
+ "usage": {
+  "prompt_tokens": 2453,
+  "completion_tokens": 298
+ },
+ "cost_usd": 0.001458,
+ "elapsed_s": 3.9
+}

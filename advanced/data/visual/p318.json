@@ -1,0 +1,19 @@
+{
+ "page": 318,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 6.7",
+   "kind": "table",
+   "title": "Compute the entropy of the system described in the previous example about the probability of a car starting on any given day.",
+   "details": "| Event           | Probability | Term in Entropy Calculation |\n|-----------------|-------------|-----------------------------|\n| Car starts      | 255/256     | (255/256) * log2(255/256)   |\n| Car does not start | 1/256       | (1/256) * log2(1/256)       |\n\nEntropy calculation: H(X) = -[(255/256) log2(255/256) + (1/256) log2(1/256)] = 0.03687",
+   "summary": "This example calculates the entropy of a system where the probability of a car starting is very high (255/256), resulting in a low entropy value of 0.03687, indicating high predictability of the event."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2747,
+  "completion_tokens": 218
+ },
+ "cost_usd": 0.001448,
+ "elapsed_s": 2.45
+}

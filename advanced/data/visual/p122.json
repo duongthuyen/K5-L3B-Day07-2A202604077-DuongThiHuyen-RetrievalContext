@@ -1,0 +1,29 @@
+{
+ "page": 122,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "diagram",
+   "title": "Formulas for variance",
+   "details": {
+    "nodes": [
+     "Sample variance formula: s² = Σ(x - x̄)² / (n - 1)",
+     "Population variance formula: σ² = Σ(x - μ)² / N",
+     "Alternate formula for variance: σ² = Σx² / N - μ²"
+    ],
+    "connections": [
+     "Sample variance formula and Population variance formula are related formulas for variance calculation",
+     "Alternate formula is an alternative computation method for variance"
+    ]
+   },
+   "summary": "This element shows the mathematical formulas for calculating sample variance, population variance, and an alternate formula for variance, explaining the components and differences in denominators."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2680,
+  "completion_tokens": 153
+ },
+ "cost_usd": 0.001317,
+ "elapsed_s": 2.05
+}

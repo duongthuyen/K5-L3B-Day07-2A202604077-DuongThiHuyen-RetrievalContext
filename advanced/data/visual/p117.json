@@ -1,0 +1,19 @@
+{
+ "page": 117,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 3.3",
+   "kind": "table",
+   "title": "Dataset of recently sold homes in a neighborhood and trimmed mean calculation",
+   "details": "| Data Values |\n|-------------|\n| 397900      |\n| 452600      |\n| 507400      |\n| 488300      |\n| 623400      |\n| 573200      |\n| 1689300     |\n| 403890      |\n| 612300      |\n| 599000      |\n| 2345800     |\n| 499000      |\n| 525000      |\n| 675000      |\n| 385000      |\n\nSorted dataset:\n| Sorted Data Values |\n|--------------------|\n| 385000             |\n| 397900             |\n| 403890             |\n| 452600             |\n| 488300             |\n| 499000             |\n| 507400             |\n| 525000             |\n| 573200             |\n| 599000             |\n| 612300             |\n| 623400             |\n| 675000             |\n| 1689300            |\n| 2345800            |\n\nTrimmed dataset (20% trimmed mean, removing 3 lowest and 3 highest):\n| Trimmed Data Values |\n|---------------------|\n| 452600              |\n| 488300              |\n| 499000              |\n| 507400              |\n| 525000              |\n| 573200              |\n| 599000              |\n| 612300              |\n| 623400              |",
+   "summary": "This example shows a dataset of 15 home prices, the calculation of the mean, and the calculation of a 20% trimmed mean by removing the lowest and highest 20% of values. It illustrates how the trimmed mean is more representative by excluding outliers."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2811,
+  "completion_tokens": 434
+ },
+ "cost_usd": 0.001819,
+ "elapsed_s": 3.76
+}

@@ -1,0 +1,19 @@
+{
+ "page": 437,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 9.3",
+   "kind": "table",
+   "title": "Community College Enrollment",
+   "details": "| Year | Enrollment |\n|-------|------------|\n| 1     | 8641       |\n| 2     | 9105       |\n| 3     | 9361       |\n| 4     | 9895       |\n| 5     | 9230       |\n| 6     | 8734       |\n| 7     | 8104       |\n| 8     | 7743       |",
+   "summary": "This table shows the enrollment numbers at a community college over an eight-year period, with yearly enrollment values ranging from 7743 to 9895."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2769,
+  "completion_tokens": 166
+ },
+ "cost_usd": 0.001373,
+ "elapsed_s": 2.54
+}

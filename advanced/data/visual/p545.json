@@ -1,0 +1,19 @@
+{
+ "page": 545,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table D1",
+   "kind": "table",
+   "title": null,
+   "details": "| Python Function       | Description                                                                 | Syntax                                      | First Reference               |\n|-----------------------|-----------------------------------------------------------------------------|---------------------------------------------|------------------------------|\n| print()               | Prints a specified message or specified values to the screen or other output device | print(\"text\") print(x, y)                   | Python Basics for Data Science |\n| pd.read_csv()         | Loads data from a CSV (comma-separated values) file and stores in a DataFrame | pd.read_csv(path_to_csv datafile)             | Python Basics for Data Science |\n| DataFrame.describe()  | Returns a table with basic statistics for a dataset including min, max, mean, count, and quartiles | DataFrame.describe() Where: DataFrame is the name of the DataFrame. | Python Basics for Data Science |\n| DataFrame.iloc[]      | Allows access to data in a DataFrame using row/column integer-based indexes.  | DataFrame.iloc[row, column] Where: DataFrame is the name of the DataFrame. | Python Basics for Data Science |",
+   "summary": "This table summarizes key Python functions used in the textbook, providing their descriptions, syntax, and the first reference section where they are introduced."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2523,
+  "completion_tokens": 273
+ },
+ "cost_usd": 0.001446,
+ "elapsed_s": 3.1
+}

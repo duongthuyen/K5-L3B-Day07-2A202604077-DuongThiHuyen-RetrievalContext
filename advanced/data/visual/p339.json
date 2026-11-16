@@ -1,0 +1,19 @@
+{
+ "page": 339,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 6.10",
+   "kind": "table",
+   "title": "100-Meter Sprint Records",
+   "details": "| Year | Time (seconds) |\n|-------|----------------|\n| 1912  | 10.6           |\n| 1921  | 10.4           |\n| 1930  | 10.3           |\n| 1936  | 10.2           |\n| 1956  | 10.1           |\n| 1960  | 10.0           |\n| 1968  | 9.95           |\n| 1983  | 9.93           |\n| 1988  | 9.92           |\n| 1991  | 9.90           |\n| 1991  | 9.86           |\n| 1994  | 9.85           |\n| 1996  | 9.84           |\n| 1999  | 9.79           |",
+   "summary": "This table lists the world record times for the 100-meter sprint from 1912 to 1999, showing a general trend of decreasing sprint times over the years."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2540,
+  "completion_tokens": 269
+ },
+ "cost_usd": 0.001446,
+ "elapsed_s": 3.45
+}

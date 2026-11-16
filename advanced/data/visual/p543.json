@@ -1,0 +1,19 @@
+{
+ "page": 543,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table C1",
+   "kind": "table",
+   "title": "Review of Python Algorithms",
+   "details": "| Chapter Title | Topic | Description of Algorithm | First Reference |\n|---------------|-------|--------------------------|-----------------|\n|               | Plot predicted values | Using Python to plot future values versus original data for a classification model using recurrent neural networks | Backpropagation |\n|               | Deep learning | Using Python’s TensorFlow library to train and test a classification model using deep learning and assess the accuracy of the model | Backpropagation |\n| **Visualizing Data** | Data visualization using boxplots | Using Python to create boxplots | Encoding Univariate Data |\n|               | Data visualization using histograms | Using Python to create histograms | Encoding Univariate Data |\n|               | Data visualization using Pareto charts | Using Python to create Pareto charts | Encoding Univariate Data |\n|               | Data visualization using time series charts | Using Python to create time series charts | Encoding Data That Change over Time |\n|               | Data visualization for binomial probabilities | Using Python to create graphs associated with the binomial distribution | Graphing Probability Distributions |\n|               | Data visualization for Poisson probabilities | Using Python to create graphs associated with the Poisson distribution | Graphing Probability Distributions |\n|               | Data visualization for normal probabilities | Using Python to create graphs associated with the normal distribution | Graphing Probability Distributions |\n|               | Heatmaps | Using Python to create heatmaps | Geospatial and Heatmap Data Visualization Using Python |\n|               | Scatterplots with colormaps | Using Python to create scatterplots with colormaps | Multivariate and Network Data Visualization Using Python |\n|               | Correlation heatmaps | Using Python to create correlation heatmaps | Multivariate and Network Data Visualization Using Python |\n|               | Data visualization using three-dimensional plots | Using Python to create three-dimensional plots | Multivariate and Network Data Visualization Using Python |",
+   "summary": "This table summarizes various Python algorithms related to data visualization and machine learning, listing the topic, description, and first reference for each algorithm. It serves as a quick reference guide for Python-based data science techniques covered in the textbook."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2555,
+  "completion_tokens": 463
+ },
+ "cost_usd": 0.001763,
+ "elapsed_s": 5.14
+}

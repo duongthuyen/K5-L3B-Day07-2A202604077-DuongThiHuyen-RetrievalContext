@@ -1,0 +1,19 @@
+{
+ "page": 373,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 7.14",
+   "kind": "image",
+   "title": "AI Art Created by Craiyon.",
+   "details": "A 3x3 grid of nine AI-generated images showing surreal paintings of horses sitting at a bar, each drinking a cherry milkshake. Each image varies in style and horse depiction but follows the same prompt.",
+   "summary": "This figure shows nine different AI-generated images created by Craiyon from the prompt 'A surreal painting of a horse sitting at a bar, drinking a cherry milkshake.' It illustrates the variability and creativity of AI art generation."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2670,
+  "completion_tokens": 126
+ },
+ "cost_usd": 0.00127,
+ "elapsed_s": 1.92
+}

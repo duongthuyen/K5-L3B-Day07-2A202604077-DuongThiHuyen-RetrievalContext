@@ -1,0 +1,44 @@
+{
+ "page": 528,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table B3",
+   "kind": "table",
+   "title": "Enrollment Data",
+   "details": "| College Course | Student Enrollment |\n|----------------|--------------------|\n| Physics        | 294                |\n| Chemistry      | 193                |",
+   "summary": "This table shows the student enrollment numbers for two college courses: Physics and Chemistry."
+  },
+  {
+   "label": "Figure B2",
+   "kind": "chart",
+   "title": "Bar Graph of Student Enrollment Data",
+   "details": {
+    "chart type": "bar graph",
+    "x-axis label": "Course Name",
+    "x-axis categories": [
+     "Statistics",
+     "History",
+     "Physics",
+     "Chemistry"
+    ],
+    "y-axis label": "Enrollment",
+    "y-axis units": "students",
+    "y-axis range": "0 to 400",
+    "bars": {
+     "Statistics": 375,
+     "History": 302,
+     "Physics": 294,
+     "Chemistry": 193
+    }
+   },
+   "summary": "This bar graph visualizes student enrollment numbers for four courses, showing Statistics has the highest enrollment and Chemistry the lowest among them."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2515,
+  "completion_tokens": 230
+ },
+ "cost_usd": 0.001374,
+ "elapsed_s": 3.09
+}

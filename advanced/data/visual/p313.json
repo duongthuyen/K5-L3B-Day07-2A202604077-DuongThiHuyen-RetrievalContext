@@ -1,0 +1,40 @@
+{
+ "page": 313,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Multiple Linear Regression",
+   "details": {
+    "chart type": "3D scatter plot with regression plane",
+    "x-axis": {
+     "label": "BARTHAG",
+     "range": "0.0 to 1.0"
+    },
+    "y-axis": {
+     "label": "WAB",
+     "range": "-15 to 10"
+    },
+    "z-axis": {
+     "label": "W",
+     "range": "0 to 25"
+    },
+    "legend/series": [
+     "blue dots: actual data points",
+     "green lines: line segments from actual to predicted points",
+     "colored surface: regression plane"
+    ],
+    "values": "scatter points densely clustered along the regression plane, with W values increasing as BARTHAG increases and WAB varies; green vertical lines connect actual points to predicted points on the plane"
+   },
+   "summary": "This 3D scatter plot visualizes actual data points (blue dots) and their predicted values on a regression plane (colored surface) for a multiple linear regression model with features BARTHAG and WAB predicting W. Green lines connect actual points to their predicted points, illustrating prediction errors."
+  }
+ ],
+ "attempts": 1,
+ "usage": {
+  "prompt_tokens": 2440,
+  "completion_tokens": 238
+ },
+ "cost_usd": 0.001357,
+ "elapsed_s": 3.91
+}

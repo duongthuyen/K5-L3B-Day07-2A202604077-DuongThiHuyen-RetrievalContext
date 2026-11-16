@@ -1,0 +1,19 @@
+{
+ "page": 110,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 2.13",
+   "kind": "table",
+   "title": "Sample of COVID-19 Data Cases Within 23 Days (source: https://data.cdc.gov/Case-Surveillance)",
+   "details": "| Date       | Day     | Cases |\n|------------|---------|-------|\n| 11/8/2021  | Monday  | 10069 |\n| 11/9/2021  | Tuesday | 5297  |",
+   "summary": "This table shows a sample of COVID-19 case counts reported on two consecutive days, illustrating daily case data from CDC surveillance."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2779,
+  "completion_tokens": 137
+ },
+ "cost_usd": 0.001331,
+ "elapsed_s": 4.53
+}

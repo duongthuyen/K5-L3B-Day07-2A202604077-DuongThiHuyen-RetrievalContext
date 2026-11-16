@@ -1,0 +1,45 @@
+{
+ "page": 227,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 5.3",
+   "kind": "chart",
+   "title": "Line Chart of the S&P 500 Index with the Linear Regression (data source: adapted from S&P 500 [SPX] Historical Data)",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Year",
+    "x-axis range": "2013 to 2023",
+    "y-axis label": "S&P Index at End of Year",
+    "y-axis units": "Index value",
+    "y-axis range": "0 to 6000",
+    "legend/series": [
+     "S&P Index values",
+     "Linear regression line"
+    ],
+    "values": {
+     "2013": "approx. 1800",
+     "2014": "approx. 2000",
+     "2015": "approx. 2100",
+     "2016": "approx. 2200",
+     "2017": "approx. 2500",
+     "2018": "approx. 2300",
+     "2019": "approx. 2900",
+     "2020": "approx. 3200",
+     "2021": "approx. 4700",
+     "2022": "approx. 3700",
+     "2023": "approx. 4800"
+    },
+    "trend": "Overall upward trend with fluctuations; linear regression line shows steady increase."
+   }
+  },
+  "summary",
+  "This line chart shows the actual S&P 500 index values at the end of each year from 2013 to 2023 along with a linear regression line fitted to the data. It illustrates how the linear regression captures the overall upward trend despite fluctuations in the index values."
+ ],
+ "usage": {
+  "prompt_tokens": 2667,
+  "completion_tokens": 341
+ },
+ "cost_usd": 0.001612,
+ "elapsed_s": 2.8
+}

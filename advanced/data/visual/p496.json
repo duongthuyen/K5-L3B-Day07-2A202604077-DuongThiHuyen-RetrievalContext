@@ -1,0 +1,19 @@
+{
+ "page": 496,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "PYTHON CODE",
+   "details": "Screenshot of Python code defining a custom PDF class using the fpdf library to create an executive summary report. The code includes class PDF inheriting from FPDF, methods for header, chapter_title, chapter_body, and a function create_executive_summary that generates a PDF with a title and sections. The code snippet shows setting margins, fonts, adding pages, and outputting the PDF file named 'executive_summary.pdf'.",
+   "summary": "This code example demonstrates how to programmatically create an executive summary report in Python using the fpdf library."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2692,
+  "completion_tokens": 139
+ },
+ "cost_usd": 0.001299,
+ "elapsed_s": 1.83
+}

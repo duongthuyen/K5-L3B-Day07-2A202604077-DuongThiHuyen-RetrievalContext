@@ -1,0 +1,19 @@
+{
+ "page": 67,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 2.1",
+   "kind": "image",
+   "title": "Periodic population surveys such as censuses help governments plan resources to supply public services.",
+   "details": "Photo showing people working at a Census 2010 booth or station, with visible signage 'Census 2010' and individuals engaged in census-related activities.",
+   "summary": "This image illustrates the practical aspect of population surveys like censuses, emphasizing their role in helping governments plan resource allocation for public services."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2620,
+  "completion_tokens": 107
+ },
+ "cost_usd": 0.001219,
+ "elapsed_s": 2.26
+}

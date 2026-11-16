@@ -1,0 +1,19 @@
+{
+ "page": 549,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table D1",
+   "kind": "table",
+   "title": "D • Appendix D: Review of Python Functions",
+   "details": "| Python Function | Description | Syntax | First Reference |\n|-----------------|-------------|--------|-----------------|\n| norm.interval() | Calculates confidence interval for the mean when population standard deviation is known, given sample mean, population standard deviation, and sample size (uses normal distribution). Note: Standard error is the standard deviation divided by the square root of the sample size. | norm.interval(conf_level, sample_mean, standard_error) | Statistical Inference and Confidence Intervals |\n| t.interval() | Calculates confidence interval for the mean when population standard deviation is unknown, given sample mean, sample standard deviation, and sample size (uses t-distribution). Note, standard error is the standard deviation divided by the square root of the sample size. | t.interval(conf_level, degrees_freedom, sample_mean, standard_error) | Statistical Inference and Confidence Intervals |",
+   "summary": "This table reviews two Python functions, norm.interval() and t.interval(), used for calculating confidence intervals for the mean under different assumptions about population standard deviation."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2395,
+  "completion_tokens": 247
+ },
+ "cost_usd": 0.001353,
+ "elapsed_s": 3.88
+}

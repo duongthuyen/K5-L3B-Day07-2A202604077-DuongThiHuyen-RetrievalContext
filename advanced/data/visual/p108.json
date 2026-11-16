@@ -1,0 +1,26 @@
+{
+ "page": 108,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 2.11",
+   "kind": "table",
+   "title": "High School Survey",
+   "details": "| Grade Level | Number of Students | Average Rating |\n|-------------|--------------------|----------------|\n| 9th         | 60                 | 8.1            |\n| 10th        | 60                 | 7.4            |\n| 11th        | 60                 | 6.3            |\n| 12th        | 60                 | 6.1            |",
+   "summary": "This table shows the number of students and their average rating by grade level in a high school survey."
+  },
+  {
+   "label": "Table 2.12",
+   "kind": "table",
+   "title": "Neighborhood and Income level Category",
+   "details": "| Neighborhood | Income Level  | Number of Participants |\n|--------------|---------------|-----------------------|\n| Northside    | Low Income    | 35                    |\n| Southside    | Middle Income | 50                    |\n| Eastside     | High Income   | 45                    |",
+   "summary": "This table categorizes 130 participants by neighborhood and income level for a research study on opinions about the city budget."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2626,
+  "completion_tokens": 264
+ },
+ "cost_usd": 0.001473,
+ "elapsed_s": 2.42
+}

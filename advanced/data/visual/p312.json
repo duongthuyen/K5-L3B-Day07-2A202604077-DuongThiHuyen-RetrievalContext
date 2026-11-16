@@ -1,0 +1,32 @@
+{
+ "page": 312,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Multiple Linear Regression Plane and Predicted Values",
+   "details": {
+    "chart type": "3D scatter plot with regression plane surface",
+    "x-axis label": "BARTHAG",
+    "x-axis range": "0.0 to 1.0",
+    "y-axis label": "WAB",
+    "y-axis range": "-15 to 10",
+    "z-axis label": "W",
+    "z-axis range": "2.5 to 22.5",
+    "legend/series": "red 'x' markers for predicted values, translucent plasma-colored regression plane surface",
+    "values": {
+     "red x points": "scattered throughout the 3D space near the regression plane",
+     "regression plane": "smooth surface spanning the x and y ranges with z values computed by z = b + a1*x1 + a2*x2"
+    }
+   },
+   "summary": "This 3D chart shows a multiple linear regression plane fitted to data with two predictors (BARTHAG and WAB) and one response variable (W). Red 'x' marks represent predicted values plotted on the regression plane, illustrating the model's fit."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2442,
+  "completion_tokens": 248
+ },
+ "cost_usd": 0.001374,
+ "elapsed_s": 2.36
+}

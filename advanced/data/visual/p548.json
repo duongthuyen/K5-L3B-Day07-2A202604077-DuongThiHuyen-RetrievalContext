@@ -1,0 +1,19 @@
+{
+ "page": 548,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table D1",
+   "kind": "table",
+   "title": null,
+   "details": "| Python Function | Description | Syntax | First Reference |\n|-----------------|-------------|--------|-----------------|\n| norm.cdf() | Calculates probabilities associated with the normal distribution (returns the area under the normal probability density function to the left of a specified measurement) | norm.cdf(x, mu, std)\nWhere:\nx is the measurement of interest,\nmu is the mean of the normal distribution,\nstd is the standard deviation of the normal distribution. | Discrete and Continuous Probability Distributions |\n| t.ppf() | Generates the value of the t-distribution corresponding to a specified area under the t-distribution curve and specified degrees of freedom | t.ppf(area to left, degrees of freedom) | Statistical Inference and Confidence Intervals |\n| bootstrap() | Performs bootstrap process to generate confidence interval | bootstrap(data, statistic, confidence_level, number_resamples) | Statistical Inference and Confidence Intervals |",
+   "summary": "This table summarizes Python functions useful for statistical analysis, including norm.cdf for normal distribution probabilities, t.ppf for t-distribution quantiles, and bootstrap for generating confidence intervals."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2410,
+  "completion_tokens": 258
+ },
+ "cost_usd": 0.001377,
+ "elapsed_s": 3.27
+}

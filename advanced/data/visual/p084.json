@@ -1,0 +1,19 @@
+{
+ "page": 84,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "PYTHON CODE",
+   "details": "Python code snippet that imports the csv library, creates a dictionary named 'presidents' with keys as ordered numbers (strings) and values as lists containing the president's name and state of birth. The dictionary includes entries for presidents 1 through 25 with their respective states. The code is intended to demonstrate how to store data in a structured format for future use, analysis, or display.",
+   "summary": "This code example shows how to create a dictionary in Python to store data about US presidents and their states of birth, illustrating a method for data storage using Python's csv library."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2864,
+  "completion_tokens": 145
+ },
+ "cost_usd": 0.001378,
+ "elapsed_s": 1.79
+}

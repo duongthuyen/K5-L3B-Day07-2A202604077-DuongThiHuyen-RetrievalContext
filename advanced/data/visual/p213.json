@@ -1,0 +1,54 @@
+{
+ "page": 213,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 4.10",
+   "kind": "chart",
+   "title": "Shape of the F-Distribution",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "x",
+    "x-axis range": "0 to 4",
+    "y-axis label": "f(x)",
+    "y-axis range": "0 to 0.85",
+    "units": null,
+    "legend/series": null,
+    "values": [
+     {
+      "x": 0,
+      "y": 0
+     },
+     {
+      "x": 0.8,
+      "y": 0.85
+     },
+     {
+      "x": 1,
+      "y": 0.83
+     },
+     {
+      "x": 2,
+      "y": 0.4
+     },
+     {
+      "x": 3,
+      "y": 0.1
+     },
+     {
+      "x": 4,
+      "y": 0.02
+     }
+    ],
+    "trend": "The distribution is skewed to the right, rising sharply to a peak near x=0.8 and then gradually declining towards zero as x increases."
+   }
+  },
+  "summary"
+ ],
+ "usage": {
+  "prompt_tokens": 2558,
+  "completion_tokens": 222
+ },
+ "cost_usd": 0.001378,
+ "elapsed_s": 2.42
+}

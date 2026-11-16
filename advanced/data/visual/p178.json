@@ -1,0 +1,19 @@
+{
+ "page": 178,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 4.12",
+   "kind": "decorative",
+   "title": "Example 4.12",
+   "details": "This is a boxed example illustrating a problem and solution related to hypothesis testing.",
+   "summary": "This example explains how to write null and alternative hypotheses for a claim about the proportion of smokers in the US population."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2867,
+  "completion_tokens": 79
+ },
+ "cost_usd": 0.001273,
+ "elapsed_s": 1.85
+}

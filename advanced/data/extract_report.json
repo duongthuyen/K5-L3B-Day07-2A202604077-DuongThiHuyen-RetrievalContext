@@ -1,0 +1,76 @@
+{
+  "pdf": "data-science.pdf",
+  "sha256": "6b47205459a2f4e25a2b2a86369e674a26a5ae566a4cc428dd31047670692398",
+  "total_pages": 569,
+  "indexed_pages": 557,
+  "skipped": [
+    {
+      "page": 2,
+      "chars": 0,
+      "reason": "blank/near-empty page"
+    },
+    {
+      "page": 10,
+      "chars": 153,
+      "reason": "blank/near-empty page"
+    },
+    {
+      "page": 18,
+      "chars": 46,
+      "reason": "blank/near-empty page"
+    },
+    {
+      "page": 112,
+      "chars": 55,
+      "reason": "blank/near-empty page"
+    },
+    {
+      "page": 149,
+      "chars": 70,
+      "reason": "blank/near-empty page"
+    },
+    {
+      "page": 222,
+      "chars": 66,
+      "reason": "blank/near-empty page"
+    },
+    {
+      "page": 386,
+      "chars": 55,
+      "reason": "blank/near-empty page"
+    },
+    {
+      "page": 413,
+      "chars": 174,
+      "reason": "blank/near-empty page"
+    },
+    {
+      "page": 470,
+      "chars": 62,
+      "reason": "blank/near-empty page"
+    },
+    {
+      "page": 538,
+      "chars": 92,
+      "reason": "blank/near-empty page"
+    },
+    {
+      "page": 558,
+      "chars": 83,
+      "reason": "blank/near-empty page"
+    },
+    {
+      "page": 569,
+      "chars": 13,
+      "reason": "blank/near-empty page"
+    }
+  ],
+  "pages_with_tables": 109,
+  "pages_with_visuals": 386,
+  "tables": 118,
+  "visual_regions": 619,
+  "captions": {
+    "figure": 139,
+    "table": 95
+  }
+}

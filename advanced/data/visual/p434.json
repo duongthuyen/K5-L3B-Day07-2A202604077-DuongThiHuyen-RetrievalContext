@@ -1,0 +1,19 @@
+{
+ "page": 434,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 9.2",
+   "kind": "table",
+   "title": "Smartphone Defect Data",
+   "details": "| Failure Category                  | Frequency (Number of Defects) |\n|---------------------------------|-------------------------------|\n| Cracked screen                  | 1348                          |\n| Power button nonfunctional      | 739                           |\n| Scratches on case              | 1543                          |\n| Does not charge                | 1410                          |\n| Volume controls nonfunctional  | 595                           |",
+   "summary": "This table lists five categories of smartphone defects along with the number of defects recorded for each category over a one-month period."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2625,
+  "completion_tokens": 144
+ },
+ "cost_usd": 0.00128,
+ "elapsed_s": 2.16
+}

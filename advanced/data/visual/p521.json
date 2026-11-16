@@ -1,0 +1,19 @@
+{
+ "page": 521,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table A4",
+   "kind": "table",
+   "title": "Revenue versus Advertising for a Fortune 500 Company ($000s) Monthly Amount Spent on Advertising and the Monthly Revenue for a Fortune 500 Company",
+   "details": "| Month | Amount Spent on Advertising | Revenue |\n|-------|-----------------------------|---------|\n| Jan   | 49                          | 12210   |\n| Feb   | 145                         | 17590   |\n| Mar   | 57                          | 13215   |\n| Apr   | 153                         | 19200   |\n| May   | 92                          | 14600   |\n| Jun   | 83                          | 14100   |\n| Jul   | 117                         | 17100   |\n| Aug   | 142                         | 18400   |\n| Sep   | 69                          | 14100   |\n| Oct   | 106                         | 15500   |\n| Nov   | 109                         | 16300   |\n| Dec   | 121                         | 17020   |",
+   "summary": "This table shows the monthly amount spent on advertising and the corresponding monthly revenue (in thousands of dollars) for a Fortune 500 company over 12 months."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2550,
+  "completion_tokens": 280
+ },
+ "cost_usd": 0.001468,
+ "elapsed_s": 3.18
+}

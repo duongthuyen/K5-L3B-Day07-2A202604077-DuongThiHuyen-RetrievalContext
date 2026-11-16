@@ -1,0 +1,26 @@
+{
+ "page": 130,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 3.14",
+   "kind": "table",
+   "title": "Polling organization survey results and probability calculation",
+   "details": "| Description                          | Value |\n|------------------------------------|-------|\n| Sample size (number of people)     | 400   |\n| Number in favor of increased funding | 312   |\n| Probability of being in favor (P(A)) | 312/400 = 0.78 = 78% |",
+   "summary": "This example shows how to calculate the relative frequency probability of an event based on polling data, specifically the probability that a randomly selected person favors increased funding for local schools."
+  },
+  {
+   "label": "EXAMPLE 3.15",
+   "kind": "table",
+   "title": "Medical knee surgery success probability calculation",
+   "details": "| Description                          | Value |\n|------------------------------------|-------|\n| Number of knee surgeries performed | 200   |\n| Number of successful surgeries     | 188   |\n| Probability of success (P(A))       | 188/200 = 0.94 = 94% |",
+   "summary": "This example illustrates calculating the probability of success for knee surgery based on historical data of surgeries performed and their outcomes."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2761,
+  "completion_tokens": 263
+ },
+ "cost_usd": 0.001525,
+ "elapsed_s": 2.57
+}

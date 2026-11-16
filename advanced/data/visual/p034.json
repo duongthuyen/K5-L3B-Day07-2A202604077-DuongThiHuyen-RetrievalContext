@@ -1,0 +1,19 @@
+{
+ "page": 34,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 1.8",
+   "kind": "image",
+   "title": "ch1-courseEvaluations.xml with the First Three Entries Only, Opened with Visual Studio Code",
+   "details": "Screenshot of XML code showing the first three entries of CourseEvaluations.xml. The XML structure includes a root tag <Members>, containing three <Evaluation> blocks. Each <Evaluation> block has four child tags: <Semester>, <Instructor>, <Classsize>, and <Rating>. The values shown are: 1) Semester: Fall 2020, Instructor: A, Classsize: 100, Rating: Not recommended at all; 2) Semester: Spring 2021, Instructor: A, Classsize: 50, Rating: Highly recommended; 3) Semester: Fall 2021, Instructor: B, Classsize: 120, Rating: Not quite recommended.",
+   "summary": "This screenshot illustrates the XML format for listing dataset items, showing how each evaluation entry is structured with tags and values, demonstrating the hierarchical nature of XML for data representation."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2789,
+  "completion_tokens": 225
+ },
+ "cost_usd": 0.001476,
+ "elapsed_s": 2.59
+}

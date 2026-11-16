@@ -1,0 +1,21 @@
+{
+  "config": "R8_hybrid_neighbours",
+  "method": "hybrid",
+  "top_k": 3,
+  "budget": 6000,
+  "neighbours": true,
+  "use_filter": true,
+  "note": "Improvement 5: hybrid RRF + prev/next chunk of same page, budget 6000",
+  "split": "test2",
+  "N": 8,
+  "hit1": 8,
+  "hit3": 8,
+  "context_hit": 8,
+  "errors": 0,
+  "avg_context_chars": 4944,
+  "median_latency_ms": 55.5,
+  "cost_usd": 0.0,
+  "hit1_rate": 1.0,
+  "hit3_rate": 1.0,
+  "context_hit_rate": 1.0
+}

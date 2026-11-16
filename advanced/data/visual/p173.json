@@ -1,0 +1,19 @@
+{
+ "page": 173,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.5",
+   "kind": "table",
+   "title": "Python Functions for Confidence Intervals",
+   "details": "| Usage | Python Function Name | Syntax |\n|---|---|---|\n| Calculate confidence interval for the mean when population standard deviation is known, given sample mean, population standard deviation, and sample size (uses normal distribution). | norm.interval() | norm.interval(conf_level, sample_mean, standard_dev/sqrt(n)) |\n| Calculate confidence interval for the mean when population standard deviation is unknown, given sample mean, sample standard deviation, and sample size (uses t-distribution). | t.interval() | t.interval(conf_level, degrees_freedom, sample_mean, standard_dev/sqrt(n)) |\n| Calculate confidence interval for a proportion (uses normal distribution). | proportion_confint() | proportion_confint(success, sample_size, 1 - confidence_level) |",
+   "summary": "This table lists Python functions used to calculate confidence intervals for different scenarios: known population standard deviation, unknown population standard deviation, and proportions, along with their syntax."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2503,
+  "completion_tokens": 231
+ },
+ "cost_usd": 0.001371,
+ "elapsed_s": 2.83
+}

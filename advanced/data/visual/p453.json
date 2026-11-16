@@ -1,0 +1,46 @@
+{
+ "page": 453,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Heatmap of Number of Passengers",
+   "details": {
+    "chart type": "heatmap",
+    "x-axis label": "Month",
+    "x-axis categories": [
+     "Jan",
+     "Feb",
+     "Mar",
+     "Apr",
+     "May",
+     "Jun",
+     "Jul",
+     "Aug",
+     "Sep",
+     "Oct",
+     "Nov",
+     "Dec"
+    ],
+    "y-axis label": "Year",
+    "y-axis range": [
+     1949,
+     1960
+    ],
+    "color scale": {
+     "units": "number of passengers",
+     "range": "approximately 100 to 600+"
+    },
+    "values": "Color intensity increases from blue (low) to red (high). The highest values occur in July and August of 1960, reaching above 600 passengers. The number of passengers generally increases year to year, with summer months (July and August) consistently showing higher passenger counts."
+   },
+   "summary": "This heatmap visualizes the number of passengers by month and year from 1949 to 1960. It shows a clear upward trend in passenger numbers over the years and highlights that the summer months of July and August tend to have the highest passenger counts."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2492,
+  "completion_tokens": 250
+ },
+ "cost_usd": 0.001397,
+ "elapsed_s": 3.53
+}

@@ -1,0 +1,38 @@
+{
+ "page": 449,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Normal Distribution for Blood Pressure",
+   "details": {
+    "chart type": "line plot",
+    "x-axis": {
+     "label": "Blood Pressure",
+     "range": "60 to 180"
+    },
+    "y-axis": {
+     "label": "Probability Density",
+     "units": null,
+     "range": "0.0000 to 0.0200"
+    },
+    "legend/series": null,
+    "values": {
+     "peak": {
+      "y": 0.02,
+      "x": "around 120"
+     },
+     "trend": "bell-shaped curve, symmetric around 120"
+    }
+   },
+   "summary": "This line plot shows the normal distribution curve for blood pressure, illustrating the probability density across a range of blood pressure values, peaking near 120."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2396,
+  "completion_tokens": 166
+ },
+ "cost_usd": 0.001224,
+ "elapsed_s": 2.46
+}

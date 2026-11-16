@@ -1,0 +1,26 @@
+{
+ "page": 526,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table B1",
+   "kind": "table",
+   "title": "Portfolio of XYZ Shares",
+   "details": "| Date Purchased | Purchase Price ($) | Number of Shares Purchased |\n|----------------|--------------------|----------------------------|\n| January 17     | 78                 | 200                        |\n| February 10    | 122                | 300                        |\n| March 23       | 131                | 500                        |\n| **Total**      |                    | **1000**                   |",
+   "summary": "This table shows the purchase dates, purchase prices, and number of shares purchased for a financial portfolio containing 1,000 shares of XYZ Corporation."
+  },
+  {
+   "label": "Table B2",
+   "kind": "table",
+   "title": "List of Common R Statistical Commands",
+   "details": "| R Command       | Result                          |\n|-----------------|--------------------------------|\n| mean()          | Calculates the arithmetic mean |\n| median()        | Calculates the median           |\n| min()           | Calculates the minimum value    |\n| max()           | Calculates the maximum value    |\n| weighted.mean() | Calculates the weighted mean   |",
+   "summary": "This table lists common R statistical commands along with their descriptions, useful for data analysis in R."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2456,
+  "completion_tokens": 274
+ },
+ "cost_usd": 0.001421,
+ "elapsed_s": 3.03
+}

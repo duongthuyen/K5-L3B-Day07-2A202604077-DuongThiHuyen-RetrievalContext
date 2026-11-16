@@ -1,0 +1,19 @@
+{
+ "page": 169,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.4",
+   "kind": "table",
+   "title": "Ages of 20 Randomly",
+   "details": "| Student ID | Student Age |\n|------------|-------------|\n| 001        | 22          |\n| 002        | 24          |\n| 003        | 21          |\n| 004        | 34          |",
+   "summary": "This table shows the ages of a random sample of 20 students, with the first four entries displayed, used for constructing a 90% confidence interval using bootstrapping."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2798,
+  "completion_tokens": 129
+ },
+ "cost_usd": 0.001326,
+ "elapsed_s": 1.66
+}

@@ -52,8 +52,10 @@ def convert_day6_questions() -> list[dict]:
 
 def main() -> None:
     chunks = export_chunks()
-    questions = convert_day6_questions() + load_json(BENCH_DIR / "new_test_and_unanswerable.json")
-    unanswerable = load_json(BENCH_DIR / "unanswerable.json")
+    test2 = load_json(BENCH_DIR / "test2.json")  # created after test was viewed (citation-id fix)
+    questions = (convert_day6_questions() + load_json(BENCH_DIR / "new_test_and_unanswerable.json")
+                 + [q for q in test2 if q.get("answerable", True)])
+    unanswerable = load_json(BENCH_DIR / "unanswerable.json") + [q for q in test2 if q.get("answerable") is False]
     for q in questions:
         for g in q["gold"]:
             if not any(is_hit(c, [g]) for c in chunks):

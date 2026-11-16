@@ -1,0 +1,45 @@
+{
+ "page": 359,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 7.10",
+   "kind": "diagram",
+   "title": "Unrolling an RNN",
+   "details": {
+    "nodes": [
+     "Input",
+     "w",
+     "b",
+     "Activation Function",
+     "Output 1",
+     "w_c",
+     "Output 2",
+     "Output 3"
+    ],
+    "connections": [
+     "Input -> w",
+     "w -> b",
+     "b -> Activation Function",
+     "Activation Function -> Output 1 (z)",
+     "Activation Function -> w_c",
+     "w_c -> b (next layer)",
+     "b -> Activation Function (next layer)",
+     "Activation Function -> Output 2 (z)",
+     "Activation Function -> w_c (next layer)",
+     "w_c -> b (next layer)",
+     "b -> Activation Function (next layer)",
+     "Activation Function -> Output 3 (z)",
+     "Activation Function -> (To more copies)"
+    ]
+   }
+  },
+  "summary\": "
+ ],
+ "usage": {
+  "prompt_tokens": 2646,
+  "completion_tokens": 191
+ },
+ "cost_usd": 0.001364,
+ "elapsed_s": 2.3
+}

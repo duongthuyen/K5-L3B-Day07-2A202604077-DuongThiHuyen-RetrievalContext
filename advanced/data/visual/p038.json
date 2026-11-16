@@ -1,0 +1,19 @@
+{
+ "page": 38,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 1.14",
+   "kind": "image",
+   "title": "The Third Item in the Jeopardy Dataset",
+   "details": "Screenshot of a JSON formatted data item with keys and values: category: 'EVERYBODY TALKS ABOUT IT...', air_date: '2004-12-31', question: 'The city of Yuma in this state has a record average of 4,055 hours of sunshine each year', value: '$200', answer: 'Arizona', round: 'Jeopardy!', show_number: '4680'.",
+   "summary": "This figure shows the third item in the Jeopardy dataset formatted in JSON, illustrating the structure and attributes of a single data entry."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2701,
+  "completion_tokens": 155
+ },
+ "cost_usd": 0.001328,
+ "elapsed_s": 1.95
+}

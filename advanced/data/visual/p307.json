@@ -1,0 +1,39 @@
+{
+ "page": 307,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": null,
+   "details": {
+    "chart type": "scatter plot with multiple regression lines",
+    "x-axis label": "BARTHAG",
+    "x-axis range": "0.0 to 1.0",
+    "y-axis label": "W",
+    "y-axis range": "0 to 26",
+    "legend/series": "blue dots: data points; red lines: multiple regression lines from bootstrapping",
+    "values": {
+     "data points": "scatter of W vs BARTHAG values",
+     "regression lines": "many red lines closely clustered showing variation in intercepts and slopes"
+    }
+   },
+   "summary": "This scatter plot shows data points of W versus BARTHAG with multiple red regression lines overlaid, illustrating the variation in linear models obtained through bootstrapping."
+  },
+  {
+   "label": null,
+   "kind": "image",
+   "title": "PYTHON CODE",
+   "details": {
+    "shown text": "import statistics as stats # for mean and standard deviation\na_bar = stats.mean(intercepts)\na_std = stats.stdev(intercepts)\nb_bar = stats.mean(slopes)\nb_std = stats.stdev(slopes)\n\nprint(\"Intercept: Mean = %1.3f, St.Dev. = %1.3f \" % (a_bar, a_std) )\nprint(\"Slope: Mean = %1.3f, St.Dev. = %1.3f \" % (b_bar, b_std) )\n\nThe resulting output will look like this:\n\nIntercept: Mean = 4.947, St.Dev. = 0.645\nSlope: Mean = 14.489, St.Dev. = 1.267"
+   },
+   "summary": "This code snippet demonstrates how to calculate the mean and standard deviation of intercepts and slopes from bootstrapped linear regression models using Python's statistics library."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2464,
+  "completion_tokens": 398
+ },
+ "cost_usd": 0.001622,
+ "elapsed_s": 3.5
+}

@@ -1,0 +1,65 @@
+{
+ "page": 242,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 5.3",
+   "kind": "table",
+   "title": "First-Order Difference Time Series for the Data in Table 5.1 (source: adapted from https://www.nasdaq.com/market-activity/index/spx/historical)",
+   "details": "| Term n | S&P Index Term x_n | n^th Term of Δ(x_n) |\n|--------|-------------------|---------------------|\n| 10     | 3839.5            | 3839.5 - 4766.18 = -926.68 |\n| 11     | 4769.83           | 4769.83 - 3839.5 = 930.33 |",
+   "summary": "This table shows the S&P Index values for terms 10 and 11 along with their first-order differences, illustrating how the difference series is calculated from the original data."
+  },
+  {
+   "label": "Figure 5.11",
+   "kind": "chart",
+   "title": "Comparison of S&P Index Values and Their Difference Series (data source: adapted from S&P 500 [SPX] Historical Data)",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Year",
+    "x-axis range": "2013 to 2023",
+    "y-axis label": "Value",
+    "y-axis units": "Index points",
+    "y-axis range": "-2000 to 6000",
+    "legend/series": [
+     "SP 500",
+     "First-Order Difference"
+    ],
+    "values": {
+     "SP 500": {
+      "2013": 1848,
+      "2014": 2059,
+      "2015": 2043,
+      "2016": 2239,
+      "2017": 2673,
+      "2018": 2506,
+      "2019": 3230,
+      "2020": 3756,
+      "2021": 4766,
+      "2022": 3939,
+      "2023": 4850
+     },
+     "First-Order Difference": {
+      "2013": 0,
+      "2014": 211,
+      "2015": -16,
+      "2016": 196,
+      "2017": 434,
+      "2018": -167,
+      "2019": 724,
+      "2020": 526,
+      "2021": 1010,
+      "2022": -827,
+      "2023": 911
+     }
+    }
+   },
+   "summary": "This line chart compares the S&P 500 index values from 2013 to 2023 with their first-order difference series, showing trends in the original data and the changes between consecutive years."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2605,
+  "completion_tokens": 545
+ },
+ "cost_usd": 0.001914,
+ "elapsed_s": 4.97
+}

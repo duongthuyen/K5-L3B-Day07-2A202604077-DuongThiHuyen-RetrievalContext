@@ -1,0 +1,19 @@
+{
+ "page": 281,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 6.2",
+   "kind": "table",
+   "title": "Cubic Model Predictions",
+   "details": "| x  | Prediction, Cubic Model | Actual Value, y |\n|-----|------------------------|----------------|\n| 10  | 18                     | 4              |\n| 12  | 45                     | 5              |",
+   "summary": "This table shows the predictions of the cubic model compared to the actual values for two test data points, illustrating that the cubic model predictions are significantly off from the actual values, demonstrating overfitting."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2772,
+  "completion_tokens": 129
+ },
+ "cost_usd": 0.001315,
+ "elapsed_s": 1.55
+}

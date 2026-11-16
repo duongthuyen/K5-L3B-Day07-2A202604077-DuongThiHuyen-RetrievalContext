@@ -1,0 +1,19 @@
+{
+ "page": 348,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 7.6",
+   "kind": "diagram",
+   "title": "The model for the neural network",
+   "details": "Diagram of a simple neural network with four input nodes labeled SL (sepal length), SW (sepal width), PL (petal length), and PW (petal width), connected to one output neuron node. The connections represent weights and biases used in the perceptron learning rule with hyperbolic tangent activation function.",
+   "summary": "This diagram illustrates the structure of a simple neural network used to classify Iris flowers based on four input features, showing the flow from inputs to a single output neuron."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2721,
+  "completion_tokens": 137
+ },
+ "cost_usd": 0.001308,
+ "elapsed_s": 2.29
+}

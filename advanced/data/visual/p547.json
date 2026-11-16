@@ -1,0 +1,19 @@
+{
+ "page": 547,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table D1",
+   "kind": "table",
+   "title": "D • Appendix D: Review of Python Functions",
+   "details": "| Python Function | Description | Syntax | First Reference |\n|-----------------|-------------|--------|-----------------|\n| re.findall() | Returns all non-overlapping matches of a specified pattern in a string | re.findall(pattern, string) | Web Scraping and Social Media Data Collection |\n| re.search() | Checks if a specified pattern appears in a string | re.search(pattern, string) | Web Scraping and Social Media Data Collection |\n| binom.pmf() | Calculates the probability mass function (PMF) for a binomial distribution. It gives the probability of having exactly x successes in n trials with success probability p. | binom.pmf(x, n, p) Where: x is the number of successes in the experiment, n is the number of trials in the experiment, p is the probability of success. | Discrete and Continuous Probability Distributions |\n| round() | Rounds a numeric result to a specified level of precision | round(number, digits) | Discrete and Continuous Probability Distributions |\n| poisson.pmf() | Calculates probabilities associated with the Poisson distribution | poisson.pmf(x, mu) Where: x is the number of events of interest, mu is the mean of the Poisson distribution. | Discrete and Continuous Probability Distributions |",
+   "summary": "This table summarizes several Python functions relevant to data science, including their descriptions, syntax, and references for further reading. It covers functions for pattern matching, probability distributions, and rounding numeric results."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2480,
+  "completion_tokens": 342
+ },
+ "cost_usd": 0.001539,
+ "elapsed_s": 3.44
+}

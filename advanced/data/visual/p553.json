@@ -1,0 +1,19 @@
+{
+ "page": 553,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table D1",
+   "kind": "table",
+   "title": "D • Appendix D: Review of Python Functions",
+   "details": "| Python Function      | Description                                                                                     | Syntax                                               | First Reference                          |\n|----------------------|-------------------------------------------------------------------------------------------------|------------------------------------------------------|-----------------------------------------|\n| KMeans()             | Sets up a k-means clustering model (Use model.fit() to fit the model to a dataset.)               | KMeans(n_clusters=k)                                 | Classification Using Machine Learning   |\n| DBSCAN()             | Sets up a DBSCAN (Density-Based Spatial Clustering of Applications with Noise) model (Use model.fit() to fit the model to a dataset.) | DBSCAN(options)                                    | Classification Using Machine Learning   |\n| confusion_matrix()    | Used to visualize the performance of a model by comparing actual and predicted values            | confusion_matrix(target_values, predicted_values)   | Classification Using Machine Learning   |\n| LinearRegression()   | Fits a linear regression model to data                                                          | LinearRegression().fit(feature_matrix, target_vector) | Machine Learning in Regression Analysis |\n| predict()            | Used on trained machine learning models to generate predictions for new data points              | predict(feature_matrix)                             | Machine Learning in Regression Analysis |",
+   "summary": "This table summarizes key Python functions used in machine learning, including their descriptions, syntax, and first reference in the textbook."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2406,
+  "completion_tokens": 293
+ },
+ "cost_usd": 0.001431,
+ "elapsed_s": 2.96
+}

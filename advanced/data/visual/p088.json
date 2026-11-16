@@ -1,0 +1,77 @@
+{
+ "page": 88,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 2.2",
+   "kind": "chart",
+   "title": "US Retail Employment with Outliers",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Date",
+    "x-axis range/categories": [
+     "21-Mar-1938",
+     "15-Dec-1943",
+     "7-Sep-1946",
+     "7-Jun-1951",
+     "28-Nov-1957",
+     "24-Aug-1962",
+     "14-Feb-1965",
+     "6-Nov-1971",
+     "2-May-1976",
+     "23-Oct-1979",
+     "15-Apr-1984",
+     "9-Jan-1987",
+     "2-Jul-1990",
+     "28-Mar-1995",
+     "16-Dec-1999",
+     "14-Jun-2003",
+     "10-Mar-2009",
+     "31-Aug-2012",
+     "27-Feb-2017",
+     "17-Nov-2019",
+     "13-Aug-2020",
+     "9-May-2020"
+    ],
+    "y-axis label": "Number of Employers × 1,000",
+    "y-axis units": "thousands",
+    "y-axis range": [
+     0,
+     10000
+    ],
+    "legend/series": null,
+    "values": {
+     "peak outlier": {
+      "date": "28-Mar-1990",
+      "value": 9500
+     },
+     "typical range": {
+      "min": 1000,
+      "max": 8000
+     },
+     "notable jump": {
+      "from": 5400,
+      "to": 9500,
+      "date": "28-Mar-1990"
+     }
+    },
+    "trend": "Overall increasing trend in number of employers from 1939 to 2019 with seasonal fluctuations and one significant outlier spike in 1990."
+   }
+  },
+  "summary': ",
+  "This line chart shows the monthly number of employers in the US retail construction field from 1939 to 2019, highlighting a significant outlier spike in March 1990 that exceeds the typical employment range.",
+  {
+   "label": "Table 2.3",
+   "kind": "table",
+   "title": null,
+   "details": "| Date       | Number of Employers × 1000 |\n|------------|----------------------------|\n| 1/1/1990   | 4974                       |\n| 2/1/1990   | 4933                       |\n| 3/1/1990   | 4989                       |",
+   "summary": "This table lists the number of employers for three months in early 1990, used to calculate a median replacement value for the outlier in March 1990."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2563,
+  "completion_tokens": 544
+ },
+ "cost_usd": 0.001896,
+ "elapsed_s": 5.66
+}

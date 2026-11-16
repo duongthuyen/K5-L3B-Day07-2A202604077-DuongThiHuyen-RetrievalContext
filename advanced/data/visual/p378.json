@@ -1,0 +1,19 @@
+{
+ "page": 378,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 7.15",
+   "kind": "image",
+   "title": "Image of a Musician Created by OpenArt.",
+   "details": "Photorealistic image of a woman playing an upright bass. The image resembles a real photo but contains numerous details that do not make sense, typical of AI-generated images. The woman is wearing a blue dress, standing in front of a microphone and music stand with sheet music visible. The image was generated using OpenArt from the prompt 'A woman playing upright bass.'",
+   "summary": "This AI-generated image illustrates common problems with detail in AI-created material, such as inconsistencies and errors despite photorealistic appearance, highlighting challenges in AI image generation."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2738,
+  "completion_tokens": 152
+ },
+ "cost_usd": 0.001338,
+ "elapsed_s": 1.97
+}

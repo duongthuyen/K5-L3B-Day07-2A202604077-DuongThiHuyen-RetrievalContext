@@ -53,6 +53,12 @@ def _parse_final(text: str) -> dict[str, Any] | None:
         return None
 
 
+def canon_id(cid: str) -> str:
+    """'B:doc:p239:c2' -> 'B:doc:p0239:c02' (format only; never invents a chunk)."""
+    m = re.fullmatch(r"\s*\[?(.+?):p(\d+):c(\d+)\]?\s*", cid)
+    return f"{m.group(1)}:p{int(m.group(2)):04d}:c{int(m.group(3)):02d}" if m else cid.strip()
+
+
 def cost_usd(model: str, p_tok: int, c_tok: int) -> float:
     pin, pout = PRICE_PER_M.get(model, (0.0, 0.0))
     return round(p_tok / 1e6 * pin + c_tok / 1e6 * pout, 6)
@@ -137,8 +143,13 @@ def run_agent(question: str, retriever, *, filters: dict | None = None, top_k: i
         return {**base, "status": "abstain", "answer": ABSTAIN_TEXT, "citations": [], "abstain_reason": "unparseable_final"}
     cits = [c for c in final.get("citations", []) if isinstance(c, str)]
     # also accept ids cited inline but missing from the list
-    inline = re.findall(r"\[([^\[\]]+:p\d{4}:c\d{2})\]", final["answer"])
-    cits = list(dict.fromkeys(cits + inline))
+    inline = re.findall(r"\[([^\[\],]+:p\d+:c\d+)\]", final["answer"])
+    # Fix (dev error q11): the model sometimes drops zero padding (p221 instead of p0221).
+    # Canonicalize only the number format; the id must still match a chunk actually shown.
+    raw = list(dict.fromkeys(cits + inline))
+    cits = list(dict.fromkeys(canon_id(c) for c in raw))
+    if raw != cits:
+        events.append({"event": "citation_ids_canonicalized", "raw": raw, "canonical": cits})
     if final.get("abstain") is True or not cits:
         return {**base, "status": "abstain", "answer": final["answer"], "citations": [],
                 "abstain_reason": "model_abstained" if final.get("abstain") else "no_citations"}

@@ -1,0 +1,19 @@
+{
+ "page": 520,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table A3",
+   "kind": "table",
+   "title": "Built-In Functions for Binomial and Poisson Distributions in MS Excel",
+   "details": "| Probability Distribution | Excel Command    | Usage                                               |\n|--------------------------|------------------|-----------------------------------------------------|\n| Binomial                 | =BINOMIAL.DIST   | =BINOMIAL.DIST(Number_s, Trials, Probability_S, Cumulative) |\n| Poisson                  | =POISSON         | =POSSON(X, Mean, Cumulative)                         |",
+   "summary": "This table lists the Excel built-in functions for analyzing binomial and Poisson probability distributions, showing the command names and their usage formats."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2798,
+  "completion_tokens": 151
+ },
+ "cost_usd": 0.001361,
+ "elapsed_s": 2.48
+}

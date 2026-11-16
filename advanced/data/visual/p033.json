@@ -1,0 +1,33 @@
+{
+ "page": 33,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 1.5",
+   "kind": "table",
+   "title": "ch1-courseEvaluations.csv Opened with Microsoft Excel (Used with permission from Microsoft)",
+   "details": "| Semester   | Instructor | Class Size | Rating                 |\n|------------|------------|------------|------------------------|\n| Fall 2020  | A          | 100        | Not recommended at all |\n| Spring 2021| A          | 50         | Highly recommended     |\n| Fall 2021  | B          | 120        | Not quite recommended  |\n| Spring 2022| B          | 40         | Highly recommended     |\n| Fall 2022  | A          | 110        | Recommended            |\n| Spring 2023| B          | 50         | Highly recommended     |",
+   "summary": "This table shows course evaluation data including semester, instructor, class size, and rating for various terms."
+  },
+  {
+   "label": "Figure 1.6",
+   "kind": "image",
+   "title": "The dataset spreadsheet file for Chapter 1 (Used with permission from Microsoft)",
+   "details": "Screenshot of a spreadsheet file with multiple tabs named 'ch1-courseEvaluations.csv', 'ch1-cancerdoc.csv', and 'ch1-riris.csv'. The visible tab 'ch1-courseEvaluations.csv' shows columns Semester, Instructor, Class Size, and Rating with data similar to Figure 1.5. Tabs are shown at the bottom of the spreadsheet window.",
+   "summary": "This image illustrates the spreadsheet file for Chapter 1 containing multiple dataset tabs, demonstrating how datasets are organized within the file."
+  },
+  {
+   "label": "Figure 1.7",
+   "kind": "image",
+   "title": "CourseEvaluations.json Opened with Visual Studio Code",
+   "details": "Screenshot of JSON code representing the course evaluations dataset. The JSON consists of multiple objects with keys: Semester, Instructor, Class Size, and Rating, matching the data from Figures 1.5 and 1.6. The JSON syntax highlights include curly braces, key-value pairs, and string values.",
+   "summary": "This image shows the JSON representation of the course evaluations dataset, illustrating how the tabular data can be encoded in JSON format."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2597,
+  "completion_tokens": 501
+ },
+ "cost_usd": 0.00184,
+ "elapsed_s": 5.85
+}

@@ -1,0 +1,19 @@
+{
+ "page": 40,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": "This page contains no charts, diagrams, tables, or informative images. It consists entirely of text blocks and references.",
+   "summary": "The page provides textual information about specialized programming languages, data visualization tools, evolving professional standards in data science, and an introduction to data science with Python."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2790,
+  "completion_tokens": 83
+ },
+ "cost_usd": 0.001249,
+ "elapsed_s": 1.94
+}

@@ -1,0 +1,19 @@
+{
+ "page": 530,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE B.2",
+   "kind": "decorative",
+   "title": "Example box with problem and solution for R probability distribution commands",
+   "details": "Text box containing example problem and solution for using R commands pnorm and pbinom for probability distributions.",
+   "summary": "This example box illustrates how to use R commands pnorm and pbinom to calculate probabilities for normal and binomial distributions, including specific probability calculations for newborn birth weights."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2618,
+  "completion_tokens": 101
+ },
+ "cost_usd": 0.001209,
+ "elapsed_s": 1.98
+}

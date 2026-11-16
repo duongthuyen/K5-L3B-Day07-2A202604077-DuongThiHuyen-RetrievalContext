@@ -1,0 +1,106 @@
+{
+ "page": 463,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Correlation Heatmap for Variables in Car Crashes Dataset",
+   "details": {
+    "chart type": "heatmap",
+    "x-axis": [
+     "total",
+     "speeding",
+     "alcohol",
+     "not_distracted",
+     "no_previous",
+     "ins_premium",
+     "ins_losses"
+    ],
+    "y-axis": [
+     "total",
+     "speeding",
+     "alcohol",
+     "not_distracted",
+     "no_previous",
+     "ins_premium",
+     "ins_losses"
+    ],
+    "values": [
+     [
+      1.0,
+      0.61,
+      0.85,
+      0.83,
+      0.96,
+      -0.2,
+      -0.04
+     ],
+     [
+      0.61,
+      1.0,
+      0.67,
+      0.59,
+      0.57,
+      -0.08,
+      -0.07
+     ],
+     [
+      0.85,
+      0.67,
+      1.0,
+      0.73,
+      0.78,
+      -0.17,
+      -0.11
+     ],
+     [
+      0.83,
+      0.59,
+      0.73,
+      1.0,
+      0.75,
+      -0.17,
+      -0.08
+     ],
+     [
+      0.96,
+      0.57,
+      0.78,
+      0.75,
+      1.0,
+      -0.16,
+      -0.01
+     ],
+     [
+      -0.2,
+      -0.08,
+      -0.17,
+      -0.17,
+      -0.16,
+      1.0,
+      0.62
+     ],
+     [
+      -0.04,
+      -0.07,
+      -0.11,
+      -0.08,
+      -0.01,
+      0.62,
+      1.0
+     ]
+    ],
+    "color scale": "red gradient from light (low correlation) to dark red (high correlation)",
+    "notable features": "Dark red diagonal from upper left to lower right indicating perfect correlation (1.0) of variables with themselves."
+   },
+   "summary": "This heatmap visualizes the correlation coefficients between variables in a car crashes dataset, showing strong positive correlations among most variables except insurance premium and losses, which have negative or moderate correlations with others."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2604,
+  "completion_tokens": 449
+ },
+ "cost_usd": 0.00176,
+ "elapsed_s": 5.16
+}

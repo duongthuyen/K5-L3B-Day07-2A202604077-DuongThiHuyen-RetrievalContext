@@ -1,0 +1,40 @@
+{
+ "page": 454,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 9.8",
+   "kind": "chart",
+   "title": "Choropleth Graph Showing Cases of COVID-19",
+   "details": {
+    "chart type": "choropleth map",
+    "x-axis": "Geographic regions (countries of the world)",
+    "x-axis range/categories": "World map with countries outlined",
+    "y-axis": "COVID-19 cases",
+    "y-axis units": "number of cases",
+    "y-axis range": "0 to 50,000+",
+    "legend/series": "Color shading from light peach to dark red indicating increasing number of COVID-19 cases",
+    "values": {
+     "No data": "white/gray",
+     "0": "very light peach",
+     "50": "light peach",
+     "100": "slightly darker peach",
+     "500": "light orange",
+     "1,000": "orange",
+     "5,000": "darker orange",
+     "10,000": "red-orange",
+     "50,000": "dark red"
+    },
+    "trend": "Darker color shading correlates with higher numbers of COVID-19 cases; notable darker regions include the United States, China, and parts of Europe."
+   }
+  },
+  "summary': ",
+  "This choropleth map visually represents the distribution of COVID-19 cases worldwide, with darker colors indicating higher case counts. It demonstrates how geographic mapping can reveal patterns and clusters of disease spread."
+ ],
+ "usage": {
+  "prompt_tokens": 2575,
+  "completion_tokens": 291
+ },
+ "cost_usd": 0.001496,
+ "elapsed_s": 3.51
+}

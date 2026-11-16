@@ -1,0 +1,26 @@
+{
+ "page": 271,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 5.8",
+   "kind": "table",
+   "title": "Measures of Error",
+   "details": "| Model   | MAE   | RMSE  | MAPE  |\n|---------|-------|-------|-------|\n| Model 1 | 103.1 | 131.2 | 0.097 |\n| Model 2 | 251.7 | 207.9 | 0.136 |\n| Model 3 | 110.7 | 129.0 | 0.115 |\n| Model 4 | 89.8  | 125.3 | 0.191 |",
+   "summary": "This table compares four time series models using three error metrics: MAE, RMSE, and MAPE, showing the numerical error values for each model."
+  },
+  {
+   "label": null,
+   "kind": "chart",
+   "title": null,
+   "details": "Four line charts labeled I, II, III, IV arranged in a 2x2 grid.\n- Each chart has x-axis labeled 'Time' ranging from 0 to 200.\n- Each chart has y-axis labeled 'Value' ranging from -6 to 6.\n- Chart I: fluctuates mostly between 0 and 4 with some dips below 0.\n- Chart II: fluctuates widely, with values ranging roughly between -6 and 6, showing high volatility especially after time 100.\n- Chart III: fluctuates mostly between -2 and 2 with no strong trend.\n- Chart IV: shows a clear cyclical pattern with peaks near 4 and troughs near -5, indicating seasonality.",
+   "summary": "These four time series plots illustrate different patterns of data over time, including stable, volatile, low variance, and seasonal behaviors."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2419,
+  "completion_tokens": 383
+ },
+ "cost_usd": 0.00158,
+ "elapsed_s": 3.8
+}

@@ -1,0 +1,19 @@
+{
+ "page": 68,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 2.1",
+   "kind": "table",
+   "title": "Fields Where Observation Methods Are Used",
+   "details": "| Field      | Data Collected By           | Purpose                                                      |\n|------------|----------------------------|--------------------------------------------------------------|\n| Education  | Teachers                   | To monitor and assess student behavior and learning progress in the classroom |\n| Psychology | Therapists and psychologists | To gather information about their clients' behavior, thoughts, and emotions |",
+   "summary": "This table summarizes examples of fields that use observational data, specifying who collects the data and the purpose of the data collection."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2844,
+  "completion_tokens": 131
+ },
+ "cost_usd": 0.001347,
+ "elapsed_s": 2.11
+}

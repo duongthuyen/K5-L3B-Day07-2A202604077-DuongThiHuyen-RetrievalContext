@@ -1,0 +1,19 @@
+{
+ "page": 289,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "Python code for logistic regression",
+   "details": "Code snippet showing import of LogisticRegression from sklearn.linear_model, defining data as a list of feature-label pairs, separating features X and labels y, building and fitting a logistic regression model, printing coefficients and accuracy.",
+   "summary": "This code example demonstrates how to implement logistic regression using Python's sklearn library, including data preparation, model fitting, and output of coefficients and accuracy."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2719,
+  "completion_tokens": 105
+ },
+ "cost_usd": 0.001256,
+ "elapsed_s": 1.43
+}

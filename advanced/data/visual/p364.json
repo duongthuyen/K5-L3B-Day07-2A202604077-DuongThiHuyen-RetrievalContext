@@ -1,0 +1,19 @@
+{
+ "page": 364,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 7.2",
+   "kind": "table",
+   "title": "Predicted vs. Actual Values of Corn Height",
+   "details": "| | Predicted ŷ | Actual (Target) y |\n|---|---|---|\n| Units: m | (1.18, 1.67, 1.12, 1.38, 1.42) | (1.07, 1.46, 1.05, 1.43, 1.45) |\n| Units: cm | (118, 167, 112, 138, 142) | (107, 146, 105, 143, 145) |",
+   "summary": "This table shows predicted and actual maximum heights of corn plants in two units: meters and centimeters. The data is the same but expressed in different units to illustrate how MSE changes with scale."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2780,
+  "completion_tokens": 198
+ },
+ "cost_usd": 0.001429,
+ "elapsed_s": 2.58
+}

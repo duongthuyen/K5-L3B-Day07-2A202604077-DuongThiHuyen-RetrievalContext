@@ -1,0 +1,43 @@
+{
+ "page": 160,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.2",
+   "kind": "table",
+   "title": "Typical Values of z_c for Various Confidence Levels",
+   "details": "| Confidence Level   | Value of z_c |\n|--------------------|--------------|\n| 80% confidence     | 1.280        |\n| 90% confidence     | 1.645        |\n| 95% confidence     | 1.960        |\n| 99% confidence     | 2.575        |",
+   "summary": "This table lists typical critical z-values corresponding to common confidence levels used in constructing confidence intervals."
+  },
+  {
+   "label": "Figure 4.2",
+   "kind": "chart",
+   "title": "Critical Values of z_c Marked on Standard Normal Curve for 95% Confidence Interval",
+   "details": {
+    "chart type": "normal distribution curve",
+    "x-axis label": "z",
+    "x-axis range": "approximately -3 to +3",
+    "y-axis label": "Probability density",
+    "units": "none",
+    "range": "unreadable",
+    "legend/series": null,
+    "values": {
+     "critical values": {
+      "-z_c": -1.96,
+      "+z_c": 1.96
+     },
+     "shaded area": 0.95,
+     "tail areas": 0.025
+    },
+    "trend": "Symmetric bell curve with shaded central area of 0.95 between -1.96 and 1.96, tails each with area 0.025."
+   },
+   "summary": "This figure shows the standard normal distribution curve with critical z-values marked at -1.96 and 1.96, illustrating the 95% confidence interval where the central 95% area is shaded."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2635,
+  "completion_tokens": 364
+ },
+ "cost_usd": 0.001636,
+ "elapsed_s": 3.49
+}

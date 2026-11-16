@@ -1,0 +1,19 @@
+{
+ "page": 198,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.14",
+   "kind": "table",
+   "title": "Nike Stock Price ($) and Value of S&P 500 over a One-Year Time Period",
+   "details": "| Date    | S&P 500 (x) | Nike Stock Price (y) |\n|---------|-------------|---------------------|\n| Month 1 | 2912.43     | 87.18               |\n| Month 2 | 3044.31     | 98.58               |\n| Month 3 | 3100.29     | 98.05               |\n| Month 4 | 3271.12     | 97.61               |\n| Month 5 | 3500.31     | 111.89              |\n| Month 6 | 3363.00     | 125.54              |\n| Month 7 | 3269.96     | 120.08              |\n| Month 8 | 3621.63     | 134.70              |\n| Month 9 | 3756.07     | 141.47              |\n| Month 10| 3714.24     | 133.59              |",
+   "summary": "This table shows monthly data for the S&P 500 index values and corresponding Nike stock prices over a one-year period, used to analyze the correlation between the two variables."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2909,
+  "completion_tokens": 304
+ },
+ "cost_usd": 0.00165,
+ "elapsed_s": 2.82
+}

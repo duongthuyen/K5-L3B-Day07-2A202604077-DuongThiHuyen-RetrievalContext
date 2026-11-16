@@ -1,0 +1,19 @@
+{
+ "page": 523,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure B1",
+   "kind": "image",
+   "title": "R Help Menu Based on help.start()",
+   "details": "Screenshot of the R Help Menu interface showing sections: Manuals, Reference, and Miscellaneous Material. Under Manuals: 'An Introduction to R', 'Writing R Extensions', 'R Data Import/Export', 'The R Language Definition', 'R Installation and Administration', 'R Internals'. Under Reference: 'Packages', 'Search Engine & Keywords'. Under Miscellaneous Material: 'About R', 'License', 'NEWS', 'Authors', 'Frequently Asked Questions', 'User Manuals', 'Resources', 'Thanks', 'Technical papers'. The top shows 'Statistical Data Analysis' with the R logo.",
+   "summary": "This figure shows the R Help Menu interface that appears when typing help.start() at the R prompt, providing access to manuals, references, and miscellaneous materials for R users."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2619,
+  "completion_tokens": 193
+ },
+ "cost_usd": 0.001356,
+ "elapsed_s": 2.54
+}

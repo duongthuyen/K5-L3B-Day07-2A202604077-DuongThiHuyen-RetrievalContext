@@ -1,0 +1,19 @@
+{
+ "page": 1,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": "Cover page with title and OpenStax logo",
+   "summary": "This is the cover page of the textbook 'Principles of Data Science' by OpenStax, featuring the title and publisher logo on a blue background."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2167,
+  "completion_tokens": 71
+ },
+ "cost_usd": 0.00098,
+ "elapsed_s": 2.15
+}

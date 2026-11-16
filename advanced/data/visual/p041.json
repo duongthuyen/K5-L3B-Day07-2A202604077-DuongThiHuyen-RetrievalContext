@@ -1,0 +1,26 @@
+{
+ "page": 41,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 1.15",
+   "kind": "image",
+   "title": "Install Google Colaboratory (Colab)",
+   "details": "Screenshot showing Google Drive interface with a highlighted '+ New' button and a search bar in Google Workspace Marketplace with 'Colaboratory' typed in.",
+   "summary": "This image shows the steps to install Google Colaboratory by clicking New > More in Google Drive and searching for 'Colaboratory' in the app store."
+  },
+  {
+   "label": "Figure 1.16",
+   "kind": "image",
+   "title": "Google Colaboratory Notebook",
+   "details": "Screenshot of a new, empty Jupyter Notebook interface in Google Colaboratory. Visible elements include the notebook name 'Untitled.ipynb', menu options (File, Edit, View, Insert, Runtime, Tools, Help), buttons '+ Code' and '+ Text', and a gray cell area with a play button.",
+   "summary": "This image shows the interface of a new Jupyter Notebook in Google Colaboratory, highlighting the cell area where code or text can be entered and run."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2682,
+  "completion_tokens": 233
+ },
+ "cost_usd": 0.001446,
+ "elapsed_s": 2.47
+}

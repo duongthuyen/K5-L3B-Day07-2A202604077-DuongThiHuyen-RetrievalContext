@@ -1,0 +1,19 @@
+{
+ "page": 137,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "table",
+   "title": "From the example, the following probabilities are known:",
+   "details": "| Probability | Value |\n|-------------|-------|\n| P(A)        | 0.03  |\n| P(A')       | 0.97  |\n\n| Conditional Probability | Value |\n|-------------------------|-------|\n| P(B|A)                  | 0.75  |\n| P(B|A')                 | 0.15  |",
+   "summary": "This table lists the known probabilities and conditional probabilities used in the Bayes' Theorem example, including the probability of having cancer and the probability of a positive test result given cancer or no cancer."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2755,
+  "completion_tokens": 159
+ },
+ "cost_usd": 0.001356,
+ "elapsed_s": 1.73
+}

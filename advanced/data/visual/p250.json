@@ -1,0 +1,19 @@
+{
+ "page": 250,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 5.4",
+   "kind": "table",
+   "title": "Quarterly Revenues for Kayak and Canoe Rentals (all columns in $). Columns for detrended data, seasonal",
+   "details": "| k | Quarter      | Revenues | Detrended $z_k$ | Seas. Comp. $\\hat{s}_k$ | Seasonally Adj. $x_n - \\hat{s}_n$ |\n|---|--------------|----------|-----------------|-------------------------|----------------------------------|\n| 1 | 2021 Spring  | 1799     | -476.42         | -13.08                  | 1812.08                          |\n| 2 | 2021 Summer  | 3304     | 1028.58         | 1261.92                 | 2042.08                          |\n| 3 | 2021 Fall    | 1279     | -996.42         | -484.08                 | 1763.08                          |\n| 4 | 2021 Winter  | 999      | -1276.42        | -764.75                 | 1763.75                          |\n| 5 | 2022 Spring  | 2284     | 8.58            | -13.08                  | 2297.08                          |\n| 6 | 2022 Summer  | 3459     | 1183.58         | 1261.92                 | 2197.08                          |",
+   "summary": "This table shows the quarterly revenues for Walt's Water Adventures along with detrended data, seasonal components, and seasonally adjusted values. It illustrates the process of detrending and seasonal adjustment for time series data with seasonality of period 4."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2750,
+  "completion_tokens": 380
+ },
+ "cost_usd": 0.001708,
+ "elapsed_s": 3.38
+}

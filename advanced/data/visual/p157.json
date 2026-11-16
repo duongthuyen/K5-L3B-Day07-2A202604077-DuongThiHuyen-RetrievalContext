@@ -1,0 +1,19 @@
+{
+ "page": 157,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.1",
+   "kind": "table",
+   "title": "Population Parameters and Point Estimates for Mean and Proportion",
+   "details": "| Population Parameter | Point Estimate |\n|----------------------|----------------|\n| **Mean**             | Population mean is denoted as μ. | Point estimate is the sample mean x̄. |\n| **Proportion**       | Population proportion is denoted as p. | Point estimate is the sample proportion p̂. |",
+   "summary": "This table summarizes the notation and definitions for population parameters (mean and proportion) and their corresponding point estimates from sample data."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2760,
+  "completion_tokens": 136
+ },
+ "cost_usd": 0.001322,
+ "elapsed_s": 1.84
+}

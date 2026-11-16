@@ -1,0 +1,47 @@
+{
+ "page": 511,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure A9",
+   "kind": "diagram",
+   "title": "A Menu of Various Graphs Available within MS Excel (Used with permission from Microsoft)",
+   "details": {
+    "nodes": [
+     "Column",
+     "Line",
+     "Pie",
+     "Bar",
+     "Area",
+     "X Y (Scatter)",
+     "Map",
+     "Stock",
+     "Surface",
+     "Radar",
+     "Treemap",
+     "Sunburst",
+     "Histogram",
+     "Box & Whisker",
+     "Waterfall",
+     "Funnel",
+     "Combo"
+    ],
+    "connections": "Listed vertically as menu options with icons representing each graph type"
+   },
+   "summary": "This figure shows the menu of various graph types available in MS Excel for data visualization, illustrating the range of chart options users can select."
+  },
+  {
+   "label": "Figure A10",
+   "kind": "image",
+   "title": "MS Excel’s Bar Chart Icon (Used with permission from Microsoft)",
+   "details": "Screenshot of the Excel interface showing the Insert tab selected, with the Bar Chart dropdown open and the Clustered Column icon highlighted with a red circle. Visible are other ribbon options like Home, Draw, Page Layout, Formulas, Data, Review, View, and Add-ins. Also visible is part of a spreadsheet with columns labeled Name, Team, Position, Height(inches), Weight(pounds), Age.",
+   "summary": "This figure demonstrates how to locate and select the Clustered Column bar chart icon within the Insert tab of MS Excel to create a bar chart."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2343,
+  "completion_tokens": 304
+ },
+ "cost_usd": 0.001424,
+ "elapsed_s": 3.51
+}

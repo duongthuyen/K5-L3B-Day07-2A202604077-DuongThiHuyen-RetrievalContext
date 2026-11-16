@@ -1,0 +1,19 @@
+{
+ "page": 241,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 5.3",
+   "kind": "table",
+   "title": "First-Order Difference Time Series for the Data in Table 5.1",
+   "details": "| Term n | S&P Index Term x_n | n^th Term of Δ(x_n) |\n|--------|-------------------|---------------------|\n| 1      | 1848.36           | N/A                 |\n| 2      | 2058.9            | 2058.9 - 1848.36 = 210.54 |\n| 3      | 2043.94           | 2043.94 - 2058.9 = -14.96 |\n| 4      | 2238.83           | 2238.83 - 2043.94 = 194.89 |\n| 5      | 2673.61           | 2673.61 - 2238.83 = 434.78 |\n| 6      | 2506.85           | 2506.85 - 2673.61 = -166.76 |\n| 7      | 3230.78           | 3230.78 - 2506.85 = 723.93 |\n| 8      | 3756.07           | 3756.07 - 3230.78 = 525.29 |\n| 9      | 4766.18           | 4766.18 - 3756.07 = 1010.11 |",
+   "summary": "This table shows the first-order difference time series calculated from the original S&P Index data (Table 5.1). It lists the original terms and the differences between consecutive terms, illustrating how differencing reduces the number of terms by one and measures the rate of change in the series."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2550,
+  "completion_tokens": 395
+ },
+ "cost_usd": 0.001652,
+ "elapsed_s": 4.52
+}

@@ -1,0 +1,19 @@
+{
+ "page": 551,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table D1",
+   "kind": "table",
+   "title": "Appendix D: Review of Python Functions",
+   "details": "| Python Function | Description | Syntax | First Reference |\n|-----------------|-------------|--------|-----------------|\n| linregress() | Generates a linear regression model and provides slope, y-intercept, and other regression-related output | linregress(x_data, y_data) | Correlation and Linear Regression Analysis |\n| f_oneway() | Returns both the F test statistic and the p-value for the one-way ANOVA hypothesis test | f_oneway(Array1, Array2, Array3, …) | Analysis of Variance (ANOVA) |\n| plot() | Generates a time series plot | plot(dataframe) | Introduction to Time Series Analysis |\n| rolling() | Provides rolling window calculations | rolling(window=window) | Time Series Forecasting Methods |\n| mean() | Computes the average of a dataset | mean(dataset) | Time Series Forecasting Methods |\n| diff() | Computes the first-order difference of data in a window | diff(dataframe) | Time Series Forecasting Methods |\n| plot_acf() | Plots the ACF (autocorrelation function) for a time series, up to lag L | Plot_acf(time_series_data, lags=L) | Time Series Forecasting Methods |",
+   "summary": "This table summarizes various Python functions used in data science, including their descriptions, syntax, and references to where they are first discussed in the textbook."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2456,
+  "completion_tokens": 323
+ },
+ "cost_usd": 0.001499,
+ "elapsed_s": 3.34
+}

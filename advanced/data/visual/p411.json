@@ -1,0 +1,70 @@
+{
+ "page": 411,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 8.10",
+   "kind": "chart",
+   "title": "Data-based Clinical Trials Participants",
+   "details": {
+    "chart type": "bar chart",
+    "x-axis label": "Age Groups",
+    "x-axis categories": [
+     "18–26",
+     "27–36",
+     "37–46",
+     "47–56",
+     "57–66",
+     "67+"
+    ],
+    "y-axis label": "Number of Participants",
+    "y-axis units": "participants",
+    "y-axis range": "0 to 140",
+    "legend/series": [
+     "18–26, 100 participants",
+     "27–36, 120 participants",
+     "37–46, 107 participants",
+     "47–56, 71 participants",
+     "57–66, 89 participants",
+     "67+, 113 participants"
+    ],
+    "values": {
+     "18–26": {
+      "count": 100,
+      "percentage": "16%"
+     },
+     "27–36": {
+      "count": 120,
+      "percentage": "20%"
+     },
+     "37–46": {
+      "count": 107,
+      "percentage": "15%"
+     },
+     "47–56": {
+      "count": 71,
+      "percentage": "12%"
+     },
+     "57–66": {
+      "count": 89,
+      "percentage": "15%"
+     },
+     "67+": {
+      "count": 113,
+      "percentage": "19%"
+     }
+    },
+    "trend": "The largest group is 27–36 years old (120 participants, 20%), followed by 67+ (113 participants, 19%). The smallest group is 47–56 (71 participants, 12%). Overall, participant counts vary moderately across age groups."
+   }
+  },
+  "summary",
+  "This bar chart shows the distribution of 500 clinical trial participants across six age groups, highlighting the number and percentage of participants in each group."
+ ],
+ "attempts": 2,
+ "usage": {
+  "prompt_tokens": 2742,
+  "completion_tokens": 373
+ },
+ "cost_usd": 0.001694,
+ "elapsed_s": 35.01
+}

@@ -1,0 +1,19 @@
+{
+ "page": 469,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 9.9",
+   "kind": "table",
+   "title": "Social Media Subscribers",
+   "details": "| Year | Subscribers (in millions) |\n|-------|---------------------------|\n| 1     | 6.3                       |\n| 2     | 7.9                       |\n| 3     | 11.0                      |\n| 4     | 9.8                       |\n| 5     | 8.2                       |\n| 6     | 6.4                       |\n| 7     | 4.9                       |",
+   "summary": "This table shows the number of subscribers (in millions) to a social media site over a 7-year period, providing data for creating a time series chart and analyzing trends."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2451,
+  "completion_tokens": 172
+ },
+ "cost_usd": 0.001256,
+ "elapsed_s": 2.5
+}

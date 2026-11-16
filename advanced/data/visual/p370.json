@@ -1,0 +1,19 @@
+{
+ "page": 370,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 7.12",
+   "kind": "image",
+   "title": "ChatGPT Conversation",
+   "details": "Screenshot of a conversation between a user and ChatGPT. The user asks: 'Hi! Tell me a little bit about yourself.' ChatGPT responds explaining it is an AI developed by OpenAI, describing its function to assist users by generating human-like text based on input. The user then asks: 'That's great! Could you tell me more about how you understand language?' ChatGPT explains it understands language through natural language processing (NLP), listing key components such as Tokenization and Word Embeddings (the rest of the explanation is partially visible but unreadable).",
+   "summary": "This figure shows an example conversation with ChatGPT, illustrating how the AI introduces itself and explains its understanding of language through NLP concepts."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2594,
+  "completion_tokens": 176
+ },
+ "cost_usd": 0.001319,
+ "elapsed_s": 2.58
+}

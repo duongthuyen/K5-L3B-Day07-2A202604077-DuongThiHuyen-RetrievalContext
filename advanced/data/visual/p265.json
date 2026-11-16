@@ -1,0 +1,19 @@
+{
+ "page": 265,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 5.7",
+   "kind": "table",
+   "title": "Data Needed to Compute the MAE, RMSE, MAPE, and SMAPE for EMA Smoothing Model",
+   "details": "| Year | S&P Index at Year-End | EMA Estimate | Abs. Residuals | (εₙ)² | |εᵢ / xᵢ| | 2|εᵢ| / (|xᵢ| + |x̂ᵢ|) |\n|-------|-----------------------|--------------|---------------|---------|----------|---------------------|\n| 2013  | 1848.36               | 1848.36      | 0             | 0       | 0        | 0                   |\n| 2014  | 2058.9                | 1848.36      | 210.54        | 44327.09| 0.102    | 0.108               |\n| 2015  | 2043.94               | 2006.27      | 37.67         | 1419.03 | 0.018    | 0.019               |\n| 2016  | 2238.83               | 2034.52      | 204.31        | 41742.58| 0.091    | 0.096               |\n| 2017  | 2673.61               | 2187.75      | 485.86        | 236059.94| 0.182   | 0.2                 |\n| 2018  | 2506.85               | 2552.15      | 45.3          | 2052.09 | 0.018    | 0.018               |\n| 2019  | 3230.78               | 2518.17      | 712.61        | 507813.01| 0.221   | 0.248               |\n| 2020  | 3756.07               | 3052.63      | 703.44        | 494827.83| 0.187   | 0.207               |\n| 2021  | 4766.18               | 3580.21      | 1185.97       | 1406524.84| 0.249  | 0.284               |\n| 2022  | 3839.5                | 4469.69      | 630.19        | 397139.44| 0.164   | 0.152               |\n| 2023  | 4769.83               | 3997.05      | 772.78        | 597188.93| 0.162   | 0.176               |\n| N/A   | N/A                   | Average:     | 453.52        | 339008.62| 0.127   | 0.137               |",
+   "summary": "This table presents yearly data of the S&P Index at year-end, EMA estimates, absolute residuals, squared residuals, and relative error metrics used to compute MAE, RMSE, MAPE, and SMAPE for the EMA smoothing model. It shows the errors between predicted and actual values over years 2013 to 2023, with averages at the bottom."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2927,
+  "completion_tokens": 740
+ },
+ "cost_usd": 0.002355,
+ "elapsed_s": 5.84
+}

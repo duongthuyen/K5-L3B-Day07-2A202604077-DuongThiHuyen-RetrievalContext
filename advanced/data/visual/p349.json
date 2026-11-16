@@ -1,0 +1,59 @@
+{
+ "page": 349,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 7.6",
+   "kind": "diagram",
+   "title": "Simple Perceptron Neural Network Model. Here, x₁, x₂, x₃, x₄ are the inputs, w₁, w₂, w₃, w₄ represent the weights, and b represents the bias. The output, or response, is y.",
+   "details": {
+    "nodes": [
+     "x₁",
+     "x₂",
+     "x₃",
+     "x₄",
+     "b",
+     "tanh",
+     "y"
+    ],
+    "connections": [
+     {
+      "from": "x₁",
+      "to": "b",
+      "label": "w₁"
+     },
+     {
+      "from": "x₂",
+      "to": "b",
+      "label": "w₂"
+     },
+     {
+      "from": "x₃",
+      "to": "b",
+      "label": "w₃"
+     },
+     {
+      "from": "x₄",
+      "to": "b",
+      "label": "w₄"
+     },
+     {
+      "from": "b",
+      "to": "tanh"
+     },
+     {
+      "from": "tanh",
+      "to": "y"
+     }
+    ]
+   },
+   "summary": "This diagram illustrates a simple perceptron neural network model with four inputs (x₁ to x₄), each multiplied by corresponding weights (w₁ to w₄), combined with a bias (b), and passed through a tanh activation function to produce the output y."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2716,
+  "completion_tokens": 300
+ },
+ "cost_usd": 0.001566,
+ "elapsed_s": 3.07
+}

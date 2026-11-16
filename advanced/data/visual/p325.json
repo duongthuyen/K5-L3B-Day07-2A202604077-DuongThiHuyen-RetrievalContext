@@ -1,0 +1,19 @@
+{
+ "page": 325,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 6.9",
+   "kind": "table",
+   "title": "Reclassified Test Points",
+   "details": "| X   | Y    | Label | Predicted Label |\n|-----|------|-------|-----------------|\n| 9.9 | 2.5  | Blue  | Blue            |\n| 15.1| 12.6 | Red   | Red             |\n| 3.5 | 10.2 | Red   | Red             |",
+   "summary": "This table shows three test data points with their X and Y coordinates, their true labels (Blue or Red), and the predicted labels by the model, demonstrating perfect classification on this test set."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2811,
+  "completion_tokens": 155
+ },
+ "cost_usd": 0.001372,
+ "elapsed_s": 2.38
+}

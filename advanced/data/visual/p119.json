@@ -1,0 +1,19 @@
+{
+ "page": 119,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 3.1",
+   "kind": "table",
+   "title": "Customer Survey Results for Customer Survey Rating",
+   "details": "| Customer Service Rating | Number of Respondents |\n|-----------------------|-----------------------|\n| Excellent             | 267                   |\n| Very Good             | 410                   |\n| Good                  | 392                   |\n| Fair                  | 107                   |\n| Poor                  | 18                    |",
+   "summary": "This table shows the number of respondents for each customer service rating category from a restaurant survey. The highest frequency is for 'Very Good' with 410 respondents, indicating the mode of the survey data."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2733,
+  "completion_tokens": 145
+ },
+ "cost_usd": 0.001325,
+ "elapsed_s": 2.32
+}

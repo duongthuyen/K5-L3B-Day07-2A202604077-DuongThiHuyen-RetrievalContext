@@ -1,0 +1,19 @@
+{
+ "page": 372,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 7.3",
+   "kind": "table",
+   "title": "Brief History of NLP",
+   "details": "| Year | Development |\n|-------|-------------|\n| 2020  | OpenAI released *GPT-3* (Generative Pretrained Transformer 3), an even larger and more powerful language model, with up to 175 billion parameters. |\n| 2022  | *ChatGPT*, a variant of GPT-3 fine-tuned for conversational tasks, was released, gaining widespread attention for its impressive performance in generating humanlike responses. |\n| 2023  | Enhancements focused on improving LLM efficiency, accuracy, and scalability. Release of *GPT-4*, which incorporates more training with human feedback, continuous improvement from real-world data, and more robust quality control. |",
+   "summary": "This table summarizes key developments in natural language processing (NLP) from 2020 to 2023, highlighting major releases and improvements in language models by OpenAI."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2632,
+  "completion_tokens": 216
+ },
+ "cost_usd": 0.001398,
+ "elapsed_s": 2.72
+}

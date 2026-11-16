@@ -87,6 +87,12 @@ class Day7Tests(unittest.TestCase):
         self.assertEqual(r["status"], "abstain")
         self.assertIn("citations_not_in_context", r["abstain_reason"])
 
+    def test_agent_canonicalizes_unpadded_citation(self):
+        client = fake_client([("tool", "append"), ("final", json.dumps({"answer": "append() [d:p1:c0]", "citations": ["d:p1:c0"], "abstain": False}))])
+        r = run_agent("q?", FakeDense(), client=client)
+        self.assertEqual(r["status"], "answered")
+        self.assertEqual(r["citations"], ["d:p0001:c00"])
+
     def test_agent_search_limit_forces_final(self):
         client = fake_client([("tool", "a"), ("tool", "b"), ("final", json.dumps({"answer": "Không đủ bằng chứng để trả lời.", "citations": [], "abstain": True}))])
         r = run_agent("q?", FakeDense(), client=client, max_searches=2)

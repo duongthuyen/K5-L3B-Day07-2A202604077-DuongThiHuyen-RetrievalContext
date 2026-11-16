@@ -1,0 +1,19 @@
+{
+ "page": 484,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "table",
+   "title": null,
+   "details": "| # | Column      | Non-Null Count | Dtype   |\n|---|-------------|----------------|---------|\n| 0 | Cholesterol | 390 non-null   | int64   |\n| 1 | Glucose     | 390 non-null   | int64   |\n| 2 | HDL Chol    | 390 non-null   | int64   |\n| 3 | Age         | 390 non-null   | int64   |\n| 4 | Gender      | 390 non-null   | object  |\n| 5 | Height      | 390 non-null   | int64   |\n| 6 | Weight      | 390 non-null   | int64   |\n| 7 | BMI         | 390 non-null   | float64 |\n| 8 | Systolic BP | 390 non-null   | int64   |\n| 9 | Diastolic BP| 390 non-null   | int64   |\n| 10| waist       | 390 non-null   | int64   |\n| 11| hip         | 390 non-null   | int64   |\n| 12| Diabetes    | 390 non-null   | object  |",
+   "summary": "This table lists the dataset columns with their data types and counts of non-null values, showing a mix of numeric and object types across 390 entries."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2883,
+  "completion_tokens": 321
+ },
+ "cost_usd": 0.001667,
+ "elapsed_s": 3.71
+}

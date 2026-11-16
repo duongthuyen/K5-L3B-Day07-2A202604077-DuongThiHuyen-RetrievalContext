@@ -1,0 +1,19 @@
+{
+ "page": 186,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 4.16",
+   "kind": "decorative",
+   "title": "Example 4.16",
+   "details": "Text example describing a hypothesis testing problem and solution using Python's ttest_1samp() function.",
+   "summary": "This example illustrates how to conduct a hypothesis test for the mean oxygen level of females using Python, including the setup of null and alternative hypotheses."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2754,
+  "completion_tokens": 90
+ },
+ "cost_usd": 0.001246,
+ "elapsed_s": 1.49
+}

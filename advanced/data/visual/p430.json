@@ -1,0 +1,50 @@
+{
+ "page": 430,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 9.2",
+   "kind": "chart",
+   "title": "Histogram Displaying the Distribution of Heights (in inches to the nearest half-inch) of 100 Male Semiprofessional Soccer Players",
+   "details": {
+    "chart type": "histogram",
+    "x-axis label": "Heights",
+    "x-axis categories": [
+     "59.95",
+     "61.95",
+     "63.95",
+     "65.95",
+     "67.95",
+     "69.95",
+     "71.95",
+     "73.95",
+     "75.95"
+    ],
+    "y-axis label": "Relative Frequency",
+    "y-axis range": [
+     0,
+     0.4
+    ],
+    "series": null,
+    "values": {
+     "59.95": 0.05,
+     "61.95": 0.03,
+     "63.95": 0.15,
+     "65.95": 0.4,
+     "67.95": 0.17,
+     "69.95": 0.12,
+     "71.95": 0.07,
+     "73.95": 0.01,
+     "75.95": 0
+    }
+   },
+   "summary": "This histogram shows the relative frequency distribution of heights of 100 male semiprofessional soccer players, with the tallest bar centered around 65.95 inches, indicating a bell-shaped distribution."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2749,
+  "completion_tokens": 282
+ },
+ "cost_usd": 0.001551,
+ "elapsed_s": 3.63
+}

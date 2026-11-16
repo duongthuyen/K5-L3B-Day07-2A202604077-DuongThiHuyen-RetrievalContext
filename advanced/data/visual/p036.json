@@ -1,0 +1,26 @@
+{
+ "page": 36,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 1.11",
+   "kind": "image",
+   "title": "2020-03-30 11_30_03.690871079.xml, an Example XML file within the Small Traffic Light Dataset (Source: “Small Traffic Light Dataset,” https://www.kaggle.com/datasets/sovitrath/small-traffic-light-dataset-xml-format)",
+   "details": "Screenshot of an XML file showing dataset annotation structure. Tags include <annotation>, <folder/>, <filename>2020-03-30 11_30_03.690871079.jpg</filename>, <database/>, <annotation/>, <image/>, <size> with <height>1080</height>, <width>1920</width>, <depth>3</depth>, <segmented/>, <object> with <name>green</name>, <pose/>, <truncated/>, <difficult/>, and <bndbox> with <xmin>616</xmin>, <ymin>477</ymin>, <xmax>633</xmax>, <ymax>521</ymax>.",
+   "summary": "This figure shows an example XML file from the Small Traffic Light Dataset, illustrating how dataset annotations and metadata are structured in XML format."
+  },
+  {
+   "label": "Figure 1.12",
+   "kind": "image",
+   "title": "An Example JSON File with Metadata",
+   "details": "Screenshot of a JSON file snippet showing metadata and data entries. Includes keys such as \"creationDateTime\": \"2023-03-22T11:53:27\", \"datasetJSONVersion\": \"1.0.0\", \"fileOID\": \"www.sponsor.org.project123.final\", \"sourceSystemVersion\": \"1.2.3\", and \"clinicalData\" containing \"items\" array with objects describing columns: {\"OID\": \"ITEMGROUPDATASEQ\", \"name\": \"ITEMGROUPDATASEQ\", \"label\": \"Record identifier\", \"type\": \"integer\"}, {\"OID\": \"IT.STUDYID\", \"name\": \"STUDYID\", \"label\": \"Study identifier\", \"type\": \"string\"}, {\"OID\": \"IT.DOMAIN\", \"name\": \"DOMAIN\", \"label\": \"Domain identifier\", \"type\": \"string\", \"length\": 2}. Also shows \"itemData\" array with example data rows [1, \"MyStudy1\", \"D1\"], [2, \"MyStudy2\", \"D2\"].",
+   "summary": "This figure shows an example JSON file with metadata describing dataset columns and example data entries, illustrating how JSON files can include both metadata and actual data."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2408,
+  "completion_tokens": 564
+ },
+ "cost_usd": 0.001866,
+ "elapsed_s": 5.04
+}

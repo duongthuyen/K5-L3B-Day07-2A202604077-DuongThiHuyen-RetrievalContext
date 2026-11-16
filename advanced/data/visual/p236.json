@@ -1,0 +1,57 @@
+{
+ "page": 236,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 5.8",
+   "kind": "chart",
+   "title": "Quarterly Revenues for Kayak and Canoe Rentals",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Quarter and Year",
+    "x-axis categories": [
+     "2021 Spring",
+     "2021 Summer",
+     "2021 Fall",
+     "2021 Winter",
+     "2022 Spring",
+     "2022 Summer",
+     "2022 Fall",
+     "2022 Winter",
+     "2023 Spring",
+     "2023 Summer",
+     "2023 Fall",
+     "2023 Winter"
+    ],
+    "y-axis label": "Revenues",
+    "units": "USD",
+    "y-axis range": "$0 to $4,500",
+    "series": [
+     "Revenues"
+    ],
+    "values": {
+     "2021 Spring": 1800,
+     "2021 Summer": 3300,
+     "2021 Fall": 1300,
+     "2021 Winter": 1000,
+     "2022 Spring": 2300,
+     "2022 Summer": 3500,
+     "2022 Fall": 2000,
+     "2022 Winter": 1600,
+     "2023 Spring": 2700,
+     "2023 Summer": 3900,
+     "2023 Fall": 2100,
+     "2023 Winter": 1900
+    },
+    "trend": "Revenues fluctuate seasonally with peaks in Summer quarters and lows in Winter quarters, showing a cyclical pattern with some noise."
+   }
+  },
+  "summary\": "
+ ],
+ "usage": {
+  "prompt_tokens": 2597,
+  "completion_tokens": 304
+ },
+ "cost_usd": 0.001525,
+ "elapsed_s": 2.84
+}

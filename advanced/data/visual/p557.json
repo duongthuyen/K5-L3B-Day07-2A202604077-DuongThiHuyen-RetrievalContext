@@ -1,0 +1,19 @@
+{
+ "page": 557,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table D1",
+   "kind": "table",
+   "title": "D • Appendix D: Review of Python Functions",
+   "details": "| Python Function      | Description                                               | Syntax                                               | First Reference       |\n|----------------------|-----------------------------------------------------------|-----------------------------------------------------|-----------------------|\n| plot_tree()          | Creates a visualization of a decision tree                 | plot_tree(estimator, feature_names)                  | Validating Your Model |\n| DataFrame.info()     | Provides a concise summary of a DataFrame's structure and content | DataFrame.info()                                      | Validating Your Model |\n| DataFrame.drop()     | Removes rows or columns from a DataFrame                    | DataFrame.drop(labels, axis=rows_columns)             | Validating Your Model |\n| score()              | Evaluates the performance of a trained model on a given dataset | model.score(feature_matrix, true_labels)              | Validating Your Model |\n| dt.get_depth()       | Retrieves the depth of the decision tree, dt                | dt.get_depth()                                        | Validating Your Model |\n| cross_val_score()    | Evaluates a model's performance using cross-validation      | cross_val_score(estimator, feature_matrix, target_variable) | Validating Your Model |\n| GridSearchCV ()      | Search for the best parameters for a specified estimator, with k-fold cross-validation | GridSearchCV(estimator, parameters, k)                 | Validating Your Model |",
+   "summary": "This table summarizes key Python functions used in data science for model validation, including their descriptions, syntax, and first reference in the textbook."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2433,
+  "completion_tokens": 337
+ },
+ "cost_usd": 0.001512,
+ "elapsed_s": 3.36
+}

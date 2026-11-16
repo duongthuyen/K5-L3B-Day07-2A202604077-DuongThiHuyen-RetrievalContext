@@ -1,0 +1,36 @@
+{
+ "page": 262,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022",
+   "details": {
+    "chart type": "line plot",
+    "x-axis": {
+     "label": "Months",
+     "range": "unreadable"
+    },
+    "y-axis": {
+     "label": "Coal Consumption",
+     "units": "unreadable",
+     "range": "unreadable"
+    },
+    "legend/series": [
+     "Original Time Series",
+     "Fitted Values",
+     "Forecasted Values"
+    ],
+    "values": "Exact values unreadable; plot shows original monthly coal consumption time series, fitted values in red line, and forecasted values as red dashed line extending beyond original data for 24 months (2 years). Trend shows seasonal variation with a peak at lag 12 (yearly seasonality)."
+   },
+   "summary": "This line chart displays the original monthly coal consumption data from 2016 to 2022, the fitted values from the ARIMA model, and the forecasted values for the next 24 months, illustrating the model's ability to capture seasonal patterns and predict future consumption."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2605,
+  "completion_tokens": 236
+ },
+ "cost_usd": 0.00142,
+ "elapsed_s": 2.55
+}

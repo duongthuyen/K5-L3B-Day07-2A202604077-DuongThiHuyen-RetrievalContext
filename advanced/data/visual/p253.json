@@ -1,0 +1,47 @@
+{
+ "page": 253,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "The resulting output will look like this:",
+   "details": {
+    "chart type": "line plots (4 stacked subplots)",
+    "x-axis label": "Index (time)",
+    "x-axis range": "0 to about 75",
+    "y-axis labels": [
+     "Value",
+     "Trend",
+     "Season",
+     "Resid"
+    ],
+    "y-axis units and ranges": [
+     "Value: approx. 40,000 to 70,000",
+     "Trend: approx. 35,000 to 55,000",
+     "Season: approx. -10,000 to 10,000",
+     "Resid: approx. -5,000 to 5,000"
+    ],
+    "legend/series": [
+     "Value (original series)",
+     "Trend component",
+     "Seasonal component",
+     "Residual component"
+    ],
+    "values": {
+     "Value": "Fluctuates between about 40,000 and 70,000 with seasonal peaks roughly every 12 units",
+     "Trend": "Starts near 55,000, declines steadily to about 37,000 around index 50, then slightly rises",
+     "Season": "Repeating seasonal pattern oscillating between -10,000 and 10,000 roughly every 12 units",
+     "Resid": "Scatter of residuals centered around zero, mostly within ±5,000, with some outliers"
+    }
+   },
+   "summary": "This figure shows the decomposition of a time series into four components: the original values, the trend, the seasonal variation, and the residual noise, each plotted separately to illustrate their behavior over time."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2321,
+  "completion_tokens": 327
+ },
+ "cost_usd": 0.001452,
+ "elapsed_s": 3.29
+}

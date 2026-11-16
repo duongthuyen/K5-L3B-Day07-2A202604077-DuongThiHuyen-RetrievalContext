@@ -1,0 +1,19 @@
+{
+ "page": 216,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "table",
+   "title": "Table 4.18 (referenced)",
+   "details": "| Claim corresponds to null hypothesis | p-value < level of significance | Decision | Conclusion |\n|------------------------------------|-------------------------------|----------|------------|\n| Yes                                | Yes                           | Reject null hypothesis | There is enough evidence to reject the claim that the average arrival delays are the same for three airlines. |\n(Note: The actual table 4.18 is not fully visible on this page; this is a summary based on the text referencing it.)",
+   "summary": "This table (Table 4.18) is referenced to explain the decision rule for hypothesis testing based on p-value and significance level, showing when to reject or fail to reject the null hypothesis."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2553,
+  "completion_tokens": 168
+ },
+ "cost_usd": 0.00129,
+ "elapsed_s": 1.98
+}

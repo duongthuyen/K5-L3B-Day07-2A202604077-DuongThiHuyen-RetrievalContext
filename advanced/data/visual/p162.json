@@ -1,0 +1,52 @@
+{
+ "page": 162,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 4.3",
+   "kind": "chart",
+   "title": "Comparison of t-Distribution and Normal Distribution Curves",
+   "details": {
+    "chart type": "line plot",
+    "x-axis label": "unlabeled (numeric scale centered at 0)",
+    "x-axis range": "approx. -4 to +4",
+    "y-axis label": "Probability density (unlabeled)",
+    "units": "none",
+    "y-axis range": "unreadable exact values",
+    "legend/series": [
+     "Normal Distribution",
+     "t-Distribution, df = 30",
+     "t-Distribution, df = 10"
+    ],
+    "values": {
+     "Normal Distribution": {
+      "peak": {
+       "x": 0,
+       "y": "highest peak"
+      }
+     },
+     "t-Distribution, df = 30": {
+      "peak": {
+       "x": 0,
+       "y": "lower than Normal Distribution peak"
+      }
+     },
+     "t-Distribution, df = 10": {
+      "peak": {
+       "x": 0,
+       "y": "lowest peak"
+      },
+      "tails": "thicker (higher probability density in tails) compared to Normal Distribution and t-distribution df=30"
+     }
+    }
+   },
+   "summary": "This figure compares the shapes of the normal distribution curve and two t-distribution curves with different degrees of freedom (df=10 and df=30). It illustrates that t-distributions have thicker tails and lower peaks than the normal distribution, with the effect more pronounced at lower degrees of freedom."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2734,
+  "completion_tokens": 306
+ },
+ "cost_usd": 0.001583,
+ "elapsed_s": 2.94
+}

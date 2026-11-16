@@ -1,0 +1,19 @@
+{
+ "page": 95,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 2.8",
+   "kind": "table",
+   "title": "Summary of Text Preprocessing Techniques",
+   "details": "| Preprocessing Technique | Explanation | Example |\n|-------------------------|-------------|---------|\n| Tokenization | Breaking text data into individual words or phrases (tokens) | Original Text: “Tokenization is the process of breaking down a sentence, paragraph, or entire text into smaller parts called tokens.” Tokenized Text: “Tokenization”, “is”, “the”, “process”, “of”, “breaking”, “down”, “a”, “sentence”, “,”, “paragraph”, “,”, “or”, “entire”, “text”, “into”, “smaller”, “parts”, “called”, “tokens”, “.” |\n| Lowercasing | Converting all text to lowercase to avoid multiple representations of the identical word | Consider the following sentence: “John likes to eat pizza.” After lowercasing it, the sentence becomes “john likes to eat pizza.” |\n| Stopwords removal | Filtering out commonly occurring words that do not add meaning or context | Consider: “The sun was shining bright in the sky and the birds were chirping. It was a lovely day in the park and people were enjoying the beautiful weather.” After removing stopwords, the paragraph would be transformed into: “Sun shining bright sky birds chirping. Lovely day park people enjoying beautiful weather.” |\n| Lemmatization and stemming | Reducing words to their root forms to reduce complexity and improve model performance | For example, the words “running,” “runs,” and “ran” would all be lemmatized to the base form ”run.” |",
+   "summary": "This table summarizes common text preprocessing techniques including tokenization, lowercasing, stopwords removal, and lemmatization/stemming, providing explanations and examples for each."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2599,
+  "completion_tokens": 389
+ },
+ "cost_usd": 0.001662,
+ "elapsed_s": 4.72
+}

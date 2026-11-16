@@ -1,0 +1,31 @@
+{
+ "page": 135,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 3.20",
+   "kind": "diagram",
+   "title": "Example 3.20: Probability calculations for knee surgeries",
+   "details": {
+    "nodes": [
+     "Probability of success for one knee surgery = 0.89",
+     "Probability all four surgeries successful = 0.89^4 = 0.627",
+     "Probability of unsuccessful surgery = 1 - 0.89 = 0.11",
+     "Probability all four surgeries unsuccessful = 0.11^4"
+    ],
+    "connections": [
+     "Probability of success for one knee surgery leads to Probability all four surgeries successful by multiplying four times",
+     "Probability of success for one knee surgery leads to Probability of unsuccessful surgery by complement rule",
+     "Probability of unsuccessful surgery leads to Probability all four surgeries unsuccessful by multiplying four times"
+    ]
+   },
+   "summary": "This example illustrates how to calculate the probability that all four knee surgeries are successful, all unsuccessful, and at least one successful using the complement rule and independence assumption."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2694,
+  "completion_tokens": 205
+ },
+ "cost_usd": 0.001406,
+ "elapsed_s": 2.16
+}

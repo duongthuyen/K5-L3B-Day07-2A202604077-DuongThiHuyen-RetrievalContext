@@ -1,0 +1,39 @@
+{
+ "page": 425,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Boxplot Showing Distribution of Salaries ($)",
+   "details": {
+    "chart_type": "boxplot",
+    "x_axis_label": "Salaries of Employees at ABC Corporation",
+    "x_axis_range": [
+     40000,
+     140000
+    ],
+    "y_axis_label": "Salaries",
+    "y_axis_range": null,
+    "units": "$",
+    "legend_series": [
+     "Salaries"
+    ],
+    "values": {
+     "minimum": 42000,
+     "Q1": 54000,
+     "median": 65000,
+     "Q3": 92000,
+     "maximum": 140000
+    }
+   },
+   "summary": "This boxplot visualizes the distribution of employee salaries at ABC Corporation, showing the minimum, first quartile, median, third quartile, and maximum salary values."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2400,
+  "completion_tokens": 176
+ },
+ "cost_usd": 0.001242,
+ "elapsed_s": 3.19
+}

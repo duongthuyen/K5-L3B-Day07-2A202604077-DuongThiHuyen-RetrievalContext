@@ -1,0 +1,26 @@
+{
+ "page": 54,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "Example output of selecting the petal_length column using iloc[]",
+   "details": "Text output showing index and petal_length values from the IRIS dataset: 0 1.4, 1 1.4, 2 1.3, 3 1.5, 4 1.4, ..., 145 5.2, 146 5.0, 147 5.2, 148 5.4, 149 5.1. Name: petal_length, Length: 150, dtype: float64",
+   "summary": "This output shows the result of selecting the petal_length column from the IRIS dataset using the iloc[] method in pandas."
+  },
+  {
+   "label": null,
+   "kind": "image",
+   "title": "Example output of filtering rows where Genre is Comedy using loc[]",
+   "details": "Text output showing filtered rows from a dataset where the Genre column equals 'Comedy'. The output contains 307 rows out of 3,400 total rows, all with Genre value 'Comedy'.",
+   "summary": "This output demonstrates filtering a DataFrame to include only rows where the Genre is 'Comedy' using pandas loc[]."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2492,
+  "completion_tokens": 268
+ },
+ "cost_usd": 0.001426,
+ "elapsed_s": 2.69
+}

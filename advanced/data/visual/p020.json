@@ -1,0 +1,32 @@
+{
+ "page": 20,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 1.2",
+   "kind": "diagram",
+   "title": "The Field of Data Science",
+   "details": {
+    "type": "Venn diagram",
+    "circles": [
+     "Computer Science",
+     "Domain Expertise",
+     "Mathematics & Statistics"
+    ],
+    "intersections": {
+     "Computer Science & Domain Expertise": "Data Processing & Visualization",
+     "Computer Science & Mathematics & Statistics": "Machine Learning",
+     "Domain Expertise & Mathematics & Statistics": "Traditional Statistics",
+     "All three": "Data Science"
+    }
+   },
+   "summary": "This Venn diagram illustrates how data science is an interdisciplinary field combining computer science, domain expertise, and mathematics & statistics, with overlaps representing specialized areas like data processing, machine learning, and traditional statistics."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2746,
+  "completion_tokens": 155
+ },
+ "cost_usd": 0.001346,
+ "elapsed_s": 2.75
+}

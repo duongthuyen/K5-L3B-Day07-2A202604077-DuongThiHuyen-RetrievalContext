@@ -1,0 +1,19 @@
+{
+ "page": 170,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.4",
+   "kind": "table",
+   "title": "Ages of 20 Randomly Selected Students from One College",
+   "details": "| Student ID | Student Age |\n|------------|-------------|\n| 005        | 29          |\n| 006        | 23          |\n| 007        | 21          |\n| 008        | 20          |\n| 009        | 19          |\n| 010        | 21          |\n| 011        | 25          |\n| 012        | 28          |\n| 013        | 22          |\n| 014        | 37          |\n| 015        | 24          |\n| 016        | 31          |\n| 017        | 23          |\n| 018        | 19          |\n| 019        | 26          |\n| 020        | 20          |",
+   "summary": "This table lists the ages of 20 randomly selected students from one college, identified by student ID and their corresponding age. It serves as the dataset for a bootstrapping example discussed in the text."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2449,
+  "completion_tokens": 259
+ },
+ "cost_usd": 0.001394,
+ "elapsed_s": 2.59
+}

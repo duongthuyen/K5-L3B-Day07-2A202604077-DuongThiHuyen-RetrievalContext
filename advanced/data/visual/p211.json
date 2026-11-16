@@ -1,0 +1,90 @@
+{
+ "page": 211,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 4.9",
+   "kind": "chart",
+   "title": "Best-Fit Line Superimposed on the Scatterplot",
+   "details": {
+    "chart type": "scatterplot with best-fit line",
+    "x-axis label": "Advertising $000",
+    "x-axis range": "40 to 160",
+    "y-axis label": "Revenue $000",
+    "y-axis range": "12,000 to 20,000",
+    "legend/series": [
+     "data points",
+     "best-fit line"
+    ],
+    "values": {
+     "data points": [
+      {
+       "x": 50,
+       "y": 12,
+       "approximate": true
+      },
+      {
+       "x": 60,
+       "y": 13,
+       "approximate": true
+      },
+      {
+       "x": 70,
+       "y": 14,
+       "approximate": true
+      },
+      {
+       "x": 80,
+       "y": 14,
+       "approximate": true
+      },
+      {
+       "x": 90,
+       "y": 15.5,
+       "approximate": true
+      },
+      {
+       "x": 100,
+       "y": 16,
+       "approximate": true
+      },
+      {
+       "x": 110,
+       "y": 17,
+       "approximate": true
+      },
+      {
+       "x": 120,
+       "y": 17,
+       "approximate": true
+      },
+      {
+       "x": 130,
+       "y": 18,
+       "approximate": true
+      },
+      {
+       "x": 140,
+       "y": 18.5,
+       "approximate": true
+      },
+      {
+       "x": 150,
+       "y": 19.2,
+       "approximate": true
+      }
+     ]
+    },
+    "trend": "positive linear correlation between advertising spend and revenue"
+   }
+  },
+  "summary",
+  "This scatterplot shows data points of revenue versus advertising spend with a best-fit regression line superimposed, illustrating a strong positive linear correlation between the two variables."
+ ],
+ "usage": {
+  "prompt_tokens": 2396,
+  "completion_tokens": 376
+ },
+ "cost_usd": 0.00156,
+ "elapsed_s": 3.23
+}

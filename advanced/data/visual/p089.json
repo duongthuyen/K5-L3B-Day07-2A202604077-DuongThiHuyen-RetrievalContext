@@ -1,0 +1,35 @@
+{
+ "page": 89,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 2.3",
+   "kind": "table",
+   "title": "Monthly Employment over 1990",
+   "details": "| Date     | Number of Employers × 1000 |\n|----------|----------------------------|\n| 4/1/1990 | 5174                       |\n| 5/1/1990 | 5370                       |\n| 6/1/1990 | 9523                       |\n| 7/1/1990 | 5580                       |\n| 8/1/1990 | 5581                       |\n| 9/1/1990 | 5487                       |\n| 10/1/1990| 5379                       |\n| 11/1/1990| 5208                       |\n| 12/1/1990| 4963                       |",
+   "summary": "This table lists the monthly employment numbers (in thousands) for the year 1990, showing a notable outlier in June 1990."
+  },
+  {
+   "label": "Figure 2.3",
+   "kind": "chart",
+   "title": "US Retail Employment Without Outliers",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Date",
+    "x-axis range/categories": "From 21-Mar-1938 to 9-May-2020 (dates shown at intervals)",
+    "y-axis label": "Number of Employers × 1,000",
+    "y-axis units": "thousands",
+    "y-axis range": "0 to 10,000",
+    "legend/series": null,
+    "values": "Trend shows a general increase in employment over time with seasonal fluctuations; a sharp drop around 2008-2009; recovery and growth afterward; no specific data points labeled except the trend line."
+   },
+   "summary": "This line chart presents the adjusted US retail employment data over time, with outliers removed, showing long-term growth with seasonal patterns and a significant dip during the 2008 financial crisis."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2495,
+  "completion_tokens": 426
+ },
+ "cost_usd": 0.00168,
+ "elapsed_s": 4.82
+}

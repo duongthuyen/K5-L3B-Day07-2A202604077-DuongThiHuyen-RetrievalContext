@@ -1,0 +1,20 @@
+{
+ "page": 420,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 8.11",
+   "kind": "chart",
+   "title": "a. Graph A\nb. Graph B\nc. Graph C\nd. Graph D",
+   "details": "Four line charts labeled A, B, C, and D showing CO2 emissions in millions of metric tonnes over time.\n\nGraph A: Timeline 1800-2050, CO2 range 0-100,000 million metric tonnes. Shows a slow increase from 1800 to about 1950, then a sharp rise peaking around 2000-2010 near 8,000 million metric tonnes, then a slight decline.\n\nGraph B: Timeline 1980-2030, CO2 range 0-7,000 million metric tonnes. Shows a rise from about 4,500 in 1980 to a peak near 6,000 around 2005, then a decline to about 5,000 by 2020.\n\nGraph C: Timeline 1800-2050, CO2 range 0-7,000 million metric tonnes. Shows near zero until 1900, then a steady rise with fluctuations, peaking near 6,500 around 2000, then declining slightly.\n\nGraph D: Timeline 1900-2000, CO2 range 0-5,000 million metric tonnes. Shows steady increase from about 500 in 1900 to 5,000 near 1980-2000 with some fluctuations.\n\nAll graphs have x-axis labeled 'Timeline' and y-axis labeled 'CO2 (Millions of Metric Tonnes)'. No legend or units beyond metric tonnes. Trends show overall increase in CO2 emissions over time with recent peaks and some declines.",
+   "summary": "Figure 8.11 presents four line graphs (A-D) depicting CO2 emissions over different time spans and scales, illustrating historical trends and recent changes in greenhouse gas emissions."
+  }
+ ],
+ "attempts": 2,
+ "usage": {
+  "prompt_tokens": 2576,
+  "completion_tokens": 406
+ },
+ "cost_usd": 0.00168,
+ "elapsed_s": 35.13
+}

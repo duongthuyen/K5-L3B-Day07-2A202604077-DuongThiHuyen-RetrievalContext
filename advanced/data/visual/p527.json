@@ -1,0 +1,26 @@
+{
+ "page": 527,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table B2",
+   "kind": "table",
+   "title": "List of Common R Statistical Commands",
+   "details": "| R Command | Result |\n|-----------|---------|\n| sum()     | Calculates the sum of values |\n| summary() | Calculates the mean, median, quartiles, min, and max |\n| sd()      | Calculates the sample standard deviation |\n| var()     | Calculates the sample variance |\n| IQR()     | Calculates the interquartile range |\n| barplot() | Plots a bar chart of non-numeric data |\n| boxplot() | Plots a boxplot of numeric data |\n| hist()    | Plots a histogram of numeric data |\n| plot()    | Plots various graphs, including a scatter plot |\n| freq()    | Creates a frequency distribution table |",
+   "summary": "This table lists common R commands used for statistical calculations and basic data visualizations, describing their functions."
+  },
+  {
+   "label": "Table B3",
+   "kind": "table",
+   "title": "Enrollment Data",
+   "details": "| College Course | Student Enrollment |\n|----------------|--------------------|\n| Statistics     | 375                |\n| History        | 302                |",
+   "summary": "This table shows enrollment numbers for two college courses, Statistics and History, as an example dataset for creating a bar graph."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2451,
+  "completion_tokens": 298
+ },
+ "cost_usd": 0.001457,
+ "elapsed_s": 3.97
+}

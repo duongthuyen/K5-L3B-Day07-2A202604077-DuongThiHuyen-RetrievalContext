@@ -1,0 +1,19 @@
+{
+ "page": 121,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 3.6",
+   "kind": "table",
+   "title": "Calculate the range for Dataset A and Dataset B",
+   "details": "| Dataset | Exam Scores |\n|---------|-------------|\n| A       | 40, 70, 100 |\n| B       | 69, 70, 71  |\n\nRange calculations:\n- Dataset A: Max = 100, Min = 40, Range = 100 - 40 = 60\n- Dataset B: Max = 71, Min = 69, Range = 71 - 69 = 2",
+   "summary": "This example shows the calculation of the range for two datasets, illustrating that Dataset A has a much larger range (60) compared to Dataset B (2), indicating greater variability in Dataset A."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2600,
+  "completion_tokens": 178
+ },
+ "cost_usd": 0.001325,
+ "elapsed_s": 2.3
+}

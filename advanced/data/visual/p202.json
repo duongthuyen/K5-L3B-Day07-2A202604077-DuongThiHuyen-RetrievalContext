@@ -1,0 +1,30 @@
+{
+ "page": 202,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "diagram",
+   "title": "INTERPRETING THE SIGNIFICANCE OF THE SAMPLE CORRELATION COEFFICIENT",
+   "details": {
+    "nodes": [
+     "If r is significant and the scatterplot shows a linear trend, the line can be used to predict the value of y for values of x that are within the domain of observed x-values.",
+     "If r is not significant OR if the scatterplot does not show a linear trend, the line should not be used for prediction.",
+     "If r is significant and the scatterplot shows a linear trend, the line may not be appropriate or reliable for prediction outside the domain of observed x-values in the data."
+    ],
+    "connections": [
+     "1 is a positive condition for using the line for prediction within domain.",
+     "2 is a negative condition for using the line for prediction.",
+     "3 is a caution about using the line for prediction outside domain."
+    ]
+   },
+   "summary": "This diagram explains the conditions under which the sample correlation coefficient r is significant and how that affects the use of a regression line for prediction within or outside the observed data domain."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2810,
+  "completion_tokens": 231
+ },
+ "cost_usd": 0.001494,
+ "elapsed_s": 3.1
+}

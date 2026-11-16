@@ -1,0 +1,26 @@
+{
+ "page": 167,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 4.6",
+   "kind": "decorative",
+   "title": "Example 4.6 Problem and Solution",
+   "details": "Text box containing a worked example problem about determining sample size for a 90% confidence interval for the mean salary of chemical engineers, including the formula and calculation steps.",
+   "summary": "This example illustrates how to calculate the required sample size for a confidence interval for a mean, given a margin of error, population standard deviation, and confidence level."
+  },
+  {
+   "label": "DETERMINING SAMPLE SIZE",
+   "kind": "decorative",
+   "title": "Determining Sample Size for a Proportion",
+   "details": "Text box with guidelines on determining sample size for a confidence interval for a proportion, emphasizing use of prior estimate for sample proportion or defaulting to 0.5 if unavailable.",
+   "summary": "This box summarizes the approach to determining sample size for confidence intervals for proportions, highlighting the use of prior estimates or a default value."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2575,
+  "completion_tokens": 210
+ },
+ "cost_usd": 0.001366,
+ "elapsed_s": 2.58
+}

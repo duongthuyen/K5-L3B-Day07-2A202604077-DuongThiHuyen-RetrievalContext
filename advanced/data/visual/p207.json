@@ -1,0 +1,19 @@
+{
+ "page": 207,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.16",
+   "kind": "table",
+   "title": "Revenue versus Advertising for a Company (in $000s)",
+   "details": "| Month | Advertising Spend | Revenue |\n|-------|-------------------|---------|\n| Jan   | 49                | 12210   |\n| Feb   | 145               | 17590   |\n| Mar   | 57                | 13215   |\n| Apr   | 153               | 19200   |\n| May   | 92                | 14600   |\n| Jun   | 83                | 14100   |\n| Jul   | 117               | 17100   |\n| Aug   | 142               | 18400   |",
+   "summary": "This table shows the monthly advertising spend (in thousands of dollars) and corresponding revenue (in dollars) for a company over eight months. It is used as the dataset for correlation and linear regression analysis in the example."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2546,
+  "completion_tokens": 217
+ },
+ "cost_usd": 0.001366,
+ "elapsed_s": 2.17
+}

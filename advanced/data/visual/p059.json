@@ -1,0 +1,28 @@
+{
+ "page": 59,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Domestic vs. Worldwide Gross",
+   "details": {
+    "chart_type": "scatterplot",
+    "x_axis_label": "Domestic",
+    "x_axis_range": "0 to 900 (approximate)",
+    "y_axis_label": "Worldwide",
+    "y_axis_range": "0 to 2700 (approximate)",
+    "units": "Million (implied from code context)",
+    "legend_series": null,
+    "values": "Scatter points distributed mostly clustered from (0,0) to about (400,1500), with some points extending up to about (900, 2700). Trend shows positive correlation between Domestic and Worldwide gross."
+   },
+   "summary": "This scatterplot shows the relationship between Domestic and Worldwide gross revenues for movies, indicating a positive correlation where higher domestic gross tends to correspond to higher worldwide gross."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2373,
+  "completion_tokens": 183
+ },
+ "cost_usd": 0.001242,
+ "elapsed_s": 2.74
+}

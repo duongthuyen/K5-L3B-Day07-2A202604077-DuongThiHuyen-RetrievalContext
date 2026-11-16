@@ -1,0 +1,19 @@
+{
+ "page": 47,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 1.21",
+   "kind": "image",
+   "title": "Copying the Path of a CSV File Located in a Google Drive Folder",
+   "details": "Screenshot of a file explorer window showing a folder named 'DS Examples' containing files: ch1-5.ipynb, ch1-iris.csv, and ch1-movieprofit.csv (highlighted). The interface includes icons for search, refresh, and view options.",
+   "summary": "This screenshot illustrates how to locate and copy the path of a CSV file (ch1-movieprofit.csv) in a Google Drive folder for use in Python code."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2433,
+  "completion_tokens": 136
+ },
+ "cost_usd": 0.001191,
+ "elapsed_s": 1.81
+}

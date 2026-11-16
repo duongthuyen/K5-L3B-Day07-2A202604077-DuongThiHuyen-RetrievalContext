@@ -1,0 +1,19 @@
+{
+ "page": 155,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 4.1",
+   "kind": "image",
+   "title": "Inferential statistics is used extensively in data science to draw conclusions about a larger population—and drive decision-making.",
+   "details": "Photograph of a woman wearing glasses and a blue patterned shirt, sitting at a desk with a laptop and reading a book or document.",
+   "summary": "This image visually represents the concept of inferential statistics being applied in data science, emphasizing the human element of analysis and decision-making."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2573,
+  "completion_tokens": 107
+ },
+ "cost_usd": 0.0012,
+ "elapsed_s": 1.8
+}

@@ -1,0 +1,19 @@
+{
+ "page": 314,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "PYTHON CODE",
+   "details": "Screenshot of Python code creating a multiple linear regression model using features ['BARTHAG', 'WAB', 'TOR'] to predict response variable 'W'. Code includes model fitting, extracting intercept and coefficients, printing rounded results, and model score. Output shown: Intercept: 16.116, Coefficients: [4.502, 0.526, -0.169], Score: 0.59.",
+   "summary": "This code snippet demonstrates how to create and evaluate a multiple linear regression model in Python using three features to predict a response variable, showing the intercept, coefficients, and model score."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2692,
+  "completion_tokens": 153
+ },
+ "cost_usd": 0.001322,
+ "elapsed_s": 2.43
+}

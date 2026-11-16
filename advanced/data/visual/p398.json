@@ -1,0 +1,41 @@
+{
+ "page": 398,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 8.5",
+   "kind": "diagram",
+   "title": "Problem and Solution about Secure Data Sharing in a Data Science Project",
+   "details": {
+    "nodes": [
+     "Problem: John is a data analyst working on a project to improve forecasting and sales, collecting various data types.",
+     "Realization: Sharing data with other departments and external organizations could benefit research.",
+     "Need: Consider factors before sharing data.",
+     "Question: What is the most important factor for secure data sharing? What tools are effective?",
+     "Solution: Data governance protocols are crucial for responsible and ethical data sharing.",
+     "Details: Guidelines and procedures for data usage, security measures, access control.",
+     "Example: Anonymizing or excluding PII when sharing outside the company.",
+     "Tool recommendation: Online file sharing apps like Google Drive or Microsoft OneDrive.",
+     "Permissions: Grant based on need to know."
+    ],
+    "connections": [
+     "Problem leads to Realization",
+     "Realization leads to Need",
+     "Need leads to Question",
+     "Question leads to Solution",
+     "Solution elaborated by Details",
+     "Details illustrated by Example",
+     "Solution leads to Tool recommendation",
+     "Tool recommendation linked to Permissions"
+    ]
+   },
+   "summary": "This example illustrates the importance of data governance protocols for secure and ethical data sharing in a data science project, recommending appropriate tools and access controls."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2872,
+  "completion_tokens": 275
+ },
+ "cost_usd": 0.001589,
+ "elapsed_s": 3.5
+}

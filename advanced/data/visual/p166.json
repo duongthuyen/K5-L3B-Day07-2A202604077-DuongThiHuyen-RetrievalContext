@@ -1,0 +1,27 @@
+{
+ "page": 166,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "diagram",
+   "title": "Sample size formula for confidence interval for mean",
+   "details": {
+    "formula": "E = z_c * (σ / √n) → n = (z_c * σ / E)^2",
+    "variables": {
+     "z_c": "critical value of the normal distribution",
+     "σ": "population standard deviation",
+     "E": "desired margin of error",
+     "n": "sample size"
+    }
+   },
+   "summary": "This formula shows how to calculate the minimum sample size needed to achieve a certain margin of error when constructing a confidence interval for a mean, by algebraically solving the margin of error formula for sample size."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2632,
+  "completion_tokens": 144
+ },
+ "cost_usd": 0.001283,
+ "elapsed_s": 2.24
+}

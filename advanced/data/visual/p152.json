@@ -1,0 +1,19 @@
+{
+ "page": 152,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "table",
+   "title": null,
+   "details": "| Dataset | Description | Data Sample |\n|---------|-------------|-------------|\n| A | Number of cars entering a parking garage in a 1-hour time period | 15, 18, 4, 15, 8, 11, 13, 7, 16, 24 |\n| B | Weights of packages on a delivery truck (weights in pounds) | 3.2, 9.1, 4.3, 1.9, 2.6, 4.7, 0.7, 1.3, 3.9, 6.4, 5.0, 25.4 |\n| C | Amount of time for a pain reliever to provide relief from migraine headache (time in minutes) | 12.1, 13.8, 9.4, 15.9, 11.5, 14.6, 18.1, 12.7, 11.0, 14.2 |\n| D | Credit card balances for consumers (in dollars) | $878.32, $671.54, $990.35, $801.85, $4303.76, $1285.03, $289.44, $78.61, $952.83 |\n| E | Salaries for employees at a technology company (in dollars) | $72,500; $84,300; $58,900; $55,100; $82,000; $94,600; $82,200; $104,600; $63,800; $77,500 |",
+   "summary": "This table lists five datasets with descriptions and sample data values for each, used for quantitative problems involving calculations of mean, median, range, quartiles, and percentiles."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2871,
+  "completion_tokens": 408
+ },
+ "cost_usd": 0.001801,
+ "elapsed_s": 3.94
+}

@@ -1,0 +1,37 @@
+{
+ "page": 123,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 3.7",
+   "kind": "diagram",
+   "title": "Calculation of sample standard deviation from sample variance",
+   "details": {
+    "steps": [
+     "Problem: A biologist calculates that the sample variance for the amount of plant growth for a sample of plants is 8.7 cm². Calculate the sample standard deviation.",
+     "Solution: The sample standard deviation (s) is calculated as the square root of the variance.",
+     "Formula: s = √s² = √8.7 = 2.9 cm"
+    ]
+   },
+   "summary": "This example demonstrates how to calculate the sample standard deviation by taking the square root of the sample variance, using a plant growth dataset."
+  },
+  {
+   "label": "EXAMPLE 3.8",
+   "kind": "diagram",
+   "title": "Calculation of sample standard deviation from sample variance",
+   "details": {
+    "steps": [
+     "Problem: Assume the sample variance (s²) for a dataset is calculated as 42.2.",
+     "Task: Based on this, calculate the sample standard deviation."
+    ]
+   },
+   "summary": "This example sets up a problem to calculate the sample standard deviation from a given sample variance value of 42.2, illustrating the application of the formula."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2617,
+  "completion_tokens": 257
+ },
+ "cost_usd": 0.001458,
+ "elapsed_s": 2.73
+}

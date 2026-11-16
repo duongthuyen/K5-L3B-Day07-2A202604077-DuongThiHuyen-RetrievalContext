@@ -1,0 +1,19 @@
+{
+ "page": 458,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": null,
+   "summary": "This page contains code snippets and explanations related to plotting a color bar and formatting axis ticks in a plot, but no informative visual elements such as charts, diagrams, or tables."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2401,
+  "completion_tokens": 66
+ },
+ "cost_usd": 0.001066,
+ "elapsed_s": 1.61
+}

@@ -1,0 +1,102 @@
+{
+ "page": 251,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 5.4",
+   "kind": "table",
+   "title": "Quarterly Revenues for Kayak and Canoe Rentals (all columns in $). Columns for detrended data, seasonal component estimate, and seasonally adjusted data are included.",
+   "details": "| k | Quarter      | Revenues | Detrended  $z_k$ | Seas. Comp.  $\\hat{s}_k$ | Seasonally Adj.  $x_n - \\hat{s}_n$ |\n|---|--------------|----------|------------------|--------------------------|------------------------------------|\n| 7 | 2022 Fall    | 1964     | -311.42          | -484.08                  | 2448.08                            |\n| 8 | 2022 Winter  | 1594     | -681.42          | -764.75                  | 2358.75                            |\n| 9 | 2023 Spring  | 2704     | 428.58           | -13.08                   | 2717.08                            |\n| 10| 2023 Summer  | 3849     | 1573.58          | 1261.92                  | 2587.08                            |\n| 11| 2023 Fall    | 2131     | -144.42          | -484.08                  | 2615.08                            |\n| 12| 2023 Winter  | 1939     | -336.42          | -764.75                  | 2703.75                            |",
+   "summary": "This table presents quarterly revenues for kayak and canoe rentals along with detrended data, seasonal component estimates, and seasonally adjusted data for six quarters from 2022 Fall to 2023 Winter."
+  },
+  {
+   "label": "Figure 5.18",
+   "kind": "chart",
+   "title": "Quarterly Revenues for Kayak and Canoe Rentals. Seasonal component and seasonally adjusted time series are included on the graph.",
+   "details": {
+    "chart type": "line chart",
+    "x-axis": {
+     "label": "Quarter",
+     "categories": [
+      "2021 Spring",
+      "2021 Summer",
+      "2021 Fall",
+      "2021 Winter",
+      "2022 Spring",
+      "2022 Summer",
+      "2022 Fall",
+      "2022 Winter",
+      "2023 Spring",
+      "2023 Summer",
+      "2023 Fall",
+      "2023 Winter"
+     ]
+    },
+    "y-axis": {
+     "label": "Dollars ($)",
+     "range": [
+      -1000,
+      5000
+     ]
+    },
+    "legend/series": [
+     "Revenues",
+     "Seas. Comp.",
+     "Seas. Adj."
+    ],
+    "values": {
+     "Revenues": [
+      1800,
+      3300,
+      1300,
+      1000,
+      2300,
+      3500,
+      1900,
+      1600,
+      2700,
+      3900,
+      2100,
+      2000
+     ],
+     "Seas. Comp.": [
+      0,
+      1200,
+      -500,
+      -800,
+      0,
+      1200,
+      -500,
+      -800,
+      0,
+      1200,
+      -500,
+      -800
+     ],
+     "Seas. Adj.": [
+      1800,
+      2000,
+      1800,
+      1800,
+      2300,
+      2300,
+      2400,
+      2400,
+      2700,
+      2600,
+      2600,
+      2700
+     ]
+    },
+    "trend": "Revenues show seasonal fluctuations with peaks in summer quarters; seasonal component oscillates between positive and negative values; seasonally adjusted data smooths out seasonal effects showing a more stable trend."
+   }
+  },
+  "summary"
+ ],
+ "usage": {
+  "prompt_tokens": 2541,
+  "completion_tokens": 759
+ },
+ "cost_usd": 0.002231,
+ "elapsed_s": 7.08
+}

@@ -1,0 +1,19 @@
+{
+ "page": 356,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "PYTHON CODE",
+   "details": "Screenshot of Python code to import libraries, load MNIST dataset, split into training and testing sets, and standardize features using StandardScaler. Code includes import tensorflow as tf, fetch_openml, train_test_split, StandardScaler, and commands to load mnist_784 dataset, split 80/20, and scale features.",
+   "summary": "This code snippet demonstrates how to set up data preprocessing steps in Python for training a neural network on the MNIST handwritten digits dataset using TensorFlow and scikit-learn."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2842,
+  "completion_tokens": 132
+ },
+ "cost_usd": 0.001348,
+ "elapsed_s": 1.75
+}

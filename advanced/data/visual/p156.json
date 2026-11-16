@@ -1,0 +1,19 @@
+{
+ "page": 156,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.1",
+   "kind": "table",
+   "title": "Point Estimates and Corresponding Population Parameters",
+   "details": "| Parameter | Point Estimate |\n|-----------|----------------|\n| Mean      | Sample mean    |\n| Proportion| Sample proportion|",
+   "summary": "This table shows the relationship between population parameters (mean and proportion) and their corresponding point estimates used in inferential statistics."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2914,
+  "completion_tokens": 94
+ },
+ "cost_usd": 0.001316,
+ "elapsed_s": 2.02
+}

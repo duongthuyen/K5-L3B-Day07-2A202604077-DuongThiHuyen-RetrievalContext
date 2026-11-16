@@ -1,0 +1,105 @@
+{
+ "page": 248,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Month",
+    "x-axis range/categories": [
+     "07/18/2016",
+     "02/03/2017",
+     "08/22/2017",
+     "03/01/2018",
+     "09/26/2018",
+     "04/12/2019",
+     "10/31/2019",
+     "05/18/2020",
+     "12/04/2020",
+     "06/22/2021",
+     "01/08/2022"
+    ],
+    "y-axis label": "Value",
+    "units": "unreadable but numeric",
+    "y-axis range": "approximately -20,000 to 70,000",
+    "legend/series": [
+     "Value",
+     "SMA",
+     "Diff"
+    ],
+    "values": {
+     "Value": "blue line fluctuating between about 25,000 and 65,000 with seasonal peaks and troughs",
+     "SMA": "red line smoother, generally declining from about 55,000 to 40,000 over time",
+     "Diff": "green line fluctuating around zero, ranging roughly from -20,000 to 20,000"
+    }
+   },
+   "summary": "This line chart shows the monthly coal consumption for electricity generation in the US from 2016 to 2022, with the original values, a simple moving average (SMA), and the difference between them, illustrating seasonal variation and trends."
+  },
+  {
+   "label": "Figure 5.17",
+   "kind": "chart",
+   "title": "Pure Seasonal Variation. The same pattern repeats after 64 time steps, and so the period is 64.",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Time steps (n)",
+    "x-axis range/categories": [
+     1,
+     7,
+     13,
+     19,
+     25,
+     31,
+     37,
+     43,
+     49,
+     55,
+     61,
+     67,
+     73,
+     79,
+     85,
+     91,
+     97,
+     103,
+     109,
+     115,
+     121,
+     127,
+     133,
+     139,
+     145,
+     151,
+     157,
+     163,
+     169,
+     175,
+     181,
+     187,
+     193,
+     199,
+     205,
+     211,
+     217,
+     223
+    ],
+    "y-axis label": "Value",
+    "units": "unreadable numeric",
+    "y-axis range": "-5 to 5",
+    "legend/series": [
+     "Seasonal component s_n"
+    ],
+    "values": "The line oscillates smoothly with peaks near 4 and troughs near -4, repeating the same pattern every 64 time steps."
+   },
+   "summary": "This line chart illustrates a pure seasonal variation time series with a repeating pattern every 64 time steps, demonstrating the concept of seasonality and period in time series analysis."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2457,
+  "completion_tokens": 628
+ },
+ "cost_usd": 0.001988,
+ "elapsed_s": 5.01
+}

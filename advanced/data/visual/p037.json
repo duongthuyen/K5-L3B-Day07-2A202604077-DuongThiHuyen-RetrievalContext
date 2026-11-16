@@ -1,0 +1,19 @@
+{
+ "page": 37,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 1.13",
+   "kind": "image",
+   "title": "An Example XML Dataset with Metadata",
+   "details": "Screenshot of XML code showing a dataset named 'CEREALS' with metadata including version 1.2, date 04/02/2024, description 'a list of some popular cereals'. It defines three columns: NAME (string), MANUFACTURER (string), CALORIES_PER_SERVING (integer). The data section includes two rows: 1) Cheerios, General Mills, 140; 2) Corn Flakes, Kellogg's, 150.",
+   "summary": "This figure shows an example of an XML dataset structure with metadata and data rows, illustrating how datasets can be formatted in XML for data science applications."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2597,
+  "completion_tokens": 165
+ },
+ "cost_usd": 0.001303,
+ "elapsed_s": 1.95
+}

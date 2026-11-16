@@ -1,0 +1,20 @@
+{
+ "page": 542,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table C1",
+   "kind": "table",
+   "title": "Review of Python Algorithms",
+   "details": "| Chapter Title | Topic | Description of Algorithm | First Reference |\n|---------------|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|\n|               | Three-dimensional scatterplot | Using Python to generate a three-dimensional plot of a multiple regression model | Machine Learning in Regression Analysis |\n|               | Mesh grid | Using Python to generate a mesh grid plot of a multiple regression model | Machine Learning in Regression Analysis |\n|               | Multiple logistic regression | Using Python to perform multiple logistic regression analysis and generate corresponding confusion matrix | Machine Learning in Regression Analysis |\n|               | Decision trees | Using Python to generate decision trees | Decision Trees |\n|               | Random forests | Using Python to train a random forests model and analyze the importance of each feature | Other Machine Learning Techniques |\n|               | Gaussian naïve Bayes | Using Python to perform Gaussian naïve Bayes analysis | Other Machine Learning Techniques |\n| Deep Learning and Artificial Intelligence (AI) Basics | Perceptrons | Using Python to train and test a perceptron classification model and assess the accuracy of the model | Introduction to Neural Networks |\n| Deep Learning and Artificial Intelligence (AI) Basics | Training a neural network with backpropagation | Using Python’s TensorFlow library to train and test a neural network classification model using backpropagation and assess the accuracy of the model | Backpropagation |\n| Deep Learning and Artificial Intelligence (AI) Basics | Recurrent neural networks | Using Python’s TensorFlow library to train and test a classification model using recurrent neural networks (RNN) and assess the accuracy of the model | Backpropagation |\n| Deep Learning and Artificial Intelligence (AI) Basics | Predict future values | Using Python to predict future values for a classification model using recurrent neural networks (RNN) | Backpropagation |",
+   "summary": "This table summarizes various Python algorithms covered in the textbook, listing their chapter titles, topics, descriptions, and first references for further study. It includes algorithms related to regression, decision trees, random forests, naïve Bayes, and deep learning techniques such as perceptrons, neural networks, and recurrent neural networks."
+  }
+ ],
+ "attempts": 2,
+ "usage": {
+  "prompt_tokens": 2559,
+  "completion_tokens": 464
+ },
+ "cost_usd": 0.001766,
+ "elapsed_s": 38.65
+}

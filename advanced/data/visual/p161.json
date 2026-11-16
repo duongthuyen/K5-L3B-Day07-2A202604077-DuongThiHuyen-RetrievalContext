@@ -1,0 +1,19 @@
+{
+ "page": 161,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "table",
+   "title": null,
+   "details": "| Confidence Level | Critical Value (z_c) | Margin of Error (E) | Lower Bound | Upper Bound |\n|------------------|---------------------|--------------------|-------------|-------------|\n| 90%              | 1.645               | 1.47               | 11.03       | 13.97       |\n| 95%              | 1.960               | 1.75               | 10.75       | 14.25       |",
+   "summary": "This table summarizes the calculations for 90% and 95% confidence intervals for the mean time spent on homework per week by students. It shows the critical values, margins of error, and resulting confidence interval bounds for each confidence level."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2549,
+  "completion_tokens": 177
+ },
+ "cost_usd": 0.001303,
+ "elapsed_s": 2.16
+}

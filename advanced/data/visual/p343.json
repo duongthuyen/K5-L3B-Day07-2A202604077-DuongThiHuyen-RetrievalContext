@@ -1,0 +1,55 @@
+{
+ "page": 343,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 7.2",
+   "kind": "diagram",
+   "title": "Single Neuron in a Neural Network",
+   "details": {
+    "nodes": [
+     "Inputs x1, x2, x3",
+     "Neuron",
+     "Output y"
+    ],
+    "connections": [
+     "x1 -> Neuron",
+     "x2 -> Neuron",
+     "x3 -> Neuron",
+     "Neuron -> y"
+    ]
+   },
+   "summary": "This diagram shows a single neuron receiving three inputs and producing one output, illustrating the basic unit of a neural network."
+  },
+  {
+   "label": "Figure 7.3",
+   "kind": "diagram",
+   "title": "Neural Network Diagram",
+   "details": {
+    "layers": [
+     "Input Layer",
+     "Hidden Layers (2 layers)",
+     "Output Layer"
+    ],
+    "nodes_per_layer": {
+     "Input Layer": 3,
+     "Hidden Layers": 6,
+     "Output Layer": 1
+    },
+    "connections": "All nodes in adjacent layers are connected (fully connected between layers).",
+    "nodes": [
+     "Input neurons: x1, x2, x3",
+     "Hidden neurons: 6 total across two hidden layers",
+     "Output neuron: y"
+    ]
+   },
+   "summary": "This diagram depicts a simple neural network with four layers: three input neurons, two hidden layers, and one output neuron, showing full connectivity between adjacent layers."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2731,
+  "completion_tokens": 275
+ },
+ "cost_usd": 0.001532,
+ "elapsed_s": 3.22
+}

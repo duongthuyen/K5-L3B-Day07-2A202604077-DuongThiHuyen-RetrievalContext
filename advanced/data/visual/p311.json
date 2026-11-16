@@ -1,0 +1,35 @@
+{
+ "page": 311,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Actual Values",
+   "details": {
+    "chart type": "3D scatter plot",
+    "x-axis": {
+     "label": "BARTHAG",
+     "range": "0.0 to 1.0"
+    },
+    "y-axis": {
+     "label": "WAB",
+     "range": "-15 to 10"
+    },
+    "z-axis": {
+     "label": "w",
+     "range": "0 to 25"
+    },
+    "legend/series": "blue dots representing actual data points",
+    "values": "scatter points distributed roughly along a diagonal trend from low BARTHAG and WAB values to high values, with z-values (w) increasing up to about 25"
+   },
+   "summary": "This 3D scatter plot shows the actual values of a dataset with variables BARTHAG, WAB, and w, illustrating the distribution of data points in three dimensions as part of a regression analysis."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2411,
+  "completion_tokens": 196
+ },
+ "cost_usd": 0.001278,
+ "elapsed_s": 2.18
+}

@@ -1,0 +1,19 @@
+{
+ "page": 185,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "PYTHON CODE",
+   "details": "Python code snippet showing import of norm from scipy.stats, definition of parameters x = -2.274, mean = 0, standard_deviation = 1, and a comment about using norm.cdf function to calculate normal probability as the area to the left of the x-value.",
+   "summary": "This code snippet demonstrates how to calculate the p-value for a hypothesis test using the normal distribution in Python."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2621,
+  "completion_tokens": 110
+ },
+ "cost_usd": 0.001224,
+ "elapsed_s": 1.54
+}

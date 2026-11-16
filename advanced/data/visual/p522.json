@@ -1,0 +1,19 @@
+{
+ "page": 522,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure A26",
+   "kind": "table",
+   "title": "Revenue versus Advertising for a Fortune 500 Company ($000s) Showing Slope and y-Intercept Calculation in MS Excel",
+   "details": "| Month | Advertising Expenditure | Revenue |\n|-------|-------------------------|---------|\n| Jan   | 49                      | 12,210  |\n| Feb   | 145                     | 17,590  |\n| Mar   | 57                      | 13,215  |\n| Apr   | 153                     | 19,200  |\n| May   | 92                      | 14,600  |\n| Jun   | 83                      | 14,100  |\n| Jul   | 117                     | 17,100  |\n| Aug   | 142                     | 18,400  |\n| Sep   | 69                      | 14,100  |\n| Oct   | 106                     | 15,500  |\n| Nov   | 109                     | 16,300  |\n| Dec   | 121                     | 17,020  |\n\nSlope calculation: 61.8\nIntercept calculation: 9,376.7",
+   "summary": "This table shows monthly advertising expenditure and corresponding revenue (both in thousands of dollars) for a Fortune 500 company. It also includes Excel formulas used to calculate the slope (61.8) and y-intercept (9,376.7) for the linear regression equation relating advertising spend to revenue."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2398,
+  "completion_tokens": 333
+ },
+ "cost_usd": 0.001492,
+ "elapsed_s": 6.62
+}

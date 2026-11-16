@@ -1,0 +1,26 @@
+{
+ "page": 272,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 5.9",
+   "kind": "table",
+   "title": "Time Series",
+   "details": "| Month | Value |\n|-------|-------|\n| 1     | 880.7 |\n| 2     | 727.2 |\n| 3     | 798.5 |\n| 4     | 504.1 |\n| 5     | 888.4 |\n| 6     | 725.8 |\n| 7     | 793.4 |\n| 8     | 499.0 |\n| 9     | 891.7 |\n| 10    | 722.0 |\n| 11    | 789.1 |\n| 12    | 501.6 |",
+   "summary": "This table shows monthly values for a time series dataset, presumably for use in seasonal component analysis and trend-cycle identification."
+  },
+  {
+   "label": "Table 5.10",
+   "kind": "table",
+   "title": "Sample of COVID-19 Data Cases within 23 Days (source: https://data.cdc.gov/Case-Surveillance)",
+   "details": "| Date       | Weekday | New Case |\n|------------|---------|----------|\n| 10/18/2021 | Monday  | 3115     |\n| 10/19/2021 | Tuesday | 4849     |",
+   "summary": "This table provides a sample of daily new COVID-19 cases data, noting that weekend cases were added to Monday counts, illustrating data preparation for smoothing with a centered simple moving average."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2500,
+  "completion_tokens": 346
+ },
+ "cost_usd": 0.001554,
+ "elapsed_s": 3.29
+}

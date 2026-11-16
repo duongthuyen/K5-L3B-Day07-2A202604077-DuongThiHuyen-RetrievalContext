@@ -1,0 +1,19 @@
+{
+ "page": 323,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 6.8",
+   "kind": "table",
+   "title": "Test Points",
+   "details": "| X   | Y    | Label | Predicted Label |\n|------|-------|-------|-----------------|\n| 9.9  | 2.5   | Blue  | Blue            |\n| 15.1 | 12.6  | Red   | Red             |\n| 3.5  | 10.2  | Red   | Blue            |",
+   "summary": "This table shows three test points with their X and Y coordinates, their true labels, and the predicted labels by model M. It is used to evaluate the accuracy of the model."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2941,
+  "completion_tokens": 155
+ },
+ "cost_usd": 0.001424,
+ "elapsed_s": 2.32
+}

@@ -1,0 +1,73 @@
+{
+ "page": 317,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 6.18",
+   "kind": "diagram",
+   "title": "A Simple Decision Tree",
+   "details": {
+    "nodes": [
+     "Is it living?",
+     "Is it an animal?",
+     "Is it worth a lot of money?",
+     "Does it walk on two legs?",
+     "Tree",
+     "Diamond",
+     "Rock",
+     "Human",
+     "Dog"
+    ],
+    "connections": [
+     {
+      "from": "Is it living?",
+      "to": "Is it an animal?",
+      "label": "Yes"
+     },
+     {
+      "from": "Is it living?",
+      "to": "Is it worth a lot of money?",
+      "label": "No"
+     },
+     {
+      "from": "Is it an animal?",
+      "to": "Does it walk on two legs?",
+      "label": "Yes"
+     },
+     {
+      "from": "Is it an animal?",
+      "to": "Tree",
+      "label": "No"
+     },
+     {
+      "from": "Does it walk on two legs?",
+      "to": "Human",
+      "label": "Yes"
+     },
+     {
+      "from": "Does it walk on two legs?",
+      "to": "Dog",
+      "label": "No"
+     },
+     {
+      "from": "Is it worth a lot of money?",
+      "to": "Diamond",
+      "label": "Yes"
+     },
+     {
+      "from": "Is it worth a lot of money?",
+      "to": "Rock",
+      "label": "No"
+     }
+    ]
+   },
+   "summary": "This figure shows a simple decision tree used for classification, illustrating how decisions are broken down into a series of yes/no questions leading to final categories such as Human, Dog, Tree, Diamond, or Rock."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2759,
+  "completion_tokens": 318
+ },
+ "cost_usd": 0.001612,
+ "elapsed_s": 3.05
+}

@@ -1,0 +1,19 @@
+{
+ "page": 192,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "PYTHON CODE",
+   "details": "Screenshot of Python code showing usage of stats.ttest_ind_from_stats() function with sample means, standard deviations, and sample sizes for two samples. The code imports scipy.stats and numpy, defines sample_mean1=72700, sample_standard_deviation1=9800, sample_size1=45, sample_mean2=76900, sample_standard_deviation2=10700, sample_size2=50, then calls stats.ttest_ind_from_stats() and calculates left-tailed p-value by dividing two-tailed p-value by 2. Finally, it prints test statistic and p-value.",
+   "summary": "This code snippet demonstrates how to perform a two-sample t-test using summary statistics in Python, specifically using the scipy.stats function ttest_ind_from_stats, and how to adjust the two-tailed p-value for a left-tailed test."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2504,
+  "completion_tokens": 199
+ },
+ "cost_usd": 0.00132,
+ "elapsed_s": 2.28
+}

@@ -1,0 +1,19 @@
+{
+ "page": 96,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 2.8",
+   "kind": "table",
+   "title": "Summary of Text Preprocessing Techniques",
+   "details": "| Preprocessing Technique | Explanation | Example |\n|-------------------------|-------------|---------|\n| Part-of-speech tagging | Identifying the grammatical components of each word where each word in a sentence is assigned a specific part-of-speech tag (e.g., noun, verb, or adjective) | In the sentence “I went to the market to buy some fruits,” the words “went” and “buy” would be tagged as verbs, “market” and “fruits” as a noun, and “some” as adjectives. |\n| Named entity recognition | Recognizing and categorizing named entities such as people, places, and organizations | Consider the following text: “John went to Paris last summer with his colleagues at Microsoft.” By using named entity recognition, we can tag the named entities in this sentence as follows: “John (person) went to Paris (location) last summer with his colleagues at Microsoft (organization).” |\n| Sentiment analysis | Identifying and categorizing the emotions expressed in text | Let’s say a customer has left a review for a new laptop they purchased. The review reads: “I am extremely satisfied with my purchase. The laptop has exceeded all of my expectations and has greatly improved my work efficiency. Thanks for an amazing product!” To perform sentiment analysis, the text will first undergo preprocessing, which involves cleaning and preparing the text data for analysis. This may include removing punctuation, converting all letters to lowercase, and removing stopwords (commonly used words that do not add much meaning to a sentence, such as “the” or “and”). After preprocessing, sentiment analysis techniques will be applied to analyze the emotions and opinions expressed in the review. The analysis may identify key positive words such as “satisfied” and “amazing” and measure their overall sentiment score. It may also take into account the context and tone of the review to accurately determine the sentiment. |\n",
+   "summary": "This table summarizes three text preprocessing techniques: part-of-speech tagging, named entity recognition, and sentiment analysis. It provides explanations and examples for each technique to illustrate their purpose and application in text data processing."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2622,
+  "completion_tokens": 465
+ },
+ "cost_usd": 0.001793,
+ "elapsed_s": 4.78
+}

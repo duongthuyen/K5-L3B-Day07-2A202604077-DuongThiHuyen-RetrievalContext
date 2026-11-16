@@ -1,0 +1,57 @@
+{
+ "page": 285,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 6.6",
+   "kind": "chart",
+   "title": "Graph of a Typical Sigmoid Function",
+   "details": {
+    "chart type": "line graph",
+    "x-axis label": "x",
+    "x-axis range": [
+     -1,
+     1
+    ],
+    "y-axis label": "σ(x)",
+    "y-axis units": "unitless (probability)",
+    "y-axis range": [
+     0,
+     1
+    ],
+    "legend/series": null,
+    "values": [
+     {
+      "x": -1,
+      "y": 0.0
+     },
+     {
+      "x": -0.5,
+      "y": 0.075
+     },
+     {
+      "x": 0,
+      "y": 0.5
+     },
+     {
+      "x": 0.5,
+      "y": 0.924
+     },
+     {
+      "x": 1,
+      "y": 0.993
+     }
+    ],
+    "trend": "S-shaped curve starting near 0 at x=-1, crossing 0.5 at x=0, and approaching 1 at x=1"
+   }
+  },
+  "summary"
+ ],
+ "attempts": 2,
+ "usage": {
+  "prompt_tokens": 2594,
+  "completion_tokens": 220
+ },
+ "cost_usd": 0.00139,
+ "elapsed_s": 32.42
+}

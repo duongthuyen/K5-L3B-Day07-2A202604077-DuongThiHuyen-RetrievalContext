@@ -1,0 +1,132 @@
+{
+ "page": 346,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 7.5",
+   "kind": "chart",
+   "title": "Graphs of Activation Functions. Top, from left to right, (a) step, (b) sigmoid, and (c) hyperbolic tangent (tanh) functions. Bottom, from left to right, (d) ReLU, (e) LReLU, and (f) softplus functions.",
+   "details": {
+    "chart type": "line plots",
+    "x-axis": {
+     "label": "x",
+     "range": [
+      -2,
+      2
+     ]
+    },
+    "y-axis": {
+     "label": "f(x)",
+     "range": [
+      -2,
+      2
+     ]
+    },
+    "series": [
+     "(a) Step",
+     "(b) Sigmoid",
+     "(c) Tanh",
+     "(d) ReLU",
+     "(e) Leaky ReLU",
+     "(f) Softplus"
+    ],
+    "values": {
+     "(a) Step": {
+      "x": [
+       -2,
+       0,
+       2
+      ],
+      "y": [
+       0,
+       1,
+       1
+      ]
+     },
+     "(b) Sigmoid": {
+      "x": [
+       -2,
+       0,
+       2
+      ],
+      "y": [
+       0.12,
+       0.5,
+       0.88
+      ]
+     },
+     "(c) Tanh": {
+      "x": [
+       -2,
+       0,
+       2
+      ],
+      "y": [
+       -1.96,
+       0,
+       1.96
+      ]
+     },
+     "(d) ReLU": {
+      "x": [
+       -2,
+       0,
+       2
+      ],
+      "y": [
+       0,
+       0,
+       2
+      ]
+     },
+     "(e) Leaky ReLU": {
+      "x": [
+       -2,
+       0,
+       2
+      ],
+      "y": [
+       -1.6,
+       0,
+       2
+      ]
+     },
+     "(f) Softplus": {
+      "x": [
+       -2,
+       0,
+       2
+      ],
+      "y": [
+       0.13,
+       0.69,
+       2.13
+      ]
+     }
+    },
+    "trends": {
+     "Step": "jump from 0 to 1 at x=0",
+     "Sigmoid": "smooth S-shaped curve from 0 to 1",
+     "Tanh": "smooth S-shaped curve from -2 to 2",
+     "ReLU": "0 for negative x, linear for positive x",
+     "Leaky ReLU": "small negative slope for negative x, linear for positive x",
+     "Softplus": "smooth approximation of ReLU, always positive and increasing"
+    }
+   }
+  },
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": null,
+   "summary": "The green box labeled EXAMPLE 7.1 contains a problem statement and setup for calculating neuron outputs with different activation functions, but it is not a visual informative element like a chart or diagram."
+  }
+ ],
+ "attempts": 1,
+ "usage": {
+  "prompt_tokens": 2588,
+  "completion_tokens": 552
+ },
+ "cost_usd": 0.001918,
+ "elapsed_s": 6.57
+}

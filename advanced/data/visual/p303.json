@@ -1,0 +1,49 @@
+{
+ "page": 303,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Confusion Matrix",
+   "details": {
+    "chart type": "heatmap/matrix",
+    "x-axis label": "Predicted",
+    "x-axis categories": [
+     0,
+     1
+    ],
+    "y-axis label": "True",
+    "y-axis categories": [
+     0,
+     1
+    ],
+    "legend": {
+     "color scale": "blue shades",
+     "min": 8,
+     "max": 24
+    },
+    "values": {
+     "(True=0, Predicted=0)": 20,
+     "(True=0, Predicted=1)": 10,
+     "(True=1, Predicted=0)": 8,
+     "(True=1, Predicted=1)": 24
+    },
+    "summary statistics": {
+     "true positives": 20,
+     "true negatives": 24,
+     "false negatives": 10,
+     "false positives": 8,
+     "accuracy": "44/62 = 71%"
+    }
+   },
+   "summary": "This confusion matrix shows the classification results with 20 true positives, 24 true negatives, 10 false negatives, and 8 false positives, resulting in an accuracy of 71%. It is used to evaluate the performance of a classification model."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2579,
+  "completion_tokens": 253
+ },
+ "cost_usd": 0.001436,
+ "elapsed_s": 2.63
+}

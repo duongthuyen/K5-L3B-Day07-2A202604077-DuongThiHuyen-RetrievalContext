@@ -1,0 +1,19 @@
+{
+ "page": 181,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "image",
+   "title": "PYTHON CODE",
+   "details": "Screenshot of Python code to calculate the p-value for a left-tailed hypothesis test using the normal distribution. Code imports norm from scipy.stats, defines x = -1.846, mean = 0, standard_deviation = 1, and calculates the cumulative distribution function norm.cdf(x, mean, standard_deviation) rounded to 4 decimal places. The output shown is 0.0324.",
+   "summary": "This code snippet demonstrates how to calculate the p-value for a left-tailed hypothesis test using Python's scipy.stats.norm.cdf function."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2590,
+  "completion_tokens": 141
+ },
+ "cost_usd": 0.001262,
+ "elapsed_s": 1.75
+}

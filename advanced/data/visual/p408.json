@@ -1,0 +1,19 @@
+{
+ "page": 408,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 8.1",
+   "kind": "table",
+   "title": "Global Soft Drinks Industry, Top 10 Brands in 2019, by Share of Volume",
+   "details": "| Soft Drink       | Share of Volume (%) |\n|------------------|---------------------|\n| Coca-Cola        | 18.6%               |\n| Pepsi            | 9.1%                |\n| Diet Coke        | 8.0%                |\n| Dr. Pepper       | 7.5%                |\n| Sprite           | 7.2%                |\n| Mountain Dew     | 7.0%                |\n| Diet Pepsi       | 3.5%                |\n| Coke Zero        | 2.8%                |\n| Fanta            | 2.4%                |\n| Diet Mountain Dew| 2.1%                |",
+   "summary": "This table lists the top 10 soft drink brands globally in 2019, ranked by their share of volume in the market. It provides the exact percentage share for each brand, serving as the data basis for the bar graphs discussed in the example."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2463,
+  "completion_tokens": 249
+ },
+ "cost_usd": 0.001384,
+ "elapsed_s": 3.01
+}

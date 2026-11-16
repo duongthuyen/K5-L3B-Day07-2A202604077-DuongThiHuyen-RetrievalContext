@@ -1,0 +1,19 @@
+{
+ "page": 138,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 3.3",
+   "kind": "table",
+   "title": "Result of Three Random Coin Flips",
+   "details": "| Result for Flip #1 | Result for Flip #2 | Result for Flip #3 | Value of Random Variable x |\n|-------------------|-------------------|-------------------|----------------------------|\n| Heads             | Heads             | Heads             | 3                          |\n| Heads             | Heads             | Tails             | 2                          |\n| Heads             | Tails             | Heads             | 2                          |\n| Heads             | Tails             | Tails             | 1                          |\n| Tails             | Heads             | Heads             | 2                          |\n| Tails             | Heads             | Tails             | 1                          |\n| Tails             | Tails             | Heads             | 1                          |\n| Tails             | Tails             | Tails             | 0                          |",
+   "summary": "This table shows all possible outcomes of flipping a coin three times, with the corresponding count of heads (random variable x) for each outcome. It illustrates the discrete values that the random variable can take (0 to 3)."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2692,
+  "completion_tokens": 257
+ },
+ "cost_usd": 0.001488,
+ "elapsed_s": 2.97
+}

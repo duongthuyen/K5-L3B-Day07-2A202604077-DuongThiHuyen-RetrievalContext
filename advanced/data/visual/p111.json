@@ -1,0 +1,19 @@
+{
+ "page": 111,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 2.6",
+   "kind": "table",
+   "title": "Data Collection Based on Text Processing",
+   "details": "| Candidates | Customer-Centric | Team Player | Collaborative | Sales Experience | Leadership | Multitasking | Goal-Oriented | Team-Oriented | Effective | Inflexible | Uncooperative | Indecisive | Negative | Lacking | Limited |\n|------------|-------------------|-------------|---------------|------------------|------------|--------------|---------------|---------------|-----------|-----------|----------------|------------|----------|---------|---------|\n| John       | ✓                 | ✓           | ✓             | ✓                | ✓          |              |               |               |           |           |                |            |          |         |         |\n| Sarah      |                   | ✓           | ✓             |                |            | ✓            |               | ✓             |           |           |                |            |          |         |         |\n| Lin        |                   |             | ✓             | ✓                |            |              |               |               |           |           |                |            | ✓        |         | ✓       |\n| Aysha      | ✓                 |             |               | ✓                |            |              |               |               | ✓         | ✓         | ✓              | ✓          | ✓        |         |         |\n| Alex       |                   | ✓           |               | ✓                |            |              |               |               | ✓         | ✓         |                |            |          |         |         |\n| Peter      | ✓                 | ✓           | ✓             |                  |            |              |               |               | ✓         |           | ✓              |            | ✓        |         |         |\n| Jamal      | ✓                 |             |               | ✓                | ✓          | ✓            | ✓             |               |           |           |                |            |          |         |         |\n| Brian      | ✓                 | ✓           | ✓             | ✓                | ✓          | ✓            |               |               |           |           |                |            | ✓        |         |         |\n| Samantha   | ✓                 | ✓           | ✓             | ✓                | ✓          |              |               |               |           |           |                |            |          |         |         |\n| Miguel     |                   |             |               |                  |            |              |               |               |           |           |                |            |          |         |         |\n\n(Note: Some checkmarks and cells are unreadable or partially visible.)",
+   "summary": "This table lists candidates and their attributes or skills related to data collection based on text processing. Each candidate is marked with checkmarks indicating presence of specific traits such as Customer-Centric, Team Player, Leadership, etc. It helps compare candidates on various competencies."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2635,
+  "completion_tokens": 593
+ },
+ "cost_usd": 0.002003,
+ "elapsed_s": 5.18
+}

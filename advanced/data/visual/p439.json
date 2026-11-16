@@ -1,0 +1,68 @@
+{
+ "page": 439,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Enrollment at a Community College",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Year",
+    "x-axis range": [
+     1,
+     8
+    ],
+    "y-axis label": "Enrollment",
+    "y-axis units": "number of students",
+    "y-axis range": [
+     6000,
+     12000
+    ],
+    "legend/series": null,
+    "values": [
+     {
+      "year": 1,
+      "enrollment": 8700
+     },
+     {
+      "year": 2,
+      "enrollment": 9100
+     },
+     {
+      "year": 3,
+      "enrollment": 9300
+     },
+     {
+      "year": 4,
+      "enrollment": 9900
+     },
+     {
+      "year": 5,
+      "enrollment": 9200
+     },
+     {
+      "year": 6,
+      "enrollment": 8800
+     },
+     {
+      "year": 7,
+      "enrollment": 8100
+     },
+     {
+      "year": 8,
+      "enrollment": 7800
+     }
+    ],
+    "trend": "Enrollment gradually increased from year 1 to 4, then decreased from year 4 to 8."
+   }
+  },
+  "summary"
+ ],
+ "usage": {
+  "prompt_tokens": 2427,
+  "completion_tokens": 239
+ },
+ "cost_usd": 0.001353,
+ "elapsed_s": 2.96
+}

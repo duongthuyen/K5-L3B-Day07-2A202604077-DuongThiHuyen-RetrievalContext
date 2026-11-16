@@ -1,0 +1,19 @@
+{
+ "page": 208,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.16",
+   "kind": "table",
+   "title": "Revenue versus Advertising for a Company (in $000s)",
+   "details": "| Month | Advertising Spend | Revenue |\n|-------|-------------------|---------|\n| Sep   | 69                | 14100   |\n| Oct   | 106               | 15500   |\n| Nov   | 109               | 16300   |\n| Dec   | 121               | 17020   |",
+   "summary": "This table shows the monthly advertising spend and corresponding revenue for a company over four months, illustrating the relationship between advertising expenditure and revenue."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2543,
+  "completion_tokens": 144
+ },
+ "cost_usd": 0.001248,
+ "elapsed_s": 2.17
+}

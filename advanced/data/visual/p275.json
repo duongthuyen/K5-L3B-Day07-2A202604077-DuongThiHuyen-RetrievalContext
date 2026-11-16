@@ -1,0 +1,19 @@
+{
+ "page": 275,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 6.1",
+   "kind": "image",
+   "title": "Machine learning may be used to classify all kinds of data. Facial recognition technology relies heavily on machine learning algorithms, such as random forest models.",
+   "details": "Photo showing a humanoid robot pointing at a man standing in front of it in a conference or exhibition setting. Background includes display boards and a microphone. Caption credits modification of work 'Humanoid Robot Uprising' by Steve Jurvetson/Flickr, CC BY 2.0.",
+   "summary": "This image illustrates the application of machine learning in facial recognition technology, highlighting the interaction between humans and AI-powered robots."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2473,
+  "completion_tokens": 141
+ },
+ "cost_usd": 0.001215,
+ "elapsed_s": 2.46
+}

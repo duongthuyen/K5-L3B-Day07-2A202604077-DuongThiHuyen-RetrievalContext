@@ -1,0 +1,27 @@
+{
+ "page": 400,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "EXAMPLE 8.6",
+   "kind": "diagram",
+   "title": "Example 8.6 Problem and Solution",
+   "details": {
+    "problem": "Consider a loan approval system that uses an algorithm to determine an individual's creditworthiness based on their personal and financial information. The algorithm is trained to analyze various attributes such as income, credit score, employment history, and debt-to-income ratio to make a decision on whether or not to approve a loan for each individual based on their likelihood of paying it back. Two datasets are available for training. Which one would be most appropriate in reducing potential bias in the model?",
+    "options": {
+     "a": "Dataset 1, containing information from 5,000 college graduates",
+     "b": "Dataset 2, containing information provided by the first 200 people who passed by the bank during the previous week",
+     "c": "Dataset 3, containing information from 3,500 individuals who were selected from different socioeconomic backgrounds, genders, ages, and demographic groups"
+    },
+    "solution": "The correct answer is C. The most appropriate training set for this system would be Dataset 3 (C), as it includes a broadly representative range of individuals. While Dataset 2 (B) may also represent a diverse group, Dataset 3 is more comprehensive."
+   },
+   "summary": "This example illustrates the importance of using a broadly representative dataset to reduce bias in a loan approval algorithm, emphasizing fairness in data selection."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2906,
+  "completion_tokens": 301
+ },
+ "cost_usd": 0.001644,
+ "elapsed_s": 3.42
+}

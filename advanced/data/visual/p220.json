@@ -1,0 +1,19 @@
+{
+ "page": 220,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Table 4.19",
+   "kind": "table",
+   "title": "Software Co. Revenue vs. Cash Flow",
+   "details": "| Revenues ($000s) | Cash Flow ($000s) |\n|------------------|-------------------|\n| 212              | 81                |\n| 239              | 84                |\n| 218              | 81                |\n| 297              | 99                |\n| 287              | 91                |",
+   "summary": "This table shows the revenues and corresponding cash flow (both in thousands of dollars) for a software company over recent years, used for correlation and regression analysis."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2681,
+  "completion_tokens": 146
+ },
+ "cost_usd": 0.001306,
+ "elapsed_s": 2.19
+}

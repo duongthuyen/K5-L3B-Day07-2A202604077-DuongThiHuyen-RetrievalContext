@@ -1,0 +1,32 @@
+{
+ "page": 263,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "chart",
+   "title": "Monthly Consumption of Coal for Electricity Generation in the United States from 2016 to 2022",
+   "details": {
+    "chart type": "line chart",
+    "x-axis label": "Months",
+    "x-axis range": "0 to 100",
+    "y-axis label": "Coal Consumption",
+    "y-axis units": "not explicitly stated, presumably tons or similar",
+    "y-axis range": "0 to 100,000+",
+    "legend/series": [
+     "Original Time Series (blue solid line)",
+     "Fitted Values (red solid line)",
+     "Forecasted Values (red dashed line)"
+    ],
+    "values": "The blue curve fluctuates mostly between 20,000 and 70,000 units, with some peaks near 70,000. The red solid line closely follows the blue line with some deviations. The red dashed line shows forecasted values from month ~75 to 100, generally trending downward from about 45,000 to around 25,000 with cyclical fluctuations."
+   },
+   "summary": "This line chart compares the original monthly coal consumption time series with fitted values from an ARIMA model and shows forecasted values extending beyond the known data. It illustrates how the model fits the historical data and projects future consumption with some expected error."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2531,
+  "completion_tokens": 273
+ },
+ "cost_usd": 0.001449,
+ "elapsed_s": 2.67
+}

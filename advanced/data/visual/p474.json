@@ -1,0 +1,19 @@
+{
+ "page": 474,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 10.2",
+   "kind": "image",
+   "title": "The executive dashboard is a visual representation of data to give executives and senior management a quick, real-time overview of an organization's key performance indicators (KPIs).",
+   "details": "Photo of a tablet screen showing an executive dashboard with multiple visual elements: a pie chart labeled 'Traffic Sources Overview' with categories Direct Traffic, Search Engines, Referral Sites; a line chart labeled 'Visitors Overview' showing a time series with peaks and troughs; a map labeled 'Map Overlay'; and a table labeled 'Content Overview' with unreadable text. The tablet is on a wooden table with a blurred background including a white cup and a pen.",
+   "summary": "This image illustrates an executive dashboard used to provide a quick, real-time overview of key performance indicators for executives and senior management, demonstrating how data visualization supports decision-making."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2792,
+  "completion_tokens": 189
+ },
+ "cost_usd": 0.001419,
+ "elapsed_s": 2.43
+}

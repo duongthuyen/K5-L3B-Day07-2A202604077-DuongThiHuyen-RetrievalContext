@@ -1,0 +1,19 @@
+{
+ "page": 379,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": "An icon showing a document with an arrow pointing right, symbolizing datasets or data download.",
+   "summary": "This decorative icon accompanies the note about datasets and does not convey additional informational content."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2823,
+  "completion_tokens": 64
+ },
+ "cost_usd": 0.001232,
+ "elapsed_s": 1.33
+}

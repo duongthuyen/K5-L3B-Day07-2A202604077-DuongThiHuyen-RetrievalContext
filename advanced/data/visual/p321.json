@@ -1,0 +1,200 @@
+{
+ "page": 321,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "label": "Figure 6.20",
+   "kind": "diagram",
+   "title": "Flowchart for a Decision Tree. The root node is at the top. Each internal node asks a question about the data and routes accordingly. Leaf nodes indicate the label for the data.",
+   "details": {
+    "nodes": [
+     "y ≤ 13.75",
+     "x ≤ 14.55",
+     "Blue",
+     "Red",
+     "y ≤ 8.45",
+     "x ≤ 8.65",
+     "Blue",
+     "x ≤ 4.2",
+     "Red",
+     "x ≤ 2.55",
+     "Red",
+     "Blue"
+    ],
+    "connections": [
+     {
+      "from": "y ≤ 13.75",
+      "to": "x ≤ 14.55",
+      "direction": "left"
+     },
+     {
+      "from": "y ≤ 13.75",
+      "to": "Blue",
+      "direction": "right"
+     },
+     {
+      "from": "x ≤ 14.55",
+      "to": "y ≤ 8.45",
+      "direction": "left"
+     },
+     {
+      "from": "x ≤ 14.55",
+      "to": "Red",
+      "direction": "right"
+     },
+     {
+      "from": "y ≤ 8.45",
+      "to": "Blue",
+      "direction": "left"
+     },
+     {
+      "from": "y ≤ 8.45",
+      "to": "x ≤ 8.65",
+      "direction": "right"
+     },
+     {
+      "from": "x ≤ 8.65",
+      "to": "x ≤ 4.2",
+      "direction": "left"
+     },
+     {
+      "from": "x ≤ 8.65",
+      "to": "Blue",
+      "direction": "right"
+     },
+     {
+      "from": "x ≤ 4.2",
+      "to": "x ≤ 2.55",
+      "direction": "left"
+     },
+     {
+      "from": "x ≤ 4.2",
+      "to": "Red",
+      "direction": "right"
+     },
+     {
+      "from": "x ≤ 2.55",
+      "to": "Red",
+      "direction": "left"
+     },
+     {
+      "from": "x ≤ 2.55",
+      "to": "Blue",
+      "direction": "right"
+     }
+    ]
+   }
+  },
+  {
+   "label": "Figure 6.21",
+   "kind": "chart",
+   "title": "Regions of the Plane Corresponding to Pure Nodes. The dataset is completely categorized into red and blue regions separated by lines that are defined by inequalities.",
+   "details": {
+    "chart type": "scatter plot with decision boundary lines",
+    "x-axis label": "x",
+    "x-axis range": "0 to 20",
+    "y-axis label": "y",
+    "y-axis range": "0 to 20",
+    "legend/series": [
+     "Red points",
+     "Blue points"
+    ],
+    "lines": [
+     "y = 13.75",
+     "x = 14.55",
+     "y = 8.45",
+     "x = 8.65",
+     "x = 4.2",
+     "x = 2.55"
+    ],
+    "regions": {
+     "Red": "right and lower right regions",
+     "Blue": "upper left and lower left regions"
+    },
+    "points": {
+     "Red": [
+      {
+       "x": 1.5,
+       "y": 12.5
+      },
+      {
+       "x": 3,
+       "y": 13
+      },
+      {
+       "x": 11,
+       "y": 11
+      },
+      {
+       "x": 16,
+       "y": 5
+      },
+      {
+       "x": 17,
+       "y": 7
+      },
+      {
+       "x": 18,
+       "y": 6
+      }
+     ],
+     "Blue": [
+      {
+       "x": 2,
+       "y": 3
+      },
+      {
+       "x": 5,
+       "y": 2.5
+      },
+      {
+       "x": 7,
+       "y": 6
+      },
+      {
+       "x": 9,
+       "y": 7
+      },
+      {
+       "x": 10,
+       "y": 15
+      },
+      {
+       "x": 12,
+       "y": 14
+      },
+      {
+       "x": 13,
+       "y": 16
+      },
+      {
+       "x": 14,
+       "y": 10
+      },
+      {
+       "x": 15,
+       "y": 18
+      }
+     ]
+    },
+    "annotations": [
+     "Blue and Red labels inside regions",
+     "Inequality lines separate regions"
+    ]
+   }
+  },
+  {
+   "label": null,
+   "kind": "decorative",
+   "title": null,
+   "details": null,
+   "summary": "No other informative visual elements on the page."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2332,
+  "completion_tokens": 881
+ },
+ "cost_usd": 0.002342,
+ "elapsed_s": 6.86
+}
