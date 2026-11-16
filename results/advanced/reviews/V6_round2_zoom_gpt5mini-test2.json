@@ -1,0 +1,182 @@
+[
+ {
+  "id": "BT01",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BT02",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BT03",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BT04",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BT05",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BT06",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BI01",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BI02",
+  "group": "image",
+  "pass": true,
+  "reason": "Đạt: w_c trên vòng phản hồi, đưa về hộp b."
+ },
+ {
+  "id": "BI03",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BI04",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BI05",
+  "group": "image",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BC01",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BC02",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BC03",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BC04",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đạt: x = 19, ≈ 0.32 (trong khoảng chấm 0.30-0.35)."
+ },
+ {
+  "id": "BC05",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đạt: 1 điểm đỏ ở y = 1, GPA ≈ 2.3 (đối chiếu Figure 6.8 p288)."
+ },
+ {
+  "id": "BM01",
+  "group": "multihop",
+  "pass": false,
+  "reason": "Sai: '5 of 10' — chỉ đếm phần Table 6.5 ở p288, bỏ sót 2 dòng ở p287 (1.5 N, 2.4 Y) dù đã xem p287; đúng là 6/12."
+ },
+ {
+  "id": "BM02",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BM03",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BM04",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BX01",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BX02",
+  "group": "text",
+  "pass": true,
+  "reason": "Đạt: giá trị đúng; trích p425 (code q1=54000, median=65000, q3=92000 + boxplot) — evidence thay thế hợp lệ trong bản gốc (gold ghi p426); IQR tính đúng."
+ },
+ {
+  "id": "BX03",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BX04",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BU01",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Đạt: từ chối; khẳng định phụ về code p216 (chỉ có mảng A, B, C) đã kiểm tra là đúng."
+ },
+ {
+  "id": "BU02",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu (đã kiểm tra bản gốc)."
+ },
+ {
+  "id": "BU03",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu (đã kiểm tra bản gốc)."
+ },
+ {
+  "id": "BU04",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu (đã kiểm tra bản gốc)."
+ },
+ {
+  "id": "BU05",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu (đã kiểm tra bản gốc)."
+ },
+ {
+  "id": "BU06",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu (đã kiểm tra bản gốc)."
+ }
+]

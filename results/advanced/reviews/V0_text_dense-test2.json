@@ -1,0 +1,182 @@
+[
+ {
+  "id": "BT01",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BT02",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BT03",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BT04",
+  "group": "table",
+  "pass": false,
+  "reason": "Từ chối dù Table 7.2 có trong sách."
+ },
+ {
+  "id": "BT05",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BT06",
+  "group": "table",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BI01",
+  "group": "image",
+  "pass": false,
+  "reason": "Từ chối (chỉ có trong hình)."
+ },
+ {
+  "id": "BI02",
+  "group": "image",
+  "pass": false,
+  "reason": "Sai: nói trọng số là w và quay về cùng neuron."
+ },
+ {
+  "id": "BI03",
+  "group": "image",
+  "pass": false,
+  "reason": "Sai: chọn file XML ở Figure 1.11 thay vì class.txt."
+ },
+ {
+  "id": "BI04",
+  "group": "image",
+  "pass": false,
+  "reason": "Sai: trả lời chung chung, không phải Machine Learning."
+ },
+ {
+  "id": "BI05",
+  "group": "image",
+  "pass": false,
+  "reason": "Sai: 'bar chart' (thực tế pie + line), tự suy đoán."
+ },
+ {
+  "id": "BC01",
+  "group": "chart",
+  "pass": false,
+  "reason": "Sai phạm vi trục x."
+ },
+ {
+  "id": "BC02",
+  "group": "chart",
+  "pass": false,
+  "reason": "Từ chối."
+ },
+ {
+  "id": "BC03",
+  "group": "chart",
+  "pass": false,
+  "reason": "Sai phạm vi trục (20-130, 30-85)."
+ },
+ {
+  "id": "BC04",
+  "group": "chart",
+  "pass": false,
+  "reason": "Sai: x = 18, 0.271 (lấy từ text, không phải đỉnh biểu đồ)."
+ },
+ {
+  "id": "BC05",
+  "group": "chart",
+  "pass": true,
+  "reason": "Đạt: 1 điểm đỏ ở y = 1, GPA ≈ 2.3 (text p288 mô tả màu; đối chiếu hình)."
+ },
+ {
+  "id": "BM01",
+  "group": "multihop",
+  "pass": false,
+  "reason": "Sai: 5/10."
+ },
+ {
+  "id": "BM02",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BM03",
+  "group": "multihop",
+  "pass": false,
+  "reason": "Sai: 30% (đúng 20%)."
+ },
+ {
+  "id": "BM04",
+  "group": "multihop",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BX01",
+  "group": "text",
+  "pass": false,
+  "reason": "Từ chối dù text p321 có."
+ },
+ {
+  "id": "BX02",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BX03",
+  "group": "text",
+  "pass": true,
+  "reason": "Đúng và đủ; citation đúng trang/phần tử; đã đối chiếu bản gốc."
+ },
+ {
+  "id": "BX04",
+  "group": "text",
+  "pass": false,
+  "reason": "Từ chối dù text p358 có."
+ },
+ {
+  "id": "BU01",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu (đã kiểm tra bản gốc)."
+ },
+ {
+  "id": "BU02",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu (đã kiểm tra bản gốc)."
+ },
+ {
+  "id": "BU03",
+  "group": "unanswerable",
+  "pass": false,
+  "reason": "Bịa: batting average = 40.88 (đó là tuổi)."
+ },
+ {
+  "id": "BU04",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu (đã kiểm tra bản gốc)."
+ },
+ {
+  "id": "BU05",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu (đã kiểm tra bản gốc)."
+ },
+ {
+  "id": "BU06",
+  "group": "unanswerable",
+  "pass": true,
+  "reason": "Từ chối đúng, chỉ nêu phần còn thiếu (đã kiểm tra bản gốc)."
+ }
+]

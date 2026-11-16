@@ -100,4 +100,79 @@ Context Evidence của agent (gom qua mọi lượt search): v1 A0 dev 20/22, A1
 
 ## Thử thách nâng cao (nếu thực hiện)
 
-Không thực hiện. Corpus 56 trang không đủ điều kiện 100 trang có bảng, ảnh và biểu đồ.
+**Kết quả: test2 đạt 29/30 = 96.7% (≥ 90%)** với cấu hình đã chốt V6. Đây là lần đánh giá thứ hai: lần đầu (V4) chỉ đạt 25/30 = 83.3%. Vì đã đọc test lần đầu để phân tích lỗi, mình tạo test2 mới và commit trước mọi thay đổi (chi tiết ở dưới).
+
+- **Tài liệu, nguồn, quyền sử dụng, số trang và phiên bản:**
+  - *Principles of Data Science* (OpenStax, Rice University, bản web 2024), CC BY-NC-SA 4.0.
+  - Nguồn: https://assets.openstax.org/oscms-prodcms/media/documents/Principles-of-Data-Science-WEB.pdf. **569 trang PDF**, SHA-256 `6b47205459a2f4e25a2b2a86369e674a26a5ae566a4cc428dd31047670692398`.
+  - Có 145 hình và 103 bảng theo caption (biểu đồ cột, đường, histogram, scatter, heatmap, sơ đồ cây/flowchart/Venn, ảnh chụp).
+  - File PDF không được commit; tải lại bằng script của Day 6 (kiểm tra hash).
+- **Cách xử lý text, bảng, ảnh, biểu đồ** ([advanced/](../../advanced/)):
+  1. `extract.py`: lấy lớp text gốc bằng PyMuPDF (PDF dựng sẵn, nên không cần OCR), bảng bằng `find_tables()` xuất markdown kèm bbox, vùng hình (ảnh raster và cụm vector), caption "Figure/Table x.y", và render trang 110 dpi kèm crop từng vùng.
+  2. `describe.py`: `gpt-4.1-mini` vision mô tả mọi bảng/biểu đồ/sơ đồ trên 440 trang có nội dung trực quan (523 phần tử: 116 biểu đồ, 47 sơ đồ, 141 ảnh, 165 bảng, 54 ảnh trang trí bị loại). Chi phí **$0.63**, 1.15M token vào + 0.11M token ra.
+  3. `index.py`: tạo 2335 chunk (1748 text ≤ 1000 ký tự, 118 bảng, 469 mô tả hình), mỗi chunk giữ trang, trang in, chương, mục, nhãn Figure/Table, bbox và ảnh render. Embedding bằng `bge-small-en-v1.5` (384 chiều, giống Day 6), lưu vào bảng pgvector `adv_chunks` (embedding mất 365 s trên CPU).
+  - **Kiểm chứng:** mô tả do model sinh có thể sai (ví dụ mô tả Huffman tree thiếu nhãn A–D), nên agent luôn phải xem **ảnh trang gốc** trước khi trả lời câu dựa vào hình/bảng. Mọi nhãn chấm đều đối chiếu với PDF gốc, không dựa vào mô tả.
+- **Phạm vi index và phần chưa xử lý:**
+  - 557/569 trang được index. 12 trang bị bỏ (2, 10, 18, 112, 149, 222, 386, 413, 470, 538, 558, 569) là trang trắng hoặc gần trắng (≤ 174 ký tự, không có hình).
+  - Công thức toán trong lớp text bị mất ký hiệu (ví dụ "would be ." ở p214), nên câu hỏi về công thức phải dựa vào ảnh trang.
+  - `find_tables()` bỏ sót một số bảng (ví dụ phần tiếp của Bảng 2.3 ở p89). Những bảng này chỉ còn dưới dạng mô tả vision (xem lỗi AD01).
+  - Ảnh trang trí đầu chương không được index như nội dung.
+- **Cách chia benchmark, schema evidence, model và cấu hình đã chốt trên dev:**
+  - Benchmark ([advanced/data/benchmark.json](../../advanced/data/benchmark.json)): dev 17 câu có đáp án (4 bảng, 3 ảnh, 3 biểu đồ, 3 multi-hop, 4 text) + 4 câu thiếu evidence. Test 24 câu có đáp án (6 bảng, 5 ảnh, 5 biểu đồ, 4 multi-hop, 4 text) + 6 câu thiếu evidence. Mình viết các câu này sau khi xem ảnh trang và lớp text gốc, và commit (49e5128) trước khi chạy pipeline.
+  - Schema: `id, split, group, question, expected_answer, gold[{page, element (bảng/hàng/cột hoặc vùng hình), evidence}], required (multi-hop), grading`. Câu thiếu evidence có thêm `absence_reason` (cách kiểm tra: grep toàn văn + xem hình).
+  - Retrieval-only (câu hỏi gốc, có trang gold trong top-k; multi-hop phải đủ mọi trang):
+
+    | Phương pháp | dev Hit@1 / Hit@3 / Hit@5 | test2 Hit@1 / Hit@3 / Hit@5 |
+    |---|---|---|
+    | text_dense (chỉ chunk text) | 8/17 · 15/17 · 15/17 | 15/24 · 21/24 · 22/24 |
+    | text_bm25 | 10/17 · 15/17 · 16/17 | 13/24 · 22/24 · 23/24 |
+    | mm_dense (text + bảng + mô tả hình) | 10/17 · 16/17 · 17/17 | 18/24 · 23/24 · 24/24 |
+    | mm_bm25 | 13/17 · 15/17 · 16/17 | 17/24 · 23/24 · 24/24 |
+    | **mm_hybrid (RRF)** | **13/17 · 16/17 · 17/17** | 18/24 · 22/24 · 24/24 |
+
+  - Các cấu hình agent đã thử, chọn trên dev ([SELECTION.md](../../advanced/data/SELECTION.md)):
+
+    | Cấu hình | Thay đổi | Dev đạt | Ghi chú / lỗi |
+    |---|---|---|---|
+    | V0_text_dense | chỉ text, dense, gpt-4.1-mini | 19/21 | AD06 từ chối, AD13 bịa số |
+    | V1_mm_hybrid | + chunk bảng/hình, hybrid | 19/21 | AD01 (bảng tràn sang trang sau), AD12 đọc sai tháng |
+    | V2_mm_hybrid_view | + tool `view_page` | 19/21 | AD01, AD06 (trả lời dạng văn xuôi) |
+    | V3_mm_hybrid_view_fix | + filter "table" gồm cả chunk hình, xem trang kề ±1, sửa JSON, cờ abstain | 21/21 | 0 lần xem trang |
+    | V4_mm_hybrid_mustview | + bắt buộc xem ảnh gốc khi dựa vào hình/bảng | 21/21 | **chốt round 1** |
+    | V5_round2_gpt41 | V4 + gpt-4.1 + trang đã xem được trích + quy tắc đọc hình/từ chối | 21/21; dev2 25/30 | vẫn đọc sai sơ đồ nhỏ |
+    | **V6_round2_zoom_gpt5mini** | V5 + crop 220 dpi vùng hình + gpt-5-mini (reasoning) + parser citation | 21/21; dev2 29/30 | **chốt round 2** |
+
+| Nhóm test | Đạt / tổng | Tỷ lệ | Lỗi / nhận xét |
+|---|---|---|---|
+| Bảng | 6/6 | 100% | Bảng 9.1, 4.18, 4.17, 7.2, 10.1, 2.2; agent xem trang gốc mỗi câu |
+| Ảnh, sơ đồ | 5/5 | 100% | flowchart cây quyết định, RNN, cây thư mục, Venn, ảnh dashboard |
+| Biểu đồ | 5/5 | 100% | scatter (trục), cột có %, scatter mushroom, binomial (x = 19, ≈ 0.32), điểm đỏ ở Figure 6.8 |
+| Multi-hop | 3/4 | 75% | **BM01 sai:** Bảng 6.5 tràn qua 2 trang; agent xem cả p287 nhưng chỉ đếm phần ở p288 (5/10 thay vì 6/12) |
+| Text | 4/4 | 100% | BX02 trích p425 (code + boxplot cùng số liệu) thay vì p426: evidence thay thế hợp lệ, đã đối chiếu |
+| Thiếu bằng chứng | 6/6 | 100% | Từ chối và chỉ nêu phần còn thiếu |
+| **Toàn bộ** | **29/30** | **96.7%** | 0 lỗi hệ thống/timeout |
+
+Cùng test2, baseline V0 (chỉ text) đạt 15/30 (50%): bảng 5/6, ảnh 0/5, biểu đồ 1/5, multi-hop 2/4, text 2/4, thiếu evidence 5/6. Có một câu bịa: "batting average = 40.88", thực ra đó là tuổi.
+
+**Lịch sử đánh giá (báo cáo trung thực):**
+- **Round 1:** chạy test cũ một lần với V4: **25/30 = 83.3%** (bảng 6/6, ảnh 4/5, biểu đồ 3/5, multi-hop 3/4, text 4/4, thiếu evidence 5/6), chưa đạt ngưỡng. V0 trên cùng test đạt 15/30. Các câu không đạt:
+  - AT07: Huffman D = `011`, đúng là `101`.
+  - AT12: nhầm bin, đọc "centered at 65.95" trong khi bin đúng là 65.95–67.95.
+  - AT16: bỏ sót trường hợp hòa x = 6 và x = 7.
+  - AT19: không trích trang 301 chứa 73%.
+  - ATU5: có từ chối nhưng thêm khẳng định sai.
+- **Sau round 1:** test cũ chuyển thành dev2. Test2 (30 câu mới, trang chưa dùng) được viết và commit (92a4135) **trước** mọi thay đổi của round 2. V6 được chốt trên dev + dev2 (commit 294efda), rồi chạy test2 đúng một lần.
+- Nhãn từng câu kèm lý do nằm ở [results/advanced/reviews/](../../results/advanced/reviews/) (`*-test.json` cho round 1, `*-test2.json` cho round 2).
+
+- **Trace, nhãn, evidence, thời gian, chi phí, lỗi hệ thống:**
+  - Trace từng câu ở `results/advanced/<config>-<split>/traces.json`: query, filter `kind` do model chọn, kết quả kèm score/rank/trang/nhãn, các trang đã xem, context id, câu trả lời, citation, trang được trích, token, thời gian, chi phí.
+  - V6 trên test2: **$0.157** cho 30 câu (370k token vào, 32k token ra), median **14.9 s/câu**, tổng 481 s, trung bình 1.43 search và 1.07 lần xem trang mỗi câu, 0 lỗi.
+  - V4 trên test round 1: $0.105, median 3.5 s/câu.
+  - Tổng chi phí phần nâng cao khoảng **$2.3** (vision $0.63 + mọi lượt agent dev/dev2/test khoảng $1.67).
+- **Giới hạn, cách tái lập và đường dẫn benchmark:**
+  - Lỗi còn lại là đếm trên bảng tràn qua nhiều trang (BM01) và đọc giá trị trên biểu đồ đường dày đặc (dev2 AT14). Model đọc sai nhãn trục xoay nghiêng: V4 và V5 cả hai lần đều đọc sai bin của AT12, V6 đọc đúng, nên kết quả này phụ thuộc model và có thể dao động.
+  - V6 chậm hơn V4 khoảng 4 lần, do reasoning và ảnh crop.
+  - Chỉ có một người chấm. Nhãn nháp được soạn với sự hỗ trợ của trợ lý AI và đối chiếu bản gốc từng câu; học viên cần xem lại.
+  - Test2 có 30 câu nên mỗi câu bằng 3.3%; khoảng tin cậy rộng.
+  - Mô tả vision có thể sai, và chỉ được dùng để tìm kiếm.
+  - Tái lập: lệnh trong README, phần "Thử thách nâng cao". Benchmark ở [advanced/data/benchmark.json](../../advanced/data/benchmark.json) và [advanced/data/benchmark_round2_test.json](../../advanced/data/benchmark_round2_test.json).

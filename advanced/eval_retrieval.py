@@ -21,11 +21,12 @@ METHODS = {"text_dense": ("dense", True), "text_bm25": ("bm25", True), "mm_dense
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--split", required=True, choices=("dev", "test"))
+    ap.add_argument("--split", required=True, choices=("dev", "test", "test2"))
     ap.add_argument("--k", type=int, default=5)
     args = ap.parse_args()
     chunks = load_chunks()
-    bench = [q for q in json.loads((DATA / "benchmark.json").read_text(encoding="utf-8"))
+    src = DATA / ("benchmark_round2_test.json" if args.split == "test2" else "benchmark.json")
+    bench = [q for q in json.loads(src.read_text(encoding="utf-8"))
              if q["split"] == args.split and q["group"] != "unanswerable"]
     rows, traces = [], {}
     for name, (method, text_only) in METHODS.items():

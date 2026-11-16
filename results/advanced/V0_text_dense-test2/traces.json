@@ -1,0 +1,5561 @@
+[
+ {
+  "id": "BT01",
+  "group": "table",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the baseball player dataset table (SOCR-small.csv), which player is the oldest and what is his age?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "baseball player dataset SOCR-small.csv age oldest player",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 143.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0426:t02",
+      "page": 426,
+      "kind": "text",
+      "label": null,
+      "score": 0.7765061988528862
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0506:t00",
+      "page": 506,
+      "kind": "text",
+      "label": null,
+      "score": 0.7667592306876655
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0507:t00",
+      "page": 507,
+      "kind": "text",
+      "label": null,
+      "score": 0.7043569440416164
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0025:t03",
+      "page": 25,
+      "kind": "text",
+      "label": null,
+      "score": 0.6749425321885905
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0025:t04",
+      "page": 25,
+      "kind": "text",
+      "label": null,
+      "score": 0.6484506549297983
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0426:t02",
+     "ADV:p0506:t00",
+     "ADV:p0507:t00",
+     "ADV:p0025:t03",
+     "ADV:p0025:t04"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "The oldest player in the baseball player dataset (SOCR-small.csv) is Greg Maddux, who is 40.88 years old.\n\nThis information is found in Table 9.1 on page 426 of the textbook \"Principles of Data Science\" (ADV:p0426:t02). The table lists players with their ages, and Greg Maddux has the highest age value of 40.88. \n\n{\"answer\": \"The oldest player is Greg Maddux, aged 40.88 years.\", \"citations\": [\"ADV:p0426:t02\"], \"abstain\": false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0426:t02",
+   "ADV:p0506:t00",
+   "ADV:p0507:t00",
+   "ADV:p0025:t03",
+   "ADV:p0025:t04"
+  ],
+  "context_chars": 4641,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 2081,
+   "completion_tokens": 151,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.81,
+  "cost_usd": 0.001074,
+  "status": "answered",
+  "answer": "The oldest player is Greg Maddux, aged 40.88 years.",
+  "citations": [
+   "ADV:p0426:t02"
+  ],
+  "cited_pages": [
+   426
+  ],
+  "gold_pages": [
+   426
+  ],
+  "gold_pages_in_context": [
+   426
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BT02",
+  "group": "table",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the arrival delay data for three airlines, how many delay values are recorded for Airline C, and what is its largest delay?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "arrival delay data Airline C",
+    "filter": null,
+    "latency_ms": 93.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0215:t01",
+      "page": 215,
+      "kind": "text",
+      "label": null,
+      "score": 0.7157991484583265
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0216:t01",
+      "page": 216,
+      "kind": "text",
+      "label": null,
+      "score": 0.698486825778688
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0216:t00",
+      "page": 216,
+      "kind": "text",
+      "label": null,
+      "score": 0.6764265886163856
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0215:t00",
+      "page": 215,
+      "kind": "text",
+      "label": null,
+      "score": 0.6612714524213781
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0111:t00",
+      "page": 111,
+      "kind": "text",
+      "label": null,
+      "score": 0.645768861598707
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0215:t01",
+     "ADV:p0216:t01",
+     "ADV:p0216:t00",
+     "ADV:p0215:t00",
+     "ADV:p0111:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"For Airline C, there are 5 delay values recorded: 11, 15, 9, 11, and 12 minutes. The largest delay value for Airline C is 15 minutes.\",\"citations\":[\"ADV:p0215:t00\",\"ADV:p0216:t00\"] ,\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0215:t01",
+   "ADV:p0216:t01",
+   "ADV:p0216:t00",
+   "ADV:p0215:t00",
+   "ADV:p0111:t00"
+  ],
+  "context_chars": 4140,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1900,
+   "completion_tokens": 87,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.26,
+  "cost_usd": 0.000899,
+  "status": "answered",
+  "answer": "For Airline C, there are 5 delay values recorded: 11, 15, 9, 11, and 12 minutes. The largest delay value for Airline C is 15 minutes.",
+  "citations": [
+   "ADV:p0215:t00",
+   "ADV:p0216:t00"
+  ],
+  "cited_pages": [
+   215,
+   216
+  ],
+  "gold_pages": [
+   215
+  ],
+  "gold_pages_in_context": [
+   215
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BT03",
+  "group": "table",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the ANOVA summary table, what is entered in the p-value column for the 'Within' row, and what does the p-value cell say for the 'Between' row?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "ANOVA summary table p-value column Within row Between row",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 87.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0214:t02",
+      "page": 214,
+      "kind": "text",
+      "label": null,
+      "score": 0.723753397800335
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0096:t02",
+      "page": 96,
+      "kind": "text",
+      "label": null,
+      "score": 0.673204779624939
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0476:t04",
+      "page": 476,
+      "kind": "text",
+      "label": null,
+      "score": 0.6714405213069342
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0053:t00",
+      "page": 53,
+      "kind": "text",
+      "label": null,
+      "score": 0.6711427365371351
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0435:t01",
+      "page": 435,
+      "kind": "text",
+      "label": null,
+      "score": 0.6691604256629944
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0214:t02",
+     "ADV:p0096:t02",
+     "ADV:p0476:t04",
+     "ADV:p0053:t00",
+     "ADV:p0435:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "In the ANOVA summary table, the p-value column for the 'Within' row is entered as \"N/A\" (not applicable). For the 'Between' row, the p-value cell says \"Area to the right of the F test statistic.\"\n\nThis is shown in Table 4.17 on page 214 of the document.\n\n{\"answer\": \"In the ANOVA summary table, the p-value column for the 'Within' row is 'N/A'. For the 'Between' row, the p-value cell says 'Area to the right of the F test statistic.'\", \"citations\": [\"ADV:p0214:t02\"] , \"abstain\": false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0214:t02",
+   "ADV:p0096:t02",
+   "ADV:p0476:t04",
+   "ADV:p0053:t00",
+   "ADV:p0435:t01"
+  ],
+  "context_chars": 3087,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1744,
+   "completion_tokens": 167,
+   "llm_calls": 2
+  },
+  "elapsed_s": 4.76,
+  "cost_usd": 0.000965,
+  "status": "answered",
+  "answer": "In the ANOVA summary table, the p-value column for the 'Within' row is 'N/A'. For the 'Between' row, the p-value cell says 'Area to the right of the F test statistic.'",
+  "citations": [
+   "ADV:p0214:t02"
+  ],
+  "cited_pages": [
+   214
+  ],
+  "gold_pages": [
+   214
+  ],
+  "gold_pages_in_context": [
+   214
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BT04",
+  "group": "table",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the table of predicted vs. actual corn heights, what are the predicted and actual heights of the second plant in centimeters?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "predicted vs actual corn heights table",
+    "filter": null,
+    "latency_ms": 138.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0364:t03",
+      "page": 364,
+      "kind": "text",
+      "label": null,
+      "score": 0.7534948587417603
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0492:t01",
+      "page": 492,
+      "kind": "text",
+      "label": null,
+      "score": 0.6593180894851685
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0322:t02",
+      "page": 322,
+      "kind": "text",
+      "label": null,
+      "score": 0.6424875450875627
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0325:t00",
+      "page": 325,
+      "kind": "text",
+      "label": null,
+      "score": 0.6411671256323394
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0202:t03",
+      "page": 202,
+      "kind": "text",
+      "label": null,
+      "score": 0.6398645472688068
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0364:t03",
+     "ADV:p0492:t01",
+     "ADV:p0322:t02",
+     "ADV:p0325:t00",
+     "ADV:p0202:t03"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Table 7.2 Predicted vs. Actual Values of Corn Height",
+    "filter": null,
+    "latency_ms": 65.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0364:t03",
+      "page": 364,
+      "kind": "text",
+      "label": null,
+      "score": 0.8353744745254517
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0521:t00",
+      "page": 521,
+      "kind": "text",
+      "label": null,
+      "score": 0.693759560585022
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0202:t03",
+      "page": 202,
+      "kind": "text",
+      "label": null,
+      "score": 0.6925195822096418
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0265:t01",
+      "page": 265,
+      "kind": "text",
+      "label": null,
+      "score": 0.6833295226097107
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0550:t01",
+      "page": 550,
+      "kind": "text",
+      "label": null,
+      "score": 0.680731475353241
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0521:t00",
+     "ADV:p0265:t01",
+     "ADV:p0550:t01"
+    ],
+    "duplicate_ids": [
+     "ADV:p0364:t03",
+     "ADV:p0202:t03"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "corn height predicted actual second plant",
+    "filter": null,
+    "latency_ms": 63.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0364:t03",
+      "page": 364,
+      "kind": "text",
+      "label": null,
+      "score": 0.7485281452097939
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0451:t00",
+      "page": 451,
+      "kind": "text",
+      "label": null,
+      "score": 0.6350126890826872
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0071:t01",
+      "page": 71,
+      "kind": "text",
+      "label": null,
+      "score": 0.6348298381218269
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0486:t01",
+      "page": 486,
+      "kind": "text",
+      "label": null,
+      "score": 0.6177637761164839
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0325:t02",
+      "page": 325,
+      "kind": "text",
+      "label": null,
+      "score": 0.616707581779587
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0451:t00",
+     "ADV:p0071:t01",
+     "ADV:p0486:t01",
+     "ADV:p0325:t02"
+    ],
+    "duplicate_ids": [
+     "ADV:p0364:t03"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Table 7.2 predicted actual corn heights second plant",
+    "filter": null,
+    "latency_ms": 189.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0364:t03",
+      "page": 364,
+      "kind": "text",
+      "label": null,
+      "score": 0.7533420177305961
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0291:t00",
+      "page": 291,
+      "kind": "text",
+      "label": null,
+      "score": 0.6572779212759698
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0300:t01",
+      "page": 300,
+      "kind": "text",
+      "label": null,
+      "score": 0.6568170376797959
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0486:t01",
+      "page": 486,
+      "kind": "text",
+      "label": null,
+      "score": 0.6545803937065847
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0451:t00",
+      "page": 451,
+      "kind": "text",
+      "label": null,
+      "score": 0.6531645266315728
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0291:t00",
+     "ADV:p0300:t01"
+    ],
+    "duplicate_ids": [
+     "ADV:p0364:t03",
+     "ADV:p0486:t01",
+     "ADV:p0451:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "The document does not contain the specific predicted and actual heights of the second corn plant in centimeters in the table of predicted vs. actual corn heights. The relevant table (Table 7.2) is mentioned but the detailed values for individual plants, including the second plant, are not provided in the text or tables available.\n\n{\"answer\": \"The document does not provide the predicted and actual heights of the second corn plant in centimeters in the table of predicted vs. actual corn heights.\", \"citations\": [\"ADV:p0364:t03\"], \"abstain\": true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0364:t03",
+   "ADV:p0492:t01",
+   "ADV:p0322:t02",
+   "ADV:p0325:t00",
+   "ADV:p0202:t03",
+   "ADV:p0521:t00",
+   "ADV:p0265:t01",
+   "ADV:p0550:t01",
+   "ADV:p0451:t00",
+   "ADV:p0071:t01",
+   "ADV:p0486:t01",
+   "ADV:p0325:t02",
+   "ADV:p0291:t00",
+   "ADV:p0300:t01"
+  ],
+  "context_chars": 10353,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 9679,
+   "completion_tokens": 205,
+   "llm_calls": 5
+  },
+  "elapsed_s": 5.39,
+  "cost_usd": 0.0042,
+  "status": "abstain",
+  "answer": "The document does not provide the predicted and actual heights of the second corn plant in centimeters in the table of predicted vs. actual corn heights.",
+  "citations": [],
+  "abstain_reason": "model_abstained",
+  "gold_pages": [
+   364
+  ],
+  "gold_pages_in_context": [
+   364
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BT05",
+  "group": "table",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "According to the summary of visuals used in data science reports, which visual aid displays the joint frequency or counts for a combination of two or more categorical variables?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "visual aid joint frequency two or more categorical variables",
+    "filter": {
+     "kind": "text"
+    },
+    "latency_ms": 141.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0476:t04",
+      "page": 476,
+      "kind": "text",
+      "label": null,
+      "score": 0.7781531479176161
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0434:t01",
+      "page": 434,
+      "kind": "text",
+      "label": null,
+      "score": 0.7174297739607243
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0422:t05",
+      "page": 422,
+      "kind": "text",
+      "label": null,
+      "score": 0.709679365158081
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0463:t00",
+      "page": 463,
+      "kind": "text",
+      "label": null,
+      "score": 0.707513153553009
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0064:t03",
+      "page": 64,
+      "kind": "text",
+      "label": null,
+      "score": 0.7053511493979564
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0476:t04",
+     "ADV:p0434:t01",
+     "ADV:p0422:t05",
+     "ADV:p0463:t00",
+     "ADV:p0064:t03"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"Contingency tables display the joint frequency or counts for the data from a combination of two or more categorical variables.\",\"citations\":[\"ADV:p0476:t04\"] ,\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0476:t04",
+   "ADV:p0434:t01",
+   "ADV:p0422:t05",
+   "ADV:p0463:t00",
+   "ADV:p0064:t03"
+  ],
+  "context_chars": 4050,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1793,
+   "completion_tokens": 70,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.15,
+  "cost_usd": 0.000829,
+  "status": "answered",
+  "answer": "Contingency tables display the joint frequency or counts for the data from a combination of two or more categorical variables.",
+  "citations": [
+   "ADV:p0476:t04"
+  ],
+  "cited_pages": [
+   476
+  ],
+  "gold_pages": [
+   476
+  ],
+  "gold_pages_in_context": [
+   476
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BT06",
+  "group": "table",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the table of web scraping techniques, which technique is described as a powerful query language that navigates through the elements in an HTML document?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "web scraping techniques",
+    "filter": null,
+    "latency_ms": 105.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0077:t00",
+      "page": 77,
+      "kind": "text",
+      "label": null,
+      "score": 0.880737027990159
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0076:t02",
+      "page": 76,
+      "kind": "text",
+      "label": null,
+      "score": 0.8442284147330988
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0077:t03",
+      "page": 77,
+      "kind": "text",
+      "label": null,
+      "score": 0.8263044953346311
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0539:t01",
+      "page": 539,
+      "kind": "text",
+      "label": null,
+      "score": 0.8129313699644002
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0078:t01",
+      "page": 78,
+      "kind": "text",
+      "label": null,
+      "score": 0.7968012811660017
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0077:t00",
+     "ADV:p0076:t02",
+     "ADV:p0077:t03",
+     "ADV:p0539:t01",
+     "ADV:p0078:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The technique described as a powerful query language that navigates through the elements in an HTML document is XPath.\",\"citations\":[\"ADV:p0077:t00\"]}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0077:t00",
+   "ADV:p0076:t02",
+   "ADV:p0077:t03",
+   "ADV:p0539:t01",
+   "ADV:p0078:t01"
+  ],
+  "context_chars": 4080,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1780,
+   "completion_tokens": 52,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.23,
+  "cost_usd": 0.000795,
+  "status": "answered",
+  "answer": "The technique described as a powerful query language that navigates through the elements in an HTML document is XPath.",
+  "citations": [
+   "ADV:p0077:t00"
+  ],
+  "cited_pages": [
+   77
+  ],
+  "gold_pages": [
+   77
+  ],
+  "gold_pages_in_context": [
+   77
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BI01",
+  "group": "image",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the flowchart for a decision tree (Figure 6.20), how is a point classified if y ≤ 13.75 and x > 14.55?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 6.20 decision tree flowchart classification y ≤ 13.75 and x > 14.55",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 86.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0321:t00",
+      "page": 321,
+      "kind": "text",
+      "label": null,
+      "score": 0.8389683057722513
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0322:t00",
+      "page": 322,
+      "kind": "text",
+      "label": null,
+      "score": 0.8309205972050908
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0324:t00",
+      "page": 324,
+      "kind": "text",
+      "label": null,
+      "score": 0.794602537798579
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0317:t00",
+      "page": 317,
+      "kind": "text",
+      "label": null,
+      "score": 0.7655348917523105
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0326:t00",
+      "page": 326,
+      "kind": "text",
+      "label": null,
+      "score": 0.7556957973332495
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0321:t00",
+     "ADV:p0322:t00",
+     "ADV:p0324:t00",
+     "ADV:p0317:t00",
+     "ADV:p0326:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "decision tree flowchart y ≤ 13.75 and x > 14.55 classification",
+    "filter": {
+     "kind": "text"
+    },
+    "latency_ms": 80.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0322:t00",
+      "page": 322,
+      "kind": "text",
+      "label": null,
+      "score": 0.8190320486118812
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0321:t00",
+      "page": 321,
+      "kind": "text",
+      "label": null,
+      "score": 0.8186331851512417
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0324:t00",
+      "page": 324,
+      "kind": "text",
+      "label": null,
+      "score": 0.7587373030562042
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0319:t01",
+      "page": 319,
+      "kind": "text",
+      "label": null,
+      "score": 0.7583373559016807
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0317:t00",
+      "page": 317,
+      "kind": "text",
+      "label": null,
+      "score": 0.752871774222606
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0319:t01"
+    ],
+    "duplicate_ids": [
+     "ADV:p0322:t00",
+     "ADV:p0321:t00",
+     "ADV:p0324:t00",
+     "ADV:p0317:t00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "decision tree flowchart classification y ≤ 13.75 and x > 14.55",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 103.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0321:t00",
+      "page": 321,
+      "kind": "text",
+      "label": null,
+      "score": 0.8250367149688903
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0322:t00",
+      "page": 322,
+      "kind": "text",
+      "label": null,
+      "score": 0.8217448592186033
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0319:t01",
+      "page": 319,
+      "kind": "text",
+      "label": null,
+      "score": 0.7651143074035699
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0324:t00",
+      "page": 324,
+      "kind": "text",
+      "label": null,
+      "score": 0.7611231803894097
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0317:t00",
+      "page": 317,
+      "kind": "text",
+      "label": null,
+      "score": 0.7573168729136524
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0321:t00",
+     "ADV:p0322:t00",
+     "ADV:p0319:t01",
+     "ADV:p0324:t00",
+     "ADV:p0317:t00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 6.20 flowchart decision tree classification",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 372.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0322:t00",
+      "page": 322,
+      "kind": "text",
+      "label": null,
+      "score": 0.8282098872536503
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0321:t00",
+      "page": 321,
+      "kind": "text",
+      "label": null,
+      "score": 0.8137110693799232
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0317:t00",
+      "page": 317,
+      "kind": "text",
+      "label": null,
+      "score": 0.7941948771476746
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0324:t00",
+      "page": 324,
+      "kind": "text",
+      "label": null,
+      "score": 0.7802171242107688
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0326:t01",
+      "page": 326,
+      "kind": "text",
+      "label": null,
+      "score": 0.7758147254100619
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0326:t01"
+    ],
+    "duplicate_ids": [
+     "ADV:p0322:t00",
+     "ADV:p0321:t00",
+     "ADV:p0317:t00",
+     "ADV:p0324:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "The document does not explicitly state the classification result for a point where y ≤ 13.75 and x > 14.55 in the flowchart for the decision tree shown in Figure 6.20. The figure and its description mention the structure of the decision tree and how to classify points by following the flowchart, but the specific classification for the condition y ≤ 13.75 and x > 14.55 is not provided in the text or visual elements available.\n\n{\"answer\":\"The document does not provide the classification for a point where y ≤ 13.75 and x > 14.55 in the flowchart for the decision tree in Figure 6.20.\",\"citations\":[\"ADV:p0321:t00\",\"ADV:p0322:t00\",\"ADV:p0319:t01\"],\"abstain\":true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0321:t00",
+   "ADV:p0322:t00",
+   "ADV:p0324:t00",
+   "ADV:p0317:t00",
+   "ADV:p0326:t00",
+   "ADV:p0319:t01",
+   "ADV:p0326:t01"
+  ],
+  "context_chars": 5710,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 7948,
+   "completion_tokens": 306,
+   "llm_calls": 5
+  },
+  "elapsed_s": 6.38,
+  "cost_usd": 0.003669,
+  "status": "abstain",
+  "answer": "The document does not provide the classification for a point where y ≤ 13.75 and x > 14.55 in the flowchart for the decision tree in Figure 6.20.",
+  "citations": [],
+  "abstain_reason": "model_abstained",
+  "gold_pages": [
+   321
+  ],
+  "gold_pages_in_context": [
+   321
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BI02",
+  "group": "image",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the simplified RNN model figure, which weight sits on the feedback loop and into which box does the loop feed back?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "simplified RNN model feedback loop weight",
+    "filter": null,
+    "latency_ms": 106.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0358:t01",
+      "page": 358,
+      "kind": "text",
+      "label": null,
+      "score": 0.807444548385011
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0357:t03",
+      "page": 357,
+      "kind": "text",
+      "label": null,
+      "score": 0.7953781722598727
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0358:t02",
+      "page": 358,
+      "kind": "text",
+      "label": null,
+      "score": 0.7849739065750782
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0359:t01",
+      "page": 359,
+      "kind": "text",
+      "label": null,
+      "score": 0.7741147510443557
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0358:t00",
+      "page": 358,
+      "kind": "text",
+      "label": null,
+      "score": 0.7659178883506841
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0358:t01",
+     "ADV:p0357:t03",
+     "ADV:p0358:t02",
+     "ADV:p0359:t01",
+     "ADV:p0358:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 7.9 RNN Model Simplified",
+    "filter": null,
+    "latency_ms": 59.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0360:t00",
+      "page": 360,
+      "kind": "text",
+      "label": null,
+      "score": 0.7695710200327041
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0360:t01",
+      "page": 360,
+      "kind": "text",
+      "label": null,
+      "score": 0.7416573762893729
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0357:t03",
+      "page": 357,
+      "kind": "text",
+      "label": null,
+      "score": 0.7399359500446363
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0358:t01",
+      "page": 358,
+      "kind": "text",
+      "label": null,
+      "score": 0.7331504543840344
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0361:t00",
+      "page": 361,
+      "kind": "text",
+      "label": null,
+      "score": 0.7185914255867689
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0360:t00",
+     "ADV:p0360:t01",
+     "ADV:p0361:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0357:t03",
+     "ADV:p0358:t01"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 7.9",
+    "filter": null,
+    "latency_ms": 175.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0444:t00",
+      "page": 444,
+      "kind": "text",
+      "label": null,
+      "score": 0.6805175137211387
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0364:t03",
+      "page": 364,
+      "kind": "text",
+      "label": null,
+      "score": 0.6732161239852843
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0013:t03",
+      "page": 13,
+      "kind": "text",
+      "label": null,
+      "score": 0.6727262334390751
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0291:t00",
+      "page": 291,
+      "kind": "text",
+      "label": null,
+      "score": 0.6719818906794863
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0514:t01",
+      "page": 514,
+      "kind": "text",
+      "label": null,
+      "score": 0.6717509226947485
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0444:t00",
+     "ADV:p0364:t03",
+     "ADV:p0013:t03",
+     "ADV:p0291:t00",
+     "ADV:p0514:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 7.9 RNN Model Simplified feedback loop weight",
+    "filter": null,
+    "latency_ms": 445.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0358:t01",
+      "page": 358,
+      "kind": "text",
+      "label": null,
+      "score": 0.8072746155478208
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0357:t03",
+      "page": 357,
+      "kind": "text",
+      "label": null,
+      "score": 0.789092445048465
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0358:t00",
+      "page": 358,
+      "kind": "text",
+      "label": null,
+      "score": 0.7886162291214349
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0358:t02",
+      "page": 358,
+      "kind": "text",
+      "label": null,
+      "score": 0.7850379219673825
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0359:t01",
+      "page": 359,
+      "kind": "text",
+      "label": null,
+      "score": 0.7652876009132746
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0358:t01",
+     "ADV:p0357:t03",
+     "ADV:p0358:t00",
+     "ADV:p0358:t02",
+     "ADV:p0359:t01"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"In the simplified RNN model figure (Figure 7.9), the weight that sits on the feedback loop is the connecting weight denoted as w. The feedback loop feeds back into the same neuron box, effectively connecting the output of the neuron back into its input, allowing the neuron to incorporate its previous output as part of its new input. This feedback loop gives the model a rudimentary memory of prior training.\",\"citations\":[\"ADV:p0358:t00\",\"ADV:p0357:t03\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0358:t01",
+   "ADV:p0357:t03",
+   "ADV:p0358:t02",
+   "ADV:p0359:t01",
+   "ADV:p0358:t00",
+   "ADV:p0360:t00",
+   "ADV:p0360:t01",
+   "ADV:p0361:t00",
+   "ADV:p0444:t00",
+   "ADV:p0364:t03",
+   "ADV:p0013:t03",
+   "ADV:p0291:t00",
+   "ADV:p0514:t01"
+  ],
+  "context_chars": 10253,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 10714,
+   "completion_tokens": 198,
+   "llm_calls": 5
+  },
+  "elapsed_s": 5.63,
+  "cost_usd": 0.004602,
+  "status": "answered",
+  "answer": "In the simplified RNN model figure (Figure 7.9), the weight that sits on the feedback loop is the connecting weight denoted as w. The feedback loop feeds back into the same neuron box, effectively connecting the output of the neuron back into its input, allowing the neuron to incorporate its previous output as part of its new input. This feedback loop gives the model a rudimentary memory of prior training.",
+  "citations": [
+   "ADV:p0358:t00",
+   "ADV:p0357:t03"
+  ],
+  "cited_pages": [
+   357,
+   358
+  ],
+  "gold_pages": [
+   358
+  ],
+  "gold_pages_in_context": [
+   358
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BI03",
+  "group": "image",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the directory structure figure of the Small Traffic Light Dataset, which entry is a file rather than a directory, and how many entries are listed in total?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Small Traffic Light Dataset directory structure",
+    "filter": null,
+    "latency_ms": 66.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0036:t00",
+      "page": 36,
+      "kind": "text",
+      "label": null,
+      "score": 0.7370245456695557
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0035:t01",
+      "page": 35,
+      "kind": "text",
+      "label": null,
+      "score": 0.7307235163019005
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0035:t00",
+      "page": 35,
+      "kind": "text",
+      "label": null,
+      "score": 0.7220688462257385
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0461:t03",
+      "page": 461,
+      "kind": "text",
+      "label": null,
+      "score": 0.7181254625320435
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0466:t00",
+      "page": 466,
+      "kind": "text",
+      "label": null,
+      "score": 0.6937348429122673
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0036:t00",
+     "ADV:p0035:t01",
+     "ADV:p0035:t00",
+     "ADV:p0461:t03",
+     "ADV:p0466:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Small Traffic Light Dataset directory structure figure",
+    "filter": null,
+    "latency_ms": 101.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0036:t00",
+      "page": 36,
+      "kind": "text",
+      "label": null,
+      "score": 0.7532770331767812
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0035:t01",
+      "page": 35,
+      "kind": "text",
+      "label": null,
+      "score": 0.7406695948833965
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0035:t00",
+      "page": 35,
+      "kind": "text",
+      "label": null,
+      "score": 0.7284068788997131
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0461:t03",
+      "page": 461,
+      "kind": "text",
+      "label": null,
+      "score": 0.7254634230776572
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0037:t00",
+      "page": 37,
+      "kind": "text",
+      "label": null,
+      "score": 0.7064164245352444
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0037:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0036:t00",
+     "ADV:p0035:t01",
+     "ADV:p0035:t00",
+     "ADV:p0461:t03"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 1.9 directory structure Small Traffic Light Dataset",
+    "filter": null,
+    "latency_ms": 280.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0036:t00",
+      "page": 36,
+      "kind": "text",
+      "label": null,
+      "score": 0.7500858306884766
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0035:t01",
+      "page": 35,
+      "kind": "text",
+      "label": null,
+      "score": 0.7318161289801534
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0461:t03",
+      "page": 461,
+      "kind": "text",
+      "label": null,
+      "score": 0.7275431156158447
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0035:t00",
+      "page": 35,
+      "kind": "text",
+      "label": null,
+      "score": 0.722091555595398
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0037:t00",
+      "page": 37,
+      "kind": "text",
+      "label": null,
+      "score": 0.6968435852779029
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0036:t00",
+     "ADV:p0035:t01",
+     "ADV:p0461:t03",
+     "ADV:p0035:t00",
+     "ADV:p0037:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"In the directory structure figure of the Small Traffic Light Dataset (Figure 1.9), the entry that is a file rather than a directory is the XML file shown in Figure 1.11, named \\\"2020-03-30 11_30_03.690871079.xml\\\". The total number of entries listed in the directory structure figure is not explicitly stated in the text, so the exact count cannot be provided from the available information.\",\"citations\":[\"ADV:p0036:t00\",\"ADV:p0035:t00\",\"ADV:p0035:t01\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0036:t00",
+   "ADV:p0035:t01",
+   "ADV:p0035:t00",
+   "ADV:p0461:t03",
+   "ADV:p0466:t00",
+   "ADV:p0037:t00"
+  ],
+  "context_chars": 4073,
+  "viewed_pages": [],
+  "n_searches": 3,
+  "usage": {
+   "prompt_tokens": 4880,
+   "completion_tokens": 190,
+   "llm_calls": 4
+  },
+  "elapsed_s": 4.6,
+  "cost_usd": 0.002256,
+  "status": "answered",
+  "answer": "In the directory structure figure of the Small Traffic Light Dataset (Figure 1.9), the entry that is a file rather than a directory is the XML file shown in Figure 1.11, named \"2020-03-30 11_30_03.690871079.xml\". The total number of entries listed in the directory structure figure is not explicitly stated in the text, so the exact count cannot be provided from the available information.",
+  "citations": [
+   "ADV:p0036:t00",
+   "ADV:p0035:t00",
+   "ADV:p0035:t01"
+  ],
+  "cited_pages": [
+   35,
+   36
+  ],
+  "gold_pages": [
+   35
+  ],
+  "gold_pages_in_context": [
+   35
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 2
+ },
+ {
+  "id": "BI04",
+  "group": "image",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the Venn diagram 'The Field of Data Science', what lies in the overlap of Computer Science and Mathematics & Statistics only (outside Domain Expertise)?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Venn diagram The Field of Data Science overlap Computer Science Mathematics & Statistics only",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 160.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0422:t05",
+      "page": 422,
+      "kind": "text",
+      "label": null,
+      "score": 0.7038579936196862
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0009:t00",
+      "page": 9,
+      "kind": "text",
+      "label": null,
+      "score": 0.7026124387201093
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0476:t04",
+      "page": 476,
+      "kind": "text",
+      "label": null,
+      "score": 0.7007032154314005
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0409:t00",
+      "page": 409,
+      "kind": "text",
+      "label": null,
+      "score": 0.698498362571295
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0543:t00",
+      "page": 543,
+      "kind": "text",
+      "label": null,
+      "score": 0.6970448855108209
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0422:t05",
+     "ADV:p0009:t00",
+     "ADV:p0476:t04",
+     "ADV:p0409:t00",
+     "ADV:p0543:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "The Field of Data Science Venn diagram overlap Computer Science Mathematics & Statistics only",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 78.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0009:t00",
+      "page": 9,
+      "kind": "text",
+      "label": null,
+      "score": 0.7285608270335525
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0409:t00",
+      "page": 409,
+      "kind": "text",
+      "label": null,
+      "score": 0.7245567173294166
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0007:t00",
+      "page": 7,
+      "kind": "text",
+      "label": null,
+      "score": 0.7228615614340829
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0476:t04",
+      "page": 476,
+      "kind": "text",
+      "label": null,
+      "score": 0.7193763161820813
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0026:t04",
+      "page": 26,
+      "kind": "text",
+      "label": null,
+      "score": 0.7188801336955958
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0007:t00",
+     "ADV:p0026:t04"
+    ],
+    "duplicate_ids": [
+     "ADV:p0009:t00",
+     "ADV:p0409:t00",
+     "ADV:p0476:t04"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Venn diagram The Field of Data Science overlap Computer Science Mathematics & Statistics only",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 159.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0422:t05",
+      "page": 422,
+      "kind": "text",
+      "label": null,
+      "score": 0.7038579936196862
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0009:t00",
+      "page": 9,
+      "kind": "text",
+      "label": null,
+      "score": 0.7026124387201093
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0476:t04",
+      "page": 476,
+      "kind": "text",
+      "label": null,
+      "score": 0.7007032154314005
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0409:t00",
+      "page": 409,
+      "kind": "text",
+      "label": null,
+      "score": 0.698498362571295
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0543:t00",
+      "page": 543,
+      "kind": "text",
+      "label": null,
+      "score": 0.6970448855108209
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0422:t05",
+     "ADV:p0009:t00",
+     "ADV:p0476:t04",
+     "ADV:p0409:t00",
+     "ADV:p0543:t00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "The Field of Data Science Venn diagram",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 175.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0009:t00",
+      "page": 9,
+      "kind": "text",
+      "label": null,
+      "score": 0.7557530628369256
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0543:t00",
+      "page": 543,
+      "kind": "text",
+      "label": null,
+      "score": 0.7516536264626024
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0013:t03",
+      "page": 13,
+      "kind": "text",
+      "label": null,
+      "score": 0.7409325396458795
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0503:t02",
+      "page": 503,
+      "kind": "text",
+      "label": null,
+      "score": 0.7373729817796395
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0421:t03",
+      "page": 421,
+      "kind": "text",
+      "label": null,
+      "score": 0.7326747497707904
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0013:t03",
+     "ADV:p0503:t02",
+     "ADV:p0421:t03"
+    ],
+    "duplicate_ids": [
+     "ADV:p0009:t00",
+     "ADV:p0543:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"In the Venn diagram 'The Field of Data Science', the overlap of Computer Science and Mathematics & Statistics only (outside Domain Expertise) includes areas related to algorithms, data structures, and statistical computing. This intersection focuses on the computational and mathematical foundations essential for data science, such as designing efficient algorithms and applying statistical methods using computational tools. However, the exact specific terms or labels in this overlap are not explicitly detailed in the document.\",\"citations\":[\"ADV:p0007:t00\"],\"abstain\":true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0422:t05",
+   "ADV:p0009:t00",
+   "ADV:p0476:t04",
+   "ADV:p0409:t00",
+   "ADV:p0543:t00",
+   "ADV:p0007:t00",
+   "ADV:p0026:t04",
+   "ADV:p0013:t03",
+   "ADV:p0503:t02",
+   "ADV:p0421:t03"
+  ],
+  "context_chars": 8626,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 8478,
+   "completion_tokens": 227,
+   "llm_calls": 5
+  },
+  "elapsed_s": 5.46,
+  "cost_usd": 0.003754,
+  "status": "abstain",
+  "answer": "In the Venn diagram 'The Field of Data Science', the overlap of Computer Science and Mathematics & Statistics only (outside Domain Expertise) includes areas related to algorithms, data structures, and statistical computing. This intersection focuses on the computational and mathematical foundations essential for data science, such as designing efficient algorithms and applying statistical methods using computational tools. However, the exact specific terms or labels in this overlap are not explicitly detailed in the document.",
+  "citations": [],
+  "abstain_reason": "model_abstained",
+  "gold_pages": [
+   20
+  ],
+  "gold_pages_in_context": [],
+  "all_gold_pages_in_context": false,
+  "first_search_gold_page_rank": null
+ },
+ {
+  "id": "BI05",
+  "group": "image",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the photo of an executive dashboard on a tablet (Figure 10.2), which two kinds of charts are visible on the screen?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 10.2 executive dashboard tablet",
+    "filter": null,
+    "latency_ms": 185.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0474:t00",
+      "page": 474,
+      "kind": "text",
+      "label": null,
+      "score": 0.8165952101285976
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0473:t02",
+      "page": 473,
+      "kind": "text",
+      "label": null,
+      "score": 0.7530681568147114
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0473:t03",
+      "page": 473,
+      "kind": "text",
+      "label": null,
+      "score": 0.7064480992093194
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0500:t01",
+      "page": 500,
+      "kind": "text",
+      "label": null,
+      "score": 0.6716328863769397
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0473:t04",
+      "page": 473,
+      "kind": "text",
+      "label": null,
+      "score": 0.6679265896103947
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0474:t00",
+     "ADV:p0473:t02",
+     "ADV:p0473:t03",
+     "ADV:p0500:t01",
+     "ADV:p0473:t04"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 10.2 executive dashboard tablet chart types",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 139.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0474:t00",
+      "page": 474,
+      "kind": "text",
+      "label": null,
+      "score": 0.8080770487739429
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0473:t02",
+      "page": 473,
+      "kind": "text",
+      "label": null,
+      "score": 0.7422624384008398
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0473:t03",
+      "page": 473,
+      "kind": "text",
+      "label": null,
+      "score": 0.6957608228014919
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0514:t01",
+      "page": 514,
+      "kind": "text",
+      "label": null,
+      "score": 0.6850811430763529
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0511:t00",
+      "page": 511,
+      "kind": "text",
+      "label": null,
+      "score": 0.6754247739657906
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0514:t01",
+     "ADV:p0511:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0474:t00",
+     "ADV:p0473:t02",
+     "ADV:p0473:t03"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 10.2 executive dashboard tablet chart types",
+    "filter": null,
+    "latency_ms": 352.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0474:t00",
+      "page": 474,
+      "kind": "text",
+      "label": null,
+      "score": 0.8080770487739429
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0473:t02",
+      "page": 473,
+      "kind": "text",
+      "label": null,
+      "score": 0.7422624384008398
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0473:t03",
+      "page": 473,
+      "kind": "text",
+      "label": null,
+      "score": 0.6957608228014919
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0514:t01",
+      "page": 514,
+      "kind": "text",
+      "label": null,
+      "score": 0.6850811430763529
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0511:t00",
+      "page": 511,
+      "kind": "text",
+      "label": null,
+      "score": 0.6754247739657906
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0474:t00",
+     "ADV:p0473:t02",
+     "ADV:p0473:t03",
+     "ADV:p0514:t01",
+     "ADV:p0511:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"In the photo of the executive dashboard on a tablet (Figure 10.2), two kinds of charts visible on the screen are a bar chart and a line chart. This is inferred from the typical types of charts used in executive dashboards as described in the text around Figure 10.2, which mentions visual representations of key performance indicators (KPIs) often include bar charts and line charts for trends and comparisons.\",\"citations\":[\"ADV:p0474:t00\",\"ADV:p0473:t02\",\"ADV:p0473:t03\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0474:t00",
+   "ADV:p0473:t02",
+   "ADV:p0473:t03",
+   "ADV:p0500:t01",
+   "ADV:p0473:t04",
+   "ADV:p0514:t01",
+   "ADV:p0511:t00"
+  ],
+  "context_chars": 5174,
+  "viewed_pages": [],
+  "n_searches": 3,
+  "usage": {
+   "prompt_tokens": 4961,
+   "completion_tokens": 189,
+   "llm_calls": 4
+  },
+  "elapsed_s": 4.86,
+  "cost_usd": 0.002287,
+  "status": "answered",
+  "answer": "In the photo of the executive dashboard on a tablet (Figure 10.2), two kinds of charts visible on the screen are a bar chart and a line chart. This is inferred from the typical types of charts used in executive dashboards as described in the text around Figure 10.2, which mentions visual representations of key performance indicators (KPIs) often include bar charts and line charts for trends and comparisons.",
+  "citations": [
+   "ADV:p0474:t00",
+   "ADV:p0473:t02",
+   "ADV:p0473:t03"
+  ],
+  "cited_pages": [
+   473,
+   474
+  ],
+  "gold_pages": [
+   474
+  ],
+  "gold_pages_in_context": [
+   474
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BC01",
+  "group": "chart",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the scatterplot of Nike stock price versus the S&P 500, what are the axis labels and their displayed ranges?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "scatterplot Nike stock price versus S&P 500 axis labels ranges",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 178.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0199:t02",
+      "page": 199,
+      "kind": "text",
+      "label": null,
+      "score": 0.8662652035434608
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0529:t00",
+      "page": 529,
+      "kind": "text",
+      "label": null,
+      "score": 0.8633705377578735
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0198:t02",
+      "page": 198,
+      "kind": "text",
+      "label": null,
+      "score": 0.8504805654000914
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0529:t01",
+      "page": 529,
+      "kind": "text",
+      "label": null,
+      "score": 0.8220232725143433
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0199:t00",
+      "page": 199,
+      "kind": "text",
+      "label": null,
+      "score": 0.8021317242305458
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0199:t02",
+     "ADV:p0529:t00",
+     "ADV:p0198:t02",
+     "ADV:p0529:t01",
+     "ADV:p0199:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "scatterplot Nike stock price versus S&P 500 axis labels ranges",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 497.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0199:t02",
+      "page": 199,
+      "kind": "text",
+      "label": null,
+      "score": 0.8662652035434608
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0529:t00",
+      "page": 529,
+      "kind": "text",
+      "label": null,
+      "score": 0.8633705377578735
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0198:t02",
+      "page": 198,
+      "kind": "text",
+      "label": null,
+      "score": 0.8504805654000914
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0529:t01",
+      "page": 529,
+      "kind": "text",
+      "label": null,
+      "score": 0.8220232725143433
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0199:t00",
+      "page": 199,
+      "kind": "text",
+      "label": null,
+      "score": 0.8021317242305458
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0199:t02",
+     "ADV:p0529:t00",
+     "ADV:p0198:t02",
+     "ADV:p0529:t01",
+     "ADV:p0199:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The scatterplot of Nike stock price versus the S&P 500 has the horizontal axis labeled as \\\"S&P 500\\\" and the vertical axis labeled as \\\"Nike Stock Price ($)\\\". The displayed range for the S&P 500 axis is approximately from 2900 to 3950, and for the Nike Stock Price axis, it is approximately from 85 to 145 dollars. This is based on the data values shown in Table 4.14 and the description of the scatterplot in Figure 4.5 on page 199.\",\"citations\":[\"ADV:p0199:t02\",\"ADV:p0199:t00\",\"ADV:p0529:t00\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0199:t02",
+   "ADV:p0529:t00",
+   "ADV:p0198:t02",
+   "ADV:p0529:t01",
+   "ADV:p0199:t00"
+  ],
+  "context_chars": 3751,
+  "viewed_pages": [],
+  "n_searches": 2,
+  "usage": {
+   "prompt_tokens": 3527,
+   "completion_tokens": 206,
+   "llm_calls": 3
+  },
+  "elapsed_s": 4.23,
+  "cost_usd": 0.00174,
+  "status": "answered",
+  "answer": "The scatterplot of Nike stock price versus the S&P 500 has the horizontal axis labeled as \"S&P 500\" and the vertical axis labeled as \"Nike Stock Price ($)\". The displayed range for the S&P 500 axis is approximately from 2900 to 3950, and for the Nike Stock Price axis, it is approximately from 85 to 145 dollars. This is based on the data values shown in Table 4.14 and the description of the scatterplot in Figure 4.5 on page 199.",
+  "citations": [
+   "ADV:p0199:t02",
+   "ADV:p0199:t00",
+   "ADV:p0529:t00"
+  ],
+  "cited_pages": [
+   199,
+   529
+  ],
+  "gold_pages": [
+   199
+  ],
+  "gold_pages_in_context": [
+   199
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BC02",
+  "group": "chart",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the improved clinical trials participants chart (Figure 8.10), what percentage label and participant count are shown for the 47-56 age group, and what is the chart title?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 8.10 improved clinical trials participants chart",
+    "filter": null,
+    "latency_ms": 370.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0410:t01",
+      "page": 410,
+      "kind": "text",
+      "label": null,
+      "score": 0.7925193309783936
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0410:t00",
+      "page": 410,
+      "kind": "text",
+      "label": null,
+      "score": 0.7671614289283752
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0409:t00",
+      "page": 409,
+      "kind": "text",
+      "label": null,
+      "score": 0.6990751803472544
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0478:t01",
+      "page": 478,
+      "kind": "text",
+      "label": null,
+      "score": 0.6932773017833233
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0476:t03",
+      "page": 476,
+      "kind": "text",
+      "label": null,
+      "score": 0.6906389594078064
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0410:t01",
+     "ADV:p0410:t00",
+     "ADV:p0409:t00",
+     "ADV:p0478:t01",
+     "ADV:p0476:t03"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 8.10",
+    "filter": null,
+    "latency_ms": 192.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0410:t00",
+      "page": 410,
+      "kind": "text",
+      "label": null,
+      "score": 0.6791824102401733
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0034:t02",
+      "page": 34,
+      "kind": "text",
+      "label": null,
+      "score": 0.6665068864822388
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0409:t00",
+      "page": 409,
+      "kind": "text",
+      "label": null,
+      "score": 0.664471169443658
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0188:t04",
+      "page": 188,
+      "kind": "text",
+      "label": null,
+      "score": 0.661683479647845
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0444:t00",
+      "page": 444,
+      "kind": "text",
+      "label": null,
+      "score": 0.6534451246261597
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0034:t02",
+     "ADV:p0188:t04",
+     "ADV:p0444:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0410:t00",
+     "ADV:p0409:t00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 8.10 clinical trials participants chart",
+    "filter": null,
+    "latency_ms": 66.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0410:t01",
+      "page": 410,
+      "kind": "text",
+      "label": null,
+      "score": 0.8019246101952977
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0410:t00",
+      "page": 410,
+      "kind": "text",
+      "label": null,
+      "score": 0.7848177786117133
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0409:t00",
+      "page": 409,
+      "kind": "text",
+      "label": null,
+      "score": 0.6990179807240401
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0478:t01",
+      "page": 478,
+      "kind": "text",
+      "label": null,
+      "score": 0.6915691127263455
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0405:t03",
+      "page": 405,
+      "kind": "text",
+      "label": null,
+      "score": 0.687199970698356
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0405:t03"
+    ],
+    "duplicate_ids": [
+     "ADV:p0410:t01",
+     "ADV:p0410:t00",
+     "ADV:p0409:t00",
+     "ADV:p0478:t01"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 8.10 chart title",
+    "filter": null,
+    "latency_ms": 76.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0515:t00",
+      "page": 515,
+      "kind": "text",
+      "label": null,
+      "score": 0.723719591761872
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0409:t00",
+      "page": 409,
+      "kind": "text",
+      "label": null,
+      "score": 0.7174893999847978
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0528:t01",
+      "page": 528,
+      "kind": "text",
+      "label": null,
+      "score": 0.7140849190278503
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0410:t00",
+      "page": 410,
+      "kind": "text",
+      "label": null,
+      "score": 0.7059815736407513
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0208:t01",
+      "page": 208,
+      "kind": "text",
+      "label": null,
+      "score": 0.702049115239113
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0515:t00",
+     "ADV:p0528:t01",
+     "ADV:p0208:t01"
+    ],
+    "duplicate_ids": [
+     "ADV:p0409:t00",
+     "ADV:p0410:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "The search did not return the exact information about the percentage label, participant count for the 47-56 age group, or the chart title for Figure 8.10 in the improved clinical trials participants chart. The document contains related information about clinical trials participants and ethics in visualization but does not explicitly provide the details for Figure 8.10 as requested.\n\n{\"answer\": \"The document does not contain the specific percentage label, participant count for the 47-56 age group, or the chart title for Figure 8.10 in the improved clinical trials participants chart.\", \"citations\": [\"ADV:p0410:t00\", \"ADV:p0410:t01\"], \"abstain\": true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0410:t01",
+   "ADV:p0410:t00",
+   "ADV:p0409:t00",
+   "ADV:p0478:t01",
+   "ADV:p0476:t03",
+   "ADV:p0034:t02",
+   "ADV:p0188:t04",
+   "ADV:p0444:t00",
+   "ADV:p0405:t03",
+   "ADV:p0515:t00",
+   "ADV:p0528:t01",
+   "ADV:p0208:t01"
+  ],
+  "context_chars": 8596,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 8476,
+   "completion_tokens": 224,
+   "llm_calls": 5
+  },
+  "elapsed_s": 5.46,
+  "cost_usd": 0.003749,
+  "status": "abstain",
+  "answer": "The document does not contain the specific percentage label, participant count for the 47-56 age group, or the chart title for Figure 8.10 in the improved clinical trials participants chart.",
+  "citations": [],
+  "abstain_reason": "model_abstained",
+  "gold_pages": [
+   411
+  ],
+  "gold_pages_in_context": [],
+  "all_gold_pages_in_context": false,
+  "first_search_gold_page_rank": null
+ },
+ {
+  "id": "BC03",
+  "group": "chart",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the graph of the locations of mushrooms in a garden (Figure 6.9), what are the axis labels and their displayed ranges?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 6.9 mushroom locations axis labels ranges",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 233.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0291:t00",
+      "page": 291,
+      "kind": "text",
+      "label": null,
+      "score": 0.8301253318786621
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0294:t00",
+      "page": 294,
+      "kind": "text",
+      "label": null,
+      "score": 0.7093494707733721
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0465:t01",
+      "page": 465,
+      "kind": "text",
+      "label": null,
+      "score": 0.7084472005633844
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0451:t00",
+      "page": 451,
+      "kind": "text",
+      "label": null,
+      "score": 0.6891049517268049
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0290:t02",
+      "page": 290,
+      "kind": "text",
+      "label": null,
+      "score": 0.6833977103233337
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0291:t00",
+     "ADV:p0294:t00",
+     "ADV:p0465:t01",
+     "ADV:p0451:t00",
+     "ADV:p0290:t02"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The graph in Figure 6.9 has the x-axis labeled as 'feet east' and the y-axis labeled as 'feet north'. The displayed ranges for the axes are approximately from 20 to 130 feet east on the x-axis and from 30 to 85 feet north on the y-axis.\",\"citations\":[\"ADV:p0291:t00\"] ,\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0291:t00",
+   "ADV:p0294:t00",
+   "ADV:p0465:t01",
+   "ADV:p0451:t00",
+   "ADV:p0290:t02"
+  ],
+  "context_chars": 3878,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1971,
+   "completion_tokens": 110,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.41,
+  "cost_usd": 0.000964,
+  "status": "answered",
+  "answer": "The graph in Figure 6.9 has the x-axis labeled as 'feet east' and the y-axis labeled as 'feet north'. The displayed ranges for the axes are approximately from 20 to 130 feet east on the x-axis and from 30 to 85 feet north on the y-axis.",
+  "citations": [
+   "ADV:p0291:t00"
+  ],
+  "cited_pages": [
+   291
+  ],
+  "gold_pages": [
+   291
+  ],
+  "gold_pages_in_context": [
+   291
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BC04",
+  "group": "chart",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the graph of the binomial distribution for n = 20 and p = 0.92 (Figure 3.5), at which value of x is P(x) highest, and approximately what is that probability?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "binomial distribution n=20 p=0.92 Figure 3.5",
+    "filter": null,
+    "latency_ms": 89.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0141:t01",
+      "page": 141,
+      "kind": "text",
+      "label": null,
+      "score": 0.8044400927758176
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0443:t00",
+      "page": 443,
+      "kind": "text",
+      "label": null,
+      "score": 0.7385457534031374
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0141:t00",
+      "page": 141,
+      "kind": "text",
+      "label": null,
+      "score": 0.7337076385369732
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0442:t02",
+      "page": 442,
+      "kind": "text",
+      "label": null,
+      "score": 0.7286355384643917
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0531:t00",
+      "page": 531,
+      "kind": "text",
+      "label": null,
+      "score": 0.7263137428386518
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0141:t01",
+     "ADV:p0443:t00",
+     "ADV:p0141:t00",
+     "ADV:p0442:t02",
+     "ADV:p0531:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 3.5 binomial distribution n=20 p=0.92 highest probability",
+    "filter": null,
+    "latency_ms": 104.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0141:t01",
+      "page": 141,
+      "kind": "text",
+      "label": null,
+      "score": 0.769731342792511
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0531:t00",
+      "page": 531,
+      "kind": "text",
+      "label": null,
+      "score": 0.7374956764283386
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0443:t00",
+      "page": 443,
+      "kind": "text",
+      "label": null,
+      "score": 0.7292725065133726
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0139:t02",
+      "page": 139,
+      "kind": "text",
+      "label": null,
+      "score": 0.7282677888870239
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0442:t01",
+      "page": 442,
+      "kind": "text",
+      "label": null,
+      "score": 0.7192242051558243
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0139:t02",
+     "ADV:p0442:t01"
+    ],
+    "duplicate_ids": [
+     "ADV:p0141:t01",
+     "ADV:p0531:t00",
+     "ADV:p0443:t00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 3.5 binomial distribution n=20 p=0.92 highest probability value of x and probability",
+    "filter": null,
+    "latency_ms": 79.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0141:t01",
+      "page": 141,
+      "kind": "text",
+      "label": null,
+      "score": 0.7703973880528628
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0443:t00",
+      "page": 443,
+      "kind": "text",
+      "label": null,
+      "score": 0.7428443874624007
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0340:t00",
+      "page": 340,
+      "kind": "text",
+      "label": null,
+      "score": 0.7413819211309606
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0139:t02",
+      "page": 139,
+      "kind": "text",
+      "label": null,
+      "score": 0.7349736909560473
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0531:t00",
+      "page": 531,
+      "kind": "text",
+      "label": null,
+      "score": 0.7326108594950806
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0340:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0141:t01",
+     "ADV:p0443:t00",
+     "ADV:p0139:t02",
+     "ADV:p0531:t00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 3.5 binomial distribution n=20 p=0.92 highest probability",
+    "filter": null,
+    "latency_ms": 161.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0141:t01",
+      "page": 141,
+      "kind": "text",
+      "label": null,
+      "score": 0.769731342792511
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0531:t00",
+      "page": 531,
+      "kind": "text",
+      "label": null,
+      "score": 0.7374956764283386
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0443:t00",
+      "page": 443,
+      "kind": "text",
+      "label": null,
+      "score": 0.7292725065133726
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0139:t02",
+      "page": 139,
+      "kind": "text",
+      "label": null,
+      "score": 0.7282677888870239
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0442:t01",
+      "page": 442,
+      "kind": "text",
+      "label": null,
+      "score": 0.7192242051558243
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0141:t01",
+     "ADV:p0531:t00",
+     "ADV:p0443:t00",
+     "ADV:p0139:t02",
+     "ADV:p0442:t01"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"In the graph of the binomial distribution for n = 20 and p = 0.92 shown in Figure 3.5, the probability P(x) is highest at x = 18. The approximate probability at this value is 0.271, or about 27%.\",\"citations\":[\"ADV:p0141:t01\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0141:t01",
+   "ADV:p0443:t00",
+   "ADV:p0141:t00",
+   "ADV:p0442:t02",
+   "ADV:p0531:t00",
+   "ADV:p0139:t02",
+   "ADV:p0442:t01",
+   "ADV:p0340:t00"
+  ],
+  "context_chars": 6781,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 8420,
+   "completion_tokens": 206,
+   "llm_calls": 5
+  },
+  "elapsed_s": 5.27,
+  "cost_usd": 0.003698,
+  "status": "answered",
+  "answer": "In the graph of the binomial distribution for n = 20 and p = 0.92 shown in Figure 3.5, the probability P(x) is highest at x = 18. The approximate probability at this value is 0.271, or about 27%.",
+  "citations": [
+   "ADV:p0141:t01"
+  ],
+  "cited_pages": [
+   141
+  ],
+  "gold_pages": [
+   141
+  ],
+  "gold_pages_in_context": [
+   141
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BC05",
+  "group": "chart",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the logistic regression model plot fitting the GPA data (Figure 6.8), points are green for predicted completion and red for predicted non-completion. How many points at y = 1 (students who completed) are colored red, and at roughly what GPA?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 6.8 logistic regression GPA completion points colors",
+    "filter": null,
+    "latency_ms": 90.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0288:t00",
+      "page": 288,
+      "kind": "text",
+      "label": null,
+      "score": 0.7959057335966008
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0319:t00",
+      "page": 319,
+      "kind": "text",
+      "label": null,
+      "score": 0.7411413501332633
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0287:t02",
+      "page": 287,
+      "kind": "text",
+      "label": null,
+      "score": 0.7404406821465204
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0314:t02",
+      "page": 314,
+      "kind": "text",
+      "label": null,
+      "score": 0.7346407491397017
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0338:t00",
+      "page": 338,
+      "kind": "text",
+      "label": null,
+      "score": 0.7162660102527181
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0288:t00",
+     "ADV:p0319:t00",
+     "ADV:p0287:t02",
+     "ADV:p0314:t02",
+     "ADV:p0338:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 6.8 logistic regression model GPA completion points red at y=1",
+    "filter": null,
+    "latency_ms": 101.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0288:t00",
+      "page": 288,
+      "kind": "text",
+      "label": null,
+      "score": 0.7997039675889048
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0287:t02",
+      "page": 287,
+      "kind": "text",
+      "label": null,
+      "score": 0.734884023666387
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0314:t02",
+      "page": 314,
+      "kind": "text",
+      "label": null,
+      "score": 0.7335556904342372
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0338:t00",
+      "page": 338,
+      "kind": "text",
+      "label": null,
+      "score": 0.7025230704234213
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0319:t00",
+      "page": 319,
+      "kind": "text",
+      "label": null,
+      "score": 0.6898086851949295
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0288:t00",
+     "ADV:p0287:t02",
+     "ADV:p0314:t02",
+     "ADV:p0338:t00",
+     "ADV:p0319:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"In Figure 6.8, there is exactly one point at y = 1 (students who completed) that is colored red, indicating a predicted non-completion. This red point at y = 1 is roughly at a GPA of about 2.3.\",\"citations\":[\"ADV:p0288:t00\",\"ADV:p0287:t02\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0288:t00",
+   "ADV:p0319:t00",
+   "ADV:p0287:t02",
+   "ADV:p0314:t02",
+   "ADV:p0338:t00"
+  ],
+  "context_chars": 3331,
+  "viewed_pages": [],
+  "n_searches": 2,
+  "usage": {
+   "prompt_tokens": 3375,
+   "completion_tokens": 135,
+   "llm_calls": 3
+  },
+  "elapsed_s": 2.99,
+  "cost_usd": 0.001566,
+  "status": "answered",
+  "answer": "In Figure 6.8, there is exactly one point at y = 1 (students who completed) that is colored red, indicating a predicted non-completion. This red point at y = 1 is roughly at a GPA of about 2.3.",
+  "citations": [
+   "ADV:p0288:t00",
+   "ADV:p0287:t02"
+  ],
+  "cited_pages": [
+   287,
+   288
+  ],
+  "gold_pages": [
+   288
+  ],
+  "gold_pages_in_context": [
+   288
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BM01",
+  "group": "multihop",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the GPA vs. college completion data table (Table 6.5), how many of the students completed college (Y) out of how many students in total?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Table 6.5 GPA vs. college completion",
+    "filter": null,
+    "latency_ms": 114.1,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0287:t02",
+      "page": 287,
+      "kind": "text",
+      "label": null,
+      "score": 0.8558480739593567
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0288:t00",
+      "page": 288,
+      "kind": "text",
+      "label": null,
+      "score": 0.8196953046503496
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0314:t02",
+      "page": 314,
+      "kind": "text",
+      "label": null,
+      "score": 0.7427011285602387
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0338:t00",
+      "page": 338,
+      "kind": "text",
+      "label": null,
+      "score": 0.7350812712263316
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0338:t02",
+      "page": 338,
+      "kind": "text",
+      "label": null,
+      "score": 0.6693863070742718
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0287:t02",
+     "ADV:p0288:t00",
+     "ADV:p0314:t02",
+     "ADV:p0338:t00",
+     "ADV:p0338:t02"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "number of students completed college and total students in Table 6.5",
+    "filter": null,
+    "latency_ms": 71.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0287:t02",
+      "page": 287,
+      "kind": "text",
+      "label": null,
+      "score": 0.7357266983823013
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0288:t00",
+      "page": 288,
+      "kind": "text",
+      "label": null,
+      "score": 0.7026546597480774
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0134:t00",
+      "page": 134,
+      "kind": "text",
+      "label": null,
+      "score": 0.7001816034317017
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0134:t01",
+      "page": 134,
+      "kind": "text",
+      "label": null,
+      "score": 0.6872891187667847
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0314:t02",
+      "page": 314,
+      "kind": "text",
+      "label": null,
+      "score": 0.6722686290740967
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0134:t00",
+     "ADV:p0134:t01"
+    ],
+    "duplicate_ids": [
+     "ADV:p0287:t02",
+     "ADV:p0288:t00",
+     "ADV:p0314:t02"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Table 6.5 GPA vs. college completion data",
+    "filter": null,
+    "latency_ms": 63.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0287:t02",
+      "page": 287,
+      "kind": "text",
+      "label": null,
+      "score": 0.8808812428046029
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0288:t00",
+      "page": 288,
+      "kind": "text",
+      "label": null,
+      "score": 0.8359485864639282
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0314:t02",
+      "page": 314,
+      "kind": "text",
+      "label": null,
+      "score": 0.7789547443389893
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0338:t00",
+      "page": 338,
+      "kind": "text",
+      "label": null,
+      "score": 0.7691155672073364
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0012:t00",
+      "page": 12,
+      "kind": "text",
+      "label": null,
+      "score": 0.7094195100492097
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0012:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0287:t02",
+     "ADV:p0288:t00",
+     "ADV:p0314:t02",
+     "ADV:p0338:t00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "count of students completed college and total students in Table 6.5",
+    "filter": null,
+    "latency_ms": 148.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0287:t02",
+      "page": 287,
+      "kind": "text",
+      "label": null,
+      "score": 0.7256871461868337
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0288:t00",
+      "page": 288,
+      "kind": "text",
+      "label": null,
+      "score": 0.6915647571346321
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0134:t00",
+      "page": 134,
+      "kind": "text",
+      "label": null,
+      "score": 0.6880192346561423
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0134:t01",
+      "page": 134,
+      "kind": "text",
+      "label": null,
+      "score": 0.6747238233850119
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0314:t02",
+      "page": 314,
+      "kind": "text",
+      "label": null,
+      "score": 0.6714862184830785
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0287:t02",
+     "ADV:p0288:t00",
+     "ADV:p0134:t00",
+     "ADV:p0134:t01",
+     "ADV:p0314:t02"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"In Table 6.5 GPA vs. College Completion, there are 5 students who completed college (Y) out of a total of 10 students.\",\"citations\":[\"ADV:p0288:t00\"] ,\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0287:t02",
+   "ADV:p0288:t00",
+   "ADV:p0314:t02",
+   "ADV:p0338:t00",
+   "ADV:p0338:t02",
+   "ADV:p0134:t00",
+   "ADV:p0134:t01",
+   "ADV:p0012:t00"
+  ],
+  "context_chars": 6149,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 7768,
+   "completion_tokens": 153,
+   "llm_calls": 5
+  },
+  "elapsed_s": 4.63,
+  "cost_usd": 0.003352,
+  "status": "answered",
+  "answer": "In Table 6.5 GPA vs. College Completion, there are 5 students who completed college (Y) out of a total of 10 students.",
+  "citations": [
+   "ADV:p0288:t00"
+  ],
+  "cited_pages": [
+   288
+  ],
+  "gold_pages": [
+   287,
+   288
+  ],
+  "gold_pages_in_context": [
+   287,
+   288
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BM02",
+  "group": "multihop",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "Over the full one-year period in the Nike stock price vs. S&P 500 table (Table 4.14), in which month was Nike's stock price highest, and what was the S&P 500 value in that month?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Nike stock price S&P 500 Table 4.14",
+    "filter": null,
+    "latency_ms": 112.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0199:t00",
+      "page": 199,
+      "kind": "text",
+      "label": null,
+      "score": 0.8889956010585307
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0198:t03",
+      "page": 198,
+      "kind": "text",
+      "label": null,
+      "score": 0.871446199926962
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0529:t00",
+      "page": 529,
+      "kind": "text",
+      "label": null,
+      "score": 0.8564204063164961
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0199:t02",
+      "page": 199,
+      "kind": "text",
+      "label": null,
+      "score": 0.7597939145626481
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0529:t01",
+      "page": 529,
+      "kind": "text",
+      "label": null,
+      "score": 0.6771676136751418
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0199:t00",
+     "ADV:p0198:t03",
+     "ADV:p0529:t00",
+     "ADV:p0199:t02",
+     "ADV:p0529:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "Nike's stock price was highest in Month 9 at $141.47. The S&P 500 value in that month was 3756.07. \n\nThis information is from Table 4.14 Nike Stock Price ($) and Value of S&P 500 over a One-Year Time Period (pages 198-199). \n\n{\"answer\": \"Nike's stock price was highest in Month 9 at $141.47. The S&P 500 value in that month was 3756.07.\", \"citations\": [\"ADV:p0198:t03\", \"ADV:p0199:t00\"], \"abstain\": false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0199:t00",
+   "ADV:p0198:t03",
+   "ADV:p0529:t00",
+   "ADV:p0199:t02",
+   "ADV:p0529:t01"
+  ],
+  "context_chars": 3214,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1936,
+   "completion_tokens": 157,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.91,
+  "cost_usd": 0.001026,
+  "status": "answered",
+  "answer": "Nike's stock price was highest in Month 9 at $141.47. The S&P 500 value in that month was 3756.07.",
+  "citations": [
+   "ADV:p0198:t03",
+   "ADV:p0199:t00"
+  ],
+  "cited_pages": [
+   198,
+   199
+  ],
+  "gold_pages": [
+   198,
+   199
+  ],
+  "gold_pages_in_context": [
+   198,
+   199
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BM03",
+  "group": "multihop",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "Which age group has the most participants in the clinical trials table (Table 8.2), and what percentage is shown for that group in the improved chart (Figure 8.10)?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Table 8.2 clinical trials age group",
+    "filter": null,
+    "latency_ms": 73.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0410:t01",
+      "page": 410,
+      "kind": "text",
+      "label": null,
+      "score": 0.8262298703193665
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0410:t00",
+      "page": 410,
+      "kind": "text",
+      "label": null,
+      "score": 0.7676628828048706
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0090:t01",
+      "page": 90,
+      "kind": "text",
+      "label": null,
+      "score": 0.7096421122550964
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0134:t00",
+      "page": 134,
+      "kind": "text",
+      "label": null,
+      "score": 0.6928633451461792
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0194:t00",
+      "page": 194,
+      "kind": "text",
+      "label": null,
+      "score": 0.6841031501231712
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0410:t01",
+     "ADV:p0410:t00",
+     "ADV:p0090:t01",
+     "ADV:p0134:t00",
+     "ADV:p0194:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 8.10 improved chart age group percentage",
+    "filter": null,
+    "latency_ms": 80.6,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0410:t00",
+      "page": 410,
+      "kind": "text",
+      "label": null,
+      "score": 0.7293327450752258
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0410:t01",
+      "page": 410,
+      "kind": "text",
+      "label": null,
+      "score": 0.7143535614013672
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0439:t00",
+      "page": 439,
+      "kind": "text",
+      "label": null,
+      "score": 0.6787644220134973
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0409:t00",
+      "page": 409,
+      "kind": "text",
+      "label": null,
+      "score": 0.6739317373078038
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0094:t05",
+      "page": 94,
+      "kind": "text",
+      "label": null,
+      "score": 0.6713527040867397
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0439:t00",
+     "ADV:p0409:t00",
+     "ADV:p0094:t05"
+    ],
+    "duplicate_ids": [
+     "ADV:p0410:t00",
+     "ADV:p0410:t01"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The age group with the most participants in the clinical trials table (Table 8.2) is 27–36 with 120 participants. In the improved chart (Figure 8.10), this group is shown with a percentage of 30%.\",\"citations\":[\"ADV:p0410:t01\",\"ADV:p0410:t00\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0410:t01",
+   "ADV:p0410:t00",
+   "ADV:p0090:t01",
+   "ADV:p0134:t00",
+   "ADV:p0194:t00",
+   "ADV:p0439:t00",
+   "ADV:p0409:t00",
+   "ADV:p0094:t05"
+  ],
+  "context_chars": 6786,
+  "viewed_pages": [],
+  "n_searches": 2,
+  "usage": {
+   "prompt_tokens": 2706,
+   "completion_tokens": 141,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.58,
+  "cost_usd": 0.001308,
+  "status": "answered",
+  "answer": "The age group with the most participants in the clinical trials table (Table 8.2) is 27–36 with 120 participants. In the improved chart (Figure 8.10), this group is shown with a percentage of 30%.",
+  "citations": [
+   "ADV:p0410:t01",
+   "ADV:p0410:t00"
+  ],
+  "cited_pages": [
+   410
+  ],
+  "gold_pages": [
+   410,
+   411
+  ],
+  "gold_pages_in_context": [
+   410
+  ],
+  "all_gold_pages_in_context": false,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BM04",
+  "group": "multihop",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "How many DBMS functions are listed in the table of functions of database management systems (Table 2.9), and which function permits the integration of data from multiple sources?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Table 2.9 functions of database management systems",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 72.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0100:t03",
+      "page": 100,
+      "kind": "text",
+      "label": null,
+      "score": 0.8235614895820618
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0101:t00",
+      "page": 101,
+      "kind": "text",
+      "label": null,
+      "score": 0.766794695449193
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0099:t01",
+      "page": 99,
+      "kind": "text",
+      "label": null,
+      "score": 0.719571590423584
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0096:t02",
+      "page": 96,
+      "kind": "text",
+      "label": null,
+      "score": 0.7195551991462708
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0557:t01",
+      "page": 557,
+      "kind": "text",
+      "label": null,
+      "score": 0.7133338451385498
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0100:t03",
+     "ADV:p0101:t00",
+     "ADV:p0099:t01",
+     "ADV:p0096:t02",
+     "ADV:p0557:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "The table of functions of database management systems (Table 2.9) lists 5 DBMS functions:\n1. Data storage\n2. Data retrieval\n3. Data organization\n4. Data security\n5. Data integration\n\nThe function that permits the integration of data from multiple sources is \"Data integration.\"\n\nThis information is found in Table 2.9 on pages 100 and 101 of the document (ADV:p0100:t03, ADV:p0101:t00). \n\n{\"answer\": \"Table 2.9 lists 5 DBMS functions: Data storage, Data retrieval, Data organization, Data security, and Data integration. The function that permits the integration of data from multiple sources is Data integration.\", \"citations\": [\"ADV:p0100:t03\", \"ADV:p0101:t00\"], \"abstain\": false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0100:t03",
+   "ADV:p0101:t00",
+   "ADV:p0099:t01",
+   "ADV:p0096:t02",
+   "ADV:p0557:t01"
+  ],
+  "context_chars": 2966,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1563,
+   "completion_tokens": 201,
+   "llm_calls": 2
+  },
+  "elapsed_s": 3.1,
+  "cost_usd": 0.000947,
+  "status": "answered",
+  "answer": "Table 2.9 lists 5 DBMS functions: Data storage, Data retrieval, Data organization, Data security, and Data integration. The function that permits the integration of data from multiple sources is Data integration.",
+  "citations": [
+   "ADV:p0100:t03",
+   "ADV:p0101:t00"
+  ],
+  "cited_pages": [
+   100,
+   101
+  ],
+  "gold_pages": [
+   100,
+   101
+  ],
+  "gold_pages_in_context": [
+   100,
+   101
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BX01",
+  "group": "text",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "According to the book, what is the depth of the decision tree shown in the flowchart example, and how is depth defined?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "decision tree depth definition",
+    "filter": null,
+    "latency_ms": 153.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0319:t01",
+      "page": 319,
+      "kind": "text",
+      "label": null,
+      "score": 0.8062898632115222
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0321:t00",
+      "page": 321,
+      "kind": "text",
+      "label": null,
+      "score": 0.806163810948877
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0486:t00",
+      "page": 486,
+      "kind": "text",
+      "label": null,
+      "score": 0.8032875657081604
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0317:t00",
+      "page": 317,
+      "kind": "text",
+      "label": null,
+      "score": 0.7999598979949951
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0325:t02",
+      "page": 325,
+      "kind": "text",
+      "label": null,
+      "score": 0.7820658087730408
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0319:t01",
+     "ADV:p0321:t00",
+     "ADV:p0486:t00",
+     "ADV:p0317:t00",
+     "ADV:p0325:t02"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "The depth of the decision tree shown in the flowchart example is 7. Depth is defined as the number of levels or the length of the longest branch in a decision tree, which corresponds to the maximum number of comparisons or decisions that could be made on any input data. Thus, the depth is the length of the longest path from the root node to a leaf node in the tree (7 nodes in this example).\n\nThis is described on page 321 in the section about decision trees and the flowchart example (Figure 6.20) in the book \"Principles of Data Science\" (ADV:p0321:t00)."
+   }
+  ],
+  "context_ids": [
+   "ADV:p0319:t01",
+   "ADV:p0321:t00",
+   "ADV:p0486:t00",
+   "ADV:p0317:t00",
+   "ADV:p0325:t02"
+  ],
+  "context_chars": 4207,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1824,
+   "completion_tokens": 145,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.55,
+  "cost_usd": 0.000962,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng để trả lời.",
+  "citations": [],
+  "abstain_reason": "unparseable_final",
+  "gold_pages": [
+   321
+  ],
+  "gold_pages_in_context": [
+   321
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 2
+ },
+ {
+  "id": "BX02",
+  "group": "text",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In the boxplot example of company salaries, what are the first quartile, the third quartile, the IQR and the median?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "boxplot example company salaries first quartile third quartile IQR median",
+    "filter": null,
+    "latency_ms": 70.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0426:t00",
+      "page": 426,
+      "kind": "text",
+      "label": null,
+      "score": 0.8718971686424528
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0422:t06",
+      "page": 422,
+      "kind": "text",
+      "label": null,
+      "score": 0.741773843765264
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0127:t00",
+      "page": 127,
+      "kind": "text",
+      "label": null,
+      "score": 0.7400010693071374
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0425:t00",
+      "page": 425,
+      "kind": "text",
+      "label": null,
+      "score": 0.7373428657838266
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0429:t00",
+      "page": 429,
+      "kind": "text",
+      "label": null,
+      "score": 0.7198523449985789
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0426:t00",
+     "ADV:p0422:t06",
+     "ADV:p0127:t00",
+     "ADV:p0425:t00",
+     "ADV:p0429:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"In the boxplot example of company salaries, the first quartile is $54,000, the third quartile is $92,000, the interquartile range (IQR) is $38,000 (calculated as $92,000 - $54,000), and the median salary is $65,000.\",\"citations\":[\"ADV:p0426:t00\",\"ADV:p0425:t00\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0426:t00",
+   "ADV:p0422:t06",
+   "ADV:p0127:t00",
+   "ADV:p0425:t00",
+   "ADV:p0429:t00"
+  ],
+  "context_chars": 4418,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1976,
+   "completion_tokens": 126,
+   "llm_calls": 2
+  },
+  "elapsed_s": 5.62,
+  "cost_usd": 0.000992,
+  "status": "answered",
+  "answer": "In the boxplot example of company salaries, the first quartile is $54,000, the third quartile is $92,000, the interquartile range (IQR) is $38,000 (calculated as $92,000 - $54,000), and the median salary is $65,000.",
+  "citations": [
+   "ADV:p0426:t00",
+   "ADV:p0425:t00"
+  ],
+  "cited_pages": [
+   425,
+   426
+  ],
+  "gold_pages": [
+   426
+  ],
+  "gold_pages_in_context": [
+   426
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BX03",
+  "group": "text",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "In one-way ANOVA, how are the numerator and denominator degrees of freedom calculated, and what is the numerator value when comparing three pain relief medications?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "one-way ANOVA degrees of freedom numerator denominator",
+    "filter": null,
+    "latency_ms": 95.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0214:t01",
+      "page": 214,
+      "kind": "text",
+      "label": null,
+      "score": 0.8204751259230119
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0214:t02",
+      "page": 214,
+      "kind": "text",
+      "label": null,
+      "score": 0.7765997381925285
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0212:t02",
+      "page": 212,
+      "kind": "text",
+      "label": null,
+      "score": 0.7629973378477104
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0213:t00",
+      "page": 213,
+      "kind": "text",
+      "label": null,
+      "score": 0.7558767119756384
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0215:t00",
+      "page": 215,
+      "kind": "text",
+      "label": null,
+      "score": 0.7420564361265098
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0214:t01",
+     "ADV:p0214:t02",
+     "ADV:p0212:t02",
+     "ADV:p0213:t00",
+     "ADV:p0215:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"In one-way ANOVA, the numerator degrees of freedom are calculated as the number of groups minus 1. The denominator degrees of freedom are calculated as the total of the sample sizes minus the number of groups. When comparing three pain relief medications (i.e., three groups), the numerator degrees of freedom would be 3 - 1 = 2.\",\"citations\":[\"ADV:p0214:t01\",\"ADV:p0212:t02\"],\"abstain\":false}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0214:t01",
+   "ADV:p0214:t02",
+   "ADV:p0212:t02",
+   "ADV:p0213:t00",
+   "ADV:p0215:t00"
+  ],
+  "context_chars": 4786,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 2021,
+   "completion_tokens": 121,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.35,
+  "cost_usd": 0.001002,
+  "status": "answered",
+  "answer": "In one-way ANOVA, the numerator degrees of freedom are calculated as the number of groups minus 1. The denominator degrees of freedom are calculated as the total of the sample sizes minus the number of groups. When comparing three pain relief medications (i.e., three groups), the numerator degrees of freedom would be 3 - 1 = 2.",
+  "citations": [
+   "ADV:p0214:t01",
+   "ADV:p0212:t02"
+  ],
+  "cited_pages": [
+   212,
+   214
+  ],
+  "gold_pages": [
+   214
+  ],
+  "gold_pages_in_context": [
+   214
+  ],
+  "all_gold_pages_in_context": true,
+  "first_search_gold_page_rank": 1
+ },
+ {
+  "id": "BX04",
+  "group": "text",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "What variation of backpropagation is used to train the connecting weights of a recurrent neural network?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "backpropagation recurrent neural network",
+    "filter": null,
+    "latency_ms": 69.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0542:t01",
+      "page": 542,
+      "kind": "text",
+      "label": null,
+      "score": 0.8162330012043771
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0013:t01",
+      "page": 13,
+      "kind": "text",
+      "label": null,
+      "score": 0.7966892961634101
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0351:t02",
+      "page": 351,
+      "kind": "text",
+      "label": null,
+      "score": 0.7874325767239893
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0352:t00",
+      "page": 352,
+      "kind": "text",
+      "label": null,
+      "score": 0.7860159533004872
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0357:t03",
+      "page": 357,
+      "kind": "text",
+      "label": null,
+      "score": 0.7756067781917176
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0542:t01",
+     "ADV:p0013:t01",
+     "ADV:p0351:t02",
+     "ADV:p0352:t00",
+     "ADV:p0357:t03"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "backpropagation recurrent neural network training weights",
+    "filter": null,
+    "latency_ms": 120.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0351:t02",
+      "page": 351,
+      "kind": "text",
+      "label": null,
+      "score": 0.8201791048049927
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0542:t01",
+      "page": 542,
+      "kind": "text",
+      "label": null,
+      "score": 0.8192166090011597
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0351:t01",
+      "page": 351,
+      "kind": "text",
+      "label": null,
+      "score": 0.8077586407805314
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0352:t00",
+      "page": 352,
+      "kind": "text",
+      "label": null,
+      "score": 0.8040093183517456
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0351:t00",
+      "page": 351,
+      "kind": "text",
+      "label": null,
+      "score": 0.7891817328089995
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0351:t01",
+     "ADV:p0351:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0351:t02",
+     "ADV:p0542:t01",
+     "ADV:p0352:t00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "backpropagation recurrent neural network training weights",
+    "filter": null,
+    "latency_ms": 177.9,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0351:t02",
+      "page": 351,
+      "kind": "text",
+      "label": null,
+      "score": 0.8201791048049927
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0542:t01",
+      "page": 542,
+      "kind": "text",
+      "label": null,
+      "score": 0.8192166090011597
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0351:t01",
+      "page": 351,
+      "kind": "text",
+      "label": null,
+      "score": 0.8077586407805314
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0352:t00",
+      "page": 352,
+      "kind": "text",
+      "label": null,
+      "score": 0.8040093183517456
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0351:t00",
+      "page": 351,
+      "kind": "text",
+      "label": null,
+      "score": 0.7891817328089995
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0351:t02",
+     "ADV:p0542:t01",
+     "ADV:p0351:t01",
+     "ADV:p0352:t00",
+     "ADV:p0351:t00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "backpropagation through time recurrent neural network",
+    "filter": null,
+    "latency_ms": 104.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0542:t01",
+      "page": 542,
+      "kind": "text",
+      "label": null,
+      "score": 0.8000004887580872
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0013:t01",
+      "page": 13,
+      "kind": "text",
+      "label": null,
+      "score": 0.7994362115859985
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0359:t02",
+      "page": 359,
+      "kind": "text",
+      "label": null,
+      "score": 0.7701719036749576
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0368:t03",
+      "page": 368,
+      "kind": "text",
+      "label": null,
+      "score": 0.7641507387161255
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0543:t00",
+      "page": 543,
+      "kind": "text",
+      "label": null,
+      "score": 0.7571496367454529
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0359:t02",
+     "ADV:p0368:t03",
+     "ADV:p0543:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0542:t01",
+     "ADV:p0013:t01"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "The variation of backpropagation used to train the connecting weights of a recurrent neural network (RNN) is called \"backpropagation through time\" (BPTT). This method adapts the standard backpropagation algorithm to handle the temporal dynamics and feedback loops inherent in RNNs by unfolding the network through time and applying backpropagation to this unfolded network.\n\n(Note: The document mentions backpropagation in the context of RNNs and discusses LSTMs as a type of RNN designed to overcome training difficulties, but the specific term \"backpropagation through time\" is the known variation used for training RNNs. However, the document does not explicitly name \"backpropagation through time\" in the excerpts found.)\n\nSince the document does not explicitly state the exact variation name, I must abstain.\n\n{\"answer\": \"The document does not explicitly state the specific variation of backpropagation used to train the connecting weights of a recurrent neural network. However, it discusses backpropagation in the context of RNNs and mentions LSTMs as a type of RNN designed to overcome training difficulties. The known variation used in practice is called backpropagation through time (BPTT), but this term is not explicitly found in the document.\", \"citations\": [\"ADV:p0351:t02\", \"ADV:p0357:t03\", \"ADV:p0359:t02\"], \"abstain\": true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0542:t01",
+   "ADV:p0013:t01",
+   "ADV:p0351:t02",
+   "ADV:p0352:t00",
+   "ADV:p0357:t03",
+   "ADV:p0351:t01",
+   "ADV:p0351:t00",
+   "ADV:p0359:t02",
+   "ADV:p0368:t03",
+   "ADV:p0543:t00"
+  ],
+  "context_chars": 8306,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 7885,
+   "completion_tokens": 371,
+   "llm_calls": 5
+  },
+  "elapsed_s": 6.26,
+  "cost_usd": 0.003748,
+  "status": "abstain",
+  "answer": "The document does not explicitly state the specific variation of backpropagation used to train the connecting weights of a recurrent neural network. However, it discusses backpropagation in the context of RNNs and mentions LSTMs as a type of RNN designed to overcome training difficulties. The known variation used in practice is called backpropagation through time (BPTT), but this term is not explicitly found in the document.",
+  "citations": [],
+  "abstain_reason": "model_abstained",
+  "gold_pages": [
+   358
+  ],
+  "gold_pages_in_context": [],
+  "all_gold_pages_in_context": false,
+  "first_search_gold_page_rank": null
+ },
+ {
+  "id": "BU01",
+  "group": "unanswerable",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "What is the average arrival delay for Airline D in the arrival delay data table?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "arrival delay data table Airline D",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 114.5,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0216:t01",
+      "page": 216,
+      "kind": "text",
+      "label": null,
+      "score": 0.6927354335784912
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0215:t01",
+      "page": 215,
+      "kind": "text",
+      "label": null,
+      "score": 0.6735593469668261
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0557:t01",
+      "page": 557,
+      "kind": "text",
+      "label": null,
+      "score": 0.6563658714294434
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0216:t00",
+      "page": 216,
+      "kind": "text",
+      "label": null,
+      "score": 0.6511776267078414
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0215:t00",
+      "page": 215,
+      "kind": "text",
+      "label": null,
+      "score": 0.6470258621588875
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0216:t01",
+     "ADV:p0215:t01",
+     "ADV:p0557:t01",
+     "ADV:p0216:t00",
+     "ADV:p0215:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "arrival delay data table Airline D",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 178.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0216:t01",
+      "page": 216,
+      "kind": "text",
+      "label": null,
+      "score": 0.6927354335784912
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0215:t01",
+      "page": 215,
+      "kind": "text",
+      "label": null,
+      "score": 0.6735593469668261
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0557:t01",
+      "page": 557,
+      "kind": "text",
+      "label": null,
+      "score": 0.6563658714294434
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0216:t00",
+      "page": 216,
+      "kind": "text",
+      "label": null,
+      "score": 0.6511776267078414
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0215:t00",
+      "page": 215,
+      "kind": "text",
+      "label": null,
+      "score": 0.6470258621588875
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0216:t01",
+     "ADV:p0215:t01",
+     "ADV:p0557:t01",
+     "ADV:p0216:t00",
+     "ADV:p0215:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The document does not contain arrival delay data for Airline D. The available arrival delay data table (Table 4.18) only includes Airlines A, B, and C.\",\"citations\":[\"ADV:p0215:t00\",\"ADV:p0216:t01\"],\"abstain\":true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0216:t01",
+   "ADV:p0215:t01",
+   "ADV:p0557:t01",
+   "ADV:p0216:t00",
+   "ADV:p0215:t00"
+  ],
+  "context_chars": 3586,
+  "viewed_pages": [],
+  "n_searches": 2,
+  "usage": {
+   "prompt_tokens": 3235,
+   "completion_tokens": 109,
+   "llm_calls": 3
+  },
+  "elapsed_s": 3.01,
+  "cost_usd": 0.001468,
+  "status": "abstain",
+  "answer": "The document does not contain arrival delay data for Airline D. The available arrival delay data table (Table 4.18) only includes Airlines A, B, and C.",
+  "citations": [],
+  "abstain_reason": "model_abstained"
+ },
+ {
+  "id": "BU02",
+  "group": "unanswerable",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "What was Nike's stock price in Month 13 of the Nike vs. S&P 500 table?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Nike vs. S&P 500 table Month 13 stock price",
+    "filter": null,
+    "latency_ms": 80.4,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0199:t00",
+      "page": 199,
+      "kind": "text",
+      "label": null,
+      "score": 0.866709717112202
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0198:t03",
+      "page": 198,
+      "kind": "text",
+      "label": null,
+      "score": 0.8622499108314514
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0529:t00",
+      "page": 529,
+      "kind": "text",
+      "label": null,
+      "score": 0.8288823366165161
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0199:t02",
+      "page": 199,
+      "kind": "text",
+      "label": null,
+      "score": 0.7444160206441889
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0532:t01",
+      "page": 532,
+      "kind": "text",
+      "label": null,
+      "score": 0.7005490899740615
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0199:t00",
+     "ADV:p0198:t03",
+     "ADV:p0529:t00",
+     "ADV:p0199:t02",
+     "ADV:p0532:t01"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "Nike's stock price in Month 13 is not listed in the Nike vs. S&P 500 table. The table provides data only up to Month 12, where the Nike stock price was $140.45 (Month 12) and the S&P 500 value was 3943.34. There is no data for Month 13 in the table. \n\nCitations: [\"ADV:p0198:t03\", \"ADV:p0199:t00\"] (pages 198-199, Table 4.14)"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0199:t00",
+   "ADV:p0198:t03",
+   "ADV:p0529:t00",
+   "ADV:p0199:t02",
+   "ADV:p0532:t01"
+  ],
+  "context_chars": 3488,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1982,
+   "completion_tokens": 134,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.57,
+  "cost_usd": 0.001007,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng để trả lời.",
+  "citations": [],
+  "abstain_reason": "unparseable_final"
+ },
+ {
+  "id": "BU03",
+  "group": "unanswerable",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "What is Greg Maddux's batting average in the baseball player dataset table?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Greg Maddux batting average baseball player dataset table",
+    "filter": {
+     "kind": "table"
+    },
+    "latency_ms": 135.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0426:t02",
+      "page": 426,
+      "kind": "text",
+      "label": null,
+      "score": 0.727959188466174
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0506:t00",
+      "page": 506,
+      "kind": "text",
+      "label": null,
+      "score": 0.7006861328260791
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0025:t04",
+      "page": 25,
+      "kind": "text",
+      "label": null,
+      "score": 0.6552726050723913
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0025:t03",
+      "page": 25,
+      "kind": "text",
+      "label": null,
+      "score": 0.652524354602513
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0304:t03",
+      "page": 304,
+      "kind": "text",
+      "label": null,
+      "score": 0.6435793083466348
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0426:t02",
+     "ADV:p0506:t00",
+     "ADV:p0025:t04",
+     "ADV:p0025:t03",
+     "ADV:p0304:t03"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"Greg Maddux's batting average in the baseball player dataset table is 40.88.\",\"citations\":[\"ADV:p0426:t02\"]}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0426:t02",
+   "ADV:p0506:t00",
+   "ADV:p0025:t04",
+   "ADV:p0025:t03",
+   "ADV:p0304:t03"
+  ],
+  "context_chars": 4631,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 2050,
+   "completion_tokens": 59,
+   "llm_calls": 2
+  },
+  "elapsed_s": 1.83,
+  "cost_usd": 0.000914,
+  "status": "answered",
+  "answer": "Greg Maddux's batting average in the baseball player dataset table is 40.88.",
+  "citations": [
+   "ADV:p0426:t02"
+  ],
+  "cited_pages": [
+   426
+  ]
+ },
+ {
+  "id": "BU04",
+  "group": "unanswerable",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "How many clinical trial participants were younger than 18 in the clinical trials participants table?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "clinical trials participants table",
+    "filter": null,
+    "latency_ms": 170.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0410:t01",
+      "page": 410,
+      "kind": "text",
+      "label": null,
+      "score": 0.7899514561920504
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0410:t00",
+      "page": 410,
+      "kind": "text",
+      "label": null,
+      "score": 0.71475322754662
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0068:t02",
+      "page": 68,
+      "kind": "text",
+      "label": null,
+      "score": 0.6941652248802391
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0194:t00",
+      "page": 194,
+      "kind": "text",
+      "label": null,
+      "score": 0.6862697975313905
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0075:t04",
+      "page": 75,
+      "kind": "text",
+      "label": null,
+      "score": 0.6842147896161813
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0410:t01",
+     "ADV:p0410:t00",
+     "ADV:p0068:t02",
+     "ADV:p0194:t00",
+     "ADV:p0075:t04"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "final",
+    "raw": "The clinical trials participants table shown in the document lists age groups starting from 18 years and older. There is no mention or data provided for participants younger than 18 years in the table. The age groups listed are 18–26, 27–36, 37–46, 47–56, 57–66, and 67+ with respective participant counts, but no group for under 18 is included.\n\nTherefore, the number of clinical trial participants younger than 18 is not provided in the clinical trials participants table.\n\nCitation: ADV:p0410:t01 (page 410, Table 8.2)"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0410:t01",
+   "ADV:p0410:t00",
+   "ADV:p0068:t02",
+   "ADV:p0194:t00",
+   "ADV:p0075:t04"
+  ],
+  "context_chars": 4520,
+  "viewed_pages": [],
+  "n_searches": 1,
+  "usage": {
+   "prompt_tokens": 1890,
+   "completion_tokens": 146,
+   "llm_calls": 2
+  },
+  "elapsed_s": 2.64,
+  "cost_usd": 0.00099,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng để trả lời.",
+  "citations": [],
+  "abstain_reason": "unparseable_final"
+ },
+ {
+  "id": "BU05",
+  "group": "unanswerable",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "What numerical value does the connecting weight w_c have in the simplified RNN model figure?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "simplified RNN model connecting weight w_c",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 74.3,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0359:t01",
+      "page": 359,
+      "kind": "text",
+      "label": null,
+      "score": 0.7539212703704834
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0360:t00",
+      "page": 360,
+      "kind": "text",
+      "label": null,
+      "score": 0.7531477212905884
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0358:t00",
+      "page": 358,
+      "kind": "text",
+      "label": null,
+      "score": 0.7398501944720566
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0358:t02",
+      "page": 358,
+      "kind": "text",
+      "label": null,
+      "score": 0.7362698535999616
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0357:t03",
+      "page": 357,
+      "kind": "text",
+      "label": null,
+      "score": 0.7256138920783997
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0359:t01",
+     "ADV:p0360:t00",
+     "ADV:p0358:t00",
+     "ADV:p0358:t02",
+     "ADV:p0357:t03"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 7.9 RNN Model, Simplified connecting weight w_c value",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 123.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0358:t00",
+      "page": 358,
+      "kind": "text",
+      "label": null,
+      "score": 0.7313936397090817
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0360:t00",
+      "page": 360,
+      "kind": "text",
+      "label": null,
+      "score": 0.7282843913693013
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0349:t00",
+      "page": 349,
+      "kind": "text",
+      "label": null,
+      "score": 0.727289172734126
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0359:t01",
+      "page": 359,
+      "kind": "text",
+      "label": null,
+      "score": 0.7253135770185549
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0358:t02",
+      "page": 358,
+      "kind": "text",
+      "label": null,
+      "score": 0.7166851118190566
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0349:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0358:t00",
+     "ADV:p0360:t00",
+     "ADV:p0359:t01",
+     "ADV:p0358:t02"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Figure 7.9 RNN Model, Simplified connecting weight w_c value",
+    "filter": {
+     "kind": "visual"
+    },
+    "latency_ms": 149.0,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0358:t00",
+      "page": 358,
+      "kind": "text",
+      "label": null,
+      "score": 0.7313936397090817
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0360:t00",
+      "page": 360,
+      "kind": "text",
+      "label": null,
+      "score": 0.7282843913693013
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0349:t00",
+      "page": 349,
+      "kind": "text",
+      "label": null,
+      "score": 0.727289172734126
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0359:t01",
+      "page": 359,
+      "kind": "text",
+      "label": null,
+      "score": 0.7253135770185549
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0358:t02",
+      "page": 358,
+      "kind": "text",
+      "label": null,
+      "score": 0.7166851118190566
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0358:t00",
+     "ADV:p0360:t00",
+     "ADV:p0349:t00",
+     "ADV:p0359:t01",
+     "ADV:p0358:t02"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "connecting weight w_c value in simplified RNN model",
+    "filter": {
+     "kind": "text"
+    },
+    "latency_ms": 66.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0349:t00",
+      "page": 349,
+      "kind": "text",
+      "label": null,
+      "score": 0.7396713495254517
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0359:t01",
+      "page": 359,
+      "kind": "text",
+      "label": null,
+      "score": 0.7386041283607483
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0360:t00",
+      "page": 360,
+      "kind": "text",
+      "label": null,
+      "score": 0.7377979159355164
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0358:t02",
+      "page": 358,
+      "kind": "text",
+      "label": null,
+      "score": 0.7282510020807688
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0358:t00",
+      "page": 358,
+      "kind": "text",
+      "label": null,
+      "score": 0.7269661752025924
+     }
+    ],
+    "new_context_ids": [],
+    "duplicate_ids": [
+     "ADV:p0349:t00",
+     "ADV:p0359:t01",
+     "ADV:p0360:t00",
+     "ADV:p0358:t02",
+     "ADV:p0358:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "{\"answer\":\"The document does not provide a specific numerical value for the connecting weight w_c in the simplified RNN model figure.\",\"citations\":[\"ADV:p0358:t00\",\"ADV:p0358:t02\"],\"abstain\":true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0359:t01",
+   "ADV:p0360:t00",
+   "ADV:p0358:t00",
+   "ADV:p0358:t02",
+   "ADV:p0357:t03",
+   "ADV:p0349:t00"
+  ],
+  "context_chars": 5379,
+  "viewed_pages": [],
+  "n_searches": 4,
+  "usage": {
+   "prompt_tokens": 7526,
+   "completion_tokens": 169,
+   "llm_calls": 5
+  },
+  "elapsed_s": 4.65,
+  "cost_usd": 0.003281,
+  "status": "abstain",
+  "answer": "The document does not provide a specific numerical value for the connecting weight w_c in the simplified RNN model figure.",
+  "citations": [],
+  "abstain_reason": "model_abstained"
+ },
+ {
+  "id": "BU06",
+  "group": "unanswerable",
+  "split": "test2",
+  "config": "V0_text_dense",
+  "question": "How many images are stored in the valid_images directory of the Small Traffic Light Dataset?",
+  "model": "gpt-4.1-mini",
+  "retriever": "dense(text-only)",
+  "params": {
+   "top_k": 5,
+   "max_searches": 4,
+   "max_views": 0,
+   "budget_chars": 24000
+  },
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "Small Traffic Light Dataset valid_images directory number of images",
+    "filter": null,
+    "latency_ms": 79.8,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0035:t01",
+      "page": 35,
+      "kind": "text",
+      "label": null,
+      "score": 0.6972648446682386
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0035:t00",
+      "page": 35,
+      "kind": "text",
+      "label": null,
+      "score": 0.6858532803233577
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0430:t01",
+      "page": 430,
+      "kind": "text",
+      "label": null,
+      "score": 0.6793591953469774
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0461:t03",
+      "page": 461,
+      "kind": "text",
+      "label": null,
+      "score": 0.6784950878030005
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0036:t00",
+      "page": 36,
+      "kind": "text",
+      "label": null,
+      "score": 0.675087073434945
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0035:t01",
+     "ADV:p0035:t00",
+     "ADV:p0430:t01",
+     "ADV:p0461:t03",
+     "ADV:p0036:t00"
+    ],
+    "duplicate_ids": []
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "number of images in valid_images directory Small Traffic Light Dataset",
+    "filter": null,
+    "latency_ms": 61.7,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0035:t01",
+      "page": 35,
+      "kind": "text",
+      "label": null,
+      "score": 0.6907012050925979
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0430:t01",
+      "page": 430,
+      "kind": "text",
+      "label": null,
+      "score": 0.6851318070213922
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0035:t00",
+      "page": 35,
+      "kind": "text",
+      "label": null,
+      "score": 0.6838700771331787
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0461:t03",
+      "page": 461,
+      "kind": "text",
+      "label": null,
+      "score": 0.673776388168335
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0037:t00",
+      "page": 37,
+      "kind": "text",
+      "label": null,
+      "score": 0.6720844707514191
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0037:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0035:t01",
+     "ADV:p0430:t01",
+     "ADV:p0035:t00",
+     "ADV:p0461:t03"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_document",
+    "retriever": "dense(text-only)",
+    "query": "valid_images directory number of images Small Traffic Light Dataset",
+    "filter": null,
+    "latency_ms": 58.2,
+    "results": [
+     {
+      "rank": 1,
+      "id": "ADV:p0035:t01",
+      "page": 35,
+      "kind": "text",
+      "label": null,
+      "score": 0.6815530847577415
+     },
+     {
+      "rank": 2,
+      "id": "ADV:p0035:t00",
+      "page": 35,
+      "kind": "text",
+      "label": null,
+      "score": 0.6739519238471985
+     },
+     {
+      "rank": 3,
+      "id": "ADV:p0430:t01",
+      "page": 430,
+      "kind": "text",
+      "label": null,
+      "score": 0.6662752231195448
+     },
+     {
+      "rank": 4,
+      "id": "ADV:p0037:t00",
+      "page": 37,
+      "kind": "text",
+      "label": null,
+      "score": 0.6655753453247355
+     },
+     {
+      "rank": 5,
+      "id": "ADV:p0325:t00",
+      "page": 325,
+      "kind": "text",
+      "label": null,
+      "score": 0.663240393207051
+     }
+    ],
+    "new_context_ids": [
+     "ADV:p0325:t00"
+    ],
+    "duplicate_ids": [
+     "ADV:p0035:t01",
+     "ADV:p0035:t00",
+     "ADV:p0430:t01",
+     "ADV:p0037:t00"
+    ]
+   },
+   {
+    "event": "final",
+    "raw": "The document does not provide the exact number of images stored in the valid_images directory of the Small Traffic Light Dataset. The directory structure and dataset description are mentioned, but the specific count of images in valid_images is not given.\n\n{\"answer\": \"The document does not specify the number of images stored in the valid_images directory of the Small Traffic Light Dataset.\", \"citations\": [\"ADV:p0035:t00\", \"ADV:p0035:t01\"], \"abstain\": true}"
+   }
+  ],
+  "context_ids": [
+   "ADV:p0035:t01",
+   "ADV:p0035:t00",
+   "ADV:p0430:t01",
+   "ADV:p0461:t03",
+   "ADV:p0036:t00",
+   "ADV:p0037:t00",
+   "ADV:p0325:t00"
+  ],
+  "context_chars": 5406,
+  "viewed_pages": [],
+  "n_searches": 3,
+  "usage": {
+   "prompt_tokens": 5410,
+   "completion_tokens": 169,
+   "llm_calls": 4
+  },
+  "elapsed_s": 3.91,
+  "cost_usd": 0.002434,
+  "status": "abstain",
+  "answer": "The document does not specify the number of images stored in the valid_images directory of the Small Traffic Light Dataset.",
+  "citations": [],
+  "abstain_reason": "model_abstained"
+ }
+]

@@ -50,12 +50,17 @@ Tài liệu: *Principles of Data Science* (OpenStax, 2024 web edition, CC BY-NC-
 .venv\Scripts\python -m advanced.extract          # text layer + bảng (find_tables) + vùng hình + caption + render trang -> advanced/data/pages.jsonl
 .venv\Scripts\python -m advanced.describe         # gpt-4.1-mini vision mô tả bảng/biểu đồ/sơ đồ từng trang -> advanced/data/visual/ (~$1)
 .venv\Scripts\python -m advanced.index            # chunk text/table/visual -> bge-small 384-d -> pgvector bảng adv_chunks
-.venv\Scripts\python -m advanced.eval_retrieval --split dev
-.venv\Scripts\python -m advanced.run --split dev  --config V2_mm_hybrid_view
-.venv\Scripts\python -m advanced.run --split test --config V2_mm_hybrid_view
+.venv\Scripts\python -m advanced.eval_retrieval --split dev                         # so sánh retrieval (không dùng LLM)
+.venv\Scripts\python -m advanced.run --split dev   --config V4_mm_hybrid_mustview    # round 1 (V0..V4)
+.venv\Scripts\python -m advanced.run --split test  --config V4_mm_hybrid_mustview    # test round 1: 25/30
+.venv\Scripts\python -m advanced.run --split dev2  --config V6_round2_zoom_gpt5mini  # dev2 = test round 1
+.venv\Scripts\python -m advanced.run --split test2 --config V6_round2_zoom_gpt5mini  # test2 mới: 29/30 = 96.7%
 ```
 
-Benchmark: [advanced/data/benchmark.json](advanced/data/benchmark.json) (dev 17 + 4, test 24 + 6, đã commit trước khi chạy pipeline). Trace: `results/advanced/<config>-<split>/`; nhãn đạt/không đạt: `results/advanced/reviews/`. Ảnh render và crop (`advanced/cache/`) không được commit; tạo lại bằng `advanced.extract`.
+- Benchmark: [advanced/data/benchmark.json](advanced/data/benchmark.json) (dev 17 + 4, test round 1: 24 + 6) và [advanced/data/benchmark_round2_test.json](advanced/data/benchmark_round2_test.json) (test2: 24 + 6). Các file này được commit trước khi chạy.
+- Lý do chọn cấu hình: [advanced/data/SELECTION.md](advanced/data/SELECTION.md).
+- Trace: `results/advanced/<config>-<split>/`. Nhãn đạt/không đạt kèm lý do: `results/advanced/reviews/`.
+- Ảnh render và crop (`advanced/cache/`) không được commit; tạo lại bằng `advanced.extract`.
 
 ---
 
